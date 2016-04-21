@@ -2,11 +2,22 @@
 <html>
     <head>
         <title> Receita por filme </title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <!-- 1. Add these JavaScript inclusions in the head of your page -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/modules/data.js"></script>
         
+
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- 2. Add the JavaScript to initialize the chart on document ready -->
         <script language="JavaScript">
                     $(document).ready(function() {
@@ -52,7 +63,7 @@
 
 
                     series: [
-                    { marker:{symbol:'circle'}, name: "Beowulf", data: [[2007,196]]},
+{ marker:{symbol:'circle'}, name: "Beowulf", data: [[2007,196]]},
 { marker:{symbol:'circle'}, name: "Spider-Man 3", data: [[2007,891]]},
 { marker:{symbol:'circle'}, name: "TMNT", data: [[2007,95]]},
 { marker:{symbol:'circle'}, name: "Fantastic Four: Rise of the Silver Surfer", data: [[2007,289]]},
@@ -726,6 +737,7 @@
 
 
 
+
                     ]
                 });
             
@@ -737,6 +749,54 @@
     </head>
     <body>
     <!-- 3. Add the container -->
-    <div id="container" style="width: 800px; height: 800px; margin: 0 auto"></div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://www.github.com/a0th">a0th's</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="graf1.html">Grafico 1</a></li>
+          <li><a href="#">Grafico 2</a></li> 
+        </ul>
+      </div>
+    </nav>
+    <div id="container"  style="width:auto; height: 75%; margin: 0 auto"></div>
+    <div class="container-fluid" style="height: 25%">
+        <div class="col-md-4">
+            <h1>Proposta</h1>
+            <p>Possibilitar uma noca dos valores dos lucros dos filmes. Navegando atraves dos pontos e possivel ver que filmes ontem quais valores.</p>
+        </div>
+        <div class="col-md-8">
+            <h1>Dificuldades</h1>
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Cores</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                      <div class="panel-body"><p>Nao e possivel parametrizar a cor do ponto, classificando por genero. Para tanto, primeiro precisamos do Tableau para dizer quantos generos sao relevantes, para a seguir definir quais cores cada genero tera, e finalmente, incluir a cor do ponto durante a fase de tratamento de dados. Considerando que o tratamento deveria ser isolado e relativamente independende do Script, essa solucao e pouco ou nada modular/elegante.</p></div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        Raios</a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">O raio do ponto tambem surgiu como um problema. O valor apropriado do raio para cada ponto passou a ser uma incognita em funcao dos dados, e alguma heuristica precisaria ser aplicada sobre o conjunto de dados de Profitability para decidir um valor conveniente para visualizacao.</div>
+                    </div>
+                  </div>
+                  
+        </div>
+        
+
+
+
+    </div>
     </body>
 </html>

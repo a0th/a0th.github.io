@@ -13,7 +13,7 @@
 <div id="limao">Grafico 3</div>
 
 <script type="text/javascript">
-    function render(data, comparator,id,parametro,color) {
+    function render(data, comparator,id,parametro,color,quo) {
         d3.select(id).selectAll("div.h-bar")
                 .data(data)
             .enter().append("div")
@@ -26,16 +26,22 @@
         
         d3.select(id).selectAll("div.h-bar")
                 .data(data)
-            .attr("class", "h-bar")
+            .attr("class", "h-bar").transition().duration(2000).delay(100)
             .style("width", function (d) {
 
-                return (d[parametro])/2 + "px";
-            })
+                return (d[parametro])/quo + "px";
+            });
+
+        d3.select(id).selectAll("div.h-bar")
+                .data(data)
+            .attr("class", "h-bar").transition().duration(2000).delay(2000)        
             .style("background-color",color)
             .select("span")
                 .text(function (d) {
                     return d.Film;
                 });
+
+
          if(comparator)
             d3.select(id).selectAll("div.h-bar") 
                 .sort(comparator);
@@ -54,9 +60,9 @@
     
 
     d3.json("movies.json", function(error, json){ 
-        render(json, comparePorWorldwide_Gross_M,"#mamao","Worldwide_Gross_M","darkmagenta");
-        render(json, comparePorBudget,"#melao","Budget_M","coral");
-        render(json, comparelucroinvertido,"#limao","Worldwide_Gross_M","indigo");
+        render(json, comparePorWorldwide_Gross_M,"#mamao","Worldwide_Gross_M","darkmagenta",3);
+        render(json, comparePorBudget,"#melao","Budget_M","coral",0.3);
+        render(json, comparelucroinvertido,"#limao","Worldwide_Gross_M","red",3);
 
         
     });

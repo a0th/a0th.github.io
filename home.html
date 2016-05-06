@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta charset="utf-8"> 
+		<title> Trabaio</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+
+	<body>
+		<div>
+			<ul id="slide-out" class="side-nav fixed">
+				<li><a href="#!">First Sidebar Link</a></li>
+				<li><a href="#!">Second Sidebar Link</a></li>
+				<li class="no-padding">
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+							<div class="collapsible-body">
+								<ul>
+									<li><a href="#!">First</a></li>
+									<li><a href="#!">Second</a></li>
+									<li><a href="#!">Third</a></li>
+									<li><a href="#!">Fourth</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons top-nav full hide-on-large-only ">menu</i> </a>
+		</div>
+		<nav class="top-nav full" style="height: 130px">
+				<div class="container">
+					<div class="nav-wrapper ">
+						<div class="page-title" style=" line-height:120px; font-size: 40px"> Trabaio da Manu, sai de baxo que so da nois</div>
+					</div>
+				</div>
+			</nav>
+		<main class="container" style="padding-left: 240px; ">
+			
+			atencao senhores passageiros da mamolandia
+
+
+		<h2 class="header">Highcharts</h2>
+		<div class="row">
+			<div class="col s12 l5" >
+	  			<a href="graf1.html">
+		  			<div class="card z-depth-1" style=" border: 10px" >
+		  				<div class="card-image waves-effects waves-block waves-light">
+							<img class="responsive-img" src="tb1.png"  >
+		  				</div>
+		  				
+		  				<div class="card-content grey lighten-3"> Oscars por genero </div>
+		  				
+
+		  			</div>
+	  				
+				</a>
+	  		</div>
+	  		<div class="col s12 l5">
+	  			<a href="graf2.html">
+	  				<div class="card z-depth-1"  >
+	  					<div class="card-image waves-effects waves-block waves-light">
+	  						<img class="responsive-img"  src="tb2.png"   >
+	  					</div>
+	  					<div class="card-content grey lighten-3"> 
+	  						Lucro de filmes
+	  					</div>
+	  				</div>
+	  				
+	  			</a>
+	  		</div>
+		</div>
+		
+
+		<h2 >D3.js</h2>
+		<a href="movies_d3.html" class="btn waves-effects waves-block waves-light "> 
+			movies_d3.html
+		</a>
+		</main>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
+		
+		<script type="text/javascript">
+			// Initialize collapse button
+			$(".button-collapse").sideNav();
+			// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+			$('.collapsible').collapsible();
+		</script>
+	</body>
+
+</html>

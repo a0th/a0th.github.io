@@ -3,54 +3,112 @@
 <html>
 <head>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
 
 	<meta charset="utf-8"> 
 	<title> Trabaio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width">
 
 </head>
-<body>
-	<div class = 'container-fluid' >
-		<div class = 'jumbotron'>
-			<h1>Trabaio da Manu, sai de baxo que so da nois</h1>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-		    	<h2 class="panel-title">Highcharts</h2>
-		  	</div>
-			<div class="panel-body">
-				<div >
-					<div class="col-md-6">
-						<a href="graf1.html">
-							<img src="tb1.png" class="thumbnail img-responsive" width="auto" style="height: 300px">
-							<p> Graficao 1 eh nois</p>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="graf2.html">
-							<img src="tb2.png" class="thumbnail img-responsive" width="auto" style="height: 300px "  >
-							<p> Graficao 2, faz teu nome</p>
-						</a>
-					</div>
+
+<body class="container">
+	<div id="sidebarr">
+		
+		<ul id="slide-out" class="side-nav fixed">
+			<li class="no-padding">
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a class="collapsible-header ">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+						<div class="collapsible-body">
+							<ul>
+								<li><a href="#!">First</a></li>
+								<li><a href="#!">Second</a></li>
+								<li><a href="#!">Third</a></li>
+								<li><a href="#!">Fourth</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class="right hide-on-med-and-down">
+			<li><a href="#!">First Sidebar Link</a></li>
+			<li><a href="#!">Second Sidebar Link</a></li>
+			<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+			<ul id='dropdown1' class='dropdown-content'>
+				<li><a href="#!">First</a></li>
+				<li><a href="#!">Second</a></li>
+				<li><a href="#!">Third</a></li>
+				<li><a href="#!">Fourth</a></li>
+			</ul>
+		</ul>
+		<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+	</div>
+
+	<div style="background-color: grey">
+
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper"
+					<h2>Trabaio da Manu, sai de baxo que so da nois</h2>
 				</div>
 			</div>
+		</nav>
+
+			
+		<h2 class="header">Highcharts</h2>
+		<div class="row", style="display: inline">
+			<div class="col  l5" >
+	  			<a href="graf1.html">
+		  			<div class="card" style="height: 300px" >
+		  				<div class="card-image waves-effects waves-block waves-light">
+							<img class="responsive-img"  src="tb1.png"  >
+		  				</div>
+		  				
+		  				<div class="card-action"> Oscars por genero </div>
+		  				
+
+		  			</div>
+	  				
+				</a>
+	  		</div>
+	  		<div class="col l5">
+	  			<a href="graf2.html">
+	  				<div class="card" style="height: 300px" >
+	  					<div class="card-image waves-effects waves-block waves-light">
+	  						<img class="responsive-img"  src="tb2.png"   >
+	  					</div>
+	  					<div class="card-action"> 
+	  						Lucro de filmes
+	  					</div>
+	  				</div>
+	  				
+	  			</a>
+	  		</div>
 		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h2 class="panel-title">D3.js</h2>
-			</div>
-			<a href="movies_d3.html"> 
-			<div class="panel-body">
-				<h3>movies_d3.html</h3> 
-			</div>
-			</a>
-		</div>
+		
+		<h2 >D3.js</h2>
+		<a href="movies_d3.html"> 
+			<button class="btn btn-waves">movies_d3.html </button>
+		</a>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js"></script>
+	<script type="text/javascript">
+	 	
+	 // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  $('.collapsible').collapsible();
+	 </script>
 </body>
+
 </html>

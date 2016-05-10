@@ -49,3 +49,7 @@ h1 {
     width: 10px;
     display: inline-block;
 }
+.header {
+    padding-left: 240px;
+}
+@media (max-width: 400px) { .header { padding-left: 0px } }

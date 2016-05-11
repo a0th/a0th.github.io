@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/dc.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/crossfilter.js" charset="utf-8"></script>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/d3.v3.min.js" charset="utf-8"></script>
     <script src="js/dc.js" charset="utf-8"></script>
 
 </head>
 <body>
-    <div id="chart"><span> Valores das ações da Apple e do Facebook</span></div>
+    <div id="chart"><span> Bilheteria por ano</span></div>
     <script type="text/javascript">
         var chart = dc.barChart('#chart');
 
@@ -40,7 +40,8 @@
                     .height(400)
                     .margins({top: 30, right: 50, bottom: 25, left: 40})
                     .dimension(dateDim)
-                    .x(d3.time.scale().domain([new Date(2007), new Date(2011)]))
+                    .x(d3.scale.ordinal().domain([ 2007,2008,2009,2010,2011]))
+                    .xUnits(dc.units.ordinal)
                     .renderHorizontalGridLines(true)
                     .legend(dc.legend().x(650).y(10).itemHeight(13).gap(5))
                     .brushOn(false)

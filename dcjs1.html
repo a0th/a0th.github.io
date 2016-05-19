@@ -35,13 +35,13 @@
             var grossByYear = dateDim.group().reduceSum(function(d){
                 return d.Worldwide_Gross_M;
             });
-
+            console.log(dateDim.top(1)[0].Year);
             chart.width(800)
                     .height(400)
                     .margins({top: 30, right: 50, bottom: 25, left: 40})
                     .dimension(dateDim)
-                    .x(d3.scale.ordinal().domain([ 2007,2008,2009,2010,2011]))
-                    .xUnits(dc.units.ordinal)
+                    .x(d3.scale.linear().domain([dateDim.bottom(1)[0].Year, dateDim.top(1)[0].Year]))
+                    // .xUnits(dc.units.ordinal)
                     .renderHorizontalGridLines(true)
                     .legend(dc.legend().x(650).y(10).itemHeight(13).gap(5))
                     .brushOn(false)

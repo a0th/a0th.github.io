@@ -24,6 +24,9 @@ body {
 h1 {
     color: #3F3F3F;
 }
+h2{
+    font-size: 30px;
+}
 
 .h-bar {
     min-height: 15px;
@@ -51,5 +54,9 @@ h1 {
 }
 .header {
     padding-left: 240px;
+    font-family: 'Source sans pro', sans-serif
 }
 @media (max-width: 400px) { .header { padding-left: 0px } }
+.card {
+    font-family: 'Droid-serif',serif;
+}

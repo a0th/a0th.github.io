@@ -4,20 +4,26 @@
 	<head>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.css">
 		<link href="styles.css" rel="stylesheet">
-		
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<meta charset="utf-8"> 
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>		<meta charset="utf-8"> 
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 		<title> Trabaio</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 
 	<body>
 		<div>
-			<ul id="slide-out" class="side-nav fixed grey lighten-2">
+			<ul id="slide-out" class="side-nav fixed ">
+				<div class="row" style="height:20vh">
+					<a href="https://github.com/a0th">
+						<img class="circle   col s10 push-s1  img-responsive "  style="max-width:240px;margin-top:20%" src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12804881_10201472902861893_8164366302930963520_n.jpg?oh=3a9da09e84661f0f9f8dae752c3e976d&oe=57D12C51">
+					</a>
+				</div>
 				<li class="no-padding">
-					<ul class="collapsible collapsible-accordion">
+					<ul class="collapsible collapsible-accordion" style="font-family: Ubuntu">
 						<li>
-							<a class="collapsible-header waves-effect waves-red waves-red">Highcharts<i class="material-icons">arrow_drop_down</i></a>
+							<a class="collapsible-header waves-effect  waves-teal">Highcharts<i class="material-icons">arrow_drop_down</i></a>
 							<div class="collapsible-body">
 								<ul>
 									<li><a href="graf1.html">Oscar por genero</a></li>
@@ -26,7 +32,7 @@
 							</div>
 						</li>
 						<li>
-							<a class="collapsible-header waves-effect waves-red waves-red">D3<i class="material-icons">arrow_drop_down</i></a>
+							<a class="collapsible-header waves-effect waves-teal waves-teal">D3<i class="material-icons">arrow_drop_down</i></a>
 							<div class="collapsible-body">
 								<ul>
 									<li><a href="movies_d3.html">Movies_D3</a></li>
@@ -34,7 +40,7 @@
 							</div>
 						</li>
 						<li>
-							<a class="collapsible-header waves-effect waves-red waves-red">D3-DC-Crossfilter<i class="material-icons">arrow_drop_down</i></a>
+							<a class="collapsible-header waves-effect waves-teal waves-teal">D3-DC-Crossfilter<i class="material-icons">arrow_drop_down</i></a>
 							<div class="collapsible-body">
 								<ul>
 									<li><a href="dcjs1.html">Bilheteria por ano</a></li>
@@ -44,11 +50,20 @@
 							</div>
 						</li>
 						<li>
-							<a class="collapsible-header waves-effect waves-red waves-red">Leaflet<i class="material-icons">arrow_drop_down</i></a>
+							<a class="collapsible-header waves-effect waves-teal waves-teal">Leaflet<i class="material-icons">arrow_drop_down</i></a>
 							<div class="collapsible-body">
 								<ul>
 									<li><a href="quakes/quakes.html">Terremotos na NZ</a></li>
 									<li><a href="crimes/crimes.html">Crimes em Fortaleza</a></li>
+
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="collapsible-header waves-effect waves-teal waves-teal">Mudanca de visao<i class="material-icons">arrow_drop_down</i></a>
+							<div class="collapsible-body">
+								<ul>
+									<li><a href="interactive-d3/usa.html">Desemprego USA</a></li>
 
 								</ul>
 							</div>
@@ -58,11 +73,11 @@
 			</ul>
 			
 		</div>
-		<nav class="top-nav full" style="height: 130px">
+		<nav class="top-nav full teal" style="height: 130px">
 				<div class="container">
 					<div class="nav-wrapper ">
 					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons top-nav full hide-on-large-only ">menu</i> </a>
-						<div class="page-title header center" style=" line-height:120px; font-size: 30px"> Datavis</div>
+						<div class="page-title header center" style=" line-height:120px; font-size: 50px"> Datavis</div>
 					</div>
 				</div>
 			</nav>
@@ -78,7 +93,7 @@
 				<div class="col s12 l6" >
 		  			<a href="graf1.html">
 			  			<div class="card z-depth-1" style=" border: 10px" >
-			  				<div class="card-image waves-effect waves-red waves-block waves-light">
+			  				<div class="card-image waves-effect waves-teal waves-block waves-light">
 								<img class="responsive-img" src="tb1.png"  >
 			  				</div>
 			  				
@@ -92,7 +107,7 @@
 		  		<div class="col s12 l6">
 		  			<a href="graf2.html">
 		  				<div class="card z-depth-1"  >
-		  					<div class="card-image waves-effect waves-red waves-block waves-light">
+		  					<div class="card-image waves-effect waves-teal waves-block waves-light">
 		  						<img class="responsive-img"  src="tb2.png"   >
 		  					</div>
 		  					<div class="card-content grey lighten-3"> 
@@ -110,7 +125,7 @@
 				<div class=" col s12 l6 ">
 					<a href="movies_d3.html">
 			  			<div class="card z-depth-1" style=" border: 10px" >
-			  				<div class="card-image waves-effect waves-red waves-block waves-light">
+			  				<div class="card-image waves-effect waves-teal waves-block waves-light">
 								<img class="responsive-img" src="tb3.png"  >
 			  				</div>
 			  				
@@ -130,7 +145,7 @@
 					<div class=" col s12 l6">
 						<a href="dcjs1.html">
 				  			<div class="card z-depth-1" style=" border: 10px; " >
-				  				<div class="card-image waves-effect waves-red waves-block waves-light">
+				  				<div class="card-image waves-effect waves-teal waves-block waves-light">
 									<img class="responsive-img" src="tb41.png"  >
 				  				</div>
 				  				
@@ -147,7 +162,7 @@
 					<div class=" col s12 l6">
 						<a href="dcjs2.html">
 				  			<div class="card z-depth-1" style=" border: 10px" >
-				  				<div class="card-image waves-effect waves-red waves-block waves-light">
+				  				<div class="card-image waves-effect waves-teal waves-block waves-light">
 									<img class="responsive-img" src="tb42.png"  >
 				  				</div>
 				  				
@@ -160,9 +175,8 @@
 					</div>
 				</li>
 			</ul>
-			<a href="interactive-d3/usa.html">
-				<h2> MAMAO</h2>
-			</a>
+
+			
 			<h2>Leaflet </h2>
 			<ul id="mamao">
 				<div class="row">
@@ -170,7 +184,7 @@
 					<div class=" col s12 l6">
 						<a href="quakes/quakes.html">
 				  			<div class="card z-depth-1" style=" border: 10px; " >
-				  				<div class="card-image waves-effect waves-red waves-block waves-light">
+				  				<div class="card-image waves-effect waves-teal waves-block waves-light">
 									<img class="responsive-img" src="crimes/novazelandia.png"  >
 				  				</div>
 				  				
@@ -187,7 +201,7 @@
 					<div class=" col s12 l6">
 						<a href="crimes/crimes.html">
 				  			<div class="card z-depth-1" style=" border: 10px" >
-				  				<div class="card-image waves-effect waves-red waves-block waves-light">
+				  				<div class="card-image waves-effect waves-teal waves-block waves-light">
 									<img class="responsive-img" src="crimes/homicidios.png"  >
 				  				</div>
 				  				
@@ -203,6 +217,26 @@
 
 			</div>
 		</div>
+		<h2>Alterando visão </h2>
+			<ul id="limao">
+				<div class="row">
+				<li>
+					<div class=" col s12 l6">
+						<a href="interactive-d3/usa.html">
+				  			<div class="card z-depth-1" style=" border: 10px; " >
+				  				<div class="card-image waves-effect waves-teal waves-block waves-light">
+									<img class="responsive-img" src="usa.png"  >
+				  				</div>
+				  				
+				  				<div class="card-content grey lighten-3"> Desemprego USA </div>
+				  				
+
+				  			</div>
+			  				
+						</a>
+					</div>
+				</li>
+			</ul>
 		
 			</main>
 

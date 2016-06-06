@@ -53,10 +53,16 @@ h2{
     display: inline-block;
 }
 .header {
-    padding-left: 240px;
+    padding-left: 20vw;
     font-family: 'Source sans pro', sans-serif
 }
-@media (max-width: 400px) { .header { padding-left: 0px } }
+@media (max-width: 400px) { .header { padding-left: 0px; }  }
+@media only screen and ( max-width: 600px) { .side-nav { width: 50vw; } }
+@media only screen and ( min-width: 601px) { .side-nav { width: 25vw; } }
+
+/*.side-nav {
+    width: 50vw;
+}*/
 .card {
     font-family: 'Droid-serif',serif;
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"></meta>
+	<link rel="stylesheet" href="css/dc.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/crossfilter.js" charset="utf-8"></script>
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="js/dc.js" charset="utf-8"></script>
+	
+<head>
+	<title></title>
+</head>
+<body>
+<div id="mamao" style="width: auto">
+	<h1>Lava jato</h1>
+</div>
+</body>
+	<script type="text/javascript" >
+	
+		var composite = dc.compositeChart("#mamao"); 
+		var chartConducao = dc.lineChart(composite);
+		var chartPrisoes = dc.lineChart(composite);
+		var chartBusca = dc.lineChart(composite);
+
+		
+		d3.csv('fases.csv',function (data) {
+			var dataFormat = d3.time.format("%d/%m/%Y");
+
+			data.forEach(function(d){
+				d.Data = dataFormat.parse(d.Data);
+				d.Fase = +d.Fase;
+			})
+			var facts = crossfilter(data);
+			var dim = facts.dimension(function(x){
+				return x.Data;
+			})
+			var gConducao  = dim.group().reduceSum(function(d){
+				return d.Conducao;
+			})
+			var gPrisao = dim.group().reduceSum(function(d){
+				return d.Prisao;
+			})
+			var gBusca = dim.group().reduceSum(function(d){
+				return d.Busca;
+			})
+			function getInterpolation() {
+			  
+			  var interpolate = d3.scale.quantile()
+			      .domain([0,1])
+			      .range(d3.range(1, indexSeries.length + 1));
+
+			  return function(t) {
+			      var interpolatedLine = indexSeries.slice(0, interpolate(t));
+			      return lineFunction(interpolatedLine);
+			      }
+			  }
+			chartConducao.dimension(dim)
+				.group(gConducao,'Conducoes Coercitivas')
+				// .renderDataPoints(true)
+				.dotRadius(10)
+				.colors('#1b9e77')
+				.interpolate('cardinal')
+				.renderArea(false)
+				.renderDataPoints(true)
+				.tension(0.78)
+				.title(function(d){
+					console.log(d);
+					return 'Conduções coercitivas em ' + dataFormat(d.key) +': '+d.value;
+				})
+
+			chartPrisoes.dimension(dim)
+				.group(gPrisao,'Prisoes')
+				.colors('#7570b3')
+				.tension(0.78)
+				.dotRadius(10)
+				.renderArea(false)
+				.interpolate('cardinal')
+				.renderDataPoints(true)	
+				.title(function(d){
+					return 'Prisões efetuadas em ' + dataFormat(d.key) +': '+d.value;
+				})			
+				
+			chartBusca.dimension(dim)
+				.group(gBusca,'Busca e Apreensao')
+				// .renderDataPoints(true)
+				.colors('#d95f02')
+				.interpolate('cardinal')
+				.tension(0.78)
+				.renderArea(false)
+				.renderDataPoints(true)
+				.dotRadius(10)
+				// .dashStyle([15,5])
+				.title(function(d){
+					return  'Buscas e apreensões em ' + dataFormat(d.key) +': '+d.value;
+				})
+				// .interpolate('linear')
+				
+			composite
+				.legend(dc.legend().x(400).y(10).itemHeight(13).gap(5).autoItemWidth(true))
+				.width(1200)
+				.height(400)
+				.shareTitle(false)
+				.zoomOutRestrict(false)
+				.x(d3.time.scale().domain(d3.extent(data, function(d) { return d.Data; })))
+				.compose([chartPrisoes,chartConducao,chartBusca])	
+				.elasticY(true)
+				.elasticX(true)
+				.mouseZoomable(false)
+				.renderHorizontalGridLines(true)
+				.brushOn(false)
+				// .isOrdinal(true)
+				.elasticY(false)
+
+			dc.renderAll();
+		});
+
+	</script>
+</html>

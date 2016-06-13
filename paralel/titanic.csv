@@ -1,0 +1,9 @@
+Class,Age,Sex,Survived
+PMDB,1,Sim,Condenado
+PSDB,2,Nao,Absolvido
+PMDB,1,Sim,Condenado
+PSDB,2,Nao,Absolvido
+PMDB,3,Nao,Condenado
+PSDB,2,Nao,Absolvido
+PMDB,1,Sim,Condenado
+PSDB,2,Nao,Absolvido

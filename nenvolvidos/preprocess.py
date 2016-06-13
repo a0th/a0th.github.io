@@ -73,3 +73,17 @@ for key in d:
 				'Envolvidos':nomes[k],
 				})
 		arq.close()
+
+fnames = ['Partido','Estado']
+outcsv = csv.DictWriter(open('titanic.csv','w'),fnames)
+l = data.loc[!data['Partido'].isnull()]
+outcsv.writeheader()
+for p in l:
+	if 'Condenado' in p['Estado']:
+		estado = 'Condenado'
+		nome = p['Nome']
+		outcsv.writerow({
+			'estado' : estado,
+			'nome' : nome
+			})
+

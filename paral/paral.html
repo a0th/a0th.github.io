@@ -71,13 +71,10 @@ pre, code { font-family: "Menlo", monospace; }
 </style>
 
 </head><body>
-<h1>Parallel Sets</h1>
-<p class="meta">A visualisation technique for multidimensional categorical data.
-
-</p><h2>Titanic Survivors</h2>
+</p><h2>Resultado por partido</h2>
+<p>cruzar essa tabela com voto por impeachment</p>
 <div id="vis"></div>
 <div class="options">
-  <span class="source">Data: <a href="http://www.amstat.org/publications/jse/v3n3/datasets.dawson.html">Robert J. MacG. Dawson</a>.</span>
   <span class="curves"><label for="curved"><input type="checkbox" id="curved" onchange="curves.call(this)"> Curves?</label></span>
 </div>
 
@@ -87,7 +84,7 @@ pre, code { font-family: "Menlo", monospace; }
 <script src="./paral_files/highlight.min.js"></script>
 <script>
 var chart = d3.parsets()
-    .dimensions(["Survived", "Sex", "Age", "Class"]);
+    .dimensions(["Partido", "Resultado"]);
 
 var vis = d3.select("#vis").append("svg")
     .attr("width", chart.width())

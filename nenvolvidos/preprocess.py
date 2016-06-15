@@ -84,6 +84,6 @@ for p in l:
 		nome = p['Nome']
 		outcsv.writerow({
 			'estado' : estado,
-			'nome' : nome
+			'nome' : p
 			})
 

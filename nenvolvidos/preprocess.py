@@ -74,16 +74,35 @@ for key in d:
 				})
 		arq.close()
 
-fnames = ['Partido','Estado']
-outcsv = csv.DictWriter(open('titanic.csv','w'),fnames)
-l = data.loc[!data['Partido'].isnull()]
+fnames = ['Partido','Resultado','Voto']
+outcsv = csv.DictWriter(open('resultados.csv','w'),fnames)
+q = data[data['Partido'].notnull()]
+q = q[['Partido','Resultado','Nome']].values
 outcsv.writeheader()
-for p in l:
-	if 'Condenado' in p['Estado']:
-		estado = 'Condenado'
-		nome = p['Nome']
-		outcsv.writerow({
-			'estado' : estado,
-			'nome' : p
-			})
+imp = pandas.read_csv('imp.csv')
+
+for p,r,n in q:
+	q = imp[imp['Deputado'] == n ]['Voto'].values
+	if len(q) > 0:
+		if "Sim" in q[0]:
+			voto = 'Sim'
+		elif "Não" in q[0]:
+			voto = "Não"
+		else:	
+			voto = "Abstenção"
+	else:
+		voto = "Não votou" 
+	if 'Condena' in r:
+		resultado = 'Condenado'
+	elif 'Absolvido' in r:
+		resultado = 'Absolvido'
+	elif 'finalizada' in r:
+		resultado = 'Em andamento'
+	else:
+		resultado = 'Outros'
+	outcsv.writerow({
+		'Resultado' : resultado,
+		'Partido' : p,
+		'Voto' : voto,
+		})
 

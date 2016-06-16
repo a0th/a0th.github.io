@@ -83,22 +83,22 @@ $.get(str, function(data) {
                 type: 'column'
             },
             title: {
-                text: 'Browser market shares. January, 2015 to May, 2015'
+                text: 'Numero de investigados por grupo'
             },
             subtitle: {
-                text: 'Click the columns to view versions. Source: <a href="http://netmarketshare.com">netmarketshare.com</a>.'
+                text: 'Clique nas colunas para mais detalhes'
             },
             xAxis: {
                 type: 'category'
             },
             yAxis: {
                 title: {
-                    text: 'Total percent market share'
+                    text: 'Numero de envolvidos'
                 }
 
             },
             legend: {
-                enabled: false
+                enabled: false  
             },
             plotOptions: {
                 series: {
@@ -111,14 +111,13 @@ $.get(str, function(data) {
             },
 
             tooltip: {
-                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+                headerFormat: '',
+                
+                pointFormat: 'Envolvidos de {point.name}: <b>{point.y:.0f}</b> <br/>'
             },
-            // data:{
-            //     csv:data
-            // }
+
             series: [{
-                name: 'Brands',
+                // name: 'Brands',
                 colorByPoint: true,
                 data: l
             }]

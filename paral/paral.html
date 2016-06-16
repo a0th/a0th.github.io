@@ -71,8 +71,7 @@ pre, code { font-family: "Menlo", monospace; }
 </style>
 
 </head><body>
-</p><h2>Resultado por partido</h2>
-<p>cruzar essa tabela com voto por impeachment</p>
+</p><h2>Status do Partido</h2>
 <div id="vis"></div>
 <div class="options">
   <span class="curves"><label for="curved"><input type="checkbox" id="curved" onchange="curves.call(this)"> Curves?</label></span>
@@ -84,7 +83,7 @@ pre, code { font-family: "Menlo", monospace; }
 <script src="./paral_files/highlight.min.js"></script>
 <script>
 var chart = d3.parsets()
-    .dimensions(["Partido", "Resultado"]);
+    .dimensions(["Partido", "Investigação na Lava Jato","Voto pelo Impeachment"]);
 
 var vis = d3.select("#vis").append("svg")
     .attr("width", chart.width())
@@ -107,7 +106,7 @@ function curves() {
   t.call(chart.tension(this.checked ? .5 : 1));
 }
 
-d3.csv("titanic.csv?201402", function(error, csv) {
+d3.csv("resultados.csv", function(error, csv) {
   vis.datum(csv).call(chart);
 
   window.icicle = function() {

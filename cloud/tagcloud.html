@@ -25,7 +25,9 @@
     }
 </style>
 <body>
+    <h2>Esclarecimento de Sergio Moro ao Ministro Teori Zavascki sobre a liberacao dos audios de Lula</h2>
     <x> </x>
+    <h2> Discurso de Lula na paulista apos sua conducao coercitiva  </h2>
     <y> </y>
 
 </body>
@@ -34,49 +36,7 @@ function draw1(file,mycolor,element,dominio){
     $.get(file,function(x){
     var d = {};
     var forbidden  = {"com":"no","como":"no","em":"no","no":"no","se":"no","700001743752":"no","18:53:515006205-98":"no",
-        "SFM©" : "no",
-        "::" : "no",
-        "(fls" : "no",
-        "\n" : "no",
-        "" : "no",
-        "nº" : "no",
-        "de" : "no",
-        "o" : "no",
-        "que" : "no",
-        "e" : "no",
-
-        "a" : "no",
-        "ao" : "no",
-        "ou" : "no",
-        "na" : "no",
-        "já" : "no",
-        "ainda" : "no",
-        "à" : "no",
-        "já" : "no",
-        "eu" : "no",
-        "este" : "no",
-        "à" : "no",
-        "é" : "no",
-        "ser" : "no",
-        "ele" : "no",
-        "isso" : "no",
-        "então" : "no",
-        "mais" : "no",
-        "também" : "no",
-        "há" :"no",
-        "tem" : "no",
-        "Eu" : "no",
-        "tem" : "no",
-        "as" : "no",
-        "pela" :"no",
-        "todo" :"no",
-        "Em" : "no",
-        "eles" : "no",
-        "pra" : "no",
-        "tá":"no",
-        
-        
-        "por" : "no",
+        "SFM©" : "no","::" : "no","(fls" : "no","\n" : "no","" : "no","nº" : "no","de" : "no","o" : "no","que" : "no","e" : "no",        "a" : "no","ao" : "no","ou" : "no","na" : "no","já" : "no","ainda" : "no","à" : "no","já" : "no","eu" : "no","este" : "no","à" : "no","é" : "no","ser" : "no","ele" : "no","isso" : "no","então" : "no","mais" : "no","também" : "no","há" :"no","tem" : "no","Eu" : "no","tem" : "no","as" : "no","pela" :"no","todo" :"no","Em" : "no","eles" : "no","pra" : "no","tá":"no","por" : "no",
         "para" :"no"
         }
     var s = x.split([' '])
@@ -136,8 +96,8 @@ function draw1(file,mycolor,element,dominio){
 
 }
 
-draw1('esclarecimento.txt',colorbrewer.Reds,"x",[10,20,30,70,130])
-draw1('lula.txt',colorbrewer.Blues,"y",[4,10,15,30,50])
+draw1('esclarecimento.txt',colorbrewer.Blues,"x",[10,20,30,70,130])
+draw1('lula.txt',colorbrewer.Reds,"y",[4,10,15,30,50])
 
 </script>
 

@@ -39,38 +39,7 @@ var build_drill = function(chaveslist){
     }
     return listaDeObjetos;
 }
-        
-
-// {
-//     name: 'Microsoft Internet Explorer',
-//     id: 'Microsoft Internet Explorer',
-//     data: [
-//         [
-//             'v11.0',
-//             24.13
-//         ],
-//         [
-//             'v8.0',
-//             17.2
-//         ],
-//         [
-//             'v9.0',
-//             8.11
-//         ],
-//         [
-//             'v10.0',
-//             5.33
-//         ],
-//         [
-//             'v6.0',
-//             1.06
-//         ],
-//         [
-//             'v7.0',
-//             0.5
-//         ]
-//     ]
-// }
+    
 $.get(str, function(data) {    
     var dados = $.csv.toObjects(data);
     l = build_data(dados);

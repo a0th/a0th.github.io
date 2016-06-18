@@ -12,7 +12,8 @@
 </head>
 <body>
 <div id="mamao" style="width: auto">
-	<h1>Lava jato</h1>
+	<h1>Operao Lava Jato</h1>
+	<p>Mandados expedidos ao longo das fases</p>
 </div>
 </body>
 	<script type="text/javascript" >
@@ -43,20 +44,9 @@
 			var gBusca = dim.group().reduceSum(function(d){
 				return d.Busca;
 			})
-			function getInterpolation() {
-			  
-			  var interpolate = d3.scale.quantile()
-			      .domain([0,1])
-			      .range(d3.range(1, indexSeries.length + 1));
-
-			  return function(t) {
-			      var interpolatedLine = indexSeries.slice(0, interpolate(t));
-			      return lineFunction(interpolatedLine);
-			      }
-			  }
 			chartConducao.dimension(dim)
 				.group(gConducao,'Conducoes Coercitivas')
-				// .renderDataPoints(true)
+				.renderDataPoints(true)
 				.dotRadius(10)
 				.colors('#1b9e77')
 				.interpolate('cardinal')
@@ -64,7 +54,6 @@
 				.renderDataPoints(true)
 				.tension(0.78)
 				.title(function(d){
-					console.log(d);
 					return 'Conduções coercitivas em ' + dataFormat(d.key) +': '+d.value;
 				})
 
@@ -82,7 +71,7 @@
 				
 			chartBusca.dimension(dim)
 				.group(gBusca,'Busca e Apreensao')
-				// .renderDataPoints(true)
+				.renderDataPoints(true)
 				.colors('#d95f02')
 				.interpolate('cardinal')
 				.tension(0.78)
@@ -90,7 +79,13 @@
 				.renderDataPoints(true)
 				.dotRadius(10)
 				// .dashStyle([15,5])
+				// .radiusValueAccessor(function(d){
+				// 	console.log(d)
+				// 	return d.value/8;
+				// })
+				// .r(d3.scale.linear().domain([50,100]))
 				.title(function(d){
+					// console.log(d.value)
 					return  'Buscas e apreensões em ' + dataFormat(d.key) +': '+d.value;
 				})
 				// .interpolate('linear')

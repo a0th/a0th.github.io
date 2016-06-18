@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"></meta>
+<link rel="stylesheet" href="css/dc.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/crossfilter.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/dc.js" charset="utf-8"></script>
+
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="mamao" style="width: auto">
+		<h1>Doações aos partidos envolvidos</h1>
+		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato</p>
+	</div>
+	<div id="melao" style="width: auto">
+		<h2> Doacoes de cada empreiteira </h2>
+	</div>
+</body>
+<script type="text/javascript" >
+
+	var bChart = dc.bubbleChart("#mamao");
+	var empreiteirasChart = dc.barChart("#melao")
+		// var chartConducao = dc.lineChart(composite);
+		// var chartPrisoes = dc.lineChart(composite);
+		// var chartBusca = dc.lineChart(composite);
+
+		
+		d3.csv('doacoes.csv',function (data) {
+			d3.csv('construtoras.csv',function(data2){
+
+				// var dataFormat = d3.time.format("%d/%m/%Y");
+				find = {}
+				cores = {
+					"PT" : '#FF0000',
+					"PSDB" : 'blue',
+					"PMDB" : "green",
+					"PP" : "steelblue",
+					'SD' : 'orange',
+					'PTB' : 'magenta'
+				}
+				data.forEach(function(d){
+					d.Valor = +d.Valor;
+					d.Total = +d.Total;
+					d.Envolvidos = +d.Envolvidos;
+					find[d.Valor] = {
+						"Partido" : d.Partido,
+						"nEnvolvidos" : d.Envolvidos,
+						"lv" : d.Valor,
+						'total' : d.Total,
+
+					}
+				})
+
+
+				var facts = crossfilter(data);
+				var dim = facts.dimension(function(x){
+					return x.Total;
+				})
+
+				var gValor  = dim.group().reduceSum(function(d){
+					return d.Valor;
+				})
+
+				bChart.dimension(dim)
+				.group(gValor,'Valor')
+				.title(function(d){
+					total = find[d.value]['total']
+					pr = d.value/total*100
+					n = find[d.value]['nEnvolvidos']
+					p = find[d.value]['Partido']
+					return find[d.value]['Partido'] + 
+					"\nProveniente de empresas envolvidas: " + pr.toFixed(2) +
+					"%\nMembros investigados na Lava-Jato: "+ n + 
+					'\nValor doado: R$'+d.value.toFixed(2) + 
+					' Milhões\nTotal: R$'+total.toFixed(2)+' Milhões';
+				})
+				.width(1000)
+				.height(400)
+				.colors(function(d){return cores[d]})
+				.colorAccessor(function (d, i){return find[d.value]['Partido'];})
+				.sortBubbleSize(true)
+				.radiusValueAccessor(function(d,x){
+					var ne = find[d.value]['nEnvolvidos'];
+					if(ne != 0)
+						return 1.*(ne+6);
+					return 0.3;
+					})
+				.label(function(d){
+					return find[d.value]['Partido']
+				})
+				.renderHorizontalGridLines(true)
+				.renderVerticalGridLines(true)
+
+				.x(d3.scale.linear().domain([0,700]))
+				.y(d3.scale.linear().domain([0,140]))
+				.xAxisLabel('Total arrecadado em doacoes - Milhões R$')
+				.yAxisLabel('Doações de empresas envolvidas na Lava Jato - Milhões R$')
+					// .mouseZoomable(true)
+
+
+				data2.forEach(function(d){
+						d.Valor = +d.Valor;
+					})
+				var facts2 = crossfilter(data2);
+				var dim2 = facts2.dimension(function(d){
+					return d.Construtora;
+				})
+				var malist = dim2.top(Infinity);
+				var l = []
+				console.log(malist)
+				for (var i = malist.length - 1; i >= 0; i--) {
+					l.push(malist[i]['Construtora'])
+				}
+				var g = dim2.group().reduceSum(function(d){
+					return d.Valor;
+				})
+				empreiteirasChart.dimension(dim2)
+					.group(g)
+					.x(d3.scale.ordinal())
+					.xUnits(dc.units.ordinal)
+				
+
+
+				dc.renderAll();
+			});
+		});
+
+			
+
+		</script>
+		</html>

@@ -54,44 +54,81 @@
 
 					}
 				})
-
+				data2.forEach(function(d){
+						d.Valor = +d.Valor;
+				})
 
 				var facts = crossfilter(data);
-				var dim = facts.dimension(function(x){
+				var dimension_total = facts.dimension(function(x){
 					return x.Total;
 				})
-
-				var gValor  = dim.group().reduceSum(function(d){
+				var dimension1_p = facts.dimension(function(d){
+					return d.Partido;
+				})
+				var groupbypartido = dimension1_p.group().reduceSum(function(x){
+					return x.Total
+				})
+				var facts2 = crossfilter(data2);
+				var dimensao_valor = facts2.dimension(function(d){
 					return d.Valor;
 				})
+				var dimensao_partido = facts2.dimension(function(d){
+					return d.Partido;
+				})
 
-				bChart.dimension(dim)
-					.group(gValor,'Valor')
+				var dimensao_empresa = facts2.dimension(function(d){
+					return d.Empresa
+				})
+				var g3 = dimensao_partido.group().reduceSum(function(d){
+					return d.Valor
+				})
+				l = groupbypartido.top(Infinity)
+				totais_por_partido = {}
+				for (var i = l.length - 1; i >= 0; i--) {
+					totais_por_partido[l[i].key] = l[i].value
+					// console.log(l[i])
+				}
+				bChart.dimension(dimensao_empresa)
+					.group(g3,'Valor')
 					.title(function(d){
-						total = find[d.value]['total']
-						pr = d.value/total*100
-						n = find[d.value]['nEnvolvidos']
-						p = find[d.value]['Partido']
-						return find[d.value]['Partido'] + 
-						"\nProveniente de empresas envolvidas: " + pr.toFixed(2) +
-						"%\nMembros investigados na Lava-Jato: "+ n + 
-						'\nValor doado: R$'+d.value.toFixed(2) + 
-						' Milhões\nTotal: R$'+total.toFixed(2)+' Milhões';
+						// console.log(d)
+						return d.key + '+' + d.value;})
+					// 	total = find[d.value]['total']
+					// 	pr = d.value/total*100
+					// 	n = find[d.value]['nEnvolvidos']
+					// 	p = find[d.value]['Partido']
+					// 	return find[d.value]['Partido'] + 
+					// 	"\nProveniente de empresas envolvidas: " + pr.toFixed(2) +
+					// 	"%\nMembros investigados na Lava-Jato: "+ n + 
+					// 	'\nValor doado: R$'+d.value.toFixed(2) + 
+					// 	' Milhões\nTotal: R$'+total.toFixed(2)+' Milhões';
+					// })
+					.keyAccessor(function(p){
+						return totais_por_partido[p.key]
 					})
+					.valueAccessor(function (p) {
+						// console.log(p)
+							return p.value
+					})
+					// .radiusValueAccessor(function (p) {
+					// 	return 10;
+					// 	// return p.value
+					// })
 					.width(1000)
 					.height(400)
 					.colors(function(d){return cores[d]})
-					.colorAccessor(function (d, i){return find[d.value]['Partido'];})
-					.sortBubbleSize(true)
+					// .colorAccessor(function (d, i){return find[d.value]['Partido'];})
+					// .sortBubbleSize(true)
 					.radiusValueAccessor(function(d,x){
-						var ne = find[d.value]['nEnvolvidos'];
-						if(ne != 0)
-							return 1.*(ne+6);
-						return 0.3;
-						})
-					.label(function(d){
-						return find[d.value]['Partido']
-					})
+						return 10;})
+						// var ne = find[d.value]['nEnvolvidos'];
+						// if(ne != 0)
+						// 	return 1.*(ne+6);
+						// return 0.3;
+						// })
+					// .label(function(d){
+					// 	return find[d.value]['Partido']
+					// })
 					.renderHorizontalGridLines(true)
 					.renderVerticalGridLines(true)
 
@@ -102,23 +139,19 @@
 						// .mouseZoomable(true)
 
 
-				data2.forEach(function(d){
-						d.Valor = +d.Valor;
-					})
-				var facts2 = crossfilter(data2);
-				var dim2 = facts2.dimension(function(d){
-					return d.Empresa;
-				})
+				
+				
 				// var malist = dim2.top(Infinity);
 				// var l = []
 				// console.log(malist)
 				// for (var i = malist.length - 1; i >= 0; i--) {
 				// 	l.push(malist[i]['Empresa'])
 				// }
-				var g = dim2.group().reduceSum(function(d){
+
+				var g = dimensao_empresa.group().reduceSum(function(d){
 					return d.Valor;
 				})
-				empreiteirasChart.dimension(dim2)
+				empreiteirasChart.dimension(dimensao_empresa)
 					.width(600)
 					.height(600)
 					.margins({top: 30, right: 50, bottom: 140, left: 40})

@@ -8,18 +8,3 @@ body {
     text-anchor: end !important;
     transform: rotate(-65deg);
 }
-/*
-.x  {
-	height: 300px;
-	margin: 30px;
-	padding: 30px;
-
-}*/
-
-.chart-body {
-	/*transform: translate(0,-50px);*/
-}
-/*.svg {
-	margin: 100px;
-	height: 900px;
-}*/

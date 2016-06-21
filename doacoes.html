@@ -6,33 +6,34 @@
 <script src="js/crossfilter.js" charset="utf-8"></script>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="js/dc.js" charset="utf-8"></script>
-
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <head>
 	<title></title>
 </head>
-<body>
+<body >
 	<div id="mamao" style="width: auto">
-		<h1>Doações aos partidos envolvidos</h1>
-		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato</p>
+		<a href="#" id="reset_button"> Resetar filtros</a>
+		<h1>Doações aos partidos envolvidos</h1> 
+		
+		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato. Clique na bolha para filtrar informações</p>
+
 		<br>
 	</div>
 	<div id="empreiteira" style="width: auto">
 		<h2> Doacoes de cada empreiteira </h2>
+		<p> Clique no gráfico para filtrar. </p>
 	</div>
 </body>
 <script type="text/javascript" >
 
+
 	var bChart = dc.bubbleChart("#mamao");
 	var empreiteirasChart = dc.barChart("#empreiteira")
-		// var chartConducao = dc.lineChart(composite);
-		// var chartPrisoes = dc.lineChart(composite);
-		// var chartBusca = dc.lineChart(composite);
 
 		
-		d3.csv('doacoes.csv',function (data) {
-			d3.csv('doacoes2.csv',function(data2){
+		d3.csv('doacoes.csv',function (total_doacoes) {
+			d3.csv('doacoes2.csv',function(doacoes){
 
-				// var dataFormat = d3.time.format("%d/%m/%Y");
 				find = {}
 				cores = {
 					"PT" : '#FF0000',
@@ -40,130 +41,161 @@
 					"PMDB" : "green",
 					"PP" : "steelblue",
 					'SD' : 'orange',
-					'PTB' : 'magenta'
+					'PTB' : 'magenta',
+					'outros' : 'white'
 				}
-				data.forEach(function(d){
+				total_doacoes.forEach(function(d){
 					d.Valor = +d.Valor;
 					d.Total = +d.Total;
 					d.Envolvidos = +d.Envolvidos;
-					find[d.Valor] = {
-						"Partido" : d.Partido,
+					find[d.Partido] = {
 						"nEnvolvidos" : d.Envolvidos,
-						"lv" : d.Valor,
 						'total' : d.Total,
-
 					}
 				})
-				data2.forEach(function(d){
+				doacoes.forEach(function(d){
 						d.Valor = +d.Valor;
 				})
 
-				var facts = crossfilter(data);
-				var dimension_total = facts.dimension(function(x){
-					return x.Total;
-				})
-				var dimension1_p = facts.dimension(function(d){
+				var facts_total = crossfilter(total_doacoes);
+
+				var facts_doacoes = crossfilter(doacoes);
+				
+				var dimensao_partido_total = facts_total.dimension(function(d){
 					return d.Partido;
 				})
-				var groupbypartido = dimension1_p.group().reduceSum(function(x){
-					return x.Total
-				})
-				var facts2 = crossfilter(data2);
-				var dimensao_valor = facts2.dimension(function(d){
-					return d.Valor;
-				})
-				var dimensao_partido = facts2.dimension(function(d){
+				var dimensao_partido_doacoes = facts_doacoes.dimension(function(d){
 					return d.Partido;
+				})
+				var dimensao_empresa = facts_doacoes.dimension(function(d){
+					return d.Empresa;
 				})
 
-				var dimensao_empresa = facts2.dimension(function(d){
-					return d.Empresa
+				var grupo_total_por_partido = dimensao_partido_total.group().reduceSum(function(x){
+					return x.Total
 				})
-				var g3 = dimensao_partido.group().reduceSum(function(d){
-					return d.Valor
-				})
-				l = groupbypartido.top(Infinity)
+				l = grupo_total_por_partido.top(Infinity)
+				//totais_por_partido e usado para determinar o valor x das bolhas em fucnao do partido.
 				totais_por_partido = {}
 				for (var i = l.length - 1; i >= 0; i--) {
 					totais_por_partido[l[i].key] = l[i].value
-					// console.log(l[i])
 				}
-				bChart.dimension(dimensao_empresa)
-					.group(g3,'Valor')
+				
+				
+				
+				var doacoes_suspeitas_por_partido = dimensao_partido_doacoes.group().reduceSum(function(d){
+					return d.Valor
+				})
+
+				
+				partidos_filtrados = []
+				console.log(find['PT']['total'])
+				bChart.dimension(doacoes_suspeitas_por_partido)
+					.group(doacoes_suspeitas_por_partido,'Valor')
+					.turnOnControls(true)
+					.mouseZoomable(true)
+					.zoomOutRestrict(true)
 					.title(function(d){
-						// console.log(d)
-						return d.key + '+' + d.value;})
-					// 	total = find[d.value]['total']
-					// 	pr = d.value/total*100
-					// 	n = find[d.value]['nEnvolvidos']
-					// 	p = find[d.value]['Partido']
-					// 	return find[d.value]['Partido'] + 
-					// 	"\nProveniente de empresas envolvidas: " + pr.toFixed(2) +
-					// 	"%\nMembros investigados na Lava-Jato: "+ n + 
-					// 	'\nValor doado: R$'+d.value.toFixed(2) + 
-					// 	' Milhões\nTotal: R$'+total.toFixed(2)+' Milhões';
-					// })
+						if(d.key == 'PT')
+							console.log( d.key + '+' + d.value)
+						if(d.key in find){
+							total = find[d.key]['total']
+							pr = d.value/total*100
+							n = find[d.key]['nEnvolvidos']
+							return d.key + 
+								"\nProveniente de empresas envolvidas: R$ " 
+								+ d.value.toFixed(2) + 'M ('+pr.toFixed(1)+'%)'+
+								"\nMembros investigados na Lava-Jato: "+ n + 
+								'\nTodas as doacoes: R$'+total.toFixed(2)+' Milhões';
+						}
+					})
 					.keyAccessor(function(p){
 						return totais_por_partido[p.key]
 					})
 					.valueAccessor(function (p) {
-						// console.log(p)
-							return p.value
+						return p.value
 					})
-					// .radiusValueAccessor(function (p) {
-					// 	return 10;
-					// 	// return p.value
-					// })
-					.width(1000)
-					.height(400)
+					.radiusValueAccessor(function (p) {
+						return 10;
+					})
+					.width(800)
+					.height(600)
 					.colors(function(d){return cores[d]})
-					// .colorAccessor(function (d, i){return find[d.value]['Partido'];})
-					// .sortBubbleSize(true)
+					.colorAccessor(function (d, i){
+						if(d.key in cores)
+							return d.key;
+						else
+							return 'outros'
+					})
+					.sortBubbleSize(true)
 					.radiusValueAccessor(function(d,x){
-						return 10;})
-						// var ne = find[d.value]['nEnvolvidos'];
-						// if(ne != 0)
-						// 	return 1.*(ne+6);
-						// return 0.3;
-						// })
-					// .label(function(d){
-					// 	return find[d.value]['Partido']
-					// })
+						if(d.key in find)
+							var ne = find[d.key]['nEnvolvidos'];
+							if(ne != 0)
+								return 1.*(ne+6);
+						return 0.3;
+						})
 					.renderHorizontalGridLines(true)
 					.renderVerticalGridLines(true)
-
 					.x(d3.scale.linear().domain([0,700]))
 					.y(d3.scale.linear().domain([0,140]))
 					.xAxisLabel('Total arrecadado em doacoes - Milhões R$')
-					.yAxisLabel('Doações de empresas envolvidas na Lava Jato - Milhões R$');
-						// .mouseZoomable(true)
+					.yAxisLabel('Doações de empresas envolvidas na Lava Jato - Milhões R$')
+					.on('renderlet.click',function(chart){
+						chart.selectAll("g.node circle").on("click.me", function(d){
+					    	console.log(partidos_filtrados)
+					    	var index = partidos_filtrados.indexOf(d.key)
+					    	console.log(index);
+					    	if( index != -1)
+					    		partidos_filtrados.splice(index,1)
+					    	else
+					    		partidos_filtrados.push(d.key)
+					    	console.log(partidos_filtrados)
+					        dimensao_partido_doacoes.filter(function(f){
+					        	if(partidos_filtrados.length != 0)
+						        	return partidos_filtrados.includes(f);
+								else
+									return true
+					        })
 
+					        dc.redrawAll(chart.chartGroup());
 
-				
-				
-				// var malist = dim2.top(Infinity);
-				// var l = []
-				// console.log(malist)
-				// for (var i = malist.length - 1; i >= 0; i--) {
-				// 	l.push(malist[i]['Empresa'])
-				// }
+					    })
+					})	
 
-				var g = dimensao_empresa.group().reduceSum(function(d){
-					return d.Valor;
+			$("#reset_button").click(
+				function() {
+					dimensao_partido_doacoes.filter(null);
+					bChart.filterAll()
+					empreiteirasChart.filterAll()
+					dc.redrawAll();
+					partidos_filtrados = []
+					
 				})
+				var g = dimensao_empresa.group().reduceSum(dc.pluck('Valor'))
+				
 				empreiteirasChart.dimension(dimensao_empresa)
-					.width(600)
+					.width(400)
 					.height(600)
 					.margins({top: 30, right: 50, bottom: 140, left: 40})
-					.group(g)
+					.group(g,'Valor')
 					.x(d3.scale.ordinal())
 					.xUnits(dc.units.ordinal)
-
+					.ordering(dc.pluck('value'))
+					.renderHorizontalGridLines(true)
+					.renderVerticalGridLines(true)
+					.yAxisLabel('Total de doações em Milhões')
+					.title(function(d){
+						return d.key + ': R$' + d.value.toFixed(2) + 'M'
+					})
+					
+				
 				dc.renderAll();
 			});
 		});
 
 			
 
+	
 		</script>
 		</html>

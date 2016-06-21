@@ -5,19 +5,20 @@
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/crossfilter.js" charset="utf-8"></script>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="js/dc.js" charset="utf-8"></script>
+<script src="https://rawgit.com/dc-js/dc.js/master/dc.js" charset="utf-8"></script>
 <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <head>
 	<title></title>
 </head>
 <body >
-	<div id="mamao" style="width: auto">
 		<a href="#" id="reset_button"> Resetar filtros</a>
+		<a href="javascript:bChart.focus()" id="reset_button"> Resetar zoom</a>
+	<div id="mamao" style="width: auto; ">
+
 		<h1>Doações aos partidos envolvidos</h1> 
 		
 		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato. Clique na bolha para filtrar informações</p>
 
-		<br>
 	</div>
 	<div id="empreiteira" style="width: auto">
 		<h2> Doacoes de cada empreiteira </h2>
@@ -42,7 +43,7 @@
 					"PP" : "steelblue",
 					'SD' : 'orange',
 					'PTB' : 'magenta',
-					'outros' : 'white'
+					'outros' : 'grey'
 				}
 				total_doacoes.forEach(function(d){
 					d.Valor = +d.Valor;
@@ -161,6 +162,9 @@
 					        dc.redrawAll(chart.chartGroup());
 
 					    })
+					})
+					.on('zoomed',function(d){
+						bChart.filterAll();
 					})	
 
 			$("#reset_button").click(

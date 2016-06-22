@@ -6,14 +6,15 @@
 	<script src="js/crossfilter.js" charset="utf-8"></script>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script src="js/dc.js" charset="utf-8"></script>
-	
+	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <head>
 	<title></title>
 </head>
 <body>
 <div id="mamao" style="width: auto">
-	<h1>Operao Lava Jato</h1>
-	<p>Mandados expedidos ao longo das fases</p>
+	<h1>Operacao Lava Jato</h1>
+	<p>Mandados expedidos ao longo das fases. Clique na legenda para filtrar. Mantenha o mouse sobre
+	um ponto para detalhes</p>
 </div>
 </body>
 	<script type="text/javascript" >
@@ -22,39 +23,69 @@
 		var chartConducao = dc.lineChart(composite);
 		var chartPrisoes = dc.lineChart(composite);
 		var chartBusca = dc.lineChart(composite);
-
+		var dim_tipo;
 		
 		d3.csv('fases.csv',function (data) {
 			var dataFormat = d3.time.format("%d/%m/%Y");
-
+			var dic = {}
 			data.forEach(function(d){
 				d.Data = dataFormat.parse(d.Data);
 				d.Fase = +d.Fase;
+				d.Valor = +d.Valor;
+				dic[d.Data] = d.Fase;
+				// d.Tipo = d.Tipo;
 			})
 			var facts = crossfilter(data);
 			var dim = facts.dimension(function(x){
 				return x.Data;
 			})
+			dim_tipo = facts.dimension(function(x){
+				return x.Tipo;
+			})
+			$("#reset_button").click(function() {
+					dim_tipo.filter(null);
+					composite.filterAll()
+					dc.redrawAll();
+						
+				})
+
+			$("#delete_button").click(function() {
+					dim_tipo.filter(function(d){return false;});
+					composite.filterAll()
+					dc.redrawAll();
+						
+				})
+			
+
 			var gConducao  = dim.group().reduceSum(function(d){
-				return d.Conducao;
+				if(d.Tipo == 'Conducao')
+					return d.Valor;
+				else
+					return 0;
 			})
 			var gPrisao = dim.group().reduceSum(function(d){
-				return d.Prisao;
+				if(d.Tipo == 'Prisao')
+					return d.Valor;
+				else
+					return 0;
+				
 			})
 			var gBusca = dim.group().reduceSum(function(d){
-				return d.Busca;
+				if(d.Tipo == 'Busca')
+					return d.Valor;
+				else
+					return 0;
 			})
 			chartConducao.dimension(dim)
 				.group(gConducao,'Conducoes Coercitivas')
-				.renderDataPoints(true)
 				.dotRadius(10)
 				.colors('#1b9e77')
 				.interpolate('cardinal')
 				.renderArea(false)
-				.renderDataPoints(true)
+				.renderDataPoints({radius: 3.5, fillOpacity: 0.8, strokeOpacity: 0.8})
 				.tension(0.78)
 				.title(function(d){
-					return 'Conduções coercitivas em ' + dataFormat(d.key) +': '+d.value;
+					return 'Fase: '+dic[d.key]+ '\nConduções coercitivas em ' + dataFormat(d.key) +': '+d.value;
 				})
 
 			chartPrisoes.dimension(dim)
@@ -64,9 +95,9 @@
 				.dotRadius(10)
 				.renderArea(false)
 				.interpolate('cardinal')
-				.renderDataPoints(true)	
+				.renderDataPoints({radius: 3.5, fillOpacity: 0.8, strokeOpacity: 0.8})
 				.title(function(d){
-					return 'Prisões efetuadas em ' + dataFormat(d.key) +': '+d.value;
+					return 'Fase: '+dic[d.key]+ '\nPrisões efetuadas em ' + dataFormat(d.key) +': '+d.value;
 				})			
 				
 			chartBusca.dimension(dim)
@@ -76,20 +107,14 @@
 				.interpolate('cardinal')
 				.tension(0.78)
 				.renderArea(false)
-				.renderDataPoints(true)
+				.renderDataPoints({radius: 3.5, fillOpacity: 0.8, strokeOpacity: 0.8})
+
 				.dotRadius(10)
-				// .dashStyle([15,5])
-				// .radiusValueAccessor(function(d){
-				// 	console.log(d)
-				// 	return d.value/8;
-				// })
-				// .r(d3.scale.linear().domain([50,100]))
 				.title(function(d){
-					// console.log(d.value)
-					return  'Buscas e apreensões em ' + dataFormat(d.key) +': '+d.value;
+					return  'Fase: '+dic[d.key]+ '\nBuscas e apreensões em ' + dataFormat(d.key) +': '+d.value;
 				})
-				// .interpolate('linear')
-				
+				filtro_nomes = ['Busca','Conducao','Prisao']
+			
 			composite
 				.legend(dc.legend().x(400).y(10).itemHeight(13).gap(5).autoItemWidth(true))
 				.width(1200)
@@ -100,14 +125,58 @@
 				.compose([chartPrisoes,chartConducao,chartBusca])	
 				.elasticY(true)
 				.elasticX(true)
-				.mouseZoomable(false)
+				// .mouseZoomable(true)
 				.renderHorizontalGridLines(true)
 				.brushOn(false)
 				// .isOrdinal(true)
 				.elasticY(false)
 
-			dc.renderAll();
-		});
 
+				.on('renderlet.click',function(chart){
+						chart.selectAll("g .dc-legend-item").on("click.me", function(d){
+							tipo_do_grafico = d.name
+							var nomechave = ""	
+							if(tipo_do_grafico == "Prisoes"){
+								nomechave = "Prisao";
+							} else if ( tipo_do_grafico == "Conducoes Coercitivas"){
+								nomechave = "Conducao";
+							} else
+								nomechave = "Busca" 
+							var index = filtro_nomes.indexOf(nomechave);
+							if( index  != -1 ){
+								filtro_nomes.splice(index,1);
+							}
+							else
+								filtro_nomes.push(nomechave)
+							dim_tipo.filter(function(key){
+								if(filtro_nomes.includes(key))
+									return true;
+								return false;
+							})
+							dc.redrawAll();
+					    })
+					})
+			// dim_tipo.filter(null)
+			dc.renderAll();
+			dim_tipo.filter(function(d){
+					return false;
+				})
+			dc.redrawAll();
+			var f = function(){
+				dim_tipo.filter(null)
+				// alert('mamae!')
+				dc.redrawAll()
+			}
+			var g = function(){
+				dim_tipo.filter(function(d){
+					return false;
+				})
+				dc.redrawAll();
+			}
+			
+			// window.setTimeout(g,0.11);
+			window.setTimeout(f,500);
+			
+		});
 	</script>
 </html>

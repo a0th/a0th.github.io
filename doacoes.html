@@ -17,7 +17,7 @@
 
 		<h1>Doações aos partidos envolvidos</h1> 
 		
-		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato. Clique na bolha para filtrar informações</p>
+		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato. Clique na bolha para filtrar informações. Mantenha o mouse sobre a bolha para mais detalhes. Use o botao de rolagem para dar zoom.</p>
 
 	</div>
 	<div id="empreiteira" style="width: auto">
@@ -68,9 +68,7 @@
 				var dimensao_partido_doacoes = facts_doacoes.dimension(function(d){
 					return d.Partido;
 				})
-				var dimensao_empresa = facts_doacoes.dimension(function(d){
-					return d.Empresa;
-				})
+				
 
 				var grupo_total_por_partido = dimensao_partido_total.group().reduceSum(function(x){
 					return x.Total
@@ -167,14 +165,17 @@
 						bChart.filterAll();
 					})	
 
-			$("#reset_button").click(
-				function() {
+				$("#reset_button").click(function() {
 					dimensao_partido_doacoes.filter(null);
 					bChart.filterAll()
 					empreiteirasChart.filterAll()
 					dc.redrawAll();
 					partidos_filtrados = []
-					
+						
+				})
+			
+				var dimensao_empresa = facts_doacoes.dimension(function(d){
+					return d.Empresa;
 				})
 				var g = dimensao_empresa.group().reduceSum(dc.pluck('Valor'))
 				

@@ -1,91 +1,15 @@
-tipo,valor,data,fase
-busca,81,17/03/2014,1
-prisao,28,17/03/2014,1
-conducao,19,17/03/2014,1
-busca,6,20/03/2014,2
-prisao,1,20/03/2014,2
-conducao,0,20/03/2014,2
-busca,15,11/04/2014,3
-prisao,3,11/04/2014,3
-conducao,6,11/04/2014,3
-busca,1,11/06/2014,4
-prisao,1,11/06/2014,4
-conducao,0,11/06/2014,4
-busca,7,01/07/2014,5
-prisao,1,01/07/2014,5
-conducao,1,01/07/2014,5
-busca,11,22/08/2014,6
-prisao,0,22/08/2014,6
-conducao,1,22/08/2014,6
-busca,49,14/11/2014,7
-prisao,27,14/11/2014,7
-conducao,9,14/11/2014,7
-busca,0,14/01/2015,8
-prisao,1,14/01/2015,8
-conducao,0,14/01/2015,8
-busca,40,05/02/2015,9
-prisao,4,05/02/2015,9
-conducao,18,05/02/2015,9
-busca,0,16/03/2015,10
-prisao,4,16/03/2015,10
-conducao,0,16/03/2015,10
-busca,16,10/04/2015,11
-prisao,7,10/04/2015,11
-conducao,9,10/04/2015,11
-busca,1,15/04/2015,12
-prisao,2,15/04/2015,12
-conducao,1,15/04/2015,12
-busca,4,21/05/2015,13
-prisao,1,21/05/2015,13
-conducao,1,21/05/2015,13
-busca,38,19/06/2015,14
-prisao,12,19/06/2015,14
-conducao,9,19/06/2015,14
-busca,4,02/07/2015,15
-prisao,1,02/07/2015,15
-conducao,0,02/07/2015,15
-busca,23,28/07/2015,16
-prisao,2,28/07/2015,16
-conducao,5,28/07/2015,16
-busca,26,03/08/2015,17
-prisao,8,03/08/2015,17
-conducao,6,03/08/2015,17
-busca,10,13/08/2015,18
-prisao,1,13/08/2015,18
-conducao,0,13/08/2015,18
-busca,7,21/09/2015,19
-prisao,2,21/09/2015,19
-conducao,2,21/09/2015,19
-busca,11,16/11/2015,20
-prisao,2,16/11/2015,20
-conducao,5,16/11/2015,20
-busca,25,24/11/2015,21
-prisao,1,24/11/2015,21
-conducao,6,24/11/2015,21
-busca,15,27/01/2016,22
-prisao,6,27/01/2016,22
-conducao,6,27/01/2016,22
-busca,38,22/02/2016,23
-prisao,8,22/02/2016,23
-conducao,5,22/02/2016,23
-busca,33,04/03/2016,24
-prisao,0,04/03/2016,24
-conducao,11,04/03/2016,24
-busca,0,21/03/2016,25
-prisao,1,21/03/2016,25
-conducao,0,21/03/2016,25
-busca,67,22/03/2016,26
-prisao,15,22/03/2016,26
-conducao,28,22/03/2016,26
-busca,8,01/05/2016,27
-prisao,2,01/05/2016,27
-conducao,2,01/05/2016,27
-busca,15,12/04/2016,28
-prisao,3,12/04/2016,28
-conducao,5,12/04/2016,28
-busca,6,23/05/2016,29
-prisao,3,23/05/2016,29
-conducao,0,23/05/2016,29
-busca,28,24/07/2016,30
-prisao,2,24/07/2016,30
-conducao,9,24/07/2016,30
+Data,Tipo,Nome,Foto,Nota
+23/05/2016,Prisao,Joao Claudio Genu,http://s2.glbimg.com/MMHX8wK744a3XdBEprAwWyfqTSQ=/620x465/s.glbimg.com/jo/g1/f/original/2016/05/23/joao-claudio-genu.jpg
+12/04/2016,Prisao,Gim Argello,http://www.parana-online.com.br/media/uploads/2016/abril/12-04-16/gim-argello-preso-lava-jato.jpg
+01/04/2016,Prisao,Silvio Pereira,http://aredacao.com.br/upload/content/nova-fase-da-lava-jato-prende-ex-secretario-do-pt-silvio-pereira.jpg
+01/04/2016,Conducao,Delubio Soares,http://www.verdadegospel.com/adwp02/content/uploads/2014/09/Del%C3%BAibo-estrela-do-PT.jpg
+17/03/2014,Prisao,Alberto Youssef,http://s.frizz.com.br/200x200/original/2014/08/09/alberto-youssef-doleiro-101-c-size-598.jpg,"Em 17 de março de 2014, a Polícia Federal iniciou com prisões temporárias e preventivas de 17 pessoas em sete estados, entre elas o doleiro Alberto Youssef. Foram apreendidos R$5 milhões em dinheiro e 25 carros de luxo, joias, quadros e armas."
+20/03/2014,Prisao,Paulo Roberto Costa,http://www.correianelesnews.com.br/wp-content/uploads/2014/09/paulo-roberto-costa-size-598-200x200.jpg," Em 20 de março de 2014, a Polícia Federal cumpriu seis mandados de busca e um de prisão temporária, a do ex-diretor da Petrobras Paulo Roberto Costa."
+11/06/2014,Prisao,Paulo Roberto Costa,http://www.correianelesnews.com.br/wp-content/uploads/2014/09/paulo-roberto-costa-size-598-200x200.jpg,"Em 11 de junho de 2014, a Polícia Federal cumpriu um mandado de busca e um mandado de prisão preventiva, a de Paulo Roberto Costa, preso novamente"
+14/11/2014,Prisao,José Adelmário Pinheiro Filho,http://www.bananeirasagora.com.br/images/noticias/11421/t_delacao-de-leo-pinheiro-da-oas-envolve-aecio-e-geddel1464524926.jpg,"Presidente da OAS, o Leo Pinheiro, preso na 7ª fase."
+14/11/2014,Prisao,Ricardo Ribeiro Pessoa,http://www.correianelesnews.com.br/wp-content/uploads/2015/07/alx_ricardo-pessoa-lava-jato-20150224-0003_original-200x200.jpeg,"Presidente da UTC, preso na 7ª fase."
+14/11/2014,Prisao,Dalton dos Santos Avancini,http://www.correianelesnews.com.br/wp-content/uploads/2015/04/CARMAGO-CORREIA-200x200.jpeg,"Presidente da Camargo Correa, mandado de prisao expedido na 7ª fase, mas nao foi encontrado pela policia"
+14/11/2014,Prisao,Ildefonso Colares Filho,http://gdpape.org/telas/Idelfonso_GL201114b.jpg,"Presidente da Queiroz Galvao, mandado de prisao expedido na manha do dia 14, se entregou a policia no fim da noite."
+14/01/2015,Prisao,Nestor Cervero,http://igepri.org/news/wp-content/themes/widezine/thumb.php?src=http://igepri.org/news/wp-content/uploads/2015/08/image.jpg&w=200&h=200&zc=1&q=80&bid=1,"Em 14 de janeiro de 2015 a Polícia Federal cumpriu um mandado de prisão preventiva contra Nestor Cerveró, acusado de estar se desfazendo de patrimônio que poderia ter sido auferido ilicitamente. Cerveró foi detido ao desembarcar no Aeroporto Internacional Tom Jobim, no Rio de Janeiro"
+04/03/2016,Busca,Instituto Lula,https://pbs.twimg.com/profile_images/1963868616/institutolula_200x200.jpg,"O Instituto Lula, que também foi alvo da operação, avaliou a ação da PF como ~arbitrária, ilegal e injustificável~"
+04/03/2016,Conducao,Lula,http://s2.glbimg.com/E78WWWHykBEG58k9yIyE59HwzYc=/200x200/s.glbimg.com/jo/g1/f/original/2015/10/23/lula5.jpg,"Em nota o Partido dos Trabalhadores declarou que ~A condução coercitiva do ex-presidente Luiz  Inácio Lula da Silva representa um ataque à democracia e à Constituição.Trata-se de novo e indigno capítulo na escalada golpista que busca desestabilizar o governo da presidente Dilma Rousseff, criminalizar o Partido dos Trabalhadores e combater o principal líder do povo brasileiro~, escreveu Rui Falcão, então presidente da sigla. O Ministério Público Federal emitiu nota de esclarecimento justificando a condução coercitiva pois ~Após ser intimado e ter tentado diversas medidas para protelar esse depoimento, incluindo inclusive um habeas corpus perante o TJSP, o senhor Luiz Inácio Lula da Silva manifestou sua recusa em comparecer.~ A recusa refere-se ao documento protocolado pelos advogados do ex-presidente e de sua esposa, afirmando a intenção de que ~Lula e Marisa prestarão todos os esclarecimentos por escrito e não em audiência [para novo depoimento marcado pelo promotor de justiça].~ A nota fora repudiada pelos advogados de Lula"

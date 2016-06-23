@@ -10,3 +10,10 @@ svg{
     text-anchor: end !important;
     transform: rotate(-65deg);
 }
+
+#limao .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-40deg);
+}
+
+

@@ -11,13 +11,17 @@
 	<title></title>
 </head>
 <body>
+<h1>Operacao Lava Jato</h1>
 <div style="width: 100vw;height: 100vh;">
 	<div id='vish' style="display: inline-block; width: 60%; height: 100%; " >
-	<a href="#" id="reset">resetar filtros</a>
-		
+	<a href="#" id="reset">  resetar filtros</a>
+		<div id="contaConducao">Total de Conducoes Coercitivas: </div> <br>
+		<div id="contaPrisao">Total de Prisoes: </div> <br>
+		<div id="contaBusca">Total de Buscas e Apreensoes: </div>
+
 		<div id="mamao" style="height: 50%;">
-			<h1>Operacao Lava Jato</h1>
-			<p>Mandados expedidos ao longo das fases. Clique na legenda para filtrar por tipo.Selecione uma faixa de tempo na linha do tempo, ou clique nas barras para filtrar pelas datas</p>
+			
+			<p>Mandados expedidos ao longo das fases. Clique na legenda para filtrar por tipo.Selecione uma faixa de tempo na linha do tempo, ou clique nas barras para filtrar pelas datas. Mantenha o mouse sobre a elemento para detalhes</p>
 		</div>
 
 		<div id="limao" style="height: 50%;"></div>
@@ -37,6 +41,11 @@
 		var chartPrisoes = dc.lineChart(composite,'gogo');
 		var chartBusca = dc.lineChart(composite,'gogo');
 		var chartBarras = dc.barChart("#limao")
+		var numberChartConducao = dc.numberDisplay("#contaConducao")
+		var numberChartPrisao = dc.numberDisplay("#contaPrisao")
+		var numberChartBusca = dc.numberDisplay("#contaBusca")
+		
+		
 		var dim_tipo;
 		var grid = dc.dataGrid("#melao")
 		d3.csv('fases2.csv',function(data2){
@@ -105,6 +114,67 @@
 				})
 				filtro_nomes = ['Busca','Conducao','Prisao']
 				filtro_datas = []
+				var fConducaoAdd = function(p,v){
+				
+					if(v.Tipo == "Conducao")
+						p.n += v.Valor;
+					return p;
+				}
+				var fConducaoRemove = function(p,v){
+					if(v.Tipo == "Conducao")
+						p.n -= v.Valor;
+					return p;
+				}
+				var fConducaoInitial = function(p,v){
+					return {n:0};
+				}
+				var fPrisaoAdd = function(p,v){
+				
+					if(v.Tipo == "Prisao")
+						p.n += v.Valor;
+					return p;
+				}
+				var fPrisaoRemove = function(p,v){
+					if(v.Tipo == "Prisao")
+						p.n -= v.Valor;
+					return p;
+				}
+				var fPrisaoInitial = function(p,v){
+					return {n:0};
+				}
+				var fBuscaAdd = function(p,v){
+				
+					if(v.Tipo == "Busca")
+						p.n += v.Valor;
+					return p;
+				}
+				var fBuscaRemove = function(p,v){
+					if(v.Tipo == "Busca")
+						p.n -= v.Valor;
+					return p;
+				}
+				var fBuscaInitial = function(p,v){
+					return {n:0};
+				}
+				
+
+				var grupo_conducao_counter = facts.groupAll().reduce(fConducaoAdd,fConducaoRemove,fConducaoInitial)
+				var grupo_prisao_counter = facts.groupAll().reduce(fPrisaoAdd,fPrisaoRemove,fPrisaoInitial)
+				var grupo_busca_counter = facts.groupAll().reduce(fBuscaAdd,fBuscaRemove,fBuscaInitial)
+
+				numberChartConducao.group(grupo_conducao_counter)
+					.valueAccessor(function(d){
+						return d.n
+					})
+				numberChartPrisao.group(grupo_prisao_counter)
+					.valueAccessor(function(d){
+						return d.n
+					})
+				numberChartBusca.group(grupo_busca_counter)
+					.valueAccessor(function(d){
+						return d.n
+					})
+
 				chartBarras.dimension(dim)
 					.centerBar(false)
 					.group(gConducao)
@@ -130,8 +200,13 @@
 							}
 							return false;
 						})
+						// dim.filter(f)
 						composite.render()
 						grid.render()
+						numberChartConducao.render()
+						numberChartPrisao.render()
+						numberChartBusca.render()
+
 					})
 					.xAxis()
 					.tickFormat(d3.time.format('%d/%m/%y'))
@@ -178,6 +253,9 @@
 					.on('filtered',function(chart,f){
 						dimensao_dados2_Data.filter(f)
 						dim.filter(f)
+						numberChartConducao.render()
+						numberChartPrisao.render()
+						numberChartBusca.render()
 						grid.render()
 					})
 					.renderArea(false)

@@ -16,7 +16,7 @@ svg{
     transform: rotate(-40deg);
 }
 
-
+.dc-chart .dc-grid-top div.dc-grid-item  {display: inline-block;}
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update

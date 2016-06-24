@@ -236,6 +236,10 @@
 					})
 					.width(200)
 					.height(200)
+					.htmlGroup(function(object){
+						console.log('mamao com meoa')
+						return object.key + "eoqqq" + object.value
+					})
 					.html(function(object){
 						return object.Nome + 
 							"<div class=\"inline-block\"><br><img title=\" ("+object.Data.getDate() +"/"+
@@ -243,7 +247,7 @@
 							object.Data.getFullYear() +
 							") "+
 							 object.Nota+
-							 "\" style=\" display:inline_block;height:80px;width:80px\" src="+object.Foto+" > </div>"
+							 "\" style=\" display:inline-block;height:80px;width:80px\" src="+object.Foto+" > </div>"
 					})
 				composite
 					.legend(dc.legend().x(400).y(10).itemHeight(13).gap(5).autoItemWidth(true))
@@ -319,7 +323,7 @@
 			});
 		})
 
-$('.dc-grid-item').css('display','inline-block')
+$('div.dc-grid-item').css('display','inline-block')
 $('.dc-grid-item').css('color','red')
 
 

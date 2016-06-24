@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8"></meta>
 
-	<link rel="stylesheet" href="reset/dc.css">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
 	
 	<link rel="stylesheet" href="css/dc.css">
 	<script src="js/crossfilter.js" charset="utf-8"></script>
@@ -58,10 +57,12 @@
 <div class="container">
 	<div class="section">
 			<div>
+			<div data-target="Lula" class="btn modal-trigger">Modal</div>
+			<img data-target="Lula" class=" modal-trigger" src="http://nick-intl.mtvnimages.com/uri/mgid:file:gsp:kids-assets:/nick/properties/spongebob-squarepants/characters/squidward-character-web-desktop.png?height=0&width=480&matte=true&crop=false"> 
 			<p class=" row col-s12 flow-text">Mandados expedidos ao longo das fases. Clique na legenda para filtrar por tipo. Selecione uma faixa de tempo na linha do tempo, ou clique nas barras para filtrar pelas datas. Mantenha o mouse sobre a elemento para detalhes</p>
 				<div class="row">
 
-					<a href="#reset" class="btn col-s3 center right" id="reset">  resetar filtros</a>
+					<a href="#reset" data-tooltip="mamao" class="tooltipped btn col-s3 center right" id="reset">  resetar filtros</a>
 					<div class="col-s9 left">
 						<div class="col-s3 flow-text" id="contaConducao">Total de Conducoes Coercitivas: </div><br> 
 						<div class="col-s3 flow-text" id="contaPrisao"> Total de Prisoes: </div> <br>
@@ -70,13 +71,13 @@
 				</div>
 				<div class="row">
 					
-					<div class="col-m9">
+					<div class="col-m8">
 						<div class="row"  id="grafico_composite_fases"></div>
 						<div class="row" id="barras_fases" ></div>
 						
 					</div>
-					<div class="col-m3 flow-text">
-						<div id="datagrid" >Principais ocorrencias</div>
+					<div class="col-m4 section" style="overflow: auto;  max-height: 400px">
+						<div id="datagrid" ></div>
 					</div>
 					
 				</div>
@@ -176,6 +177,7 @@
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 <script src="js/fases.js"></script>
-<script src="js/fases.js"></script>
+<script src="js/init.js"></script>
+
 </body>
 </html>

@@ -236,18 +236,39 @@
 					})
 					.width(200)
 					.height(200)
-					.htmlGroup(function(object){
-						console.log('mamao com meoa')
-						return object.key + "eoqqq" + object.value
-					})
 					.html(function(object){
-						return object.Nome + 
-							"<div class=\"inline-block\"><br><img title=\" ("+object.Data.getDate() +"/"+
-							object.Data.getMonth() + "/"+
-							object.Data.getFullYear() +
-							") "+
-							 object.Nota+
-							 "\" style=\" display:inline-block;height:80px;width:80px\" src="+object.Foto+" > </div>"
+						var legenda = "\'("+object.Data.getDate()+"/"+object.Data.getMonth()+"/"+object.Data.getFullYear()+") "+
+										object.Nota+"\'";
+						var link = object.Foto;
+						var duracao = 1000* legenda.length /40.0
+						if(duracao < 3000)
+							duracao = 3000;
+						var obj_id = object.Nome.split(' ').join("");
+						var fullimg = "<img class=\"circle modal-trigger\" data-target=\""+obj_id+"\" "+
+							 			"style= \"height:80px;width:80px;\""+
+							 			"src="+link+" />";
+
+
+
+
+						var head = "<a  \" data-target=\""+obj_id+"\" >" + fullimg +"</a>";
+						var modal = "<div id=\""+obj_id+"\"class=\"modal\"> "+
+							"<div class=\"modal-content\"><h2>"+object.Nome+"</h2><p>"+legenda+"</p>"+
+							"</div>"+
+							"<div class=\"modal-footer\"><a href=\"#!\" class=\"modal-action modal-close\" >close</a></div></div>";
+						return fullimg+modal;
+
+						// var matarg = legenda
+						// return "<a onclick=\"Materialize.toast("+legenda+","+duracao.toString()+")\">"+
+						// 			"<img class=\"circle\" "+
+						// 	 			"style= \"height:80px;width:80px;\""+
+						// 	 			"src="+link+" />"+
+						// 	 	"</a>"
+
+					})
+					.htmlGroup(function(d){
+						// console.log(d)
+						return "";
 					})
 				composite
 					.legend(dc.legend().x(400).y(10).itemHeight(13).gap(5).autoItemWidth(true))
@@ -323,8 +344,8 @@
 			});
 		})
 
-$('div.dc-grid-item').css('display','inline-block')
-$('.dc-grid-item').css('color','red')
-
-
+	 $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
 			

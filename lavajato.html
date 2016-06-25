@@ -2,36 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"></meta>
-
-	<!-- <link rel="stylesheet" href="css/reset.css"> -->
-	
-	<link rel="stylesheet" href="css/dc.css">
-	<script src="js/crossfilter.js" charset="utf-8"></script>
-	<script src="js/d3.js" charset="utf-8"></script>
-	<script src="js/dc.js" charset="utf-8"></script>
-	<script   src="js/jquery.js"  charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-	<title>Parallax Template - Materialize</title>
+	<title>Best Visualizacao BR</title>
 
 	<!-- CSS  -->
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/dc.css"><link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="paral/parsets.css">
 </head>
 <body>
 
 	<nav class="white" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">Logo</a>
-			<ul class="right hide-on-med-and-down">
+			<a id="logo-container" style="color: black;font-size:20px;font-family:'El Messiri'" href="#" >OPERAÇÃO LAVA JATO</a>
+<!--			<ul class="right hide-on-med-and-down">
 				<li><a href="#">Navbar Link</a></li>
 			</ul>
 
-			<ul id="nav-mobile" class="side-nav">
+ 			<ul id="nav-mobile" class="side-nav">
 				<li><a href="#">Navbar Link</a></li>
 			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
 		</div>
 	</nav>
 
@@ -39,12 +37,12 @@
 		<div class="section no-pad-bot">
 			<div class="container">
 				<br><br>
-				<h1 class="header center teal-text text-lighten-2">Lava Jato tho</h1>
+				<h1 class="header center blue-text text-lighten-2">Mandados expedidos ao longo das fases.</h1>
 				<div class="row center">
-					<h5 class="header col s12 light">Um manual para a treta maligna</h5>
+					<h5 class="header col s12 light">Clique na legenda para filtrar por tipo. Selecione uma faixa de tempo na linha do tempo, ou clique nas barras para filtrar pelas datas. Clique nas fotos para detalhes</h5>
 				</div>
         <!-- <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1">Get Started</a>
       </div> -->
       <br><br>
 
@@ -57,27 +55,31 @@
 <div class="container">
 	<div class="section">
 			<div>
-			<div data-target="Lula" class="btn modal-trigger">Modal</div>
-			<img data-target="Lula" class=" modal-trigger" src="http://nick-intl.mtvnimages.com/uri/mgid:file:gsp:kids-assets:/nick/properties/spongebob-squarepants/characters/squidward-character-web-desktop.png?height=0&width=480&matte=true&crop=false"> 
-			<p class=" row col-s12 flow-text">Mandados expedidos ao longo das fases. Clique na legenda para filtrar por tipo. Selecione uma faixa de tempo na linha do tempo, ou clique nas barras para filtrar pelas datas. Mantenha o mouse sobre a elemento para detalhes</p>
-				<div class="row">
-
-					<a href="#reset" data-tooltip="mamao" class="tooltipped btn col-s3 center right" id="reset">  resetar filtros</a>
-					<div class="col-s9 left">
-						<div class="col-s3 flow-text" id="contaConducao">Total de Conducoes Coercitivas: </div><br> 
-						<div class="col-s3 flow-text" id="contaPrisao"> Total de Prisoes: </div> <br>
-						<div class="col-s3 flow-text"  id="contaBusca"> Total de Buscas e Apreensoes: </div><br>
+				<div style="padding-top: 30px;padding-bottom: 30px;" class="row " >
+				<div  class="right col s4">
+					<a href="javascript:dc.filterAll();dc.renderAll();"  class=" s12 btn waves-effect" id="reset">Remover filtros</a>
+				</div>
+					<div  class="col s8 left">	
+					<ul>
+						<div class="col s4 " id="contaConducao">Conducoes Coercitivas:<br> </div> 
+						<div class="col s4 " id="contaPrisao">Prisoes:<br> </div> 
+						<div class="col s4 "  id="contaBusca">Buscas e Apreensoes:<br> </div>
+					</ul>
 					</div>
 				</div>
 				<div class="row">
 					
-					<div class="col-m8">
+					<div class="col m8">
 						<div class="row"  id="grafico_composite_fases"></div>
 						<div class="row" id="barras_fases" ></div>
 						
 					</div>
-					<div class="col-m4 section" style="overflow: auto;  max-height: 400px">
-						<div id="datagrid" ></div>
+					<div></div>
+					<div class="col m4 section" style="padding-left: 60px ;  ">
+						Principais Ocorrencias
+						<div style="overflow: scroll;max-height: 400px">
+							<div id="datagrid"  class="flow-text "></div>
+						</div>
 					</div>
 					
 				</div>
@@ -102,24 +104,27 @@
 	<div class="section no-pad-bot">
 		<div class="container">
 			<div class="row center">
-				<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+				<h1 class="header col s12 light">Doações aos partidos envolvidos</h1>
+				<h5><p>O tamanho da bolha representa o número de envolvidos na Lava-Jato. Clique na bolha para filtrar informações. Mantenha o mouse sobre a bolha para mais detalhes. Use o botao de rolagem para dar zoom. Clique na barra da empresa para filtrar suas doacoes</p></h5>
 			</div>
 		</div>
 	</div>
-	<div class="parallax"><img src="https://i.ytimg.com/vi/W0_oyurOty0/maxresdefault.jpg" alt="Unsplashed background img 2"></div>
+	<div class="parallax"><img src="http://og.infg.com.br/in/13280119-357-929/FT1500A/550/Aecio-NevesSabatina.jpg" alt="Unsplashed background img 2"></div>
 </div>
 
 <div class="container">
 	<div class="section">
-
-		<div class="row">
-			<div class="col s12 center">
-				<h3><i class="mdi-content-send brown-text"></i></h3>
-				<h4>Contact Us</h4>
-				<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-			</div>
+		<div class="row" style="padding-top: 30px;padding-bottom: 30px">
+			<a class="btn waves-effect   right col s3" href="javascript:return false;" id="reset_button"> Remover filtros</a>
+			<a class="btn waves-effect right col s3" href="javascript:bChart.focus()" id="reset_button"> Remover zoom</a>
 		</div>
+		<div class="row">
 
+			<div class="col s3"  id="doacoes_empreiteira" ></div>
+			<div class="col s9" style="padding-left: 60px" id="doacoes_partidos"  ></div>
+		</div>		
+	
+	
 	</div>
 </div>
 
@@ -127,30 +132,53 @@
 <div class="parallax-container valign-wrapper">
 	<div class="section no-pad-bot">
 		<div class="container">
-			<div class="row center">
-				<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-			</div>
+			<h1 class="header center green-text text-lighten-2">Conjuntos de relacionamentos</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">Verique que fração de cada grupo está relacionada a outros grupos. Ponha o mouse sobre uma região para ver detalhes</h5>
+				</div>
 		</div>
 	</div>
 	<div class="parallax"><img src="http://sensoincomum.org/wp-content/uploads/2016/05/renan-calheiros-susto.jpg" alt="Unsplashed background img 3"></div>
 </div>
 
-<footer class="page-footer teal">
+<div class="container">
+	<div class="section" style="padding-top: 30px; padding-bottom: 30px;">
+		<div id="vis">
+		
+	</div>
+
+        </div>
+        </div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer indigo">
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">
-				<h5 class="white-text">Company Bio</h5>
-				<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+				<h5 class="white-text">Quem sou eu</h5>
+				<p class="white-text text-darken-2">Há pouquíssimas coisas em nosso imenso universo que, se não são infindas, muito o parecem ser. Dentre elas, constam: o próprio universo, onde tudo habita;  a estupidez humana, em nossos diários atos, e acima de tudo, THE ZOEIRA THO, ELA NAO TEM FIM.</p>
 
 
 			</div>
 			<div class="col l3 s12">
-				<h5 class="white-text">Settings</h5>
+				<h5 class="white-text">Mais gráficos</h5>
 				<ul>
-					<li><a class="white-text" href="#!">Link 1</a></li>
-					<li><a class="white-text" href="#!">Link 2</a></li>
-					<li><a class="white-text" href="#!">Link 3</a></li>
-					<li><a class="white-text" href="#!">Link 4</a></li>
+					<li><a class="white-text" href="a0th.github.com/delacoes.html">Citações</a></li>
+					<li><a class="white-text" href="a0th.github.com/nenvolvidos/index.html">Envolvidos por grupo</a></li>
+					<li><a class="white-text" href="a0th.github.com/cloud/tagcloud.html">Tag Cloud</a></li>
 				</ul>
 			</div>
 			<div class="col l3 s12">
@@ -166,18 +194,35 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+			Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Huerag3</a>
 		</div>
 	</div>
 </footer>
 
 
 <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- <script   src="js/jquery.js"  charset="utf-8"></script> -->
+<script src="js/crossfilter.js" charset="utf-8"></script>
+<script src="js/d3.js" charset="utf-8"></script>
+<script src="js/dc.js" charset="utf-8"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+ <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> --><!-- 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+
+
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 <script src="js/fases.js"></script>
 <script src="js/init.js"></script>
+<script src="js/doacoes.js"></script>
+<script src="js/d3.parsets.js"></script>
+<script src="js/highlight.min.js"></script>
+
+<script src="js/paral.js"></script>
+
 
 </body>
 </html>

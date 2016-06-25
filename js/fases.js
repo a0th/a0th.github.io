@@ -237,8 +237,8 @@
 					.width(200)
 					.height(200)
 					.html(function(object){
-						var legenda = "\'("+object.Data.getDate()+"/"+object.Data.getMonth()+"/"+object.Data.getFullYear()+") "+
-										object.Nota+"\'";
+						var legenda = "("+object.Data.getDate()+"/"+object.Data.getMonth()+"/"+object.Data.getFullYear()+")\n "+
+										object.Nota;
 						var link = object.Foto;
 						var duracao = 1000* legenda.length /40.0
 						if(duracao < 3000)
@@ -251,12 +251,12 @@
 
 
 
-						var head = "<a  \" data-target=\""+obj_id+"\" >" + fullimg +"</a>";
+						var head = "<a  href=\"javascript:$('#"+obj_id+"').openModal();\" >" + fullimg +"</a>";
 						var modal = "<div id=\""+obj_id+"\"class=\"modal\"> "+
 							"<div class=\"modal-content\"><h2>"+object.Nome+"</h2><p>"+legenda+"</p>"+
 							"</div>"+
-							"<div class=\"modal-footer\"><a href=\"#!\" class=\"modal-action modal-close\" >close</a></div></div>";
-						return fullimg+modal;
+							"<div class=\"modal-footer\"><a href=\"#!\" class=\"modal-action modal-close\" ></a></div></div>";
+						return head+modal;
 
 						// var matarg = legenda
 						// return "<a onclick=\"Materialize.toast("+legenda+","+duracao.toString()+")\">"+

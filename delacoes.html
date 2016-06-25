@@ -2,31 +2,13 @@
 <html>
     <head>
         <title> Delacoes </title>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!-- 1. Add these JavaScript inclusions in the head of your page -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/modules/data.js"></script>
+
         
         <!-- 2. Add the JavaScript to initialize the chart on document ready -->
-        <script language="JavaScript">
+        <script >
                     $(document).ready(function() {
-            /*
-             Load the data from the CSV file. This is the contents of the file:
-             
-                Apples,Pears,Oranges,Bananas,Plums
-                John,8,4,6,5
-                Jane,3,4,2,3
-                Joe,86,76,79,77
-                Janet,3,16,13,15
-                
-             */ 
+          
             $.get('delacoes.csv', function(csv) {
                 $('#container').highcharts({
                     chart: {

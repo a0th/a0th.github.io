@@ -1,6 +1,15 @@
-console.log('mamao')          
 $.get('delacoes.csv', function(csv) {
-    $('#Citacoes').highcharts({
+    console.log(csv)
+    // csv.forEach(function(d){
+    //         d.Cervero = +d.Cervero;
+    //         d.delcidio = +d.delcidio;
+    //         d.Cervero = +d.Cervero;
+    //         d.Youssef = +d.Youssef;
+    //         d['Paulo Roberto Costa'] = +d['Paulo Roberto Costa'];
+
+    //     });
+ 
+    $('#citacoes').highcharts({
         chart: {
             type: 'bar'
         },
@@ -8,7 +17,7 @@ $.get('delacoes.csv', function(csv) {
             csv: csv
         },
         title: {
-            text: 'Citacoes em delacoes'
+            text: ''
         },
         
         

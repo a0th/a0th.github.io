@@ -12,6 +12,15 @@ pre, code { font-family: "Menlo", monospace; }
   color: #756bb1;
 }
 
+#warning-message { display: none; }
+@media only screen and (orientation:portrait){
+    #portrait-id { display:none; }
+    #warning-message { display:block; }
+}
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+}
+
 .html .tag,
 .css .tag,
 .javascript .keyword {

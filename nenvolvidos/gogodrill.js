@@ -44,7 +44,7 @@ $.get(str, function(data) {
     var dados = $.csv.toObjects(data);
     l = build_data(dados);
     d = build_drill(chaves);
-    console.log(d);
+    // console.log(d);
     $(function () {
         // Create the chart
         $('#container').highcharts({

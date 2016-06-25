@@ -59,15 +59,15 @@
 
 				
 				partidos_filtrados = []
-				console.log(find['PT']['total'])
+				// console.log(find['PT']['total'])
 				bChart.dimension(doacoes_suspeitas_por_partido)
 					.group(doacoes_suspeitas_por_partido,'Valor')
 					.turnOnControls(true)
 					.mouseZoomable(true)
 					.zoomOutRestrict(true)
 					.title(function(d){
-						if(d.key == 'PT')
-							console.log( d.key + '+' + d.value)
+						// if(d.key == 'PT')
+							// console.log( d.key + '+' + d.value)
 						if(d.key in find){
 							total = find[d.key]['total']
 							pr = d.value/total*100

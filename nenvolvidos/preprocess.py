@@ -96,8 +96,10 @@ for p,r,n in q:
 		resultado = 'Condenado'
 	elif 'Absolvido' in r:
 		resultado = 'Absolvido'
-	elif 'finalizada' in r:
+	elif 'finalizada' in r or 'andamento' in r:
 		resultado = 'Em andamento'
+	elif 'quivad' in r:
+		resultado = 'Arquivado'
 	else:
 		resultado = 'Outros'
 	outcsv.writerow({

@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8"></meta>
-<link rel="stylesheet" href="css/dc.css">
-<link rel="stylesheet" href="css/styles.css">
-<script src="js/crossfilter.js" charset="utf-8"></script>
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="https://rawgit.com/dc-js/dc.js/master/dc.js" charset="utf-8"></script>
-<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
-<head>
-	<title></title>
-</head>
-<body >
-		<a href="#" id="reset_button"> Resetar filtros</a>
-		<a href="javascript:bChart.focus()" id="reset_button"> Resetar zoom</a>
-	<div id="mamao" style="width: auto; ">
 
-		<h1>Doações aos partidos envolvidos</h1> 
-		
-		<p>O tamanho da bolha representa o número de envolvidos na Lava-Jato. Clique na bolha para filtrar informações. Mantenha o mouse sobre a bolha para mais detalhes. Use o botao de rolagem para dar zoom.</p>
-
-	</div>
-	<div id="empreiteira" style="width: auto">
-		<h2> Doacoes de cada empreiteira </h2>
-		<p> Clique no gráfico para filtrar. </p>
-	</div>
-</body>
-<script type="text/javascript" >
-
-
-	var bChart = dc.bubbleChart("#mamao");
-	var empreiteirasChart = dc.barChart("#empreiteira")
+	var bChart = dc.bubbleChart("#doacoes_partidos");
+	var empreiteirasChart = dc.barChart("#doacoes_empreiteira")
 
 		
-		d3.csv('doacoes.csv',function (total_doacoes) {
-			d3.csv('doacoes2.csv',function(doacoes){
+		d3.csv('static/dados/doacoes.csv',function (total_doacoes) {
+			d3.csv('static/dados/doacoes2.csv',function(doacoes){
 
 				find = {}
 				cores = {
@@ -88,15 +59,15 @@
 
 				
 				partidos_filtrados = []
-				console.log(find['PT']['total'])
+				// console.log(find['PT']['total'])
 				bChart.dimension(doacoes_suspeitas_por_partido)
 					.group(doacoes_suspeitas_por_partido,'Valor')
 					.turnOnControls(true)
 					.mouseZoomable(true)
 					.zoomOutRestrict(true)
 					.title(function(d){
-						if(d.key == 'PT')
-							console.log( d.key + '+' + d.value)
+						// if(d.key == 'PT')
+							// console.log( d.key + '+' + d.value)
 						if(d.key in find){
 							total = find[d.key]['total']
 							pr = d.value/total*100
@@ -117,8 +88,8 @@
 					.radiusValueAccessor(function (p) {
 						return 10;
 					})
-					.width(800)
-					.height(600)
+					.width(600)
+					.height(400)
 					.colors(function(d){return cores[d]})
 					.colorAccessor(function (d, i){
 						if(d.key in cores)
@@ -139,7 +110,7 @@
 					.x(d3.scale.linear().domain([0,700]))
 					.y(d3.scale.linear().domain([0,140]))
 					.xAxisLabel('Total arrecadado em doacoes - Milhões R$')
-					.yAxisLabel('Doações de empresas envolvidas na Lava Jato - Milhões R$')
+					.yAxisLabel('Doações de empresas envolvidas na Lava Jato - Milhões')
 					.on('renderlet.click',function(chart){
 						chart.selectAll("g.node circle").on("click.me", function(d){
 					    	console.log(partidos_filtrados)
@@ -180,8 +151,9 @@
 				var g = dimensao_empresa.group().reduceSum(dc.pluck('Valor'))
 				
 				empreiteirasChart.dimension(dimensao_empresa)
-					.width(400)
-					.height(600)
+					.width(300)
+					.height(400)
+					// .centerBar(true)
 					.margins({top: 30, right: 50, bottom: 140, left: 40})
 					.group(g,'Valor')
 					.x(d3.scale.ordinal())
@@ -200,7 +172,3 @@
 		});
 
 			
-
-	
-		</script>
-		</html>

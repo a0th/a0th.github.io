@@ -1,4 +1,4 @@
-$.get('delacoes.csv', function(csv) {
+$.get('static/dados/delacoes.csv', function(csv) {
     console.log(csv)
     // csv.forEach(function(d){
     //         d.Cervero = +d.Cervero;

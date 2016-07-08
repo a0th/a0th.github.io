@@ -33,7 +33,8 @@ var build_drill = function(chaveslist){
 
     for (var i = listaDeObjetos.length-1; i >= 0; i--) {
         var nomeDaChave = listaDeObjetos[i].id.substring(0,chaveslist[i].length-1);
-        data  = $.ajax({type: "GET", url: 'nenvolvidos/'+nomeDaChave+'s.csv', async: false, })['responseText'];
+        console.log(nomeDaChave)
+        data  = $.ajax({type: "GET", url: 'static/dados/'+nomeDaChave+'s.csv', async: false, })['responseText'];
         var dados = $.csv.toObjects(data);
         for (var j = dados.length - 1; j >= 0; j--) {
             listaDeObjetos[i].data.push([ dados[j][nomeDaChave] , +dados[j]['Envolvidos'] ]);
@@ -42,7 +43,7 @@ var build_drill = function(chaveslist){
     return listaDeObjetos;
 }
     
-    var dados = d3.csv('envolvidos.csv',function(dados){
+    var dados = d3.csv('static/dados/envolvidos.csv',function(dados){
         l = build_data(dados);
         d = build_drill(chaves);
         // console.log(d);

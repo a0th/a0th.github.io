@@ -1,55 +1,18 @@
-<!DOCTYPE html>
-<html>
-	<meta charset="utf-8"></meta>
-	<link rel="stylesheet" href="css/dc.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/crossfilter.js" charset="utf-8"></script>
-	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	<script src="js/dc.js" charset="utf-8"></script>
-	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
-<head>
-	<title></title>
-</head>
-<body>
-<h1>Operacao Lava Jato</h1>
-<div style="width: 100vw;height: 100vh;">
-	<div id='vish' style="display: inline-block; width: 60%; height: 100%; " >
-	<a href="#" id="reset">  resetar filtros</a>
-		<div id="contaConducao">Total de Conducoes Coercitivas: </div> <br>
-		<div id="contaPrisao">Total de Prisoes: </div> <br>
-		<div id="contaBusca">Total de Buscas e Apreensoes: </div>
 
-		<div id="mamao" style="height: 50%;">
-			
-			<p>Mandados expedidos ao longo das fases. Clique na legenda para filtrar por tipo.Selecione uma faixa de tempo na linha do tempo, ou clique nas barras para filtrar pelas datas. Mantenha o mouse sobre a elemento para detalhes</p>
-		</div>
-
-		<div id="limao" style="height: 50%;"></div>
-	
-	</div>
-	<div id="melao" style="width: 40%">Principais ocorrencias</div>
-
-</div>
-
-
-
-</body>
-	<script type="text/javascript" >
-	
-		var composite = dc.compositeChart("#mamao"); 
+		var composite = dc.compositeChart("#grafico_composite_fases"); 
 		var chartConducao = dc.lineChart(composite,'gogo');
 		var chartPrisoes = dc.lineChart(composite,'gogo');
 		var chartBusca = dc.lineChart(composite,'gogo');
-		var chartBarras = dc.barChart("#limao")
+		var chartBarras = dc.barChart("#barras_fases")
 		var numberChartConducao = dc.numberDisplay("#contaConducao")
 		var numberChartPrisao = dc.numberDisplay("#contaPrisao")
 		var numberChartBusca = dc.numberDisplay("#contaBusca")
 		
 		
 		var dim_tipo;
-		var grid = dc.dataGrid("#melao")
-		d3.csv('fases2.csv',function(data2){
-			d3.csv('fases.csv',function (data) {
+		var grid = dc.dataGrid("#datagrid")
+		d3.csv('static/dados/fases2.csv',function(data2){
+			d3.csv('static/dados/fases.csv',function (data) {
 				var dataFormat = d3.time.format("%d/%m/%Y");
 				var fases = {}
 				var fotos = {}
@@ -184,7 +147,7 @@
 					.x(d3.scale.ordinal())
 					.xUnits(dc.units.ordinal)
 					.width(700)
-					.height(300)
+					.height(200)
 					.barPadding(0.2)
 					.title(function(d){
 						return fases[d.key] + "ª Fase\n" + "Valor: " + d.value;
@@ -274,17 +237,42 @@
 					.width(200)
 					.height(200)
 					.html(function(object){
-						return object.Nome + 
-							"<br><img title=\" ("+object.Data.getDate() +"/"+
-							object.Data.getMonth() + "/"+
-							object.Data.getFullYear() +
-							") "+
-							 object.Nota+
-							 "\" style=\" display:inline_block;height:80px;width:80px\" src="+object.Foto+" >"
+						var legenda = "("+object.Data.getDate()+"/"+object.Data.getMonth()+"/"+object.Data.getFullYear()+")\n "+
+										object.Nota;
+						var link = object.Foto;
+						var duracao = 1000* legenda.length /40.0
+						if(duracao < 3000)
+							duracao = 3000;
+						var obj_id = object.Nome.split(' ').join("");
+						var fullimg = "<img class=\"circle modal-trigger\" data-target=\""+obj_id+"\" "+
+							 			"style= \"height:80px;width:80px;\""+
+							 			"src="+link+" />";
+
+
+
+
+						var head = "<a  href=\"javascript:$('#"+obj_id+"').openModal();\" >" + fullimg +"</a>";
+						var modal = "<div id=\""+obj_id+"\"class=\"modal\"> "+
+							"<div class=\"modal-content\"><h2>"+object.Nome+"</h2><p>"+legenda+"</p>"+
+							"</div>"+
+							"<div class=\"modal-footer\"><a href=\"#!\" class=\"modal-action modal-close\" ></a></div></div>";
+						return head+modal;
+
+						// var matarg = legenda
+						// return "<a onclick=\"Materialize.toast("+legenda+","+duracao.toString()+")\">"+
+						// 			"<img class=\"circle\" "+
+						// 	 			"style= \"height:80px;width:80px;\""+
+						// 	 			"src="+link+" />"+
+						// 	 	"</a>"
+
+					})
+					.htmlGroup(function(d){
+						// console.log(d)
+						return "";
 					})
 				composite
 					.legend(dc.legend().x(400).y(10).itemHeight(13).gap(5).autoItemWidth(true))
-					.width(600)
+					.width(700)
 					.height(200)
 					.shareTitle(false)
 					.zoomOutRestrict(false)
@@ -295,10 +283,8 @@
 					.mouseZoomable(false)
 					.renderHorizontalGridLines(true)
 					.brushOn(true)
-					// .isOrdinal(true)
 					.elasticY(false)
-					// .chartGroup('gogo')
-					
+					// .margins({top:30,bottom:20,left:30,right:30})					
 					.on('renderlet.click',function(chart){
 							chart.selectAll("g .dc-legend-item").on("click.me", function(d){
 								tipo_do_grafico = d.name
@@ -357,6 +343,9 @@
 				
 			});
 		})
+
+	 $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
 			
-	</script>
-</html>

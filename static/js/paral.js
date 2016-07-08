@@ -1,87 +1,4 @@
-<!DOCTYPE html>
-<!-- saved from url=(0042)https://www.jasondavies.com/parallel-sets/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Parallel Sets</title>
-<link rel="stylesheet" type="text/css" href="parsets.css">
-<style>
 
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-  width: 960px;
-  margin: 1em auto;
-  position: relative;
-}
-h1, h2, .dimension text {
-  text-align: center;
-  font-family: "PT Sans", Helvetica;
-  font-weight: 300;
-}
-h1 {
-  font-size: 4em;
-  margin: .5em 0 0 0;
-}
-h2 {
-  font-size: 2em;
-  margin: 1em 0 0.5em;
-  border-bottom: solid #ccc 1px;
-}
-p.meta, p.footer {
-  font-size: 13px;
-  color: #333;
-}
-p.meta {
-  text-align: center;
-}
-
-text.icicle { pointer-events: none; }
-
-.options { font-size: 12px; text-align: center; padding: 5px 0; }
-.curves { float: left; }
-.source { float: right; }
-pre, code { font-family: "Menlo", monospace; }
-
-.html .value,
-.javascript .string,
-.javascript .regexp {
-  color: #756bb1;
-}
-
-.html .tag,
-.css .tag,
-.javascript .keyword {
-  color: #3182bd;
-}
-
-.comment {
-  color: #636363;
-}
-
-.html .doctype,
-.javascript .number {
-  color: #31a354;
-}
-
-.html .attribute,
-.css .attribute,
-.javascript .class,
-.javascript .special {
-  color: #e6550d;
-}
-</style>
-
-</head><body>
-</p><h2>Status dos envolvidos por Partido</h2>
-<div id="vis"></div>
-<div class="options">
-  <span class="curves"><label for="curved"><input type="checkbox" id="curved" onchange="curves.call(this)"> Curves?</label></span>
-</div>
-
-
-<script src="./paral_files/d3.min.js"></script>
-<script src="./paral_files/d3.parsets.js"></script>
-<script src="./paral_files/highlight.min.js"></script>
-<script>
 var chart = d3.parsets()
     .dimensions(["Partido", "Investigação na Lava Jato","Voto pelo Impeachment"]);
 
@@ -106,7 +23,8 @@ function curves() {
   t.call(chart.tension(this.checked ? .5 : 1));
 }
 
-d3.csv("resultados.csv", function(error, csv) {
+
+d3.csv("static/dados/paralsets.csv", function(error, csv) {
   vis.datum(csv).call(chart);
 
   window.icicle = function() {
@@ -261,5 +179,3 @@ d3.select("#file").on("change", function() {
   };
   reader.readAsText(file);
 });
-</script>
-</p><div class="parsets tooltip" style="left: 989px; top: 765px; display: none;">Crew<br>885 (40%)</div></body></html>

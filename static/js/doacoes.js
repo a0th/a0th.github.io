@@ -1,4 +1,6 @@
 
+// http://meucongressonacional.com/lavajato/empresas
+
 	var bChart = dc.bubbleChart("#doacoes_partidos");
 	var empreiteirasChart = dc.barChart("#doacoes_empreiteira")
 

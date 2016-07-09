@@ -1,4 +1,6 @@
 
+// https://www.jasondavies.com/parallel-sets/
+
 var chart = d3.parsets()
     .dimensions(["Partido", "Investigação na Lava Jato","Voto pelo Impeachment"]);
 

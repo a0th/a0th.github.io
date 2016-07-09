@@ -1,4 +1,6 @@
 
+// https://pt.wikipedia.org/wiki/Lista_de_pessoas_envolvidas_na_Opera%C3%A7%C3%A3o_Lava_Jato
+
 		var composite = dc.compositeChart("#grafico_composite_fases"); 
 		var chartConducao = dc.lineChart(composite,'gogo');
 		var chartPrisoes = dc.lineChart(composite,'gogo');

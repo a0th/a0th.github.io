@@ -1,0 +1,142 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.6/dc.css">
+<link rel="stylesheet" href="welcome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Rasaf|Raleway|Josefin+Sans" rel="stylesheet">
+<script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.6/dc.js" charset="utf-8"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+<script src="/loading.js"></script>
+<script type="text/javascript" src="/loading_time.js"></script>
+<script type="text/javascript" src="/pretty_histogram.js"></script>
+
+<div id="parent-screen">
+    <div class="main-screen" id="main-screen">
+        <div class="content-to-fade">
+            <h3 class="trend-name">
+                Cargo Van
+            </h3>
+            <p>Average: <span class="number" id='cargo-id-average'></span> minutes</p> 
+            <p>Drag to filter</p>
+            <div class="row">
+                <div id="cargo-id-BarChart" class="col l8">
+                </div>
+                <div class="col l4 panel panel-primary data-panel"  >
+                     <div> 
+                          high end: <span id='cargo-id-maxNumber' class='number'></span>
+                     </div> 
+                     <div > 
+                          low end: <span id='cargo-id-minNumber' class='number'></span>
+                     </div>
+                     <div>
+                          within the estimate: <span id='cargo-id-within' class="number"></span>%
+                     </div> 
+                     <div > 
+                          underestimated: <span id='cargo-id-rightSide' class='number'></span>%
+                     </div> 
+                     <div > 
+                          overestimated: <span id='cargo-id-leftSide' class='number'></span>%
+                     </div> 
+
+                       
+                </div>
+            </div>
+            <hr>
+
+            <h3 class="trend-name">
+                Large Pickup
+            </h3>
+            <p>Average: <span class="number" id='large-id-average'></span> minutes</p> 
+            <p>Drag to filter</p>
+            <div class="row">
+                <div id="large-id-BarChart" class="col l8">
+                </div>
+                <div class="col l4 panel panel-primary data-panel"  >
+                     <div> 
+                          high end: <span id='large-id-maxNumber' class='number'></span>
+                     </div> 
+                     <div > 
+                          low end: <span id='large-id-minNumber' class='number'></span>
+                     </div>
+                     <div>
+                          within the estimate: <span id='large-id-within' class="number"></span>%
+                     </div> 
+                     <div > 
+                          underestimated: <span id='large-id-rightSide' class='number'></span>%
+                     </div> 
+                     <div > 
+                          overestimated: <span id='large-id-leftSide' class='number'></span>%
+                     </div> 
+
+                       
+                </div>
+            </div>
+            <hr>
+
+            <h3 class="trend-name">
+                Small Pickup
+            </h3>
+            <p>Average: <span class="number" id='small-id-average'></span> minutes</p> 
+            <p>Drag to filter</p>
+            <div class="row">
+                <div id="small-id-BarChart" class="col l8">
+                </div>
+                <div class="col l4 panel panel-primary data-panel"  >
+                     <div> 
+                          high end: <span id='small-id-maxNumber' class='number'></span>
+                     </div> 
+                     <div > 
+                          low end: <span id='small-id-minNumber' class='number'></span>
+                     </div>
+                     <div>
+                          within the estimate: <span id='small-id-within' class="number"></span>%
+                     </div> 
+                     <div > 
+                          underestimated: <span id='small-id-rightSide' class='number'></span>%
+                     </div> 
+                     <div > 
+                          overestimated: <span id='small-id-leftSide' class='number'></span>%
+                     </div> 
+
+                       
+                </div>
+            </div>
+            <hr>
+
+            <h3 class="trend-name">
+                Box Truck
+            </h3>
+            <p>Average: <span class="number" id='box-id-average'></span> minutes</p> 
+            <p>Drag to filter</p>
+            <div class="row">
+                <div id="box-id-BarChart" class="col l8">
+                </div>
+                <div class="col l4 panel panel-primary data-panel"  >
+                     <div> 
+                          high end: <span id='box-id-maxNumber' class='number'></span>
+                     </div> 
+                     <div > 
+                          low end: <span id='box-id-minNumber' class='number'></span>
+                     </div>
+                     <div>
+                          within the estimate: <span id='box-id-within' class="number"></span>%
+                     </div> 
+                     <div > 
+                          underestimated: <span id='box-id-rightSide' class='number'></span>%
+                     </div> 
+                     <div > 
+                          overestimated: <span id='box-id-leftSide' class='number'></span>%
+                     </div> 
+
+                       
+                </div>
+            </div>
+            <hr>
+
+            
+        </div>
+    </div>
+</div>

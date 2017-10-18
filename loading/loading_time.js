@@ -21,7 +21,7 @@ $(document).ready(function () {
                 var localData = data.filter(function (d) {
                     return d.vehicle_type_single == vehicle_id;
                 }).map(dc.pluck('loading_time'));
-                this.histogramSettings = histogram(localData);
+                this.histogramSettings = histogram(localData,{pretty:false});
                 this.ndx = crossfilter(localData);
                 this.dimension = this.ndx.dimension(this.histogramSettings.fun);
                 this.group = this.dimension.group();
@@ -44,11 +44,11 @@ $(document).ready(function () {
                     $('#' + charts[vehicle_id] + '-id-maxNumber').text(format(maxNumber));
                     $('#' + charts[vehicle_id] + '-id-minNumber').text(format(minNumber));
                     $('#' + charts[vehicle_id] + '-id-within').text(within);
-
+                    $('#' + charts[vehicle_id] + '-id-w-number').text(filteredData.length);
                     $('#' + charts[vehicle_id] + '-id-rightSide').text(format(100*rightList.length/localData.length));
                     $('#' + charts[vehicle_id] + '-id-leftSide').text(format(100*leftList.length/localData.length));
                 };
-                this.chart.height(150)
+                this.chart.height(400)
                 .width(null)
                 .dimension(this.dimension)
                 .transitionDuration(1250)
@@ -58,7 +58,7 @@ $(document).ready(function () {
                 .elasticX(true)
                 .on('filtered', this.renderLet)
                 .on('preRender', this.renderLet)
-                .x(d3.scale.linear().domain([this.ticks[0], this.ticks[this.ticks.length - 1]]))
+                .x(d3.scale.linear())//[this.ticks[0], this.ticks[this.ticks.length - 1]]))
                 .xUnits(dc.units.fp.precision(this.histogramSettings.size))
                 // .xAxisLabel(config.label)
                 .xAxis().tickValues(this.ticks);

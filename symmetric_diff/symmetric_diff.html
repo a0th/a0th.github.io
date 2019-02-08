@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Difference</title>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		String.prototype.replaceAll = function(search, replacement) {
+		    var target = this;
+		    return target.replace(new RegExp(search, 'g'), replacement);
+		};
+
+		$(document).ready(function() {
+			$('button').click(function(event) {
+				let firstSet = $('[name=first-set]').val()
+				console.log(firstSet.replaceAll(',',' '));
+				firstSet = firstSet.replaceAll(',',' ').replaceAll('\n',' ').split(' ');
+				console.log(firstSet);
+				let secondSet = $('[name=second-set]').val().replaceAll(',',' ').replaceAll('\n',' ').split(' ');
+				firstSet = firstSet.filter(x=>x!='');
+				secondSet = secondSet.filter(x=>x!='');
+
+				let firstDiff = firstSet.filter(x=> secondSet.indexOf(x)<0);
+				let secondDiff = secondSet.filter(x=> firstSet.indexOf(x)<0);
+				let intersection = firstSet.filter(x=> firstDiff.indexOf(x)<0)
+				console.log(firstSet,secondSet,firstDiff,secondDiff,intersection);
+
+				$('#first-response').text(firstDiff);
+				$('#second-response').text(secondDiff);
+				$('#third-response').text(intersection);
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<h1>Set Difference</h1>
+<input type="text" name="first-set" value="1, 2, 3">
+<input type="text" name="second-set" value="4, 5, 3">
+<button>GO</button>
+<div id='first-block'>
+	<p>In the first and not in the second</p>
+	<div id='first-response'></div>
+</div>
+<div id='second-block'>
+	<p>In the second and not in the first</p>
+	<div id='second-response'></div>
+</div>
+<div id='third-block'>
+	<p>In both sets</p>
+	<div id='third-response'></div>
+</div>
+
+</body>
+</html>

@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Oscar por Genero </title>
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<head>
+    <title> Oscar por Genero </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!-- 1. Add these JavaScript inclusions in the head of your page -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/modules/data.js"></script>
-        
-        <!-- 2. Add the JavaScript to initialize the chart on document ready -->
-        <script language="JavaScript">
-                    $(document).ready(function() {
-            /*
-             Load the data from the CSV file. This is the contents of the file:
-             
-                Apples,Pears,Oranges,Bananas,Plums
-                John,8,4,6,5
-                Jane,3,4,2,3
-                Joe,86,76,79,77
-                Janet,3,16,13,15
-                
-             */ 
-            $.get('out1.csv', function(csv) {
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- 1. Add these JavaScript inclusions in the head of your page -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+
+    <!-- 2. Add the JavaScript to initialize the chart on document ready -->
+    <script language="JavaScript">
+        $(document).ready(function () {
+            $.get('out1.csv', function (csv) {
                 $('#container').highcharts({
                     chart: {
                         type: 'column'
@@ -38,7 +29,7 @@
                     title: {
                         text: 'Oscar por Genero: 2007 - 2011'
                     },
-                    
+
                     plotOptions: {
                         series: {
                             stacking: 'normal'
@@ -46,42 +37,33 @@
                     },
                 });
             });
-            
-            
+
+
         });
-        </script>
-		
-    </head>
-    <body>
+    </script>
+
+</head>
+
+<body>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="http://www.github.com/a0th">a0th's</a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://www.github.com/a0th">a0th's</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Grafico 1</a></li>
+                <li><a href="graf2.html">Grafico 2</a></li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">Grafico 1</a></li>
-          <li><a href="graf2.html">Grafico 2</a></li> 
-        </ul>
-      </div>
     </nav>
     <!-- 3. Add the container -->
     <div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
 
     <div class="container-fluid" style="height: 25%">
-        <div class="col-md-4" style="height: 300px">
-            <div class="panel panel-default">
-            <div class="panel-heading"> <h1>Proposta </h1></div>
-            <div class="panel-body">Visualizar quais generos e quais estudios mais recebem premiacoes.</div>
-        </div>
-        </div>
-
-        <div class="col-md-8" style="height: 300px">
-            <div class="panel panel-default">
-            <div class="panel-heading"> <h1>Dificuldade </h1></div>
-            <div class="panel-body">Esse grafico nao apresentou nenhuma dificuldade particular, exceto claro o tratamento dos dados.</div>
-        </div>
-        </div>
         
-    </body>
+    </div>
+
+</body>
+
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nilo's</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+
+
+	<!-- Materialize.css -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+	<script>
+		$(document).ready(function () {
+			$('.sidenav').sidenav();
+		});
+	</script>
+</head>
+
+<body>
+
+	<nav>
+		There should be sth here
+	</nav>
+
+	<ul id="slide-out" class="sidenav sidenav-fixed">
+		<!-- Sidenav header -->
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="../static/img/sidenav_background.jpg">
+				</div>
+				<a href="#user"><img class="circle" src="../static/img/nilo_profile_picture.png"></a>
+				<a href="#name"><span class="white-text name">Nilo Araujo</span></a>
+				<a href="#email"><span class="white-text email">nilo.araujo@live.com</span></a>
+			</div>
+		</li>
+
+		<!-- sidenav content -->
+		<li><a class="subheader">Toolkit</a></li>
+		<li><a href="symmetric_diff/symmetric_diff.html"><i class="material-icons">compare_arrows</i>Symmetric
+				Difference</a></li>
+
+		<li>
+			<div class="divider"></div>
+		</li>
+
+		<li><a class="subheader">Highcharts.js</a></li>
+		<li><a href="highcharts/highcharts_page.html">Oscar por genero</a></li>
+		<li>
+			<div class="divider"></div>
+		</li>
+
+		<li><a class="subheader">D3.js</a></li>
+		<li><a href="movies_d3.html">? por filme</a></li>
+		<li>
+			<div class="divider"></div>
+		</li>
+
+
+		<li><a class="subheader">Leaflet.js</a></li>
+		<li><a href="quakes/quakes.html">Quakes</a></li>
+		<li><a href="crimes/crimes.html">crimes</a></li>
+
+		<li>
+			<div class="divider"></div>
+		</li>
+
+		<li><a class="subheader">Leaflet.js</a></li>
+		<li><a href="interactive-d3/usa.html">Quakes</a></li>
+
+		<li>
+			<div class="divider"></div>
+		</li>
+
+		<li><a class="subheader">Leaflet.js</a></li>
+		<li><a href="interactive-d3/usa.html">Quakes</a></li>
+
+		<li>
+			<div class="divider"></div>
+		</li>
+
+
+	</ul>
+	<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+</body>
+
+</html>

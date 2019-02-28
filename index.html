@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Jquery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
 
 	<!-- Materialize.css -->
@@ -20,77 +20,87 @@
 
 	<script>
 		$(document).ready(function () {
-			$('.sidenav').sidenav();
+			let timer = 4;
+			setInterval(function() {
+				$('#redirect-countdown').text('Redirecting in '+ timer-- +'...');
+				if(timer == 0) {
+					window.location.replace('homepage/home.html')
+				}
+			},1000);
 		});
 	</script>
 </head>
 
 <body>
-
-	<nav>
-		There should be sth here
-	</nav>
-
-	<ul id="slide-out" class="sidenav sidenav-fixed">
-		<!-- Sidenav header -->
-		<li>
-			<div class="user-view">
-				<div class="background">
-					<img src="static/img/sidenav_background.jpg">
-				</div>
-				<a href="#user"><img class="circle" src="static/img/nilo_profile_picture.png"></a>
-				<a href="#name"><span class="white-text name">Nilo Araujo</span></a>
-				<a href="#email"><span class="white-text email">nilo.araujo@live.com</span></a>
+	<div class="container" style="height: 100vh">
+		<div style="position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%)">
+			<div style="padding:10px" id="redirect-countdown">
+				Redirecting in 5...
 			</div>
-		</li>
+			<div class="row">
+				<div class="col s12 l12 center">
+					<div class="preloader-wrapper big active center ">
+						<div class="spinner-layer spinner-blue ">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
 
-		<!-- sidenav content -->
-		<li><a class="subheader">Toolkit</a></li>
-		<li><a href="symmetric_diff/symmetric_diff.html"><i class="material-icons">compare_arrows</i>Symmetric
-				Difference</a></li>
+						<div class="spinner-layer spinner-red">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
 
-		<li>
-			<div class="divider"></div>
-		</li>
+						<div class="spinner-layer spinner-yellow">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
 
-		<li><a class="subheader">Highcharts.js</a></li>
-		<li><a href="highcharts/highcharts_page.html">Oscar por genero</a></li>
-		<li>
-			<div class="divider"></div>
-		</li>
+						<div class="spinner-layer spinner-green">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
 
-		<li><a class="subheader">D3.js</a></li>
-		<li><a href="movies_d3.html">? por filme</a></li>
-		<li>
-			<div class="divider"></div>
-		</li>
+					</div>
+				</div>
 
+			
+			</div>
+			
+		</div>
 
-		<li><a class="subheader">Leaflet.js</a></li>
-		<li><a href="quakes/quakes.html">Quakes</a></li>
-		<li><a href="crimes/crimes.html">crimes</a></li>
+		
 
-		<li>
-			<div class="divider"></div>
-		</li>
-
-		<li><a class="subheader">Leaflet.js</a></li>
-		<li><a href="interactive-d3/usa.html">Quakes</a></li>
-
-		<li>
-			<div class="divider"></div>
-		</li>
-
-		<li><a class="subheader">Leaflet.js</a></li>
-		<li><a href="interactive-d3/usa.html">Quakes</a></li>
-
-		<li>
-			<div class="divider"></div>
-		</li>
+	</div>
 
 
-	</ul>
-	<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
 </body>
 

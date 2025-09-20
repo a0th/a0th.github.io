@@ -1,145 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="h-full">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nilo's Pet Projects</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (!stored && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
-
-<body>
-  <nav class="light-blue lighten-1" role="navigation">
-
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center">Pet Projects Page</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A small collection of little cool things I've made.
-
-        </h5>
-      </div>
-      <div class="row center">
-
-
-        <div class="col s12 l6  ">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content center">
-                <p>Calculate the symmetric difference between two sets. </p>
-              </div>
-              <div class="card-action">
-                <a href="symmetric_diff/symmetric_diff.html">Symmetric Difference</a>
-              </div>
-            </div>
-          </div>
+<body class="min-h-full bg-white text-gray-800 antialiased dark:bg-gray-950 dark:text-gray-100 font-sans">
+  <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/80 dark:supports-[backdrop-filter]:bg-gray-950/60 dark:bg-gray-950/80 border-b border-gray-200 dark:border-gray-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="/" class="flex items-center gap-2 font-semibold tracking-tight">
+          <span class="inline-block h-2 w-2 rounded-full bg-gradient-to-tr from-sky-500 via-fuchsia-500 to-amber-400"></span>
+          <span>Nilo Araujo</span>
+        </a>
+        <div class="flex items-center gap-3">
+          <a class="hidden sm:inline-flex text-sm text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white" href="https://github.com/a0th" target="_blank" rel="noreferrer">GitHub</a>
+          <button id="theme-toggle" type="button" class="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 px-3 py-1.5 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-900 transition">
+            <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zM1 13h3v-2H1v2zm10 10h2v-3h-2v3zM21 11v2h3v-2h-3zm-2.05 7.95l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8zM12 5a7 7 0 100 14 7 7 0 000-14zm0-5h-2v3h2V0zm7.66 4.46l-1.41-1.41-1.79 1.8 1.41 1.41 1.79-1.8z"/></svg>
+            <svg class="hidden h-4 w-4 dark:inline-block" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.64 13a9 9 0 01-11.31-11.31A1 1 0 009 0 12 12 0 1024 15a1 1 0 00-2.36-2z"/></svg>
+            <span class="sr-only">Toggle theme</span>
+          </button>
         </div>
-
-
-        <div class="col s12 l6 ">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>A brief (unmaintained) exploration on one of the largest corruption schemes in history. </p>
-              </div>
-              <div class="card-action">
-                <a href="lavajato.html">Operation Car Wash</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 l6">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>Quick pandas tutorial on groupy.rolling </p>
-              </div>
-              <div class="card-action">
-                <a href="rolling/rolling.html">Rolling Tutorial</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 l6">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>A pandera tutorial. You probably should use it too! </p>
-              </div>
-              <div class="card-action">
-                <a href="pandera/pandera_tutorial.html">Pandera Tutorial</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 l6">
-          <div class="card horizontal">
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>An opinionated small toolkit for Plotly </p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/a0th/plotly">Plotly Plasma</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-
-
-    </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer light-blue lighten-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Nilo Araujo</h5>
-          <p class="grey-text text-lighten-4">A challenge-driven geek, a Python advocate and a pandas lover, I provide
-            support for data driven decision making, developing and maintaining tools to gather, interpret and model
-            data to automate processes, visualize and report results, and make machine learning predictions.
-          </p>
-
-
-        </div>
-
-
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        2022
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-50 via-rose-50 to-amber-50 dark:from-gray-950 dark:via-gray-950 dark:to-gray-950"></div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+          <div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Pet Projects</h1>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">A small collection of little cool things I've built.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#projects" class="inline-flex items-center rounded-md bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-4 py-2 text-sm font-semibold shadow hover:opacity-90">Explore projects</a>
+              <a href="https://github.com/a0th" target="_blank" rel="noreferrer" class="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm font-semibold hover:bg-gray-100 dark:hover:bg-gray-900">GitHub</a>
+            </div>
+          </div>
+          <div class="lg:justify-self-end">
+            <div class="rounded-2xl border border-gray-200 dark:border-gray-800 p-6 bg-white/60 dark:bg-gray-900/40 shadow-sm">
+              <div class="grid grid-cols-3 gap-4">
+                <div class="h-24 rounded-xl bg-gradient-to-br from-sky-400/30 to-sky-600/30 dark:from-sky-500/10 dark:to-sky-700/10"></div>
+                <div class="h-24 rounded-xl bg-gradient-to-br from-fuchsia-400/30 to-fuchsia-600/30 dark:from-fuchsia-500/10 dark:to-fuchsia-700/10"></div>
+                <div class="h-24 rounded-xl bg-gradient-to-br from-amber-400/30 to-amber-600/30 dark:from-amber-500/10 dark:to-amber-700/10"></div>
+                <div class="h-24 rounded-xl bg-gradient-to-br from-emerald-400/30 to-emerald-600/30 dark:from-emerald-500/10 dark:to-emerald-700/10"></div>
+                <div class="h-24 rounded-xl bg-gradient-to-br from-indigo-400/30 to-indigo-600/30 dark:from-indigo-500/10 dark:to-indigo-700/10"></div>
+                <div class="h-24 rounded-xl bg-gradient-to-br from-rose-400/30 to-rose-600/30 dark:from-rose-500/10 dark:to-rose-700/10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <h2 class="text-xl font-semibold text-gray-700 dark:text-gray-200">Projects</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="symmetric_diff/symmetric_diff.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-lg font-semibold">Symmetric Difference</h3>
+            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Calculate the symmetric difference between two sets.</p>
+        </a>
+
+        <a href="lavajato.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-lg font-semibold">Operation Car Wash</h3>
+            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A set of interactive visualizations about one of the largest corruption schemes in history.</p>
+        </a>
+
+        <a href="rolling/rolling.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-lg font-semibold">Rolling Tutorial</h3>
+            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Quick tour of pandas groupby.rolling with plots.</p>
+        </a>
+
+        <a href="pandera/pandera_tutorial.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-lg font-semibold">Pandera Tutorial</h3>
+            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Data validation for pandas. Why and how.</p>
+        </a>
+
+        <a href="https://github.com/a0th/plotly" target="_blank" rel="noreferrer" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-lg font-semibold">Plotly Plasma</h3>
+            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">↗</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Opinionated tools for Plotly.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-200 dark:border-gray-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p>© <span id="year"></span> Nilo Araujo</p>
+        <p>A challenge-driven geek, Python advocate, pandas lover.</p>
       </div>
     </div>
   </footer>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="static/js/materialize.js"></script>
-  <script src="static/js/init.js"></script>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var isDark = document.documentElement.classList.toggle('dark');
+        try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+      });
+    }
+  </script>
 </body>
-
 </html>

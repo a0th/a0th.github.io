@@ -5,11 +5,12 @@
 
 ## Entry points
 
-- `index.html`: landing page built with Materialize. Cards link to subprojects:
+- `index.html`: modern landing page built with Tailwind (CDN), dark mode (localStorage), responsive project grid. Links to:
   - `symmetric_diff/symmetric_diff.html`
   - `lavajato.html`
   - `rolling/rolling.html`
   - `pandera/pandera_tutorial.html`
+  - `cardcalc/index.html`
   - External: https://github.com/a0th/plotly
 
 ## Subprojects
@@ -37,6 +38,10 @@
 ### Pandera Tutorial
 - Path: `pandera/pandera_tutorial.html` (and `pandera_tutorial.ipynb`).
 - Educational content on Pandera data validation.
+
+### CardCalc
+- Path: `cardcalc/index.html`
+- Built static app (bundled assets in `cardcalc/assets/`) for a simple card battle damage calculator.
 
 ## Shared assets
 
@@ -73,7 +78,7 @@
 
 ## Home page snapshot
 
-- Title: “Pet Projects Page”. Cards linking to the four subprojects and Plotly Plasma.
+- Hero + CTA; grid de projetos; footer. Tailwind + dark mode persistente.
 
 ## Quick links
 
@@ -82,5 +87,6 @@
 - Symmetric Diff: `symmetric_diff/symmetric_diff.html`
 - Rolling: `rolling/rolling.html`
 - Pandera: `pandera/pandera_tutorial.html`
+- CardCalc: `cardcalc/index.html`
 
 

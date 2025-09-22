@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"></meta>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Best Visualizacao BR</title>
+
+	<!-- CSS  -->
+	<link rel="stylesheet" href="assets/css/dc.css"><link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+	<link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/parsets.css">
+</head>
+<body class="portrait-id">
+	<div class="portrait-id">
+		<nav class="white" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" style="color: black;font-size:20px;font-family:'El Messiri'" href="#" >OPERATION CAR WASH</a>
+	<!--			<ul class="right hide-on-med-and-down">
+					<li><a href="#">Navbar Link</a></li>
+				</ul>
+
+	 			<ul id="nav-mobile" class="side-nav">
+					<li><a href="#">Navbar Link</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
+			</div>
+		</nav>
+
+		<div id="index-banner" class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<h1 class="header center blue-text text-lighten-2">Warrants issued throughout the phases.</h1>
+					<div class="row center">
+						<h5 class="header col s12 light">Clicke the subtitles to filter by type. Select a time window or click a bar to filter by date. Click the pictures for details(portuguese). Mouseover the bar for details.</h5>
+					</div>
+	        <!-- <div class="row center">
+	          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1">Get Started</a>
+	      </div> -->
+	      <br><br>
+
+	  </div>
+	</div>
+	<div class="parallax"><img src="assets/images/lula10.jpg" alt="lulao"></div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+				<div>
+					<div style="padding-top: 30px;padding-bottom: 30px;" class="row " >
+					<div  class="right col s4">
+						<a href="javascript:dc.filterAll();dc.renderAll();"  class=" s12 btn waves-effect" id="reset">Reset filters</a>
+					</div>
+						<div  class="col s8 left">	
+						<ul>
+							<div class="col s4 " id="contaConducao">Mandatory presentations:<br> </div> 
+							<div class="col s4 " id="contaPrisao">Arrests:<br> </div> 
+							<div class="col s4 "  id="contaBusca">Search and seizure:<br> </div>
+						</ul>
+						</div>
+					</div>
+					<div class="row">
+						
+						<div class="col s12 m12 l8">
+							<div class="row s12 "  id="grafico_composite_fases"></div>
+							<div class="row s12 " id="barras_fases" ></div>
+							
+						</div>
+						<div class="col s12 m12 l4 section" style="padding-left: 60px ;  ">
+							Main Occurrences
+							<div style="overflow: scroll;max-height: 400px">
+								<div id="datagrid"  class="flow-text "></div>
+							</div>
+						</div>
+						
+					</div>
+					
+
+
+				</div>
+				
+			<!--   Icon Section   -->
+			<div class="row">
+
+
+				
+				
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<h1 class="header center light">Donations to involved parties</h1>
+				<div class="row center">
+					<h5 class=" header col s12 m12 ">The bubbles's size represents the number of involved people in the operation. Click the bubble to filter. Mouseover the bubble for details. Scroll to zoom. Click the bar to filter.</h5>
+				</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="https://imagenes.elpais.com/resizer/v2/T7VAZEG3SMDT4F6RRKCHNBQ7EU.jpg?auth=0977c1ba7d26c213fd196c5d6c930358d74fd24541adf931622d66f8ef44c47a&width=1000" alt="poecio"></div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+			<div class="row" style="">
+				<a class="btn waves-effect   right col s3" href="javascript:return false;" id="reset_button"> Reset filters</a>
+				<a class="btn waves-effect right col s3" href="javascript:bChart.focus()" id="reset_button"> Remove zoom</a>
+			</div>
+			<div class="row">
+
+				<div class="col s12 m12 l3 "  id="doacoes_empreiteira" ></div>
+				<div class="col s12 m12 l9" style="padding-left: 60px" id="doacoes_partidos"  ></div>
+			</div>		
+		
+		
+		</div>
+	</div>
+
+
+	<div id="index-banner" class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<h1 class="header center green-text text-lighten-2">Relations</h1>
+					<div class="row center">
+						<h5 class="header col s12 light">Check which groups are related to others. Mouseover for details.</h5>
+					</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="assets/images/calheiros.jpg" alt="calheiros"></div>
+	</div>
+
+	<div class="container">
+		<div class="section" style="padding-top: 30px; padding-bottom: 30px;">
+			<div class=" col s12 m12 l12" id="vis"></div>
+	    </div>
+	</div>
+
+
+
+	<div id="index-banner" class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<h1 class="header center red-text text-darken-4">Tag Cloud</h1>
+					<div class="row center">
+						<h5 class="header col s12 light">Sergio Moro's most used words in his explanation to referendary Teori Zavascki in blue. Lula's most used words in his speech after his mandatory presentation in red.</h5>
+					</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="assets/images/moro.jpg" alt="moro"></div>
+	</div>
+
+	<div class="container">
+		<div class="section" style="padding-top: 30px; padding-bottom: 30px;">
+			<div id="morocloud" class=" col s12 m12 l6"></div>
+			<div id="lulacloud" class=" col s12 m12 l6" ><y><y/></div>
+	    </div>
+	</div>
+
+
+
+
+	<div id="index-banner" class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<h1 class="header center deep-purple-text ">Number of involved people by group.</h1>
+					<div class="row center">
+						<h5 class="header col s12 light">Click the column to see its subgroups.</h5>
+					</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="https://sensoincomum.org/wp-content/uploads/2016/08/dilma-rindo.jpg" alt="dilma"></div>
+	</div>
+	<div class="container">
+		<div class="section">
+			<div id="envolvidos"></div>
+			
+		</div>
+		
+	</div>
+
+
+	<div id="index-banner" class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<h1 class="header center green-text text-lighten-1">Citations in delations</h1>
+					<div class="row center">
+						<h5 class="header col s12 light">Click the squealer to filter. Mouseover for details.</h5>
+					</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="https://conteudo.imguol.com.br/c/noticias/fc/2016/05/04/4mai2016---o-presidente-da-camara-dos-deputados-eduardo-cunha-pmdb-rj-preside-sessao-deliberativa-no-plenario-da-casa-o-stf-marcou-para-amanha-julgamento-de-acao-que-pede-o-afastamento-de-cunha-da-1462406259537_615x470.jpg" alt="cunha"></div>
+	</div>
+
+	<div class="container">
+		<div class="section">
+			<div id="citacoes"></div>
+			
+		</div>
+		
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="page-footer indigo">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Quem sou eu</h5>
+					<p class="white-text text-darken-2">Há pouquíssimas coisas em nosso imenso universo que, se não são infindas, muito o parecem ser. Dentre elas, constam: o próprio universo, onde tudo habita;  a estupidez humana, em nossos diários atos, e acima de tudo, THE ZOEIRA THO, ELA NAO TEM FIM.</p>
+
+
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Tools</h5>
+					<ul>
+						<li><a class="white-text" href="https://d3js.org/">D3.js</a></li>
+						<li><a class="white-text" href="https://dc-js.github.io/dc.js/">Dc.js</a></li>
+						<li><a class="white-text" href="http://www.highcharts.com/">Highcharts.js</a></li>
+						<li><a class="white-text" href="http://pandas.pydata.org/">Pandas.py</a></li>
+						<li><a class="white-text" href="http://materializecss.com/">Materialize</a></li>
+
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Agradecimentos</h5>
+					<ul>
+						<li><a class="white-text" href="http://blog.counter-strike.net/">Chico pela cachaca</a></li>
+						<li><a class="white-text" href="https://pt.wikipedia.org/wiki/Veado">Felipe pelo Bloodborne</a></li>
+						<li><a class="white-text" href="http://www.emanuelesantos.net/">Maenu</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Made by <a class="brown-text text-lighten-3" href="http://github.com/a0th">a0th</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!--  Scripts-->
+
+	<!-- <script   src="js/jquery.js"  charset="utf-8"></script> -->
+	<script src="assets/js/crossfilter.js" charset="utf-8"></script>
+	<script src="assets/js/d3.js" charset="utf-8"></script>
+	<script src="assets/js/dc.js" charset="utf-8"></script>
+	<script type="text/javascript" src="https://rawgit.com/evanplaice/jquery-csv/master/src/jquery.csv.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+	<script src="https://code.highcharts.com/modules/data.js"></script>
+
+
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+	 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+	 <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> --><!-- 
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+
+
+	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/fases.js"></script>
+	<script src="assets/js/doacoes.js"></script>
+	<script src="assets/js/d3.parsets.js"></script>
+	<script src="assets/js/highlight.min.js"></script>
+	<script src="assets/js/cloud.js"></script>
+	<script src="assets/js/colorbrewer.js"></script>
+	<script src="assets/js/tagcloud.js"></script>
+	<script src="assets/js/paral.js"></script>
+	<script type="text/javascript" src="assets/js/gogodrill.js"></script>
+	<script type="text/javascript" src="assets/js/citacoes.js"></script>
+</div>
+
+</body>
+</html>

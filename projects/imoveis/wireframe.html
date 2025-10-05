@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fortaleza Apartment Rental Prices — Static Mock</title>
+<style>
+  :root{
+    --bg:#0e1621;        --panel:#121c2a;      --panel-2:#0f1a28;
+    --text:#d8e1f0;      --muted:#93a4bf;      --accent:#67b3ff;
+    --good:#4cc38a;      --bad:#f66;           --chip:#1a2a40;
+    --border:#21324a;    --shadow:0 6px 18px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font:14px/1.35 Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+    color:var(--text); background:radial-gradient(1200px 800px at 20% -10%, #152235 0%, #0c1421 60%) fixed, var(--bg);
+  }
+  .wrap{max-width:1280px; margin:0 auto; padding:24px}
+  header{display:flex; gap:16px; align-items:center; justify-content:space-between; margin-bottom:18px}
+  h1{margin:0; letter-spacing:.2px; font-weight:700; font-size:20px}
+  .toolbar{display:flex; gap:8px; flex-wrap:wrap}
+  .btn{
+    background:var(--chip); color:var(--text); border:1px solid var(--border);
+    padding:10px 12px; border-radius:10px; cursor:pointer
+  }
+  .grid{display:grid; gap:16px}
+  @media (min-width: 900px){
+    .grid{grid-template-columns: repeat(12, 1fr);}
+  }
+
+  /* Cards */
+  .card{
+    background:linear-gradient(180deg,var(--panel),var(--panel-2));
+    border:1px solid var(--border); border-radius:14px; box-shadow:var(--shadow);
+    padding:14px 14px 12px; position:relative; overflow:hidden;
+  }
+  .card h3{margin:0 0 10px; font-size:13px; letter-spacing:.3px; color:var(--muted); text-transform:uppercase}
+
+  /* Top layout */
+  .map      {grid-column: span 8;}
+  .kpis     {grid-column: span 4; display:grid; gap:12px; grid-template-columns:1fr 1fr}
+  .range    {grid-column: span 8;}
+  .note     {grid-column: span 4;}
+
+  /* Bottom layout (3x2) */
+  .b-1,.b-2,.b-3,.b-4,.b-5,.b-6{grid-column: span 4;}
+  @media (max-width: 899px){
+    .map,.kpis,.range,.note,.b-1,.b-2,.b-3,.b-4,.b-5,.b-6{grid-column: 1 / -1;}
+  }
+
+  /* Map placeholder */
+  .map-box{
+    height:420px; border-radius:10px; border:1px dashed #2a3b57;
+    background:
+      linear-gradient(0deg,rgba(255,255,255,.04),rgba(255,255,255,.04)) no-repeat,
+      repeating-linear-gradient(0deg, #1a2740 0 28px, #17213a 28px 56px),
+      radial-gradient(100% 60% at 60% 30%, #0c1423 0%, #0b1220 60%, #0a111e 100%);
+    display:grid; place-items:center; color:#7d91b3;
+  }
+  .map-badge{
+    position:absolute; top:12px; right:12px; background:var(--chip);
+    color:var(--muted); border:1px solid var(--border); padding:6px 8px; border-radius:999px; font-size:12px
+  }
+
+  /* KPI tiles */
+  .kpi{
+    background:var(--chip); border:1px solid var(--border); border-radius:12px;
+    padding:12px; display:flex; flex-direction:column; gap:2px;
+  }
+  .kpi .big{font-size:22px; font-weight:700; color:#fff}
+  .kpi small{color:var(--muted)}
+
+  /* Range slider */
+  .range .row{display:flex; gap:12px; align-items:center}
+  input[type="range"]{width:100%}
+  .pill{
+    padding:6px 10px; border-radius:999px; background:var(--chip);
+    border:1px solid var(--border); color:#c9d6ee; font-variant-numeric:tabular-nums
+  }
+
+  /* Placeholder charts */
+  .bars{display:flex; flex-direction:column; gap:8px}
+  .bar{
+    height:20px; background:#17243b; border:1px solid var(--border); border-radius:8px; overflow:hidden;
+    position:relative;
+  }
+  .bar > i{display:block; height:100%; background:linear-gradient(90deg, #3a8bff, #67b3ff)}
+  .bar .lbl{position:absolute; left:10px; top:2px; font-size:12px; color:#c6d2ea}
+  .legend{display:flex; gap:8px; align-items:center; color:var(--muted); font-size:12px}

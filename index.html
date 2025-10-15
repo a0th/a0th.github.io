@@ -56,15 +56,16 @@
 
   <main>
     <section class="relative overflow-hidden">
-      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-sky-50 via-rose-50 to-amber-50 dark:from-gray-950 dark:via-gray-950 dark:to-gray-950"></div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-gray-950 dark:via-purple-950/20 dark:to-indigo-950/20"></div>
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/30 via-transparent to-transparent dark:from-blue-900/20"></div>
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
           <div>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">Pet Projects</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-gray-900 via-purple-900 to-indigo-900 dark:from-white dark:via-purple-200 dark:to-indigo-200 bg-clip-text text-transparent">Pet Projects</h1>
             <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">A small collection of little cool things I've built.</p>
             <div class="mt-8 flex flex-wrap gap-3">
-              <a href="#projects" class="inline-flex items-center rounded-md bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-4 py-2 text-sm font-semibold shadow hover:opacity-90">Explore projects</a>
-              <a href="https://github.com/a0th" target="_blank" rel="noreferrer" class="inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm font-semibold hover:bg-gray-100 dark:hover:bg-gray-900">GitHub</a>
+              <a href="#projects" class="inline-flex items-center rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 text-sm font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200">Explore projects</a>
+              <a href="https://github.com/a0th" target="_blank" rel="noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 dark:border-gray-700 px-6 py-3 text-sm font-semibold hover:bg-gray-100 dark:hover:bg-gray-900 hover:scale-105 transition-all duration-200">GitHub</a>
             </div>
           </div>
         </div>
@@ -72,54 +73,55 @@
     </section>
 
     <section id="projects" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      <h2 class="text-xl font-semibold text-gray-700 dark:text-gray-200">Projects</h2>
-      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <a href="/projects/cardcalc/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+      <h2 class="text-2xl font-bold text-gray-700 dark:text-gray-200 mb-2">Projects</h2>
+      <p class="text-gray-500 dark:text-gray-400 mb-8">Explore my collection of tools and visualizations</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/projects/cardcalc/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
           <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">CardCalc</h3>
-            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+            <h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100">CardCalc</h3>
+            <span class="text-blue-400 group-hover:text-blue-600 dark:text-blue-300 dark:group-hover:text-blue-100 text-xl transition-colors">→</span>
           </div>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Card game LP+time tracker tool.</p>
+          <p class="mt-2 text-sm text-blue-700 dark:text-blue-200">Card game LP+time tracker tool.</p>
         </a>
 
-        <a href="projects/symmetric-diff/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+        <a href="projects/symmetric-diff/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
           <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">Symmetric Difference</h3>
-            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+            <h3 class="text-lg font-semibold text-green-900 dark:text-green-100">Symmetric Difference</h3>
+            <span class="text-green-400 group-hover:text-green-600 dark:text-green-300 dark:group-hover:text-green-100 text-xl transition-colors">→</span>
           </div>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Calculate the symmetric difference between two sets.</p>
+          <p class="mt-2 text-sm text-green-700 dark:text-green-200">Calculate the symmetric difference between two sets.</p>
         </a>
 
-        <a href="projects/lavajato/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+        <a href="projects/lavajato/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-red-50 to-rose-50 dark:from-red-950/30 dark:to-rose-950/30 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
           <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">Operation Car Wash</h3>
-            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+            <h3 class="text-lg font-semibold text-red-900 dark:text-red-100">Operation Car Wash</h3>
+            <span class="text-red-400 group-hover:text-red-600 dark:text-red-300 dark:group-hover:text-red-100 text-xl transition-colors">→</span>
           </div>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A set of interactive visualizations about one of the largest corruption schemes in history.</p>
+          <p class="mt-2 text-sm text-red-700 dark:text-red-200">A set of interactive visualizations about one of the largest corruption schemes in history.</p>
         </a>
 
-        <a href="projects/rolling-tutorial/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+        <a href="projects/rolling-tutorial/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-950/30 dark:to-violet-950/30 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
           <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">Rolling Tutorial</h3>
-            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+            <h3 class="text-lg font-semibold text-purple-900 dark:text-purple-100">Rolling Tutorial</h3>
+            <span class="text-purple-400 group-hover:text-purple-600 dark:text-purple-300 dark:group-hover:text-purple-100 text-xl transition-colors">→</span>
           </div>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Quick tour of pandas groupby.rolling with plots.</p>
+          <p class="mt-2 text-sm text-purple-700 dark:text-purple-200">Quick tour of pandas groupby.rolling with plots.</p>
         </a>
 
-        <a href="projects/pandera-tutorial/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+        <a href="projects/pandera-tutorial/index.html" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/30 dark:to-amber-950/30 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
           <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">Pandera Tutorial</h3>
-            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">→</span>
+            <h3 class="text-lg font-semibold text-orange-900 dark:text-orange-100">Pandera Tutorial</h3>
+            <span class="text-orange-400 group-hover:text-orange-600 dark:text-orange-300 dark:group-hover:text-orange-100 text-xl transition-colors">→</span>
           </div>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Data validation for pandas. Why and how.</p>
+          <p class="mt-2 text-sm text-orange-700 dark:text-orange-200">Data validation for pandas. Why and how.</p>
         </a>
 
-        <a href="https://github.com/a0th/plotly" target="_blank" rel="noreferrer" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm hover:shadow-md transition hover:-translate-y-0.5">
+        <a href="https://github.com/a0th/plotly" target="_blank" rel="noreferrer" class="group rounded-xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-pink-50 to-fuchsia-50 dark:from-pink-950/30 dark:to-fuchsia-950/30 p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
           <div class="flex items-start justify-between">
-            <h3 class="text-lg font-semibold">Plotly Plasma</h3>
-            <span class="text-gray-400 group-hover:text-gray-600 dark:text-gray-500 dark:group-hover:text-gray-300">↗</span>
+            <h3 class="text-lg font-semibold text-pink-900 dark:text-pink-100">Plotly Plasma</h3>
+            <span class="text-pink-400 group-hover:text-pink-600 dark:text-pink-300 dark:group-hover:text-pink-100 text-xl transition-colors">↗</span>
           </div>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Opinionated tools for Plotly.</p>
+          <p class="mt-2 text-sm text-pink-700 dark:text-pink-200">Opinionated tools for Plotly.</p>
         </a>
       </div>
     </section>

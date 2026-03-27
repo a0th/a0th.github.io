@@ -1,0 +1,7 @@
+{
+  "gameName": "Bingo entre amigos",
+  "seedVersion": "2026-03-27",
+  "seedSalt": "friends-night-01",
+  "resultsUrl": "./results.json",
+  "resultsRefreshMs": 15000
+}

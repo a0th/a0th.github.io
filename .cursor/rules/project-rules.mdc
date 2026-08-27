@@ -4,13 +4,14 @@ alwaysApply: true
 ## Repo overview
 
 - **Root**: static site with multiple mini-projects. Current home: `index.html`.
-- **Main sections**: symmetric difference tool, Operation Car Wash (data viz), Rolling tutorial (Quarto), Pandera tutorial (notebook+HTML), plus external Plotly repo link.
+- **Main sections**: symmetric difference tool, Operation Car Wash (data viz), Brasil vs pares (brviz), Rolling tutorial (Quarto), Pandera tutorial (notebook+HTML), plus external Plotly repo link.
 
 ## Entry points
 
 - `index.html`: modern landing page built with Tailwind (CDN), dark mode (localStorage), responsive project grid. Links to:
   - `projects/symmetric-diff/index.html`
   - `projects/lavajato/index.html`
+  - `projects/brviz/index.html`
   - `projects/rolling-tutorial/index.html`
   - `projects/pandera-tutorial/index.html`
   - `projects/cardcalc/index.html`
@@ -51,6 +52,11 @@ alwaysApply: true
 - Path: `projects/imoveis/index.html`
 - Real estate webapp with DuckDB integration, React components, and property data visualization.
 
+### Brasil vs pares (brviz)
+- Path: `projects/brviz/index.html`
+- Built Observable Framework site (d3 + Plot). Brazil vs peers on World Bank WDI, WGI, Fraser EFW, and OECD PISA.
+- Rebuild from `data-eng-docs/brviz` with `BRVIZ_BASE=/projects/brviz npm run build`, then copy `dist/` here.
+
 ## Shared assets
 
 ### Styles
@@ -82,6 +88,7 @@ alwaysApply: true
 - `projects/symmetric-diff/`: simple set tool (see above).
 - `projects/rolling-tutorial/`: Quarto article and assets.
 - `projects/pandera-tutorial/`: tutorial HTML and notebook.
+- `projects/brviz/`: Observable Framework build for Brazil vs peers.
 - `docs/`: documentation directory with `llm.md`.
 
 ## Build/deploy
@@ -102,5 +109,6 @@ alwaysApply: true
 - Pandera: `projects/pandera-tutorial/index.html`
 - CardCalc: `projects/cardcalc/index.html`
 - Imoveis: `projects/imoveis/index.html`
+- brviz: `projects/brviz/index.html`
 
 

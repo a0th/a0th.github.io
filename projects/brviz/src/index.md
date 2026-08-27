@@ -11,8 +11,8 @@ World Bank WDI, WGI, Fraser EFW, e OECD PISA por ciclo. PPP, produtividade, regr
 import {load} from "./components/data.js";
 import {metricPlot, barDelta, spendPisaPlot} from "./components/plots.js";
 
-const wdi = FileAttachment("./data/wdi.csv").csv({typed: true});
-const pisa = FileAttachment("./data/pisa.csv").csv({typed: true});
+const wdi = await FileAttachment("./data/wdi.csv").csv({typed: true});
+const pisa = await FileAttachment("./data/pisa.csv").csv({typed: true});
 const {
   namesOf,
   club90,

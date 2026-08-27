@@ -10,11 +10,11 @@
 <link rel="preload" as="style" href="./_import/style.ca916b33.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="./_import/style.ca916b33.css">
-<link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
+<link rel="modulepreload" href="./_observablehq/client.b8612b5f.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.7b1d6155.js">
-<link rel="modulepreload" href="./_import/components/plots.63853e1e.js">
+<link rel="modulepreload" href="./_import/components/data.1a25c24f.js">
+<link rel="modulepreload" href="./_import/components/plots.71d2faa1.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
@@ -55,17 +55,17 @@
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
 <script type="module">
 
-import {define} from "./_observablehq/client.a97643eb.js";
+import {define} from "./_observablehq/client.b8612b5f.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.00b10b87.csv","lastModified":1787853752640,"size":23599});
-registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.0f069b1e.csv","lastModified":1787853752644,"size":586184});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787857227646,"size":23242});
+registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.513158fb.csv","lastModified":1787857227512,"size":579200});
 
-define({id: "53da149d", inputs: ["FileAttachment"], outputs: ["load","metricPlot","barDelta","spendPisaPlot","wdi","pisa","namesOf","club90","ppp90","ppp90rel","pppWaveRel","prod90rel","prodWaveRel","inv","trd","rq90","days90","efw90","pisa90","edu90","gini90","pov90","hunger90","waveBoom","prodWaveBoom","pppBra","pppUmc","pppPol","invBra","invUmc","trdBra","trdMex","trdPol","eduBra","eduUmc","eduPol","eduKor","bra90rel","pol90rel","kor90rel","zaf90rel","braWaveRel","chlWaveRel","idnWaveRel","braProdRel","polProdRel","korProdRel","zafProdRel","braProdWave","chlProdWave","idnProdWave","braPisa","oecdPisa","korPisa","polPisa","braPisaRead","braPisaSci","braGini","polGini","korGini","zafGini","braPov","umcPov","polPov","korPov","zafPov","povBra90","braHunger","umcHunger","zafHunger","hungerBra01","braRq","polRq","korRq","chlRq","braDays","chlDays","polDays","korDays","braEfw","chlEfw","polEfw","korEfw","spendPisa","fmtX","fmtPct","fmtIdx","fmtGini","fmt2","fmtDays"], body: async (FileAttachment) => {
-const [{load}, {metricPlot, barDelta, spendPisaPlot}] = await Promise.all([import("./_import/components/data.7b1d6155.js"), import("./_import/components/plots.63853e1e.js")]);
+define({id: "70711ee5", inputs: ["FileAttachment"], outputs: ["load","metricPlot","barDelta","spendPisaPlot","wdi","pisa","namesOf","club90","ppp90","ppp90rel","pppWaveRel","prod90rel","prodWaveRel","inv","trd","rq90","days90","efw90","pisa90","edu90","gini90","pov90","hunger90","waveBoom","prodWaveBoom","pppBra","pppUmc","pppPol","invBra","invUmc","trdBra","trdMex","trdPol","eduBra","eduUmc","eduPol","eduKor","bra90rel","pol90rel","kor90rel","zaf90rel","braWaveRel","chlWaveRel","idnWaveRel","braProdRel","polProdRel","korProdRel","zafProdRel","braProdWave","chlProdWave","idnProdWave","braPisa","oecdPisa","korPisa","polPisa","braPisaRead","braPisaSci","braGini","polGini","korGini","zafGini","braPov","umcPov","polPov","korPov","zafPov","povBra90","braHunger","umcHunger","zafHunger","hungerBra01","braRq","polRq","korRq","chlRq","braDays","chlDays","polDays","korDays","braEfw","chlEfw","polEfw","korEfw","spendPisa","fmtX","fmtPct","fmtIdx","fmtGini","fmt2","fmtDays"], body: async (FileAttachment) => {
+const [{load}, {metricPlot, barDelta, spendPisaPlot}] = await Promise.all([import("./_import/components/data.1a25c24f.js"), import("./_import/components/plots.71d2faa1.js")]);
 
-const wdi = FileAttachment("./data/wdi.csv").csv({typed: true});
-const pisa = FileAttachment("./data/pisa.csv").csv({typed: true});
+const wdi = await FileAttachment("./data/wdi.csv").csv({typed: true});
+const pisa = await FileAttachment("./data/pisa.csv").csv({typed: true});
 const {
   namesOf,
   club90,
@@ -740,6 +740,18 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 </script>
 </head>
 <body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link observablehq-link-active"><a href="./">brviz</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./README">Untitled</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
 <div id="observablehq-center">
 <aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
 <nav>
@@ -760,7 +772,7 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <main id="observablehq-main" class="observablehq">
 <h1 id="brasil-vs-pares" tabindex="-1"><a class="observablehq-header-anchor" href="#brasil-vs-pares">Brasil vs pares</a></h1>
 <p>World Bank WDI, WGI, Fraser EFW, e OECD PISA por ciclo. PPP, produtividade, regras, e o que o aluno de 15 anos consegue fazer. Azul-escuro = Brasil.</p>
-<div class="observablehq observablehq--block"><!--:53da149d:--></div>
+<div class="observablehq observablehq--block"><!--:70711ee5:--></div>
 <div class="grid grid-cols-3">
   <div class="card">
     <div class="card-title">PIB per capita PPP</div>

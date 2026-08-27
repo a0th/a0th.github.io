@@ -35,12 +35,14 @@ export function series(metric, rows) {
     .filter((d) => d.metric === metric)
     .map((d) => ({
       ...d,
+      year: +d.year,
       name: NAMES[d.iso] ?? d.country,
     }));
 }
 
 export function at(rows, iso, year) {
-  return rows.find((d) => d.iso === iso && d.year === year)?.value;
+  const y = +year;
+  return rows.find((d) => d.iso === iso && d.year === y)?.value;
 }
 
 export function last(rows, iso) {

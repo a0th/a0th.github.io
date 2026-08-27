@@ -1,0 +1,112 @@
+{
+  "source": "World Bank Indicators API v2",
+  "start": 1990,
+  "end": 2024,
+  "countries": [
+    "ARG",
+    "BGR",
+    "BRA",
+    "CHL",
+    "CHN",
+    "COL",
+    "CZE",
+    "ECU",
+    "HUN",
+    "IDN",
+    "IND",
+    "KOR",
+    "LCN",
+    "MEX",
+    "MYS",
+    "PER",
+    "POL",
+    "RUS",
+    "THA",
+    "TUR",
+    "UKR",
+    "UMC",
+    "URY",
+    "ZAF"
+  ],
+  "indicators": {
+    "gdp_pc_ppp": {
+      "code": "NY.GDP.PCAP.PP.KD",
+      "lastupdated": "2026-07-13",
+      "n": 840
+    },
+    "gdp_per_employed": {
+      "code": "SL.GDP.PCAP.EM.KD",
+      "lastupdated": "2026-07-13",
+      "n": 813
+    },
+    "investment": {
+      "code": "NE.GDI.TOTL.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 833
+    },
+    "trade": {
+      "code": "NE.TRD.GNFS.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 834
+    },
+    "savings": {
+      "code": "NY.GNS.ICTR.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 823
+    },
+    "inflation": {
+      "code": "FP.CPI.TOTL.ZG",
+      "lastupdated": "2026-07-13",
+      "n": 804
+    },
+    "manufacturing": {
+      "code": "NV.IND.MANF.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 749
+    },
+    "gini": {
+      "code": "SI.POV.GINI",
+      "lastupdated": "2026-07-13",
+      "n": 500
+    },
+    "poverty_365": {
+      "code": "SI.POV.LMIC",
+      "lastupdated": "2026-07-13",
+      "n": 570
+    },
+    "poverty_830": {
+      "code": "SI.POV.UMIC",
+      "lastupdated": "2026-07-13",
+      "n": 570
+    },
+    "undernourish": {
+      "code": "SN.ITK.DEFC.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 552
+    },
+    "edu_spend": {
+      "code": "SE.XPD.TOTL.GD.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 608
+    },
+    "reg_quality": {
+      "code": "GOV_WGI_RQ.EST",
+      "lastupdated": "2026-03-18",
+      "n": 572
+    },
+    "start_days": {
+      "code": "IC.REG.DURS",
+      "lastupdated": null,
+      "n": 314,
+      "source": "Doing Business via Our World in Data"
+    },
+    "efw": {
+      "code": "fi_index",
+      "lastupdated": null,
+      "n": 547,
+      "source": "Fraser EFW via QoG Basic TS jan25"
+    }
+  },
+  "n_rows": 9929,
+  "path": "data/wdi.csv"
+}

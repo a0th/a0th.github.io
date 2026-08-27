@@ -1,0 +1,70 @@
+---
+title: "PIB per capita PPP — Brasil vs pares"
+format:
+  html:
+    code-fold: false
+    toc: true
+    embed-resources: true
+execute:
+  echo: true
+jupyter: python3
+---
+
+Dados: `../data/wdi.csv` via `uv run brviz fetch`. Pares = doadores TD 626 + Coreia/Chéquia + UMC/LAC.
+
+```{python}
+from pathlib import Path
+
+import pandas as pd
+import plotly.express as px
+
+csv = Path("../data/wdi.csv")
+wdi = pd.read_csv(csv)
+ppp = wdi[wdi.metric == "gdp_pc_ppp"].copy()
+ppp["year"] = ppp["year"].astype(int)
+print(ppp.groupby("iso").year.agg(["min", "max", "count"]).sort_index().to_string())
+```
+
+```{python}
+keep = [
+    "BRA",
+    "TUR",
+    "THA",
+    "ZAF",
+    "UKR",
+    "CHL",
+    "MEX",
+    "POL",
+    "CHN",
+    "KOR",
+    "UMC",
+]
+plot = ppp[ppp.iso.isin(keep)].copy()
+names = {
+    "BRA": "Brasil",
+    "TUR": "Turquia",
+    "THA": "Tailândia",
+    "ZAF": "África do Sul",
+    "UKR": "Ucrânia",
+    "CHL": "Chile",
+    "MEX": "México",
+    "POL": "Polônia",
+    "CHN": "China",
+    "KOR": "Coreia",
+    "UMC": "Upper middle income",
+}
+plot["country"] = plot.iso.map(names)
+fig = px.line(
+    plot,
+    x="year",
+    y="value",
+    color="country",
+    title="GDP per capita PPP (constante 2021 intl $)",
+    labels={"year": "Ano", "value": "intl $ 2021", "country": ""},
+)
+fig.update_layout(legend_title_text="")
+fig.update_traces(selector=dict(name="Brasil"), line=dict(width=3))
+fig.show()
+```
+
+Fonte: World Bank WDI `NY.GDP.PCAP.PP.KD`. Turquia/Tailândia/Ucrânia/África do Sul = pesos do controle sintético no TD 626 (PIB per capita).

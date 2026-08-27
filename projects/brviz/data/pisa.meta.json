@@ -1,0 +1,41 @@
+{
+  "source": "OECD PISA 2022 Database (I.B1.5.4\u20136), via Our World in Data",
+  "url": "https://ourworldindata.org/grapher/average-performance-of-15-year-olds-in-mathematics-reading-and-science.csv",
+  "countries": [
+    "ARG",
+    "BGR",
+    "BRA",
+    "CHL",
+    "COL",
+    "CZE",
+    "HUN",
+    "IDN",
+    "KOR",
+    "MEX",
+    "MYS",
+    "OECD",
+    "PER",
+    "POL",
+    "RUS",
+    "THA",
+    "TUR",
+    "UKR",
+    "URY"
+  ],
+  "indicators": {
+    "pisa_math": {
+      "code": "I.B1.5.4",
+      "n": 118
+    },
+    "pisa_read": {
+      "code": "I.B1.5.5",
+      "n": 132
+    },
+    "pisa_sci": {
+      "code": "I.B1.5.6",
+      "n": 106
+    }
+  },
+  "n_rows": 356,
+  "path": "data/pisa.csv"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf src/.observablehq/cache dist",
+    "dev": "observable preview",
+    "build": "observable build && npm run format:html",
+    "format": "prettier --write src/components src/style.css",
+    "format:html": "prettier --write dist/index.html",
+    "observable": "observable"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

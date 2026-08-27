@@ -1,0 +1,13 @@
+[project]
+name = "brviz"
+version = "0.1.0"
+description = "Brazil vs peers — WDI charts"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+brviz = "brviz.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

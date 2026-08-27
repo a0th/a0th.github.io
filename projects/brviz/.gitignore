@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.quarto/
+*_files/
+.jupyter_cache/
+node_modules/
+dist/
+src/.observablehq

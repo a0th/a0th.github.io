@@ -1,0 +1,6 @@
+node_modules
+src/.observablehq
+dist/_npm
+dist/_observablehq
+dist/_file
+dist/_import

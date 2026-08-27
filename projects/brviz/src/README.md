@@ -1,4 +1,4 @@
-Source for this page. Observable Framework.
+Observable Framework source.
 
 - `index.md` — report
 - `components/data.js` — WDI/PISA series

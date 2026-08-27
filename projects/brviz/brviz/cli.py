@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 
 from brviz.pisa import fetch as fetch_pisa
-from brviz.wdi import fetch
+from brviz.wdi import fetch, splice
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "data" / "wdi.csv"
@@ -26,9 +26,22 @@ def main(argv: list[str] | None = None) -> int:
         help="Also fetch FDI, education, internet, demographics, …",
     )
     p_fetch.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    p_fetch.add_argument(
+        "--only",
+        nargs="+",
+        help="Splice these metrics into the existing CSV (skip PISA)",
+    )
 
     args = parser.parse_args(argv)
     if args.cmd == "fetch":
+        if args.only:
+            meta = splice(
+                keys=args.only, start=args.start, end=args.end, out=args.out
+            )
+            print(f"spliced {meta['path']}  rows={meta['n_rows']}")
+            for key, info in meta["indicators"].items():
+                print(f"  {key:16s} {info['code']:22s} n={info['n']:4d}")
+            return 0
         meta = fetch(start=args.start, end=args.end, extra=args.all, out=args.out)
         print(f"wrote {meta['path']}  rows={meta['n_rows']}")
         for key, info in meta["indicators"].items():

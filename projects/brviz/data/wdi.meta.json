@@ -105,8 +105,24 @@
       "lastupdated": null,
       "n": 547,
       "source": "Fraser EFW via QoG Basic TS jan25"
+    },
+    "rule_of_law": {
+      "code": "GOV_WGI_RL.EST",
+      "lastupdated": "2026-03-18",
+      "n": 572
+    },
+    "tot": {
+      "code": "TT.PRI.MRCH.XD.WD",
+      "lastupdated": "2026-07-13",
+      "n": 440
+    },
+    "tfp": {
+      "code": "rtfpna",
+      "lastupdated": null,
+      "n": 734,
+      "source": "Penn World Table 11 via Our World in Data"
     }
   },
-  "n_rows": 9929,
+  "n_rows": 11784,
   "path": "data/wdi.csv"
 }

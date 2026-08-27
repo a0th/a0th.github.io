@@ -57,6 +57,8 @@ WAVE2_INDICATORS = {
     "undernourish": ("SN.ITK.DEFC.ZS", "Undernourishment (% pop)"),
     "edu_spend": ("SE.XPD.TOTL.GD.ZS", "Gov education spend (% GDP)"),
     "reg_quality": ("GOV_WGI_RQ.EST", "WGI Regulatory Quality"),
+    "rule_of_law": ("GOV_WGI_RL.EST", "WGI Rule of Law"),
+    "tot": ("TT.PRI.MRCH.XD.WD", "Net barter terms of trade (2015=100)"),
 }
 
 EXTRA_INDICATORS = {

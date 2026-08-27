@@ -4,6 +4,7 @@
 :root {
   --bra: #1e3a8a;
   --theme-foreground-focus: #1e3a8a;
+  --brviz-hamburger: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M2 4h12M2 8h12M2 12h12'/%3E%3C/svg%3E");
 }
 
 .muted {
@@ -17,4 +18,98 @@
 .card .card-title {
   font-weight: 500;
   font-size: 15px;
+}
+
+.score-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.score {
+  width: 100%;
+  table-layout: fixed;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+}
+
+.score th,
+.score td {
+  text-align: right;
+  padding: 0.35rem 0.6rem;
+}
+
+.score th:first-child,
+.score td:first-child {
+  width: 28%;
+  text-align: left;
+  padding-left: 0;
+  overflow-wrap: break-word;
+}
+
+.score .bra {
+  font-weight: 600;
+  color: var(--bra);
+}
+
+@media (max-width: 480px) {
+  .score {
+    font-size: 12px;
+  }
+
+  .score th,
+  .score td {
+    padding: 0.3rem 0.25rem;
+  }
+}
+
+.brviz-toc > div {
+  font-weight: 700;
+  color: var(--theme-foreground);
+  padding: 0.5rem 1rem 0.25rem 1.5rem;
+  margin-left: -0.5rem;
+}
+
+.brviz-toc .observablehq-link a {
+  white-space: normal;
+  line-height: 1.35;
+}
+
+@media (min-width: calc(832px + 5rem)) {
+  .brviz-toc {
+    display: none;
+  }
+}
+
+@media not (min-width: calc(912px + 6rem)) {
+  #observablehq-sidebar-toggle {
+    top: 0.5rem;
+    right: 0.5rem;
+    left: auto;
+    width: 2.75rem;
+    height: 2.75rem;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 999px;
+    color: var(--theme-foreground);
+    background: var(--theme-background);
+    box-shadow: 0 1px 4px #00000026;
+  }
+
+  #observablehq-sidebar-toggle:before {
+    width: 1.25rem;
+    height: 1.25rem;
+    -webkit-mask: var(--brviz-hamburger) center / contain no-repeat;
+    mask: var(--brviz-hamburger) center / contain no-repeat;
+  }
+
+  #observablehq-sidebar-toggle:checked {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@container (min-width: 640px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

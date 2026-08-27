@@ -9067,320 +9067,6 @@ reg_quality,GOV_WGI_RQ.EST,WGI Regulatory Quality,ZAF,South Africa,2002,0.812541
 reg_quality,GOV_WGI_RQ.EST,WGI Regulatory Quality,ZAF,South Africa,2000,0.4823623
 reg_quality,GOV_WGI_RQ.EST,WGI Regulatory Quality,ZAF,South Africa,1998,0.4147874
 reg_quality,GOV_WGI_RQ.EST,WGI Regulatory Quality,ZAF,South Africa,1996,0.1770943
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2003,65.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2004,29.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2005,29.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2006,29.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2007,29.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2008,30.0
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2009,25.0
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2010,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2011,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2012,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2013,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2014,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2015,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2016,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2017,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2018,11.0
-start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2019,11.5
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2013,86.6
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2014,83.6
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2015,86.0
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2016,82.5
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2017,82.5
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2018,20.1
-start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2019,16.6
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2003,39.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2004,39.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2005,39.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2006,39.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2007,39.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2008,56.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2009,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2010,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2011,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2012,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2013,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2014,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2015,25.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2016,23.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2017,23.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2018,23.0
-start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2019,23.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2003,42.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2004,42.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2005,42.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2006,40.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2007,40.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2008,40.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2009,40.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2010,36.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2011,9.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2012,7.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2013,7.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2014,7.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2015,7.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2016,7.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2017,7.5
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2018,6.0
-start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2019,4.0
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2013,34.4
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2014,31.3
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2015,31.4
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2016,28.9
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2017,24.9
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2018,8.6
-start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2019,8.6
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2003,44.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2004,41.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2005,41.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2006,42.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2007,41.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2008,35.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2009,19.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2010,11.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2011,11.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2012,12.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2013,12.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2014,12.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2015,12.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2016,11.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2017,11.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2018,11.0
-start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2019,10.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2003,57.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2004,57.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2005,57.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2006,39.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2007,32.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2008,35.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2009,32.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2010,32.0
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2011,30.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2012,30.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2013,30.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2014,30.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2015,30.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2016,24.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2017,24.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2018,24.5
-start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2019,24.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2003,92.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2004,92.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2005,69.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2006,65.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2007,65.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2008,65.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2009,64.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2010,56.0
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2011,55.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2012,55.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2013,55.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2014,55.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2015,50.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2016,48.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2017,48.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2018,48.5
-start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2019,48.5
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2003,54.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2004,54.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2005,39.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2006,39.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2007,17.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2008,6.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2009,5.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2010,5.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2011,5.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2012,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2013,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2014,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2015,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2016,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2017,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2018,7.0
-start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2019,7.0
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2013,32.6
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2014,35.0
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2015,30.0
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2016,28.5
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2017,29.8
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2018,16.5
-start_days,IC.REG.DURS,Time to start a business (days),IND,India,2019,17.5
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2013,77.0
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2014,53.9
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2015,49.3
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2016,26.3
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2017,24.5
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2018,21.0
-start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2019,12.6
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2003,37.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2004,37.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2005,37.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2006,37.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2007,31.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2008,20.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2009,18.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2010,17.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2011,8.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2012,9.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2013,9.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2014,7.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2015,7.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2016,23.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2017,23.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2018,13.5
-start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2019,17.5
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2013,8.4
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2014,8.4
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2015,8.4
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2016,8.4
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2017,8.4
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2018,8.4
-start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2019,8.4
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2003,100.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2004,100.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2005,104.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2006,74.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2007,74.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2008,67.0
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2009,41.0
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2010,42.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2011,41.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2012,41.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2013,41.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2014,41.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2015,41.5
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2016,41.0
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2017,41.0
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2018,26.0
-start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2019,26.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2003,63.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2004,63.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2005,52.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2006,45.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2007,45.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2008,45.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2009,39.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2010,39.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2011,39.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2012,39.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2013,37.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2014,37.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2015,37.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2016,37.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2017,37.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2018,37.0
-start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2019,37.0
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2013,13.2
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2014,11.5
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2015,10.8
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2016,10.1
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2017,10.1
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2018,10.1
-start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2019,10.1
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2003,56.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2004,56.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2005,53.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2006,53.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2007,53.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2008,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2009,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2010,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2011,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2012,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2013,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2014,46.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2015,46.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2016,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2017,45.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2018,40.0
-start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2019,40.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2003,17.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2004,17.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2005,17.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2006,17.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2007,17.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2008,17.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2009,14.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2010,14.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2011,9.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2012,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2013,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2014,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2015,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2016,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2017,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2018,8.0
-start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2019,8.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2003,35.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2004,35.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2005,35.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2006,35.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2007,35.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2008,35.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2009,34.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2010,34.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2011,32.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2012,31.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2013,31.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2014,31.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2015,31.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2016,29.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2017,6.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2018,6.0
-start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2019,6.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2003,40.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2004,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2005,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2006,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2007,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2008,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2009,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2010,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2011,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2012,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2013,10.5
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2014,11.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2015,11.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2016,10.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2017,10.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2018,7.0
-start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2019,7.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2003,41.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2004,35.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2005,35.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2006,34.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2007,28.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2008,28.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2009,28.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2010,28.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2011,25.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2012,23.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2013,22.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2014,22.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2015,8.0
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2016,6.5
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2017,6.5
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2018,6.5
-start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2019,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2003,45.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2004,45.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2005,45.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2006,43.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2007,43.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2008,43.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2009,64.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2010,64.0
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2011,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2012,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2013,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2014,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2015,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2016,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2017,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2018,6.5
-start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2019,6.5
 efw,fi_index,Fraser EFW (0-10),ARG,Argentina,1990,4.5799999
 efw,fi_index,Fraser EFW (0-10),ARG,Argentina,1995,6.79
 efw,fi_index,Fraser EFW (0-10),ARG,Argentina,2000,7.2199998
@@ -9928,3 +9614,2172 @@ efw,fi_index,Fraser EFW (0-10),URY,Uruguay,2019,7.1999998
 efw,fi_index,Fraser EFW (0-10),URY,Uruguay,2020,6.9499998
 efw,fi_index,Fraser EFW (0-10),URY,Uruguay,2021,6.9299998
 efw,fi_index,Fraser EFW (0-10),URY,Uruguay,2022,7.04
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2003,65.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2004,29.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2005,29.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2006,29.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2007,29.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2008,30.0
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2009,25.0
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2010,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2011,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2012,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2013,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2014,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2015,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2016,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2017,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2018,11.0
+start_days,IC.REG.DURS,Time to start a business (days),ARG,Argentina,2019,11.5
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2013,86.6
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2014,83.6
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2015,86.0
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2016,82.5
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2017,82.5
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2018,20.1
+start_days,IC.REG.DURS,Time to start a business (days),BRA,Brazil,2019,16.6
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2003,39.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2004,39.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2005,39.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2006,39.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2007,39.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2008,56.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2009,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2010,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2011,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2012,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2013,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2014,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2015,25.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2016,23.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2017,23.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2018,23.0
+start_days,IC.REG.DURS,Time to start a business (days),BGR,Bulgaria,2019,23.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2003,42.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2004,42.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2005,42.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2006,40.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2007,40.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2008,40.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2009,40.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2010,36.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2011,9.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2012,7.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2013,7.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2014,7.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2015,7.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2016,7.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2017,7.5
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2018,6.0
+start_days,IC.REG.DURS,Time to start a business (days),CHL,Chile,2019,4.0
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2013,34.4
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2014,31.3
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2015,31.4
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2016,28.9
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2017,24.9
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2018,8.6
+start_days,IC.REG.DURS,Time to start a business (days),CHN,China,2019,8.6
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2003,44.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2004,41.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2005,41.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2006,42.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2007,41.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2008,35.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2009,19.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2010,11.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2011,11.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2012,12.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2013,12.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2014,12.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2015,12.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2016,11.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2017,11.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2018,11.0
+start_days,IC.REG.DURS,Time to start a business (days),COL,Colombia,2019,10.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2003,57.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2004,57.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2005,57.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2006,39.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2007,32.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2008,35.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2009,32.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2010,32.0
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2011,30.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2012,30.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2013,30.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2014,30.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2015,30.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2016,24.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2017,24.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2018,24.5
+start_days,IC.REG.DURS,Time to start a business (days),CZE,Czechia,2019,24.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2003,92.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2004,92.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2005,69.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2006,65.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2007,65.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2008,65.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2009,64.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2010,56.0
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2011,55.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2012,55.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2013,55.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2014,55.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2015,50.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2016,48.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2017,48.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2018,48.5
+start_days,IC.REG.DURS,Time to start a business (days),ECU,Ecuador,2019,48.5
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2003,45.458332
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2004,40.0
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2005,30.583334
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2006,26.84
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2007,23.06
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2008,20.01923
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2009,17.826923
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2010,16.903847
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2011,16.62963
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2012,16.37037
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2013,15.777778
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2014,14.351851
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2015,13.240741
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2016,12.722222
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2017,12.351851
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2018,13.277778
+start_days,IC.REG.DURS,Time to start a business (days),OWID_EU27,European Union (27),2019,12.166667
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2003,45.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2004,45.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2005,22.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2006,22.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2007,18.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2008,17.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2009,17.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2010,14.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2011,14.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2012,14.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2013,14.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2014,14.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2015,10.5
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2016,8.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2017,8.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2018,8.0
+start_days,IC.REG.DURS,Time to start a business (days),DEU,Germany,2019,8.0
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2003,35.88409
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2004,32.258698
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2005,28.148
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2006,27.113462
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2007,23.896364
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2008,21.585714
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2009,20.157143
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2010,19.085714
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2011,16.858622
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2012,16.944067
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2013,16.148388
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2014,14.904839
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2015,12.512903
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2016,12.435484
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2017,11.8
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2018,12.453968
+start_days,IC.REG.DURS,Time to start a business (days),OWID_HIC,High-income countries,2019,11.32381
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2003,54.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2004,54.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2005,39.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2006,39.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2007,17.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2008,6.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2009,5.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2010,5.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2011,5.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2012,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2013,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2014,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2015,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2016,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2017,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2018,7.0
+start_days,IC.REG.DURS,Time to start a business (days),HUN,Hungary,2019,7.0
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2013,32.6
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2014,35.0
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2015,30.0
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2016,28.5
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2017,29.8
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2018,16.5
+start_days,IC.REG.DURS,Time to start a business (days),IND,India,2019,17.5
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2013,77.0
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2014,53.9
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2015,49.3
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2016,26.3
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2017,24.5
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2018,21.0
+start_days,IC.REG.DURS,Time to start a business (days),IDN,Indonesia,2019,12.6
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2003,74.31579
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2004,67.5
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2005,74.793106
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2006,70.655174
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2007,64.3
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2008,63.466667
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2009,61.783333
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2010,58.4
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2011,53.951614
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2012,53.435482
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2013,35.651516
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2014,30.80303
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2015,31.724243
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2016,32.178787
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2017,31.936363
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2018,28.757576
+start_days,IC.REG.DURS,Time to start a business (days),WB_LAC,Latin America and Caribbean (WB),2019,28.09091
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2003,37.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2004,37.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2005,37.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2006,37.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2007,31.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2008,20.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2009,18.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2010,17.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2011,8.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2012,9.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2013,9.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2014,7.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2015,7.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2016,23.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2017,23.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2018,13.5
+start_days,IC.REG.DURS,Time to start a business (days),MYS,Malaysia,2019,17.5
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2013,8.4
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2014,8.4
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2015,8.4
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2016,8.4
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2017,8.4
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2018,8.4
+start_days,IC.REG.DURS,Time to start a business (days),MEX,Mexico,2019,8.4
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2003,12.0
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2004,12.0
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2005,12.0
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2006,12.0
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2007,12.0
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2008,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2009,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2010,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2011,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2012,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2013,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2014,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2015,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2016,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2017,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2018,0.5
+start_days,IC.REG.DURS,Time to start a business (days),NZL,New Zealand,2019,0.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2003,100.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2004,100.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2005,104.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2006,74.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2007,74.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2008,67.0
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2009,41.0
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2010,42.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2011,41.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2012,41.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2013,41.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2014,41.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2015,41.5
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2016,41.0
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2017,41.0
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2018,26.0
+start_days,IC.REG.DURS,Time to start a business (days),PER,Peru,2019,26.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2003,63.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2004,63.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2005,52.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2006,45.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2007,45.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2008,45.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2009,39.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2010,39.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2011,39.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2012,39.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2013,37.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2014,37.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2015,37.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2016,37.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2017,37.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2018,37.0
+start_days,IC.REG.DURS,Time to start a business (days),POL,Poland,2019,37.0
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2013,13.2
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2014,11.5
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2015,10.8
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2016,10.1
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2017,10.1
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2018,10.1
+start_days,IC.REG.DURS,Time to start a business (days),RUS,Russia,2019,10.1
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2003,56.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2004,56.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2005,53.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2006,53.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2007,53.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2008,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2009,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2010,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2011,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2012,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2013,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2014,46.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2015,46.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2016,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2017,45.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2018,40.0
+start_days,IC.REG.DURS,Time to start a business (days),ZAF,South Africa,2019,40.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2003,17.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2004,17.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2005,17.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2006,17.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2007,17.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2008,17.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2009,14.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2010,14.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2011,9.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2012,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2013,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2014,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2015,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2016,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2017,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2018,8.0
+start_days,IC.REG.DURS,Time to start a business (days),KOR,South Korea,2019,8.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2003,35.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2004,35.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2005,35.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2006,35.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2007,35.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2008,35.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2009,34.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2010,34.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2011,32.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2012,31.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2013,31.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2014,31.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2015,31.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2016,29.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2017,6.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2018,6.0
+start_days,IC.REG.DURS,Time to start a business (days),THA,Thailand,2019,6.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2003,40.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2004,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2005,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2006,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2007,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2008,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2009,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2010,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2011,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2012,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2013,10.5
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2014,11.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2015,11.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2016,10.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2017,10.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2018,7.0
+start_days,IC.REG.DURS,Time to start a business (days),TUR,Turkey,2019,7.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2003,41.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2004,35.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2005,35.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2006,34.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2007,28.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2008,28.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2009,28.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2010,28.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2011,25.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2012,23.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2013,22.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2014,22.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2015,8.0
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2016,6.5
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2017,6.5
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2018,6.5
+start_days,IC.REG.DURS,Time to start a business (days),UKR,Ukraine,2019,6.5
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2013,6.2
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2014,5.6
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2015,5.6
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2016,5.6
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2017,5.6
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2018,5.6
+start_days,IC.REG.DURS,Time to start a business (days),USA,United States,2019,4.2
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2003,55.941177
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2004,52.51389
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2005,63.670456
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2006,58.366665
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2007,53.77778
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2008,48.88889
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2009,45.815216
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2010,45.576088
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2011,43.70652
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2012,43.287235
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2013,32.703922
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2014,29.57255
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2015,28.727451
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2016,27.521568
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2017,23.868628
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2018,20.952942
+start_days,IC.REG.DURS,Time to start a business (days),OWID_UMC,Upper-middle-income countries,2019,20.288235
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2003,45.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2004,45.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2005,45.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2006,43.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2007,43.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2008,43.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2009,64.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2010,64.0
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2011,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2012,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2013,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2014,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2015,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2016,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2017,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2018,6.5
+start_days,IC.REG.DURS,Time to start a business (days),URY,Uruguay,2019,6.5
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2024,-0.2513801
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2023,-0.237773799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2022,-0.2913485
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2021,-0.303899
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2020,-0.290549699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2019,-0.338125599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2018,-0.2022099
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2017,-0.172504599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2016,-0.2365898
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2015,-0.467320499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2014,-0.7299737
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2013,-0.5758327
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2012,-0.5151067
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2011,-0.4685103
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2010,-0.5170484
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2009,-0.6305261
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2008,-0.678214099999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2007,-0.4644969
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2006,-0.4448966
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2005,-0.4127937
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2004,-0.6604823
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2003,-0.783139599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2002,-0.804874299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,2000,-0.160553
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,1998,0.0341532
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ARG,Argentina,1996,0.1293667
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2024,-0.0333423
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2023,-0.0265936
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2022,-0.0998029
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2021,-0.0377457
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2020,-0.1505346
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2019,-0.1405825
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2018,-0.1406672
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2017,-0.2333326
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2016,-0.1981219
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2015,-0.2080985
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2014,-0.2149399
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2013,-0.231316
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2012,-0.2175182
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2011,-0.3367214
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2010,-0.2998251
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2009,-0.1393653
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2008,-0.146950399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2007,-0.033193
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2006,-0.069945
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2005,-0.1160971
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2004,-0.0941294999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2003,-0.2016277
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2002,-0.0149214999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,2000,-0.0907549
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,1998,-0.1508416
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BGR,Bulgaria,1996,-0.1951306
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2024,-0.446218
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2023,-0.483012599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2022,-0.4398335
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2021,-0.4091435
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2020,-0.392171899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2019,-0.3861785
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2018,-0.4015041
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2017,-0.2808179
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2016,-0.1485678
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2015,-0.225204699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2014,-0.1419913
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2013,-0.134532999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2012,-0.0446889
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2011,-0.0747892
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2010,-0.0413875
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2009,-0.2053216
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2008,-0.247276299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2007,-0.3124145
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2006,-0.3073782
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2005,-0.3517713
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2004,-0.2921475
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2003,-0.387330099999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2002,-0.3005311
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,2000,-0.366494999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,1998,-0.369799799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,BRA,Brazil,1996,-0.3408545
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2024,0.6910553
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2023,0.6647803
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2022,0.7437613
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2021,0.7564837
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2020,0.7392409
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2019,0.9142445
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2018,0.9580736
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2017,0.9674315
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2016,0.9892533
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2015,1.0033345
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2014,1.057621
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2013,1.0732241
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2012,1.1356496
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2011,1.1056868
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2010,1.2297551
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2009,1.2523741
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2008,1.2487989
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2007,1.2923773
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2006,1.2897733
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2005,1.3290335
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2004,1.2850333
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2003,1.2934139
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2002,1.3264631
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,2000,1.3164479
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,1998,1.1108542
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHL,Chile,1996,1.1908863
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2024,-0.579319799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2023,-0.552260699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2022,-0.563864399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2021,-0.5386195
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2020,-0.5093696
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2019,-0.5515574
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2018,-0.5204445
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2017,-0.5354403
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2016,-0.6211726
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2015,-0.6620808
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2014,-0.6904443
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2013,-0.795021299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2012,-0.691498899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2011,-0.5970818
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2010,-0.7004332
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2009,-0.7010099
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2008,-0.694980199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2007,-0.72761
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2006,-0.8515222
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2005,-0.8350576
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2004,-0.7216823
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2003,-0.7507446
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2002,-0.6505266
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,2000,-0.6100298
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,1998,-0.496681799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CHN,China,1996,-0.5345321
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2024,-0.5597434
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2023,-0.5648803
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2022,-0.5296476
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2021,-0.506983
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2020,-0.482495599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2019,-0.452757099999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2018,-0.422010899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2017,-0.3653829
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2016,-0.3488186
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2015,-0.3995338
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2014,-0.4114652
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2013,-0.483686599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2012,-0.447664299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2011,-0.3902442
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2010,-0.360987499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2009,-0.4629502
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2008,-0.4087231
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2007,-0.439477699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2006,-0.552814399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2005,-0.5597229
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2004,-0.5322335
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2003,-0.7606776
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2002,-0.807042599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,2000,-1.051231
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,1998,-0.797549
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,COL,Colombia,1996,-0.8696204
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2024,1.1881307
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2023,1.1605869
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2022,1.1392733
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2021,1.1669833
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2020,1.1245932
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2019,1.116394
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2018,1.0403101
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2017,1.13083
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2016,1.0846322
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2015,1.0475127
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2014,0.9570647
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2013,0.8587857
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2012,0.8309207
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2011,0.8440617
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2010,0.7330604
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2009,0.7387095
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2008,0.7329477
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2007,0.7260533
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2006,0.7556684
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2005,0.8532405
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2004,0.6805682
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2003,0.8614142
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2002,0.8537917
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,2000,0.5742693
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,1998,0.7319665
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,CZE,Czechia,1996,0.7981957
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2024,-0.9650369
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2023,-0.858649799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2022,-0.5794902
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2021,-0.4314709
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2020,-0.5676359
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2019,-0.6485634
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2018,-0.7671005
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2017,-0.8823998
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2016,-0.965986399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2015,-1.0655454
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2014,-1.0146122
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2013,-0.994210199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2012,-1.0775133
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2011,-1.0913867
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2010,-1.0787288
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2009,-1.1370281
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2008,-1.1123748
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2007,-0.9510888
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2006,-1.00963999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2005,-0.780185799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2004,-0.6776494
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2003,-0.6931491
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2002,-0.7765755
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,2000,-0.8265146
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,1998,-0.539069999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ECU,Ecuador,1996,-0.4051692
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2024,0.1923364
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2023,0.1894005
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2022,0.2426218
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2021,0.2971399
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2020,0.329192
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2019,0.3081109
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2018,0.3396782
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2017,0.4009882
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2016,0.4099126
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2015,0.3552783
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2014,0.3509972
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2013,0.4986862
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2012,0.5661169
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2011,0.6315963
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2010,0.5821301
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2009,0.6124149
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2008,0.7766805
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2007,0.8935867
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2006,0.9624708
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2005,0.9162369
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2004,0.8391406
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2003,0.8572117
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2002,0.8504327
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,2000,0.86158
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,1998,0.8537457
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,HUN,Hungary,1996,0.8658286
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2024,-0.206598099999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2023,-0.0817572
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2022,-0.1291182
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2021,-0.1436778
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2020,-0.1479773
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2019,-0.1919729
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2018,-0.2197187
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2017,-0.3165999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2016,-0.321809499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2015,-0.3812221
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2014,-0.338428
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2013,-0.419998
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2012,-0.3852324
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2011,-0.285231299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2010,-0.6518311
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2009,-0.5530581
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2008,-0.5772889
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2007,-0.626456999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2006,-0.6506633
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2005,-0.765255999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2004,-0.769980799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2003,-0.935414899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2002,-1.1356188
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,2000,-0.9501841
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,1998,-0.914044499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IDN,Indonesia,1996,-0.5238167
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2024,-0.0392287
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2023,-0.0879069
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2022,-0.1104884
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2021,-0.1841026
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2020,-0.1029725
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2019,-0.0201063
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2018,0.020334
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2017,-0.0399917
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2016,-0.0823440999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2015,-0.1374229
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2014,-0.165636199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2013,-0.1159615
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2012,-0.1308812
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2011,-0.0132833999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2010,0.0630896
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2009,0.150293
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2008,0.1618552
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2007,0.1942209
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2006,0.2268876
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2005,0.1692788
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2004,0.0575144
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2003,0.0275527
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2002,-0.0434055999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,2000,0.2604152
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,1998,0.1953286
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,IND,India,1996,0.2184831
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2024,1.1174546
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2023,1.1844569
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2022,1.1662138
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2021,1.1681575
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2020,1.1479729
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2019,1.1105361
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2018,1.1100736
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2017,1.011855
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2016,1.0280786
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2015,1.0105606
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2014,1.0706201
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2013,0.9929714
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2012,1.0189309
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2011,0.9101943
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2010,0.9000647
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2009,0.9270364
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2008,0.8940893
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2007,1.028267
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2006,0.8433832
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2005,0.915636
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2004,0.8754653
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2003,0.7846467
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2002,0.7931911
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",2000,0.810882
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",1998,0.6872705
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,KOR,"Korea, Rep.",1996,0.7851404
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2024,-1.15386449999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2023,-1.0777054
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2022,-1.0822517
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2021,-1.0248188
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2020,-0.986665199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2019,-0.8760117
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2018,-0.8062687
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2017,-0.7300047
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2016,-0.667592499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2015,-0.6829719
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2014,-0.5831095
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2013,-0.6475514
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2012,-0.5948829
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2011,-0.617978399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2010,-0.5089477
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2009,-0.478466299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2008,-0.5412926
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2007,-0.2930473
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2006,-0.2086418
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2005,-0.2086303
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2004,-0.1818945
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2003,-0.239611499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2002,-0.2878254
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,2000,-0.5434
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,1998,-0.662064299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MEX,Mexico,1996,-0.686834
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2024,0.3451357
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2023,0.3016843
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2022,0.2952941
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2021,0.3016338
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2020,0.3499706
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2019,0.3389272
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2018,0.2863954
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2017,0.1306432
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2016,0.098701
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2015,0.1141708
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2014,0.2420724
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2013,0.1917656
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2012,0.2392426
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2011,0.1386142
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2010,0.2255439
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2009,0.2116536
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2008,0.2195174
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2007,0.2985609
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2006,0.3835036
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2005,0.2772334
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2004,0.3711285
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2003,0.3410072
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2002,0.2232436
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,2000,-0.0264614
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,1998,0.2018982
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,MYS,Malaysia,1996,0.5043568
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2024,-0.5057749
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2023,-0.4787644
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2022,-0.487251699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2021,-0.5208197
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2020,-0.4320888
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2019,-0.456438399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2018,-0.4609214
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2017,-0.374605199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2016,-0.3392422
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2015,-0.4520227
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2014,-0.553702
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2013,-0.555049
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2012,-0.4879551
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2011,-0.443320599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2010,-0.4909174
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2009,-0.503791
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2008,-0.579087999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2007,-0.5442173
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2006,-0.5145408
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2005,-0.4764555
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2004,-0.3791477
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2003,-0.5205074
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2002,-0.5353011
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,2000,-0.7597657
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,1998,-0.619831399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,PER,Peru,1996,-0.6279175
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2024,0.5769112
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2023,0.3564347
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2022,0.3545463
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2021,0.4098572
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2020,0.460073
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2019,0.5263759
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2018,0.5473425
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2017,0.6191174
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2016,0.7545596
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2015,0.8357984
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2014,0.8809895
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2013,0.8221108
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2012,0.8705388
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2011,0.8414342
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2010,0.6458707
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2009,0.5364193
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2008,0.5518631
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2007,0.4732407
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2006,0.3491376
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2005,0.569705
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2004,0.2669522
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2003,0.424154
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2002,0.5469485
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,2000,0.6504934
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,1998,0.6778793
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,POL,Poland,1996,0.6571317
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2024,-1.15651859999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2023,-1.0734047
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2022,-1.0548583
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2021,-0.902773199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2020,-0.8254091
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2019,-0.866817899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2018,-0.832458799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2017,-0.8371632
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2016,-0.867073499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2015,-0.9088341
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2014,-0.8526414
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2013,-0.915144099999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2012,-0.9650892
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2011,-0.685372499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2010,-0.930049599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2009,-0.973325599999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2008,-0.9754543
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2007,-0.9139767
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2006,-0.943649
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2005,-0.919405199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2004,-0.7916717
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2003,-0.9665693
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2002,-0.936768199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,2000,-1.0370572
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,1998,-0.935212899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,RUS,Russian Federation,1996,-0.867188699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2024,-0.2155096
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2023,-0.1956309
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2022,-0.2682159
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2021,-0.2575207
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2020,-0.2036855
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2019,-0.2002532
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2018,-0.2986525
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2017,-0.3190283
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2016,-0.3279698
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2015,-0.3757008
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2014,-0.397889999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2013,-0.223368999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2012,-0.115414099999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2011,-0.127405
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2010,-0.257822999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2009,-0.2840722
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2008,-0.2254443
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2007,-0.214751499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2006,-0.1788782
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2005,-0.0533122
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2004,-0.0437146999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2003,-0.0029901
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2002,0.362596
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,2000,0.6190079
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,1998,0.5182612
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,THA,Thailand,1996,0.6088092
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2024,-0.8434149
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2023,-0.799233499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2022,-0.7798318
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2021,-0.775344399999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2020,-0.709944799999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2019,-0.5970473
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2018,-0.7089454
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2017,-0.615377
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2016,-0.5458731
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2015,-0.4773732
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2014,-0.3611001
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2013,-0.1149216
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2012,-0.1061886
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2011,-0.0879284999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2010,0.0494591
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2009,0.0681247
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2008,0.103572
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2007,0.1250365
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2006,0.147626
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2005,0.16326
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2004,0.1375742
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2003,-0.0124827999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2002,-0.1245323
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,2000,-0.0436953999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,1998,-0.188178899999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,TUR,Turkiye,1996,-0.1278568
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2024,-0.720198999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2023,-0.7454054
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2022,-0.742306199999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2021,-0.5685603
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2020,-0.5670134
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2019,-0.5855728
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2018,-0.5163067
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2017,-0.5761461
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2016,-0.6452955
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2015,-0.699935499999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2014,-0.725548699999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2013,-0.720552
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2012,-0.6740033
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2011,-0.7663803
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2010,-0.8087033
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2009,-0.7076867
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2008,-0.6449052
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2007,-0.6541274
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2006,-0.7056486
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2005,-0.7815361
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2004,-0.766334299999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2003,-0.8302183
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2002,-0.8702072
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,2000,-1.1005422
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,1998,-1.0835454
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,UKR,Ukraine,1996,-0.906503
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2024,0.9505638
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2023,0.9573597
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2022,0.9765591
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2021,0.9518641
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2020,0.8853539
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2019,0.880371
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2018,0.8658485
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2017,0.8738129
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2016,0.925682
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2015,0.8604208
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2014,0.8017721
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2013,0.7012586
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2012,0.715336
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2011,0.8008807
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2010,0.8721151
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2009,0.83241
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2008,0.8239642
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2007,0.8025188
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2006,0.7584546
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2005,0.6761607
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2004,0.590963
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2003,0.670586
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2002,0.7154663
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,2000,0.5142871
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,1998,0.5253211
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,URY,Uruguay,1996,0.5417948
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2024,0.017703
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2023,0.039525
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2022,0.0341024
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2021,0.1210745
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2020,-0.0613794
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2019,-0.0749162
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2018,-0.0683312
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2017,0.0143383
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2016,0.0701133
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2015,0.0440534
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2014,0.0704603
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2013,0.0246889
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2012,0.0103319
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2011,0.0107579
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2010,0.065012
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2009,0.0334806
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2008,0.0771777999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2007,0.1587318
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2006,0.3066237
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2005,0.1783305
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2004,0.1326388
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2003,0.0936661999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2002,0.0731619999999999
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,2000,-0.0123717
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,1998,-0.0081801
+rule_of_law,GOV_WGI_RL.EST,WGI Rule of Law,ZAF,South Africa,1996,-0.0116072
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2024,107
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2023,109.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2022,113.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2021,113.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2020,104
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2019,103.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2018,104.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2017,103
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2016,106.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2014,104.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2013,106.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2012,114.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2011,109.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2010,99.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2009,96.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2008,95.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2007,85
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2006,80.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ARG,Argentina,2005,76.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2024,92.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2023,96
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2022,95.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2021,98.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2020,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2019,95.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2018,95.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2017,98.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2016,101.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2014,95.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2013,95.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2012,95.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2011,94.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2010,94.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2009,93.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2008,91.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2007,92.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2006,89
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BGR,Bulgaria,2005,83
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2024,120.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2023,117.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2022,114.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2021,123.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2020,107.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2019,107
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2018,106.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2017,108.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2016,102.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2014,113.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2013,117.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2012,120.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2011,127.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2010,118.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2009,101.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2008,104.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2007,101.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2006,97.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),BRA,Brazil,2005,92.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2024,134.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2023,127.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2022,124.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2021,136.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2020,121.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2019,109.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2018,111.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2017,114.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2016,103.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2014,102.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2013,105.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2012,109.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2011,117.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2010,115.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2009,94.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2008,91.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2007,106.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2006,103.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHL,Chile,2005,79.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2024,84.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2023,90.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2022,89.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2021,89.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2020,98.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2019,92.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2018,91.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2017,94.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2016,99.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2014,89.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2013,87.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2012,86.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2011,83.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2010,87
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2009,96.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2008,88.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2007,93.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2006,94.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CHN,China,2005,93.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2024,140.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2023,139.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2022,154.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2021,126.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2020,105.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2019,124.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2018,126.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2017,115.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2016,98.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2014,132.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2013,145.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2012,157.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2011,166.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2010,145
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2009,125
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2008,132.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2007,125
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2006,119
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),COL,Colombia,2005,114
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2024,100.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2023,98.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2022,93.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2021,96.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2020,99.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2019,99
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2018,98.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2017,97.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2016,98.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2014,99.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2013,99.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2012,99.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2011,102.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2010,103.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2009,106.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2008,103.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2007,106.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2006,109.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),CZE,Czechia,2005,114.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2024,112
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2023,108
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2022,114.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2021,107.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2020,94.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2019,109
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2018,113.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2017,103.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2016,95.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2014,131.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2013,140.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2012,140.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2011,140
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2010,124.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2009,108.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2008,131.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2007,113.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2006,107.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ECU,Ecuador,2005,99
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2024,99.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2023,101.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2022,93.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2021,99.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2020,103.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2019,101.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2018,100.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2017,101.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2016,100.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2014,99.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2013,99.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2012,98.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2011,98.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2010,98.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2009,99
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2008,94.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2007,93.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2006,92.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),HUN,Hungary,2005,98.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2024,110.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2023,108.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2022,125.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2021,115
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2020,102.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2019,98.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2018,103.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2017,108.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2016,105.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2014,100.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2013,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2012,102.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2011,111.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2010,108.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2009,97.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2008,106.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2007,104.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2006,102.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IDN,Indonesia,2005,101.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2024,91.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2023,87.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2022,81.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2021,91
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2020,103.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2019,97.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2018,95.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2017,100.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2016,105
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2014,91.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2013,90.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2012,88.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2011,88
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2010,91.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2009,92.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2008,79.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2007,79.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2006,83.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),IND,India,2005,85.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2024,88.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2023,85.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2022,85.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2021,92.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2020,94.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2019,91.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2018,95.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2017,100.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2016,101
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2014,89.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2013,87.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2012,85
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2011,86.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2010,96.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2009,103.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2008,99.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2007,111.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2006,119.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),KOR,"Korea, Rep.",2005,131.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2024,104.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2023,101.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2022,98.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2021,103.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2020,107.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2019,105.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2018,102
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2017,102.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2016,103.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2014,97.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2013,97.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2012,100.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2011,100.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2010,105.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2009,106
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2008,100.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2007,102.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2006,99.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MEX,Mexico,2005,92.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2024,116.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2023,111.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2022,111.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2021,104.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2020,99
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2019,98.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2018,97.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2017,97.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2016,96.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2014,103.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2013,103.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2012,105.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2011,105.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2010,100.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2009,98.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2008,112.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2007,104.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2006,100.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),MYS,Malaysia,2005,94.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2024,145
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2023,128.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2022,119.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2021,132.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2020,121.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2019,109.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2018,108.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2017,111
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2016,103.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2014,103.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2013,108.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2012,114.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2011,117.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2010,111.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2009,93.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2008,93.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2007,107.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2006,100.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),PER,Peru,2005,78.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2024,99.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2023,99.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2022,95.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2021,97
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2020,99.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2019,96.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2018,96
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2017,97.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2016,99.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2014,99.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2013,99.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2012,99.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2011,102.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2010,105.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2009,108.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2008,106.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2007,108.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2006,108.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),POL,Poland,2005,111.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2024,116.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2023,114.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2022,135.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2021,115.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2020,89.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2019,109.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2018,108.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2017,92.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2016,81.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2014,131.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2013,136.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2012,146.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2011,140.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2010,115.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2009,95.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2008,142.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2007,118.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2006,113.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),RUS,Russian Federation,2005,99.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2024,90.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2023,90.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2022,89.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2021,96.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2020,101.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2019,98.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2018,98.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2017,100.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2016,102.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2014,93.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2013,93.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2012,92.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2011,93.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2010,98.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2009,98.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2008,93.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2007,95.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2006,95.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),THA,Thailand,2005,96.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2024,86.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2023,86.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2022,76
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2021,88.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2020,99.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2019,94.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2018,95
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2017,98.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2016,104
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2014,93.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2013,92.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2012,91
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2011,91.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2010,93.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2009,98.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2008,94.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2007,98.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2006,95.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),TUR,Turkiye,2005,100.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2024,75.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2023,79.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2022,99.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2021,126
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2020,106
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2019,100.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2018,101
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2017,101.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2016,99.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2014,109.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2013,113.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2012,113.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2011,127.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2010,122.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2009,114.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2008,133.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2007,133
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2006,124.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),UKR,Ukraine,2005,128.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2024,96
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2023,102.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2022,97.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2021,103.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2020,107.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2019,100.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2018,97.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2017,102.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2016,102.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2014,98.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2013,94.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2012,92.9
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2011,89.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2010,87.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2009,87.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2008,82.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2007,76.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2006,76
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),URY,Uruguay,2005,77.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2024,117.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2023,113.2
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2022,117.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2021,128.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2020,123.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2019,112
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2018,106.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2017,108.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2016,103.8
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2015,100
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2014,97.5
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2013,98.7
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2012,104.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2011,105
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2010,101.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2009,95.1
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2008,89.4
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2007,87.3
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2006,84.6
+tot,TT.PRI.MRCH.XD.WD,Net barter terms of trade (2015=100),ZAF,South Africa,2005,79.7
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1990,0.9382841
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1991,1.0158916
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1992,1.0971822
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1993,1.1367128
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1994,1.1640667
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1995,1.1340115
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1996,1.1615855
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1997,1.2005817
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1998,1.1932284
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,1999,1.1337098
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2000,1.1124005
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2001,1.0689996
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2002,0.97789836
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2003,1.0420003
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2004,1.0872892
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2005,1.1313851
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2006,1.176056
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2007,1.2184323
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2008,1.2148551
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2009,1.131392
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2010,1.198247
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2011,1.2175671
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2012,1.1764957
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2013,1.1721092
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2014,1.1229379
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2015,1.1200236
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2016,1.1064203
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2017,1.1069436
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2018,1.0631099
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2019,1.0276719
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2020,0.9987635
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2022,1.0393263
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ARG,Argentina,2023,0.9665904
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1990,1.2844205
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1991,1.2655742
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1992,1.2257731
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1993,1.2551069
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1994,1.2862718
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1995,1.2906804
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1996,1.2849339
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1997,1.2841008
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1998,1.2561662
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,1999,1.2088876
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2000,1.2093508
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2001,1.1931081
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2002,1.1849068
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2003,1.1679484
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2004,1.1807368
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2005,1.1770005
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2006,1.1768944
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2007,1.211828
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2008,1.2225838
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2009,1.1908065
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2010,1.2153322
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2011,1.196606
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2012,1.1798608
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2013,1.1638108
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2014,1.1286242
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2015,1.0751386
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2016,1.0378399
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2017,1.0422541
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2018,1.033759
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2019,1.0113676
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2020,1.0442489
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2022,0.96975225
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BRA,Brazil,2023,0.97675276
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1990,1.9181651
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1993,1.7321194
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1994,1.6604084
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1995,1.6038468
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1996,1.7148595
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1997,1.4225268
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1998,1.4181992
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,1999,1.2248968
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2000,1.2243958
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2001,1.2024862
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2002,1.181242
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2003,1.1538699
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2004,1.1302096
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2005,1.1212928
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2006,1.0943666
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2007,1.0598185
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2008,1.0141115
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2009,0.969937
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2010,0.98496974
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2011,0.9974404
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2012,0.9863507
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2013,0.95969296
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2014,0.9405255
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2015,0.9434455
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2016,0.95942885
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2017,0.9473193
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2018,0.9526094
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2019,0.9562247
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2020,0.9373689
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2022,1.0108782
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",BGR,Bulgaria,2023,1.0354439
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1990,0.89716476
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1991,0.9322476
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1992,0.99034166
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1993,1.0171704
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1994,1.034754
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1995,1.0766045
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1996,1.0912224
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1997,1.1176007
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1998,1.0957758
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,1999,1.0697799
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2000,1.0754514
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2001,1.0739566
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2002,1.0639421
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2003,1.0694257
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2004,1.0906758
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2005,1.1005614
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2006,1.0966445
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2007,1.0931687
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2008,1.0766135
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2009,1.0285883
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2010,1.0355221
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2011,1.0392342
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2012,1.0405397
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2013,1.0232389
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2014,1.0088176
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2015,0.99244136
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2016,0.9820885
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2017,0.9719442
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2018,0.98402673
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2019,0.9624961
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2020,0.9637323
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2022,0.95525146
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHL,Chile,2023,0.9289556
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1990,0.3519046
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1991,0.36607647
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1992,0.39603782
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1993,0.42151898
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1994,0.44615412
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1995,0.46572566
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1996,0.48032552
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1997,0.49288148
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1998,0.49661994
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,1999,0.5018597
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2000,0.51245576
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2001,0.524457
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2002,0.5405714
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2003,0.5591772
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2004,0.5800504
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2005,0.59212106
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2006,0.63392216
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2007,0.70097435
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2008,0.73548687
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2009,0.753161
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2010,0.7595242
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2011,0.788436
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2012,0.80022717
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2013,0.8112967
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2014,0.8292184
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2015,0.8511131
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2016,0.87279534
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2017,0.89887655
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2018,0.9245694
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2019,0.9467534
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2020,0.95937437
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2022,0.99539447
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CHN,China,2023,1.0137264
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1990,1.1099445
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1991,1.083977
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1992,1.098837
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1993,1.0825526
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1994,1.0712756
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1995,1.0674605
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1996,1.0513505
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1997,1.0489388
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1998,1.0312972
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,1999,0.98727506
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2000,0.9791153
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2001,0.98241574
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2002,0.96400124
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2003,0.9695262
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2004,0.9862965
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2005,0.98604935
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2006,0.99508196
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2007,0.9915318
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2008,0.97869986
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2009,0.96588093
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2010,0.97018915
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2011,0.9905114
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2012,0.99001795
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2013,1.0027949
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2014,1.0146819
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2015,0.9988285
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2016,0.9930336
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2017,0.9837906
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2018,0.9820841
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2019,0.99029565
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2020,1.0182022
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2022,1.0008943
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",COL,Colombia,2023,0.98316395
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,1994,0.78611225
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,1995,0.8032318
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,1996,0.8014378
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,1997,0.77308345
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,1998,0.75360936
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,1999,0.75044096
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2000,0.76340413
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2001,0.7864029
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2002,0.7848865
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2003,0.8061163
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2004,0.8299774
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2005,0.8645315
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2006,0.90547067
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2007,0.9318483
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2008,0.9288577
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2009,0.88832325
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2010,0.9040317
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2011,0.9085084
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2012,0.90052444
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2013,0.8950046
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2014,0.903591
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2015,0.9376672
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2016,0.94112223
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2017,0.97358096
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2018,0.98222494
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2019,1.0064206
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2020,0.990911
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2022,0.9977336
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",CZE,Czechia,2023,0.98177296
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1990,0.8388496
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1991,0.8459585
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1992,0.8370004
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1993,0.8276997
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1994,0.82615995
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1995,0.8171515
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1996,0.83134466
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1997,0.82847166
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1998,0.83200455
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,1999,0.847256
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2000,0.85307604
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2001,0.8586727
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2002,0.8751151
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2003,0.8741756
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2004,0.899354
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2005,0.91417336
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2006,0.9328161
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2007,0.92847615
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2008,0.9501098
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2009,0.9402994
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2010,0.9443125
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2011,0.9896467
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2012,1.0173228
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2013,1.0453029
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2014,1.0543249
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2015,1.0343467
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2016,1.0294263
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2017,1.0595764
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2018,1.040639
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2019,1.0315527
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2020,1.0199772
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2022,1.0352724
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ECU,Ecuador,2023,1.038849
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1990,0.8262481
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1991,0.75657636
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1992,0.7814833
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1993,0.80393517
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1994,0.80008507
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1995,0.81143177
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1996,0.80369806
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1997,0.80846924
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1998,0.8214863
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,1999,0.8176805
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2000,0.83851814
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2001,0.8627529
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2002,0.8899275
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2003,0.9044776
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2004,0.9349878
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2005,0.9680193
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2006,0.9877976
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2007,0.9825853
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2008,0.984529
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2009,0.92667943
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2010,0.9292372
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2011,0.9451492
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2012,0.9247884
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2013,0.92772114
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2014,0.92702746
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2015,0.93564194
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2016,0.9270763
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2017,0.9461009
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2018,0.9760002
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2019,1.001378
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2020,0.96926683
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2022,1.0115073
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",HUN,Hungary,2023,0.997124
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1990,0.7816229
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1991,0.7549063
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1992,0.76043904
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1993,0.76327264
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1994,0.7841832
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1995,0.81183773
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1996,0.83463466
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1997,0.8273441
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1998,0.8369094
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,1999,0.86283046
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2000,0.84915006
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2001,0.8428673
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2002,0.83258736
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2003,0.8541612
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2004,0.87125516
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2005,0.89250463
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2006,0.9139336
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2007,0.9249166
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2008,0.90021116
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2009,0.91748923
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2010,0.94136083
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2011,0.93340605
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2012,0.9361628
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2013,0.94183373
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2014,0.9717498
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2015,1.009523
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2016,1.0510694
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2017,1.0704671
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2018,1.0848575
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2019,1.0356905
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2020,0.95557636
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2022,1.0002325
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IND,India,2023,1.0105311
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1990,0.92302644
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1991,0.94112355
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1992,0.954506
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1993,0.97071576
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1994,0.9635122
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1995,0.9756083
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1996,0.98119843
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1997,0.96035326
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1998,0.7924384
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,1999,0.77549416
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2000,0.7849618
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2001,0.7849674
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2002,0.8012355
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2003,0.8100039
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2004,0.81737757
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2005,0.83725256
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2006,0.8517484
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2007,0.85680896
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2008,0.8663476
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2009,0.86818683
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2010,0.87611884
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2011,0.90294677
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2012,0.92050004
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2013,0.9597049
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2014,0.9551126
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2015,0.9592966
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2016,0.9752807
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2017,0.98681927
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2018,1.0060635
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2019,1.0080156
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2020,0.9805864
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2022,0.9904193
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",IDN,Indonesia,2023,0.9955157
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1990,1.1499382
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1991,1.1417919
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1992,1.1302553
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1993,1.1202015
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1994,1.1053685
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1995,1.0813593
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1996,1.0729213
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1997,1.0454828
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1998,0.94829315
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,1999,0.98584753
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2000,1.0226605
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2001,0.99351245
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2002,1.0005485
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2003,1.015088
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2004,1.0436004
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2005,1.0493604
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2006,1.060135
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2007,1.0768285
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2008,1.0928235
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2009,1.0361366
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2010,1.0468106
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2011,1.029506
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2012,1.0363666
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2013,1.0222856
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2014,1.0258569
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2015,1.0267708
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2016,1.0303012
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2017,1.0404325
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2018,1.0495441
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2019,1.0546637
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2020,1.0111475
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2022,1.0365921
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MYS,Malaysia,2023,1.0395358
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1990,1.2751346
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1991,1.27392
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1992,1.2563089
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1993,1.2528905
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1994,1.2636675
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1995,1.1894189
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1996,1.2243935
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1997,1.267617
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1998,1.2853523
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,1999,1.2517887
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2000,1.2631203
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2001,1.2262658
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2002,1.2041079
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2003,1.1859965
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2004,1.185019
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2005,1.179516
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2006,1.1962311
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2007,1.1871539
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2008,1.1597785
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2009,1.0677662
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2010,1.0938541
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2011,1.0973867
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2012,1.0989242
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2013,1.0820383
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2014,1.0873195
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2015,1.0834529
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2016,1.0712782
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2017,1.0655593
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2018,1.0583836
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2019,1.0322597
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2020,0.97714704
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2022,0.9949881
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",MEX,Mexico,2023,1.0007427
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1990,1.0339111
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1991,1.014996
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1992,0.99759567
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1993,1.0200685
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1994,1.0851234
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1995,1.0940589
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1996,1.0650389
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1997,1.074074
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1998,1.0104064
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,1999,0.9832008
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2000,0.96728903
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2001,0.94965583
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2002,0.97571087
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2003,0.988633
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2004,1.0038218
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2005,1.0288891
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2006,1.0625901
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2007,1.0950453
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2008,1.1251093
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2009,1.088076
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2010,1.1131788
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2011,1.1119522
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2012,1.1062382
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2013,1.106419
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2014,1.0778058
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2015,1.0681607
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2016,1.0753838
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2017,1.0667427
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2018,1.0723702
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2019,1.0559623
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2020,0.92211074
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2022,0.983377
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",PER,Peru,2023,0.962297
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1990,0.72020996
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1991,0.6822592
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1992,0.6940177
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1993,0.7131694
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1994,0.7263914
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1995,0.74592894
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1996,0.7632993
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1997,0.7783934
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1998,0.7800161
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,1999,0.8022673
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2000,0.83033943
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2001,0.83407277
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2002,0.85410553
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2003,0.8743385
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2004,0.89560664
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2005,0.8956841
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2006,0.9087642
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2007,0.9157017
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2008,0.90757436
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2009,0.9148968
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2010,0.9322178
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2011,0.94966483
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2012,0.93966705
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2013,0.93150693
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2014,0.9354475
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2015,0.94296414
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2016,0.94825387
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2017,0.97974
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2018,1.0247386
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2019,1.0315663
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2020,0.9867752
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2022,1.036773
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",POL,Poland,2023,1.0126652
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,1994,0.5612112
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,1995,0.5497171
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,1996,0.5434515
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,1997,0.5554868
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,1998,0.5380148
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,1999,0.56867003
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2000,0.6213749
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2001,0.65116113
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2002,0.6815169
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2003,0.72423065
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2004,0.76905435
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2005,0.8050307
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2006,0.8523561
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2007,0.89783424
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2008,0.9207132
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2009,0.853903
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2010,0.87553215
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2011,0.8997101
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2012,0.92281204
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2013,0.93332624
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2014,0.9355885
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2015,0.92304164
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2016,0.92314106
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2017,0.9374603
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2018,0.9589516
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2019,0.97948176
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2020,0.9813726
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2022,0.96810013
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",RUS,Russia,2023,0.9754672
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1990,0.9552872
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1991,0.94558287
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1992,0.9390113
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1993,0.9538158
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1994,0.9583628
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1995,0.9606142
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1996,0.9731418
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1997,0.97003514
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1998,0.9439492
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,1999,0.9436847
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2000,0.9621116
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2001,0.99319965
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2002,1.0165523
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2003,1.0618509
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2004,1.0727559
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2005,1.0907042
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2006,1.0634682
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2007,1.0744199
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2008,1.0604687
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2009,1.0352073
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2010,1.0549344
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2011,1.0396868
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2012,1.0422217
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2013,1.0383126
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2014,1.0328304
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2015,1.0034618
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2016,0.9941757
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2017,0.99501264
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2018,0.97401124
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2019,0.9493873
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2020,0.9961099
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2022,0.9674038
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",ZAF,South Africa,2023,0.92727757
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1990,0.710959
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1991,0.72799104
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1992,0.7266346
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1993,0.72935385
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1994,0.741596
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1995,0.7539565
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1996,0.76221436
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1997,0.77420497
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1998,0.755803
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,1999,0.8045758
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2000,0.8189337
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2001,0.8208683
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2002,0.84741837
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2003,0.8518989
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2004,0.864474
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2005,0.8790547
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2006,0.89005727
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2007,0.9132765
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2008,0.92842954
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2009,0.9248604
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2010,0.95667803
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2011,0.9610333
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2012,0.9564385
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2013,0.9612205
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2014,0.9652677
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2015,0.9627183
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2016,0.9687884
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2017,0.9808702
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2018,0.99311066
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2019,0.9947511
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2020,0.9873569
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2022,0.9973595
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",KOR,South Korea,2023,0.9768553
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1990,0.941474
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1991,0.9247332
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1992,0.91987514
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1993,0.931726
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1994,0.94267887
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1995,0.9337129
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1996,0.9264043
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1997,0.86464274
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1998,0.8088417
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,1999,0.83924174
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2000,0.8563386
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2001,0.87664807
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2002,0.90197974
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2003,0.93419284
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2004,0.9486435
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2005,0.95316976
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2006,0.96237206
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2007,0.9778127
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2008,0.9569881
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2009,0.9273831
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2010,0.97168493
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2011,0.95996594
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2012,0.99647015
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2013,0.99910414
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2014,0.9916634
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2015,1.0054526
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2016,1.0239727
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2017,1.0500381
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2018,1.0691534
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2019,1.0662005
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2020,1.0062424
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2022,0.97577685
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",THA,Thailand,2023,0.96812415
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1990,1.1850132
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1991,1.1262993
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1992,1.1276233
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1993,1.167864
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1994,1.0416093
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1995,1.0649952
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1996,1.0684355
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1997,1.0899879
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1998,1.0642167
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,1999,0.9881827
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2000,1.017731
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2001,0.94814503
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2002,0.9863563
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2003,1.0107949
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2004,1.0443985
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2005,1.0556427
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2006,1.0497439
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2007,1.0423273
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2008,0.997232
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2009,0.9283864
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2010,0.9460673
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2011,0.9758097
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2012,0.9658712
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2013,0.989882
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2014,0.98369116
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2015,0.9849239
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2016,0.967963
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2017,0.98114944
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2018,0.9674224
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2019,0.95710737
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2020,0.9984503
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2022,0.9855846
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",TUR,Turkey,2023,0.99021935
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,1994,0.64134526
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,1995,0.5578761
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,1996,0.50936663
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,1997,0.5040764
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,1998,0.5070341
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,1999,0.55071986
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2000,0.583615
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2001,0.64821255
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2002,0.6859789
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2003,0.75288707
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2004,0.8370205
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2005,0.8505451
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2006,0.9024759
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2007,0.96080875
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2008,0.97164774
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2009,0.85092175
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2010,0.85341185
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2011,0.907549
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2012,0.91058457
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2013,0.9122001
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2014,0.9059572
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2015,0.87822425
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2016,0.8994556
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2017,0.9226507
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2018,0.94352865
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2019,0.96356934
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2020,0.9579663
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2022,0.7235956
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",UKR,Ukraine,2023,0.7604028
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1990,0.75402397
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1991,0.76783717
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1992,0.81924546
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1993,0.8269196
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1994,0.85922307
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1995,0.8277684
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1996,0.85323876
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1997,0.86635923
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1998,0.8674611
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,1999,0.85123676
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2000,0.83241475
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2001,0.80342746
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2002,0.7655992
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2003,0.7788332
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2004,0.78605586
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2005,0.8303444
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2006,0.8254579
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2007,0.8432535
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2008,0.86399645
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2009,0.8800155
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2010,0.9242464
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2011,0.9415285
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2012,0.9669843
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2013,1.0000014
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2014,1.0114123
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2015,1.0237459
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2016,1.0521659
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2017,1.0528388
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2018,1.0485557
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2019,1.0538763
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2020,0.9987536
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2021,1.0
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2022,0.993747
+tfp,rtfpna,"PWT TFP (2021=1, national prices)",URY,Uruguay,2023,0.99380535

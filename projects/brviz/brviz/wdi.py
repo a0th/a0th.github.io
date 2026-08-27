@@ -7,7 +7,7 @@ import urllib.request
 from pathlib import Path
 
 from brviz.catalog import COUNTRIES, NAME_TO_ISO, country_codes, indicators
-from brviz.institutions import fetch_days, fetch_efw
+from brviz.institutions import fetch_days, fetch_efw, fetch_tfp
 
 ROOT = Path(__file__).resolve().parents[1]
 API = "https://api.worldbank.org/v2"
@@ -83,6 +83,10 @@ def fetch(*, start: int, end: int, extra: bool, out: Path) -> dict:
     sources["efw"] = efw_meta
     rows.extend(efw_rows)
 
+    tfp_meta, tfp_rows = fetch_tfp(start=start, end=end)
+    sources["tfp"] = tfp_meta
+    rows.extend(tfp_rows)
+
     fieldnames = ["metric", "code", "label", "iso", "country", "year", "value"]
     with out.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
@@ -103,3 +107,52 @@ def fetch(*, start: int, end: int, extra: bool, out: Path) -> dict:
     preview_cache = ROOT / "src" / ".observablehq" / "cache" / "data" / "wdi.csv"
     preview_cache.unlink(missing_ok=True)
     return meta
+
+
+FIELDNAMES = ["metric", "code", "label", "iso", "country", "year", "value"]
+SPECIAL = {
+    "start_days": lambda **_: fetch_days(),
+    "efw": lambda start, end: fetch_efw(start=start, end=end),
+    "tfp": lambda start, end: fetch_tfp(start=start, end=end),
+}
+
+
+def splice(*, keys: list[str], start: int, end: int, out: Path) -> dict:
+    catalog = indicators(extra=True)
+    existing = list(csv.DictReader(out.open()))
+    drop = set(keys)
+    rows = [r for r in existing if r["metric"] not in drop]
+    sources = {}
+    for key in keys:
+        if key in SPECIAL:
+            meta, data = SPECIAL[key](start=start, end=end)
+            rows.extend(data)
+            sources[key] = meta
+            continue
+        if key not in catalog:
+            raise KeyError(key)
+        code, label = catalog[key]
+        lastupdated, data = fetch_indicator(code, start, end)
+        sources[key] = {"code": code, "lastupdated": lastupdated, "n": len(data)}
+        for d in data:
+            rows.append({"metric": key, "code": code, "label": label, **d})
+        time.sleep(0.15)
+
+    with out.open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        w.writeheader()
+        w.writerows(rows)
+
+    meta_path = out.with_suffix(".meta.json")
+    meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
+    meta.setdefault("indicators", {}).update(sources)
+    meta["n_rows"] = len(rows)
+    meta["path"] = _rel(out)
+    meta_path.write_text(json.dumps(meta, indent=2) + "\n")
+    preview_cache = ROOT / "src" / ".observablehq" / "cache" / "data" / "wdi.csv"
+    preview_cache.unlink(missing_ok=True)
+    return {
+        "path": _rel(out),
+        "n_rows": len(rows),
+        "indicators": sources,
+    }

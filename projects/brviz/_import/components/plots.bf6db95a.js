@@ -1,6 +1,6 @@
 import * as d3 from "../../_npm/d3@7.9.0/080cf928.js";
 import * as Plot from "../../_npm/@observablehq/plot@0.6.17/93ce672e.js";
-import { fmtIdx } from "./data.8bac0dc0.js";
+import { fmtIdx } from "./data.795aac9f.js";
 
 function braColor() {
   return getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
@@ -97,29 +97,47 @@ export function metricPlot(
   });
 }
 
-export function barDelta(rows, { width } = {}) {
+export function barDelta(
+  rows,
+  {
+    width,
+    xLabel = "variação 2003–2010 (%)",
+    format = (v) => `${v.toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%`,
+    descending = true,
+    marginLeft = 88,
+  } = {},
+) {
   const BRA = braColor();
-  const ordered = d3.sort(rows, (d) => -d.value);
+  const ordered = d3.sort(rows, (d) => (descending ? -d.value : d.value));
+  const toned = rows.some((d) => d.tone);
   const others = d3.sort(rows.filter((d) => d.iso !== "BRA").map((d) => d.name));
+  const fillOf = (d) => {
+    if (d.tone === "bra") return BRA;
+    if (d.tone === "group") return "#94a3b8";
+    if (d.tone === "peer") return "#6ba8d4";
+    return undefined;
+  };
   return Plot.plot({
     width,
     height: 36 * rows.length + 48,
-    marginLeft: 88,
+    marginLeft,
     marginRight: 48,
-    x: { label: "variação 2003–2010 (%)", grid: true },
+    x: { label: xLabel, grid: true },
     y: { label: null, domain: ordered.map((d) => d.name) },
-    color: { legend: false, domain: ["Brasil", ...others], range: [BRA, ...d3.schemeTableau10] },
+    color: toned
+      ? undefined
+      : { legend: false, domain: ["Brasil", ...others], range: [BRA, ...d3.schemeTableau10] },
     marks: [
       Plot.barX(ordered, {
         y: "name",
         x: "value",
-        fill: "name",
-        fillOpacity: (d) => (d.iso === "BRA" ? 1 : 0.5),
+        fill: toned ? fillOf : "name",
+        fillOpacity: (d) => (d.iso === "BRA" ? 1 : 0.55),
       }),
       Plot.text(ordered, {
         y: "name",
         x: "value",
-        text: (d) => `${d.value.toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%`,
+        text: (d) => format(d.value),
         dx: 8,
         textAnchor: "start",
         fill: "currentColor",

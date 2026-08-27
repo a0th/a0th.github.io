@@ -21,7 +21,17 @@ DAYS_URL = (
 )
 DAYS_COL = "Time required to start a business (days)"
 QOG_URL = "https://www.qogdata.pol.gu.se/data/qog_bas_ts_jan25.csv"
+DAYS_EXTRA = {
+    "NZL",
+    "USA",
+    "DEU",
+    "OWID_HIC",
+    "OWID_EU27",
+    "OWID_UMC",
+    "WB_LAC",
+}
 KEEP = set(COUNTRIES)
+DAYS_KEEP = KEEP | DAYS_EXTRA
 
 
 def _get(url: str) -> str:
@@ -41,7 +51,7 @@ def fetch_days() -> tuple[dict, list[dict]]:
     rows = []
     for row in raw:
         iso = (row.get("Code") or "").strip()
-        if iso not in KEEP:
+        if iso not in DAYS_KEEP:
             continue
         cell = (row.get(DAYS_COL) or "").strip()
         if not cell:
@@ -62,6 +72,47 @@ def fetch_days() -> tuple[dict, list[dict]]:
         "lastupdated": None,
         "n": len(rows),
         "source": "Doing Business via Our World in Data",
+    }
+    return meta, rows
+
+
+TFP_URL = (
+    "https://ourworldindata.org/grapher/"
+    "total-factor-productivity.csv"
+    "?v=1&csvType=full&useColumnShortNames=false"
+)
+TFP_COL = "Total factor productivity level"
+
+
+def fetch_tfp(*, start: int = 1990, end: int = 2024) -> tuple[dict, list[dict]]:
+    raw = list(csv.DictReader(io.StringIO(_get(TFP_URL))))
+    rows = []
+    for row in raw:
+        iso = (row.get("Code") or "").strip()
+        if iso not in KEEP:
+            continue
+        cell = (row.get(TFP_COL) or "").strip()
+        if not cell:
+            continue
+        year = int(row["Year"])
+        if year < start or year > end:
+            continue
+        rows.append(
+            {
+                "metric": "tfp",
+                "code": "rtfpna",
+                "label": "PWT TFP (2021=1, national prices)",
+                "iso": iso,
+                "country": row["Entity"],
+                "year": year,
+                "value": float(cell),
+            }
+        )
+    meta = {
+        "code": "rtfpna",
+        "lastupdated": None,
+        "n": len(rows),
+        "source": "Penn World Table 11 via Our World in Data",
     }
     return meta, rows
 

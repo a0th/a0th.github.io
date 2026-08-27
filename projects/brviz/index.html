@@ -7,14 +7,15 @@
 <title>Brasil vs pares | brviz</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/style.ca916b33.css">
+<link rel="preload" as="style" href="./_import/style.f7d79d3a.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/style.ca916b33.css">
-<link rel="modulepreload" href="./_observablehq/client.b8612b5f.js">
+<link rel="stylesheet" type="text/css" href="./_import/style.f7d79d3a.css">
+<link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.8bac0dc0.js">
-<link rel="modulepreload" href="./_import/components/plots.c170cd62.js">
+<link rel="modulepreload" href="./_import/components/data.795aac9f.js">
+<link rel="modulepreload" href="./_import/components/plots.bf6db95a.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
@@ -55,14 +56,14 @@
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
 <script type="module">
 
-import {define} from "./_observablehq/client.b8612b5f.js";
+import {define} from "./_observablehq/client.a97643eb.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787857227646,"size":23242});
-registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.513158fb.csv","lastModified":1787857227512,"size":579200});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787859293609,"size":23242});
+registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.d580d8c3.csv","lastModified":1787862576120,"size":865848});
 
-define({id: "1a759c6c", inputs: ["FileAttachment"], outputs: ["load","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","namesOf","club90","invGrowth","braInvMean","polInvMean","korInvMean","ppp90","ppp90rel","pppWaveRel","prod90rel","prodWaveRel","inv","trd","rq90","days90","efw90","pisa90","edu90","gini90","pov90","hunger90","waveBoom","prodWaveBoom","pppBra","pppUmc","pppPol","invBra","invUmc","trdBra","trdMex","trdPol","eduBra","eduUmc","eduPol","eduKor","bra90rel","pol90rel","kor90rel","zaf90rel","braWaveRel","chlWaveRel","idnWaveRel","braProdRel","polProdRel","korProdRel","zafProdRel","braProdWave","chlProdWave","idnProdWave","braPisa","oecdPisa","korPisa","polPisa","braPisaRead","braPisaSci","braGini","polGini","korGini","zafGini","braPov","umcPov","polPov","korPov","zafPov","povBra90","braHunger","umcHunger","zafHunger","hungerBra01","braRq","polRq","korRq","chlRq","braDays","chlDays","polDays","korDays","braEfw","chlEfw","polEfw","korEfw","spendPisa","fmtX","fmtPct","fmtIdx","fmtGini","fmt2","fmtDays"], body: async (FileAttachment) => {
-const [{load}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.8bac0dc0.js"), import("./_import/components/plots.c170cd62.js")]);
+define({id: "d78220d8", inputs: ["FileAttachment"], outputs: ["load","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","namesOf","club90","invGrowth","braInvMean","polInvMean","korInvMean","braSav","polSav","korSav","umcSav","braMfg","polMfg","korMfg","chlMfg","mfgBra90","mfgKor90","ppp90","ppp90rel","pppWaveRel","prod90rel","prodWaveRel","inv","sav90","mfg90","trd","rq90","rq90rel","braRqRel","polRqRel","korRqRel","chlRqRel","rl90","rl90rel","braRl","polRl","korRl","chlRl","braRlRel","polRlRel","korRlRel","chlRlRel","totWave","totBra","totChl","totPer","totBra11","tfp90rel","braTfpRel","polTfpRel","korTfpRel","zafTfpRel","days90","days2019","hicDays","lacDays","efw90","pisa90","edu90","gini90","gini90rel","braGiniRel","chlGiniRel","polGiniRel","korGiniRel","zafGiniRel","pov90","pov90rel","hunger90","waveBoom","prodWaveBoom","pppBra","pppUmc","pppPol","invBra","invUmc","trdBra","trdMex","trdPol","eduBra","eduUmc","eduPol","eduKor","bra90rel","pol90rel","kor90rel","zaf90rel","braWaveRel","chlWaveRel","idnWaveRel","braProdRel","polProdRel","korProdRel","zafProdRel","braProdWave","chlProdWave","idnProdWave","braPisa","oecdPisa","korPisa","polPisa","braPisaRead","braPisaSci","braGini","polGini","korGini","zafGini","braPov","umcPov","polPov","korPov","zafPov","povBra90","braPovRel","chlPovRel","umcPovRel","zafPovRel","braHunger","umcHunger","zafHunger","hungerBra01","braRq","polRq","korRq","chlRq","braDays","chlDays","polDays","korDays","braEfw","chlEfw","polEfw","korEfw","spendPisa","scorecard","fmtX","fmtPct","fmtIdx","fmtGini","fmt2","fmtDays"], body: async (FileAttachment) => {
+const [{load}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.795aac9f.js"), import("./_import/components/plots.bf6db95a.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({typed: true});
 const pisa = await FileAttachment("./data/pisa.csv").csv({typed: true});
@@ -73,20 +74,67 @@ const {
   braInvMean,
   polInvMean,
   korInvMean,
+  braSav,
+  polSav,
+  korSav,
+  umcSav,
+  braMfg,
+  polMfg,
+  korMfg,
+  chlMfg,
+  mfgBra90,
+  mfgKor90,
   ppp90,
   ppp90rel,
   pppWaveRel,
   prod90rel,
   prodWaveRel,
   inv,
+  sav90,
+  mfg90,
   trd,
   rq90,
+  rq90rel,
+  braRqRel,
+  polRqRel,
+  korRqRel,
+  chlRqRel,
+  rl90,
+  rl90rel,
+  braRl,
+  polRl,
+  korRl,
+  chlRl,
+  braRlRel,
+  polRlRel,
+  korRlRel,
+  chlRlRel,
+  totWave,
+  totBra,
+  totChl,
+  totPer,
+  totBra11,
+  tfp90rel,
+  braTfpRel,
+  polTfpRel,
+  korTfpRel,
+  zafTfpRel,
   days90,
+  days2019,
+  hicDays,
+  lacDays,
   efw90,
   pisa90,
   edu90,
   gini90,
+  gini90rel,
+  braGiniRel,
+  chlGiniRel,
+  polGiniRel,
+  korGiniRel,
+  zafGiniRel,
   pov90,
+  pov90rel,
   hunger90,
   waveBoom,
   prodWaveBoom,
@@ -132,6 +180,10 @@ const {
   korPov,
   zafPov,
   povBra90,
+  braPovRel,
+  chlPovRel,
+  umcPovRel,
+  zafPovRel,
   braHunger,
   umcHunger,
   zafHunger,
@@ -149,6 +201,7 @@ const {
   polEfw,
   korEfw,
   spendPisa,
+  scorecard,
   fmtX,
   fmtPct,
   fmtIdx,
@@ -156,7 +209,7 @@ const {
   fmt2,
   fmtDays
 } = load(wdi, pisa);
-return {load,metricPlot,barDelta,spendPisaPlot,invGrowthPlot,wdi,pisa,namesOf,club90,invGrowth,braInvMean,polInvMean,korInvMean,ppp90,ppp90rel,pppWaveRel,prod90rel,prodWaveRel,inv,trd,rq90,days90,efw90,pisa90,edu90,gini90,pov90,hunger90,waveBoom,prodWaveBoom,pppBra,pppUmc,pppPol,invBra,invUmc,trdBra,trdMex,trdPol,eduBra,eduUmc,eduPol,eduKor,bra90rel,pol90rel,kor90rel,zaf90rel,braWaveRel,chlWaveRel,idnWaveRel,braProdRel,polProdRel,korProdRel,zafProdRel,braProdWave,chlProdWave,idnProdWave,braPisa,oecdPisa,korPisa,polPisa,braPisaRead,braPisaSci,braGini,polGini,korGini,zafGini,braPov,umcPov,polPov,korPov,zafPov,povBra90,braHunger,umcHunger,zafHunger,hungerBra01,braRq,polRq,korRq,chlRq,braDays,chlDays,polDays,korDays,braEfw,chlEfw,polEfw,korEfw,spendPisa,fmtX,fmtPct,fmtIdx,fmtGini,fmt2,fmtDays};
+return {load,metricPlot,barDelta,spendPisaPlot,invGrowthPlot,wdi,pisa,namesOf,club90,invGrowth,braInvMean,polInvMean,korInvMean,braSav,polSav,korSav,umcSav,braMfg,polMfg,korMfg,chlMfg,mfgBra90,mfgKor90,ppp90,ppp90rel,pppWaveRel,prod90rel,prodWaveRel,inv,sav90,mfg90,trd,rq90,rq90rel,braRqRel,polRqRel,korRqRel,chlRqRel,rl90,rl90rel,braRl,polRl,korRl,chlRl,braRlRel,polRlRel,korRlRel,chlRlRel,totWave,totBra,totChl,totPer,totBra11,tfp90rel,braTfpRel,polTfpRel,korTfpRel,zafTfpRel,days90,days2019,hicDays,lacDays,efw90,pisa90,edu90,gini90,gini90rel,braGiniRel,chlGiniRel,polGiniRel,korGiniRel,zafGiniRel,pov90,pov90rel,hunger90,waveBoom,prodWaveBoom,pppBra,pppUmc,pppPol,invBra,invUmc,trdBra,trdMex,trdPol,eduBra,eduUmc,eduPol,eduKor,bra90rel,pol90rel,kor90rel,zaf90rel,braWaveRel,chlWaveRel,idnWaveRel,braProdRel,polProdRel,korProdRel,zafProdRel,braProdWave,chlProdWave,idnProdWave,braPisa,oecdPisa,korPisa,polPisa,braPisaRead,braPisaSci,braGini,polGini,korGini,zafGini,braPov,umcPov,polPov,korPov,zafPov,povBra90,braPovRel,chlPovRel,umcPovRel,zafPovRel,braHunger,umcHunger,zafHunger,hungerBra01,braRq,polRq,korRq,chlRq,braDays,chlDays,polDays,korDays,braEfw,chlEfw,polEfw,korEfw,spendPisa,scorecard,fmtX,fmtPct,fmtIdx,fmtGini,fmt2,fmtDays};
 }});
 
 define({id: "10e0ab43", mode: "inline", inputs: ["pppBra","display"], body: async (pppBra,display) => {
@@ -315,6 +368,42 @@ resize((width) => invGrowthPlot(invGrowth, {width}))
 ))
 }});
 
+define({id: "e04c8974", mode: "inline", inputs: ["fmtIdx","totBra","display"], body: async (fmtIdx,totBra,display) => {
+display(await(
+fmtIdx(totBra?.value)
+))
+}});
+
+define({id: "d479b111", mode: "inline", inputs: ["totBra","display"], body: async (totBra,display) => {
+display(await(
+totBra?.year
+))
+}});
+
+define({id: "d1e7ff39", mode: "inline", inputs: ["fmtIdx","totBra11","display"], body: async (fmtIdx,totBra11,display) => {
+display(await(
+fmtIdx(totBra11)
+))
+}});
+
+define({id: "47eda469", mode: "inline", inputs: ["fmtIdx","totChl","display"], body: async (fmtIdx,totChl,display) => {
+display(await(
+fmtIdx(totChl?.value)
+))
+}});
+
+define({id: "22c0c527", mode: "inline", inputs: ["fmtIdx","totPer","display"], body: async (fmtIdx,totPer,display) => {
+display(await(
+fmtIdx(totPer?.value)
+))
+}});
+
+define({id: "ffd16101", mode: "inline", inputs: ["resize","metricPlot","totWave","display"], body: async (resize,metricPlot,totWave,display) => {
+display(await(
+resize((width) => metricPlot(totWave, {width, yLabel: "2015 = 100", yRules: [100], rules: [2010], colorful: true}))
+))
+}});
+
 define({id: "d2715181", mode: "inline", inputs: ["fmtIdx","braWaveRel","display"], body: async (fmtIdx,braWaveRel,display) => {
 display(await(
 fmtIdx(braWaveRel)
@@ -372,6 +461,36 @@ fmtIdx(zafProdRel)
 define({id: "626d7f75", mode: "inline", inputs: ["resize","metricPlot","prod90rel","display"], body: async (resize,metricPlot,prod90rel,display) => {
 display(await(
 resize((width) => metricPlot(prod90rel, {width, yLabel: "1991 = 100", yRules: [100]}))
+))
+}});
+
+define({id: "08a6cbaf", mode: "inline", inputs: ["fmtIdx","braTfpRel","display"], body: async (fmtIdx,braTfpRel,display) => {
+display(await(
+fmtIdx(braTfpRel)
+))
+}});
+
+define({id: "a779286b", mode: "inline", inputs: ["fmtIdx","polTfpRel","display"], body: async (fmtIdx,polTfpRel,display) => {
+display(await(
+fmtIdx(polTfpRel)
+))
+}});
+
+define({id: "37f59a41", mode: "inline", inputs: ["fmtIdx","korTfpRel","display"], body: async (fmtIdx,korTfpRel,display) => {
+display(await(
+fmtIdx(korTfpRel)
+))
+}});
+
+define({id: "b62be3b8", mode: "inline", inputs: ["fmtIdx","zafTfpRel","display"], body: async (fmtIdx,zafTfpRel,display) => {
+display(await(
+fmtIdx(zafTfpRel)
+))
+}});
+
+define({id: "c2f94efe", mode: "inline", inputs: ["resize","metricPlot","tfp90rel","display"], body: async (resize,metricPlot,tfp90rel,display) => {
+display(await(
+resize((width) => metricPlot(tfp90rel, {width, yLabel: "1990 = 100", yRules: [100]}))
 ))
 }});
 
@@ -447,6 +566,84 @@ resize((width) => metricPlot(inv, {width, yLabel: "% PIB"}))
 ))
 }});
 
+define({id: "f0f37044", mode: "inline", inputs: ["fmtPct","braSav","display"], body: async (fmtPct,braSav,display) => {
+display(await(
+fmtPct(braSav?.value)
+))
+}});
+
+define({id: "e24872d3", mode: "inline", inputs: ["fmtPct","korSav","display"], body: async (fmtPct,korSav,display) => {
+display(await(
+fmtPct(korSav?.value)
+))
+}});
+
+define({id: "e10f75be", mode: "inline", inputs: ["fmtPct","polSav","display"], body: async (fmtPct,polSav,display) => {
+display(await(
+fmtPct(polSav?.value)
+))
+}});
+
+define({id: "f844eb5d", mode: "inline", inputs: ["fmtPct","umcSav","display"], body: async (fmtPct,umcSav,display) => {
+display(await(
+fmtPct(umcSav?.value)
+))
+}});
+
+define({id: "40625fe5", mode: "inline", inputs: ["resize","metricPlot","sav90","display"], body: async (resize,metricPlot,sav90,display) => {
+display(await(
+resize((width) => metricPlot(sav90, {width, yLabel: "% PIB"}))
+))
+}});
+
+define({id: "c7d13e91", mode: "inline", inputs: ["fmtPct","braMfg","display"], body: async (fmtPct,braMfg,display) => {
+display(await(
+fmtPct(braMfg?.value)
+))
+}});
+
+define({id: "a93d7cab", mode: "inline", inputs: ["braMfg","display"], body: async (braMfg,display) => {
+display(await(
+braMfg?.year
+))
+}});
+
+define({id: "f586d504", mode: "inline", inputs: ["fmtPct","mfgBra90","display"], body: async (fmtPct,mfgBra90,display) => {
+display(await(
+fmtPct(mfgBra90)
+))
+}});
+
+define({id: "546e8698", mode: "inline", inputs: ["fmtPct","korMfg","display"], body: async (fmtPct,korMfg,display) => {
+display(await(
+fmtPct(korMfg?.value)
+))
+}});
+
+define({id: "0d8aa85b", mode: "inline", inputs: ["fmtPct","mfgKor90","display"], body: async (fmtPct,mfgKor90,display) => {
+display(await(
+fmtPct(mfgKor90)
+))
+}});
+
+define({id: "7e26e6f8", mode: "inline", inputs: ["fmtPct","polMfg","display"], body: async (fmtPct,polMfg,display) => {
+display(await(
+fmtPct(polMfg?.value)
+))
+}});
+
+define({id: "61cf83bf", mode: "inline", inputs: ["fmtPct","chlMfg","display"], body: async (fmtPct,chlMfg,display) => {
+display(await(
+fmtPct(chlMfg?.value)
+))
+}});
+
+define({id: "d443e4ac", mode: "inline", inputs: ["resize","metricPlot","mfg90","display"], body: async (resize,metricPlot,mfg90,display) => {
+display(await(
+resize((width) => metricPlot(mfg90, {width, yLabel: "% PIB"}))
+))
+}});
+
 define({id: "120971a4-1", mode: "inline", inputs: ["fmtPct","trdMex","display"], body: async (fmtPct,trdMex,display) => {
 display(await(
 fmtPct(trdMex?.value)
@@ -507,6 +704,102 @@ resize((width) => metricPlot(rq90, {width, yLabel: "estimativa", format: (v) => 
 ))
 }});
 
+define({id: "ae14b346", mode: "inline", inputs: ["fmt2","braRqRel","display"], body: async (fmt2,braRqRel,display) => {
+display(await(
+fmt2(braRqRel)
+))
+}});
+
+define({id: "6d3bdbd7", mode: "inline", inputs: ["fmt2","polRqRel","display"], body: async (fmt2,polRqRel,display) => {
+display(await(
+fmt2(polRqRel)
+))
+}});
+
+define({id: "8dac2307", mode: "inline", inputs: ["fmt2","korRqRel","display"], body: async (fmt2,korRqRel,display) => {
+display(await(
+fmt2(korRqRel)
+))
+}});
+
+define({id: "2c1e0958", mode: "inline", inputs: ["fmt2","chlRqRel","display"], body: async (fmt2,chlRqRel,display) => {
+display(await(
+fmt2(chlRqRel)
+))
+}});
+
+define({id: "3c04de87", mode: "inline", inputs: ["resize","metricPlot","rq90rel","display"], body: async (resize,metricPlot,rq90rel,display) => {
+display(await(
+resize((width) => metricPlot(rq90rel, {width, yLabel: "vs 1996", format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 2, signDisplay: "exceptZero"}), yRules: [0]}))
+))
+}});
+
+define({id: "b450c5f8", mode: "inline", inputs: ["fmt2","braRl","display"], body: async (fmt2,braRl,display) => {
+display(await(
+fmt2(braRl?.value)
+))
+}});
+
+define({id: "afef8583", mode: "inline", inputs: ["braRl","display"], body: async (braRl,display) => {
+display(await(
+braRl?.year
+))
+}});
+
+define({id: "37c517fe", mode: "inline", inputs: ["fmt2","polRl","display"], body: async (fmt2,polRl,display) => {
+display(await(
+fmt2(polRl?.value)
+))
+}});
+
+define({id: "0f5292c3", mode: "inline", inputs: ["fmt2","korRl","display"], body: async (fmt2,korRl,display) => {
+display(await(
+fmt2(korRl?.value)
+))
+}});
+
+define({id: "186ea522", mode: "inline", inputs: ["fmt2","chlRl","display"], body: async (fmt2,chlRl,display) => {
+display(await(
+fmt2(chlRl?.value)
+))
+}});
+
+define({id: "06711a3e", mode: "inline", inputs: ["resize","metricPlot","rl90","display"], body: async (resize,metricPlot,rl90,display) => {
+display(await(
+resize((width) => metricPlot(rl90, {width, yLabel: "estimativa", format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 2}), yRules: [0]}))
+))
+}});
+
+define({id: "92825efa", mode: "inline", inputs: ["fmt2","braRlRel","display"], body: async (fmt2,braRlRel,display) => {
+display(await(
+fmt2(braRlRel)
+))
+}});
+
+define({id: "fec87aac", mode: "inline", inputs: ["fmt2","polRlRel","display"], body: async (fmt2,polRlRel,display) => {
+display(await(
+fmt2(polRlRel)
+))
+}});
+
+define({id: "5912d33d", mode: "inline", inputs: ["fmt2","korRlRel","display"], body: async (fmt2,korRlRel,display) => {
+display(await(
+fmt2(korRlRel)
+))
+}});
+
+define({id: "b031daac", mode: "inline", inputs: ["fmt2","chlRlRel","display"], body: async (fmt2,chlRlRel,display) => {
+display(await(
+fmt2(chlRlRel)
+))
+}});
+
+define({id: "4bbf92cf", mode: "inline", inputs: ["resize","metricPlot","rl90rel","display"], body: async (resize,metricPlot,rl90rel,display) => {
+display(await(
+resize((width) => metricPlot(rl90rel, {width, yLabel: "vs 1996", format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 2, signDisplay: "exceptZero"}), yRules: [0]}))
+))
+}});
+
 define({id: "6cffabdc", mode: "inline", inputs: ["fmtDays","braDays","display"], body: async (fmtDays,braDays,display) => {
 display(await(
 fmtDays(braDays?.value)
@@ -540,6 +833,30 @@ fmtDays(korDays?.value)
 define({id: "b551be8c", mode: "inline", inputs: ["resize","metricPlot","days90","display"], body: async (resize,metricPlot,days90,display) => {
 display(await(
 resize((width) => metricPlot(days90, {width, yLabel: "dias", format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 1})}))
+))
+}});
+
+define({id: "6cffabdc-1", mode: "inline", inputs: ["fmtDays","braDays","display"], body: async (fmtDays,braDays,display) => {
+display(await(
+fmtDays(braDays?.value)
+))
+}});
+
+define({id: "ec11e6d0", mode: "inline", inputs: ["fmtDays","hicDays","display"], body: async (fmtDays,hicDays,display) => {
+display(await(
+fmtDays(hicDays)
+))
+}});
+
+define({id: "b5b30336", mode: "inline", inputs: ["fmtDays","lacDays","display"], body: async (fmtDays,lacDays,display) => {
+display(await(
+fmtDays(lacDays)
+))
+}});
+
+define({id: "331068ce", mode: "inline", inputs: ["resize","barDelta","days2019","display"], body: async (resize,barDelta,days2019,display) => {
+display(await(
+resize((width) => barDelta(days2019, {width, xLabel: "dias (2019)", descending: false, marginLeft: 120, format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 1})}))
 ))
 }});
 
@@ -735,6 +1052,42 @@ resize((width) => metricPlot(gini90, {width, yLabel: "Gini", format: (v) => v.to
 ))
 }});
 
+define({id: "0687422b", mode: "inline", inputs: ["fmtGini","braGiniRel","display"], body: async (fmtGini,braGiniRel,display) => {
+display(await(
+fmtGini(braGiniRel)
+))
+}});
+
+define({id: "19dcdc41", mode: "inline", inputs: ["fmtGini","chlGiniRel","display"], body: async (fmtGini,chlGiniRel,display) => {
+display(await(
+fmtGini(chlGiniRel)
+))
+}});
+
+define({id: "e4e28159", mode: "inline", inputs: ["fmtGini","polGiniRel","display"], body: async (fmtGini,polGiniRel,display) => {
+display(await(
+fmtGini(polGiniRel)
+))
+}});
+
+define({id: "20a81694", mode: "inline", inputs: ["fmtGini","zafGiniRel","display"], body: async (fmtGini,zafGiniRel,display) => {
+display(await(
+fmtGini(zafGiniRel)
+))
+}});
+
+define({id: "85f3a365", mode: "inline", inputs: ["fmtGini","korGiniRel","display"], body: async (fmtGini,korGiniRel,display) => {
+display(await(
+fmtGini(korGiniRel)
+))
+}});
+
+define({id: "3dbf28d9", mode: "inline", inputs: ["resize","metricPlot","gini90rel","display"], body: async (resize,metricPlot,gini90rel,display) => {
+display(await(
+resize((width) => metricPlot(gini90rel, {width, yLabel: "vs 1º ponto", format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 1, signDisplay: "exceptZero"}), yRules: [0]}))
+))
+}});
+
 define({id: "9da9622c", mode: "inline", inputs: ["fmtPct","povBra90","display"], body: async (fmtPct,povBra90,display) => {
 display(await(
 fmtPct(povBra90)
@@ -777,6 +1130,36 @@ resize((width) => metricPlot(pov90, {width, yLabel: "% pop", rules: [2003, 2010]
 ))
 }});
 
+define({id: "a92be328", mode: "inline", inputs: ["fmtGini","braPovRel","display"], body: async (fmtGini,braPovRel,display) => {
+display(await(
+fmtGini(braPovRel)
+))
+}});
+
+define({id: "6bd4162c", mode: "inline", inputs: ["fmtGini","chlPovRel","display"], body: async (fmtGini,chlPovRel,display) => {
+display(await(
+fmtGini(chlPovRel)
+))
+}});
+
+define({id: "4b48a1e6", mode: "inline", inputs: ["fmtGini","umcPovRel","display"], body: async (fmtGini,umcPovRel,display) => {
+display(await(
+fmtGini(umcPovRel)
+))
+}});
+
+define({id: "be9c9f06", mode: "inline", inputs: ["fmtGini","zafPovRel","display"], body: async (fmtGini,zafPovRel,display) => {
+display(await(
+fmtGini(zafPovRel)
+))
+}});
+
+define({id: "70cee6b3", mode: "inline", inputs: ["resize","metricPlot","pov90rel","display"], body: async (resize,metricPlot,pov90rel,display) => {
+display(await(
+resize((width) => metricPlot(pov90rel, {width, yLabel: "pp vs 1º", format: (v) => v.toLocaleString("pt-BR", {maximumFractionDigits: 1, signDisplay: "exceptZero"}), yRules: [0]}))
+))
+}});
+
 define({id: "a10a49e4", mode: "inline", inputs: ["fmtPct","hungerBra01","display"], body: async (fmtPct,hungerBra01,display) => {
 display(await(
 fmtPct(hungerBra01)
@@ -807,6 +1190,47 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 ))
 }});
 
+define({id: "f0f37044-1", mode: "inline", inputs: ["fmtPct","braSav","display"], body: async (fmtPct,braSav,display) => {
+display(await(
+fmtPct(braSav?.value)
+))
+}});
+
+define({id: "f586d504-1", mode: "inline", inputs: ["fmtPct","mfgBra90","display"], body: async (fmtPct,mfgBra90,display) => {
+display(await(
+fmtPct(mfgBra90)
+))
+}});
+
+define({id: "c7d13e91-1", mode: "inline", inputs: ["fmtPct","braMfg","display"], body: async (fmtPct,braMfg,display) => {
+display(await(
+fmtPct(braMfg?.value)
+))
+}});
+
+define({id: "08a6cbaf-1", mode: "inline", inputs: ["fmtIdx","braTfpRel","display"], body: async (fmtIdx,braTfpRel,display) => {
+display(await(
+fmtIdx(braTfpRel)
+))
+}});
+
+define({id: "0687422b-1", mode: "inline", inputs: ["fmtGini","braGiniRel","display"], body: async (fmtGini,braGiniRel,display) => {
+display(await(
+fmtGini(braGiniRel)
+))
+}});
+
+define({id: "6ef5d07b", inputs: ["html","scorecard","display"], body: async (html,scorecard,display) => {
+display(await(
+html`<table class="score">
+  <thead>
+    <tr><th></th><th>Brasil</th><th>Polônia</th><th>Coreia</th><th>África do Sul</th></tr>
+  </thead>
+  <tbody>${scorecard.map(([metric, bra, pol, kor, zaf]) => html`<tr><th>${metric}</th><td class="bra">${bra}</td><td>${pol}</td><td>${kor}</td><td>${zaf}</td></tr>`)}</tbody>
+</table>`
+))
+}});
+
 </script>
 </head>
 <body>
@@ -833,17 +1257,20 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <li class="observablehq-secondary-link"><a href="#onda-commodity">Onda commodity</a></li>
 <li class="observablehq-secondary-link"><a href="#produtividade">Produtividade</a></li>
 <li class="observablehq-secondary-link"><a href="#investimento">Investimento</a></li>
+<li class="observablehq-secondary-link"><a href="#poupanca">Poupança</a></li>
+<li class="observablehq-secondary-link"><a href="#industria">Indústria</a></li>
 <li class="observablehq-secondary-link"><a href="#comercio">Comércio</a></li>
 <li class="observablehq-secondary-link"><a href="#instituicoes">Instituições</a></li>
 <li class="observablehq-secondary-link"><a href="#pisa">PISA</a></li>
 <li class="observablehq-secondary-link"><a href="#pobreza">Pobreza</a></li>
+<li class="observablehq-secondary-link"><a href="#fechamento">Fechamento</a></li>
 </ol>
 </nav>
 </aside>
 <main id="observablehq-main" class="observablehq">
 <h1 id="brasil-vs-pares" tabindex="-1"><a class="observablehq-header-anchor" href="#brasil-vs-pares">Brasil vs pares</a></h1>
-<p>World Bank WDI, WGI, Fraser EFW, e OECD PISA por ciclo. PPP, produtividade, regras, e o que o aluno de 15 anos consegue fazer. Azul-escuro = Brasil.</p>
-<div class="observablehq observablehq--block"><!--:1a759c6c:--></div>
+<p>World Bank WDI, WGI, PWT 11, Fraser EFW, e OECD PISA por ciclo. PPP, produtividade, TFP, regras, composição, e o que o aluno de 15 anos consegue fazer. Azul-escuro = Brasil.</p>
+<div class="observablehq observablehq--block"><!--:d78220d8:--></div>
 <div class="grid grid-cols-3">
   <div class="card">
     <div class="card-title">PIB per capita PPP</div>
@@ -884,6 +1311,12 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p><observablehq-loading></observablehq-loading><!--:33c26a9a:--></p>
 <h2 id="onda-commodity" tabindex="-1"><a class="observablehq-header-anchor" href="#onda-commodity">Onda commodity</a></h2>
 <p>Clube econômico, não estatístico. Mesmo choque do Brasil em 2003–2010: commodity + compra chinesa. Chile (cobre), Peru (minério), Colômbia (petróleo), Argentina e Uruguai (soja), Rússia (petróleo), Indonésia (commodity/China).</p>
+<h3 id="termos-de-troca" tabindex="-1"><a class="observablehq-header-anchor" href="#termos-de-troca">Termos de troca</a></h3>
+<p>Índice 2015 = 100. Série WDI começa em 2005 — o pico da onda ainda aparece. Sem ToT o corte 2003–2010 é só calendário.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:e04c8974:--> (<observablehq-loading></observablehq-loading><!--:d479b111:-->); pico <observablehq-loading></observablehq-loading><!--:d1e7ff39:--> em 2011. Chile <observablehq-loading></observablehq-loading><!--:47eda469:-->. Peru <observablehq-loading></observablehq-loading><!--:22c0c527:-->.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:ffd16101:--></p>
 <h3 id="ppp-relativo-a-1990" tabindex="-1"><a class="observablehq-header-anchor" href="#ppp-relativo-a-1990">PPP relativo a 1990</a></h3>
 <p>Eixo relativo a 1990, como no gráfico de cima.</p>
 <blockquote>
@@ -900,6 +1333,12 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p>Brasil chega a <observablehq-loading></observablehq-loading><!--:3184770a:-->. Polônia <observablehq-loading></observablehq-loading><!--:b8abe696:-->, Coreia <observablehq-loading></observablehq-loading><!--:e4360bd4:-->. África do Sul <observablehq-loading></observablehq-loading><!--:f356ed2c:--> — o mesmo chão.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:626d7f75:--></p>
+<h3 id="tfp" tabindex="-1"><a class="observablehq-header-anchor" href="#tfp">TFP</a></h3>
+<p>PWT 11, preços nacionais constantes, 2021 = 1 no próprio país. Cada ponto ÷ 1990 × 100. Não é produto por ocupado: tira capital e trabalho. Série até 2023.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:08a6cbaf:-->. Polônia <observablehq-loading></observablehq-loading><!--:a779286b:-->. Coreia <observablehq-loading></observablehq-loading><!--:37f59a41:-->. África do Sul <observablehq-loading></observablehq-loading><!--:b62be3b8:-->. Produto por ocupado sobe; TFP cai.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:c2f94efe:--></p>
 <h3 id="clube-commodity" tabindex="-1"><a class="observablehq-header-anchor" href="#clube-commodity">Clube commodity</a></h3>
 <p>Eixo relativo a 1991.</p>
 <blockquote>
@@ -916,6 +1355,18 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p>40% à la China não é o alvo — pode ser overinvestment. 17% contra o clube que cresceu ×3 é o diagnóstico.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:b28f7af7:--></p>
+<h2 id="poupanca" tabindex="-1"><a class="observablehq-header-anchor" href="#poupanca">Poupança</a></h2>
+<p>Quem investe ~18% precisa poupar perto disso ou importar poupança. A série é poupança bruta / PIB. Mesmo clube 1990.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:f0f37044:-->. Coreia <observablehq-loading></observablehq-loading><!--:e24872d3:-->. Polônia <observablehq-loading></observablehq-loading><!--:e10f75be:-->. UMC <observablehq-loading></observablehq-loading><!--:f844eb5d:-->.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:40625fe5:--></p>
+<h2 id="industria" tabindex="-1"><a class="observablehq-header-anchor" href="#industria">Indústria</a></h2>
+<p>Valor adicionado da manufatura / PIB. Coreia ficou onde estava. Brasil e Chile esvaziaram — commodity no numerador, fábrica no denominador.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:c7d13e91:--> (<observablehq-loading></observablehq-loading><!--:a93d7cab:-->); <observablehq-loading></observablehq-loading><!--:f586d504:--> em 1990. Coreia <observablehq-loading></observablehq-loading><!--:546e8698:--> contra <observablehq-loading></observablehq-loading><!--:0d8aa85b:-->. Polônia <observablehq-loading></observablehq-loading><!--:7e26e6f8:-->. Chile <observablehq-loading></observablehq-loading><!--:61cf83bf:-->.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:d443e4ac:--></p>
 <h2 id="comercio" tabindex="-1"><a class="observablehq-header-anchor" href="#comercio">Comércio</a></h2>
 <p>Também não é meta de maximizar (X+M)/PIB. País grande tende a comerciar menos — gravidade. O ponto é outro: comércio traz bem de capital, concorrência e escala. A série é exportações + importações sobre o PIB.</p>
 <p>México é grande e opera a <observablehq-loading></observablehq-loading><!--:120971a4-1:-->. Polônia, <observablehq-loading></observablehq-loading><!--:9915a040-1:-->. O Brasil está em <observablehq-loading></observablehq-loading><!--:5bb7a4d6-1:--> — fechado para o nível de renda. Menos máquina importada, menos concorrência, menos escala nos setores que exportam. É o segundo canal, ao lado do investimento.</p>
@@ -931,14 +1382,36 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p>Brasil <observablehq-loading></observablehq-loading><!--:11008048:--> (<observablehq-loading></observablehq-loading><!--:8ee0482e:-->). Polônia <observablehq-loading></observablehq-loading><!--:ce9edd8c:-->. Coreia <observablehq-loading></observablehq-loading><!--:55b2c350:-->. Chile <observablehq-loading></observablehq-loading><!--:f0c92b44:-->.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:1f4d58c2:--></p>
+<p>1996 = 0. Cada ponto é a estimativa daquele ano menos a de 1996 do próprio país. WGI cruza zero; um índice × não serve. O gráfico mostra quem melhorou.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:ae14b346:-->. Polônia <observablehq-loading></observablehq-loading><!--:6d3bdbd7:-->. Coreia <observablehq-loading></observablehq-loading><!--:8dac2307:-->. Chile <observablehq-loading></observablehq-loading><!--:2c1e0958:--> — caiu do topo.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:3c04de87:--></p>
+<h3 id="rule-of-law" tabindex="-1"><a class="observablehq-header-anchor" href="#rule-of-law">Rule of Law</a></h3>
+<p>Mesma família WGI. Propriedade e contrato, não licença. 1996 = 0.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:b450c5f8:--> (<observablehq-loading></observablehq-loading><!--:afef8583:-->). Polônia <observablehq-loading></observablehq-loading><!--:37c517fe:-->. Coreia <observablehq-loading></observablehq-loading><!--:0f5292c3:-->. Chile <observablehq-loading></observablehq-loading><!--:186ea522:-->.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:06711a3e:--></p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:92825efa:-->. Polônia <observablehq-loading></observablehq-loading><!--:fec87aac:-->. Coreia <observablehq-loading></observablehq-loading><!--:5912d33d:-->. Chile <observablehq-loading></observablehq-loading><!--:b031daac:--> — o mesmo tombo da RQ.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:4bbf92cf:--></p>
 <h3 id="dias-para-registrar-uma-llc" tabindex="-1"><a class="observablehq-header-anchor" href="#dias-para-registrar-uma-llc">Dias para registrar uma LLC</a></h3>
 <p>Doing Business, caso padronizado. Série 2013–2019, quando o Brasil entra. O projeto morreu em 2021.</p>
 <blockquote>
 <p>Brasil <observablehq-loading></observablehq-loading><!--:6cffabdc:--> dias (<observablehq-loading></observablehq-loading><!--:e4bdf287:-->). Chile <observablehq-loading></observablehq-loading><!--:31c8b540:-->. Polônia <observablehq-loading></observablehq-loading><!--:2060de11:-->. Coreia <observablehq-loading></observablehq-loading><!--:556e677a:-->.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:b551be8c:--></p>
+<ol start="2019">
+<li>Nova Zelândia é o piso. Chile cola nos EUA. Coreia = Alemanha. Brasil acima da renda alta e da UE; abaixo da média UMC. Polônia, que cresceu ×3, ainda é lenta. Cinza = grupo.</li>
+</ol>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:6cffabdc-1:--> · renda alta <observablehq-loading></observablehq-loading><!--:ec11e6d0:--> · América Latina <observablehq-loading></observablehq-loading><!--:b5b30336:--></p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:331068ce:--></p>
 <h3 id="fraser-efw" tabindex="-1"><a class="observablehq-header-anchor" href="#fraser-efw">Fraser EFW</a></h3>
-<p>0–10. Cinco áreas: Estado, propriedade, moeda, comércio, regulação. 5 em 5 anos até 2000, depois anual. Índice corrente — não o painel encadeado. Último ano 2022.</p>
+<p>0–10. Cinco áreas: Estado, propriedade, moeda, comércio, regulação. Série anual a partir de 2000. Índice corrente — não o painel encadeado. Último ano 2022.</p>
 <blockquote>
 <p>Brasil <observablehq-loading></observablehq-loading><!--:dacae530:--> (<observablehq-loading></observablehq-loading><!--:657a1738:-->). Chile <observablehq-loading></observablehq-loading><!--:eddc315a:-->. Polônia <observablehq-loading></observablehq-loading><!--:8f6412a6:-->. Coreia <observablehq-loading></observablehq-loading><!--:d51916d3:-->.</p>
 </blockquote>
@@ -972,19 +1445,32 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p>Brasil <observablehq-loading></observablehq-loading><!--:b31ce9ae:-->. Polônia <observablehq-loading></observablehq-loading><!--:76f99ef0:-->. Coreia <observablehq-loading></observablehq-loading><!--:a8f241a6:-->. África do Sul <observablehq-loading></observablehq-loading><!--:b56db705:-->. Caiu; continua alto.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:485ab3cc:--></p>
+<p>Primeiro inquérito = 0. Cada ponto é o Gini daquele ano menos o primeiro do próprio país. Inquérito, não ano civil — Coreia só entra em 2006.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:0687422b:-->. Chile <observablehq-loading></observablehq-loading><!--:19dcdc41:-->. Polônia <observablehq-loading></observablehq-loading><!--:e4e28159:-->. África do Sul <observablehq-loading></observablehq-loading><!--:20a81694:-->. Coreia <observablehq-loading></observablehq-loading><!--:85f3a365:--> — janela curta.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:3dbf28d9:--></p>
 <h3 id="pobreza-a-8-30-dia" tabindex="-1"><a class="observablehq-header-anchor" href="#pobreza-a-8-30-dia">Pobreza a $8.30/dia</a></h3>
 <p>% da população abaixo da linha típica de UMC (2021 PPP). Mesmo clube 1990 + UMC. Brasil <observablehq-loading></observablehq-loading><!--:9da9622c:--> em 1990.</p>
 <blockquote>
 <p>Brasil <observablehq-loading></observablehq-loading><!--:628ad075:-->. UMC <observablehq-loading></observablehq-loading><!--:67bfa27a:-->. Polônia <observablehq-loading></observablehq-loading><!--:72ef9528:-->, Coreia <observablehq-loading></observablehq-loading><!--:0efea4a5:--> — no piso. África do Sul <observablehq-loading></observablehq-loading><!--:74b68957:-->.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:7ace9ea6:--></p>
+<p>Primeiro inquérito = 0. Pontos percentuais, não índice ×. Coreia já estava no piso.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:a92be328:--> pp. Chile <observablehq-loading></observablehq-loading><!--:6bd4162c:-->. UMC <observablehq-loading></observablehq-loading><!--:4b48a1e6:-->. África do Sul <observablehq-loading></observablehq-loading><!--:be9c9f06:-->.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:70cee6b3:--></p>
 <h3 id="subnutricao" tabindex="-1"><a class="observablehq-header-anchor" href="#subnutricao">Subnutrição</a></h3>
 <p>% da população. FAO, 2001–2023. Abaixo de 2,5% o valor é esse piso, não zero. Brasil <observablehq-loading></observablehq-loading><!--:a10a49e4:--> em 2001; depois cola no piso com Coreia e Polônia.</p>
 <blockquote>
 <p>Brasil <observablehq-loading></observablehq-loading><!--:2b721daf:-->. UMC <observablehq-loading></observablehq-loading><!--:6069ea4c:-->. África do Sul <observablehq-loading></observablehq-loading><!--:416b8aed:-->.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:9e20c3b7:--></p>
-<p>Hover destaca a linha do país. Fonte: World Bank WDI (PIP, FAO) · WGI Regulatory Quality · Doing Business / OWID (dias) · Fraser EFW via QoG · OECD PISA 2022 (I.B1.5.4–6).</p>
+<h2 id="fechamento" tabindex="-1"><a class="observablehq-header-anchor" href="#fechamento">Fechamento</a></h2>
+<p>Quem saiu da faixa ou poupou e manteve indústria (Coreia), ou abriu o comércio e subiu TFP (Polônia). O Brasil poupa <observablehq-loading></observablehq-loading><!--:f0f37044-1:-->, a manufatura caiu de <observablehq-loading></observablehq-loading><!--:f586d504-1:--> para <observablehq-loading></observablehq-loading><!--:c7d13e91-1:-->, e a TFP está em <observablehq-loading></observablehq-loading><!--:08a6cbaf-1:--> — abaixo de 1990. A onda de commodity levantou renda e cortou pobreza; depois de 2010 o produto por ocupado parou e as regras não melhoraram. Gini <observablehq-loading></observablehq-loading><!--:0687422b-1:-->; fome no piso. Ganho social sem takeoff.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6ef5d07b:--></div>
+<p>Hover destaca a linha do país. Fonte: World Bank WDI (PIP, FAO, ToT) · WGI Regulatory Quality e Rule of Law · PWT 11 TFP via OWID · Doing Business / OWID (dias) · Fraser EFW via QoG · OECD PISA 2022 (I.B1.5.4–6).</p>
 </main>
 <footer id="observablehq-footer">
 <div>World Bank WDI · Observable Framework</div>

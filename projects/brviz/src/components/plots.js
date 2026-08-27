@@ -6,6 +6,18 @@ function braColor() {
   return getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
 }
 
+function plotHeight(width) {
+  return Math.round(Math.max(260, Math.min(380, (width ?? 640) * 0.7)));
+}
+
+function barMargins(width, marginLeft) {
+  const w = width ?? 640;
+  return {
+    marginLeft: Math.min(marginLeft, Math.max(72, Math.round(w * 0.32))),
+    marginRight: w < 480 ? 36 : 48,
+  };
+}
+
 function peerColors(isos) {
   const n = Math.max(isos.length, 2);
   return d3.scaleOrdinal(isos, d3.quantize(d3.interpolateHcl("#cfe8f9", "#6ba8d4"), n));
@@ -31,7 +43,7 @@ export function metricPlot(
   };
   return Plot.plot({
     width,
-    height: 380,
+    height: plotHeight(width),
     marginLeft: 56,
     marginRight: 16,
     x: { label: null, tickFormat: "d" },
@@ -40,7 +52,7 @@ export function metricPlot(
       ? {
           legend: true,
           label: null,
-          columns: 4,
+          columns: (width ?? 640) < 480 ? 2 : 4,
           domain: ["Brasil", ...others],
           range: [BRA, ...d3.schemeTableau10],
         }
@@ -97,29 +109,49 @@ export function metricPlot(
   });
 }
 
-export function barDelta(rows, { width } = {}) {
+export function barDelta(
+  rows,
+  {
+    width,
+    xLabel = "variação 2003–2010 (%)",
+    format = (v) => `${v.toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%`,
+    descending = true,
+    marginLeft = 88,
+  } = {},
+) {
   const BRA = braColor();
-  const ordered = d3.sort(rows, (d) => -d.value);
+  const ordered = d3.sort(rows, (d) => (descending ? -d.value : d.value));
+  const toned = rows.some((d) => d.tone);
   const others = d3.sort(rows.filter((d) => d.iso !== "BRA").map((d) => d.name));
+  const fillOf = (d) => {
+    if (d.tone === "bra") return BRA;
+    if (d.tone === "group") return "#94a3b8";
+    if (d.tone === "peer") return "#6ba8d4";
+    return undefined;
+  };
+  const { marginLeft: left, marginRight } = barMargins(width, marginLeft);
+  const rowH = (width ?? 640) < 480 ? 30 : 36;
   return Plot.plot({
     width,
-    height: 36 * rows.length + 48,
-    marginLeft: 88,
-    marginRight: 48,
-    x: { label: "variação 2003–2010 (%)", grid: true },
+    height: rowH * rows.length + (rowH === 30 ? 40 : 48),
+    marginLeft: left,
+    marginRight,
+    x: { label: xLabel, grid: true },
     y: { label: null, domain: ordered.map((d) => d.name) },
-    color: { legend: false, domain: ["Brasil", ...others], range: [BRA, ...d3.schemeTableau10] },
+    color: toned
+      ? undefined
+      : { legend: false, domain: ["Brasil", ...others], range: [BRA, ...d3.schemeTableau10] },
     marks: [
       Plot.barX(ordered, {
         y: "name",
         x: "value",
-        fill: "name",
-        fillOpacity: (d) => (d.iso === "BRA" ? 1 : 0.5),
+        fill: toned ? fillOf : "name",
+        fillOpacity: (d) => (d.iso === "BRA" ? 1 : 0.55),
       }),
       Plot.text(ordered, {
         y: "name",
         x: "value",
-        text: (d) => `${d.value.toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%`,
+        text: (d) => format(d.value),
         dx: 8,
         textAnchor: "start",
         fill: "currentColor",
@@ -139,9 +171,9 @@ function dotsPlot(
   const named = rows.filter((d) => labels.includes(d.iso));
   return Plot.plot({
     width,
-    height: 380,
+    height: plotHeight(width),
     marginLeft: 48,
-    marginRight: 56,
+    marginRight: (width ?? 640) < 480 ? 40 : 56,
     x: { label: xLabel, grid: true },
     y: { label: yLabel, grid: true },
     marks: [

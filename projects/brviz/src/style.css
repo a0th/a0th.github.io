@@ -1,0 +1,20 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-air.css");
+
+:root {
+  --bra: #1e3a8a;
+  --theme-foreground-focus: #1e3a8a;
+}
+
+.muted {
+  color: var(--theme-foreground-muted);
+}
+
+.card .big {
+  font-variant-numeric: tabular-nums;
+}
+
+.card .card-title {
+  font-weight: 500;
+  font-size: 15px;
+}

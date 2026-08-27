@@ -105,6 +105,18 @@ function deltaPct(rows, y0, y1) {
     .filter((d) => d);
 }
 
+function meanOf(rows, iso, y0 = 1990) {
+  let sum = 0;
+  let n = 0;
+  for (const d of rows) {
+    if (d.iso !== iso || d.year < y0) continue;
+    sum += d.value;
+    n += 1;
+  }
+  if (!n) return;
+  return sum / n;
+}
+
 export const fmtX = (x) =>
   x == null ? "—" : `×${x.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}`;
 export const fmtPct = (x) =>
@@ -156,7 +168,7 @@ export function load(wdi, pisa) {
     inv,
     trd,
     rq90: keep(rq, club90),
-    days90: keep(days, club90),
+    days90: keep(days, club90).filter((d) => d.year >= 2013),
     efw90: keep(efw, club90),
     pisa90: keep(pisaMath, [...club90, "OECD"]),
     edu90: keep(edu, [...club90, "UMC"]),
@@ -165,6 +177,15 @@ export function load(wdi, pisa) {
     hunger90: keep(hunger, [...club90, "UMC"]),
     waveBoom: deltaPct(pppWave, 2003, 2010),
     prodWaveBoom: deltaPct(prodWave, 2003, 2010),
+    invGrowth: club90
+      .filter((iso) => !SKIP.has(iso))
+      .map((iso) => {
+        const invMean = meanOf(inv, iso);
+        const pppRel = last(ppp90rel, iso)?.value;
+        if (invMean == null || pppRel == null) return;
+        return { iso, name: NAMES[iso] ?? iso, inv: invMean, ppp: pppRel };
+      })
+      .filter((d) => d),
     pppBra: times(ppp, "BRA"),
     pppUmc: times(ppp, "UMC"),
     pppPol: times(ppp, "POL"),
@@ -177,6 +198,9 @@ export function load(wdi, pisa) {
     eduUmc: last(edu, "UMC"),
     eduPol: last(edu, "POL"),
     eduKor: last(edu, "KOR"),
+    braInvMean: meanOf(inv, "BRA"),
+    polInvMean: meanOf(inv, "POL"),
+    korInvMean: meanOf(inv, "KOR"),
     bra90rel: last(ppp90rel, "BRA")?.value,
     pol90rel: last(ppp90rel, "POL")?.value,
     kor90rel: last(ppp90rel, "KOR")?.value,

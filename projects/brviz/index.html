@@ -13,8 +13,8 @@
 <link rel="modulepreload" href="./_observablehq/client.b8612b5f.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.1a25c24f.js">
-<link rel="modulepreload" href="./_import/components/plots.71d2faa1.js">
+<link rel="modulepreload" href="./_import/components/data.8bac0dc0.js">
+<link rel="modulepreload" href="./_import/components/plots.c170cd62.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
@@ -61,14 +61,18 @@ import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787857227646,"size":23242});
 registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.513158fb.csv","lastModified":1787857227512,"size":579200});
 
-define({id: "70711ee5", inputs: ["FileAttachment"], outputs: ["load","metricPlot","barDelta","spendPisaPlot","wdi","pisa","namesOf","club90","ppp90","ppp90rel","pppWaveRel","prod90rel","prodWaveRel","inv","trd","rq90","days90","efw90","pisa90","edu90","gini90","pov90","hunger90","waveBoom","prodWaveBoom","pppBra","pppUmc","pppPol","invBra","invUmc","trdBra","trdMex","trdPol","eduBra","eduUmc","eduPol","eduKor","bra90rel","pol90rel","kor90rel","zaf90rel","braWaveRel","chlWaveRel","idnWaveRel","braProdRel","polProdRel","korProdRel","zafProdRel","braProdWave","chlProdWave","idnProdWave","braPisa","oecdPisa","korPisa","polPisa","braPisaRead","braPisaSci","braGini","polGini","korGini","zafGini","braPov","umcPov","polPov","korPov","zafPov","povBra90","braHunger","umcHunger","zafHunger","hungerBra01","braRq","polRq","korRq","chlRq","braDays","chlDays","polDays","korDays","braEfw","chlEfw","polEfw","korEfw","spendPisa","fmtX","fmtPct","fmtIdx","fmtGini","fmt2","fmtDays"], body: async (FileAttachment) => {
-const [{load}, {metricPlot, barDelta, spendPisaPlot}] = await Promise.all([import("./_import/components/data.1a25c24f.js"), import("./_import/components/plots.71d2faa1.js")]);
+define({id: "1a759c6c", inputs: ["FileAttachment"], outputs: ["load","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","namesOf","club90","invGrowth","braInvMean","polInvMean","korInvMean","ppp90","ppp90rel","pppWaveRel","prod90rel","prodWaveRel","inv","trd","rq90","days90","efw90","pisa90","edu90","gini90","pov90","hunger90","waveBoom","prodWaveBoom","pppBra","pppUmc","pppPol","invBra","invUmc","trdBra","trdMex","trdPol","eduBra","eduUmc","eduPol","eduKor","bra90rel","pol90rel","kor90rel","zaf90rel","braWaveRel","chlWaveRel","idnWaveRel","braProdRel","polProdRel","korProdRel","zafProdRel","braProdWave","chlProdWave","idnProdWave","braPisa","oecdPisa","korPisa","polPisa","braPisaRead","braPisaSci","braGini","polGini","korGini","zafGini","braPov","umcPov","polPov","korPov","zafPov","povBra90","braHunger","umcHunger","zafHunger","hungerBra01","braRq","polRq","korRq","chlRq","braDays","chlDays","polDays","korDays","braEfw","chlEfw","polEfw","korEfw","spendPisa","fmtX","fmtPct","fmtIdx","fmtGini","fmt2","fmtDays"], body: async (FileAttachment) => {
+const [{load}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.8bac0dc0.js"), import("./_import/components/plots.c170cd62.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({typed: true});
 const pisa = await FileAttachment("./data/pisa.csv").csv({typed: true});
 const {
   namesOf,
   club90,
+  invGrowth,
+  braInvMean,
+  polInvMean,
+  korInvMean,
   ppp90,
   ppp90rel,
   pppWaveRel,
@@ -152,7 +156,7 @@ const {
   fmt2,
   fmtDays
 } = load(wdi, pisa);
-return {load,metricPlot,barDelta,spendPisaPlot,wdi,pisa,namesOf,club90,ppp90,ppp90rel,pppWaveRel,prod90rel,prodWaveRel,inv,trd,rq90,days90,efw90,pisa90,edu90,gini90,pov90,hunger90,waveBoom,prodWaveBoom,pppBra,pppUmc,pppPol,invBra,invUmc,trdBra,trdMex,trdPol,eduBra,eduUmc,eduPol,eduKor,bra90rel,pol90rel,kor90rel,zaf90rel,braWaveRel,chlWaveRel,idnWaveRel,braProdRel,polProdRel,korProdRel,zafProdRel,braProdWave,chlProdWave,idnProdWave,braPisa,oecdPisa,korPisa,polPisa,braPisaRead,braPisaSci,braGini,polGini,korGini,zafGini,braPov,umcPov,polPov,korPov,zafPov,povBra90,braHunger,umcHunger,zafHunger,hungerBra01,braRq,polRq,korRq,chlRq,braDays,chlDays,polDays,korDays,braEfw,chlEfw,polEfw,korEfw,spendPisa,fmtX,fmtPct,fmtIdx,fmtGini,fmt2,fmtDays};
+return {load,metricPlot,barDelta,spendPisaPlot,invGrowthPlot,wdi,pisa,namesOf,club90,invGrowth,braInvMean,polInvMean,korInvMean,ppp90,ppp90rel,pppWaveRel,prod90rel,prodWaveRel,inv,trd,rq90,days90,efw90,pisa90,edu90,gini90,pov90,hunger90,waveBoom,prodWaveBoom,pppBra,pppUmc,pppPol,invBra,invUmc,trdBra,trdMex,trdPol,eduBra,eduUmc,eduPol,eduKor,bra90rel,pol90rel,kor90rel,zaf90rel,braWaveRel,chlWaveRel,idnWaveRel,braProdRel,polProdRel,korProdRel,zafProdRel,braProdWave,chlProdWave,idnProdWave,braPisa,oecdPisa,korPisa,polPisa,braPisaRead,braPisaSci,braGini,polGini,korGini,zafGini,braPov,umcPov,polPov,korPov,zafPov,povBra90,braHunger,umcHunger,zafHunger,hungerBra01,braRq,polRq,korRq,chlRq,braDays,chlDays,polDays,korDays,braEfw,chlEfw,polEfw,korEfw,spendPisa,fmtX,fmtPct,fmtIdx,fmtGini,fmt2,fmtDays};
 }});
 
 define({id: "10e0ab43", mode: "inline", inputs: ["pppBra","display"], body: async (pppBra,display) => {
@@ -269,6 +273,48 @@ resize((width) => metricPlot(ppp90rel, {width, yLabel: "1990 = 100", yRules: [10
 ))
 }});
 
+define({id: "995a0474", mode: "inline", inputs: ["fmtPct","braInvMean","display"], body: async (fmtPct,braInvMean,display) => {
+display(await(
+fmtPct(braInvMean)
+))
+}});
+
+define({id: "f972ec56-1", mode: "inline", inputs: ["fmtIdx","bra90rel","display"], body: async (fmtIdx,bra90rel,display) => {
+display(await(
+fmtIdx(bra90rel)
+))
+}});
+
+define({id: "a1e80a9d", mode: "inline", inputs: ["fmtPct","polInvMean","display"], body: async (fmtPct,polInvMean,display) => {
+display(await(
+fmtPct(polInvMean)
+))
+}});
+
+define({id: "0c928217-1", mode: "inline", inputs: ["fmtIdx","pol90rel","display"], body: async (fmtIdx,pol90rel,display) => {
+display(await(
+fmtIdx(pol90rel)
+))
+}});
+
+define({id: "80cc691a", mode: "inline", inputs: ["fmtPct","korInvMean","display"], body: async (fmtPct,korInvMean,display) => {
+display(await(
+fmtPct(korInvMean)
+))
+}});
+
+define({id: "22f61eff-1", mode: "inline", inputs: ["fmtIdx","kor90rel","display"], body: async (fmtIdx,kor90rel,display) => {
+display(await(
+fmtIdx(kor90rel)
+))
+}});
+
+define({id: "33c26a9a", mode: "inline", inputs: ["resize","invGrowthPlot","invGrowth","display"], body: async (resize,invGrowthPlot,invGrowth,display) => {
+display(await(
+resize((width) => invGrowthPlot(invGrowth, {width}))
+))
+}});
+
 define({id: "d2715181", mode: "inline", inputs: ["fmtIdx","braWaveRel","display"], body: async (fmtIdx,braWaveRel,display) => {
 display(await(
 fmtIdx(braWaveRel)
@@ -356,6 +402,30 @@ resize((width) => metricPlot(prodWaveRel, {width, yLabel: "1991 = 100", yRules: 
 define({id: "fcb831de", mode: "inline", inputs: ["resize","barDelta","prodWaveBoom","display"], body: async (resize,barDelta,prodWaveBoom,display) => {
 display(await(
 resize((width) => barDelta(prodWaveBoom, {width}))
+))
+}});
+
+define({id: "80cc691a-1", mode: "inline", inputs: ["fmtPct","korInvMean","display"], body: async (fmtPct,korInvMean,display) => {
+display(await(
+fmtPct(korInvMean)
+))
+}});
+
+define({id: "a1e80a9d-1", mode: "inline", inputs: ["fmtPct","polInvMean","display"], body: async (fmtPct,polInvMean,display) => {
+display(await(
+fmtPct(polInvMean)
+))
+}});
+
+define({id: "995a0474-1", mode: "inline", inputs: ["fmtPct","braInvMean","display"], body: async (fmtPct,braInvMean,display) => {
+display(await(
+fmtPct(braInvMean)
+))
+}});
+
+define({id: "0c928217-2", mode: "inline", inputs: ["fmtIdx","pol90rel","display"], body: async (fmtIdx,pol90rel,display) => {
+display(await(
+fmtIdx(pol90rel)
 ))
 }});
 
@@ -759,6 +829,7 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <ol>
 <li class="observablehq-secondary-link"><a href="#pares-em-1990">Pares em 1990</a></li>
 <li class="observablehq-secondary-link"><a href="#1990-100">1990 = 100</a></li>
+<li class="observablehq-secondary-link"><a href="#investimento-crescimento">Investimento × crescimento</a></li>
 <li class="observablehq-secondary-link"><a href="#onda-commodity">Onda commodity</a></li>
 <li class="observablehq-secondary-link"><a href="#produtividade">Produtividade</a></li>
 <li class="observablehq-secondary-link"><a href="#investimento">Investimento</a></li>
@@ -772,7 +843,7 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <main id="observablehq-main" class="observablehq">
 <h1 id="brasil-vs-pares" tabindex="-1"><a class="observablehq-header-anchor" href="#brasil-vs-pares">Brasil vs pares</a></h1>
 <p>World Bank WDI, WGI, Fraser EFW, e OECD PISA por ciclo. PPP, produtividade, regras, e o que o aluno de 15 anos consegue fazer. Azul-escuro = Brasil.</p>
-<div class="observablehq observablehq--block"><!--:70711ee5:--></div>
+<div class="observablehq observablehq--block"><!--:1a759c6c:--></div>
 <div class="grid grid-cols-3">
   <div class="card">
     <div class="card-title">PIB per capita PPP</div>
@@ -805,6 +876,12 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p>Brasil chega a <observablehq-loading></observablehq-loading><!--:f972ec56:-->. Polônia <observablehq-loading></observablehq-loading><!--:0c928217:-->, Coreia <observablehq-loading></observablehq-loading><!--:22f61eff:-->. África do Sul <observablehq-loading></observablehq-loading><!--:613fd075:-->.</p>
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:65a5bbf7:--></p>
+<h2 id="investimento-crescimento" tabindex="-1"><a class="observablehq-header-anchor" href="#investimento-crescimento">Investimento × crescimento</a></h2>
+<p>Média de formação bruta de capital / PIB desde 1990 contra o PPP 1990 = 100. Mesmo clube. Um ponto por país — não é regressão.</p>
+<blockquote>
+<p>Brasil <observablehq-loading></observablehq-loading><!--:995a0474:--> → <observablehq-loading></observablehq-loading><!--:f972ec56-1:-->. Polônia <observablehq-loading></observablehq-loading><!--:a1e80a9d:--> → <observablehq-loading></observablehq-loading><!--:0c928217-1:-->. Coreia <observablehq-loading></observablehq-loading><!--:80cc691a:--> → <observablehq-loading></observablehq-loading><!--:22f61eff-1:-->. 40% à la China não é o alvo.</p>
+</blockquote>
+<p><observablehq-loading></observablehq-loading><!--:33c26a9a:--></p>
 <h2 id="onda-commodity" tabindex="-1"><a class="observablehq-header-anchor" href="#onda-commodity">Onda commodity</a></h2>
 <p>Clube econômico, não estatístico. Mesmo choque do Brasil em 2003–2010: commodity + compra chinesa. Chile (cobre), Peru (minério), Colômbia (petróleo), Argentina e Uruguai (soja), Rússia (petróleo), Indonésia (commodity/China).</p>
 <h3 id="ppp-relativo-a-1990" tabindex="-1"><a class="observablehq-header-anchor" href="#ppp-relativo-a-1990">PPP relativo a 1990</a></h3>
@@ -834,7 +911,7 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 <p><observablehq-loading></observablehq-loading><!--:fcb831de:--></p>
 <h2 id="investimento" tabindex="-1"><a class="observablehq-header-anchor" href="#investimento">Investimento</a></h2>
 <p>Não é uma meta do tipo “o % tem de subir”. É o canal. PIB per capita cresce se a economia acumula máquina, infraestrutura e construção — e se usa isso com alguma produtividade. A série é formação bruta de capital / PIB.</p>
-<p>Quem saiu da faixa do Brasil em 1990 (Coreia, Polônia, China, UMC) passou décadas investindo ~30% do PIB. O Brasil oscila em 15–22% e hoje está em <observablehq-loading></observablehq-loading><!--:80a4babc-1:--> contra <observablehq-loading></observablehq-loading><!--:0d0b5ea8-1:--> do UMC. Sem esse gap, o atraso no PPP fica difícil de explicar só com “azar” ou ciclo político.</p>
+<p>Quem saiu da faixa do Brasil em 1990 não investiu o mesmo. Coreia ficou em <observablehq-loading></observablehq-loading><!--:80cc691a-1:--> do PIB por décadas. Polônia, <observablehq-loading></observablehq-loading><!--:a1e80a9d-1:--> — perto do Brasil <observablehq-loading></observablehq-loading><!--:995a0474-1:--> — e mesmo assim chegou a <observablehq-loading></observablehq-loading><!--:0c928217-2:-->. O Brasil oscila em 15–22% e hoje está em <observablehq-loading></observablehq-loading><!--:80a4babc-1:--> contra <observablehq-loading></observablehq-loading><!--:0d0b5ea8-1:--> do UMC. Sem o gap da Coreia, o atraso no PPP não se explica só com azar ou ciclo político.</p>
 <blockquote>
 <p>40% à la China não é o alvo — pode ser overinvestment. 17% contra o clube que cresceu ×3 é o diagnóstico.</p>
 </blockquote>
@@ -855,7 +932,7 @@ resize((width) => metricPlot(hunger90, {width, yLabel: "% pop", yRules: [2.5]}))
 </blockquote>
 <p><observablehq-loading></observablehq-loading><!--:1f4d58c2:--></p>
 <h3 id="dias-para-registrar-uma-llc" tabindex="-1"><a class="observablehq-header-anchor" href="#dias-para-registrar-uma-llc">Dias para registrar uma LLC</a></h3>
-<p>Doing Business, caso padronizado. Série 2003–2019; o Brasil só entra em 2013. O projeto morreu em 2021.</p>
+<p>Doing Business, caso padronizado. Série 2013–2019, quando o Brasil entra. O projeto morreu em 2021.</p>
 <blockquote>
 <p>Brasil <observablehq-loading></observablehq-loading><!--:6cffabdc:--> dias (<observablehq-loading></observablehq-loading><!--:e4bdf287:-->). Chile <observablehq-loading></observablehq-loading><!--:31c8b540:-->. Polônia <observablehq-loading></observablehq-loading><!--:2060de11:-->. Coreia <observablehq-loading></observablehq-loading><!--:556e677a:-->.</p>
 </blockquote>

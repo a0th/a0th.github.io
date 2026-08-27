@@ -1,6 +1,6 @@
 import * as d3 from "../../_npm/d3@7.9.0/080cf928.js";
 import * as Plot from "../../_npm/@observablehq/plot@0.6.17/93ce672e.js";
-import { fmtIdx } from "./data.1a25c24f.js";
+import { fmtIdx } from "./data.8bac0dc0.js";
 
 function braColor() {
   return getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
@@ -129,42 +129,63 @@ export function barDelta(rows, { width } = {}) {
   });
 }
 
-export function spendPisaPlot(rows, { width, oecd } = {}) {
+function dotsPlot(
+  rows,
+  { width, x, y, xLabel, yLabel, labels = ["BRA", "KOR", "POL"], ruleY = [], title } = {},
+) {
   const BRA = braColor();
   const bra = rows.filter((d) => d.iso === "BRA");
   const rest = rows.filter((d) => d.iso !== "BRA");
-  const labels = rows.filter((d) => ["BRA", "KOR", "POL"].includes(d.iso));
+  const named = rows.filter((d) => labels.includes(d.iso));
   return Plot.plot({
     width,
     height: 380,
     marginLeft: 48,
     marginRight: 56,
-    x: { label: "% PIB", grid: true },
-    y: { label: "PISA math", grid: true },
+    x: { label: xLabel, grid: true },
+    y: { label: yLabel, grid: true },
     marks: [
-      Plot.ruleY(oecd == null ? [] : [oecd], {
+      Plot.ruleY(ruleY, {
         stroke: "currentColor",
         strokeOpacity: 0.25,
         strokeDasharray: "4,4",
       }),
-      Plot.dot(rest, { x: "edu", y: "pisa", fill: "#6ba8d4", fillOpacity: 0.8, r: 6 }),
-      Plot.dot(bra, { x: "edu", y: "pisa", fill: BRA, r: 8 }),
-      Plot.text(labels, {
-        x: "edu",
-        y: "pisa",
+      Plot.dot(rest, { x, y, fill: "#6ba8d4", fillOpacity: 0.8, r: 6 }),
+      Plot.dot(bra, { x, y, fill: BRA, r: 8 }),
+      Plot.text(named, {
+        x,
+        y,
         text: "name",
         dy: -12,
         fill: (d) => (d.iso === "BRA" ? BRA : "currentColor"),
       }),
-      Plot.tip(
-        rows,
-        Plot.pointer({
-          x: "edu",
-          y: "pisa",
-          title: (d) =>
-            `${d.name}\n${d.eduYear}: ${d.edu.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% PIB\nPISA ${d.pisaYear}: ${fmtIdx(d.pisa)}`,
-        }),
-      ),
+      Plot.tip(rows, Plot.pointer({ x, y, title })),
     ],
+  });
+}
+
+export function spendPisaPlot(rows, { width, oecd } = {}) {
+  return dotsPlot(rows, {
+    width,
+    x: "edu",
+    y: "pisa",
+    xLabel: "% PIB",
+    yLabel: "PISA math",
+    ruleY: oecd == null ? [] : [oecd],
+    title: (d) =>
+      `${d.name}\n${d.eduYear}: ${d.edu.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% PIB\nPISA ${d.pisaYear}: ${fmtIdx(d.pisa)}`,
+  });
+}
+
+export function invGrowthPlot(rows, { width } = {}) {
+  return dotsPlot(rows, {
+    width,
+    x: "inv",
+    y: "ppp",
+    xLabel: "% PIB (média)",
+    yLabel: "PPP 1990 = 100",
+    ruleY: [100],
+    title: (d) =>
+      `${d.name}\ninv médio: ${d.inv.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%\nPPP: ${fmtIdx(d.ppp)}`,
   });
 }

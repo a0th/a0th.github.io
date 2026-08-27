@@ -9,13 +9,17 @@ World Bank WDI, WGI, Fraser EFW, e OECD PISA por ciclo. PPP, produtividade, regr
 
 ```js
 import {load} from "./components/data.js";
-import {metricPlot, barDelta, spendPisaPlot} from "./components/plots.js";
+import {metricPlot, barDelta, spendPisaPlot, invGrowthPlot} from "./components/plots.js";
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({typed: true});
 const pisa = await FileAttachment("./data/pisa.csv").csv({typed: true});
 const {
   namesOf,
   club90,
+  invGrowth,
+  braInvMean,
+  polInvMean,
+  korInvMean,
   ppp90,
   ppp90rel,
   pppWaveRel,
@@ -138,6 +142,14 @@ Mesmos países. Cada ponto é o PPP daquele ano dividido pelo PPP de 1990 do pr�
 
 ${resize((width) => metricPlot(ppp90rel, {width, yLabel: "1990 = 100", yRules: [100]}))}
 
+## Investimento × crescimento
+
+Média de formação bruta de capital / PIB desde 1990 contra o PPP 1990 = 100. Mesmo clube. Um ponto por país — não é regressão.
+
+> Brasil ${fmtPct(braInvMean)} → ${fmtIdx(bra90rel)}. Polônia ${fmtPct(polInvMean)} → ${fmtIdx(pol90rel)}. Coreia ${fmtPct(korInvMean)} → ${fmtIdx(kor90rel)}. 40% à la China não é o alvo.
+
+${resize((width) => invGrowthPlot(invGrowth, {width}))}
+
 ## Onda commodity
 
 Clube econômico, não estatístico. Mesmo choque do Brasil em 2003–2010: commodity + compra chinesa. Chile (cobre), Peru (minério), Colômbia (petróleo), Argentina e Uruguai (soja), Rússia (petróleo), Indonésia (commodity/China).
@@ -184,7 +196,7 @@ ${resize((width) => barDelta(prodWaveBoom, {width}))}
 
 Não é uma meta do tipo “o % tem de subir”. É o canal. PIB per capita cresce se a economia acumula máquina, infraestrutura e construção — e se usa isso com alguma produtividade. A série é formação bruta de capital / PIB.
 
-Quem saiu da faixa do Brasil em 1990 (Coreia, Polônia, China, UMC) passou décadas investindo ~30% do PIB. O Brasil oscila em 15–22% e hoje está em ${fmtPct(invBra?.value)} contra ${fmtPct(invUmc?.value)} do UMC. Sem esse gap, o atraso no PPP fica difícil de explicar só com “azar” ou ciclo político.
+Quem saiu da faixa do Brasil em 1990 não investiu o mesmo. Coreia ficou em ${fmtPct(korInvMean)} do PIB por décadas. Polônia, ${fmtPct(polInvMean)} — perto do Brasil ${fmtPct(braInvMean)} — e mesmo assim chegou a ${fmtIdx(pol90rel)}. O Brasil oscila em 15–22% e hoje está em ${fmtPct(invBra?.value)} contra ${fmtPct(invUmc?.value)} do UMC. Sem o gap da Coreia, o atraso no PPP não se explica só com azar ou ciclo político.
 
 > 40% à la China não é o alvo — pode ser overinvestment. 17% contra o clube que cresceu ×3 é o diagnóstico.
 
@@ -214,7 +226,7 @@ ${resize((width) => metricPlot(rq90, {width, yLabel: "estimativa", format: (v) =
 
 ### Dias para registrar uma LLC
 
-Doing Business, caso padronizado. Série 2003–2019; o Brasil só entra em 2013. O projeto morreu em 2021.
+Doing Business, caso padronizado. Série 2013–2019, quando o Brasil entra. O projeto morreu em 2021.
 
 > Brasil ${fmtDays(braDays?.value)} dias (${braDays?.year}). Chile ${fmtDays(chlDays?.value)}. Polônia ${fmtDays(polDays?.value)}. Coreia ${fmtDays(korDays?.value)}.
 

@@ -23,17 +23,38 @@ function peerColors(isos) {
   return d3.scaleOrdinal(isos, d3.quantize(d3.interpolateHcl("#cfe8f9", "#6ba8d4"), n));
 }
 
+const REFERENCE_ISOS = new Set(["LCN", "OECD", "MEAN"]);
+const REFERENCE_COLOR = "#b45309";
+
 export function metricPlot(
   rows,
-  { width, yLabel, format, rules = [], yRules = [], colorful = false } = {},
+  { width, yLabel, format, rules = [], yRules = [], colorful = false, markRefs = false } = {},
 ) {
+  rows = rows.filter((d) => d.iso !== "UMC");
   const BRA = braColor();
   const rest = rows.filter((d) => d.iso !== "BRA");
   const bra = rows.filter((d) => d.iso === "BRA");
   const others = d3.sort(new Set(rest.map((d) => d.name)));
   const wash = colorful ? null : peerColors(d3.sort(new Set(rest.map((d) => d.iso))));
   const lastBra = bra.filter((d) => d.year === d3.max(bra, (d) => d.year));
+  const refs = markRefs
+    ? [...new Set(rows.filter((d) => REFERENCE_ISOS.has(d.iso)).map((d) => d.iso))].flatMap(
+        (iso) => {
+          const mine = rows.filter((d) => d.iso === iso);
+          const y = d3.max(mine, (d) => d.year);
+          return mine.filter((d) => d.year === y);
+        },
+      )
+    : [];
   const braZ = colorful ? "Brasil" : "BRA";
+  const refZ = markRefs
+    ? new Set([...REFERENCE_ISOS, "América Latina", "Média OCDE", "Média simples"])
+    : new Set();
+  const strokeOf = (d) => {
+    if (d.iso === "BRA") return BRA;
+    if (markRefs && REFERENCE_ISOS.has(d.iso)) return REFERENCE_COLOR;
+    return colorful ? d.name : wash(d.iso);
+  };
   const pct = typeof yLabel === "string" && yLabel.includes("%");
   const tipValue = (v) => {
     if (v == null) return "—";
@@ -45,7 +66,7 @@ export function metricPlot(
     width,
     height: plotHeight(width),
     marginLeft: 56,
-    marginRight: 16,
+    marginRight: 72,
     x: { label: null, tickFormat: "d" },
     y: { grid: true, label: yLabel, tickFormat: format },
     color: colorful
@@ -64,14 +85,21 @@ export function metricPlot(
         x: "year",
         y: "value",
         z: colorful ? "name" : "iso",
-        stroke: colorful ? "name" : (d) => (d.iso === "BRA" ? BRA : wash(d.iso)),
+        stroke: colorful ? "name" : strokeOf,
         strokeWidth: colorful ? 1.7 : 1.15,
         strokeOpacity: colorful ? 0.45 : 0.7,
         title: (d) => `${d.name}\n${d.year}: ${tipValue(d.value)}`,
         render(index, scales, values, dimensions, context, next) {
           const g = next(index, scales, values, dimensions, context);
-          d3.select(g)
-            .selectAll("path")
+          const paths = d3.select(g).selectAll("path");
+          paths
+            .filter(([i]) => refZ.has(values.z[i]))
+            .attr("stroke-width", 2.4)
+            .attr("stroke-opacity", 0.95)
+            .attr("stroke-dasharray", "6,4")
+            .attr("stroke", REFERENCE_COLOR)
+            .raise();
+          paths
             .filter(([i]) => values.z[i] === braZ)
             .attr("stroke-width", colorful ? 4.5 : 3)
             .attr("stroke-opacity", 1)
@@ -91,6 +119,7 @@ export function metricPlot(
                 .raise();
             } else {
               path.style("stroke-opacity", null).style("stroke-width", null);
+              path.filter(([i]) => refZ.has(values.z[i])).raise();
               path.filter(([i]) => values.z[i] === braZ).raise();
             }
             return next(index, scales, values, dimensions, context);
@@ -98,6 +127,7 @@ export function metricPlot(
         },
       }),
       Plot.dot(lastBra, { x: "year", y: "value", fill: colorful ? "name" : BRA, r: 4 }),
+      Plot.dot(refs, { x: "year", y: "value", fill: REFERENCE_COLOR, r: 3.5 }),
       Plot.text(lastBra, {
         x: "year",
         y: "value",
@@ -105,6 +135,17 @@ export function metricPlot(
         dy: -12,
         fill: colorful ? "name" : BRA,
       }),
+      ...(markRefs
+        ? [
+            Plot.text(refs, {
+              x: "year",
+              y: "value",
+              text: "name",
+              dy: 14,
+              fill: REFERENCE_COLOR,
+            }),
+          ]
+        : []),
     ],
   });
 }
@@ -163,7 +204,17 @@ export function barDelta(
 
 function dotsPlot(
   rows,
-  { width, x, y, xLabel, yLabel, labels = ["BRA", "KOR", "POL"], ruleY = [], title } = {},
+  {
+    width,
+    x,
+    y,
+    xLabel,
+    yLabel,
+    labels = ["BRA", "KOR", "POL"],
+    ruleY = [],
+    regression = false,
+    title,
+  } = {},
 ) {
   const BRA = braColor();
   const bra = rows.filter((d) => d.iso === "BRA");
@@ -175,20 +226,34 @@ function dotsPlot(
     marginLeft: 48,
     marginRight: (width ?? 640) < 480 ? 40 : 56,
     x: { label: xLabel, grid: true },
-    y: { label: yLabel, grid: true },
+    y: { label: yLabel, grid: true, nice: true },
     marks: [
       Plot.ruleY(ruleY, {
         stroke: "currentColor",
         strokeOpacity: 0.25,
         strokeDasharray: "4,4",
       }),
+      ...(regression
+        ? [
+            Plot.linearRegressionY(rows, {
+              x,
+              y,
+              stroke: "currentColor",
+              strokeOpacity: 0.55,
+              strokeWidth: 1.5,
+              strokeDasharray: "6,4",
+            }),
+          ]
+        : []),
       Plot.dot(rest, { x, y, fill: "#6ba8d4", fillOpacity: 0.8, r: 6 }),
       Plot.dot(bra, { x, y, fill: BRA, r: 8 }),
       Plot.text(named, {
         x,
         y,
         text: "name",
-        dy: -12,
+        dx: (d) => (d.iso === "BRA" ? -10 : 0),
+        dy: (d) => (d.iso === "BRA" ? 0 : -12),
+        textAnchor: (d) => (d.iso === "BRA" ? "end" : "middle"),
         fill: (d) => (d.iso === "BRA" ? BRA : "currentColor"),
       }),
       Plot.tip(rows, Plot.pointer({ x, y, title })),
@@ -196,28 +261,36 @@ function dotsPlot(
   });
 }
 
-export function spendPisaPlot(rows, { width, oecd } = {}) {
+export function spendPisaPlot(rows, { width, oecd, xLabel = "% PIB", unit = "% PIB" } = {}) {
   return dotsPlot(rows, {
     width,
     x: "edu",
     y: "pisa",
-    xLabel: "% PIB",
-    yLabel: "PISA math",
+    xLabel,
+    yLabel: "PISA matemática",
     ruleY: oecd == null ? [] : [oecd],
     title: (d) =>
-      `${d.name}\n${d.eduYear}: ${d.edu.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% PIB\nPISA ${d.pisaYear}: ${fmtIdx(d.pisa)}`,
+      `${d.name}\n${d.eduYear}: ${d.edu.toLocaleString("pt-BR", { maximumFractionDigits: 1 })} ${unit}\nPISA ${d.pisaYear}: ${fmtIdx(d.pisa)}`,
   });
 }
 
-export function invGrowthPlot(rows, { width } = {}) {
-  return dotsPlot(rows, {
+export function invGrowthPlot(rows, { width, trend = false, zero = false } = {}) {
+  const data = zero ? rows.map((d) => ({ ...d, ppp: d.ppp - 100 })) : rows;
+  return dotsPlot(data, {
     width,
     x: "inv",
     y: "ppp",
     xLabel: "% PIB (média)",
-    yLabel: "PPP 1990 = 100",
-    ruleY: [100],
+    yLabel: zero
+      ? "variação da renda per capita desde 1990 (%)"
+      : "índice da renda per capita (1990 = 100)",
+    ruleY: zero ? [0] : [100],
+    regression: trend,
     title: (d) =>
-      `${d.name}\ninv médio: ${d.inv.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%\nPPP: ${fmtIdx(d.ppp)}`,
+      `${d.name}\ninv médio: ${d.inv.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%\nPPP: ${
+        zero
+          ? `${d.ppp.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%`
+          : fmtIdx(d.ppp)
+      }`,
   });
 }

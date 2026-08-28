@@ -7,6 +7,18 @@ export const NAMES = {
   MEX: "México",
   PER: "Peru",
   URY: "Uruguai",
+  BOL: "Bolívia",
+  PRY: "Paraguai",
+  VEN: "Venezuela",
+  CRI: "Costa Rica",
+  SLV: "El Salvador",
+  GTM: "Guatemala",
+  HND: "Honduras",
+  NIC: "Nicarágua",
+  PAN: "Panamá",
+  CUB: "Cuba",
+  DOM: "República Dominicana",
+  HTI: "Haiti",
   BGR: "Bulgária",
   HUN: "Hungria",
   POL: "Polônia",
@@ -23,6 +35,7 @@ export const NAMES = {
   CZE: "Chéquia",
   UMC: "Upper middle income",
   LCN: "América Latina",
+  MEAN: "Média simples",
   OECD: "Média OCDE",
   USA: "EUA",
   NZL: "Nova Zelândia",
@@ -35,6 +48,33 @@ export const NAMES = {
 
 const BAND = [0.65, 1.35];
 const WAVE = ["BRA", "CHL", "PER", "COL", "ARG", "URY", "RUS", "IDN"];
+const LATAM = [
+  "ARG",
+  "BOL",
+  "BRA",
+  "CHL",
+  "COL",
+  "CRI",
+  "CUB",
+  "DOM",
+  "ECU",
+  "SLV",
+  "GTM",
+  "HTI",
+  "HND",
+  "MEX",
+  "NIC",
+  "PAN",
+  "PRY",
+  "PER",
+  "URY",
+  "VEN",
+  "LCN",
+];
+const LATAM_SKIP_INDEX = new Set(["HND"]);
+const CLUB_EXCLUDE = new Set(
+  LATAM.filter((iso) => !["ARG", "BRA", "CHL", "COL", "ECU", "MEX", "PER", "URY"].includes(iso)),
+);
 const SKIP = new Set(["UMC", "LCN", "OECD"]);
 const DAYS_GROUPS = new Set(["OWID_HIC", "OWID_EU27", "OWID_UMC", "WB_LAC"]);
 const DAYS_2019 = [
@@ -104,6 +144,38 @@ function bandIsos(rows, year) {
   });
 }
 
+function lastPoint(rows, iso) {
+  const row = last(rows, iso);
+  if (row == null || !Number.isFinite(row.value)) return;
+  return { iso, name: NAMES[iso] ?? row.name ?? iso, year: row.year, value: row.value };
+}
+
+function lastGroup(rows, isos, exclude = new Set(["BRA"]), { minYear } = {}) {
+  const items = isos
+    .filter((iso) => !exclude.has(iso))
+    .map((iso) => lastPoint(rows, iso))
+    .filter((d) => d && (minYear == null || d.year >= minYear))
+    .sort((a, b) => b.year - a.year || a.name.localeCompare(b.name, "pt-BR"));
+  return {
+    value: items.length ? items.reduce((sum, d) => sum + d.value, 0) / items.length : undefined,
+    items,
+  };
+}
+
+function meanByYear(rows, { iso, name, exclude = new Set() } = {}) {
+  const byYear = new Map();
+  for (const d of rows) {
+    if (exclude.has(d.iso)) continue;
+    const slot = byYear.get(d.year) ?? { sum: 0, n: 0 };
+    slot.sum += d.value;
+    slot.n += 1;
+    byYear.set(d.year, slot);
+  }
+  return [...byYear.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([year, { sum, n }]) => ({ iso, name, year, value: sum / n }));
+}
+
 function indexAt(rows, year = 1990) {
   const base = new Map();
   for (const iso of new Set(rows.map((d) => d.iso))) {
@@ -150,11 +222,32 @@ function deltaPct(rows, y0, y1) {
     .filter((d) => d);
 }
 
+function beatenNames(rows, iso) {
+  const val = rows.find((d) => d.iso === iso)?.value;
+  if (val == null) return;
+  const names = rows.filter((d) => d.iso !== iso && d.value < val).map((d) => d.name);
+  if (!names.length) return;
+  if (names.length === 1) return names[0];
+  return `${names.slice(0, -1).join(", ")} e ${names.at(-1)}`;
+}
+
 function meanOf(rows, iso, y0 = 1990) {
   let sum = 0;
   let n = 0;
   for (const d of rows) {
     if (d.iso !== iso || d.year < y0) continue;
+    sum += d.value;
+    n += 1;
+  }
+  if (!n) return;
+  return sum / n;
+}
+
+function meanInWindow(rows, iso, y0, y1) {
+  let sum = 0;
+  let n = 0;
+  for (const d of rows) {
+    if (d.iso !== iso || d.year < y0 || d.year > y1) continue;
     sum += d.value;
     n += 1;
   }
@@ -198,6 +291,7 @@ export function load(wdi, pisa) {
   const inv = series("investment", wdi);
   const trd = series("trade", wdi);
   const edu = series("edu_spend", wdi);
+  const pupil = series("edu_pupil_sec", wdi);
   const sav = series("savings", wdi);
   const mfg = series("manufacturing", wdi);
   const rq = series("reg_quality", wdi);
@@ -213,11 +307,31 @@ export function load(wdi, pisa) {
   const pisaRead = series("pisa_read", pisa);
   const pisaSci = series("pisa_sci", pisa);
 
-  const club90 = bandIsos(ppp, 1990);
+  const club90 = bandIsos(
+    ppp.filter((d) => !CLUB_EXCLUDE.has(d.iso)),
+    1990,
+  );
   const ppp90 = keep(ppp, club90);
   const ppp90rel = indexAt(ppp90, 1990);
   const pppWave = keep(ppp, WAVE);
   const pppWaveRel = indexAt(pppWave, 1990);
+  const pppLatamCountries = indexAt(
+    keep(
+      ppp,
+      LATAM.filter((iso) => iso !== "LCN" && !LATAM_SKIP_INDEX.has(iso)),
+    ),
+    1990,
+  );
+  const pppLatamMean = meanByYear(pppLatamCountries, {
+    iso: "MEAN",
+    name: "América Latina",
+    exclude: new Set(["BRA"]),
+  });
+  const pppLatamRel = [...pppLatamCountries, ...pppLatamMean];
+  const latamPppIsos = LATAM.filter((iso) => iso !== "LCN" && !LATAM_SKIP_INDEX.has(iso));
+  const latamPovIsos = LATAM.filter((iso) => iso !== "LCN");
+  const clubPpp = lastGroup(ppp90rel, club90);
+  const latamPpp = lastGroup(pppLatamCountries, latamPppIsos);
   const prod90rel = indexAt(keep(prod, club90), 1991);
   const prodWave = keep(prod, WAVE);
   const prodWaveRel = indexAt(prodWave, 1991);
@@ -225,14 +339,81 @@ export function load(wdi, pisa) {
   const rq90rel = minusBase(rq90, 1996);
   const gini90 = keep(gini, club90);
   const gini90rel = minusFirst(gini90);
-  const sav90 = keep(sav, [...club90, "UMC"]);
+  const sav90 = keep(sav, club90);
   const mfg90 = keep(mfg, club90);
   const rl90 = keep(rl, club90);
   const rl90rel = minusBase(rl90, 1996);
   const totWave = keep(tot, WAVE);
   const tfp90rel = indexAt(keep(tfp, club90), 1990);
-  const pov90 = keep(pov, [...club90, "UMC"]);
-  const pov90rel = minusFirst(pov90);
+  const tfpLatamRel = indexAt(keep(tfp, latamPppIsos), 1990);
+  const clubTfp = lastGroup(tfp90rel, club90);
+  const latamTfp = lastGroup(tfpLatamRel, latamPppIsos);
+  const poverty = pov.filter((d) => d.year >= 1995);
+  const povLatamCountries = keep(
+    poverty,
+    LATAM.filter((iso) => iso !== "LCN"),
+  );
+  const povLatamMean = meanByYear(povLatamCountries, {
+    iso: "MEAN",
+    name: "América Latina",
+    exclude: new Set(["BRA"]),
+  });
+  const clubPovLast = lastGroup(poverty, club90, undefined, { minYear: 2020 });
+  const latamPovLast = lastGroup(poverty, latamPovIsos, undefined, { minYear: 2020 });
+  const pov90 = [...keep(poverty, club90), ...povLatamMean];
+  const pov90rel = minusFirst(keep(pov, [...club90, "UMC"]));
+  const povertyIsos = [...new Set([...club90, ...LATAM, ...WAVE])].filter(
+    (iso) => !["LCN", "UMC"].includes(iso),
+  );
+  const povertyCountries = povertyIsos
+    .map((iso) => {
+      const start = meanInWindow(poverty, iso, 2001, 2005);
+      const boomEnd = meanInWindow(poverty, iso, 2008, 2012);
+      const recent = meanInWindow(poverty, iso, 2020, 2024);
+      if (start == null || boomEnd == null || recent == null) return;
+      return {
+        iso,
+        name: NAMES[iso] ?? iso,
+        boom: start - boomEnd,
+        after: boomEnd - recent,
+      };
+    })
+    .filter((d) => d)
+    .sort((a, b) => b.boom - a.boom || a.name.localeCompare(b.name, "pt-BR"));
+  const povertyGroup = (name, isos) => {
+    const members = povertyCountries.filter((d) => d.iso !== "BRA" && isos.includes(d.iso));
+    return {
+      name,
+      boom: members.reduce((sum, d) => sum + d.boom, 0) / members.length,
+      after: members.reduce((sum, d) => sum + d.after, 0) / members.length,
+      group: true,
+    };
+  };
+  const povertyLatam = povertyGroup("América Latina sem Brasil", LATAM);
+  const povertyExporters = povertyGroup("Exportadores sem Brasil", WAVE);
+  const povertyBrazil = povertyCountries.find((d) => d.iso === "BRA");
+  const povertyTable = [...povertyCountries, povertyLatam, povertyExporters];
+  const waveBoom = deltaPct(pppWave, 2003, 2010);
+  const waveFull = deltaPct(pppWave, 1990, 2024);
+  const waveBeatenBoom = beatenNames(waveBoom, "BRA");
+  const waveBeatenFull = beatenNames(waveFull, "BRA");
+  const joinSpendPisa = (spend) =>
+    [...new Set(pisaMath.map((d) => d.iso))]
+      .filter((iso) => !SKIP.has(iso))
+      .map((iso) => {
+        const e = last(spend, iso);
+        const p = last(pisaMath, iso);
+        if (e == null || p == null) return;
+        return {
+          iso,
+          name: NAMES[iso] ?? iso,
+          edu: e.value,
+          pisa: p.value,
+          eduYear: e.year,
+          pisaYear: p.year,
+        };
+      })
+      .filter((d) => d);
 
   return {
     namesOf,
@@ -240,6 +421,7 @@ export function load(wdi, pisa) {
     ppp90,
     ppp90rel,
     pppWaveRel,
+    pppLatamRel,
     prod90rel,
     prodWaveRel,
     inv,
@@ -258,13 +440,24 @@ export function load(wdi, pisa) {
     lacDays: at(days, "WB_LAC", 2019),
     efw90: keep(efw, club90).filter((d) => d.year >= 2000),
     pisa90: keep(pisaMath, [...club90, "OECD"]),
-    edu90: keep(edu, [...club90, "UMC"]),
+    edu90: keep(edu, club90),
     gini90,
     gini90rel,
     pov90,
     pov90rel,
-    hunger90: keep(hunger, [...club90, "UMC"]),
-    waveBoom: deltaPct(pppWave, 2003, 2010),
+    povertyTable,
+    povertyBrazil,
+    povertyLatam,
+    povertyExporters,
+    hunger90: keep(hunger, club90),
+    waveBoom,
+    waveBraBoom: last(waveBoom, "BRA")?.value,
+    waveBraRank: [...waveBoom].sort((a, b) => b.value - a.value).findIndex((d) => d.iso === "BRA") + 1,
+    waveBoomN: waveBoom.length,
+    waveBeatenBoom,
+    waveBeatenFull,
+    waveBraRel: last(pppWaveRel, "BRA")?.value,
+    waveRusRel: last(pppWaveRel, "RUS")?.value,
     prodWaveBoom: deltaPct(prodWave, 2003, 2010),
     invGrowth: club90
       .filter((iso) => !SKIP.has(iso))
@@ -287,6 +480,9 @@ export function load(wdi, pisa) {
     eduUmc: last(edu, "UMC"),
     eduPol: last(edu, "POL"),
     eduKor: last(edu, "KOR"),
+    pupilBra: last(pupil, "BRA"),
+    pupilPol: last(pupil, "POL"),
+    pupilKor: last(pupil, "KOR"),
     braInvMean: meanOf(inv, "BRA"),
     polInvMean: meanOf(inv, "POL"),
     korInvMean: meanOf(inv, "KOR"),
@@ -304,6 +500,13 @@ export function load(wdi, pisa) {
     pol90rel: last(ppp90rel, "POL")?.value,
     kor90rel: last(ppp90rel, "KOR")?.value,
     zaf90rel: last(ppp90rel, "ZAF")?.value,
+    latamMeanRel: last(pppLatamMean, "MEAN")?.value,
+    clubPpp,
+    latamPpp,
+    clubTfp,
+    latamTfp,
+    clubPovLast,
+    latamPovLast,
     braWaveRel: last(pppWaveRel, "BRA")?.value,
     chlWaveRel: last(pppWaveRel, "CHL")?.value,
     idnWaveRel: last(pppWaveRel, "IDN")?.value,
@@ -343,6 +546,7 @@ export function load(wdi, pisa) {
     korPov: last(pov, "KOR"),
     zafPov: last(pov, "ZAF"),
     povBra90: at(pov, "BRA", 1990),
+    povBra95: at(pov, "BRA", 1995),
     braPovRel: last(pov90rel, "BRA")?.value,
     chlPovRel: last(pov90rel, "CHL")?.value,
     umcPovRel: last(pov90rel, "UMC")?.value,
@@ -375,22 +579,8 @@ export function load(wdi, pisa) {
     chlEfw: last(efw, "CHL"),
     polEfw: last(efw, "POL"),
     korEfw: last(efw, "KOR"),
-    spendPisa: [...new Set(pisaMath.map((d) => d.iso))]
-      .filter((iso) => !SKIP.has(iso))
-      .map((iso) => {
-        const e = last(edu, iso);
-        const p = last(pisaMath, iso);
-        if (e == null || p == null) return;
-        return {
-          iso,
-          name: NAMES[iso] ?? iso,
-          edu: e.value,
-          pisa: p.value,
-          eduYear: e.year,
-          pisaYear: p.year,
-        };
-      })
-      .filter((d) => d),
+    spendPisa: joinSpendPisa(edu),
+    spendPisaPupil: joinSpendPisa(pupil),
     scorecard: [
       [
         "PPP 1990 = 100",

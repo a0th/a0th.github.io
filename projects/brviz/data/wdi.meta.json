@@ -5,12 +5,19 @@
   "countries": [
     "ARG",
     "BGR",
+    "BOL",
     "BRA",
     "CHL",
     "CHN",
     "COL",
+    "CRI",
+    "CUB",
     "CZE",
+    "DOM",
     "ECU",
+    "GTM",
+    "HND",
+    "HTI",
     "HUN",
     "IDN",
     "IND",
@@ -18,21 +25,26 @@
     "LCN",
     "MEX",
     "MYS",
+    "NIC",
+    "PAN",
     "PER",
     "POL",
+    "PRY",
     "RUS",
+    "SLV",
     "THA",
     "TUR",
     "UKR",
     "UMC",
     "URY",
+    "VEN",
     "ZAF"
   ],
   "indicators": {
     "gdp_pc_ppp": {
       "code": "NY.GDP.PCAP.PP.KD",
       "lastupdated": "2026-07-13",
-      "n": 840
+      "n": 1190
     },
     "gdp_per_employed": {
       "code": "SL.GDP.PCAP.EM.KD",
@@ -67,17 +79,17 @@
     "gini": {
       "code": "SI.POV.GINI",
       "lastupdated": "2026-07-13",
-      "n": 500
+      "n": 728
     },
     "poverty_365": {
       "code": "SI.POV.LMIC",
       "lastupdated": "2026-07-13",
-      "n": 570
+      "n": 798
     },
     "poverty_830": {
       "code": "SI.POV.UMIC",
       "lastupdated": "2026-07-13",
-      "n": 570
+      "n": 798
     },
     "undernourish": {
       "code": "SN.ITK.DEFC.ZS",
@@ -121,8 +133,13 @@
       "lastupdated": null,
       "n": 734,
       "source": "Penn World Table 11 via Our World in Data"
+    },
+    "edu_pupil_sec": {
+      "code": "SE.XPD.SECO.PC.ZS",
+      "lastupdated": "2026-07-13",
+      "n": 391
     }
   },
-  "n_rows": 11784,
+  "n_rows": 13209,
   "path": "data/wdi.csv"
 }

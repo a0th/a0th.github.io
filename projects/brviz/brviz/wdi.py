@@ -146,6 +146,7 @@ def splice(*, keys: list[str], start: int, end: int, out: Path) -> dict:
     meta_path = out.with_suffix(".meta.json")
     meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
     meta.setdefault("indicators", {}).update(sources)
+    meta["countries"] = sorted(COUNTRIES)
     meta["n_rows"] = len(rows)
     meta["path"] = _rel(out)
     meta_path.write_text(json.dumps(meta, indent=2) + "\n")

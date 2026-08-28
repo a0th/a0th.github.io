@@ -50,6 +50,22 @@ export function metricPlot(
   const refZ = markRefs
     ? new Set([...REFERENCE_ISOS, "América Latina", "Média OCDE", "Média simples"])
     : new Set();
+
+  function restoreLines(svg) {
+    const path = d3.select(svg).selectAll("[aria-label=line] path");
+    path.style("stroke-opacity", null).style("stroke-width", null);
+    path
+      .filter(function () {
+        return refZ.has(this.__z);
+      })
+      .raise();
+    path
+      .filter(function () {
+        return this.__z === braZ;
+      })
+      .raise();
+  }
+
   const strokeOf = (d) => {
     if (d.iso === "BRA") return BRA;
     if (markRefs && REFERENCE_ISOS.has(d.iso)) return REFERENCE_COLOR;
@@ -62,7 +78,7 @@ export function metricPlot(
     const n = v.toLocaleString("pt-BR", { maximumFractionDigits: pct ? 1 : 0 });
     return pct ? `${n}%` : n;
   };
-  return Plot.plot({
+  const plot = Plot.plot({
     width,
     height: plotHeight(width),
     marginLeft: 56,
@@ -92,6 +108,9 @@ export function metricPlot(
         render(index, scales, values, dimensions, context, next) {
           const g = next(index, scales, values, dimensions, context);
           const paths = d3.select(g).selectAll("path");
+          paths.each(function ([i]) {
+            this.__z = values.z[i];
+          });
           paths
             .filter(([i]) => refZ.has(values.z[i]))
             .attr("stroke-width", 2.4)
@@ -108,20 +127,36 @@ export function metricPlot(
         },
         tip: {
           render(index, scales, values, dimensions, context, next) {
-            const path = d3.select(context.ownerSVGElement).selectAll("[aria-label=line] path");
-            if (index.length) {
-              const z = values.z[index[0]];
-              path
-                .style("stroke-opacity", 0.12)
-                .filter(([i]) => values.z[i] === z)
-                .style("stroke-opacity", 1)
-                .style("stroke-width", 3.2)
-                .raise();
-            } else {
-              path.style("stroke-opacity", null).style("stroke-width", null);
-              path.filter(([i]) => refZ.has(values.z[i])).raise();
-              path.filter(([i]) => values.z[i] === braZ).raise();
+            const svg = context.ownerSVGElement;
+            const path = d3.select(svg).selectAll("[aria-label=line] path");
+            const sticky = svg.__pointerType && svg.__pointerType !== "mouse";
+            if (!index.length) {
+              svg.__stickyZ = null;
+              restoreLines(svg);
+              return next(index, scales, values, dimensions, context);
             }
+            const z = values.z[index[0]];
+            if (sticky && svg.__clearedDown === svg.__downId) {
+              restoreLines(svg);
+              return next([], scales, values, dimensions, context);
+            }
+            if (sticky && svg.__stickyZ === z && svg.__consumedDown !== svg.__downId) {
+              svg.__clearedDown = svg.__downId;
+              svg.__consumedDown = svg.__downId;
+              svg.__stickyZ = null;
+              restoreLines(svg);
+              return next([], scales, values, dimensions, context);
+            }
+            if (sticky) {
+              svg.__consumedDown = svg.__downId;
+              svg.__stickyZ = z;
+            }
+            path
+              .style("stroke-opacity", 0.12)
+              .filter(([i]) => values.z[i] === z)
+              .style("stroke-opacity", 1)
+              .style("stroke-width", 3.2)
+              .raise();
             return next(index, scales, values, dimensions, context);
           },
         },
@@ -148,6 +183,31 @@ export function metricPlot(
         : []),
     ],
   });
+  return stickyLineDismiss(plot, restoreLines);
+}
+
+function stickyLineDismiss(node, restoreLines) {
+  const svg = node.tagName?.toLowerCase() === "svg" ? node : node.querySelector("svg");
+  svg.addEventListener(
+    "pointerdown",
+    (event) => {
+      svg.__pointerType = event.pointerType;
+      svg.__downId = (svg.__downId ?? 0) + 1;
+    },
+    true,
+  );
+  const onDoc = (event) => {
+    if (!node.isConnected) {
+      document.removeEventListener("pointerdown", onDoc, true);
+      return;
+    }
+    if (event.pointerType === "mouse" || node.contains(event.target) || !svg.__stickyZ) return;
+    svg.__stickyZ = null;
+    restoreLines(svg);
+    d3.select(svg).selectAll("[aria-label=tip]").remove();
+  };
+  document.addEventListener("pointerdown", onDoc, true);
+  return node;
 }
 
 export function barDelta(
@@ -288,9 +348,7 @@ export function invGrowthPlot(rows, { width, trend = false, zero = false } = {})
     regression: trend,
     title: (d) =>
       `${d.name}\ninv médio: ${d.inv.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%\nPPP: ${
-        zero
-          ? `${d.ppp.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%`
-          : fmtIdx(d.ppp)
+        zero ? `${d.ppp.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%` : fmtIdx(d.ppp)
       }`,
   });
 }

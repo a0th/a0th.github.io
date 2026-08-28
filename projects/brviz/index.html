@@ -14,7 +14,7 @@
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
 <link rel="modulepreload" href="./_import/components/data.65f0d609.js">
-<link rel="modulepreload" href="./_import/components/plots.83292da8.js">
+<link rel="modulepreload" href="./_import/components/plots.17d3c48f.js">
 <link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
@@ -123,7 +123,7 @@ registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv",
 registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.e3613ad5.csv","lastModified":1787948458883,"size":973314});
 
 define({id: "820900f6", inputs: ["FileAttachment","html"], outputs: ["load","at","last","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","d","ppp03","ppp10","boomShare","mfgZaf","trdKor","trdZaf","trdChn","trdInd","hungerPol","hungerKor","isosOf","rankOf","levelsAt","growthAt","meanExceptBra","lastYear","braPpp90","braPppNow","korPppNow","rankPpp90","rankPppNow","clubPost","braPost","clubPostMean","rankPost","wavePost","wavePostMean","waveBoomMean","clubLast","rankProd","rankTfp","rankInv","rankGini","rankPov","braProd10","braProdNow","braProdPost","povBoomCountries","povBoomRank","pisaBra03","pisaBra12","pisaOecd03","pisaGap03","pisaGapNow","pisaBraGain","pisaOecdDrop","barCell","ledeTip","ledeRows","indexLede","fromZero","ledeCard","pares","povertyBarMax","povertyGroups","povertyCountries","povertyTableView"], body: async (FileAttachment,html) => {
-const [{load, at, last}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.65f0d609.js"), import("./_import/components/plots.83292da8.js")]);
+const [{load, at, last}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.65f0d609.js"), import("./_import/components/plots.17d3c48f.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
 const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });

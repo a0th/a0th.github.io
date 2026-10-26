@@ -1,0 +1,101 @@
+{
+  "source": "World Bank Pink Sheet (Commodity Markets Outlook)",
+  "page": "https://www.worldbank.org/en/research/commodity-markets",
+  "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+  "updated": "Updated on March 03, 2026",
+  "base": "2010=100 for indices",
+  "indicators": {
+    "agriculture": {
+      "n": 132
+    },
+    "all": {
+      "n": 132
+    },
+    "aluminum": {
+      "n": 66
+    },
+    "base_metals": {
+      "n": 132
+    },
+    "beef": {
+      "n": 66
+    },
+    "beverages": {
+      "n": 132
+    },
+    "coffee_arabica": {
+      "n": 66
+    },
+    "coffee_robusta": {
+      "n": 66
+    },
+    "copper": {
+      "n": 66
+    },
+    "cotton": {
+      "n": 66
+    },
+    "crude_oil": {
+      "n": 66
+    },
+    "energy": {
+      "n": 132
+    },
+    "fertilizers": {
+      "n": 132
+    },
+    "food": {
+      "n": 132
+    },
+    "grains": {
+      "n": 132
+    },
+    "iron_ore": {
+      "n": 66
+    },
+    "maize": {
+      "n": 66
+    },
+    "metals_minerals": {
+      "n": 132
+    },
+    "non_energy": {
+      "n": 132
+    },
+    "oils_meals": {
+      "n": 132
+    },
+    "orange": {
+      "n": 66
+    },
+    "other_food": {
+      "n": 132
+    },
+    "other_raw": {
+      "n": 132
+    },
+    "precious_metals": {
+      "n": 132
+    },
+    "raw_materials": {
+      "n": 132
+    },
+    "soybean_meal": {
+      "n": 66
+    },
+    "soybean_oil": {
+      "n": 66
+    },
+    "soybeans": {
+      "n": 66
+    },
+    "sugar": {
+      "n": 66
+    },
+    "timber": {
+      "n": 132
+    }
+  },
+  "n_rows": 3036,
+  "path": "data/commodities.csv"
+}

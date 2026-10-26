@@ -218,6 +218,7 @@ export function barDelta(
     format = (v) => `${v.toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%`,
     descending = true,
     marginLeft = 88,
+    xDomain,
   } = {},
 ) {
   const BRA = braColor();
@@ -237,7 +238,7 @@ export function barDelta(
     height: rowH * rows.length + (rowH === 30 ? 40 : 48),
     marginLeft: left,
     marginRight,
-    x: { label: xLabel, grid: true },
+    x: { label: xLabel, grid: true, domain: xDomain },
     y: { label: null, domain: ordered.map((d) => d.name) },
     color: toned
       ? undefined
@@ -251,7 +252,7 @@ export function barDelta(
       }),
       Plot.text(ordered, {
         y: "name",
-        x: "value",
+        x: (d) => (d.value < 0 ? 0 : d.value),
         text: (d) => format(d.value),
         dx: 8,
         textAnchor: "start",

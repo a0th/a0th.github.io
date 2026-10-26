@@ -1,0 +1,64 @@
+{
+  "source": "UNESCO Institute for Statistics (UIS) public data API",
+  "url": "https://api.uis.unesco.org/api/public/data/indicators",
+  "countries": [
+    "BRA",
+    "ARG",
+    "CHL",
+    "COL",
+    "ECU",
+    "MEX",
+    "PER",
+    "URY",
+    "BOL",
+    "PRY",
+    "VEN",
+    "CRI",
+    "SLV",
+    "GTM",
+    "HND",
+    "NIC",
+    "PAN",
+    "CUB",
+    "DOM",
+    "HTI",
+    "BGR",
+    "HUN",
+    "POL",
+    "RUS",
+    "TUR",
+    "UKR",
+    "CHN",
+    "IND",
+    "IDN",
+    "MYS",
+    "THA",
+    "ZAF",
+    "KOR",
+    "CZE"
+  ],
+  "indicators": {
+    "uis_edu_gdp": {
+      "code": "XGDP.FSGOV",
+      "n": 640
+    },
+    "uis_tert_gdp": {
+      "code": "XGDP.5T8.FSGOV",
+      "n": 519
+    },
+    "uis_pc_primary": {
+      "code": "XUNIT.GDPCAP.1.FSGOV.FFNTR",
+      "n": 485
+    },
+    "uis_pc_secondary": {
+      "code": "XUNIT.GDPCAP.2T3.FSGOV.FFNTR",
+      "n": 474
+    },
+    "uis_pc_tertiary": {
+      "code": "XUNIT.GDPCAP.5T8.FSGOV.FFNTR",
+      "n": 410
+    }
+  },
+  "n_rows": 2528,
+  "path": "data/uis.csv"
+}

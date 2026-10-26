@@ -1,0 +1,3037 @@
+metric,label,kind,unit,year,value
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1960,7.5
+energy,Energy,index_nominal,index 2010=100,1960,2.1
+non_energy,Non-energy,index_nominal,index 2010=100,1960,18.5
+agriculture,Agriculture,index_nominal,index 2010=100,1960,21.7
+beverages,Beverages,index_nominal,index 2010=100,1960,24.8
+food,Food,index_nominal,index 2010=100,1960,20.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1960,22.1
+grains,Grains,index_nominal,index 2010=100,1960,23.4
+other_food,Other Food,index_nominal,index 2010=100,1960,16.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,1960,22.1
+timber,Timber,index_nominal,index 2010=100,1960,16.2
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1960,28.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,1960,12.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1960,12.7
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1960,13.8
+precious_metals,Precious Metals,index_nominal,index 2010=100,1960,3.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1961,7.5
+energy,Energy,index_nominal,index 2010=100,1961,2.1
+non_energy,Non-energy,index_nominal,index 2010=100,1961,18.5
+agriculture,Agriculture,index_nominal,index 2010=100,1961,21.8
+beverages,Beverages,index_nominal,index 2010=100,1961,22.6
+food,Food,index_nominal,index 2010=100,1961,22.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1961,24.9
+grains,Grains,index_nominal,index 2010=100,1961,24.3
+other_food,Other Food,index_nominal,index 2010=100,1961,16.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1961,20.7
+timber,Timber,index_nominal,index 2010=100,1961,16.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1961,25.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,1961,12.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1961,12.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1961,13.5
+precious_metals,Precious Metals,index_nominal,index 2010=100,1961,3.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1962,7.4
+energy,Energy,index_nominal,index 2010=100,1962,2.0
+non_energy,Non-energy,index_nominal,index 2010=100,1962,18.2
+agriculture,Agriculture,index_nominal,index 2010=100,1962,21.5
+beverages,Beverages,index_nominal,index 2010=100,1962,22.0
+food,Food,index_nominal,index 2010=100,1962,21.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1962,22.6
+grains,Grains,index_nominal,index 2010=100,1962,26.8
+other_food,Other Food,index_nominal,index 2010=100,1962,16.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,1962,20.4
+timber,Timber,index_nominal,index 2010=100,1962,17.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1962,23.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,1962,12.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1962,12.2
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1962,13.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,1962,3.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1963,7.7
+energy,Energy,index_nominal,index 2010=100,1963,2.0
+non_energy,Non-energy,index_nominal,index 2010=100,1963,19.2
+agriculture,Agriculture,index_nominal,index 2010=100,1963,23.0
+beverages,Beverages,index_nominal,index 2010=100,1963,22.5
+food,Food,index_nominal,index 2010=100,1963,24.4
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1963,23.5
+grains,Grains,index_nominal,index 2010=100,1963,27.4
+other_food,Other Food,index_nominal,index 2010=100,1963,22.9
+raw_materials,Raw Materials,index_nominal,index 2010=100,1963,19.8
+timber,Timber,index_nominal,index 2010=100,1963,17.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1963,22.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,1963,12.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1963,12.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1963,13.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1963,3.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1964,7.9
+energy,Energy,index_nominal,index 2010=100,1964,1.9
+non_energy,Non-energy,index_nominal,index 2010=100,1964,20.1
+agriculture,Agriculture,index_nominal,index 2010=100,1964,23.0
+beverages,Beverages,index_nominal,index 2010=100,1964,24.4
+food,Food,index_nominal,index 2010=100,1964,24.2
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1964,24.2
+grains,Grains,index_nominal,index 2010=100,1964,27.6
+other_food,Other Food,index_nominal,index 2010=100,1964,21.3
+raw_materials,Raw Materials,index_nominal,index 2010=100,1964,19.3
+timber,Timber,index_nominal,index 2010=100,1964,15.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1964,23.1
+fertilizers,Fertilizers,index_nominal,index 2010=100,1964,15.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1964,14.6
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1964,16.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,1964,3.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1965,8.0
+energy,Energy,index_nominal,index 2010=100,1965,1.9
+non_energy,Non-energy,index_nominal,index 2010=100,1965,20.4
+agriculture,Agriculture,index_nominal,index 2010=100,1965,22.5
+beverages,Beverages,index_nominal,index 2010=100,1965,22.5
+food,Food,index_nominal,index 2010=100,1965,23.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1965,26.8
+grains,Grains,index_nominal,index 2010=100,1965,26.9
+other_food,Other Food,index_nominal,index 2010=100,1965,17.0
+raw_materials,Raw Materials,index_nominal,index 2010=100,1965,19.3
+timber,Timber,index_nominal,index 2010=100,1965,17.2
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1965,21.7
+fertilizers,Fertilizers,index_nominal,index 2010=100,1965,16.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1965,16.5
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1965,18.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,1965,3.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1966,8.3
+energy,Energy,index_nominal,index 2010=100,1966,1.9
+non_energy,Non-energy,index_nominal,index 2010=100,1966,21.2
+agriculture,Agriculture,index_nominal,index 2010=100,1966,23.3
+beverages,Beverages,index_nominal,index 2010=100,1966,23.3
+food,Food,index_nominal,index 2010=100,1966,24.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1966,26.5
+grains,Grains,index_nominal,index 2010=100,1966,29.5
+other_food,Other Food,index_nominal,index 2010=100,1966,17.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,1966,20.3
+timber,Timber,index_nominal,index 2010=100,1966,17.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1966,23.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1966,15.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1966,17.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1966,20.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,1966,3.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1967,8.0
+energy,Energy,index_nominal,index 2010=100,1967,1.9
+non_energy,Non-energy,index_nominal,index 2010=100,1967,20.4
+agriculture,Agriculture,index_nominal,index 2010=100,1967,23.2
+beverages,Beverages,index_nominal,index 2010=100,1967,23.5
+food,Food,index_nominal,index 2010=100,1967,24.7
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1967,24.4
+grains,Grains,index_nominal,index 2010=100,1967,31.6
+other_food,Other Food,index_nominal,index 2010=100,1967,18.9
+raw_materials,Raw Materials,index_nominal,index 2010=100,1967,19.6
+timber,Timber,index_nominal,index 2010=100,1967,18.5
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1967,20.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,1967,13.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1967,15.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1967,17.5
+precious_metals,Precious Metals,index_nominal,index 2010=100,1967,3.9
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1968,7.8
+energy,Energy,index_nominal,index 2010=100,1968,1.9
+non_energy,Non-energy,index_nominal,index 2010=100,1968,20.0
+agriculture,Agriculture,index_nominal,index 2010=100,1968,22.4
+beverages,Beverages,index_nominal,index 2010=100,1968,24.4
+food,Food,index_nominal,index 2010=100,1968,23.2
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1968,21.9
+grains,Grains,index_nominal,index 2010=100,1968,29.5
+other_food,Other Food,index_nominal,index 2010=100,1968,19.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1968,19.4
+timber,Timber,index_nominal,index 2010=100,1968,18.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1968,20.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1968,10.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1968,16.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1968,18.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1968,4.7
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1969,8.2
+energy,Energy,index_nominal,index 2010=100,1969,1.8
+non_energy,Non-energy,index_nominal,index 2010=100,1969,21.0
+agriculture,Agriculture,index_nominal,index 2010=100,1969,23.2
+beverages,Beverages,index_nominal,index 2010=100,1969,26.4
+food,Food,index_nominal,index 2010=100,1969,24.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1969,22.2
+grains,Grains,index_nominal,index 2010=100,1969,29.1
+other_food,Other Food,index_nominal,index 2010=100,1969,21.9
+raw_materials,Raw Materials,index_nominal,index 2010=100,1969,19.4
+timber,Timber,index_nominal,index 2010=100,1969,18.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1969,20.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,1969,9.2
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1969,18.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1969,20.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,1969,4.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1970,8.7
+energy,Energy,index_nominal,index 2010=100,1970,2.1
+non_energy,Non-energy,index_nominal,index 2010=100,1970,22.1
+agriculture,Agriculture,index_nominal,index 2010=100,1970,24.6
+beverages,Beverages,index_nominal,index 2010=100,1970,27.7
+food,Food,index_nominal,index 2010=100,1970,26.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1970,27.2
+grains,Grains,index_nominal,index 2010=100,1970,27.4
+other_food,Other Food,index_nominal,index 2010=100,1970,23.4
+raw_materials,Raw Materials,index_nominal,index 2010=100,1970,19.6
+timber,Timber,index_nominal,index 2010=100,1970,19.5
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1970,19.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,1970,8.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1970,18.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1970,21.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,1970,4.2
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1971,8.9
+energy,Energy,index_nominal,index 2010=100,1971,2.7
+non_energy,Non-energy,index_nominal,index 2010=100,1971,21.6
+agriculture,Agriculture,index_nominal,index 2010=100,1971,24.6
+beverages,Beverages,index_nominal,index 2010=100,1971,25.0
+food,Food,index_nominal,index 2010=100,1971,26.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1971,27.9
+grains,Grains,index_nominal,index 2010=100,1971,27.4
+other_food,Other Food,index_nominal,index 2010=100,1971,24.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,1971,19.6
+timber,Timber,index_nominal,index 2010=100,1971,19.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1971,19.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,1971,8.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1971,16.8
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1971,19.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,1971,4.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1972,9.4
+energy,Energy,index_nominal,index 2010=100,1972,2.9
+non_energy,Non-energy,index_nominal,index 2010=100,1972,22.5
+agriculture,Agriculture,index_nominal,index 2010=100,1972,26.1
+beverages,Beverages,index_nominal,index 2010=100,1972,27.2
+food,Food,index_nominal,index 2010=100,1972,28.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1972,27.9
+grains,Grains,index_nominal,index 2010=100,1972,28.8
+other_food,Other Food,index_nominal,index 2010=100,1972,29.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1972,19.6
+timber,Timber,index_nominal,index 2010=100,1972,19.0
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1972,20.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,1972,11.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1972,16.5
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1972,18.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,1972,5.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1973,14.4
+energy,Energy,index_nominal,index 2010=100,1973,4.2
+non_energy,Non-energy,index_nominal,index 2010=100,1973,35.2
+agriculture,Agriculture,index_nominal,index 2010=100,1973,42.7
+beverages,Beverages,index_nominal,index 2010=100,1973,35.7
+food,Food,index_nominal,index 2010=100,1973,50.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1973,56.3
+grains,Grains,index_nominal,index 2010=100,1973,56.4
+other_food,Other Food,index_nominal,index 2010=100,1973,36.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1973,28.4
+timber,Timber,index_nominal,index 2010=100,1973,25.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1973,31.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1973,19.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1973,21.5
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1973,24.8
+precious_metals,Precious Metals,index_nominal,index 2010=100,1973,8.9
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1974,24.9
+energy,Energy,index_nominal,index 2010=100,1974,13.8
+non_energy,Non-energy,index_nominal,index 2010=100,1974,47.4
+agriculture,Agriculture,index_nominal,index 2010=100,1974,56.2
+beverages,Beverages,index_nominal,index 2010=100,1974,44.4
+food,Food,index_nominal,index 2010=100,1974,68.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1974,64.8
+grains,Grains,index_nominal,index 2010=100,1974,82.6
+other_food,Other Food,index_nominal,index 2010=100,1974,61.0
+raw_materials,Raw Materials,index_nominal,index 2010=100,1974,32.0
+timber,Timber,index_nominal,index 2010=100,1974,29.2
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1974,35.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1974,70.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1974,26.7
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1974,30.8
+precious_metals,Precious Metals,index_nominal,index 2010=100,1974,14.9
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1975,22.0
+energy,Energy,index_nominal,index 2010=100,1975,13.8
+non_energy,Non-energy,index_nominal,index 2010=100,1975,38.6
+agriculture,Agriculture,index_nominal,index 2010=100,1975,45.4
+beverages,Beverages,index_nominal,index 2010=100,1975,41.2
+food,Food,index_nominal,index 2010=100,1975,52.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1975,46.5
+grains,Grains,index_nominal,index 2010=100,1975,65.6
+other_food,Other Food,index_nominal,index 2010=100,1975,50.0
+raw_materials,Raw Materials,index_nominal,index 2010=100,1975,29.1
+timber,Timber,index_nominal,index 2010=100,1975,25.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1975,32.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,1975,51.2
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1975,23.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1975,26.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,1975,14.7
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1976,23.6
+energy,Energy,index_nominal,index 2010=100,1976,15.4
+non_energy,Non-energy,index_nominal,index 2010=100,1976,40.2
+agriculture,Agriculture,index_nominal,index 2010=100,1976,48.3
+beverages,Beverages,index_nominal,index 2010=100,1976,73.3
+food,Food,index_nominal,index 2010=100,1976,47.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1976,47.4
+grains,Grains,index_nominal,index 2010=100,1976,55.5
+other_food,Other Food,index_nominal,index 2010=100,1976,40.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,1976,37.1
+timber,Timber,index_nominal,index 2010=100,1976,31.5
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1976,43.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1976,26.0
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1976,25.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1976,27.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,1976,12.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1977,26.7
+energy,Energy,index_nominal,index 2010=100,1977,16.8
+non_energy,Non-energy,index_nominal,index 2010=100,1977,46.7
+agriculture,Agriculture,index_nominal,index 2010=100,1977,56.3
+beverages,Beverages,index_nominal,index 2010=100,1977,127.3
+food,Food,index_nominal,index 2010=100,1977,49.3
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1977,58.6
+grains,Grains,index_nominal,index 2010=100,1977,49.3
+other_food,Other Food,index_nominal,index 2010=100,1977,37.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,1977,37.1
+timber,Timber,index_nominal,index 2010=100,1977,31.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1977,42.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,1977,36.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1977,28.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1977,31.2
+precious_metals,Precious Metals,index_nominal,index 2010=100,1977,14.1
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1978,27.4
+energy,Energy,index_nominal,index 2010=100,1978,17.7
+non_energy,Non-energy,index_nominal,index 2010=100,1978,47.1
+agriculture,Agriculture,index_nominal,index 2010=100,1978,55.9
+beverages,Beverages,index_nominal,index 2010=100,1978,96.8
+food,Food,index_nominal,index 2010=100,1978,54.5
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1978,60.2
+grains,Grains,index_nominal,index 2010=100,1978,59.2
+other_food,Other Food,index_nominal,index 2010=100,1978,42.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,1978,38.6
+timber,Timber,index_nominal,index 2010=100,1978,32.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1978,45.0
+fertilizers,Fertilizers,index_nominal,index 2010=100,1978,33.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1978,30.7
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1978,34.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1978,17.9
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1979,44.3
+energy,Energy,index_nominal,index 2010=100,1979,39.0
+non_energy,Non-energy,index_nominal,index 2010=100,1979,54.8
+agriculture,Agriculture,index_nominal,index 2010=100,1979,63.3
+beverages,Beverages,index_nominal,index 2010=100,1979,100.4
+food,Food,index_nominal,index 2010=100,1979,61.7
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1979,66.7
+grains,Grains,index_nominal,index 2010=100,1979,64.3
+other_food,Other Food,index_nominal,index 2010=100,1979,52.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,1979,48.5
+timber,Timber,index_nominal,index 2010=100,1979,47.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1979,50.1
+fertilizers,Fertilizers,index_nominal,index 2010=100,1979,40.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1979,39.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1979,44.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1979,30.8
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1980,51.2
+energy,Energy,index_nominal,index 2010=100,1980,46.8
+non_energy,Non-energy,index_nominal,index 2010=100,1980,60.0
+agriculture,Agriculture,index_nominal,index 2010=100,1980,68.8
+beverages,Beverages,index_nominal,index 2010=100,1980,87.9
+food,Food,index_nominal,index 2010=100,1980,71.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1980,63.9
+grains,Grains,index_nominal,index 2010=100,1980,74.2
+other_food,Other Food,index_nominal,index 2010=100,1980,77.5
+raw_materials,Raw Materials,index_nominal,index 2010=100,1980,53.6
+timber,Timber,index_nominal,index 2010=100,1980,51.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1980,55.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,1980,52.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1980,42.9
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1980,48.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1980,59.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1981,48.7
+energy,Energy,index_nominal,index 2010=100,1981,46.9
+non_energy,Non-energy,index_nominal,index 2010=100,1981,52.5
+agriculture,Agriculture,index_nominal,index 2010=100,1981,61.7
+beverages,Beverages,index_nominal,index 2010=100,1981,69.9
+food,Food,index_nominal,index 2010=100,1981,66.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1981,61.3
+grains,Grains,index_nominal,index 2010=100,1981,78.7
+other_food,Other Food,index_nominal,index 2010=100,1981,60.9
+raw_materials,Raw Materials,index_nominal,index 2010=100,1981,47.0
+timber,Timber,index_nominal,index 2010=100,1981,44.4
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1981,49.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,1981,49.8
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1981,33.9
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1981,37.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,1981,40.0
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1982,44.2
+energy,Energy,index_nominal,index 2010=100,1982,44.0
+non_energy,Non-energy,index_nominal,index 2010=100,1982,44.6
+agriculture,Agriculture,index_nominal,index 2010=100,1982,52.7
+beverages,Beverages,index_nominal,index 2010=100,1982,69.1
+food,Food,index_nominal,index 2010=100,1982,52.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1982,50.6
+grains,Grains,index_nominal,index 2010=100,1982,60.4
+other_food,Other Food,index_nominal,index 2010=100,1982,48.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,1982,43.9
+timber,Timber,index_nominal,index 2010=100,1982,42.8
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1982,45.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1982,37.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1982,28.9
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1982,30.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1982,32.0
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1983,42.6
+energy,Energy,index_nominal,index 2010=100,1983,39.3
+non_energy,Non-energy,index_nominal,index 2010=100,1983,49.1
+agriculture,Agriculture,index_nominal,index 2010=100,1983,57.1
+beverages,Beverages,index_nominal,index 2010=100,1983,77.3
+food,Food,index_nominal,index 2010=100,1983,57.5
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1983,57.7
+grains,Grains,index_nominal,index 2010=100,1983,65.2
+other_food,Other Food,index_nominal,index 2010=100,1983,50.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,1983,45.9
+timber,Timber,index_nominal,index 2010=100,1983,41.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1983,51.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1983,34.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1983,34.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1983,37.8
+precious_metals,Precious Metals,index_nominal,index 2010=100,1983,38.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1984,41.8
+energy,Energy,index_nominal,index 2010=100,1984,37.8
+non_energy,Non-energy,index_nominal,index 2010=100,1984,49.9
+agriculture,Agriculture,index_nominal,index 2010=100,1984,59.8
+beverages,Beverages,index_nominal,index 2010=100,1984,88.5
+food,Food,index_nominal,index 2010=100,1984,58.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1984,66.7
+grains,Grains,index_nominal,index 2010=100,1984,63.3
+other_food,Other Food,index_nominal,index 2010=100,1984,44.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,1984,47.2
+timber,Timber,index_nominal,index 2010=100,1984,44.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1984,50.0
+fertilizers,Fertilizers,index_nominal,index 2010=100,1984,39.3
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1984,30.9
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1984,33.9
+precious_metals,Precious Metals,index_nominal,index 2010=100,1984,31.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1985,38.3
+energy,Energy,index_nominal,index 2010=100,1985,36.1
+non_energy,Non-energy,index_nominal,index 2010=100,1985,42.7
+agriculture,Agriculture,index_nominal,index 2010=100,1985,50.2
+beverages,Beverages,index_nominal,index 2010=100,1985,79.0
+food,Food,index_nominal,index 2010=100,1985,48.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1985,49.8
+grains,Grains,index_nominal,index 2010=100,1985,53.5
+other_food,Other Food,index_nominal,index 2010=100,1985,42.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,1985,39.5
+timber,Timber,index_nominal,index 2010=100,1985,37.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1985,41.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1985,33.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1985,28.2
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1985,30.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,1985,26.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1986,28.2
+energy,Energy,index_nominal,index 2010=100,1986,21.9
+non_energy,Non-energy,index_nominal,index 2010=100,1986,41.0
+agriculture,Agriculture,index_nominal,index 2010=100,1986,47.9
+beverages,Beverages,index_nominal,index 2010=100,1986,88.4
+food,Food,index_nominal,index 2010=100,1986,42.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1986,38.4
+grains,Grains,index_nominal,index 2010=100,1986,44.8
+other_food,Other Food,index_nominal,index 2010=100,1986,46.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1986,40.3
+timber,Timber,index_nominal,index 2010=100,1986,41.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1986,39.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,1986,27.2
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1986,28.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1986,30.8
+precious_metals,Precious Metals,index_nominal,index 2010=100,1986,29.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1987,31.2
+energy,Energy,index_nominal,index 2010=100,1987,24.5
+non_energy,Non-energy,index_nominal,index 2010=100,1987,44.6
+agriculture,Agriculture,index_nominal,index 2010=100,1987,49.6
+beverages,Beverages,index_nominal,index 2010=100,1987,67.0
+food,Food,index_nominal,index 2010=100,1987,45.5
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1987,42.9
+grains,Grains,index_nominal,index 2010=100,1987,43.9
+other_food,Other Food,index_nominal,index 2010=100,1987,50.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1987,50.8
+timber,Timber,index_nominal,index 2010=100,1987,52.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1987,48.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,1987,29.2
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1987,36.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1987,40.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1987,36.1
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1988,32.7
+energy,Energy,index_nominal,index 2010=100,1988,21.2
+non_energy,Non-energy,index_nominal,index 2010=100,1988,55.9
+agriculture,Agriculture,index_nominal,index 2010=100,1988,56.8
+beverages,Beverages,index_nominal,index 2010=100,1988,65.2
+food,Food,index_nominal,index 2010=100,1988,57.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1988,57.3
+grains,Grains,index_nominal,index 2010=100,1988,58.7
+other_food,Other Food,index_nominal,index 2010=100,1988,58.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1988,49.9
+timber,Timber,index_nominal,index 2010=100,1988,52.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1988,46.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,1988,35.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1988,56.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1988,65.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,1988,35.0
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1989,34.6
+energy,Energy,index_nominal,index 2010=100,1989,24.7
+non_energy,Non-energy,index_nominal,index 2010=100,1989,54.7
+agriculture,Agriculture,index_nominal,index 2010=100,1989,57.4
+beverages,Beverages,index_nominal,index 2010=100,1989,54.8
+food,Food,index_nominal,index 2010=100,1989,58.7
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1989,51.4
+grains,Grains,index_nominal,index 2010=100,1989,63.9
+other_food,Other Food,index_nominal,index 2010=100,1989,63.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,1989,55.8
+timber,Timber,index_nominal,index 2010=100,1989,59.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1989,51.4
+fertilizers,Fertilizers,index_nominal,index 2010=100,1989,33.8
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1989,51.6
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1989,59.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,1989,30.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1990,37.7
+energy,Energy,index_nominal,index 2010=100,1990,30.9
+non_energy,Non-energy,index_nominal,index 2010=100,1990,51.3
+agriculture,Agriculture,index_nominal,index 2010=100,1990,55.1
+beverages,Beverages,index_nominal,index 2010=100,1990,50.4
+food,Food,index_nominal,index 2010=100,1990,54.7
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1990,44.8
+grains,Grains,index_nominal,index 2010=100,1990,57.9
+other_food,Other Food,index_nominal,index 2010=100,1990,64.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,1990,58.3
+timber,Timber,index_nominal,index 2010=100,1990,63.0
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1990,53.1
+fertilizers,Fertilizers,index_nominal,index 2010=100,1990,34.8
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1990,45.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1990,50.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,1990,29.9
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1991,34.2
+energy,Energy,index_nominal,index 2010=100,1991,27.0
+non_energy,Non-energy,index_nominal,index 2010=100,1991,48.8
+agriculture,Agriculture,index_nominal,index 2010=100,1991,54.3
+beverages,Beverages,index_nominal,index 2010=100,1991,45.8
+food,Food,index_nominal,index 2010=100,1991,54.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1991,46.0
+grains,Grains,index_nominal,index 2010=100,1991,58.1
+other_food,Other Food,index_nominal,index 2010=100,1991,61.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1991,59.2
+timber,Timber,index_nominal,index 2010=100,1991,66.0
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1991,51.8
+fertilizers,Fertilizers,index_nominal,index 2010=100,1991,38.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1991,38.6
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1991,42.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,1991,27.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1992,33.4
+energy,Energy,index_nominal,index 2010=100,1992,26.2
+non_energy,Non-energy,index_nominal,index 2010=100,1992,47.9
+agriculture,Agriculture,index_nominal,index 2010=100,1992,53.7
+beverages,Beverages,index_nominal,index 2010=100,1992,39.7
+food,Food,index_nominal,index 2010=100,1992,53.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1992,47.6
+grains,Grains,index_nominal,index 2010=100,1992,58.4
+other_food,Other Food,index_nominal,index 2010=100,1992,58.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1992,60.5
+timber,Timber,index_nominal,index 2010=100,1992,72.4
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1992,47.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,1992,35.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1992,37.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1992,40.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,1992,26.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1993,32.0
+energy,Energy,index_nominal,index 2010=100,1993,23.9
+non_energy,Non-energy,index_nominal,index 2010=100,1993,48.4
+agriculture,Agriculture,index_nominal,index 2010=100,1993,57.3
+beverages,Beverages,index_nominal,index 2010=100,1993,42.4
+food,Food,index_nominal,index 2010=100,1993,54.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1993,49.0
+grains,Grains,index_nominal,index 2010=100,1993,54.5
+other_food,Other Food,index_nominal,index 2010=100,1993,60.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,1993,72.7
+timber,Timber,index_nominal,index 2010=100,1993,100.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1993,42.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,1993,30.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1993,32.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1993,35.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,1993,27.7
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1994,33.1
+energy,Energy,index_nominal,index 2010=100,1994,22.3
+non_energy,Non-energy,index_nominal,index 2010=100,1994,54.9
+agriculture,Agriculture,index_nominal,index 2010=100,1994,64.0
+beverages,Beverages,index_nominal,index 2010=100,1994,67.8
+food,Food,index_nominal,index 2010=100,1994,58.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1994,55.4
+grains,Grains,index_nominal,index 2010=100,1994,58.8
+other_food,Other Food,index_nominal,index 2010=100,1994,61.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,1994,76.5
+timber,Timber,index_nominal,index 2010=100,1994,99.8
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1994,50.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,1994,32.8
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1994,38.6
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1994,43.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,1994,30.2
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1995,35.7
+energy,Energy,index_nominal,index 2010=100,1995,23.9
+non_energy,Non-energy,index_nominal,index 2010=100,1995,59.6
+agriculture,Agriculture,index_nominal,index 2010=100,1995,66.9
+beverages,Beverages,index_nominal,index 2010=100,1995,69.2
+food,Food,index_nominal,index 2010=100,1995,63.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1995,59.6
+grains,Grains,index_nominal,index 2010=100,1995,69.4
+other_food,Other Food,index_nominal,index 2010=100,1995,61.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,1995,75.1
+timber,Timber,index_nominal,index 2010=100,1995,88.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1995,60.7
+fertilizers,Fertilizers,index_nominal,index 2010=100,1995,38.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1995,47.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1995,53.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,1995,30.2
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1996,38.8
+energy,Energy,index_nominal,index 2010=100,1996,29.0
+non_energy,Non-energy,index_nominal,index 2010=100,1996,58.5
+agriculture,Agriculture,index_nominal,index 2010=100,1996,68.3
+beverages,Beverages,index_nominal,index 2010=100,1996,59.8
+food,Food,index_nominal,index 2010=100,1996,68.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1996,62.6
+grains,Grains,index_nominal,index 2010=100,1996,83.6
+other_food,Other Food,index_nominal,index 2010=100,1996,60.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,1996,73.3
+timber,Timber,index_nominal,index 2010=100,1996,88.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1996,57.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1996,44.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1996,40.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1996,44.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,1996,30.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1997,36.9
+energy,Energy,index_nominal,index 2010=100,1997,26.9
+non_energy,Non-energy,index_nominal,index 2010=100,1997,57.1
+agriculture,Agriculture,index_nominal,index 2010=100,1997,65.9
+beverages,Beverages,index_nominal,index 2010=100,1997,75.9
+food,Food,index_nominal,index 2010=100,1997,62.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1997,63.3
+grains,Grains,index_nominal,index 2010=100,1997,64.8
+other_food,Other Food,index_nominal,index 2010=100,1997,60.4
+raw_materials,Raw Materials,index_nominal,index 2010=100,1997,68.1
+timber,Timber,index_nominal,index 2010=100,1997,80.0
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1997,55.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,1997,38.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1997,41.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1997,46.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,1997,26.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1998,29.0
+energy,Energy,index_nominal,index 2010=100,1998,19.1
+non_energy,Non-energy,index_nominal,index 2010=100,1998,49.0
+agriculture,Agriculture,index_nominal,index 2010=100,1998,57.3
+beverages,Beverages,index_nominal,index 2010=100,1998,67.2
+food,Food,index_nominal,index 2010=100,1998,57.3
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1998,58.1
+grains,Grains,index_nominal,index 2010=100,1998,57.4
+other_food,Other Food,index_nominal,index 2010=100,1998,56.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,1998,52.4
+timber,Timber,index_nominal,index 2010=100,1998,57.4
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1998,46.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,1998,33.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1998,33.8
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1998,36.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,1998,24.7
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,1999,31.1
+energy,Energy,index_nominal,index 2010=100,1999,24.4
+non_energy,Non-energy,index_nominal,index 2010=100,1999,44.6
+agriculture,Agriculture,index_nominal,index 2010=100,1999,50.6
+beverages,Beverages,index_nominal,index 2010=100,1999,51.9
+food,Food,index_nominal,index 2010=100,1999,48.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,1999,45.3
+grains,Grains,index_nominal,index 2010=100,1999,49.6
+other_food,Other Food,index_nominal,index 2010=100,1999,50.5
+raw_materials,Raw Materials,index_nominal,index 2010=100,1999,56.1
+timber,Timber,index_nominal,index 2010=100,1999,70.0
+other_raw,Other Raw Materials,index_nominal,index 2010=100,1999,40.8
+fertilizers,Fertilizers,index_nominal,index 2010=100,1999,31.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,1999,33.5
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,1999,36.9
+precious_metals,Precious Metals,index_nominal,index 2010=100,1999,23.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2000,41.1
+energy,Energy,index_nominal,index 2010=100,2000,39.2
+non_energy,Non-energy,index_nominal,index 2010=100,2000,45.1
+agriculture,Agriculture,index_nominal,index 2010=100,2000,48.9
+beverages,Beverages,index_nominal,index 2010=100,2000,43.1
+food,Food,index_nominal,index 2010=100,2000,46.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2000,42.3
+grains,Grains,index_nominal,index 2010=100,2000,46.6
+other_food,Other Food,index_nominal,index 2010=100,2000,53.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,2000,56.6
+timber,Timber,index_nominal,index 2010=100,2000,69.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2000,42.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,2000,36.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2000,38.2
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2000,42.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,2000,23.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2001,37.5
+energy,Energy,index_nominal,index 2010=100,2001,35.0
+non_energy,Non-energy,index_nominal,index 2010=100,2001,42.6
+agriculture,Agriculture,index_nominal,index 2010=100,2001,47.1
+beverages,Beverages,index_nominal,index 2010=100,2001,37.1
+food,Food,index_nominal,index 2010=100,2001,48.7
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2001,40.6
+grains,Grains,index_nominal,index 2010=100,2001,46.9
+other_food,Other Food,index_nominal,index 2010=100,2001,61.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,2001,48.2
+timber,Timber,index_nominal,index 2010=100,2001,56.8
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2001,38.7
+fertilizers,Fertilizers,index_nominal,index 2010=100,2001,34.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2001,34.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2001,37.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,2001,22.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2002,37.5
+energy,Energy,index_nominal,index 2010=100,2002,34.0
+non_energy,Non-energy,index_nominal,index 2010=100,2002,44.5
+agriculture,Agriculture,index_nominal,index 2010=100,2002,50.6
+beverages,Beverages,index_nominal,index 2010=100,2002,45.0
+food,Food,index_nominal,index 2010=100,2002,51.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2002,46.5
+grains,Grains,index_nominal,index 2010=100,2002,52.9
+other_food,Other Food,index_nominal,index 2010=100,2002,57.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,2002,50.6
+timber,Timber,index_nominal,index 2010=100,2002,61.4
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2002,38.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,2002,34.9
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2002,33.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2002,36.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,2002,25.1
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2003,43.8
+energy,Energy,index_nominal,index 2010=100,2003,41.4
+non_energy,Non-energy,index_nominal,index 2010=100,2003,48.8
+agriculture,Agriculture,index_nominal,index 2010=100,2003,54.9
+beverages,Beverages,index_nominal,index 2010=100,2003,46.1
+food,Food,index_nominal,index 2010=100,2003,56.2
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2003,56.3
+grains,Grains,index_nominal,index 2010=100,2003,54.3
+other_food,Other Food,index_nominal,index 2010=100,2003,57.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,2003,56.4
+timber,Timber,index_nominal,index 2010=100,2003,65.5
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2003,46.4
+fertilizers,Fertilizers,index_nominal,index 2010=100,2003,42.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2003,36.8
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2003,40.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,2003,29.1
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2004,54.5
+energy,Energy,index_nominal,index 2010=100,2004,53.4
+non_energy,Non-energy,index_nominal,index 2010=100,2004,56.6
+agriculture,Agriculture,index_nominal,index 2010=100,2004,60.5
+beverages,Beverages,index_nominal,index 2010=100,2004,47.6
+food,Food,index_nominal,index 2010=100,2004,63.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2004,62.6
+grains,Grains,index_nominal,index 2010=100,2004,59.3
+other_food,Other Food,index_nominal,index 2010=100,2004,68.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,2004,59.6
+timber,Timber,index_nominal,index 2010=100,2004,69.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2004,49.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,2004,50.3
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2004,49.3
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2004,54.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,2004,34.0
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2005,70.7
+energy,Energy,index_nominal,index 2010=100,2005,75.4
+non_energy,Non-energy,index_nominal,index 2010=100,2005,61.3
+agriculture,Agriculture,index_nominal,index 2010=100,2005,62.0
+beverages,Beverages,index_nominal,index 2010=100,2005,55.4
+food,Food,index_nominal,index 2010=100,2005,62.5
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2005,56.4
+grains,Grains,index_nominal,index 2010=100,2005,58.8
+other_food,Other Food,index_nominal,index 2010=100,2005,73.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,2005,64.2
+timber,Timber,index_nominal,index 2010=100,2005,76.7
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2005,50.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,2005,59.0
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2005,60.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2005,63.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,2005,36.9
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2006,82.2
+energy,Energy,index_nominal,index 2010=100,2006,85.4
+non_energy,Non-energy,index_nominal,index 2010=100,2006,75.6
+agriculture,Agriculture,index_nominal,index 2010=100,2006,68.4
+beverages,Beverages,index_nominal,index 2010=100,2006,59.4
+food,Food,index_nominal,index 2010=100,2006,67.7
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2006,57.7
+grains,Grains,index_nominal,index 2010=100,2006,70.0
+other_food,Other Food,index_nominal,index 2010=100,2006,78.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,2006,74.5
+timber,Timber,index_nominal,index 2010=100,2006,87.8
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2006,59.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,2006,61.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2006,91.9
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2006,102.2
+precious_metals,Precious Metals,index_nominal,index 2010=100,2006,51.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2007,92.9
+energy,Energy,index_nominal,index 2010=100,2007,94.4
+non_energy,Non-energy,index_nominal,index 2010=100,2007,89.8
+agriculture,Agriculture,index_nominal,index 2010=100,2007,81.3
+beverages,Beverages,index_nominal,index 2010=100,2007,68.7
+food,Food,index_nominal,index 2010=100,2007,83.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2007,85.6
+grains,Grains,index_nominal,index 2010=100,2007,89.0
+other_food,Other Food,index_nominal,index 2010=100,2007,77.0
+raw_materials,Raw Materials,index_nominal,index 2010=100,2007,81.3
+timber,Timber,index_nominal,index 2010=100,2007,95.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2007,65.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,2007,83.4
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2007,108.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2007,113.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,2007,59.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2008,121.4
+energy,Energy,index_nominal,index 2010=100,2008,129.0
+non_energy,Non-energy,index_nominal,index 2010=100,2008,105.7
+agriculture,Agriculture,index_nominal,index 2010=100,2008,102.8
+beverages,Beverages,index_nominal,index 2010=100,2008,83.7
+food,Food,index_nominal,index 2010=100,2008,112.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2008,115.7
+grains,Grains,index_nominal,index 2010=100,2008,130.7
+other_food,Other Food,index_nominal,index 2010=100,2008,90.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,2008,90.0
+timber,Timber,index_nominal,index 2010=100,2008,104.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2008,73.8
+fertilizers,Fertilizers,index_nominal,index 2010=100,2008,190.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2008,102.2
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2008,101.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,2008,72.7
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2009,80.9
+energy,Energy,index_nominal,index 2010=100,2009,79.4
+non_energy,Non-energy,index_nominal,index 2010=100,2009,83.9
+agriculture,Agriculture,index_nominal,index 2010=100,2009,89.5
+beverages,Beverages,index_nominal,index 2010=100,2009,86.1
+food,Food,index_nominal,index 2010=100,2009,93.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2009,91.0
+grains,Grains,index_nominal,index 2010=100,2009,98.9
+other_food,Other Food,index_nominal,index 2010=100,2009,90.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,2009,82.8
+timber,Timber,index_nominal,index 2010=100,2009,96.8
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2009,67.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,2009,120.0
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2009,68.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2009,71.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,2009,78.0
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2010,100.0
+energy,Energy,index_nominal,index 2010=100,2010,100.0
+non_energy,Non-energy,index_nominal,index 2010=100,2010,100.0
+agriculture,Agriculture,index_nominal,index 2010=100,2010,100.0
+beverages,Beverages,index_nominal,index 2010=100,2010,100.0
+food,Food,index_nominal,index 2010=100,2010,100.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2010,100.0
+grains,Grains,index_nominal,index 2010=100,2010,100.0
+other_food,Other Food,index_nominal,index 2010=100,2010,100.0
+raw_materials,Raw Materials,index_nominal,index 2010=100,2010,100.0
+timber,Timber,index_nominal,index 2010=100,2010,100.0
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2010,100.0
+fertilizers,Fertilizers,index_nominal,index 2010=100,2010,100.0
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2010,100.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2010,100.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,2010,100.0
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2011,130.1
+energy,Energy,index_nominal,index 2010=100,2011,135.2
+non_energy,Non-energy,index_nominal,index 2010=100,2011,119.6
+agriculture,Agriculture,index_nominal,index 2010=100,2011,121.5
+beverages,Beverages,index_nominal,index 2010=100,2011,116.0
+food,Food,index_nominal,index 2010=100,2011,122.5
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2011,120.5
+grains,Grains,index_nominal,index 2010=100,2011,138.2
+other_food,Other Food,index_nominal,index 2010=100,2011,110.8
+raw_materials,Raw Materials,index_nominal,index 2010=100,2011,122.0
+timber,Timber,index_nominal,index 2010=100,2011,117.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2011,127.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,2011,137.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2011,113.5
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2011,113.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,2011,136.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2012,126.0
+energy,Energy,index_nominal,index 2010=100,2012,134.1
+non_energy,Non-energy,index_nominal,index 2010=100,2012,109.5
+agriculture,Agriculture,index_nominal,index 2010=100,2012,114.3
+beverages,Beverages,index_nominal,index 2010=100,2012,92.6
+food,Food,index_nominal,index 2010=100,2012,124.2
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2012,125.3
+grains,Grains,index_nominal,index 2010=100,2012,141.3
+other_food,Other Food,index_nominal,index 2010=100,2012,107.0
+raw_materials,Raw Materials,index_nominal,index 2010=100,2012,101.3
+timber,Timber,index_nominal,index 2010=100,2012,109.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2012,92.8
+fertilizers,Fertilizers,index_nominal,index 2010=100,2012,141.1
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2012,96.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2012,98.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,2012,138.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2013,121.6
+energy,Energy,index_nominal,index 2010=100,2013,131.7
+non_energy,Non-energy,index_nominal,index 2010=100,2013,101.3
+agriculture,Agriculture,index_nominal,index 2010=100,2013,105.7
+beverages,Beverages,index_nominal,index 2010=100,2013,83.3
+food,Food,index_nominal,index 2010=100,2013,114.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2013,114.3
+grains,Grains,index_nominal,index 2010=100,2013,128.3
+other_food,Other Food,index_nominal,index 2010=100,2013,102.6
+raw_materials,Raw Materials,index_nominal,index 2010=100,2013,95.4
+timber,Timber,index_nominal,index 2010=100,2013,102.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2013,87.6
+fertilizers,Fertilizers,index_nominal,index 2010=100,2013,114.4
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2013,90.8
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2013,90.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,2013,115.1
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2014,112.5
+energy,Energy,index_nominal,index 2010=100,2014,120.4
+non_energy,Non-energy,index_nominal,index 2010=100,2014,96.5
+agriculture,Agriculture,index_nominal,index 2010=100,2014,101.9
+beverages,Beverages,index_nominal,index 2010=100,2014,101.8
+food,Food,index_nominal,index 2010=100,2014,106.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2014,106.3
+grains,Grains,index_nominal,index 2010=100,2014,104.1
+other_food,Other Food,index_nominal,index 2010=100,2014,107.3
+raw_materials,Raw Materials,index_nominal,index 2010=100,2014,91.9
+timber,Timber,index_nominal,index 2010=100,2014,104.9
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2014,77.7
+fertilizers,Fertilizers,index_nominal,index 2010=100,2014,101.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2014,84.8
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2014,89.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,2014,101.1
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2015,71.2
+energy,Energy,index_nominal,index 2010=100,2015,66.1
+non_energy,Non-energy,index_nominal,index 2010=100,2015,81.6
+agriculture,Agriculture,index_nominal,index 2010=100,2015,87.9
+beverages,Beverages,index_nominal,index 2010=100,2015,94.0
+food,Food,index_nominal,index 2010=100,2015,88.5
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2015,84.4
+grains,Grains,index_nominal,index 2010=100,2015,87.1
+other_food,Other Food,index_nominal,index 2010=100,2015,95.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,2015,83.3
+timber,Timber,index_nominal,index 2010=100,2015,96.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2015,69.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,2015,98.4
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2015,66.9
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2015,73.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,2015,90.6
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2016,63.7
+energy,Energy,index_nominal,index 2010=100,2016,56.0
+non_energy,Non-energy,index_nominal,index 2010=100,2016,79.4
+agriculture,Agriculture,index_nominal,index 2010=100,2016,87.4
+beverages,Beverages,index_nominal,index 2010=100,2016,91.3
+food,Food,index_nominal,index 2010=100,2016,89.6
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2016,88.3
+grains,Grains,index_nominal,index 2010=100,2016,80.7
+other_food,Other Food,index_nominal,index 2010=100,2016,99.5
+raw_materials,Raw Materials,index_nominal,index 2010=100,2016,80.2
+timber,Timber,index_nominal,index 2010=100,2016,89.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2016,69.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,2016,77.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2016,63.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2016,68.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,2016,97.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2017,74.0
+energy,Energy,index_nominal,index 2010=100,2017,69.4
+non_energy,Non-energy,index_nominal,index 2010=100,2017,83.7
+agriculture,Agriculture,index_nominal,index 2010=100,2017,86.9
+beverages,Beverages,index_nominal,index 2010=100,2017,83.1
+food,Food,index_nominal,index 2010=100,2017,90.2
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2017,87.6
+grains,Grains,index_nominal,index 2010=100,2017,80.5
+other_food,Other Food,index_nominal,index 2010=100,2017,102.4
+raw_materials,Raw Materials,index_nominal,index 2010=100,2017,81.0
+timber,Timber,index_nominal,index 2010=100,2017,85.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2017,76.0
+fertilizers,Fertilizers,index_nominal,index 2010=100,2017,74.3
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2017,78.2
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2017,84.9
+precious_metals,Precious Metals,index_nominal,index 2010=100,2017,97.8
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2018,88.0
+energy,Energy,index_nominal,index 2010=100,2018,89.4
+non_energy,Non-energy,index_nominal,index 2010=100,2018,85.1
+agriculture,Agriculture,index_nominal,index 2010=100,2018,86.6
+beverages,Beverages,index_nominal,index 2010=100,2018,79.1
+food,Food,index_nominal,index 2010=100,2018,90.4
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2018,85.0
+grains,Grains,index_nominal,index 2010=100,2018,88.8
+other_food,Other Food,index_nominal,index 2010=100,2018,99.1
+raw_materials,Raw Materials,index_nominal,index 2010=100,2018,80.9
+timber,Timber,index_nominal,index 2010=100,2018,88.3
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2018,72.8
+fertilizers,Fertilizers,index_nominal,index 2010=100,2018,82.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2018,82.5
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2018,90.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,2018,97.2
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2019,79.3
+energy,Energy,index_nominal,index 2010=100,2019,78.3
+non_energy,Non-energy,index_nominal,index 2010=100,2019,81.6
+agriculture,Agriculture,index_nominal,index 2010=100,2019,83.1
+beverages,Beverages,index_nominal,index 2010=100,2019,76.1
+food,Food,index_nominal,index 2010=100,2019,87.0
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2019,77.5
+grains,Grains,index_nominal,index 2010=100,2019,89.0
+other_food,Other Food,index_nominal,index 2010=100,2019,97.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,2019,77.3
+timber,Timber,index_nominal,index 2010=100,2019,85.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2019,68.3
+fertilizers,Fertilizers,index_nominal,index 2010=100,2019,81.4
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2019,78.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2019,81.6
+precious_metals,Precious Metals,index_nominal,index 2010=100,2019,105.4
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2020,63.1
+energy,Energy,index_nominal,index 2010=100,2020,52.7
+non_energy,Non-energy,index_nominal,index 2010=100,2020,84.1
+agriculture,Agriculture,index_nominal,index 2010=100,2020,87.1
+beverages,Beverages,index_nominal,index 2010=100,2020,80.4
+food,Food,index_nominal,index 2010=100,2020,93.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2020,89.8
+grains,Grains,index_nominal,index 2010=100,2020,95.3
+other_food,Other Food,index_nominal,index 2010=100,2020,95.5
+raw_materials,Raw Materials,index_nominal,index 2010=100,2020,75.8
+timber,Timber,index_nominal,index 2010=100,2020,86.4
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2020,64.2
+fertilizers,Fertilizers,index_nominal,index 2010=100,2020,74.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2020,79.1
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2020,80.2
+precious_metals,Precious Metals,index_nominal,index 2010=100,2020,133.5
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2021,100.9
+energy,Energy,index_nominal,index 2010=100,2021,95.4
+non_energy,Non-energy,index_nominal,index 2010=100,2021,112.1
+agriculture,Agriculture,index_nominal,index 2010=100,2021,107.7
+beverages,Beverages,index_nominal,index 2010=100,2021,93.5
+food,Food,index_nominal,index 2010=100,2021,120.9
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2021,127.1
+grains,Grains,index_nominal,index 2010=100,2021,123.8
+other_food,Other Food,index_nominal,index 2010=100,2021,110.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,2021,82.9
+timber,Timber,index_nominal,index 2010=100,2021,90.4
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2021,74.8
+fertilizers,Fertilizers,index_nominal,index 2010=100,2021,152.3
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2021,116.4
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2021,117.7
+precious_metals,Precious Metals,index_nominal,index 2010=100,2021,140.2
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2022,142.5
+energy,Energy,index_nominal,index 2010=100,2022,152.6
+non_energy,Non-energy,index_nominal,index 2010=100,2022,122.1
+agriculture,Agriculture,index_nominal,index 2010=100,2022,119.3
+beverages,Beverages,index_nominal,index 2010=100,2022,106.3
+food,Food,index_nominal,index 2010=100,2022,138.1
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2022,145.2
+grains,Grains,index_nominal,index 2010=100,2022,150.4
+other_food,Other Food,index_nominal,index 2010=100,2022,117.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,2022,80.3
+timber,Timber,index_nominal,index 2010=100,2022,80.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2022,80.5
+fertilizers,Fertilizers,index_nominal,index 2010=100,2022,235.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2022,115.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2022,122.4
+precious_metals,Precious Metals,index_nominal,index 2010=100,2022,136.8
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2023,108.0
+energy,Energy,index_nominal,index 2010=100,2023,107.0
+non_energy,Non-energy,index_nominal,index 2010=100,2023,110.2
+agriculture,Agriculture,index_nominal,index 2010=100,2023,110.9
+beverages,Beverages,index_nominal,index 2010=100,2023,107.8
+food,Food,index_nominal,index 2010=100,2023,125.4
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2023,118.9
+grains,Grains,index_nominal,index 2010=100,2023,133.0
+other_food,Other Food,index_nominal,index 2010=100,2023,127.2
+raw_materials,Raw Materials,index_nominal,index 2010=100,2023,77.1
+timber,Timber,index_nominal,index 2010=100,2023,79.1
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2023,74.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,2023,153.5
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2023,104.0
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2023,109.0
+precious_metals,Precious Metals,index_nominal,index 2010=100,2023,147.3
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2024,105.1
+energy,Energy,index_nominal,index 2010=100,2024,101.5
+non_energy,Non-energy,index_nominal,index 2010=100,2024,112.5
+agriculture,Agriculture,index_nominal,index 2010=100,2024,115.0
+beverages,Beverages,index_nominal,index 2010=100,2024,176.4
+food,Food,index_nominal,index 2010=100,2024,115.8
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2024,106.9
+grains,Grains,index_nominal,index 2010=100,2024,112.9
+other_food,Other Food,index_nominal,index 2010=100,2024,130.4
+raw_materials,Raw Materials,index_nominal,index 2010=100,2024,81.6
+timber,Timber,index_nominal,index 2010=100,2024,79.6
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2024,83.9
+fertilizers,Fertilizers,index_nominal,index 2010=100,2024,117.6
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2024,106.7
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2024,114.1
+precious_metals,Precious Metals,index_nominal,index 2010=100,2024,180.2
+all,World Bank Commodity Price Index,index_nominal,index 2010=100,2025,98.4
+energy,Energy,index_nominal,index 2010=100,2025,90.0
+non_energy,Non-energy,index_nominal,index 2010=100,2025,115.4
+agriculture,Agriculture,index_nominal,index 2010=100,2025,115.7
+beverages,Beverages,index_nominal,index 2010=100,2025,207.3
+food,Food,index_nominal,index 2010=100,2025,109.2
+oils_meals,Oils & Meals,index_nominal,index 2010=100,2025,104.5
+grains,Grains,index_nominal,index 2010=100,2025,101.3
+other_food,Other Food,index_nominal,index 2010=100,2025,122.7
+raw_materials,Raw Materials,index_nominal,index 2010=100,2025,84.9
+timber,Timber,index_nominal,index 2010=100,2025,81.8
+other_raw,Other Raw Materials,index_nominal,index 2010=100,2025,88.4
+fertilizers,Fertilizers,index_nominal,index 2010=100,2025,138.7
+metals_minerals,Metals & Minerals,index_nominal,index 2010=100,2025,112.2
+base_metals,Base Metals (ex. iron ore),index_nominal,index 2010=100,2025,122.3
+precious_metals,Precious Metals,index_nominal,index 2010=100,2025,258.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,1960,39.4
+energy,Energy,index_real,index 2010=100,1960,11.2
+non_energy,Non-energy,index_real,index 2010=100,1960,96.7
+agriculture,Agriculture,index_real,index 2010=100,1960,113.2
+beverages,Beverages,index_real,index 2010=100,1960,129.4
+food,Food,index_real,index 2010=100,1960,108.8
+oils_meals,Oils & Meals,index_real,index 2010=100,1960,115.4
+grains,Grains,index_real,index 2010=100,1960,122.4
+other_food,Other Food,index_real,index 2010=100,1960,87.9
+raw_materials,Raw Materials,index_real,index 2010=100,1960,115.5
+timber,Timber,index_real,index 2010=100,1960,84.8
+other_raw,Other Raw Materials,index_real,index 2010=100,1960,149.0
+fertilizers,Fertilizers,index_real,index 2010=100,1960,67.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1960,66.2
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1960,72.1
+precious_metals,Precious Metals,index_real,index 2010=100,1960,17.1
+all,World Bank Commodity Price Index,index_real,index 2010=100,1961,38.4
+energy,Energy,index_real,index 2010=100,1961,10.7
+non_energy,Non-energy,index_real,index 2010=100,1961,94.7
+agriculture,Agriculture,index_real,index 2010=100,1961,111.5
+beverages,Beverages,index_real,index 2010=100,1961,115.9
+food,Food,index_real,index 2010=100,1961,112.8
+oils_meals,Oils & Meals,index_real,index 2010=100,1961,127.6
+grains,Grains,index_real,index 2010=100,1961,124.7
+other_food,Other Food,index_real,index 2010=100,1961,82.6
+raw_materials,Raw Materials,index_real,index 2010=100,1961,106.3
+timber,Timber,index_real,index 2010=100,1961,85.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1961,129.6
+fertilizers,Fertilizers,index_real,index 2010=100,1961,66.1
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1961,63.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1961,69.1
+precious_metals,Precious Metals,index_real,index 2010=100,1961,16.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1962,37.2
+energy,Energy,index_real,index 2010=100,1962,10.3
+non_energy,Non-energy,index_real,index 2010=100,1962,91.7
+agriculture,Agriculture,index_real,index 2010=100,1962,108.1
+beverages,Beverages,index_real,index 2010=100,1962,110.9
+food,Food,index_real,index 2010=100,1962,109.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1962,113.7
+grains,Grains,index_real,index 2010=100,1962,134.9
+other_food,Other Food,index_real,index 2010=100,1962,81.5
+raw_materials,Raw Materials,index_real,index 2010=100,1962,102.7
+timber,Timber,index_real,index 2010=100,1962,88.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1962,118.3
+fertilizers,Fertilizers,index_real,index 2010=100,1962,63.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1962,61.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1962,66.9
+precious_metals,Precious Metals,index_real,index 2010=100,1962,17.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,1963,39.5
+energy,Energy,index_real,index 2010=100,1963,10.3
+non_energy,Non-energy,index_real,index 2010=100,1963,98.6
+agriculture,Agriculture,index_real,index 2010=100,1963,117.8
+beverages,Beverages,index_real,index 2010=100,1963,115.2
+food,Food,index_real,index 2010=100,1963,125.1
+oils_meals,Oils & Meals,index_real,index 2010=100,1963,120.4
+grains,Grains,index_real,index 2010=100,1963,140.5
+other_food,Other Food,index_real,index 2010=100,1963,117.4
+raw_materials,Raw Materials,index_real,index 2010=100,1963,101.5
+timber,Timber,index_real,index 2010=100,1963,88.7
+other_raw,Other Raw Materials,index_real,index 2010=100,1963,115.4
+fertilizers,Fertilizers,index_real,index 2010=100,1963,64.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1963,63.0
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1963,68.6
+precious_metals,Precious Metals,index_real,index 2010=100,1963,18.4
+all,World Bank Commodity Price Index,index_real,index 2010=100,1964,40.1
+energy,Energy,index_real,index 2010=100,1964,9.8
+non_energy,Non-energy,index_real,index 2010=100,1964,101.4
+agriculture,Agriculture,index_real,index 2010=100,1964,116.2
+beverages,Beverages,index_real,index 2010=100,1964,123.3
+food,Food,index_real,index 2010=100,1964,122.5
+oils_meals,Oils & Meals,index_real,index 2010=100,1964,122.2
+grains,Grains,index_real,index 2010=100,1964,139.7
+other_food,Other Food,index_real,index 2010=100,1964,107.5
+raw_materials,Raw Materials,index_real,index 2010=100,1964,97.3
+timber,Timber,index_real,index 2010=100,1964,79.4
+other_raw,Other Raw Materials,index_real,index 2010=100,1964,116.9
+fertilizers,Fertilizers,index_real,index 2010=100,1964,79.0
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1964,73.6
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1964,82.5
+precious_metals,Precious Metals,index_real,index 2010=100,1964,18.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,1965,40.2
+energy,Energy,index_real,index 2010=100,1965,9.7
+non_energy,Non-energy,index_real,index 2010=100,1965,102.0
+agriculture,Agriculture,index_real,index 2010=100,1965,112.5
+beverages,Beverages,index_real,index 2010=100,1965,112.6
+food,Food,index_real,index 2010=100,1965,118.9
+oils_meals,Oils & Meals,index_real,index 2010=100,1965,134.0
+grains,Grains,index_real,index 2010=100,1965,134.4
+other_food,Other Food,index_real,index 2010=100,1965,85.1
+raw_materials,Raw Materials,index_real,index 2010=100,1965,96.8
+timber,Timber,index_real,index 2010=100,1965,86.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1965,108.7
+fertilizers,Fertilizers,index_real,index 2010=100,1965,82.6
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1965,82.6
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1965,93.3
+precious_metals,Precious Metals,index_real,index 2010=100,1965,18.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,1966,39.8
+energy,Energy,index_real,index 2010=100,1966,9.1
+non_energy,Non-energy,index_real,index 2010=100,1966,102.2
+agriculture,Agriculture,index_real,index 2010=100,1966,112.7
+beverages,Beverages,index_real,index 2010=100,1966,112.4
+food,Food,index_real,index 2010=100,1966,118.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1966,127.9
+grains,Grains,index_real,index 2010=100,1966,142.4
+other_food,Other Food,index_real,index 2010=100,1966,85.1
+raw_materials,Raw Materials,index_real,index 2010=100,1966,98.2
+timber,Timber,index_real,index 2010=100,1966,85.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1966,112.0
+fertilizers,Fertilizers,index_real,index 2010=100,1966,72.7
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1966,84.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1966,96.4
+precious_metals,Precious Metals,index_real,index 2010=100,1966,17.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,1967,38.2
+energy,Energy,index_real,index 2010=100,1967,8.9
+non_energy,Non-energy,index_real,index 2010=100,1967,97.5
+agriculture,Agriculture,index_real,index 2010=100,1967,111.2
+beverages,Beverages,index_real,index 2010=100,1967,112.2
+food,Food,index_real,index 2010=100,1967,118.2
+oils_meals,Oils & Meals,index_real,index 2010=100,1967,116.5
+grains,Grains,index_real,index 2010=100,1967,151.3
+other_food,Other Food,index_real,index 2010=100,1967,90.4
+raw_materials,Raw Materials,index_real,index 2010=100,1967,93.9
+timber,Timber,index_real,index 2010=100,1967,88.3
+other_raw,Other Raw Materials,index_real,index 2010=100,1967,100.0
+fertilizers,Fertilizers,index_real,index 2010=100,1967,62.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1967,73.3
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1967,83.6
+precious_metals,Precious Metals,index_real,index 2010=100,1967,18.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,1968,37.8
+energy,Energy,index_real,index 2010=100,1968,8.9
+non_energy,Non-energy,index_real,index 2010=100,1968,96.3
+agriculture,Agriculture,index_real,index 2010=100,1968,108.0
+beverages,Beverages,index_real,index 2010=100,1968,118.0
+food,Food,index_real,index 2010=100,1968,111.9
+oils_meals,Oils & Meals,index_real,index 2010=100,1968,105.6
+grains,Grains,index_real,index 2010=100,1968,142.5
+other_food,Other Food,index_real,index 2010=100,1968,92.4
+raw_materials,Raw Materials,index_real,index 2010=100,1968,93.7
+timber,Timber,index_real,index 2010=100,1968,90.1
+other_raw,Other Raw Materials,index_real,index 2010=100,1968,97.7
+fertilizers,Fertilizers,index_real,index 2010=100,1968,50.7
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1968,77.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1968,88.7
+precious_metals,Precious Metals,index_real,index 2010=100,1968,22.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1969,37.4
+energy,Energy,index_real,index 2010=100,1969,8.3
+non_energy,Non-energy,index_real,index 2010=100,1969,96.4
+agriculture,Agriculture,index_real,index 2010=100,1969,106.2
+beverages,Beverages,index_real,index 2010=100,1969,120.8
+food,Food,index_real,index 2010=100,1969,110.2
+oils_meals,Oils & Meals,index_real,index 2010=100,1969,101.7
+grains,Grains,index_real,index 2010=100,1969,133.2
+other_food,Other Food,index_real,index 2010=100,1969,100.5
+raw_materials,Raw Materials,index_real,index 2010=100,1969,88.8
+timber,Timber,index_real,index 2010=100,1969,84.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1969,94.1
+fertilizers,Fertilizers,index_real,index 2010=100,1969,42.0
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1969,82.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1969,94.4
+precious_metals,Precious Metals,index_real,index 2010=100,1969,20.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1970,37.5
+energy,Energy,index_real,index 2010=100,1970,9.1
+non_energy,Non-energy,index_real,index 2010=100,1970,95.0
+agriculture,Agriculture,index_real,index 2010=100,1970,106.2
+beverages,Beverages,index_real,index 2010=100,1970,119.3
+food,Food,index_real,index 2010=100,1970,112.4
+oils_meals,Oils & Meals,index_real,index 2010=100,1970,117.1
+grains,Grains,index_real,index 2010=100,1970,118.2
+other_food,Other Food,index_real,index 2010=100,1970,100.9
+raw_materials,Raw Materials,index_real,index 2010=100,1970,84.3
+timber,Timber,index_real,index 2010=100,1970,84.2
+other_raw,Other Raw Materials,index_real,index 2010=100,1970,84.5
+fertilizers,Fertilizers,index_real,index 2010=100,1970,37.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1970,78.7
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1970,90.3
+precious_metals,Precious Metals,index_real,index 2010=100,1970,18.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,1971,36.6
+energy,Energy,index_real,index 2010=100,1971,11.1
+non_energy,Non-energy,index_real,index 2010=100,1971,88.4
+agriculture,Agriculture,index_real,index 2010=100,1971,100.9
+beverages,Beverages,index_real,index 2010=100,1971,102.4
+food,Food,index_real,index 2010=100,1971,109.0
+oils_meals,Oils & Meals,index_real,index 2010=100,1971,114.4
+grains,Grains,index_real,index 2010=100,1971,112.0
+other_food,Other Food,index_real,index 2010=100,1971,99.2
+raw_materials,Raw Materials,index_real,index 2010=100,1971,80.2
+timber,Timber,index_real,index 2010=100,1971,80.2
+other_raw,Other Raw Materials,index_real,index 2010=100,1971,80.3
+fertilizers,Fertilizers,index_real,index 2010=100,1971,34.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1971,68.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1971,78.1
+precious_metals,Precious Metals,index_real,index 2010=100,1971,17.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,1972,35.3
+energy,Energy,index_real,index 2010=100,1972,11.0
+non_energy,Non-energy,index_real,index 2010=100,1972,84.6
+agriculture,Agriculture,index_real,index 2010=100,1972,98.0
+beverages,Beverages,index_real,index 2010=100,1972,102.0
+food,Food,index_real,index 2010=100,1972,107.2
+oils_meals,Oils & Meals,index_real,index 2010=100,1972,104.9
+grains,Grains,index_real,index 2010=100,1972,108.3
+other_food,Other Food,index_real,index 2010=100,1972,109.4
+raw_materials,Raw Materials,index_real,index 2010=100,1972,73.6
+timber,Timber,index_real,index 2010=100,1972,71.2
+other_raw,Other Raw Materials,index_real,index 2010=100,1972,76.1
+fertilizers,Fertilizers,index_real,index 2010=100,1972,44.6
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1972,61.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1972,70.0
+precious_metals,Precious Metals,index_real,index 2010=100,1972,20.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1973,46.7
+energy,Energy,index_real,index 2010=100,1973,13.5
+non_energy,Non-energy,index_real,index 2010=100,1973,113.9
+agriculture,Agriculture,index_real,index 2010=100,1973,138.2
+beverages,Beverages,index_real,index 2010=100,1973,115.6
+food,Food,index_real,index 2010=100,1973,162.0
+oils_meals,Oils & Meals,index_real,index 2010=100,1973,182.2
+grains,Grains,index_real,index 2010=100,1973,182.5
+other_food,Other Food,index_real,index 2010=100,1973,116.9
+raw_materials,Raw Materials,index_real,index 2010=100,1973,92.0
+timber,Timber,index_real,index 2010=100,1973,84.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1973,100.9
+fertilizers,Fertilizers,index_real,index 2010=100,1973,63.7
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1973,69.6
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1973,80.4
+precious_metals,Precious Metals,index_real,index 2010=100,1973,28.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1974,66.1
+energy,Energy,index_real,index 2010=100,1974,36.7
+non_energy,Non-energy,index_real,index 2010=100,1974,125.9
+agriculture,Agriculture,index_real,index 2010=100,1974,149.3
+beverages,Beverages,index_real,index 2010=100,1974,117.9
+food,Food,index_real,index 2010=100,1974,182.3
+oils_meals,Oils & Meals,index_real,index 2010=100,1974,172.1
+grains,Grains,index_real,index 2010=100,1974,219.4
+other_food,Other Food,index_real,index 2010=100,1974,162.1
+raw_materials,Raw Materials,index_real,index 2010=100,1974,85.1
+timber,Timber,index_real,index 2010=100,1974,77.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1974,93.4
+fertilizers,Fertilizers,index_real,index 2010=100,1974,187.3
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1974,71.0
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1974,81.8
+precious_metals,Precious Metals,index_real,index 2010=100,1974,39.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,1975,52.7
+energy,Energy,index_real,index 2010=100,1975,33.1
+non_energy,Non-energy,index_real,index 2010=100,1975,92.4
+agriculture,Agriculture,index_real,index 2010=100,1975,108.5
+beverages,Beverages,index_real,index 2010=100,1975,98.5
+food,Food,index_real,index 2010=100,1975,126.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1975,111.3
+grains,Grains,index_real,index 2010=100,1975,156.9
+other_food,Other Food,index_real,index 2010=100,1975,119.5
+raw_materials,Raw Materials,index_real,index 2010=100,1975,69.6
+timber,Timber,index_real,index 2010=100,1975,61.9
+other_raw,Other Raw Materials,index_real,index 2010=100,1975,77.9
+fertilizers,Fertilizers,index_real,index 2010=100,1975,122.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1975,55.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1975,62.2
+precious_metals,Precious Metals,index_real,index 2010=100,1975,35.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,1976,55.7
+energy,Energy,index_real,index 2010=100,1976,36.3
+non_energy,Non-energy,index_real,index 2010=100,1976,95.1
+agriculture,Agriculture,index_real,index 2010=100,1976,114.1
+beverages,Beverages,index_real,index 2010=100,1976,173.3
+food,Food,index_real,index 2010=100,1976,112.5
+oils_meals,Oils & Meals,index_real,index 2010=100,1976,111.9
+grains,Grains,index_real,index 2010=100,1976,131.2
+other_food,Other Food,index_real,index 2010=100,1976,96.4
+raw_materials,Raw Materials,index_real,index 2010=100,1976,87.7
+timber,Timber,index_real,index 2010=100,1976,74.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1976,102.2
+fertilizers,Fertilizers,index_real,index 2010=100,1976,61.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1976,59.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1976,65.2
+precious_metals,Precious Metals,index_real,index 2010=100,1976,29.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,1977,58.4
+energy,Energy,index_real,index 2010=100,1977,36.8
+non_energy,Non-energy,index_real,index 2010=100,1977,102.2
+agriculture,Agriculture,index_real,index 2010=100,1977,123.1
+beverages,Beverages,index_real,index 2010=100,1977,278.4
+food,Food,index_real,index 2010=100,1977,107.9
+oils_meals,Oils & Meals,index_real,index 2010=100,1977,128.1
+grains,Grains,index_real,index 2010=100,1977,107.8
+other_food,Other Food,index_real,index 2010=100,1977,81.4
+raw_materials,Raw Materials,index_real,index 2010=100,1977,81.0
+timber,Timber,index_real,index 2010=100,1977,69.3
+other_raw,Other Raw Materials,index_real,index 2010=100,1977,93.8
+fertilizers,Fertilizers,index_real,index 2010=100,1977,78.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1977,61.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1977,68.3
+precious_metals,Precious Metals,index_real,index 2010=100,1977,30.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,1978,51.6
+energy,Energy,index_real,index 2010=100,1978,33.2
+non_energy,Non-energy,index_real,index 2010=100,1978,88.7
+agriculture,Agriculture,index_real,index 2010=100,1978,105.2
+beverages,Beverages,index_real,index 2010=100,1978,182.2
+food,Food,index_real,index 2010=100,1978,102.5
+oils_meals,Oils & Meals,index_real,index 2010=100,1978,113.3
+grains,Grains,index_real,index 2010=100,1978,111.4
+other_food,Other Food,index_real,index 2010=100,1978,80.2
+raw_materials,Raw Materials,index_real,index 2010=100,1978,72.6
+timber,Timber,index_real,index 2010=100,1978,61.6
+other_raw,Other Raw Materials,index_real,index 2010=100,1978,84.6
+fertilizers,Fertilizers,index_real,index 2010=100,1978,63.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1978,57.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1978,64.8
+precious_metals,Precious Metals,index_real,index 2010=100,1978,33.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,1979,74.6
+energy,Energy,index_real,index 2010=100,1979,65.8
+non_energy,Non-energy,index_real,index 2010=100,1979,92.5
+agriculture,Agriculture,index_real,index 2010=100,1979,106.8
+beverages,Beverages,index_real,index 2010=100,1979,169.2
+food,Food,index_real,index 2010=100,1979,104.0
+oils_meals,Oils & Meals,index_real,index 2010=100,1979,112.4
+grains,Grains,index_real,index 2010=100,1979,108.5
+other_food,Other Food,index_real,index 2010=100,1979,88.8
+raw_materials,Raw Materials,index_real,index 2010=100,1979,81.8
+timber,Timber,index_real,index 2010=100,1979,79.4
+other_raw,Other Raw Materials,index_real,index 2010=100,1979,84.5
+fertilizers,Fertilizers,index_real,index 2010=100,1979,68.3
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1979,65.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1979,74.8
+precious_metals,Precious Metals,index_real,index 2010=100,1979,52.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,1980,78.4
+energy,Energy,index_real,index 2010=100,1980,71.7
+non_energy,Non-energy,index_real,index 2010=100,1980,92.0
+agriculture,Agriculture,index_real,index 2010=100,1980,105.4
+beverages,Beverages,index_real,index 2010=100,1980,134.7
+food,Food,index_real,index 2010=100,1980,108.8
+oils_meals,Oils & Meals,index_real,index 2010=100,1980,97.9
+grains,Grains,index_real,index 2010=100,1980,113.8
+other_food,Other Food,index_real,index 2010=100,1980,118.8
+raw_materials,Raw Materials,index_real,index 2010=100,1980,82.2
+timber,Timber,index_real,index 2010=100,1980,79.6
+other_raw,Other Raw Materials,index_real,index 2010=100,1980,85.1
+fertilizers,Fertilizers,index_real,index 2010=100,1980,80.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1980,65.7
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1980,74.2
+precious_metals,Precious Metals,index_real,index 2010=100,1980,91.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,1981,74.6
+energy,Energy,index_real,index 2010=100,1981,71.8
+non_energy,Non-energy,index_real,index 2010=100,1981,80.4
+agriculture,Agriculture,index_real,index 2010=100,1981,94.5
+beverages,Beverages,index_real,index 2010=100,1981,107.0
+food,Food,index_real,index 2010=100,1981,101.1
+oils_meals,Oils & Meals,index_real,index 2010=100,1981,93.8
+grains,Grains,index_real,index 2010=100,1981,120.5
+other_food,Other Food,index_real,index 2010=100,1981,93.3
+raw_materials,Raw Materials,index_real,index 2010=100,1981,72.0
+timber,Timber,index_real,index 2010=100,1981,67.9
+other_raw,Other Raw Materials,index_real,index 2010=100,1981,76.4
+fertilizers,Fertilizers,index_real,index 2010=100,1981,76.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1981,51.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1981,57.1
+precious_metals,Precious Metals,index_real,index 2010=100,1981,61.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,1982,69.8
+energy,Energy,index_real,index 2010=100,1982,69.5
+non_energy,Non-energy,index_real,index 2010=100,1982,70.4
+agriculture,Agriculture,index_real,index 2010=100,1982,83.1
+beverages,Beverages,index_real,index 2010=100,1982,109.1
+food,Food,index_real,index 2010=100,1982,83.3
+oils_meals,Oils & Meals,index_real,index 2010=100,1982,79.8
+grains,Grains,index_real,index 2010=100,1982,95.4
+other_food,Other Food,index_real,index 2010=100,1982,77.1
+raw_materials,Raw Materials,index_real,index 2010=100,1982,69.3
+timber,Timber,index_real,index 2010=100,1982,67.6
+other_raw,Other Raw Materials,index_real,index 2010=100,1982,71.3
+fertilizers,Fertilizers,index_real,index 2010=100,1982,59.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1982,45.6
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1982,48.0
+precious_metals,Precious Metals,index_real,index 2010=100,1982,50.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,1983,69.0
+energy,Energy,index_real,index 2010=100,1983,63.8
+non_energy,Non-energy,index_real,index 2010=100,1983,79.6
+agriculture,Agriculture,index_real,index 2010=100,1983,92.6
+beverages,Beverages,index_real,index 2010=100,1983,125.3
+food,Food,index_real,index 2010=100,1983,93.2
+oils_meals,Oils & Meals,index_real,index 2010=100,1983,93.6
+grains,Grains,index_real,index 2010=100,1983,105.7
+other_food,Other Food,index_real,index 2010=100,1983,81.4
+raw_materials,Raw Materials,index_real,index 2010=100,1983,74.4
+timber,Timber,index_real,index 2010=100,1983,66.6
+other_raw,Other Raw Materials,index_real,index 2010=100,1983,83.0
+fertilizers,Fertilizers,index_real,index 2010=100,1983,56.6
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1983,55.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1983,61.2
+precious_metals,Precious Metals,index_real,index 2010=100,1983,62.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,1984,69.3
+energy,Energy,index_real,index 2010=100,1984,62.7
+non_energy,Non-energy,index_real,index 2010=100,1984,82.7
+agriculture,Agriculture,index_real,index 2010=100,1984,99.1
+beverages,Beverages,index_real,index 2010=100,1984,146.7
+food,Food,index_real,index 2010=100,1984,97.6
+oils_meals,Oils & Meals,index_real,index 2010=100,1984,110.7
+grains,Grains,index_real,index 2010=100,1984,104.9
+other_food,Other Food,index_real,index 2010=100,1984,73.9
+raw_materials,Raw Materials,index_real,index 2010=100,1984,78.3
+timber,Timber,index_real,index 2010=100,1984,74.2
+other_raw,Other Raw Materials,index_real,index 2010=100,1984,82.8
+fertilizers,Fertilizers,index_real,index 2010=100,1984,65.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1984,51.2
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1984,56.2
+precious_metals,Precious Metals,index_real,index 2010=100,1984,51.9
+all,World Bank Commodity Price Index,index_real,index 2010=100,1985,64.2
+energy,Energy,index_real,index 2010=100,1985,60.6
+non_energy,Non-energy,index_real,index 2010=100,1985,71.5
+agriculture,Agriculture,index_real,index 2010=100,1985,84.1
+beverages,Beverages,index_real,index 2010=100,1985,132.3
+food,Food,index_real,index 2010=100,1985,81.4
+oils_meals,Oils & Meals,index_real,index 2010=100,1985,83.4
+grains,Grains,index_real,index 2010=100,1985,89.7
+other_food,Other Food,index_real,index 2010=100,1985,71.3
+raw_materials,Raw Materials,index_real,index 2010=100,1985,66.1
+timber,Timber,index_real,index 2010=100,1985,63.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1985,69.0
+fertilizers,Fertilizers,index_real,index 2010=100,1985,56.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1985,47.3
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1985,51.2
+precious_metals,Precious Metals,index_real,index 2010=100,1985,44.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,1986,41.0
+energy,Energy,index_real,index 2010=100,1986,31.8
+non_energy,Non-energy,index_real,index 2010=100,1986,59.7
+agriculture,Agriculture,index_real,index 2010=100,1986,69.8
+beverages,Beverages,index_real,index 2010=100,1986,128.8
+food,Food,index_real,index 2010=100,1986,62.0
+oils_meals,Oils & Meals,index_real,index 2010=100,1986,55.9
+grains,Grains,index_real,index 2010=100,1986,65.3
+other_food,Other Food,index_real,index 2010=100,1986,67.1
+raw_materials,Raw Materials,index_real,index 2010=100,1986,58.7
+timber,Timber,index_real,index 2010=100,1986,60.1
+other_raw,Other Raw Materials,index_real,index 2010=100,1986,57.3
+fertilizers,Fertilizers,index_real,index 2010=100,1986,39.6
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1986,41.3
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1986,44.8
+precious_metals,Precious Metals,index_real,index 2010=100,1986,42.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1987,41.4
+energy,Energy,index_real,index 2010=100,1987,32.6
+non_energy,Non-energy,index_real,index 2010=100,1987,59.3
+agriculture,Agriculture,index_real,index 2010=100,1987,65.9
+beverages,Beverages,index_real,index 2010=100,1987,89.1
+food,Food,index_real,index 2010=100,1987,60.4
+oils_meals,Oils & Meals,index_real,index 2010=100,1987,57.1
+grains,Grains,index_real,index 2010=100,1987,58.4
+other_food,Other Food,index_real,index 2010=100,1987,66.7
+raw_materials,Raw Materials,index_real,index 2010=100,1987,67.5
+timber,Timber,index_real,index 2010=100,1987,70.3
+other_raw,Other Raw Materials,index_real,index 2010=100,1987,64.5
+fertilizers,Fertilizers,index_real,index 2010=100,1987,38.8
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1987,47.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1987,53.7
+precious_metals,Precious Metals,index_real,index 2010=100,1987,48.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,1988,40.8
+energy,Energy,index_real,index 2010=100,1988,26.5
+non_energy,Non-energy,index_real,index 2010=100,1988,69.8
+agriculture,Agriculture,index_real,index 2010=100,1988,70.9
+beverages,Beverages,index_real,index 2010=100,1988,81.3
+food,Food,index_real,index 2010=100,1988,72.3
+oils_meals,Oils & Meals,index_real,index 2010=100,1988,71.5
+grains,Grains,index_real,index 2010=100,1988,73.2
+other_food,Other Food,index_real,index 2010=100,1988,72.6
+raw_materials,Raw Materials,index_real,index 2010=100,1988,62.3
+timber,Timber,index_real,index 2010=100,1988,66.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1988,58.1
+fertilizers,Fertilizers,index_real,index 2010=100,1988,44.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1988,70.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1988,82.0
+precious_metals,Precious Metals,index_real,index 2010=100,1988,43.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,1989,43.4
+energy,Energy,index_real,index 2010=100,1989,31.0
+non_energy,Non-energy,index_real,index 2010=100,1989,68.7
+agriculture,Agriculture,index_real,index 2010=100,1989,72.1
+beverages,Beverages,index_real,index 2010=100,1989,68.9
+food,Food,index_real,index 2010=100,1989,73.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1989,64.5
+grains,Grains,index_real,index 2010=100,1989,80.2
+other_food,Other Food,index_real,index 2010=100,1989,79.9
+raw_materials,Raw Materials,index_real,index 2010=100,1989,70.0
+timber,Timber,index_real,index 2010=100,1989,75.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1989,64.6
+fertilizers,Fertilizers,index_real,index 2010=100,1989,42.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1989,64.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1989,74.2
+precious_metals,Precious Metals,index_real,index 2010=100,1989,38.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,1990,45.5
+energy,Energy,index_real,index 2010=100,1990,37.4
+non_energy,Non-energy,index_real,index 2010=100,1990,62.0
+agriculture,Agriculture,index_real,index 2010=100,1990,66.6
+beverages,Beverages,index_real,index 2010=100,1990,61.0
+food,Food,index_real,index 2010=100,1990,66.1
+oils_meals,Oils & Meals,index_real,index 2010=100,1990,54.2
+grains,Grains,index_real,index 2010=100,1990,70.1
+other_food,Other Food,index_real,index 2010=100,1990,78.3
+raw_materials,Raw Materials,index_real,index 2010=100,1990,70.5
+timber,Timber,index_real,index 2010=100,1990,76.2
+other_raw,Other Raw Materials,index_real,index 2010=100,1990,64.3
+fertilizers,Fertilizers,index_real,index 2010=100,1990,42.1
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1990,54.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1990,61.3
+precious_metals,Precious Metals,index_real,index 2010=100,1990,36.1
+all,World Bank Commodity Price Index,index_real,index 2010=100,1991,41.8
+energy,Energy,index_real,index 2010=100,1991,33.0
+non_energy,Non-energy,index_real,index 2010=100,1991,59.6
+agriculture,Agriculture,index_real,index 2010=100,1991,66.3
+beverages,Beverages,index_real,index 2010=100,1991,55.9
+food,Food,index_real,index 2010=100,1991,66.0
+oils_meals,Oils & Meals,index_real,index 2010=100,1991,56.2
+grains,Grains,index_real,index 2010=100,1991,70.9
+other_food,Other Food,index_real,index 2010=100,1991,74.6
+raw_materials,Raw Materials,index_real,index 2010=100,1991,72.3
+timber,Timber,index_real,index 2010=100,1991,80.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1991,63.3
+fertilizers,Fertilizers,index_real,index 2010=100,1991,47.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1991,47.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1991,51.3
+precious_metals,Precious Metals,index_real,index 2010=100,1991,33.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,1992,40.0
+energy,Energy,index_real,index 2010=100,1992,31.4
+non_energy,Non-energy,index_real,index 2010=100,1992,57.4
+agriculture,Agriculture,index_real,index 2010=100,1992,64.4
+beverages,Beverages,index_real,index 2010=100,1992,47.6
+food,Food,index_real,index 2010=100,1992,64.6
+oils_meals,Oils & Meals,index_real,index 2010=100,1992,57.0
+grains,Grains,index_real,index 2010=100,1992,70.0
+other_food,Other Food,index_real,index 2010=100,1992,69.6
+raw_materials,Raw Materials,index_real,index 2010=100,1992,72.6
+timber,Timber,index_real,index 2010=100,1992,86.8
+other_raw,Other Raw Materials,index_real,index 2010=100,1992,57.0
+fertilizers,Fertilizers,index_real,index 2010=100,1992,42.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1992,44.7
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1992,48.8
+precious_metals,Precious Metals,index_real,index 2010=100,1992,31.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,1993,37.1
+energy,Energy,index_real,index 2010=100,1993,27.7
+non_energy,Non-energy,index_real,index 2010=100,1993,56.1
+agriculture,Agriculture,index_real,index 2010=100,1993,66.4
+beverages,Beverages,index_real,index 2010=100,1993,49.1
+food,Food,index_real,index 2010=100,1993,62.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1993,56.7
+grains,Grains,index_real,index 2010=100,1993,63.1
+other_food,Other Food,index_real,index 2010=100,1993,70.2
+raw_materials,Raw Materials,index_real,index 2010=100,1993,84.3
+timber,Timber,index_real,index 2010=100,1993,116.5
+other_raw,Other Raw Materials,index_real,index 2010=100,1993,49.0
+fertilizers,Fertilizers,index_real,index 2010=100,1993,35.3
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1993,37.2
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1993,40.5
+precious_metals,Precious Metals,index_real,index 2010=100,1993,32.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,1994,39.5
+energy,Energy,index_real,index 2010=100,1994,26.7
+non_energy,Non-energy,index_real,index 2010=100,1994,65.5
+agriculture,Agriculture,index_real,index 2010=100,1994,76.5
+beverages,Beverages,index_real,index 2010=100,1994,80.9
+food,Food,index_real,index 2010=100,1994,69.4
+oils_meals,Oils & Meals,index_real,index 2010=100,1994,66.1
+grains,Grains,index_real,index 2010=100,1994,70.2
+other_food,Other Food,index_real,index 2010=100,1994,73.1
+raw_materials,Raw Materials,index_real,index 2010=100,1994,91.3
+timber,Timber,index_real,index 2010=100,1994,119.2
+other_raw,Other Raw Materials,index_real,index 2010=100,1994,60.8
+fertilizers,Fertilizers,index_real,index 2010=100,1994,39.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1994,46.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1994,51.7
+precious_metals,Precious Metals,index_real,index 2010=100,1994,36.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,1995,38.8
+energy,Energy,index_real,index 2010=100,1995,26.0
+non_energy,Non-energy,index_real,index 2010=100,1995,64.8
+agriculture,Agriculture,index_real,index 2010=100,1995,72.7
+beverages,Beverages,index_real,index 2010=100,1995,75.3
+food,Food,index_real,index 2010=100,1995,68.5
+oils_meals,Oils & Meals,index_real,index 2010=100,1995,64.8
+grains,Grains,index_real,index 2010=100,1995,75.5
+other_food,Other Food,index_real,index 2010=100,1995,67.2
+raw_materials,Raw Materials,index_real,index 2010=100,1995,81.7
+timber,Timber,index_real,index 2010=100,1995,96.0
+other_raw,Other Raw Materials,index_real,index 2010=100,1995,66.0
+fertilizers,Fertilizers,index_real,index 2010=100,1995,42.1
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1995,51.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1995,58.0
+precious_metals,Precious Metals,index_real,index 2010=100,1995,32.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1996,43.0
+energy,Energy,index_real,index 2010=100,1996,32.2
+non_energy,Non-energy,index_real,index 2010=100,1996,64.9
+agriculture,Agriculture,index_real,index 2010=100,1996,75.7
+beverages,Beverages,index_real,index 2010=100,1996,66.3
+food,Food,index_real,index 2010=100,1996,75.4
+oils_meals,Oils & Meals,index_real,index 2010=100,1996,69.5
+grains,Grains,index_real,index 2010=100,1996,92.7
+other_food,Other Food,index_real,index 2010=100,1996,67.4
+raw_materials,Raw Materials,index_real,index 2010=100,1996,81.3
+timber,Timber,index_real,index 2010=100,1996,97.7
+other_raw,Other Raw Materials,index_real,index 2010=100,1996,63.4
+fertilizers,Fertilizers,index_real,index 2010=100,1996,48.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1996,44.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1996,49.4
+precious_metals,Precious Metals,index_real,index 2010=100,1996,33.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,1997,42.9
+energy,Energy,index_real,index 2010=100,1997,31.3
+non_energy,Non-energy,index_real,index 2010=100,1997,66.5
+agriculture,Agriculture,index_real,index 2010=100,1997,76.6
+beverages,Beverages,index_real,index 2010=100,1997,88.4
+food,Food,index_real,index 2010=100,1997,73.1
+oils_meals,Oils & Meals,index_real,index 2010=100,1997,73.7
+grains,Grains,index_real,index 2010=100,1997,75.4
+other_food,Other Food,index_real,index 2010=100,1997,70.3
+raw_materials,Raw Materials,index_real,index 2010=100,1997,79.3
+timber,Timber,index_real,index 2010=100,1997,93.1
+other_raw,Other Raw Materials,index_real,index 2010=100,1997,64.3
+fertilizers,Fertilizers,index_real,index 2010=100,1997,44.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1997,48.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1997,53.6
+precious_metals,Precious Metals,index_real,index 2010=100,1997,30.8
+all,World Bank Commodity Price Index,index_real,index 2010=100,1998,35.2
+energy,Energy,index_real,index 2010=100,1998,23.2
+non_energy,Non-energy,index_real,index 2010=100,1998,59.7
+agriculture,Agriculture,index_real,index 2010=100,1998,69.8
+beverages,Beverages,index_real,index 2010=100,1998,81.8
+food,Food,index_real,index 2010=100,1998,69.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1998,70.7
+grains,Grains,index_real,index 2010=100,1998,69.9
+other_food,Other Food,index_real,index 2010=100,1998,68.3
+raw_materials,Raw Materials,index_real,index 2010=100,1998,63.7
+timber,Timber,index_real,index 2010=100,1998,69.8
+other_raw,Other Raw Materials,index_real,index 2010=100,1998,57.1
+fertilizers,Fertilizers,index_real,index 2010=100,1998,41.1
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1998,41.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1998,44.6
+precious_metals,Precious Metals,index_real,index 2010=100,1998,30.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,1999,38.6
+energy,Energy,index_real,index 2010=100,1999,30.3
+non_energy,Non-energy,index_real,index 2010=100,1999,55.3
+agriculture,Agriculture,index_real,index 2010=100,1999,62.8
+beverages,Beverages,index_real,index 2010=100,1999,64.4
+food,Food,index_real,index 2010=100,1999,59.7
+oils_meals,Oils & Meals,index_real,index 2010=100,1999,56.3
+grains,Grains,index_real,index 2010=100,1999,61.5
+other_food,Other Food,index_real,index 2010=100,1999,62.7
+raw_materials,Raw Materials,index_real,index 2010=100,1999,69.6
+timber,Timber,index_real,index 2010=100,1999,86.9
+other_raw,Other Raw Materials,index_real,index 2010=100,1999,50.6
+fertilizers,Fertilizers,index_real,index 2010=100,1999,39.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,1999,41.6
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,1999,45.8
+precious_metals,Precious Metals,index_real,index 2010=100,1999,29.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,2000,51.7
+energy,Energy,index_real,index 2010=100,2000,49.3
+non_energy,Non-energy,index_real,index 2010=100,2000,56.6
+agriculture,Agriculture,index_real,index 2010=100,2000,61.4
+beverages,Beverages,index_real,index 2010=100,2000,54.2
+food,Food,index_real,index 2010=100,2000,58.9
+oils_meals,Oils & Meals,index_real,index 2010=100,2000,53.2
+grains,Grains,index_real,index 2010=100,2000,58.6
+other_food,Other Food,index_real,index 2010=100,2000,66.8
+raw_materials,Raw Materials,index_real,index 2010=100,2000,71.1
+timber,Timber,index_real,index 2010=100,2000,87.6
+other_raw,Other Raw Materials,index_real,index 2010=100,2000,53.1
+fertilizers,Fertilizers,index_real,index 2010=100,2000,45.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2000,48.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2000,53.5
+precious_metals,Precious Metals,index_real,index 2010=100,2000,29.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,2001,49.0
+energy,Energy,index_real,index 2010=100,2001,45.8
+non_energy,Non-energy,index_real,index 2010=100,2001,55.7
+agriculture,Agriculture,index_real,index 2010=100,2001,61.5
+beverages,Beverages,index_real,index 2010=100,2001,48.4
+food,Food,index_real,index 2010=100,2001,63.6
+oils_meals,Oils & Meals,index_real,index 2010=100,2001,53.0
+grains,Grains,index_real,index 2010=100,2001,61.2
+other_food,Other Food,index_real,index 2010=100,2001,79.8
+raw_materials,Raw Materials,index_real,index 2010=100,2001,62.9
+timber,Timber,index_real,index 2010=100,2001,74.2
+other_raw,Other Raw Materials,index_real,index 2010=100,2001,50.5
+fertilizers,Fertilizers,index_real,index 2010=100,2001,45.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2001,44.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2001,49.1
+precious_metals,Precious Metals,index_real,index 2010=100,2001,29.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,2002,49.5
+energy,Energy,index_real,index 2010=100,2002,44.9
+non_energy,Non-energy,index_real,index 2010=100,2002,58.8
+agriculture,Agriculture,index_real,index 2010=100,2002,66.9
+beverages,Beverages,index_real,index 2010=100,2002,59.5
+food,Food,index_real,index 2010=100,2002,68.4
+oils_meals,Oils & Meals,index_real,index 2010=100,2002,61.5
+grains,Grains,index_real,index 2010=100,2002,69.9
+other_food,Other Food,index_real,index 2010=100,2002,76.3
+raw_materials,Raw Materials,index_real,index 2010=100,2002,66.9
+timber,Timber,index_real,index 2010=100,2002,81.1
+other_raw,Other Raw Materials,index_real,index 2010=100,2002,51.4
+fertilizers,Fertilizers,index_real,index 2010=100,2002,46.1
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2002,43.7
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2002,47.7
+precious_metals,Precious Metals,index_real,index 2010=100,2002,33.2
+all,World Bank Commodity Price Index,index_real,index 2010=100,2003,55.0
+energy,Energy,index_real,index 2010=100,2003,52.0
+non_energy,Non-energy,index_real,index 2010=100,2003,61.2
+agriculture,Agriculture,index_real,index 2010=100,2003,69.0
+beverages,Beverages,index_real,index 2010=100,2003,57.9
+food,Food,index_real,index 2010=100,2003,70.6
+oils_meals,Oils & Meals,index_real,index 2010=100,2003,70.7
+grains,Grains,index_real,index 2010=100,2003,68.2
+other_food,Other Food,index_real,index 2010=100,2003,72.5
+raw_materials,Raw Materials,index_real,index 2010=100,2003,70.8
+timber,Timber,index_real,index 2010=100,2003,82.2
+other_raw,Other Raw Materials,index_real,index 2010=100,2003,58.3
+fertilizers,Fertilizers,index_real,index 2010=100,2003,52.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2003,46.3
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2003,50.6
+precious_metals,Precious Metals,index_real,index 2010=100,2003,36.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,2004,64.1
+energy,Energy,index_real,index 2010=100,2004,62.9
+non_energy,Non-energy,index_real,index 2010=100,2004,66.6
+agriculture,Agriculture,index_real,index 2010=100,2004,71.2
+beverages,Beverages,index_real,index 2010=100,2004,56.0
+food,Food,index_real,index 2010=100,2004,74.8
+oils_meals,Oils & Meals,index_real,index 2010=100,2004,73.6
+grains,Grains,index_real,index 2010=100,2004,69.7
+other_food,Other Food,index_real,index 2010=100,2004,80.9
+raw_materials,Raw Materials,index_real,index 2010=100,2004,70.1
+timber,Timber,index_real,index 2010=100,2004,81.2
+other_raw,Other Raw Materials,index_real,index 2010=100,2004,57.9
+fertilizers,Fertilizers,index_real,index 2010=100,2004,59.1
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2004,58.0
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2004,64.3
+precious_metals,Precious Metals,index_real,index 2010=100,2004,39.9
+all,World Bank Commodity Price Index,index_real,index 2010=100,2005,80.7
+energy,Energy,index_real,index 2010=100,2005,86.0
+non_energy,Non-energy,index_real,index 2010=100,2005,69.9
+agriculture,Agriculture,index_real,index 2010=100,2005,70.7
+beverages,Beverages,index_real,index 2010=100,2005,63.2
+food,Food,index_real,index 2010=100,2005,71.2
+oils_meals,Oils & Meals,index_real,index 2010=100,2005,64.4
+grains,Grains,index_real,index 2010=100,2005,67.0
+other_food,Other Food,index_real,index 2010=100,2005,84.0
+raw_materials,Raw Materials,index_real,index 2010=100,2005,73.2
+timber,Timber,index_real,index 2010=100,2005,87.4
+other_raw,Other Raw Materials,index_real,index 2010=100,2005,57.7
+fertilizers,Fertilizers,index_real,index 2010=100,2005,67.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2005,68.5
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2005,72.7
+precious_metals,Precious Metals,index_real,index 2010=100,2005,42.1
+all,World Bank Commodity Price Index,index_real,index 2010=100,2006,91.4
+energy,Energy,index_real,index 2010=100,2006,95.0
+non_energy,Non-energy,index_real,index 2010=100,2006,84.0
+agriculture,Agriculture,index_real,index 2010=100,2006,76.0
+beverages,Beverages,index_real,index 2010=100,2006,66.1
+food,Food,index_real,index 2010=100,2006,75.3
+oils_meals,Oils & Meals,index_real,index 2010=100,2006,64.2
+grains,Grains,index_real,index 2010=100,2006,77.9
+other_food,Other Food,index_real,index 2010=100,2006,87.7
+raw_materials,Raw Materials,index_real,index 2010=100,2006,82.8
+timber,Timber,index_real,index 2010=100,2006,97.7
+other_raw,Other Raw Materials,index_real,index 2010=100,2006,66.6
+fertilizers,Fertilizers,index_real,index 2010=100,2006,67.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2006,102.2
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2006,113.7
+precious_metals,Precious Metals,index_real,index 2010=100,2006,57.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,2007,97.3
+energy,Energy,index_real,index 2010=100,2007,98.9
+non_energy,Non-energy,index_real,index 2010=100,2007,94.1
+agriculture,Agriculture,index_real,index 2010=100,2007,85.1
+beverages,Beverages,index_real,index 2010=100,2007,72.0
+food,Food,index_real,index 2010=100,2007,87.9
+oils_meals,Oils & Meals,index_real,index 2010=100,2007,89.7
+grains,Grains,index_real,index 2010=100,2007,93.2
+other_food,Other Food,index_real,index 2010=100,2007,80.7
+raw_materials,Raw Materials,index_real,index 2010=100,2007,85.2
+timber,Timber,index_real,index 2010=100,2007,99.9
+other_raw,Other Raw Materials,index_real,index 2010=100,2007,69.1
+fertilizers,Fertilizers,index_real,index 2010=100,2007,87.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2007,113.3
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2007,119.1
+precious_metals,Precious Metals,index_real,index 2010=100,2007,62.3
+all,World Bank Commodity Price Index,index_real,index 2010=100,2008,118.0
+energy,Energy,index_real,index 2010=100,2008,125.5
+non_energy,Non-energy,index_real,index 2010=100,2008,102.8
+agriculture,Agriculture,index_real,index 2010=100,2008,99.9
+beverages,Beverages,index_real,index 2010=100,2008,81.4
+food,Food,index_real,index 2010=100,2008,108.9
+oils_meals,Oils & Meals,index_real,index 2010=100,2008,112.5
+grains,Grains,index_real,index 2010=100,2008,127.1
+other_food,Other Food,index_real,index 2010=100,2008,87.7
+raw_materials,Raw Materials,index_real,index 2010=100,2008,87.5
+timber,Timber,index_real,index 2010=100,2008,102.0
+other_raw,Other Raw Materials,index_real,index 2010=100,2008,71.7
+fertilizers,Fertilizers,index_real,index 2010=100,2008,184.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2008,99.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2008,98.3
+precious_metals,Precious Metals,index_real,index 2010=100,2008,70.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,2009,83.8
+energy,Energy,index_real,index 2010=100,2009,82.3
+non_energy,Non-energy,index_real,index 2010=100,2009,87.0
+agriculture,Agriculture,index_real,index 2010=100,2009,92.8
+beverages,Beverages,index_real,index 2010=100,2009,89.3
+food,Food,index_real,index 2010=100,2009,96.4
+oils_meals,Oils & Meals,index_real,index 2010=100,2009,94.4
+grains,Grains,index_real,index 2010=100,2009,102.6
+other_food,Other Food,index_real,index 2010=100,2009,93.5
+raw_materials,Raw Materials,index_real,index 2010=100,2009,85.8
+timber,Timber,index_real,index 2010=100,2009,100.3
+other_raw,Other Raw Materials,index_real,index 2010=100,2009,69.9
+fertilizers,Fertilizers,index_real,index 2010=100,2009,124.4
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2009,70.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2009,74.2
+precious_metals,Precious Metals,index_real,index 2010=100,2009,80.9
+all,World Bank Commodity Price Index,index_real,index 2010=100,2010,100.0
+energy,Energy,index_real,index 2010=100,2010,100.0
+non_energy,Non-energy,index_real,index 2010=100,2010,100.0
+agriculture,Agriculture,index_real,index 2010=100,2010,100.0
+beverages,Beverages,index_real,index 2010=100,2010,100.0
+food,Food,index_real,index 2010=100,2010,100.0
+oils_meals,Oils & Meals,index_real,index 2010=100,2010,100.0
+grains,Grains,index_real,index 2010=100,2010,100.0
+other_food,Other Food,index_real,index 2010=100,2010,100.0
+raw_materials,Raw Materials,index_real,index 2010=100,2010,100.0
+timber,Timber,index_real,index 2010=100,2010,100.0
+other_raw,Other Raw Materials,index_real,index 2010=100,2010,100.0
+fertilizers,Fertilizers,index_real,index 2010=100,2010,100.0
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2010,100.0
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2010,100.0
+precious_metals,Precious Metals,index_real,index 2010=100,2010,100.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,2011,117.1
+energy,Energy,index_real,index 2010=100,2011,121.8
+non_energy,Non-energy,index_real,index 2010=100,2011,107.7
+agriculture,Agriculture,index_real,index 2010=100,2011,109.5
+beverages,Beverages,index_real,index 2010=100,2011,104.5
+food,Food,index_real,index 2010=100,2011,110.3
+oils_meals,Oils & Meals,index_real,index 2010=100,2011,108.6
+grains,Grains,index_real,index 2010=100,2011,124.5
+other_food,Other Food,index_real,index 2010=100,2011,99.8
+raw_materials,Raw Materials,index_real,index 2010=100,2011,109.9
+timber,Timber,index_real,index 2010=100,2011,105.7
+other_raw,Other Raw Materials,index_real,index 2010=100,2011,114.6
+fertilizers,Fertilizers,index_real,index 2010=100,2011,123.9
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2011,102.2
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2011,101.9
+precious_metals,Precious Metals,index_real,index 2010=100,2011,122.7
+all,World Bank Commodity Price Index,index_real,index 2010=100,2012,114.3
+energy,Energy,index_real,index 2010=100,2012,121.7
+non_energy,Non-energy,index_real,index 2010=100,2012,99.4
+agriculture,Agriculture,index_real,index 2010=100,2012,103.7
+beverages,Beverages,index_real,index 2010=100,2012,84.1
+food,Food,index_real,index 2010=100,2012,112.7
+oils_meals,Oils & Meals,index_real,index 2010=100,2012,113.8
+grains,Grains,index_real,index 2010=100,2012,128.3
+other_food,Other Food,index_real,index 2010=100,2012,97.1
+raw_materials,Raw Materials,index_real,index 2010=100,2012,92.0
+timber,Timber,index_real,index 2010=100,2012,99.0
+other_raw,Other Raw Materials,index_real,index 2010=100,2012,84.3
+fertilizers,Fertilizers,index_real,index 2010=100,2012,128.0
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2012,87.2
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2012,88.9
+precious_metals,Precious Metals,index_real,index 2010=100,2012,125.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,2013,110.8
+energy,Energy,index_real,index 2010=100,2013,120.0
+non_energy,Non-energy,index_real,index 2010=100,2013,92.3
+agriculture,Agriculture,index_real,index 2010=100,2013,96.3
+beverages,Beverages,index_real,index 2010=100,2013,75.9
+food,Food,index_real,index 2010=100,2013,104.5
+oils_meals,Oils & Meals,index_real,index 2010=100,2013,104.2
+grains,Grains,index_real,index 2010=100,2013,116.9
+other_food,Other Food,index_real,index 2010=100,2013,93.5
+raw_materials,Raw Materials,index_real,index 2010=100,2013,87.0
+timber,Timber,index_real,index 2010=100,2013,93.5
+other_raw,Other Raw Materials,index_real,index 2010=100,2013,79.8
+fertilizers,Fertilizers,index_real,index 2010=100,2013,104.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2013,82.7
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2013,82.3
+precious_metals,Precious Metals,index_real,index 2010=100,2013,104.9
+all,World Bank Commodity Price Index,index_real,index 2010=100,2014,103.9
+energy,Energy,index_real,index 2010=100,2014,111.2
+non_energy,Non-energy,index_real,index 2010=100,2014,89.1
+agriculture,Agriculture,index_real,index 2010=100,2014,94.1
+beverages,Beverages,index_real,index 2010=100,2014,94.0
+food,Food,index_real,index 2010=100,2014,98.0
+oils_meals,Oils & Meals,index_real,index 2010=100,2014,98.3
+grains,Grains,index_real,index 2010=100,2014,96.2
+other_food,Other Food,index_real,index 2010=100,2014,99.2
+raw_materials,Raw Materials,index_real,index 2010=100,2014,84.9
+timber,Timber,index_real,index 2010=100,2014,96.9
+other_raw,Other Raw Materials,index_real,index 2010=100,2014,71.8
+fertilizers,Fertilizers,index_real,index 2010=100,2014,93.7
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2014,78.3
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2014,82.3
+precious_metals,Precious Metals,index_real,index 2010=100,2014,93.4
+all,World Bank Commodity Price Index,index_real,index 2010=100,2015,72.7
+energy,Energy,index_real,index 2010=100,2015,67.5
+non_energy,Non-energy,index_real,index 2010=100,2015,83.4
+agriculture,Agriculture,index_real,index 2010=100,2015,89.8
+beverages,Beverages,index_real,index 2010=100,2015,96.0
+food,Food,index_real,index 2010=100,2015,90.4
+oils_meals,Oils & Meals,index_real,index 2010=100,2015,86.2
+grains,Grains,index_real,index 2010=100,2015,89.0
+other_food,Other Food,index_real,index 2010=100,2015,97.2
+raw_materials,Raw Materials,index_real,index 2010=100,2015,85.1
+timber,Timber,index_real,index 2010=100,2015,98.2
+other_raw,Other Raw Materials,index_real,index 2010=100,2015,70.8
+fertilizers,Fertilizers,index_real,index 2010=100,2015,100.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2015,68.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2015,75.2
+precious_metals,Precious Metals,index_real,index 2010=100,2015,92.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,2016,67.7
+energy,Energy,index_real,index 2010=100,2016,59.6
+non_energy,Non-energy,index_real,index 2010=100,2016,84.4
+agriculture,Agriculture,index_real,index 2010=100,2016,93.0
+beverages,Beverages,index_real,index 2010=100,2016,97.1
+food,Food,index_real,index 2010=100,2016,95.3
+oils_meals,Oils & Meals,index_real,index 2010=100,2016,93.9
+grains,Grains,index_real,index 2010=100,2016,85.8
+other_food,Other Food,index_real,index 2010=100,2016,105.8
+raw_materials,Raw Materials,index_real,index 2010=100,2016,85.3
+timber,Timber,index_real,index 2010=100,2016,95.3
+other_raw,Other Raw Materials,index_real,index 2010=100,2016,74.3
+fertilizers,Fertilizers,index_real,index 2010=100,2016,82.6
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2016,67.0
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2016,72.6
+precious_metals,Precious Metals,index_real,index 2010=100,2016,103.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,2017,76.1
+energy,Energy,index_real,index 2010=100,2017,71.3
+non_energy,Non-energy,index_real,index 2010=100,2017,86.0
+agriculture,Agriculture,index_real,index 2010=100,2017,89.3
+beverages,Beverages,index_real,index 2010=100,2017,85.4
+food,Food,index_real,index 2010=100,2017,92.7
+oils_meals,Oils & Meals,index_real,index 2010=100,2017,90.0
+grains,Grains,index_real,index 2010=100,2017,82.8
+other_food,Other Food,index_real,index 2010=100,2017,105.2
+raw_materials,Raw Materials,index_real,index 2010=100,2017,83.2
+timber,Timber,index_real,index 2010=100,2017,87.9
+other_raw,Other Raw Materials,index_real,index 2010=100,2017,78.1
+fertilizers,Fertilizers,index_real,index 2010=100,2017,76.3
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2017,80.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2017,87.3
+precious_metals,Precious Metals,index_real,index 2010=100,2017,100.6
+all,World Bank Commodity Price Index,index_real,index 2010=100,2018,86.4
+energy,Energy,index_real,index 2010=100,2018,87.7
+non_energy,Non-energy,index_real,index 2010=100,2018,83.6
+agriculture,Agriculture,index_real,index 2010=100,2018,85.0
+beverages,Beverages,index_real,index 2010=100,2018,77.6
+food,Food,index_real,index 2010=100,2018,88.8
+oils_meals,Oils & Meals,index_real,index 2010=100,2018,83.5
+grains,Grains,index_real,index 2010=100,2018,87.1
+other_food,Other Food,index_real,index 2010=100,2018,97.3
+raw_materials,Raw Materials,index_real,index 2010=100,2018,79.4
+timber,Timber,index_real,index 2010=100,2018,86.7
+other_raw,Other Raw Materials,index_real,index 2010=100,2018,71.5
+fertilizers,Fertilizers,index_real,index 2010=100,2018,81.0
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2018,81.0
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2018,88.9
+precious_metals,Precious Metals,index_real,index 2010=100,2018,95.4
+all,World Bank Commodity Price Index,index_real,index 2010=100,2019,79.8
+energy,Energy,index_real,index 2010=100,2019,78.7
+non_energy,Non-energy,index_real,index 2010=100,2019,82.0
+agriculture,Agriculture,index_real,index 2010=100,2019,83.6
+beverages,Beverages,index_real,index 2010=100,2019,76.5
+food,Food,index_real,index 2010=100,2019,87.4
+oils_meals,Oils & Meals,index_real,index 2010=100,2019,77.9
+grains,Grains,index_real,index 2010=100,2019,89.4
+other_food,Other Food,index_real,index 2010=100,2019,98.2
+raw_materials,Raw Materials,index_real,index 2010=100,2019,77.7
+timber,Timber,index_real,index 2010=100,2019,86.0
+other_raw,Other Raw Materials,index_real,index 2010=100,2019,68.7
+fertilizers,Fertilizers,index_real,index 2010=100,2019,81.8
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2019,78.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2019,82.0
+precious_metals,Precious Metals,index_real,index 2010=100,2019,106.0
+all,World Bank Commodity Price Index,index_real,index 2010=100,2020,64.4
+energy,Energy,index_real,index 2010=100,2020,53.8
+non_energy,Non-energy,index_real,index 2010=100,2020,85.9
+agriculture,Agriculture,index_real,index 2010=100,2020,88.9
+beverages,Beverages,index_real,index 2010=100,2020,82.1
+food,Food,index_real,index 2010=100,2020,95.1
+oils_meals,Oils & Meals,index_real,index 2010=100,2020,91.7
+grains,Grains,index_real,index 2010=100,2020,97.4
+other_food,Other Food,index_real,index 2010=100,2020,97.5
+raw_materials,Raw Materials,index_real,index 2010=100,2020,77.4
+timber,Timber,index_real,index 2010=100,2020,88.3
+other_raw,Other Raw Materials,index_real,index 2010=100,2020,65.6
+fertilizers,Fertilizers,index_real,index 2010=100,2020,76.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2020,80.8
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2020,81.9
+precious_metals,Precious Metals,index_real,index 2010=100,2020,136.4
+all,World Bank Commodity Price Index,index_real,index 2010=100,2021,92.2
+energy,Energy,index_real,index 2010=100,2021,87.2
+non_energy,Non-energy,index_real,index 2010=100,2021,102.5
+agriculture,Agriculture,index_real,index 2010=100,2021,98.5
+beverages,Beverages,index_real,index 2010=100,2021,85.5
+food,Food,index_real,index 2010=100,2021,110.5
+oils_meals,Oils & Meals,index_real,index 2010=100,2021,116.2
+grains,Grains,index_real,index 2010=100,2021,113.2
+other_food,Other Food,index_real,index 2010=100,2021,100.7
+raw_materials,Raw Materials,index_real,index 2010=100,2021,75.8
+timber,Timber,index_real,index 2010=100,2021,82.7
+other_raw,Other Raw Materials,index_real,index 2010=100,2021,68.3
+fertilizers,Fertilizers,index_real,index 2010=100,2021,139.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2021,106.4
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2021,107.6
+precious_metals,Precious Metals,index_real,index 2010=100,2021,128.1
+all,World Bank Commodity Price Index,index_real,index 2010=100,2022,121.3
+energy,Energy,index_real,index 2010=100,2022,129.9
+non_energy,Non-energy,index_real,index 2010=100,2022,104.0
+agriculture,Agriculture,index_real,index 2010=100,2022,101.6
+beverages,Beverages,index_real,index 2010=100,2022,90.5
+food,Food,index_real,index 2010=100,2022,117.6
+oils_meals,Oils & Meals,index_real,index 2010=100,2022,123.6
+grains,Grains,index_real,index 2010=100,2022,128.0
+other_food,Other Food,index_real,index 2010=100,2022,100.2
+raw_materials,Raw Materials,index_real,index 2010=100,2022,68.3
+timber,Timber,index_real,index 2010=100,2022,68.2
+other_raw,Other Raw Materials,index_real,index 2010=100,2022,68.5
+fertilizers,Fertilizers,index_real,index 2010=100,2022,200.7
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2022,97.9
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2022,104.2
+precious_metals,Precious Metals,index_real,index 2010=100,2022,116.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,2023,94.7
+energy,Energy,index_real,index 2010=100,2023,93.7
+non_energy,Non-energy,index_real,index 2010=100,2023,96.6
+agriculture,Agriculture,index_real,index 2010=100,2023,97.2
+beverages,Beverages,index_real,index 2010=100,2023,94.4
+food,Food,index_real,index 2010=100,2023,109.9
+oils_meals,Oils & Meals,index_real,index 2010=100,2023,104.2
+grains,Grains,index_real,index 2010=100,2023,116.6
+other_food,Other Food,index_real,index 2010=100,2023,111.5
+raw_materials,Raw Materials,index_real,index 2010=100,2023,67.6
+timber,Timber,index_real,index 2010=100,2023,69.3
+other_raw,Other Raw Materials,index_real,index 2010=100,2023,65.6
+fertilizers,Fertilizers,index_real,index 2010=100,2023,134.6
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2023,91.1
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2023,95.5
+precious_metals,Precious Metals,index_real,index 2010=100,2023,129.1
+all,World Bank Commodity Price Index,index_real,index 2010=100,2024,91.3
+energy,Energy,index_real,index 2010=100,2024,88.2
+non_energy,Non-energy,index_real,index 2010=100,2024,97.7
+agriculture,Agriculture,index_real,index 2010=100,2024,99.9
+beverages,Beverages,index_real,index 2010=100,2024,153.2
+food,Food,index_real,index 2010=100,2024,100.7
+oils_meals,Oils & Meals,index_real,index 2010=100,2024,92.8
+grains,Grains,index_real,index 2010=100,2024,98.1
+other_food,Other Food,index_real,index 2010=100,2024,113.3
+raw_materials,Raw Materials,index_real,index 2010=100,2024,70.9
+timber,Timber,index_real,index 2010=100,2024,69.2
+other_raw,Other Raw Materials,index_real,index 2010=100,2024,72.9
+fertilizers,Fertilizers,index_real,index 2010=100,2024,102.2
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2024,92.7
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2024,99.1
+precious_metals,Precious Metals,index_real,index 2010=100,2024,156.5
+all,World Bank Commodity Price Index,index_real,index 2010=100,2025,84.8
+energy,Energy,index_real,index 2010=100,2025,77.5
+non_energy,Non-energy,index_real,index 2010=100,2025,99.4
+agriculture,Agriculture,index_real,index 2010=100,2025,99.7
+beverages,Beverages,index_real,index 2010=100,2025,178.5
+food,Food,index_real,index 2010=100,2025,94.1
+oils_meals,Oils & Meals,index_real,index 2010=100,2025,90.0
+grains,Grains,index_real,index 2010=100,2025,87.3
+other_food,Other Food,index_real,index 2010=100,2025,105.7
+raw_materials,Raw Materials,index_real,index 2010=100,2025,73.2
+timber,Timber,index_real,index 2010=100,2025,70.5
+other_raw,Other Raw Materials,index_real,index 2010=100,2025,76.1
+fertilizers,Fertilizers,index_real,index 2010=100,2025,119.5
+metals_minerals,Metals & Minerals,index_real,index 2010=100,2025,96.6
+base_metals,Base Metals (ex. iron ore),index_real,index 2010=100,2025,105.3
+precious_metals,Precious Metals,index_real,index 2010=100,2025,222.7
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1960,1.6
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1960,0.92
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1960,0.7
+soybeans,Soybeans,price_nominal,$/mt,1960,92.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1960,224.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1960,81.0
+maize,Maize,price_nominal,$/mt,1960,44.5
+orange,Orange,price_nominal,$/kg,1960,0.13
+beef,Beef,price_nominal,$/kg,1960,0.74
+sugar,"Sugar, world",price_nominal,$/kg,1960,0.07
+cotton,"Cotton, A Index",price_nominal,$/kg,1960,0.65
+aluminum,Aluminum,price_nominal,$/mt,1960,511.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1960,11.4
+copper,Copper,price_nominal,$/mt,1960,679.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1961,1.6
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1961,0.9
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1961,0.67
+soybeans,Soybeans,price_nominal,$/mt,1961,109.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1961,287.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1961,97.0
+maize,Maize,price_nominal,$/mt,1961,45.0
+orange,Orange,price_nominal,$/kg,1961,0.13
+beef,Beef,price_nominal,$/kg,1961,0.68
+sugar,"Sugar, world",price_nominal,$/kg,1961,0.06
+cotton,"Cotton, A Index",price_nominal,$/kg,1961,0.67
+aluminum,Aluminum,price_nominal,$/mt,1961,511.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1961,11.0
+copper,Copper,price_nominal,$/mt,1961,633.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1962,1.5
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1962,0.83
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1962,0.68
+soybeans,Soybeans,price_nominal,$/mt,1962,101.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1962,227.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1962,89.0
+maize,Maize,price_nominal,$/mt,1962,48.7
+orange,Orange,price_nominal,$/kg,1962,0.11
+beef,Beef,price_nominal,$/kg,1962,0.71
+sugar,"Sugar, world",price_nominal,$/kg,1962,0.06
+cotton,"Cotton, A Index",price_nominal,$/kg,1962,0.65
+aluminum,Aluminum,price_nominal,$/mt,1962,498.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1962,11.0
+copper,Copper,price_nominal,$/mt,1962,645.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1963,1.5
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1963,0.81
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1963,0.62
+soybeans,Soybeans,price_nominal,$/mt,1963,110.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1963,224.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1963,91.0
+maize,Maize,price_nominal,$/mt,1963,53.8
+orange,Orange,price_nominal,$/kg,1963,0.09
+beef,Beef,price_nominal,$/kg,1963,0.67
+sugar,"Sugar, world",price_nominal,$/kg,1963,0.18
+cotton,"Cotton, A Index",price_nominal,$/kg,1963,0.65
+aluminum,Aluminum,price_nominal,$/mt,1963,499.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1963,11.0
+copper,Copper,price_nominal,$/mt,1963,646.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1964,1.5
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1964,1.01
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1964,0.79
+soybeans,Soybeans,price_nominal,$/mt,1964,111.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1964,233.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1964,89.0
+maize,Maize,price_nominal,$/mt,1964,54.6
+orange,Orange,price_nominal,$/kg,1964,0.08
+beef,Beef,price_nominal,$/kg,1964,0.84
+sugar,"Sugar, world",price_nominal,$/kg,1964,0.13
+cotton,"Cotton, A Index",price_nominal,$/kg,1964,0.65
+aluminum,Aluminum,price_nominal,$/mt,1964,526.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1964,10.2
+copper,Copper,price_nominal,$/mt,1964,970.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1965,1.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1965,1.0
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1965,0.68
+soybeans,Soybeans,price_nominal,$/mt,1965,117.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1965,270.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1965,97.0
+maize,Maize,price_nominal,$/mt,1965,55.7
+orange,Orange,price_nominal,$/kg,1965,0.1
+beef,Beef,price_nominal,$/kg,1965,0.88
+sugar,"Sugar, world",price_nominal,$/kg,1965,0.04
+cotton,"Cotton, A Index",price_nominal,$/kg,1965,0.64
+aluminum,Aluminum,price_nominal,$/mt,1965,540.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1965,10.7
+copper,Copper,price_nominal,$/mt,1965,1293.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1966,1.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1966,0.93
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1966,0.74
+soybeans,Soybeans,price_nominal,$/mt,1966,126.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1966,262.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1966,107.0
+maize,Maize,price_nominal,$/mt,1966,58.3
+orange,Orange,price_nominal,$/kg,1966,0.08
+beef,Beef,price_nominal,$/kg,1966,1.02
+sugar,"Sugar, world",price_nominal,$/kg,1966,0.04
+cotton,"Cotton, A Index",price_nominal,$/kg,1966,0.62
+aluminum,Aluminum,price_nominal,$/mt,1966,540.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1966,9.5
+copper,Copper,price_nominal,$/mt,1966,1532.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1967,1.3
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1967,0.86
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1967,0.74
+soybeans,Soybeans,price_nominal,$/mt,1967,115.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1967,217.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1967,99.0
+maize,Maize,price_nominal,$/mt,1967,54.1
+orange,Orange,price_nominal,$/kg,1967,0.16
+beef,Beef,price_nominal,$/kg,1967,1.04
+sugar,"Sugar, world",price_nominal,$/kg,1967,0.04
+cotton,"Cotton, A Index",price_nominal,$/kg,1967,0.68
+aluminum,Aluminum,price_nominal,$/mt,1967,540.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1967,8.9
+copper,Copper,price_nominal,$/mt,1967,1135.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1968,1.3
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1968,0.87
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1968,0.75
+soybeans,Soybeans,price_nominal,$/mt,1968,111.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1968,178.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1968,96.0
+maize,Maize,price_nominal,$/mt,1968,48.0
+orange,Orange,price_nominal,$/kg,1968,0.17
+beef,Beef,price_nominal,$/kg,1968,1.09
+sugar,"Sugar, world",price_nominal,$/kg,1968,0.04
+cotton,"Cotton, A Index",price_nominal,$/kg,1968,0.68
+aluminum,Aluminum,price_nominal,$/mt,1968,553.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1968,8.8
+copper,Copper,price_nominal,$/mt,1968,1242.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1969,1.3
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1969,0.88
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1969,0.73
+soybeans,Soybeans,price_nominal,$/mt,1969,107.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1969,197.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1969,95.0
+maize,Maize,price_nominal,$/mt,1969,52.3
+orange,Orange,price_nominal,$/kg,1969,0.17
+beef,Beef,price_nominal,$/kg,1969,1.22
+sugar,"Sugar, world",price_nominal,$/kg,1969,0.07
+cotton,"Cotton, A Index",price_nominal,$/kg,1969,0.63
+aluminum,Aluminum,price_nominal,$/mt,1969,588.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1969,9.8
+copper,Copper,price_nominal,$/mt,1969,1467.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1970,1.2
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1970,1.15
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1970,0.91
+soybeans,Soybeans,price_nominal,$/mt,1970,117.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1970,286.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1970,103.0
+maize,Maize,price_nominal,$/mt,1970,58.4
+orange,Orange,price_nominal,$/kg,1970,0.17
+beef,Beef,price_nominal,$/kg,1970,1.3
+sugar,"Sugar, world",price_nominal,$/kg,1970,0.08
+cotton,"Cotton, A Index",price_nominal,$/kg,1970,0.68
+aluminum,Aluminum,price_nominal,$/mt,1970,614.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1970,9.8
+copper,Copper,price_nominal,$/mt,1970,1416.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1971,1.7
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1971,0.99
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1971,0.93
+soybeans,Soybeans,price_nominal,$/mt,1971,126.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1971,304.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1971,102.0
+maize,Maize,price_nominal,$/mt,1971,58.4
+orange,Orange,price_nominal,$/kg,1971,0.15
+beef,Beef,price_nominal,$/kg,1971,1.35
+sugar,"Sugar, world",price_nominal,$/kg,1971,0.1
+cotton,"Cotton, A Index",price_nominal,$/kg,1971,0.78
+aluminum,Aluminum,price_nominal,$/mt,1971,628.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1971,10.3
+copper,Copper,price_nominal,$/mt,1971,1081.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1972,1.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1972,1.11
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1972,1.0
+soybeans,Soybeans,price_nominal,$/mt,1972,140.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1972,241.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1972,130.0
+maize,Maize,price_nominal,$/mt,1972,55.8
+orange,Orange,price_nominal,$/kg,1972,0.15
+beef,Beef,price_nominal,$/kg,1972,1.48
+sugar,"Sugar, world",price_nominal,$/kg,1972,0.16
+cotton,"Cotton, A Index",price_nominal,$/kg,1972,0.83
+aluminum,Aluminum,price_nominal,$/mt,1972,590.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1972,10.3
+copper,Copper,price_nominal,$/mt,1972,1058.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1973,2.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1973,1.37
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1973,1.1
+soybeans,Soybeans,price_nominal,$/mt,1973,290.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1973,436.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1973,302.0
+maize,Maize,price_nominal,$/mt,1973,97.8
+orange,Orange,price_nominal,$/kg,1973,0.16
+beef,Beef,price_nominal,$/kg,1973,2.01
+sugar,"Sugar, world",price_nominal,$/kg,1973,0.21
+cotton,"Cotton, A Index",price_nominal,$/kg,1973,1.39
+aluminum,Aluminum,price_nominal,$/mt,1973,599.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1973,10.3
+copper,Copper,price_nominal,$/mt,1973,1785.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1974,11.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1974,1.45
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1974,1.29
+soybeans,Soybeans,price_nominal,$/mt,1974,277.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1974,832.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1974,184.0
+maize,Maize,price_nominal,$/mt,1974,131.2
+orange,Orange,price_nominal,$/kg,1974,0.18
+beef,Beef,price_nominal,$/kg,1974,1.58
+sugar,"Sugar, world",price_nominal,$/kg,1974,0.65
+cotton,"Cotton, A Index",price_nominal,$/kg,1974,1.46
+aluminum,Aluminum,price_nominal,$/mt,1974,765.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1974,13.4
+copper,Copper,price_nominal,$/mt,1974,2059.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1975,10.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1975,1.44
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1975,1.35
+soybeans,Soybeans,price_nominal,$/mt,1975,220.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1975,563.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1975,155.0
+maize,Maize,price_nominal,$/mt,1975,119.6
+orange,Orange,price_nominal,$/kg,1975,0.23
+beef,Beef,price_nominal,$/kg,1975,1.33
+sugar,"Sugar, world",price_nominal,$/kg,1975,0.45
+cotton,"Cotton, A Index",price_nominal,$/kg,1975,1.22
+aluminum,Aluminum,price_nominal,$/mt,1975,868.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1975,17.3
+copper,Copper,price_nominal,$/mt,1975,1235.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1976,11.6
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1976,3.15
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1976,2.81
+soybeans,Soybeans,price_nominal,$/mt,1976,231.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1976,438.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1976,200.0
+maize,Maize,price_nominal,$/mt,1976,112.4
+orange,Orange,price_nominal,$/kg,1976,0.22
+beef,Beef,price_nominal,$/kg,1976,1.58
+sugar,"Sugar, world",price_nominal,$/kg,1976,0.25
+cotton,"Cotton, A Index",price_nominal,$/kg,1976,1.75
+aluminum,Aluminum,price_nominal,$/mt,1976,890.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1976,22.7
+copper,Copper,price_nominal,$/mt,1976,1401.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1977,12.6
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1977,5.17
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1977,4.93
+soybeans,Soybeans,price_nominal,$/mt,1977,280.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1977,580.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1977,230.0
+maize,Maize,price_nominal,$/mt,1977,95.4
+orange,Orange,price_nominal,$/kg,1977,0.25
+beef,Beef,price_nominal,$/kg,1977,1.51
+sugar,"Sugar, world",price_nominal,$/kg,1977,0.18
+cotton,"Cotton, A Index",price_nominal,$/kg,1977,1.63
+aluminum,Aluminum,price_nominal,$/mt,1977,1144.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1977,23.1
+copper,Copper,price_nominal,$/mt,1977,1309.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1978,12.9
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1978,3.59
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1978,3.25
+soybeans,Soybeans,price_nominal,$/mt,1978,268.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1978,607.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1978,213.0
+maize,Maize,price_nominal,$/mt,1978,100.7
+orange,Orange,price_nominal,$/kg,1978,0.3
+beef,Beef,price_nominal,$/kg,1978,2.14
+sugar,"Sugar, world",price_nominal,$/kg,1978,0.17
+cotton,"Cotton, A Index",price_nominal,$/kg,1978,1.61
+aluminum,Aluminum,price_nominal,$/mt,1978,1325.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1978,21.5
+copper,Copper,price_nominal,$/mt,1978,1365.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1979,31.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1979,3.83
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1979,3.65
+soybeans,Soybeans,price_nominal,$/mt,1979,298.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1979,662.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1979,243.0
+maize,Maize,price_nominal,$/mt,1979,115.5
+orange,Orange,price_nominal,$/kg,1979,0.4
+beef,Beef,price_nominal,$/kg,1979,2.88
+sugar,"Sugar, world",price_nominal,$/kg,1979,0.21
+cotton,"Cotton, A Index",price_nominal,$/kg,1979,1.71
+aluminum,Aluminum,price_nominal,$/mt,1979,1603.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1979,23.5
+copper,Copper,price_nominal,$/mt,1979,1985.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1980,36.9
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1980,3.47
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1980,3.24
+soybeans,Soybeans,price_nominal,$/mt,1980,296.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1980,598.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1980,262.0
+maize,Maize,price_nominal,$/mt,1980,125.3
+orange,Orange,price_nominal,$/kg,1980,0.4
+beef,Beef,price_nominal,$/kg,1980,2.76
+sugar,"Sugar, world",price_nominal,$/kg,1980,0.63
+cotton,"Cotton, A Index",price_nominal,$/kg,1980,2.06
+aluminum,Aluminum,price_nominal,$/mt,1980,1775.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1980,28.1
+copper,Copper,price_nominal,$/mt,1980,2182.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1981,35.5
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1981,2.87
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1981,2.24
+soybeans,Soybeans,price_nominal,$/mt,1981,288.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1981,507.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1981,253.0
+maize,Maize,price_nominal,$/mt,1981,130.8
+orange,Orange,price_nominal,$/kg,1981,0.41
+beef,Beef,price_nominal,$/kg,1981,2.47
+sugar,"Sugar, world",price_nominal,$/kg,1981,0.37
+cotton,"Cotton, A Index",price_nominal,$/kg,1981,1.87
+aluminum,Aluminum,price_nominal,$/mt,1981,1263.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1981,28.1
+copper,Copper,price_nominal,$/mt,1981,1742.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1982,32.6
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1982,3.09
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1982,2.42
+soybeans,Soybeans,price_nominal,$/mt,1982,245.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1982,447.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1982,219.0
+maize,Maize,price_nominal,$/mt,1982,109.3
+orange,Orange,price_nominal,$/kg,1982,0.38
+beef,Beef,price_nominal,$/kg,1982,2.39
+sugar,"Sugar, world",price_nominal,$/kg,1982,0.19
+cotton,"Cotton, A Index",price_nominal,$/kg,1982,1.6
+aluminum,Aluminum,price_nominal,$/mt,1982,992.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1982,32.5
+copper,Copper,price_nominal,$/mt,1982,1480.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1983,29.7
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1983,2.91
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1983,2.73
+soybeans,Soybeans,price_nominal,$/mt,1983,282.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1983,527.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1983,238.0
+maize,Maize,price_nominal,$/mt,1983,136.0
+orange,Orange,price_nominal,$/kg,1983,0.37
+beef,Beef,price_nominal,$/kg,1983,2.44
+sugar,"Sugar, world",price_nominal,$/kg,1983,0.19
+cotton,"Cotton, A Index",price_nominal,$/kg,1983,1.85
+aluminum,Aluminum,price_nominal,$/mt,1983,1438.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1983,29.0
+copper,Copper,price_nominal,$/mt,1983,1592.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1984,28.6
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1984,3.19
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1984,3.04
+soybeans,Soybeans,price_nominal,$/mt,1984,282.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1984,724.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1984,197.0
+maize,Maize,price_nominal,$/mt,1984,135.9
+orange,Orange,price_nominal,$/kg,1984,0.35
+beef,Beef,price_nominal,$/kg,1984,2.27
+sugar,"Sugar, world",price_nominal,$/kg,1984,0.11
+cotton,"Cotton, A Index",price_nominal,$/kg,1984,1.78
+aluminum,Aluminum,price_nominal,$/mt,1984,1251.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1984,26.2
+copper,Copper,price_nominal,$/mt,1984,1377.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1985,27.2
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1985,3.23
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1985,2.65
+soybeans,Soybeans,price_nominal,$/mt,1985,224.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1985,572.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1985,157.0
+maize,Maize,price_nominal,$/mt,1985,112.2
+orange,Orange,price_nominal,$/kg,1985,0.4
+beef,Beef,price_nominal,$/kg,1985,2.15
+sugar,"Sugar, world",price_nominal,$/kg,1985,0.09
+cotton,"Cotton, A Index",price_nominal,$/kg,1985,1.32
+aluminum,Aluminum,price_nominal,$/mt,1985,1041.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1985,26.6
+copper,Copper,price_nominal,$/mt,1985,1417.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1986,14.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1986,4.29
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1986,3.24
+soybeans,Soybeans,price_nominal,$/mt,1986,208.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1986,342.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1986,185.0
+maize,Maize,price_nominal,$/mt,1986,87.6
+orange,Orange,price_nominal,$/kg,1986,0.39
+beef,Beef,price_nominal,$/kg,1986,2.09
+sugar,"Sugar, world",price_nominal,$/kg,1986,0.13
+cotton,"Cotton, A Index",price_nominal,$/kg,1986,1.06
+aluminum,Aluminum,price_nominal,$/mt,1986,1150.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1986,26.3
+copper,Copper,price_nominal,$/mt,1986,1374.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1987,18.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1987,2.5
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1987,2.25
+soybeans,Soybeans,price_nominal,$/mt,1987,216.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1987,334.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1987,203.0
+maize,Maize,price_nominal,$/mt,1987,75.7
+orange,Orange,price_nominal,$/kg,1987,0.46
+beef,Beef,price_nominal,$/kg,1987,2.39
+sugar,"Sugar, world",price_nominal,$/kg,1987,0.15
+cotton,"Cotton, A Index",price_nominal,$/kg,1987,1.65
+aluminum,Aluminum,price_nominal,$/mt,1987,1565.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1987,25.3
+copper,Copper,price_nominal,$/mt,1987,1783.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1988,14.7
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1988,3.03
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1988,2.08
+soybeans,Soybeans,price_nominal,$/mt,1988,304.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1988,463.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1988,268.0
+maize,Maize,price_nominal,$/mt,1988,106.9
+orange,Orange,price_nominal,$/kg,1988,0.45
+beef,Beef,price_nominal,$/kg,1988,2.52
+sugar,"Sugar, world",price_nominal,$/kg,1988,0.22
+cotton,"Cotton, A Index",price_nominal,$/kg,1988,1.4
+aluminum,Aluminum,price_nominal,$/mt,1988,2550.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1988,24.3
+copper,Copper,price_nominal,$/mt,1988,2602.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1989,17.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1989,2.39
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1989,1.66
+soybeans,Soybeans,price_nominal,$/mt,1989,275.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1989,432.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1989,248.0
+maize,Maize,price_nominal,$/mt,1989,111.5
+orange,Orange,price_nominal,$/kg,1989,0.45
+beef,Beef,price_nominal,$/kg,1989,2.57
+sugar,"Sugar, world",price_nominal,$/kg,1989,0.28
+cotton,"Cotton, A Index",price_nominal,$/kg,1989,1.67
+aluminum,Aluminum,price_nominal,$/mt,1989,1951.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1989,27.8
+copper,Copper,price_nominal,$/mt,1989,2848.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1990,22.9
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1990,1.97
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1990,1.18
+soybeans,Soybeans,price_nominal,$/mt,1990,247.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1990,447.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1990,200.0
+maize,Maize,price_nominal,$/mt,1990,109.3
+orange,Orange,price_nominal,$/kg,1990,0.53
+beef,Beef,price_nominal,$/kg,1990,2.56
+sugar,"Sugar, world",price_nominal,$/kg,1990,0.28
+cotton,"Cotton, A Index",price_nominal,$/kg,1990,1.82
+aluminum,Aluminum,price_nominal,$/mt,1990,1639.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1990,32.5
+copper,Copper,price_nominal,$/mt,1990,2661.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1991,19.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1991,1.87
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1991,1.07
+soybeans,Soybeans,price_nominal,$/mt,1991,240.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1991,454.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1991,197.0
+maize,Maize,price_nominal,$/mt,1991,107.4
+orange,Orange,price_nominal,$/kg,1991,0.52
+beef,Beef,price_nominal,$/kg,1991,2.66
+sugar,"Sugar, world",price_nominal,$/kg,1991,0.2
+cotton,"Cotton, A Index",price_nominal,$/kg,1991,1.68
+aluminum,Aluminum,price_nominal,$/mt,1991,1302.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1991,34.8
+copper,Copper,price_nominal,$/mt,1991,2339.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1992,19.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1992,1.41
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1992,0.94
+soybeans,Soybeans,price_nominal,$/mt,1992,236.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1992,429.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1992,204.0
+maize,Maize,price_nominal,$/mt,1992,104.2
+orange,Orange,price_nominal,$/kg,1992,0.49
+beef,Beef,price_nominal,$/kg,1992,2.45
+sugar,"Sugar, world",price_nominal,$/kg,1992,0.2
+cotton,"Cotton, A Index",price_nominal,$/kg,1992,1.28
+aluminum,Aluminum,price_nominal,$/mt,1992,1254.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1992,33.1
+copper,Copper,price_nominal,$/mt,1992,2281.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1993,16.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1993,1.56
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1993,1.16
+soybeans,Soybeans,price_nominal,$/mt,1993,255.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1993,480.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1993,208.0
+maize,Maize,price_nominal,$/mt,1993,102.1
+orange,Orange,price_nominal,$/kg,1993,0.43
+beef,Beef,price_nominal,$/kg,1993,2.62
+sugar,"Sugar, world",price_nominal,$/kg,1993,0.22
+cotton,"Cotton, A Index",price_nominal,$/kg,1993,1.28
+aluminum,Aluminum,price_nominal,$/mt,1993,1139.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1993,29.1
+copper,Copper,price_nominal,$/mt,1993,1913.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1994,15.9
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1994,3.31
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1994,2.62
+soybeans,Soybeans,price_nominal,$/mt,1994,252.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1994,616.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1994,192.0
+maize,Maize,price_nominal,$/mt,1994,107.6
+orange,Orange,price_nominal,$/kg,1994,0.41
+beef,Beef,price_nominal,$/kg,1994,2.33
+sugar,"Sugar, world",price_nominal,$/kg,1994,0.27
+cotton,"Cotton, A Index",price_nominal,$/kg,1994,1.76
+aluminum,Aluminum,price_nominal,$/mt,1994,1477.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1994,26.5
+copper,Copper,price_nominal,$/mt,1994,2307.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1995,17.2
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1995,3.33
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1995,2.77
+soybeans,Soybeans,price_nominal,$/mt,1995,259.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1995,625.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1995,197.0
+maize,Maize,price_nominal,$/mt,1995,123.5
+orange,Orange,price_nominal,$/kg,1995,0.53
+beef,Beef,price_nominal,$/kg,1995,1.87
+sugar,"Sugar, world",price_nominal,$/kg,1995,0.29
+cotton,"Cotton, A Index",price_nominal,$/kg,1995,2.13
+aluminum,Aluminum,price_nominal,$/mt,1995,1806.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1995,28.4
+copper,Copper,price_nominal,$/mt,1995,2936.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1996,20.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1996,2.69
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1996,1.81
+soybeans,Soybeans,price_nominal,$/mt,1996,305.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1996,552.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1996,268.0
+maize,Maize,price_nominal,$/mt,1996,165.8
+orange,Orange,price_nominal,$/kg,1996,0.49
+beef,Beef,price_nominal,$/kg,1996,1.75
+sugar,"Sugar, world",price_nominal,$/kg,1996,0.26
+cotton,"Cotton, A Index",price_nominal,$/kg,1996,1.77
+aluminum,Aluminum,price_nominal,$/mt,1996,1506.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1996,30.0
+copper,Copper,price_nominal,$/mt,1996,2295.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1997,19.2
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1997,4.17
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1997,1.74
+soybeans,Soybeans,price_nominal,$/mt,1997,295.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1997,565.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1997,276.0
+maize,Maize,price_nominal,$/mt,1997,117.1
+orange,Orange,price_nominal,$/kg,1997,0.46
+beef,Beef,price_nominal,$/kg,1997,1.85
+sugar,"Sugar, world",price_nominal,$/kg,1997,0.25
+cotton,"Cotton, A Index",price_nominal,$/kg,1997,1.75
+aluminum,Aluminum,price_nominal,$/mt,1997,1599.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1997,30.2
+copper,Copper,price_nominal,$/mt,1997,2277.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1998,13.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1998,2.98
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1998,1.82
+soybeans,Soybeans,price_nominal,$/mt,1998,243.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1998,626.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1998,170.0
+maize,Maize,price_nominal,$/mt,1998,102.0
+orange,Orange,price_nominal,$/kg,1998,0.44
+beef,Beef,price_nominal,$/kg,1998,1.72
+sugar,"Sugar, world",price_nominal,$/kg,1998,0.2
+cotton,"Cotton, A Index",price_nominal,$/kg,1998,1.44
+aluminum,Aluminum,price_nominal,$/mt,1998,1357.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1998,31.0
+copper,Copper,price_nominal,$/mt,1998,1654.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,1999,18.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,1999,2.29
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,1999,1.49
+soybeans,Soybeans,price_nominal,$/mt,1999,202.0
+soybean_oil,Soybean oil,price_nominal,$/mt,1999,426.0
+soybean_meal,Soybean meal,price_nominal,$/mt,1999,165.0
+maize,Maize,price_nominal,$/mt,1999,90.2
+orange,Orange,price_nominal,$/kg,1999,0.44
+beef,Beef,price_nominal,$/kg,1999,1.81
+sugar,"Sugar, world",price_nominal,$/kg,1999,0.14
+cotton,"Cotton, A Index",price_nominal,$/kg,1999,1.17
+aluminum,Aluminum,price_nominal,$/mt,1999,1361.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,1999,27.6
+copper,Copper,price_nominal,$/mt,1999,1573.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2000,28.2
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2000,1.92
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2000,0.91
+soybeans,Soybeans,price_nominal,$/mt,2000,212.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2000,338.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2000,204.0
+maize,Maize,price_nominal,$/mt,2000,88.5
+orange,Orange,price_nominal,$/kg,2000,0.36
+beef,Beef,price_nominal,$/kg,2000,1.93
+sugar,"Sugar, world",price_nominal,$/kg,2000,0.18
+cotton,"Cotton, A Index",price_nominal,$/kg,2000,1.3
+aluminum,Aluminum,price_nominal,$/mt,2000,1549.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2000,28.8
+copper,Copper,price_nominal,$/mt,2000,1813.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2001,24.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2001,1.37
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2001,0.61
+soybeans,Soybeans,price_nominal,$/mt,2001,196.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2001,353.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2001,205.0
+maize,Maize,price_nominal,$/mt,2001,89.6
+orange,Orange,price_nominal,$/kg,2001,0.6
+beef,Beef,price_nominal,$/kg,2001,2.11
+sugar,"Sugar, world",price_nominal,$/kg,2001,0.19
+cotton,"Cotton, A Index",price_nominal,$/kg,2001,1.06
+aluminum,Aluminum,price_nominal,$/mt,2001,1444.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2001,30.0
+copper,Copper,price_nominal,$/mt,2001,1578.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2002,24.9
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2002,1.36
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2002,0.66
+soybeans,Soybeans,price_nominal,$/mt,2002,213.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2002,462.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2002,196.0
+maize,Maize,price_nominal,$/mt,2002,99.3
+orange,Orange,price_nominal,$/kg,2002,0.56
+beef,Beef,price_nominal,$/kg,2002,2.11
+sugar,"Sugar, world",price_nominal,$/kg,2002,0.15
+cotton,"Cotton, A Index",price_nominal,$/kg,2002,1.02
+aluminum,Aluminum,price_nominal,$/mt,2002,1350.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2002,29.3
+copper,Copper,price_nominal,$/mt,2002,1559.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2003,28.9
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2003,1.42
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2003,0.81
+soybeans,Soybeans,price_nominal,$/mt,2003,264.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2003,559.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2003,233.0
+maize,Maize,price_nominal,$/mt,2003,105.4
+orange,Orange,price_nominal,$/kg,2003,0.68
+beef,Beef,price_nominal,$/kg,2003,2.13
+sugar,"Sugar, world",price_nominal,$/kg,2003,0.16
+cotton,"Cotton, A Index",price_nominal,$/kg,2003,1.4
+aluminum,Aluminum,price_nominal,$/mt,2003,1431.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2003,32.0
+copper,Copper,price_nominal,$/mt,2003,1779.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2004,37.7
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2004,1.77
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2004,0.79
+soybeans,Soybeans,price_nominal,$/mt,2004,307.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2004,618.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2004,260.0
+maize,Maize,price_nominal,$/mt,2004,111.8
+orange,Orange,price_nominal,$/kg,2004,0.86
+beef,Beef,price_nominal,$/kg,2004,2.67
+sugar,"Sugar, world",price_nominal,$/kg,2004,0.16
+cotton,"Cotton, A Index",price_nominal,$/kg,2004,1.37
+aluminum,Aluminum,price_nominal,$/mt,2004,1716.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2004,37.9
+copper,Copper,price_nominal,$/mt,2004,2866.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2005,53.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2005,2.53
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2005,1.11
+soybeans,Soybeans,price_nominal,$/mt,2005,275.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2005,545.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2005,237.0
+maize,Maize,price_nominal,$/mt,2005,98.7
+orange,Orange,price_nominal,$/kg,2005,0.87
+beef,Beef,price_nominal,$/kg,2005,2.73
+sugar,"Sugar, world",price_nominal,$/kg,2005,0.22
+cotton,"Cotton, A Index",price_nominal,$/kg,2005,1.22
+aluminum,Aluminum,price_nominal,$/mt,2005,1898.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2005,65.0
+copper,Copper,price_nominal,$/mt,2005,3679.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2006,64.3
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2006,2.52
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2006,1.49
+soybeans,Soybeans,price_nominal,$/mt,2006,269.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2006,599.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2006,227.0
+maize,Maize,price_nominal,$/mt,2006,121.9
+orange,Orange,price_nominal,$/kg,2006,0.83
+beef,Beef,price_nominal,$/kg,2006,2.65
+sugar,"Sugar, world",price_nominal,$/kg,2006,0.33
+cotton,"Cotton, A Index",price_nominal,$/kg,2006,1.27
+aluminum,Aluminum,price_nominal,$/mt,2006,2570.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2006,69.3
+copper,Copper,price_nominal,$/mt,2006,6722.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2007,71.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2007,2.72
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2007,1.91
+soybeans,Soybeans,price_nominal,$/mt,2007,383.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2007,886.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2007,322.0
+maize,Maize,price_nominal,$/mt,2007,163.7
+orange,Orange,price_nominal,$/kg,2007,0.96
+beef,Beef,price_nominal,$/kg,2007,2.7
+sugar,"Sugar, world",price_nominal,$/kg,2007,0.22
+cotton,"Cotton, A Index",price_nominal,$/kg,2007,1.4
+aluminum,Aluminum,price_nominal,$/mt,2007,2638.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2007,123.0
+copper,Copper,price_nominal,$/mt,2007,7118.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2008,97.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2008,3.08
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2008,2.32
+soybeans,Soybeans,price_nominal,$/mt,2008,522.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2008,1261.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2008,442.0
+maize,Maize,price_nominal,$/mt,2008,223.1
+orange,Orange,price_nominal,$/kg,2008,1.11
+beef,Beef,price_nominal,$/kg,2008,3.24
+sugar,"Sugar, world",price_nominal,$/kg,2008,0.28
+cotton,"Cotton, A Index",price_nominal,$/kg,2008,1.57
+aluminum,Aluminum,price_nominal,$/mt,2008,2573.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2008,156.0
+copper,Copper,price_nominal,$/mt,2008,6956.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2009,61.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2009,3.17
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2009,1.64
+soybeans,Soybeans,price_nominal,$/mt,2009,424.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2009,853.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2009,424.0
+maize,Maize,price_nominal,$/mt,2009,165.5
+orange,Orange,price_nominal,$/kg,2009,0.91
+beef,Beef,price_nominal,$/kg,2009,2.73
+sugar,"Sugar, world",price_nominal,$/kg,2009,0.4
+cotton,"Cotton, A Index",price_nominal,$/kg,2009,1.38
+aluminum,Aluminum,price_nominal,$/mt,2009,1665.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2009,80.0
+copper,Copper,price_nominal,$/mt,2009,5150.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2010,79.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2010,4.32
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2010,1.74
+soybeans,Soybeans,price_nominal,$/mt,2010,447.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2010,1001.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2010,398.0
+maize,Maize,price_nominal,$/mt,2010,185.9
+orange,Orange,price_nominal,$/kg,2010,1.03
+beef,Beef,price_nominal,$/kg,2010,3.42
+sugar,"Sugar, world",price_nominal,$/kg,2010,0.47
+cotton,"Cotton, A Index",price_nominal,$/kg,2010,2.28
+aluminum,Aluminum,price_nominal,$/mt,2010,2173.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2010,145.9
+copper,Copper,price_nominal,$/mt,2010,7535.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2011,104.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2011,5.98
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2011,2.41
+soybeans,Soybeans,price_nominal,$/mt,2011,538.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2011,1298.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2011,409.0
+maize,Maize,price_nominal,$/mt,2011,291.7
+orange,Orange,price_nominal,$/kg,2011,0.89
+beef,Beef,price_nominal,$/kg,2011,4.08
+sugar,"Sugar, world",price_nominal,$/kg,2011,0.57
+cotton,"Cotton, A Index",price_nominal,$/kg,2011,3.33
+aluminum,Aluminum,price_nominal,$/mt,2011,2401.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2011,167.8
+copper,Copper,price_nominal,$/mt,2011,8828.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2012,105.0
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2012,4.11
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2012,2.27
+soybeans,Soybeans,price_nominal,$/mt,2012,596.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2012,1226.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2012,532.0
+maize,Maize,price_nominal,$/mt,2012,298.4
+orange,Orange,price_nominal,$/kg,2012,0.87
+beef,Beef,price_nominal,$/kg,2012,4.21
+sugar,"Sugar, world",price_nominal,$/kg,2012,0.47
+cotton,"Cotton, A Index",price_nominal,$/kg,2012,1.97
+aluminum,Aluminum,price_nominal,$/mt,2012,2023.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2012,128.5
+copper,Copper,price_nominal,$/mt,2012,7962.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2013,104.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2013,3.08
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2013,2.08
+soybeans,Soybeans,price_nominal,$/mt,2013,551.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2013,1055.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2013,543.0
+maize,Maize,price_nominal,$/mt,2013,259.4
+orange,Orange,price_nominal,$/kg,2013,0.97
+beef,Beef,price_nominal,$/kg,2013,4.13
+sugar,"Sugar, world",price_nominal,$/kg,2013,0.39
+cotton,"Cotton, A Index",price_nominal,$/kg,2013,1.99
+aluminum,Aluminum,price_nominal,$/mt,2013,1847.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2013,135.4
+copper,Copper,price_nominal,$/mt,2013,7332.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2014,96.2
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2014,4.42
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2014,2.22
+soybeans,Soybeans,price_nominal,$/mt,2014,485.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2014,906.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2014,522.0
+maize,Maize,price_nominal,$/mt,2014,192.9
+orange,Orange,price_nominal,$/kg,2014,0.78
+beef,Beef,price_nominal,$/kg,2014,5.05
+sugar,"Sugar, world",price_nominal,$/kg,2014,0.37
+cotton,"Cotton, A Index",price_nominal,$/kg,2014,1.83
+aluminum,Aluminum,price_nominal,$/mt,2014,1867.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2014,97.0
+copper,Copper,price_nominal,$/mt,2014,6863.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2015,50.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2015,3.53
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2015,1.94
+soybeans,Soybeans,price_nominal,$/mt,2015,392.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2015,756.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2015,389.0
+maize,Maize,price_nominal,$/mt,2015,169.8
+orange,Orange,price_nominal,$/kg,2015,0.68
+beef,Beef,price_nominal,$/kg,2015,4.56
+sugar,"Sugar, world",price_nominal,$/kg,2015,0.3
+cotton,"Cotton, A Index",price_nominal,$/kg,2015,1.55
+aluminum,Aluminum,price_nominal,$/mt,2015,1665.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2015,55.9
+copper,Copper,price_nominal,$/mt,2015,5510.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2016,42.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2016,3.61
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2016,1.95
+soybeans,Soybeans,price_nominal,$/mt,2016,405.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2016,815.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2016,375.0
+maize,Maize,price_nominal,$/mt,2016,159.2
+orange,Orange,price_nominal,$/kg,2016,0.89
+beef,Beef,price_nominal,$/kg,2016,4.06
+sugar,"Sugar, world",price_nominal,$/kg,2016,0.4
+cotton,"Cotton, A Index",price_nominal,$/kg,2016,1.64
+aluminum,Aluminum,price_nominal,$/mt,2016,1604.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2016,58.4
+copper,Copper,price_nominal,$/mt,2016,4868.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2017,52.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2017,3.32
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2017,2.23
+soybeans,Soybeans,price_nominal,$/mt,2017,393.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2017,850.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2017,350.0
+maize,Maize,price_nominal,$/mt,2017,154.5
+orange,Orange,price_nominal,$/kg,2017,0.81
+beef,Beef,price_nominal,$/kg,2017,4.39
+sugar,"Sugar, world",price_nominal,$/kg,2017,0.35
+cotton,"Cotton, A Index",price_nominal,$/kg,2017,1.84
+aluminum,Aluminum,price_nominal,$/mt,2017,1968.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2017,71.8
+copper,Copper,price_nominal,$/mt,2017,6170.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2018,68.3
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2018,2.93
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2018,1.87
+soybeans,Soybeans,price_nominal,$/mt,2018,394.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2018,789.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2018,405.0
+maize,Maize,price_nominal,$/mt,2018,164.4
+orange,Orange,price_nominal,$/kg,2018,0.79
+beef,Beef,price_nominal,$/kg,2018,4.2
+sugar,"Sugar, world",price_nominal,$/kg,2018,0.28
+cotton,"Cotton, A Index",price_nominal,$/kg,2018,2.01
+aluminum,Aluminum,price_nominal,$/mt,2018,2108.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2018,69.8
+copper,Copper,price_nominal,$/mt,2018,6530.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2019,61.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2019,2.88
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2019,1.62
+soybeans,Soybeans,price_nominal,$/mt,2019,369.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2019,765.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2019,347.0
+maize,Maize,price_nominal,$/mt,2019,170.1
+orange,Orange,price_nominal,$/kg,2019,0.56
+beef,Beef,price_nominal,$/kg,2019,4.76
+sugar,"Sugar, world",price_nominal,$/kg,2019,0.28
+cotton,"Cotton, A Index",price_nominal,$/kg,2019,1.72
+aluminum,Aluminum,price_nominal,$/mt,2019,1794.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2019,93.8
+copper,Copper,price_nominal,$/mt,2019,6010.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2020,41.3
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2020,3.32
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2020,1.52
+soybeans,Soybeans,price_nominal,$/mt,2020,407.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2020,838.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2020,394.0
+maize,Maize,price_nominal,$/mt,2020,165.5
+orange,Orange,price_nominal,$/kg,2020,0.6
+beef,Beef,price_nominal,$/kg,2020,4.67
+sugar,"Sugar, world",price_nominal,$/kg,2020,0.28
+cotton,"Cotton, A Index",price_nominal,$/kg,2020,1.59
+aluminum,Aluminum,price_nominal,$/mt,2020,1704.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2020,108.9
+copper,Copper,price_nominal,$/mt,2020,6174.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2021,69.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2021,4.51
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2021,1.98
+soybeans,Soybeans,price_nominal,$/mt,2021,583.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2021,1385.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2021,481.0
+maize,Maize,price_nominal,$/mt,2021,259.5
+orange,Orange,price_nominal,$/kg,2021,0.65
+beef,Beef,price_nominal,$/kg,2021,5.34
+sugar,"Sugar, world",price_nominal,$/kg,2021,0.39
+cotton,"Cotton, A Index",price_nominal,$/kg,2021,2.23
+aluminum,Aluminum,price_nominal,$/mt,2021,2473.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2021,161.7
+copper,Copper,price_nominal,$/mt,2021,9317.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2022,97.1
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2022,5.63
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2022,2.29
+soybeans,Soybeans,price_nominal,$/mt,2022,675.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2022,1667.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2022,548.0
+maize,Maize,price_nominal,$/mt,2022,318.8
+orange,Orange,price_nominal,$/kg,2022,0.92
+beef,Beef,price_nominal,$/kg,2022,5.62
+sugar,"Sugar, world",price_nominal,$/kg,2022,0.41
+cotton,"Cotton, A Index",price_nominal,$/kg,2022,2.86
+aluminum,Aluminum,price_nominal,$/mt,2022,2705.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2022,121.3
+copper,Copper,price_nominal,$/mt,2022,8822.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2023,80.8
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2023,4.54
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2023,2.63
+soybeans,Soybeans,price_nominal,$/mt,2023,598.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2023,1119.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2023,541.0
+maize,Maize,price_nominal,$/mt,2023,252.7
+orange,Orange,price_nominal,$/kg,2023,1.57
+beef,Beef,price_nominal,$/kg,2023,4.9
+sugar,"Sugar, world",price_nominal,$/kg,2023,0.52
+cotton,"Cotton, A Index",price_nominal,$/kg,2023,2.09
+aluminum,Aluminum,price_nominal,$/mt,2023,2256.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2023,120.6
+copper,Copper,price_nominal,$/mt,2023,8490.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2024,78.7
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2024,5.62
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2024,4.41
+soybeans,Soybeans,price_nominal,$/mt,2024,462.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2024,1022.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2024,442.0
+maize,Maize,price_nominal,$/mt,2024,190.6
+orange,Orange,price_nominal,$/kg,2024,2.26
+beef,Beef,price_nominal,$/kg,2024,5.93
+sugar,"Sugar, world",price_nominal,$/kg,2024,0.45
+cotton,"Cotton, A Index",price_nominal,$/kg,2024,1.91
+aluminum,Aluminum,price_nominal,$/mt,2024,2419.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2024,109.4
+copper,Copper,price_nominal,$/mt,2024,9142.0
+crude_oil,"Crude oil, average",price_nominal,$/bbl,2025,67.4
+coffee_arabica,"Coffee, Arabica",price_nominal,$/kg,2025,8.47
+coffee_robusta,"Coffee, Robusta",price_nominal,$/kg,2025,4.86
+soybeans,Soybeans,price_nominal,$/mt,2025,414.0
+soybean_oil,Soybean oil,price_nominal,$/mt,2025,1140.0
+soybean_meal,Soybean meal,price_nominal,$/mt,2025,366.0
+maize,Maize,price_nominal,$/mt,2025,203.2
+orange,Orange,price_nominal,$/kg,2025,1.42
+beef,Beef,price_nominal,$/kg,2025,6.86
+sugar,"Sugar, world",price_nominal,$/kg,2025,0.37
+cotton,"Cotton, A Index",price_nominal,$/kg,2025,1.71
+aluminum,Aluminum,price_nominal,$/mt,2025,2632.0
+iron_ore,"Iron ore, cfr spot",price_nominal,$/dmtu,2025,100.2
+copper,Copper,price_nominal,$/mt,2025,9947.0

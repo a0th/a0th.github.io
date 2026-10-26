@@ -66,6 +66,31 @@ const rankPost = rankOf(clubPost, "BRA");
 const wavePost = growthAt(d.pppWaveRel, 2010, lastYear);
 const wavePostMean = meanExceptBra(wavePost);
 const waveBoomMean = meanExceptBra(d.waveBoom);
+const waveDilmaMean = meanExceptBra(d.waveDilma);
+const rankDilma = rankOf(d.waveDilma, "BRA");
+const totBoomPct =
+  d.totBra05 != null && d.totBra11 != null
+    ? (100 * (d.totBra11 - d.totBra05)) / d.totBra05
+    : undefined;
+const totBustPct =
+  d.totBra11 != null && d.totBra16 != null
+    ? (100 * (d.totBra16 - d.totBra11)) / d.totBra11
+    : undefined;
+const tfp10 = at(d.tfp90rel, "BRA", 2010);
+const tfp16 = at(d.tfp90rel, "BRA", 2016);
+const braTfpDilma =
+  tfp10 != null && tfp16 != null ? (100 * (tfp16 - tfp10)) / tfp10 : undefined;
+
+function meanYears(rows, iso, y0, y1) {
+  const list = rows.filter(
+    (row) => row.iso === iso && row.year >= y0 && row.year <= y1 && Number.isFinite(row.value),
+  );
+  return list.length ? list.reduce((sum, row) => sum + row.value, 0) / list.length : undefined;
+}
+
+const braPrimaryLula = meanYears(d.primaryWave, "BRA", 2003, 2010);
+const braPrimaryDilma = meanYears(d.primaryWave, "BRA", 2011, 2014);
+const braPrimary14 = at(d.primaryWave, "BRA", 2014);
 
 const clubLast = (rows) => d.club90.map((iso) => ({ iso, value: last(rows, iso)?.value }));
 const rankProd = rankOf(clubLast(d.prod90rel), "BRA");
@@ -210,7 +235,7 @@ Na maioria dos indicadores, menos. O Brasil recebeu as melhoras que apareceram e
 
 É isso que chamamos de inércia: o Brasil andou porque o mundo andou.
 
-Inércia descreve o resultado. Não é um veredito sobre governos. A comparação entre países mostra quem chegou mais longe; ela não mede o efeito de cada política. Quando um número admite mais de uma leitura, o texto mostra as duas.
+Inércia descreve o resultado. A comparação entre países mostra quem chegou mais longe; ela não mede, sozinha, o efeito de cada política. Uma seção mais abaixo trata dos governos do PT no boom: o que os números rejeitam, e o que a literatura econômica conclui. Quando um número admite mais de uma leitura, o texto mostra as duas.
 
 ```js
 html`<div class="lede-grid">
@@ -316,6 +341,54 @@ Quando o vento externo parou, a diferença ficou visível. Entre 2010 e ${lastYe
 ${resize((width) => metricPlot(fromZero(d.pppWaveRel), {width, yLabel: "variação da renda per capita desde 1990 (%)", yRules: [0], rules: [2003, 2010], colorful: true}))}
 
 O mesmo padrão aparece no grupo inteiro de ${pares("pares")}: depois de 2010, o Brasil cresceu ${d.fmtPct(braPost)} e a média dos pares cresceu ${d.fmtPct(clubPostMean)}. É a ${rankPost.pos}ª posição entre ${rankPost.n}.
+
+## O PT coincidiu com o boom. Não o produziu
+
+Lula toma posse em 2003. Os sete anos de alta da renda coincidem com os dois mandatos dele. Essa coincidência virou atribuição: o crescimento teria sido obra do primeiro governo.
+
+Os números não sustentam isso. Eles também não sustentam o inverso — que o governo tenha puxado o PIB para baixo. O que aparece é mais estreito: o choque veio de fora, o Brasil cresceu, e cresceu menos do que os pares que pegaram o mesmo vento.
+
+### O choque era o preço do que o Brasil vende
+
+Termos de troca medem o preço das exportações dividido pelo preço das importações. Quando minério, soja e petróleo sobem, o índice sobe. O governo não controla esse preço.
+
+Entre 2005 e 2011 — a série brasileira começa em 2005 — os termos de troca do Brasil subiram ${d.fmtPct(totBoomPct)}. Chile, Peru e Colômbia viram o mesmo movimento, ou um movimento maior.
+
+${resize((width) => metricPlot(fromZero(d.totWaveRel), {width, yLabel: "variação dos termos de troca desde 2005 (%)", yRules: [0], rules: [2011], colorful: true}))}
+
+Quem exportava commodities ficou mais rico sem precisar de uma política nova. A renda per capita brasileira subiu ${d.fmtPct(d.waveBraBoom)} entre 2003 e 2010. Na média dos outros sete exportadores, subiu ${d.fmtPct(waveBoomMean)}. Só a ${d.waveBeatenBoom} avançou menos.
+
+<div class="takeaway">
+  <strong>O PIB subiu. A atribuição ao primeiro governo Lula não fecha.</strong>
+  <span>O tripé macroeconômico — metas de inflação, câmbio flutuante, superávit primário — veio de FHC e foi mantido. Sem âncora, o mesmo boom podia ter virado inflação. O que os dados rejeitam é outra tese: que a eleição de 2002 tenha causado o salto da renda.</span>
+</div>
+
+Carrasco, Duarte e de Mello (2014) chamaram 2003–2012 de “década perdida” exatamente por esse critério: o Brasil avançou, mas menos do que o choque externo permitia — menos investimento, menos poupança, menos competitividade. Jung e Kwon (2025) tentaram separar política de circunstância com controle sintético e concluíram que o desempenho se explica pelo ambiente externo; a política doméstica não aparece como motor. Jesus (2024), com o mesmo método sobre os governos do PT, não encontra evidência forte de efeito negativo sobre a renda per capita.
+
+Duas ressalvas. Primeira: “não causou o boom” não é “não fez nada”. Pobreza e desigualdade recuaram, e essa é a parte social que este relatório já mostrou. Segunda: o grupo certo para essa frase é o dos exportadores. Contra o mundo rico, o Brasil cresceu mais. Contra a América Latina inteira, o resultado depende de quem entra na média — México e América Central não pegaram o mesmo choque.
+
+### Dilma: o vento virou, e a política também
+
+Dilma herda o boom no pico. Os termos de troca caem ${d.fmtPct(-totBustPct)} entre 2011 e 2016. Esse choque foi comum. A resposta não foi.
+
+Entre 2010 e 2016, a renda per capita caiu ${d.fmtPct(-d.waveDilmaBra)} no Brasil. Na média dos outros sete exportadores, subiu ${d.fmtPct(waveDilmaMean)}. É a ${rankDilma.pos}ª posição entre ${rankDilma.n}. Só a Argentina também recuou.
+
+${resize((width) => barDelta(d.waveDilma, {width, xLabel: "variação 2010–2016 (%)"}))}
+
+A eficiência estimada caiu junto: a TFP brasileira recuou ${d.fmtPct(-braTfpDilma)} entre 2010 e 2016.
+
+O superávit primário — receita menos despesa, sem juros — ficou em média ${d.fmtPct(braPrimaryLula)} do PIB em 2003–2010. Em 2011–2014 a média caiu para ${d.fmtPct(braPrimaryDilma)}. Em 2014 o resultado virou déficit (${d.fmtPct(-braPrimary14)} do PIB). A dívida bruta saiu de ${d.fmtPct(d.braDebt11)} do PIB em 2011 para ${d.fmtPct(d.braDebt16)} em 2016. A trajetória completa da dívida, os juros e o debate sobre o salário mínimo estão na página [Dívida, previdência e salário mínimo](./divida).
+
+${resize((width) => metricPlot(d.primaryWave.filter((row) => row.year >= 2000 && row.year <= 2018), {width, yLabel: "resultado primário (% do PIB)", yRules: [0], rules: [2003, 2011], colorful: true}))}
+
+A literatura econômica mainstream trata esse conjunto — juro incompatível com a meta, controle de preços, desonerações, crédito dirigido, contabilidade criativa — como Nova Matriz Econômica. Não é só política fiscal. Barbosa Filho e Pessôa (2014, 2015) e Barbosa Filho (2017) leem a NME como choque de oferta: a eficiência caiu, e o produto potencial também. Leal e Nakane (2024) encontram o mesmo padrão com outra técnica: o que explica 2014–16 é um desvio de eficiência, não o gasto do governo como motor do ciclo.
+
+A recessão teve mais de uma causa. O fim do superciclo, a Lava Jato e o colapso do investimento da Petrobras também pesaram. E há um campo heterodoxo — Serrano e Summa (2015) — que lê o freio de 2011 e o ajuste de 2015 como origem da desaceleração. Os gráficos não resolvem essa disputa. Eles mostram o que não é disputado: depois de 2010 o Brasil parou, e os pares que pegaram o mesmo vento externo não pararam.
+
+<div class="takeaway">
+  <strong>A NME piorou oferta e âncoras. A contração não tem uma causa só.</strong>
+  <span>A política econômica de Dilma é peça central no diagnóstico mainstream. Dizer que “a política fiscal foi a responsável” aperta demais o que a literatura sustenta.</span>
+</div>
 
 ## Depois de 2010, o motor parou
 
@@ -447,19 +520,19 @@ No teste de 2022, o Brasil marcou ${d.fmtIdx(d.braPisa)} pontos em matemática. 
   <span>Desde 2003, o Brasil ganhou ${d.fmtIdx(pisaBraGain)} pontos em matemática e a média da OCDE perdeu ${d.fmtIdx(pisaOecdDrop)}. A diferença caiu de ${d.fmtIdx(pisaGap03)} para ${d.fmtIdx(pisaGapNow)} pontos. Mais da metade dessa aproximação veio do outro lado.</span>
 </div>
 
-O avanço brasileiro também parou cedo. A nota subiu de ${d.fmtIdx(pisaBra03)} em 2003 para ${d.fmtIdx(pisaBra12)} em 2012 e não avançou desde então. É o retrato mais nítido da inércia em todo o relatório: o indicador melhorou, mas o ganho relativo veio do desempenho pior dos outros.
+O avanço brasileiro também parou cedo. A nota subiu de ${d.fmtIdx(pisaBra03)} em 2003 para ${d.fmtIdx(pisaBra12)} em 2012 e, até 2022, devolveu ${d.fmtIdx(pisaBra12 - d.braPisa)} pontos. É o retrato mais nítido da inércia em todo o relatório: o indicador melhorou, mas o ganho relativo veio do desempenho pior dos outros.
 
 ${resize((width) => metricPlot(d.pisa90, {width, yLabel: "PISA matemática", markRefs: true, format: d.fmtIdx}))}
 
 ### O Brasil gasta pouco ou gasta mal?
 
-As duas coisas ao mesmo tempo, e é preciso separar.
+A pergunta mistura duas coisas. Como fatia do PIB, o Brasil não gasta pouco. Por aluno, fica perto da Polônia e abaixo da Coreia.
 
 Como fatia do PIB, o gasto brasileiro em educação é ${d.fmtPct(d.eduBra?.value)}, praticamente igual ao da Coreia (${d.fmtPct(d.eduKor?.value)}). Mas essa fatia não é gasto por aluno: o Brasil tem proporcionalmente mais crianças e jovens em idade escolar, então o mesmo percentual se divide entre mais gente.
 
-Por aluno do ensino médio, o gasto público brasileiro foi ${d.fmtPct(d.pupilBra?.value)} da renda per capita em ${d.pupilBra?.year} — abaixo da Polônia, ${d.fmtPct(d.pupilPol?.value)} em ${d.pupilPol?.year}, e bem abaixo da Coreia, ${d.fmtPct(d.pupilKor?.value)} em ${d.pupilKor?.year}. Em dinheiro a distância é ainda maior, porque a renda per capita coreana é cerca de ${(korPppNow / braPppNow).toLocaleString("pt-BR", {maximumFractionDigits: 1})} vezes a brasileira. Essa série tem falhas e termina antes do PISA de 2022.
+Por aluno do ensino médio, o gasto público brasileiro foi ${d.fmtPct(d.pupilBra?.value)} da renda per capita em ${d.pupilBra?.year}. A Polônia gastou ${d.fmtPct(d.pupilPol?.value)} em ${d.pupilPol?.year}, e a Coreia ${d.fmtPct(d.pupilKor?.value)} em ${d.pupilKor?.year}. Em dinheiro, a distância para a Coreia é maior, porque a renda per capita coreana é cerca de ${(korPppNow / braPppNow).toLocaleString("pt-BR", {maximumFractionDigits: 1})} vezes a brasileira. Essa série tem falhas e termina antes do PISA de 2022.
 
-Ou seja: dizer que o Brasil “gasta muito e aprende pouco” é impreciso. O que os dados mostram é mais específico. Com esforço orçamentário parecido com o da Polônia, por aluno e como fatia do PIB, o Brasil fica ${d.fmtIdx(d.polPisa - d.braPisa)} pontos atrás dela em matemática.
+Ou seja: dizer que o Brasil “gasta muito e aprende pouco” acerta o aprendizado e erra o gasto. A fatia do PIB é parecida com a da Coreia e maior que a da Polônia. Por aluno, o Brasil fica perto da Polônia. Mesmo assim, fica ${d.fmtIdx(d.polPisa - d.braPisa)} pontos atrás dela em matemática.
 
 Nos gráficos abaixo, cada ponto é um país. A linha tracejada é a média da OCDE.
 
@@ -467,13 +540,15 @@ ${resize((width) => spendPisaPlot(d.spendPisa, {width, oecd: d.oecdPisa}))}
 
 ${resize((width) => spendPisaPlot(d.spendPisaPupil, {width, oecd: d.oecdPisa, xLabel: "% da renda per capita, por aluno", unit: "% renda per capita por aluno"}))}
 
+Leitura, ciências e a variação de cada par estão na página [Educação](./educacao).
+
 ## O que isso quer dizer
 
 Contra o próprio passado, o Brasil melhorou em quase tudo. Contra quem partiu do mesmo lugar, quase sempre ficou para trás.
 
 O padrão se repete indicador por indicador. Onde a melhora foi geral no mundo — menos fome, menos pobreza —, o Brasil melhorou junto, no ritmo dos outros. Onde a melhora exigia construir algo internamente — produtividade, eficiência, investimento, integração comercial, aprendizado —, o Brasil não construiu.
 
-Entre esses dois blocos está o boom das commodities. Ele concentrou ${d.fmtPct(boomShare)} do ganho de renda per capita de três décadas em sete anos, e passou. Depois de 2010, a renda quase parou e a produção por trabalhador subiu ${d.fmtPct(braProdPost)} em catorze anos.
+Entre esses dois blocos está o boom das commodities. Ele concentrou ${d.fmtPct(boomShare)} do ganho de renda per capita de três décadas em sete anos, e passou. Coincidiu com os governos do PT. Os dados e a literatura não permitem atribuir o salto ao primeiro governo Lula, nem reduzir a recessão seguinte a um único instrumento fiscal. Depois de 2010, a renda quase parou e a produção por trabalhador subiu ${d.fmtPct(braProdPost)} em catorze anos.
 
 A desigualdade é a exceção parcial, e vale reconhecê-la: a queda do Gini foi das maiores do grupo. Mas o nível continua entre os mais altos, então o Brasil melhorou rápido em um indicador em que estava muito mal.
 
@@ -520,12 +595,17 @@ html`<div class="score-wrap">
 </div>`
 ```
 
+Páginas complementares: [Educação](./educacao) · [Dívida, previdência e salário mínimo](./divida) · [Segurança pública](./seguranca) · [Eleições: onde o PT tem voto](./eleicoes) · [Ensino superior: irrelevante?](./ensino-superior).
+
 ## Limites deste relatório
 
 - O grupo de comparação foi montado apenas pela renda de 1990. Ele ignora tamanho, geografia, população e instituições.
 - Todas as médias de grupo são simples: um país, um voto.
 - As pesquisas de pobreza e desigualdade ocorrem em anos diferentes em cada país. As comparações usam o dado mais recente de cada um, ou médias de janelas de cinco anos.
 - TFP é uma estimativa com margem de erro. Qualidade regulatória é uma medida de percepção. Nenhuma das duas deve ser lida ao pé da letra em um ano isolado.
-- Nada aqui identifica causas nem avalia governos. O relatório compara resultados entre países.
+- Os gráficos não identificam causas. A seção sobre o PT resume o que a literatura econômica conclui; os números mostram coincidência de datas e desempenho relativo, não um experimento.
+- Termos de troca do Brasil começam em 2005. Resultado primário e dívida vêm do FMI (WEO / GFS).
 
-Fontes: World Bank WDI e WGI · Penn World Table 11 via Our World in Data · FAO · OECD PISA 2022. PPP ajusta as diferenças de preços entre países. As séries sociais seguem os anos disponíveis de cada pesquisa.
+Fontes: World Bank WDI e WGI · Penn World Table 11 via Our World in Data · FAO · OECD PISA 2022 · IMF WEO. PPP ajusta as diferenças de preços entre países. As séries sociais seguem os anos disponíveis de cada pesquisa.
+
+Sobre o PT no boom: Carrasco, Duarte e de Mello, *A Década Perdida: 2003–2012* (PUC-Rio, 2014) · Barbosa Filho e Pessôa, *Desaceleração veio da Nova Matriz e não do Contrato Social* (Ensaios IBRE, 2015) · Barbosa Filho, *A crise econômica de 2014/2017* (*Estudos Avançados*, 2017) · Leal e Nakane, *Brazilian economy in the 2000s: A tale of two recessions* (*Latin American Journal of Central Banking*, 2024) · Jung e Kwon, *Policy or Circumstances?* (*Economies*, 2025) · Jesus, *Workers’ Party Governments in Brazil and Macroeconomic Performance* (*Revista de Economia Mackenzie*, 2024) · Serrano e Summa, *Aggregate Demand and the Slowdown of Brazilian Economic Growth from 2011–2014* (CEPR, 2015).

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Ensino superior: irrelevante? | brviz</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.6b7d96d6.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.6b7d96d6.css">
+<link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
+<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
+<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/c662ea05.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/d162d8c6.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/5cedd0be.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/65d51007.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/c576a91a.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/8b43826d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/3fb06f14.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/20b76948.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/8683b012.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/5c319046.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/33924f3e.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/8d67a1ae.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/8037bd0b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/a9ba0229.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/e0a47f97.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/f9e9e0ab.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/2da8eb3b.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/09002e01.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/5108797c.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/c9f2571b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/f3c78e0d.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/28717d05.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/7c6e2a50.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3d1d57c6.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/643581a8.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/e99232db.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/bd07fd9a.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/d09f7cc9.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/f53f17b2.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/af036d7e.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/7b06abe7.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/5f640032.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
+<script>document.querySelector('meta[name="viewport"]')?.setAttribute("content","width=device-width, initial-scale=1")</script>
+<script type="module">
+const TOC_CLASS = "brviz-toc";
+
+let observer;
+
+function closeSidebar() {
+  const toggle = document.querySelector("#observablehq-sidebar-toggle");
+  if (toggle) {
+    toggle.checked = false;
+    toggle.indeterminate = false;
+  }
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (sidebar?.contains(document.activeElement)) document.activeElement.blur();
+}
+
+function mountTocSidebar() {
+  const toc = document.querySelector("#observablehq-toc nav");
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (!toc || !sidebar) return;
+
+  observer?.disconnect();
+  sidebar.querySelector(`.${TOC_CLASS}`)?.remove();
+
+  const section = document.createElement("section");
+  section.className = TOC_CLASS;
+  const title = document.createElement("div");
+  title.textContent = toc.querySelector("div")?.textContent ?? "Nesta página";
+  const ol = document.createElement("ol");
+  for (const a of toc.querySelectorAll("ol a")) {
+    const li = document.createElement("li");
+    li.className = "observablehq-link";
+    const link = a.cloneNode(true);
+    li.append(link);
+    ol.append(li);
+  }
+  section.append(title, ol);
+  sidebar.append(section);
+
+  ol.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) return;
+    queueMicrotask(closeSidebar);
+  });
+
+  const sync = () => {
+    const href = toc.querySelector(".observablehq-secondary-link-active a")?.getAttribute("href");
+    for (const li of ol.querySelectorAll("li")) {
+      li.classList.toggle(
+        "observablehq-link-active",
+        li.querySelector("a")?.getAttribute("href") === href,
+      );
+    }
+  };
+  observer = new MutationObserver(sync);
+  observer.observe(toc, { subtree: true, attributes: true, attributeFilter: ["class"] });
+  sync();
+}
+
+mountTocSidebar();
+</script>
+<script type="module">
+
+import {define} from "./_observablehq/client.a97643eb.js";
+import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
+
+registerFile("./data/openalex.csv", {"name":"./data/openalex.csv","mimeType":"text/csv","path":"./_file/data/openalex.e69be4da.csv","lastModified":1793050873354,"size":97343});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
+registerFile("./data/uis.csv", {"name":"./data/uis.csv","mimeType":"text/csv","path":"./_file/data/uis.9d2a8f7b.csv","lastModified":1793050873193,"size":303978});
+registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
+
+define({id: "dadb88c6", inputs: ["FileAttachment","getComputedStyle","d3","Plot","html"], outputs: ["load","series","last","NAMES","barDelta","wdi","pisa","uis","oa","d","club","MIN_YEAR","OA_FROM","OA_TO","fmt0","fmt1","fmt2","pct1","usd","nm","listPt","braColor","recent","bars","rankOf","rankTxt","peersAbove","peersBelow","pop","popAt","perMillion","patents","articles","rnd","researchers","patentBars","patentRank","patentBra","patentOf","rndBars","rndRank","rndBra","researchersBra","articleBars","articleRank","articleBra","articleRawBra","oaWindow","oaSum","oaGet","oaShare","oaIsos","topCore","topAll","coreShare","uncitedCore","val","topCoreRank","topAllRank","coreShareRank","coreShareLow","braAll","braCore","worldAll","oaYears","oaYear","yearShare","gapRows","gapAt","gapBest","lastYearRank","fmtPp","gapPlot","tertGdp","eduGdp","tertBars","tertRank","tertBra","tertMedian","eduBars","eduRank","eduBra","OECD_PER_STUDENT","ratioBra","ratioOecd","INAF_LEVELS","INAF","inafPlot","EVASAO","lede","verdict"], body: async (FileAttachment,getComputedStyle,d3,Plot,html) => {
+const [{load, series, last, NAMES}, {barDelta}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
+
+const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
+const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });
+const uis = await FileAttachment("./data/uis.csv").csv({ typed: true });
+const oa = await FileAttachment("./data/openalex.csv").csv({ typed: true });
+const d = load(wdi, pisa);
+
+const club = d.club90.filter((iso) => !["UMC", "LCN"].includes(iso));
+const MIN_YEAR = 2018;
+const OA_FROM = 2015;
+const OA_TO = 2022;
+
+const fmt0 = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }));
+const fmt1 = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 1, minimumFractionDigits: 1 }));
+const fmt2 = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 2, minimumFractionDigits: 2 }));
+const pct1 = (x) => `${fmt1(x)}%`;
+const usd = (x) => `US$ ${fmt0(x)}`;
+const nm = (iso) => (iso === "WORLD" ? "Mundo" : NAMES[iso] ?? iso);
+const listPt = (names) => (names.length <= 1 ? names.join("") : `${names.slice(0, -1).join(", ")} e ${names.at(-1)}`);
+const braColor = () => getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
+
+function recent(rows, iso) {
+  const row = last(rows, iso);
+  return row && row.year >= MIN_YEAR ? row : undefined;
+}
+
+function bars(valueOf, isos) {
+  return isos
+    .map((iso) => {
+      const v = valueOf(iso);
+      if (v == null || !Number.isFinite(v.value ?? v)) return;
+      const value = v.value ?? v;
+      return { iso, name: nm(iso), value, year: v.year, tone: iso === "BRA" ? "bra" : iso === "WORLD" ? "group" : "peer" };
+    })
+    .filter((r) => r);
+}
+
+function rankOf(rows, iso = "BRA") {
+  const sorted = rows.filter((r) => r.tone !== "group").sort((a, b) => b.value - a.value);
+  return { pos: sorted.findIndex((r) => r.iso === iso) + 1, n: sorted.length };
+}
+const rankTxt = ({ pos, n }) => `${pos}º de ${n}`;
+const peersAbove = (rows) => {
+  const bra = rows.find((r) => r.iso === "BRA").value;
+  return rows.filter((r) => r.tone === "peer" && r.value > bra).sort((a, b) => b.value - a.value).map((r) => r.name);
+};
+const peersBelow = (rows) => {
+  const bra = rows.find((r) => r.iso === "BRA").value;
+  return rows.filter((r) => r.tone === "peer" && r.value < bra).sort((a, b) => b.value - a.value).map((r) => r.name);
+};
+
+// --- patentes, P&D, pesquisadores, artigos (Banco Mundial)
+const pop = series("pop", wdi);
+const popAt = (iso, year) => pop.find((r) => r.iso === iso && r.year === year)?.value;
+function perMillion(metric) {
+  return series(metric, wdi)
+    .map((r) => ({ ...r, value: popAt(r.iso, r.year) ? (r.value / popAt(r.iso, r.year)) * 1e6 : undefined }))
+    .filter((r) => Number.isFinite(r.value));
+}
+const patents = perMillion("patents_res");
+const articles = perMillion("sci_articles");
+const rnd = series("rnd", wdi);
+const researchers = series("researchers", wdi);
+
+const patentBars = bars((iso) => recent(patents, iso), club);
+const patentRank = rankOf(patentBars);
+const patentBra = patentBars.find((r) => r.iso === "BRA");
+const patentOf = (iso) => patentBars.find((r) => r.iso === iso)?.value;
+const rndBars = bars((iso) => recent(rnd, iso), club);
+const rndRank = rankOf(rndBars);
+const rndBra = rndBars.find((r) => r.iso === "BRA");
+const researchersBra = last(researchers, "BRA");
+const articleBars = bars((iso) => recent(articles, iso), club);
+const articleRank = rankOf(articleBars);
+const articleBra = articleBars.find((r) => r.iso === "BRA");
+const articleRawBra = last(series("sci_articles", wdi), "BRA");
+
+// --- citações (OpenAlex)
+const oaWindow = oa.filter((r) => r.year >= OA_FROM && r.year <= OA_TO);
+const oaSum = d3.rollup(oaWindow, (v) => d3.sum(v, (r) => r.value), (r) => r.metric, (r) => r.iso);
+const oaGet = (m, iso) => oaSum.get(m)?.get(iso);
+const oaShare = (num, den) => (iso) => {
+  const a = oaGet(num, iso);
+  const b = oaGet(den, iso);
+  return a != null && b ? (100 * a) / b : undefined;
+};
+const oaIsos = [...club, "WORLD"];
+const topCore = bars(oaShare("oa_core_top10", "oa_core_articles"), oaIsos);
+const topAll = bars(oaShare("oa_all_top10", "oa_all_articles"), oaIsos);
+const coreShare = bars(oaShare("oa_core_articles", "oa_all_articles"), oaIsos);
+const uncitedCore = bars(oaShare("oa_core_uncited", "oa_core_articles"), oaIsos);
+const val = (rows, iso) => rows.find((r) => r.iso === iso)?.value;
+const topCoreRank = rankOf(topCore);
+const topAllRank = rankOf(topAll);
+const coreShareRank = rankOf(coreShare);
+const coreShareLow = coreShareRank.n - coreShareRank.pos + 1;
+const braAll = oaGet("oa_all_articles", "BRA");
+const braCore = oaGet("oa_core_articles", "BRA");
+const worldAll = oaGet("oa_all_articles", "WORLD");
+
+const oaYears = d3.range(OA_FROM - 10, OA_TO + 1);
+const oaYear = d3.rollup(oa, (v) => v[0].value, (r) => r.metric, (r) => r.iso, (r) => r.year);
+const yearShare = (iso, year) => {
+  const a = oaYear.get("oa_core_top10")?.get(iso)?.get(year);
+  const b = oaYear.get("oa_core_articles")?.get(iso)?.get(year);
+  return a != null && b ? (100 * a) / b : undefined;
+};
+const gapRows = oaYears.flatMap((year) => {
+  const world = yearShare("WORLD", year);
+  if (!Number.isFinite(world)) return [];
+  const peers = club.filter((iso) => iso !== "BRA").map((iso) => yearShare(iso, year)).filter(Number.isFinite);
+  return [
+    { year, line: "Brasil", value: yearShare("BRA", year) - world },
+    { year, line: "Mediana dos pares", value: peers.length ? d3.median(peers) - world : undefined },
+  ].filter((r) => Number.isFinite(r.value));
+});
+const gapAt = (year) => gapRows.find((r) => r.year === year && r.line === "Brasil")?.value;
+const gapBest = d3.greatest(gapRows.filter((r) => r.line === "Brasil"), (r) => r.value);
+const lastYearRank = rankOf(bars((iso) => yearShare(iso, OA_TO), club));
+const fmtPp = (x) => `${x > 0 ? "+" : x < 0 ? "−" : ""}${fmt1(Math.abs(x))} p.p.`;
+
+function gapPlot(width) {
+  const BRA = braColor();
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(260, Math.min(360, width * 0.6))),
+    marginLeft: 44,
+    x: { label: null, tickFormat: "d" },
+    y: { label: "diferença para o mundo (pontos percentuais)", grid: true },
+    color: { legend: true, domain: ["Brasil", "Mediana dos pares"], range: [BRA, "#6ba8d4"] },
+    marks: [
+      Plot.ruleY([0], { stroke: "#94a3b8", strokeDasharray: "4,3" }),
+      Plot.lineY(gapRows, { x: "year", y: "value", stroke: "line", strokeWidth: 2.2 }),
+      Plot.dot(gapRows, { x: "year", y: "value", fill: "line", r: 3, tip: true, title: (r) => `${r.line}, ${r.year}: ${fmtPp(r.value)}` }),
+    ],
+  });
+}
+
+// --- gasto (UNESCO)
+const tertGdp = series("uis_tert_gdp", uis);
+const eduGdp = series("uis_edu_gdp", uis);
+const tertBars = bars((iso) => recent(tertGdp, iso), club);
+const tertRank = rankOf(tertBars);
+const tertBra = tertBars.find((r) => r.iso === "BRA");
+const tertMedian = d3.median(tertBars.filter((r) => r.iso !== "BRA"), (r) => r.value);
+const eduBars = bars((iso) => recent(eduGdp, iso), club);
+const eduRank = rankOf(eduBars);
+const eduBra = eduBars.find((r) => r.iso === "BRA");
+
+const OECD_PER_STUDENT = [
+  { iso: "BRA", name: "Brasil, anos iniciais do fundamental", value: 3668, tone: "bra" },
+  { iso: "BRA", name: "Brasil, superior", value: 13569, tone: "bra" },
+  { iso: "OECD", name: "OCDE, anos iniciais do fundamental", value: 11914, tone: "group" },
+  { iso: "OECD", name: "OCDE, superior", value: 17138, tone: "group" },
+];
+const ratioBra = 13569 / 3668;
+const ratioOecd = 17138 / 11914;
+
+// --- alfabetismo funcional (INAF 2024)
+const INAF_LEVELS = ["Analfabeto", "Rudimentar", "Elementar", "Intermediário", "Proficiente"];
+const INAF = [
+  ["População de 15 a 64 anos", [7, 22, 36, 25, 10]],
+  ["Com superior completo ou mais", [1, 11, 27, 38, 24]],
+].flatMap(([group, values]) => values.map((value, i) => ({ group, level: INAF_LEVELS[i], value })));
+
+function inafPlot(width) {
+  return Plot.plot({
+    width,
+    height: 150,
+    marginLeft: Math.min(220, Math.max(130, width * 0.3)),
+    x: { label: "% das pessoas", domain: [0, 100] },
+    y: { label: null, domain: ["Com superior completo ou mais", "População de 15 a 64 anos"] },
+    color: { legend: true, domain: INAF_LEVELS, range: ["#b91c1c", "#f87171", "#cbd5e1", "#93c5fd", "#1e3a8a"] },
+    marks: [
+      Plot.barX(INAF, Plot.stackX({ y: "group", x: "value", fill: "level", order: INAF_LEVELS, tip: true, title: (r) => `${r.group}\n${r.level}: ${r.value}%` })),
+      Plot.text(INAF, Plot.stackX({ y: "group", x: "value", z: "level", order: INAF_LEVELS, text: (r) => (r.value >= 6 ? `${r.value}%` : ""), fill: "white" })),
+    ],
+  });
+}
+
+// --- evasão (INEP 2024)
+const EVASAO = [
+  { iso: "BRA", name: "Sistema inteiro", value: 17.5, tone: "bra" },
+  { iso: "x1", name: "Presencial", value: 9.5, tone: "peer" },
+  { iso: "x2", name: "A distância (EaD)", value: 24.1, tone: "peer" },
+  { iso: "x3", name: "Rede pública", value: 8.0, tone: "group" },
+  { iso: "x4", name: "Rede privada", value: 19.9, tone: "group" },
+];
+
+function lede(kicker, title, value, neg = false) {
+  return html`<div class="lede">
+    <div class="lede-kicker">${kicker}</div>
+    <div class="lede-title">${title}</div>
+    <div class="lede-big ${neg ? "neg" : ""}">${value}</div>
+  </div>`;
+}
+
+function verdict(n, claim, tag, tone, text) {
+  const colors = { sim: "#b91c1c", parte: "#b45309", nao: "#15803d", sem: "#64748b" };
+  return html`<div style="display:grid;grid-template-columns:2rem 1fr;gap:.25rem .75rem;padding:.6rem 0;border-bottom:1px solid var(--theme-foreground-faintest)">
+    <div style="font-weight:700;font-size:1.2rem;color:var(--theme-foreground-muted)">${n}</div>
+    <div>
+      <div><strong>${claim}</strong> <span style="display:inline-block;margin-left:.4rem;padding:0 .45rem;border-radius:4px;font-size:.8rem;font-weight:600;color:white;background:${colors[tone]}">${tag}</span></div>
+      <div style="color:var(--theme-foreground-muted);font-size:.92rem">${text}</div>
+    </div>
+  </div>`;
+}
+return {load,series,last,NAMES,barDelta,wdi,pisa,uis,oa,d,club,MIN_YEAR,OA_FROM,OA_TO,fmt0,fmt1,fmt2,pct1,usd,nm,listPt,braColor,recent,bars,rankOf,rankTxt,peersAbove,peersBelow,pop,popAt,perMillion,patents,articles,rnd,researchers,patentBars,patentRank,patentBra,patentOf,rndBars,rndRank,rndBra,researchersBra,articleBars,articleRank,articleBra,articleRawBra,oaWindow,oaSum,oaGet,oaShare,oaIsos,topCore,topAll,coreShare,uncitedCore,val,topCoreRank,topAllRank,coreShareRank,coreShareLow,braAll,braCore,worldAll,oaYears,oaYear,yearShare,gapRows,gapAt,gapBest,lastYearRank,fmtPp,gapPlot,tertGdp,eduGdp,tertBars,tertRank,tertBra,tertMedian,eduBars,eduRank,eduBra,OECD_PER_STUDENT,ratioBra,ratioOecd,INAF_LEVELS,INAF,inafPlot,EVASAO,lede,verdict};
+}});
+
+define({id: "a50781ff", inputs: ["html","lede","OA_FROM","OA_TO","pct1","val","topCore","fmt1","ratioBra","display"], body: async (html,lede,OA_FROM,OA_TO,pct1,val,topCore,fmt1,ratioBra,display) => {
+display(await(
+html`<div class="lede-grid">
+  ${lede("Desistência", "ingressantes de 2015 que deixaram o curso em 10 anos", "60%", true)}
+  ${lede("Analfabetismo funcional", "entre quem tem diploma de nível superior", "12%", true)}
+  ${lede("Artigos muito citados", `% no topo 10%, revistas internacionais, ${OA_FROM}–${OA_TO}`, pct1(val(topCore, "BRA")), true)}
+  ${lede("Gasto por aluno público", "superior ÷ anos iniciais do fundamental", `${fmt1(ratioBra)}×`, true)}
+</div>`
+))
+}});
+
+define({id: "a8c8328e", inputs: ["html","verdict","fmt2","tertBra","fmt1","ratioBra","ratioOecd","display"], body: async (html,verdict,fmt2,tertBra,fmt1,ratioBra,ratioOecd,display) => {
+display(await(
+html`<div>
+  ${verdict(1, "Somos irrelevantes em citações internacionais e patentes", "em parte", "parte",
+    `Em volume, o Brasil está longe de irrelevante: é o maior produtor de artigos do grupo. No impacto, fica abaixo da média mundial e atrás de quase todos os pares. Em patentes por habitante, fica no meio do grupo, mas muito atrás de Coreia, Turquia e Polônia.`)}
+  ${verdict(2, "Gastamos muito do PIB com ensino superior", "não, mas…", "nao",
+    `O gasto público com ensino superior (${fmt2(tertBra?.value)}% do PIB) está na mediana dos pares. O que chama atenção é o gasto por aluno da rede pública, ${fmt1(ratioBra)} vezes o de um aluno dos anos iniciais. Na OCDE, essa razão é ${fmt1(ratioOecd)}.`)}
+  ${verdict(3, "Muitos formados são analfabetos funcionais", "sim", "sim",
+    `12% de quem tem diploma superior é analfabeto funcional, e só 24% chegam ao nível proficiente.`)}
+  ${verdict(4, "A evasão é alta", "sim", "sim",
+    `60% dos ingressantes de 2015 desistiram do curso em dez anos. A evasão anual subiu de 11% para 17,5% desde 2010, puxada pelo ensino a distância.`)}
+  ${verdict(5, "O volume é inflado por publicação fatiada (\"salame\")", "sem dados", "sem",
+    `Não existe medida direta. O que os dados mostram é outra coisa: quase dois terços dos artigos brasileiros saem fora das revistas internacionais de referência.`)}
+  ${verdict(6, "Gastamos muito com cursos sem retorno nem demanda", "em parte", "parte",
+    `Na média, o diploma rende muito: 148% a mais de salário, contra 54% na OCDE. Mas 27% das vagas novas da rede pública ficam vazias, e o retorno varia muito entre cursos.`)}
+</div>`
+))
+}});
+
+define({id: "59d04107", mode: "inline", inputs: ["fmt1","braAll","display"], body: async (fmt1,braAll,display) => {
+display(await(
+fmt1(braAll / 1e6)
+))
+}});
+
+define({id: "ed77b2a4", mode: "inline", inputs: ["OA_FROM","display"], body: async (OA_FROM,display) => {
+display(await(
+OA_FROM
+))
+}});
+
+define({id: "eae7bc7b", mode: "inline", inputs: ["OA_TO","display"], body: async (OA_TO,display) => {
+display(await(
+OA_TO
+))
+}});
+
+define({id: "7ff35f9e", mode: "inline", inputs: ["fmt0","worldAll","display"], body: async (fmt0,worldAll,display) => {
+display(await(
+fmt0(worldAll / 1e6)
+))
+}});
+
+define({id: "14247321", mode: "inline", inputs: ["fmt1","braAll","worldAll","display"], body: async (fmt1,braAll,worldAll,display) => {
+display(await(
+fmt1((100 * braAll) / worldAll)
+))
+}});
+
+define({id: "ff6a7ae9", mode: "inline", inputs: ["fmt0","articleRawBra","display"], body: async (fmt0,articleRawBra,display) => {
+display(await(
+fmt0(articleRawBra?.value)
+))
+}});
+
+define({id: "8f98dcd4", mode: "inline", inputs: ["articleRawBra","display"], body: async (articleRawBra,display) => {
+display(await(
+articleRawBra?.year
+))
+}});
+
+define({id: "e840fb99", mode: "inline", inputs: ["fmt0","articleBra","display"], body: async (fmt0,articleBra,display) => {
+display(await(
+fmt0(articleBra?.value)
+))
+}});
+
+define({id: "49127c6b", mode: "inline", inputs: ["rankTxt","articleRank","display"], body: async (rankTxt,articleRank,display) => {
+display(await(
+rankTxt(articleRank)
+))
+}});
+
+define({id: "001ad367", mode: "inline", inputs: ["listPt","peersAbove","articleBars","display"], body: async (listPt,peersAbove,articleBars,display) => {
+display(await(
+listPt(peersAbove(articleBars))
+))
+}});
+
+define({id: "d2e59ecd", mode: "inline", inputs: ["resize","barDelta","articleBars","fmt0","display"], body: async (resize,barDelta,articleBars,fmt0,display) => {
+display(await(
+resize((width) => barDelta(articleBars, {width, xLabel: "artigos científicos por milhão de habitantes (Banco Mundial)", format: fmt0}))
+))
+}});
+
+define({id: "45ac1774", mode: "inline", inputs: ["pct1","val","topAll","display"], body: async (pct1,val,topAll,display) => {
+display(await(
+pct1(val(topAll, "BRA"))
+))
+}});
+
+define({id: "ff6ae534", mode: "inline", inputs: ["pct1","val","topAll","display"], body: async (pct1,val,topAll,display) => {
+display(await(
+pct1(val(topAll, "WORLD"))
+))
+}});
+
+define({id: "db699ce5", mode: "inline", inputs: ["rankTxt","topAllRank","display"], body: async (rankTxt,topAllRank,display) => {
+display(await(
+rankTxt(topAllRank)
+))
+}});
+
+define({id: "4d52d531", mode: "inline", inputs: ["pct1","val","topCore","display"], body: async (pct1,val,topCore,display) => {
+display(await(
+pct1(val(topCore, "BRA"))
+))
+}});
+
+define({id: "199f67ae", mode: "inline", inputs: ["pct1","val","topCore","display"], body: async (pct1,val,topCore,display) => {
+display(await(
+pct1(val(topCore, "WORLD"))
+))
+}});
+
+define({id: "2a4b8ee0", mode: "inline", inputs: ["rankTxt","topCoreRank","display"], body: async (rankTxt,topCoreRank,display) => {
+display(await(
+rankTxt(topCoreRank)
+))
+}});
+
+define({id: "c1fa841e", mode: "inline", inputs: ["listPt","peersBelow","topCore","display"], body: async (listPt,peersBelow,topCore,display) => {
+display(await(
+listPt(peersBelow(topCore).filter((n) => n !== "Mundo"))
+))
+}});
+
+define({id: "7ab1df14", mode: "inline", inputs: ["resize","barDelta","topCore","OA_FROM","OA_TO","pct1","display"], body: async (resize,barDelta,topCore,OA_FROM,OA_TO,pct1,display) => {
+display(await(
+resize((width) => barDelta(topCore, {width, xLabel: `% dos artigos entre os 10% mais citados, revistas de referência, ${OA_FROM}–${OA_TO}`, format: pct1}))
+))
+}});
+
+define({id: "47061c97", mode: "inline", inputs: ["fmtPp","gapAt","OA_FROM","display"], body: async (fmtPp,gapAt,OA_FROM,display) => {
+display(await(
+fmtPp(gapAt(OA_FROM - 10))
+))
+}});
+
+define({id: "b987eb17", mode: "inline", inputs: ["OA_FROM","display"], body: async (OA_FROM,display) => {
+display(await(
+OA_FROM - 10
+))
+}});
+
+define({id: "6398c110", mode: "inline", inputs: ["fmtPp","gapBest","display"], body: async (fmtPp,gapBest,display) => {
+display(await(
+fmtPp(gapBest.value)
+))
+}});
+
+define({id: "71a0d4d5", mode: "inline", inputs: ["gapBest","display"], body: async (gapBest,display) => {
+display(await(
+gapBest.year
+))
+}});
+
+define({id: "33cd97e9", mode: "inline", inputs: ["fmtPp","gapAt","OA_TO","display"], body: async (fmtPp,gapAt,OA_TO,display) => {
+display(await(
+fmtPp(gapAt(OA_TO))
+))
+}});
+
+define({id: "eae7bc7b-1", mode: "inline", inputs: ["OA_TO","display"], body: async (OA_TO,display) => {
+display(await(
+OA_TO
+))
+}});
+
+define({id: "ff3fd677", mode: "inline", inputs: ["lastYearRank","display"], body: async (lastYearRank,display) => {
+display(await(
+lastYearRank.pos
+))
+}});
+
+define({id: "1cdef581", mode: "inline", inputs: ["lastYearRank","display"], body: async (lastYearRank,display) => {
+display(await(
+lastYearRank.n
+))
+}});
+
+define({id: "5eecef05", mode: "inline", inputs: ["resize","gapPlot","display"], body: async (resize,gapPlot,display) => {
+display(await(
+resize((width) => gapPlot(width))
+))
+}});
+
+define({id: "eae7bc7b-2", mode: "inline", inputs: ["OA_TO","display"], body: async (OA_TO,display) => {
+display(await(
+OA_TO
+))
+}});
+
+define({id: "6b8334b0", mode: "inline", inputs: ["patentBra","display"], body: async (patentBra,display) => {
+display(await(
+patentBra?.year
+))
+}});
+
+define({id: "60216cde", mode: "inline", inputs: ["fmt0","patentBra","display"], body: async (fmt0,patentBra,display) => {
+display(await(
+fmt0(patentBra?.value)
+))
+}});
+
+define({id: "c18b310f", mode: "inline", inputs: ["rankTxt","patentRank","display"], body: async (rankTxt,patentRank,display) => {
+display(await(
+rankTxt(patentRank)
+))
+}});
+
+define({id: "ca07b80d", mode: "inline", inputs: ["listPt","peersBelow","patentBars","display"], body: async (listPt,peersBelow,patentBars,display) => {
+display(await(
+listPt(peersBelow(patentBars))
+))
+}});
+
+define({id: "1bd75fc9", mode: "inline", inputs: ["fmt0","patentOf","patentBra","display"], body: async (fmt0,patentOf,patentBra,display) => {
+display(await(
+fmt0(patentOf("TUR") / patentBra?.value)
+))
+}});
+
+define({id: "4dc56171", mode: "inline", inputs: ["fmt0","patentOf","patentBra","display"], body: async (fmt0,patentOf,patentBra,display) => {
+display(await(
+fmt0(patentOf("POL") / patentBra?.value)
+))
+}});
+
+define({id: "7c15ba56", mode: "inline", inputs: ["fmt0","patentOf","patentBra","display"], body: async (fmt0,patentOf,patentBra,display) => {
+display(await(
+fmt0(patentOf("KOR") / patentBra?.value)
+))
+}});
+
+define({id: "cd7fbf5a", mode: "inline", inputs: ["fmt0","patentOf","display"], body: async (fmt0,patentOf,display) => {
+display(await(
+fmt0(patentOf("KOR"))
+))
+}});
+
+define({id: "34592c6b", mode: "inline", inputs: ["resize","barDelta","patentBars","fmt0","display"], body: async (resize,barDelta,patentBars,fmt0,display) => {
+display(await(
+resize((width) => barDelta(patentBars.filter((r) => r.iso !== "KOR"), {width, xLabel: "pedidos de patente de residentes por milhão de habitantes", format: fmt0}))
+))
+}});
+
+define({id: "4bf98ec2", mode: "inline", inputs: ["fmt2","rndBra","display"], body: async (fmt2,rndBra,display) => {
+display(await(
+fmt2(rndBra?.value)
+))
+}});
+
+define({id: "7ea14a93", mode: "inline", inputs: ["rankTxt","rndRank","display"], body: async (rankTxt,rndRank,display) => {
+display(await(
+rankTxt(rndRank)
+))
+}});
+
+define({id: "e3e0e4be", mode: "inline", inputs: ["researchersBra","display"], body: async (researchersBra,display) => {
+display(await(
+researchersBra?.year
+))
+}});
+
+define({id: "939a941b", mode: "inline", inputs: ["fmt0","researchersBra","display"], body: async (fmt0,researchersBra,display) => {
+display(await(
+fmt0(researchersBra?.value)
+))
+}});
+
+define({id: "4079c0c1", mode: "inline", inputs: ["resize","barDelta","rndBars","fmt2","display"], body: async (resize,barDelta,rndBars,fmt2,display) => {
+display(await(
+resize((width) => barDelta(rndBars, {width, xLabel: "gasto em P&D (% do PIB)", format: fmt2}))
+))
+}});
+
+define({id: "dac30762", mode: "inline", inputs: ["fmt2","tertBra","display"], body: async (fmt2,tertBra,display) => {
+display(await(
+fmt2(tertBra?.value)
+))
+}});
+
+define({id: "52349a8d", mode: "inline", inputs: ["tertBra","display"], body: async (tertBra,display) => {
+display(await(
+tertBra?.year
+))
+}});
+
+define({id: "332e9712", mode: "inline", inputs: ["fmt2","tertMedian","display"], body: async (fmt2,tertMedian,display) => {
+display(await(
+fmt2(tertMedian)
+))
+}});
+
+define({id: "83c05f1b", mode: "inline", inputs: ["rankTxt","tertRank","display"], body: async (rankTxt,tertRank,display) => {
+display(await(
+rankTxt(tertRank)
+))
+}});
+
+define({id: "9bc1e17e", mode: "inline", inputs: ["listPt","peersAbove","tertBars","display"], body: async (listPt,peersAbove,tertBars,display) => {
+display(await(
+listPt(peersAbove(tertBars))
+))
+}});
+
+define({id: "a5358334", mode: "inline", inputs: ["resize","barDelta","tertBars","fmt2","display"], body: async (resize,barDelta,tertBars,fmt2,display) => {
+display(await(
+resize((width) => barDelta(tertBars, {width, xLabel: "gasto público com ensino superior (% do PIB)", format: fmt2}))
+))
+}});
+
+define({id: "44c736ff", mode: "inline", inputs: ["fmt2","eduBra","display"], body: async (fmt2,eduBra,display) => {
+display(await(
+fmt2(eduBra?.value)
+))
+}});
+
+define({id: "420760f8", mode: "inline", inputs: ["rankTxt","eduRank","display"], body: async (rankTxt,eduRank,display) => {
+display(await(
+rankTxt(eduRank)
+))
+}});
+
+define({id: "0db711ad", mode: "inline", inputs: ["usd","display"], body: async (usd,display) => {
+display(await(
+usd(13569)
+))
+}});
+
+define({id: "3efe3e99", mode: "inline", inputs: ["usd","display"], body: async (usd,display) => {
+display(await(
+usd(3668)
+))
+}});
+
+define({id: "6f1b40e8", mode: "inline", inputs: ["fmt1","ratioBra","display"], body: async (fmt1,ratioBra,display) => {
+display(await(
+fmt1(ratioBra)
+))
+}});
+
+define({id: "2a233e52", mode: "inline", inputs: ["fmt1","ratioOecd","display"], body: async (fmt1,ratioOecd,display) => {
+display(await(
+fmt1(ratioOecd)
+))
+}});
+
+define({id: "6c326585", mode: "inline", inputs: ["resize","barDelta","OECD_PER_STUDENT","usd","display"], body: async (resize,barDelta,OECD_PER_STUDENT,usd,display) => {
+display(await(
+resize((width) => barDelta(OECD_PER_STUDENT, {width, xLabel: "gasto por aluno de instituição pública (US$ PPC por ano)", format: usd, marginLeft: 230, xDomain: [0, 21000]}))
+))
+}});
+
+define({id: "7643ef58", mode: "inline", inputs: ["fmt0","display"], body: async (fmt0,display) => {
+display(await(
+fmt0(100 * 13569 / 17138)
+))
+}});
+
+define({id: "cf8228d2", mode: "inline", inputs: ["resize","inafPlot","display"], body: async (resize,inafPlot,display) => {
+display(await(
+resize((width) => inafPlot(width))
+))
+}});
+
+define({id: "86e79702", mode: "inline", inputs: ["resize","barDelta","EVASAO","pct1","display"], body: async (resize,barDelta,EVASAO,pct1,display) => {
+display(await(
+resize((width) => barDelta(EVASAO, {width, xLabel: "alunos que abandonaram o sistema de 2023 para 2024 (%)", format: pct1, marginLeft: 150}))
+))
+}});
+
+define({id: "a73b2bc8", mode: "inline", inputs: ["pct1","val","coreShare","display"], body: async (pct1,val,coreShare,display) => {
+display(await(
+pct1(val(coreShare, "BRA"))
+))
+}});
+
+define({id: "191e2fa1", mode: "inline", inputs: ["pct1","val","coreShare","display"], body: async (pct1,val,coreShare,display) => {
+display(await(
+pct1(val(coreShare, "WORLD"))
+))
+}});
+
+define({id: "c3302887", mode: "inline", inputs: ["coreShareLow","display"], body: async (coreShareLow,display) => {
+display(await(
+coreShareLow
+))
+}});
+
+define({id: "1a3b194a", mode: "inline", inputs: ["coreShareRank","display"], body: async (coreShareRank,display) => {
+display(await(
+coreShareRank.n
+))
+}});
+
+define({id: "77d13190", mode: "inline", inputs: ["resize","barDelta","coreShare","OA_FROM","OA_TO","pct1","display"], body: async (resize,barDelta,coreShare,OA_FROM,OA_TO,pct1,display) => {
+display(await(
+resize((width) => barDelta(coreShare, {width, xLabel: `% dos artigos em revistas internacionais de referência, ${OA_FROM}–${OA_TO}`, format: pct1}))
+))
+}});
+
+define({id: "96237150", mode: "inline", inputs: ["pct1","val","uncitedCore","display"], body: async (pct1,val,uncitedCore,display) => {
+display(await(
+pct1(val(uncitedCore, "BRA"))
+))
+}});
+
+define({id: "a93d5589", mode: "inline", inputs: ["pct1","val","uncitedCore","display"], body: async (pct1,val,uncitedCore,display) => {
+display(await(
+pct1(val(uncitedCore, "WORLD"))
+))
+}});
+
+define({id: "49656ae4", mode: "inline", inputs: ["MIN_YEAR","display"], body: async (MIN_YEAR,display) => {
+display(await(
+MIN_YEAR
+))
+}});
+
+define({id: "b987eb17-1", mode: "inline", inputs: ["OA_FROM","display"], body: async (OA_FROM,display) => {
+display(await(
+OA_FROM - 10
+))
+}});
+
+define({id: "eae7bc7b-3", mode: "inline", inputs: ["OA_TO","display"], body: async (OA_TO,display) => {
+display(await(
+OA_TO
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">brviz</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./README">Untitled</a></li>
+    <li class="observablehq-link"><a href="./divida">Dívida, previdência e salário mínimo</a></li>
+    <li class="observablehq-link"><a href="./educacao">Educação</a></li>
+    <li class="observablehq-link"><a href="./eleicoes">Eleições: onde o PT tem voto</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./ensino-superior">Ensino superior: irrelevante?</a></li>
+    <li class="observablehq-link"><a href="./seguranca">Segurança pública</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Nesta página</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#as-seis-afirmacoes">As seis afirmações</a></li>
+<li class="observablehq-secondary-link"><a href="#1-citacoes-e-patentes">1. Citações e patentes</a></li>
+<li class="observablehq-secondary-link"><a href="#2-gasto-o-problema-nao-e-quanto-e-para-quem">2. Gasto: o problema não é quanto, é para quem</a></li>
+<li class="observablehq-secondary-link"><a href="#3-diplomados-que-nao-leem-bem">3. Diplomados que não leem bem</a></li>
+<li class="observablehq-secondary-link"><a href="#4-evasao">4. Evasão</a></li>
+<li class="observablehq-secondary-link"><a href="#5-volume-por-publicacao-fatiada">5. Volume por publicação fatiada</a></li>
+<li class="observablehq-secondary-link"><a href="#6-cursos-sem-retorno-nem-demanda">6. Cursos sem retorno nem demanda</a></li>
+<li class="observablehq-secondary-link"><a href="#limites">Limites</a></li>
+<li class="observablehq-secondary-link"><a href="#fontes">Fontes</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="ensino-superior-irrelevante" tabindex="-1"><a class="observablehq-header-anchor" href="#ensino-superior-irrelevante">Ensino superior: irrelevante?</a></h1>
+<p>Esta página acompanha o <a href="./">relatório</a> e a página de <a href="./educacao">Educação</a>. Ela testa seis afirmações comuns sobre as universidades brasileiras, uma a uma, contra os dados. A comparação é com o mesmo grupo de pares — países cuja renda per capita em 1990 ficava entre 65% e 135% da brasileira.</p>
+<p>O resumo: quatro afirmações se sustentam, total ou parcialmente; uma é falsa na forma em que costuma ser feita; e uma não pode ser verificada com os dados disponíveis.</p>
+<div class="observablehq observablehq--block"><!--:dadb88c6:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:a50781ff:--></div>
+<h2 id="as-seis-afirmacoes" tabindex="-1"><a class="observablehq-header-anchor" href="#as-seis-afirmacoes">As seis afirmações</a></h2>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:a8c8328e:--></div>
+<h2 id="1-citacoes-e-patentes" tabindex="-1"><a class="observablehq-header-anchor" href="#1-citacoes-e-patentes">1. Citações e patentes</a></h2>
+<h3 id="volume-nao-falta" tabindex="-1"><a class="observablehq-header-anchor" href="#volume-nao-falta">Volume não falta</a></h3>
+<p>O Brasil publicou <observablehq-loading></observablehq-loading><!--:59d04107:--> milhão de artigos entre <observablehq-loading></observablehq-loading><!--:ed77b2a4:--> e <observablehq-loading></observablehq-loading><!--:eae7bc7b:-->, segundo o <a href="https://openalex.org" target="_blank" rel="noopener noreferrer">OpenAlex</a>, uma base aberta que indexa cerca de <observablehq-loading></observablehq-loading><!--:7ff35f9e:--> milhões de artigos no período. É o maior volume do grupo de pares e cerca de <observablehq-loading></observablehq-loading><!--:14247321:-->% do total mundial.</p>
+<p>Por habitante, o quadro muda. Pela contagem que o Banco Mundial publica (artigos em revistas indexadas), o Brasil teve <observablehq-loading></observablehq-loading><!--:ff6a7ae9:--> artigos em <observablehq-loading></observablehq-loading><!--:8f98dcd4:-->, ou <observablehq-loading></observablehq-loading><!--:e840fb99:--> por milhão de habitantes: <observablehq-loading></observablehq-loading><!--:49127c6b:--> no grupo. <observablehq-loading></observablehq-loading><!--:001ad367:--> publicam mais por habitante.</p>
+<p><observablehq-loading></observablehq-loading><!--:d2e59ecd:--></p>
+<h3 id="o-impacto-fica-abaixo-do-mundo-e-dos-pares" tabindex="-1"><a class="observablehq-header-anchor" href="#o-impacto-fica-abaixo-do-mundo-e-dos-pares">O impacto fica abaixo do mundo e dos pares</a></h3>
+<p>Volume não diz se alguém lê o que foi publicado. A medida usada aqui é a parcela dos artigos que estão entre os 10% mais citados do mundo na mesma área e no mesmo ano. Num país "na média", essa parcela fica perto de 10%; se for maior, o país produz mais artigos influentes do que o esperado.</p>
+<p>Contando todas as revistas, só <observablehq-loading></observablehq-loading><!--:45ac1774:--> dos artigos brasileiros chegam a esse grupo, abaixo do mundo (<observablehq-loading></observablehq-loading><!--:ff6ae534:-->). É o <observablehq-loading></observablehq-loading><!--:db699ce5:--> entre os pares.</p>
+<p>Esse número é injusto com o Brasil, porque mistura revistas nacionais, que quase ninguém cita fora do país. Restringindo às revistas internacionais de referência (as fontes "core" do OpenAlex), a parcela sobe para <observablehq-loading></observablehq-loading><!--:4d52d531:-->, ainda abaixo do mundo (<observablehq-loading></observablehq-loading><!--:199f67ae:-->). O Brasil fica em <observablehq-loading></observablehq-loading><!--:2a4b8ee0:--> no grupo. Só <observablehq-loading></observablehq-loading><!--:c1fa841e:--> ficam abaixo.</p>
+<p><observablehq-loading></observablehq-loading><!--:7ab1df14:--></p>
+<p>A trajetória tem duas fases. O gráfico abaixo mostra a distância entre a parcela brasileira de artigos muito citados e a mundial, nas revistas de referência. A linha tracejada é a média mundial. Até meados da década passada, o Brasil se aproximou dela: a distância passou de <observablehq-loading></observablehq-loading><!--:47061c97:--> em <observablehq-loading></observablehq-loading><!--:b987eb17:--> para <observablehq-loading></observablehq-loading><!--:6398c110:--> em <observablehq-loading></observablehq-loading><!--:71a0d4d5:-->. Desde então, voltou a abrir: <observablehq-loading></observablehq-loading><!--:33cd97e9:--> em <observablehq-loading></observablehq-loading><!--:eae7bc7b-1:-->, o <observablehq-loading></observablehq-loading><!--:ff3fd677:-->º lugar entre <observablehq-loading></observablehq-loading><!--:1cdef581:--> países do grupo naquele ano. A mediana dos outros pares está acima do mundo desde 2009.</p>
+<p><observablehq-loading></observablehq-loading><!--:5eecef05:--></p>
+<p>Os anos mais recentes ainda vão acumular citações, e o resultado de <observablehq-loading></observablehq-loading><!--:eae7bc7b-2:--> pode melhorar. Mas a piora começa em 2017, e esses anos já tiveram tempo para acumular citações.</p>
+<div class="takeaway">
+  <strong>Irrelevante, não. Abaixo do esperado, sim.</strong>
+  <span>O Brasil produz muito e tem pesquisa de nível internacional. Mas, artigo por artigo, é citado menos do que o mundo e menos do que países como Chile, Colômbia, África do Sul e Malásia.</span>
+</div>
+<h3 id="patentes-no-meio-do-grupo-longe-dos-que-decolaram" tabindex="-1"><a class="observablehq-header-anchor" href="#patentes-no-meio-do-grupo-longe-dos-que-decolaram">Patentes: no meio do grupo, longe dos que decolaram</a></h3>
+<p>Patentes medem outra coisa: a pesquisa que vira produto. Em <observablehq-loading></observablehq-loading><!--:6b8334b0:-->, residentes no Brasil depositaram <observablehq-loading></observablehq-loading><!--:60216cde:--> pedidos de patente por milhão de habitantes. É o <observablehq-loading></observablehq-loading><!--:c18b310f:--> no grupo, à frente de <observablehq-loading></observablehq-loading><!--:ca07b80d:-->.</p>
+<p>A distância para quem decolou é enorme: a Turquia tem <observablehq-loading></observablehq-loading><!--:1bd75fc9:--> vezes mais pedidos por habitante; a Polônia, <observablehq-loading></observablehq-loading><!--:4dc56171:--> vezes; a Coreia, <observablehq-loading></observablehq-loading><!--:7c15ba56:--> vezes. A Coreia fica fora do gráfico abaixo porque, com <observablehq-loading></observablehq-loading><!--:cd7fbf5a:--> pedidos por milhão, achataria todas as outras barras.</p>
+<p><observablehq-loading></observablehq-loading><!--:34592c6b:--></p>
+<p>O gasto com pesquisa e desenvolvimento conta a mesma história. O Brasil investe <observablehq-loading></observablehq-loading><!--:4bf98ec2:-->% do PIB (<observablehq-loading></observablehq-loading><!--:7ea14a93:--> no grupo), mais do que a maioria dos vizinhos latino-americanos. O último dado de pesquisadores, de <observablehq-loading></observablehq-loading><!--:e3e0e4be:-->, era <observablehq-loading></observablehq-loading><!--:939a941b:--> por milhão de habitantes, contra mais de 2.500 na Turquia e mais de 3.500 na Polônia hoje.</p>
+<p><observablehq-loading></observablehq-loading><!--:4079c0c1:--></p>
+<h2 id="2-gasto-o-problema-nao-e-quanto-e-para-quem" tabindex="-1"><a class="observablehq-header-anchor" href="#2-gasto-o-problema-nao-e-quanto-e-para-quem">2. Gasto: o problema não é quanto, é para quem</a></h2>
+<p>O governo brasileiro gasta <observablehq-loading></observablehq-loading><!--:dac30762:-->% do PIB com ensino superior, segundo a UNESCO (<observablehq-loading></observablehq-loading><!--:52349a8d:-->). A mediana dos outros pares é <observablehq-loading></observablehq-loading><!--:332e9712:-->%. O Brasil fica em <observablehq-loading></observablehq-loading><!--:83c05f1b:-->, abaixo de <observablehq-loading></observablehq-loading><!--:9bc1e17e:-->. Nessa medida, não há gasto excessivo.</p>
+<p><observablehq-loading></observablehq-loading><!--:a5358334:--></p>
+<p>O gasto com educação como um todo é alto: <observablehq-loading></observablehq-loading><!--:44c736ff:-->% do PIB, <observablehq-loading></observablehq-loading><!--:420760f8:--> no grupo. O que distingue o Brasil é a divisão desse dinheiro.</p>
+<p>Como 80% dos universitários brasileiros estão em faculdades privadas, o gasto público se concentra em poucos alunos. Pelos números da OCDE (<a href="https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html" target="_blank" rel="noopener noreferrer">Education at a Glance 2024</a>), o Brasil gasta <observablehq-loading></observablehq-loading><!--:0db711ad:--> por ano com cada aluno de instituição pública de ensino superior, e <observablehq-loading></observablehq-loading><!--:3efe3e99:--> com cada aluno dos anos iniciais do fundamental: <observablehq-loading></observablehq-loading><!--:6f1b40e8:--> vezes mais. Na média da OCDE, a razão é <observablehq-loading></observablehq-loading><!--:2a233e52:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:6c326585:--></p>
+<p>O valor por universitário inclui pesquisa e, em muitos casos, hospitais universitários. Mesmo assim, a diferença é grande: um universitário da rede pública brasileira custa <observablehq-loading></observablehq-loading><!--:7643ef58:-->% do que custa na média da OCDE, enquanto uma criança do fundamental custa menos de um terço.</p>
+<div class="takeaway">
+  <strong>A afirmação, como costuma ser feita, não se sustenta.</strong>
+  <span>O Brasil não gasta uma parcela alta do PIB com ensino superior. Gasta muito por aluno da rede pública, em comparação com o pouco que gasta na educação básica.</span>
+</div>
+<h2 id="3-diplomados-que-nao-leem-bem" tabindex="-1"><a class="observablehq-header-anchor" href="#3-diplomados-que-nao-leem-bem">3. Diplomados que não leem bem</a></h2>
+<p>O <a href="https://alfabetismofuncional.org.br/wp-content/uploads/2026/04/relatorio-inaf-digital.pdf" target="_blank" rel="noopener noreferrer">Indicador de Alfabetismo Funcional (INAF) 2024</a> aplica um teste de leitura e matemática do dia a dia a uma amostra da população de 15 a 64 anos. Quem fica nos dois níveis mais baixos é chamado de analfabeto funcional: consegue ler frases curtas, mas não entende um texto de média extensão nem resolve um problema simples com porcentagem.</p>
+<p>Entre quem tem diploma de nível superior, 12% são analfabetos funcionais e outros 27% ficam no nível elementar. Só 24% são proficientes, ou seja, conseguem interpretar uma tabela com duas variáveis ou avaliar se uma notícia é verdadeira.</p>
+<p><observablehq-loading></observablehq-loading><!--:cf8228d2:--></p>
+<p>O diploma melhora muito o resultado em relação ao resto da população (29% de analfabetos funcionais). Mas espera-se que um formado chegue ao topo da escala. No Brasil, quase 4 em cada 10 não chegam nem ao nível intermediário.</p>
+<div class="takeaway">
+  <strong>A afirmação se sustenta.</strong>
+  <span>Parte do problema vem de antes: o aluno chega à faculdade sem ter aprendido o básico, como mostra a página de <a href="./educacao">Educação</a>. A faculdade não corrige essa falha.</span>
+</div>
+<h2 id="4-evasao" tabindex="-1"><a class="observablehq-header-anchor" href="#4-evasao">4. Evasão</a></h2>
+<p>O <a href="https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf" target="_blank" rel="noopener noreferrer">Censo da Educação Superior 2024</a>, do INEP, acompanha cada aluno desde o ingresso. Dos que entraram em 2015, 60% tinham desistido do curso dez anos depois, e só 39% tinham se formado. As turmas de 2010 a 2014 tiveram resultados parecidos. A conta de "desistência" inclui quem trocou de curso na mesma instituição, então parte desses alunos se formou em outra coisa.</p>
+<p>A evasão anual do sistema subiu de 11,3% (de 2010 para 2011) para 17,5% (de 2023 para 2024). O ensino a distância, que em 2024 passou o presencial em número de matrículas, perde alunos num ritmo duas vezes e meia maior. A rede privada perde mais que a pública.</p>
+<p><observablehq-loading></observablehq-loading><!--:86e79702:--></p>
+<p>A OCDE (<a href="https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en.html" target="_blank" rel="noopener noreferrer">Education at a Glance 2025</a>) chega a números parecidos por outra conta. No Brasil, 25% dos alunos de bacharelado saem depois do primeiro ano, e só 49% se formam até três anos depois do prazo previsto, contra 70% na média da OCDE.</p>
+<div class="takeaway">
+  <strong>A afirmação se sustenta.</strong>
+  <span>A maioria de quem entra numa faculdade brasileira não se forma no curso em que entrou. E a evasão cresce, puxada pelo ensino a distância privado.</span>
+</div>
+<h2 id="5-volume-por-publicacao-fatiada" tabindex="-1"><a class="observablehq-header-anchor" href="#5-volume-por-publicacao-fatiada">5. Volume por publicação fatiada</a></h2>
+<p>A "publicação salame" é dividir uma pesquisa em vários artigos pequenos para aumentar a contagem. É um problema conhecido, frequentemente associado a sistemas de avaliação que contam artigos, como a avaliação da pós-graduação pela CAPES. Mas não existe medida internacional comparável. Para medir, seria preciso ler os artigos e verificar se repetem dados e métodos.</p>
+<p>O que os dados mostram é um sinal parecido, mas diferente. Só <observablehq-loading></observablehq-loading><!--:a73b2bc8:--> dos artigos brasileiros saem em revistas internacionais de referência, contra <observablehq-loading></observablehq-loading><!--:191e2fa1:--> no mundo. É a <observablehq-loading></observablehq-loading><!--:c3302887:-->ª menor parcela entre os <observablehq-loading></observablehq-loading><!--:1a3b194a:--> países do grupo. O resto sai em revistas nacionais ou pouco seletivas, que inflam a contagem e quase não são citadas.</p>
+<p><observablehq-loading></observablehq-loading><!--:77d13190:--></p>
+<p>Dentro das revistas de referência, o Brasil não tem excesso de artigos ignorados: <observablehq-loading></observablehq-loading><!--:96237150:--> nunca foram citados, contra <observablehq-loading></observablehq-loading><!--:a93d5589:--> no mundo. Se houvesse muito fatiamento ali, essa parcela seria mais alta.</p>
+<div class="takeaway">
+  <strong>Não dá para confirmar nem descartar.</strong>
+  <span>O volume brasileiro é inflado por artigos em revistas de pouca circulação. Isso é compatível com publicação fatiada, mas também com uma ciência voltada para dentro, que publica em português para leitores locais.</span>
+</div>
+<h2 id="6-cursos-sem-retorno-nem-demanda" tabindex="-1"><a class="observablehq-header-anchor" href="#6-cursos-sem-retorno-nem-demanda">6. Cursos sem retorno nem demanda</a></h2>
+<p>Na média, o diploma vale muito no Brasil. Segundo a OCDE, quem tem diploma superior ganha 148% a mais do que quem só tem ensino médio; na média da OCDE, 54%. É um dos maiores prêmios do mundo, e um sinal de que faltam diplomados: só 24% dos brasileiros de 25 a 34 anos têm diploma superior, contra 49% na OCDE.</p>
+<p>Esse prêmio médio esconde muita diferença. Estudos brasileiros mostram que as engenharias pagam bem mais que as licenciaturas, que ficam no fim da lista. Mostram também que quem trabalha fora da área em que se formou ganha bem menos (<a href="https://fnse.cgee.org.br" target="_blank" rel="noopener noreferrer">Centro de Gestão e Estudos Estratégicos</a>; <a href="https://doi.org/10.11606/1413-8050/ea140616" target="_blank" rel="noopener noreferrer">Economia Aplicada</a>).</p>
+<p>O desperdício mais visível está nas vagas públicas. Segundo o Censo de 2024, 27,4% das vagas novas da rede pública ficaram sem aluno. Das mais de 177 mil vagas remanescentes da rede federal, que são as abertas por desistência, só 19% foram ocupadas. São cursos com professores e salas pagos e cadeiras vazias.</p>
+<div class="takeaway">
+  <strong>Em parte.</strong>
+  <span>"Sem retorno" não vale para o diploma em geral, que paga muito bem. Vale para parte dos cursos e das vagas: há oferta pública que não encontra aluno. Mas os dados públicos não permitem dizer quanto do gasto vai para esses cursos.</span>
+</div>
+<h2 id="limites" tabindex="-1"><a class="observablehq-header-anchor" href="#limites">Limites</a></h2>
+<ul>
+<li><strong>Citações.</strong> O OpenAlex é mais amplo que as bases comerciais (Web of Science, Scopus) e inclui mais revistas nacionais. Por isso, as parcelas de "todas as revistas" e "referência" aparecem separadas. Um artigo com autores de dois países conta para os dois. Os anos mais recentes ainda acumulam citações.</li>
+<li><strong>Patentes.</strong> Contam pedidos feitos por residentes ao escritório nacional de patentes (no Brasil, o INPI). Não medem patentes concedidas nem sua qualidade.</li>
+<li><strong>Gasto.</strong> A UNESCO divide o gasto público por todos os alunos, públicos e privados. Como no Brasil 80% estão na rede privada, o gasto por aluno da UNESCO subestima o custo de um aluno público. Por isso, o custo por aluno vem da OCDE, que divide só pelos alunos das instituições públicas.</li>
+<li><strong>INAF.</strong> A amostra de pessoas com diploma superior tem 583 entrevistados. As diferenças de poucos pontos não são significativas.</li>
+<li><strong>Evasão.</strong> O INEP conta como desistente quem troca de curso, mesmo que se forme em outro.</li>
+<li><strong>Grupo de pares.</strong> Equador e Colômbia não têm parte das séries; os rankings usam só os países com dado desde <observablehq-loading></observablehq-loading><!--:49656ae4:-->.</li>
+</ul>
+<h2 id="fontes" tabindex="-1"><a class="observablehq-header-anchor" href="#fontes">Fontes</a></h2>
+<ul>
+<li><strong>Artigos, patentes, P&amp;D e pesquisadores</strong>: <a href="https://databank.worldbank.org/source/world-development-indicators" target="_blank" rel="noopener noreferrer">Banco Mundial, Indicadores de Desenvolvimento Mundial</a> (IP.JRN.ARTC.SC, IP.PAT.RESD, GB.XPD.RSDV.GD.ZS, SP.POP.SCIE.RD.P6).</li>
+<li><strong>Citações</strong>: <a href="https://openalex.org" target="_blank" rel="noopener noreferrer">OpenAlex</a>, artigos de <observablehq-loading></observablehq-loading><!--:b987eb17-1:--> a <observablehq-loading></observablehq-loading><!--:eae7bc7b-3:-->, percentil de citações normalizado por área e ano.</li>
+<li><strong>Gasto público com educação</strong>: <a href="https://databrowser.uis.unesco.org" target="_blank" rel="noopener noreferrer">UNESCO Institute for Statistics</a> (XGDP.5T8.FSGOV, XGDP.FSGOV).</li>
+<li><strong>Gasto por aluno, conclusão, evasão no primeiro ano, prêmio salarial</strong>: OCDE, <a href="https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html" target="_blank" rel="noopener noreferrer">Education at a Glance 2024</a> e <a href="https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en.html" target="_blank" rel="noopener noreferrer">2025</a>.</li>
+<li><strong>Alfabetismo funcional</strong>: <a href="https://alfabetismofuncional.org.br/wp-content/uploads/2026/04/relatorio-inaf-digital.pdf" target="_blank" rel="noopener noreferrer">INAF 2024</a>, Ação Educativa e Instituto Paulo Montenegro.</li>
+<li><strong>Evasão, trajetória e vagas</strong>: INEP, <a href="https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf" target="_blank" rel="noopener noreferrer">Censo da Educação Superior 2024</a>.</li>
+</ul>
+</main>
+<footer id="observablehq-footer">
+<div>World Bank WDI · Observable Framework</div>
+</footer>
+</div>
+</body>
+</html>

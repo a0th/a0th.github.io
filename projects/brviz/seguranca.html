@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Segurança pública | brviz</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.6b7d96d6.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.6b7d96d6.css">
+<link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
+<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
+<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/c662ea05.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/d162d8c6.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/5cedd0be.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/65d51007.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/c576a91a.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/8b43826d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/3fb06f14.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/20b76948.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/8683b012.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/5c319046.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/33924f3e.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/8d67a1ae.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/8037bd0b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/a9ba0229.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/e0a47f97.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/f9e9e0ab.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/2da8eb3b.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/09002e01.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/5108797c.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/c9f2571b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/f3c78e0d.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/28717d05.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/7c6e2a50.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3d1d57c6.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/643581a8.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/e99232db.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/bd07fd9a.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/d09f7cc9.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/f53f17b2.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/af036d7e.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/7b06abe7.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/5f640032.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
+<script>document.querySelector('meta[name="viewport"]')?.setAttribute("content","width=device-width, initial-scale=1")</script>
+<script type="module">
+const TOC_CLASS = "brviz-toc";
+
+let observer;
+
+function closeSidebar() {
+  const toggle = document.querySelector("#observablehq-sidebar-toggle");
+  if (toggle) {
+    toggle.checked = false;
+    toggle.indeterminate = false;
+  }
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (sidebar?.contains(document.activeElement)) document.activeElement.blur();
+}
+
+function mountTocSidebar() {
+  const toc = document.querySelector("#observablehq-toc nav");
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (!toc || !sidebar) return;
+
+  observer?.disconnect();
+  sidebar.querySelector(`.${TOC_CLASS}`)?.remove();
+
+  const section = document.createElement("section");
+  section.className = TOC_CLASS;
+  const title = document.createElement("div");
+  title.textContent = toc.querySelector("div")?.textContent ?? "Nesta página";
+  const ol = document.createElement("ol");
+  for (const a of toc.querySelectorAll("ol a")) {
+    const li = document.createElement("li");
+    li.className = "observablehq-link";
+    const link = a.cloneNode(true);
+    li.append(link);
+    ol.append(li);
+  }
+  section.append(title, ol);
+  sidebar.append(section);
+
+  ol.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) return;
+    queueMicrotask(closeSidebar);
+  });
+
+  const sync = () => {
+    const href = toc.querySelector(".observablehq-secondary-link-active a")?.getAttribute("href");
+    for (const li of ol.querySelectorAll("li")) {
+      li.classList.toggle(
+        "observablehq-link-active",
+        li.querySelector("a")?.getAttribute("href") === href,
+      );
+    }
+  };
+  observer = new MutationObserver(sync);
+  observer.observe(toc, { subtree: true, attributes: true, attributeFilter: ["class"] });
+  sync();
+}
+
+mountTocSidebar();
+</script>
+<script type="module">
+
+import {define} from "./_observablehq/client.a97643eb.js";
+import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
+
+registerFile("./data/ocindex.csv", {"name":"./data/ocindex.csv","mimeType":"text/csv","path":"./_file/data/ocindex.6ebd0bb4.csv","lastModified":1793047064392,"size":269794});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
+registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
+
+define({id: "eada6384", inputs: ["FileAttachment","d3","getComputedStyle","Plot","html"], outputs: ["load","series","at","last","keep","NAMES","metricPlot","barDelta","wdi","pisa","d","hom","homMale","homFemale","stability","law","LATAM","club","MIN_YEAR","fmtRate","fmtTimes","mean","recent","bars","rankOf","nth","othersMean","above","listPt","braNow","braPeak","bra90","dropSincePeak","clubBars","clubRank","clubMean","clubAbove","clubMedian","clubBelowOne","latamBars","latamRank","latamAbove","latamBelow","sexPlot","lcnNow","umcNow","braMale","braFemale","femaleBars","femaleRank","stabBra","stab00","stabPol","stabKor","lawBra","lawPol","lawKor","lawBra96","oc","ocCrime","ocRes","ocYear","fmtScore","ocBars","ocCrimeBars","ocCrimeRank","ocCrimeAbove","ocResBars","ocResRank","ocBra","ocWorld","ocYears","ocPeerPos","ocBelow","OC_CRIME","OC_RES","ocDots","ocTrend","fmtIdx2","lede"], body: async (FileAttachment,d3,getComputedStyle,Plot,html) => {
+const [{load, series, at, last, keep, NAMES}, {metricPlot, barDelta}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
+
+const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
+const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });
+const d = load(wdi, pisa);
+
+const hom = series("homicides", wdi);
+const homMale = series("homicides_male", wdi);
+const homFemale = series("homicides_female", wdi);
+const stability = series("pol_stability", wdi);
+const law = series("rule_of_law", wdi);
+
+const LATAM = ["ARG", "BOL", "BRA", "CHL", "COL", "CRI", "CUB", "DOM", "ECU", "SLV", "GTM", "HTI", "HND", "MEX", "NIC", "PAN", "PRY", "PER", "URY", "VEN"];
+const club = d.club90.filter((iso) => !["UMC", "LCN"].includes(iso));
+const MIN_YEAR = 2019;
+
+const fmtRate = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 1 }));
+const fmtTimes = (x) => (x == null ? "—" : `${x.toLocaleString("pt-BR", { maximumFractionDigits: 1 })} vezes`);
+const mean = (xs) => {
+  const v = xs.filter(Number.isFinite);
+  return v.length ? d3.mean(v) : undefined;
+};
+
+function recent(rows, iso) {
+  const row = last(rows, iso);
+  return row && row.year >= MIN_YEAR ? row : undefined;
+}
+
+function bars(rows, isos, { group } = {}) {
+  const out = isos
+    .map((iso) => {
+      const row = recent(rows, iso);
+      if (!row) return;
+      return { iso, name: NAMES[iso] ?? iso, value: row.value, year: row.year, tone: iso === "BRA" ? "bra" : "peer" };
+    })
+    .filter((row) => row);
+  if (group) {
+    const row = recent(rows, group.iso);
+    if (row) out.push({ iso: group.iso, name: group.name, value: row.value, year: row.year, tone: "group" });
+  }
+  return out;
+}
+
+function rankOf(rows, iso) {
+  const sorted = rows.filter((r) => r.tone !== "group").sort((a, b) => b.value - a.value);
+  return { pos: sorted.findIndex((r) => r.iso === iso) + 1, n: sorted.length };
+}
+
+const nth = ({ pos }) => (pos === 1 ? "a maior" : `a ${pos}ª maior`);
+const othersMean = (rows) => mean(rows.filter((r) => r.iso !== "BRA" && r.tone !== "group").map((r) => r.value));
+const above = (rows) => rows.filter((r) => r.tone === "peer" && r.value > rows.find((x) => x.iso === "BRA")?.value).map((r) => r.name);
+const listPt = (names) => (names.length <= 1 ? names.join("") : `${names.slice(0, -1).join(", ")} e ${names.at(-1)}`);
+
+const braNow = last(hom, "BRA");
+const braPeak = d3.greatest(hom.filter((r) => r.iso === "BRA"), (r) => r.value);
+const bra90 = at(hom, "BRA", 1990);
+const dropSincePeak = (100 * (braPeak.value - braNow.value)) / braPeak.value;
+
+const clubBars = bars(hom, club);
+const clubRank = rankOf(clubBars, "BRA");
+const clubMean = othersMean(clubBars);
+const clubAbove = above(clubBars);
+const clubMedian = d3.median(clubBars.filter((r) => r.iso !== "BRA"), (r) => r.value);
+
+const clubBelowOne = clubBars.filter((r) => r.value < 1).sort((a, b) => a.value - b.value).map((r) => r.name);
+
+const latamBars = bars(hom, LATAM, { group: { iso: "LCN", name: "América Latina e Caribe" } });
+const latamRank = rankOf(latamBars, "BRA");
+const latamAbove = above(latamBars);
+const latamBelow = latamBars
+  .filter((r) => r.tone === "peer" && r.value < braNow.value)
+  .sort((a, b) => a.value - b.value)
+  .map((r) => r.name);
+
+function sexPlot(width) {
+  const bra = getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
+  const rows = [
+    ...homMale.filter((r) => r.iso === "BRA").map((r) => ({ year: r.year, value: r.value, sex: "Homens" })),
+    ...homFemale.filter((r) => r.iso === "BRA").map((r) => ({ year: r.year, value: r.value, sex: "Mulheres" })),
+  ];
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(260, Math.min(380, width * 0.7))),
+    marginLeft: 48,
+    x: { label: null, tickFormat: "d" },
+    y: { label: "homicídios por 100 mil, Brasil", grid: true },
+    color: { legend: true, domain: ["Homens", "Mulheres"], range: [bra, "#b45309"] },
+    marks: [
+      Plot.ruleY([0]),
+      Plot.lineY(rows, { x: "year", y: "value", stroke: "sex", strokeWidth: 2, tip: true }),
+    ],
+  });
+}
+const lcnNow = recent(hom, "LCN")?.value;
+const umcNow = recent(hom, "UMC")?.value;
+
+const braMale = last(homMale, "BRA");
+const braFemale = last(homFemale, "BRA");
+const femaleBars = bars(homFemale, club);
+const femaleRank = rankOf(femaleBars, "BRA");
+
+const stabBra = last(stability, "BRA");
+const stab00 = at(stability, "BRA", 2000);
+const stabPol = last(stability, "POL");
+const stabKor = last(stability, "KOR");
+const lawBra = last(law, "BRA");
+const lawPol = last(law, "POL");
+const lawKor = last(law, "KOR");
+const lawBra96 = at(law, "BRA", 1996);
+
+const oc = await FileAttachment("./data/ocindex.csv").csv({ typed: true });
+const ocCrime = series("criminality", oc);
+const ocRes = series("resilience", oc);
+const ocYear = d3.max(ocCrime, (r) => r.year);
+const fmtScore = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 2 }));
+
+function ocBars(rows) {
+  const out = club
+    .map((iso) => {
+      const value = at(rows, iso, ocYear);
+      if (value == null) return;
+      return { iso, name: NAMES[iso] ?? iso, value, tone: iso === "BRA" ? "bra" : "peer" };
+    })
+    .filter((row) => row);
+  out.push({ iso: "WORLD", name: "Média mundial", value: at(rows, "WORLD", ocYear), tone: "group" });
+  return out;
+}
+
+const ocCrimeBars = ocBars(ocCrime);
+const ocCrimeRank = rankOf(ocCrimeBars, "BRA");
+const ocCrimeAbove = above(ocCrimeBars);
+const ocResBars = ocBars(ocRes);
+const ocResRank = rankOf(ocResBars, "BRA");
+const ocBra = (metric, year = ocYear) => at(series(metric, oc), "BRA", year);
+const ocWorld = (metric, year = ocYear) => at(series(metric, oc), "WORLD", year);
+const ocYears = [...new Set(ocCrime.map((r) => r.year))].sort();
+const ocPeerPos = (metric) => {
+  const rows = series(metric, oc).filter((r) => r.year === ocYear && club.includes(r.iso));
+  const braValue = rows.find((r) => r.iso === "BRA")?.value;
+  return { pos: 1 + rows.filter((r) => r.value > braValue).length, n: rows.length };
+};
+const ocBelow = (metric) =>
+  club.filter((iso) => at(series(metric, oc), iso, ocYear) < ocBra(metric)).map((iso) => NAMES[iso] ?? iso);
+
+const OC_CRIME = [
+  ["mafia_style_groups", "Grupos de tipo máfia"],
+  ["state_embedded_actors", "Agentes dentro do Estado"],
+  ["criminal_networks", "Redes criminosas"],
+  ["cocaine_trade", "Tráfico de cocaína"],
+  ["arms_trafficking", "Tráfico de armas"],
+  ["extortion_and_protection_racketeering", "Extorsão e cobrança de proteção"],
+];
+const OC_RES = [
+  ["territorial_integrity", "Controle do território"],
+  ["law_enforcement", "Polícia"],
+  ["judicial_system_and_detention", "Justiça e prisões"],
+  ["anti_money_laundering", "Combate à lavagem de dinheiro"],
+];
+
+function ocDots(indicators, width, label) {
+  const bra = getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
+  const rows = indicators.flatMap(([metric, name]) =>
+    club
+      .map((iso) => ({ name, iso, country: NAMES[iso] ?? iso, value: at(series(metric, oc), iso, ocYear) }))
+      .filter((r) => r.value != null),
+  );
+  const world = indicators.map(([metric, name]) => ({ name, value: ocWorld(metric) }));
+  return Plot.plot({
+    width,
+    height: 40 + 34 * indicators.length,
+    marginLeft: Math.min(230, Math.max(150, width * 0.32)),
+    x: { domain: [1, 10], label, grid: true },
+    y: { label: null, domain: indicators.map(([, name]) => name) },
+    marks: [
+      Plot.tickX(world, { x: "value", y: "name", stroke: "#94a3b8", strokeWidth: 2, strokeDasharray: "3,2" }),
+      Plot.dot(rows.filter((r) => r.iso !== "BRA"), { x: "value", y: "name", r: 4, fill: "#cbd5e1", stroke: "#94a3b8", tip: true, title: (r) => `${r.country}: ${fmtScore(r.value)}` }),
+      Plot.dot(rows.filter((r) => r.iso === "BRA"), { x: "value", y: "name", r: 7, fill: bra, tip: true, title: (r) => `Brasil: ${fmtScore(r.value)}` }),
+    ],
+  });
+}
+
+function ocTrend(width) {
+  const bra = getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
+  const rows = [
+    ...ocCrime.filter((r) => r.iso === "BRA").map((r) => ({ year: r.year, value: r.value, line: "Criminalidade, Brasil" })),
+    ...ocCrime.filter((r) => r.iso === "WORLD").map((r) => ({ year: r.year, value: r.value, line: "Criminalidade, média mundial" })),
+    ...ocRes.filter((r) => r.iso === "BRA").map((r) => ({ year: r.year, value: r.value, line: "Resiliência, Brasil" })),
+    ...ocRes.filter((r) => r.iso === "WORLD").map((r) => ({ year: r.year, value: r.value, line: "Resiliência, média mundial" })),
+  ];
+  const domain = ["Criminalidade, Brasil", "Criminalidade, média mundial", "Resiliência, Brasil", "Resiliência, média mundial"];
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(260, Math.min(360, width * 0.6))),
+    marginLeft: 40,
+    x: { label: null, ticks: ocYears, tickFormat: "d" },
+    y: { label: "nota (1 a 10)", domain: [4, 8], grid: true },
+    color: { legend: true, domain, range: [bra, "#94a3b8", "#b45309", "#d6b38a"] },
+    marks: [
+      Plot.lineY(rows.filter((r) => !r.line.includes("mundial")), { x: "year", y: "value", stroke: "line", strokeWidth: 2 }),
+      Plot.lineY(rows.filter((r) => r.line.includes("mundial")), { x: "year", y: "value", stroke: "line", strokeWidth: 2, strokeDasharray: "4,3" }),
+      Plot.dot(rows, { x: "year", y: "value", fill: "line", r: 4, tip: true, title: (r) => `${r.line}, ${r.year}: ${fmtScore(r.value)}` }),
+    ],
+  });
+}
+
+const fmtIdx2 = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 2, minimumFractionDigits: 1, signDisplay: "exceptZero" }));
+
+function lede(kicker, title, value, neg = false) {
+  return html`<div class="lede">
+    <div class="lede-kicker">${kicker}</div>
+    <div class="lede-title">${title}</div>
+    <div class="lede-big ${neg ? "neg" : ""}">${value}</div>
+  </div>`;
+}
+return {load,series,at,last,keep,NAMES,metricPlot,barDelta,wdi,pisa,d,hom,homMale,homFemale,stability,law,LATAM,club,MIN_YEAR,fmtRate,fmtTimes,mean,recent,bars,rankOf,nth,othersMean,above,listPt,braNow,braPeak,bra90,dropSincePeak,clubBars,clubRank,clubMean,clubAbove,clubMedian,clubBelowOne,latamBars,latamRank,latamAbove,latamBelow,sexPlot,lcnNow,umcNow,braMale,braFemale,femaleBars,femaleRank,stabBra,stab00,stabPol,stabKor,lawBra,lawPol,lawKor,lawBra96,oc,ocCrime,ocRes,ocYear,fmtScore,ocBars,ocCrimeBars,ocCrimeRank,ocCrimeAbove,ocResBars,ocResRank,ocBra,ocWorld,ocYears,ocPeerPos,ocBelow,OC_CRIME,OC_RES,ocDots,ocTrend,fmtIdx2,lede};
+}});
+
+define({id: "1646c725", inputs: ["html","lede","braNow","fmtRate","fmtTimes","clubMedian","braPeak","d","dropSincePeak","display"], body: async (html,lede,braNow,fmtRate,fmtTimes,clubMedian,braPeak,d,dropSincePeak,display) => {
+display(await(
+html`<div class="lede-grid">
+  ${lede("Homicídios por 100 mil", String(braNow.year), fmtRate(braNow.value), true)}
+  ${lede("Contra o par típico", "taxa brasileira dividida pela mediana dos pares", fmtTimes(braNow.value / clubMedian), true)}
+  ${lede("Desde o pico", `${braPeak.year} → ${braNow.year}`, `−${d.fmtPct(dropSincePeak)}`)}
+</div>`
+))
+}});
+
+define({id: "2c1c72c3", mode: "inline", inputs: ["braNow","display"], body: async (braNow,display) => {
+display(await(
+braNow.year
+))
+}});
+
+define({id: "bd0ed6c3", mode: "inline", inputs: ["fmtRate","braNow","display"], body: async (fmtRate,braNow,display) => {
+display(await(
+fmtRate(braNow.value)
+))
+}});
+
+define({id: "807a81a7", mode: "inline", inputs: ["clubBars","display"], body: async (clubBars,display) => {
+display(await(
+clubBars.length - 1
+))
+}});
+
+define({id: "b9bfa84e", mode: "inline", inputs: ["fmtRate","clubMedian","display"], body: async (fmtRate,clubMedian,display) => {
+display(await(
+fmtRate(clubMedian)
+))
+}});
+
+define({id: "88544f31", mode: "inline", inputs: ["fmtRate","clubMean","display"], body: async (fmtRate,clubMean,display) => {
+display(await(
+fmtRate(clubMean)
+))
+}});
+
+define({id: "c52f6000", mode: "inline", inputs: ["nth","clubRank","display"], body: async (nth,clubRank,display) => {
+display(await(
+nth(clubRank)
+))
+}});
+
+define({id: "bfecbb8d", mode: "inline", inputs: ["listPt","clubAbove","display"], body: async (listPt,clubAbove,display) => {
+display(await(
+listPt(clubAbove)
+))
+}});
+
+define({id: "4f1b55d9", mode: "inline", inputs: ["resize","barDelta","clubBars","MIN_YEAR","fmtRate","display"], body: async (resize,barDelta,clubBars,MIN_YEAR,fmtRate,display) => {
+display(await(
+resize((width) => barDelta(clubBars, {width, xLabel: `homicídios por 100 mil (último ano desde ${MIN_YEAR})`, format: fmtRate}))
+))
+}});
+
+define({id: "7a28cf90", mode: "inline", inputs: ["listPt","clubBelowOne","display"], body: async (listPt,clubBelowOne,display) => {
+display(await(
+listPt(clubBelowOne)
+))
+}});
+
+define({id: "984c8a01", mode: "inline", inputs: ["d","braNow","recent","hom","display"], body: async (d,braNow,recent,hom,display) => {
+display(await(
+d.fmtIdx(braNow.value / recent(hom, "POL")?.value)
+))
+}});
+
+define({id: "5b3198c2", mode: "inline", inputs: ["d","braNow","recent","hom","display"], body: async (d,braNow,recent,hom,display) => {
+display(await(
+d.fmtIdx(braNow.value / recent(hom, "KOR")?.value)
+))
+}});
+
+define({id: "82c87785", mode: "inline", inputs: ["resize","metricPlot","keep","hom","club","fmtRate","display"], body: async (resize,metricPlot,keep,hom,club,fmtRate,display) => {
+display(await(
+resize((width) => metricPlot(keep(hom, club), {width, yLabel: "homicídios por 100 mil", format: fmtRate}))
+))
+}});
+
+define({id: "009e10c2", mode: "inline", inputs: ["fmtRate","lcnNow","display"], body: async (fmtRate,lcnNow,display) => {
+display(await(
+fmtRate(lcnNow)
+))
+}});
+
+define({id: "8f166f27", mode: "inline", inputs: ["fmtRate","umcNow","display"], body: async (fmtRate,umcNow,display) => {
+display(await(
+fmtRate(umcNow)
+))
+}});
+
+define({id: "5933e5ce", mode: "inline", inputs: ["nth","latamRank","display"], body: async (nth,latamRank,display) => {
+display(await(
+nth(latamRank)
+))
+}});
+
+define({id: "bbdbd1de", mode: "inline", inputs: ["latamRank","display"], body: async (latamRank,display) => {
+display(await(
+latamRank.n
+))
+}});
+
+define({id: "1d2ffc28", mode: "inline", inputs: ["listPt","latamAbove","display"], body: async (listPt,latamAbove,display) => {
+display(await(
+listPt(latamAbove)
+))
+}});
+
+define({id: "ac9c2b73", mode: "inline", inputs: ["listPt","latamBelow","display"], body: async (listPt,latamBelow,display) => {
+display(await(
+listPt(latamBelow.slice(0, 5))
+))
+}});
+
+define({id: "e66ce0fd", mode: "inline", inputs: ["resize","barDelta","latamBars","MIN_YEAR","fmtRate","display"], body: async (resize,barDelta,latamBars,MIN_YEAR,fmtRate,display) => {
+display(await(
+resize((width) => barDelta(latamBars, {width, xLabel: `homicídios por 100 mil (último ano desde ${MIN_YEAR})`, format: fmtRate}))
+))
+}});
+
+define({id: "4c644ae3", mode: "inline", inputs: ["fmtRate","bra90","display"], body: async (fmtRate,bra90,display) => {
+display(await(
+fmtRate(bra90)
+))
+}});
+
+define({id: "2147b31b", mode: "inline", inputs: ["fmtRate","braPeak","display"], body: async (fmtRate,braPeak,display) => {
+display(await(
+fmtRate(braPeak.value)
+))
+}});
+
+define({id: "13a683d1", mode: "inline", inputs: ["braPeak","display"], body: async (braPeak,display) => {
+display(await(
+braPeak.year
+))
+}});
+
+define({id: "9b0cdead", mode: "inline", inputs: ["d","dropSincePeak","display"], body: async (d,dropSincePeak,display) => {
+display(await(
+d.fmtPct(dropSincePeak)
+))
+}});
+
+define({id: "bd0ed6c3-1", mode: "inline", inputs: ["fmtRate","braNow","display"], body: async (fmtRate,braNow,display) => {
+display(await(
+fmtRate(braNow.value)
+))
+}});
+
+define({id: "2c1c72c3-1", mode: "inline", inputs: ["braNow","display"], body: async (braNow,display) => {
+display(await(
+braNow.year
+))
+}});
+
+define({id: "f92c9635", mode: "inline", inputs: ["resize","metricPlot","keep","hom","braPeak","fmtRate","display"], body: async (resize,metricPlot,keep,hom,braPeak,fmtRate,display) => {
+display(await(
+resize((width) => metricPlot(keep(hom, ["BRA", "LCN", "MEX", "COL", "CHL", "ARG"]), {width, yLabel: "homicídios por 100 mil", markRefs: true, rules: [braPeak.year], format: fmtRate}))
+))
+}});
+
+define({id: "13a683d1-1", mode: "inline", inputs: ["braPeak","display"], body: async (braPeak,display) => {
+display(await(
+braPeak.year
+))
+}});
+
+define({id: "13a683d1-2", mode: "inline", inputs: ["braPeak","display"], body: async (braPeak,display) => {
+display(await(
+braPeak.year
+))
+}});
+
+define({id: "48b95e5e", mode: "inline", inputs: ["braMale","display"], body: async (braMale,display) => {
+display(await(
+braMale.year
+))
+}});
+
+define({id: "d5d982ee", mode: "inline", inputs: ["fmtRate","braMale","display"], body: async (fmtRate,braMale,display) => {
+display(await(
+fmtRate(braMale.value)
+))
+}});
+
+define({id: "aaf72dac", mode: "inline", inputs: ["fmtRate","braFemale","display"], body: async (fmtRate,braFemale,display) => {
+display(await(
+fmtRate(braFemale.value)
+))
+}});
+
+define({id: "89ba56ce", mode: "inline", inputs: ["d","braMale","braFemale","display"], body: async (d,braMale,braFemale,display) => {
+display(await(
+d.fmtIdx(braMale.value / braFemale.value)
+))
+}});
+
+define({id: "b5fd6973", mode: "inline", inputs: ["resize","sexPlot","display"], body: async (resize,sexPlot,display) => {
+display(await(
+resize((width) => sexPlot(width))
+))
+}});
+
+define({id: "1c9b1ca2", mode: "inline", inputs: ["nth","femaleRank","display"], body: async (nth,femaleRank,display) => {
+display(await(
+nth(femaleRank)
+))
+}});
+
+define({id: "49947894", mode: "inline", inputs: ["femaleRank","display"], body: async (femaleRank,display) => {
+display(await(
+femaleRank.n
+))
+}});
+
+define({id: "9e365323", mode: "inline", inputs: ["resize","barDelta","femaleBars","MIN_YEAR","fmtRate","display"], body: async (resize,barDelta,femaleBars,MIN_YEAR,fmtRate,display) => {
+display(await(
+resize((width) => barDelta(femaleBars, {width, xLabel: `homicídios de mulheres por 100 mil mulheres (último ano desde ${MIN_YEAR})`, format: fmtRate}))
+))
+}});
+
+define({id: "78553dfc", mode: "inline", inputs: ["listPt","ocYears","display"], body: async (listPt,ocYears,display) => {
+display(await(
+listPt(ocYears.map(String))
+))
+}});
+
+define({id: "c71dc8d7", inputs: ["html","lede","ocYear","fmtScore","ocBra","display"], body: async (html,lede,ocYear,fmtScore,ocBra,display) => {
+display(await(
+html`<div class="lede-grid">
+  ${lede("Criminalidade, Brasil", `nota de 1 a 10, ${ocYear}`, fmtScore(ocBra("criminality")), true)}
+  ${lede("Posição no mundo", `entre 193 países, ${ocYear}`, `${ocBra("criminality_rank")}º`, true)}
+  ${lede("Resiliência, Brasil", `nota de 1 a 10, ${ocYear}`, fmtScore(ocBra("resilience")))}
+</div>`
+))
+}});
+
+define({id: "8df78ca8", mode: "inline", inputs: ["ocYear","display"], body: async (ocYear,display) => {
+display(await(
+ocYear
+))
+}});
+
+define({id: "11ef44cc", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("criminality"))
+))
+}});
+
+define({id: "85f0550b", mode: "inline", inputs: ["ocBra","display"], body: async (ocBra,display) => {
+display(await(
+ocBra("criminality_rank")
+))
+}});
+
+define({id: "2b92e063", mode: "inline", inputs: ["ocBra","display"], body: async (ocBra,display) => {
+display(await(
+ocBra("criminality_rank", 2021) === ocBra("criminality_rank", 2023) ? `Nas edições de 2021 e 2023 estava em ${ocBra("criminality_rank", 2023)}º.` : `Nas edições de 2021 e 2023 estava em ${ocBra("criminality_rank", 2021)}º e ${ocBra("criminality_rank", 2023)}º.`
+))
+}});
+
+define({id: "1fcdf2e2", mode: "inline", inputs: ["fmtScore","ocWorld","display"], body: async (fmtScore,ocWorld,display) => {
+display(await(
+fmtScore(ocWorld("criminality"))
+))
+}});
+
+define({id: "6a856303", mode: "inline", inputs: ["nth","ocCrimeRank","display"], body: async (nth,ocCrimeRank,display) => {
+display(await(
+nth(ocCrimeRank)
+))
+}});
+
+define({id: "40a3b4f6", mode: "inline", inputs: ["listPt","ocCrimeAbove","display"], body: async (listPt,ocCrimeAbove,display) => {
+display(await(
+listPt(ocCrimeAbove)
+))
+}});
+
+define({id: "d8ceb2b8", mode: "inline", inputs: ["resize","barDelta","ocCrimeBars","ocYear","fmtScore","display"], body: async (resize,barDelta,ocCrimeBars,ocYear,fmtScore,display) => {
+display(await(
+resize((width) => barDelta(ocCrimeBars, {width, xLabel: `criminalidade, nota de 1 a 10 (${ocYear})`, format: fmtScore}))
+))
+}});
+
+define({id: "fa24e66c", mode: "inline", inputs: ["ocBra","display"], body: async (ocBra,display) => {
+display(await(
+ocBra("criminal_markets_rank")
+))
+}});
+
+define({id: "9bd57d4b", mode: "inline", inputs: ["ocBra","display"], body: async (ocBra,display) => {
+display(await(
+ocBra("criminal_actors_rank")
+))
+}});
+
+define({id: "d792fb30", mode: "inline", inputs: ["resize","ocDots","OC_CRIME","ocYear","display"], body: async (resize,ocDots,OC_CRIME,ocYear,display) => {
+display(await(
+resize((width) => ocDots(OC_CRIME, width, `nota de 1 a 10 (${ocYear}) · mais alto = mais crime`))
+))
+}});
+
+define({id: "99560cc8", mode: "inline", inputs: ["d3","OC_CRIME","ocPeerPos","display"], body: async (d3,OC_CRIME,ocPeerPos,display) => {
+display(await(
+d3.max(OC_CRIME, ([metric]) => ocPeerPos(metric).pos) - 1
+))
+}});
+
+define({id: "19803751", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("mafia_style_groups"))
+))
+}});
+
+define({id: "b14b5a0f", mode: "inline", inputs: ["fmtScore","ocWorld","display"], body: async (fmtScore,ocWorld,display) => {
+display(await(
+fmtScore(ocWorld("mafia_style_groups"))
+))
+}});
+
+define({id: "e814eef5", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("state_embedded_actors"))
+))
+}});
+
+define({id: "ced50fe9", mode: "inline", inputs: ["nth","ocPeerPos","display"], body: async (nth,ocPeerPos,display) => {
+display(await(
+nth(ocPeerPos("state_embedded_actors"))
+))
+}});
+
+define({id: "ed667e94", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("cocaine_trade"))
+))
+}});
+
+define({id: "0a475836", mode: "inline", inputs: ["nth","ocPeerPos","display"], body: async (nth,ocPeerPos,display) => {
+display(await(
+nth(ocPeerPos("cocaine_trade"))
+))
+}});
+
+define({id: "8c21dd8b", mode: "inline", inputs: ["resize","ocTrend","display"], body: async (resize,ocTrend,display) => {
+display(await(
+resize((width) => ocTrend(width))
+))
+}});
+
+define({id: "da447181", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("criminality", 2021))
+))
+}});
+
+define({id: "11ef44cc-1", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("criminality"))
+))
+}});
+
+define({id: "8df78ca8-1", mode: "inline", inputs: ["ocYear","display"], body: async (ocYear,display) => {
+display(await(
+ocYear
+))
+}});
+
+define({id: "e2724714", mode: "inline", inputs: ["listPt","ocYears","fmtScore","ocBra","display"], body: async (listPt,ocYears,fmtScore,ocBra,display) => {
+display(await(
+listPt(ocYears.map((y) => fmtScore(ocBra("resilience", y))))
+))
+}});
+
+define({id: "8df78ca8-2", mode: "inline", inputs: ["ocYear","display"], body: async (ocYear,display) => {
+display(await(
+ocYear
+))
+}});
+
+define({id: "d1e3141a", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("criminality") - ocBra("criminality", 2023))
+))
+}});
+
+define({id: "14c1416f", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("resilience"))
+))
+}});
+
+define({id: "6528d2a6", mode: "inline", inputs: ["fmtScore","ocWorld","display"], body: async (fmtScore,ocWorld,display) => {
+display(await(
+fmtScore(ocWorld("resilience"))
+))
+}});
+
+define({id: "672b2b80", mode: "inline", inputs: ["nth","ocResRank","display"], body: async (nth,ocResRank,display) => {
+display(await(
+nth(ocResRank)
+))
+}});
+
+define({id: "2aa8a536", mode: "inline", inputs: ["ocResRank","display"], body: async (ocResRank,display) => {
+display(await(
+ocResRank.n
+))
+}});
+
+define({id: "93c78b3c", mode: "inline", inputs: ["listPt","ocBelow","display"], body: async (listPt,ocBelow,display) => {
+display(await(
+listPt(ocBelow("resilience"))
+))
+}});
+
+define({id: "b5fad42e", mode: "inline", inputs: ["resize","barDelta","ocResBars","ocYear","fmtScore","display"], body: async (resize,barDelta,ocResBars,ocYear,fmtScore,display) => {
+display(await(
+resize((width) => barDelta(ocResBars, {width, xLabel: `resiliência, nota de 1 a 10 (${ocYear}) · mais alto = melhor`, format: fmtScore}))
+))
+}});
+
+define({id: "4439a15c", mode: "inline", inputs: ["resize","ocDots","OC_RES","ocYear","display"], body: async (resize,ocDots,OC_RES,ocYear,display) => {
+display(await(
+resize((width) => ocDots(OC_RES, width, `nota de 1 a 10 (${ocYear}) · mais alto = mais resiliência`))
+))
+}});
+
+define({id: "74cf55ee", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("law_enforcement"))
+))
+}});
+
+define({id: "e8adc455", mode: "inline", inputs: ["listPt","ocBelow","display"], body: async (listPt,ocBelow,display) => {
+display(await(
+listPt(ocBelow("law_enforcement"))
+))
+}});
+
+define({id: "d003b743", mode: "inline", inputs: ["fmtScore","ocBra","display"], body: async (fmtScore,ocBra,display) => {
+display(await(
+fmtScore(ocBra("judicial_system_and_detention"))
+))
+}});
+
+define({id: "7b2cffa3", mode: "inline", inputs: ["listPt","ocBelow","display"], body: async (listPt,ocBelow,display) => {
+display(await(
+listPt(ocBelow("judicial_system_and_detention"))
+))
+}});
+
+define({id: "035d5b55", mode: "inline", inputs: ["fmtIdx2","stab00","display"], body: async (fmtIdx2,stab00,display) => {
+display(await(
+fmtIdx2(stab00)
+))
+}});
+
+define({id: "9121b824", mode: "inline", inputs: ["fmtIdx2","stabBra","display"], body: async (fmtIdx2,stabBra,display) => {
+display(await(
+fmtIdx2(stabBra?.value)
+))
+}});
+
+define({id: "d0360af2", mode: "inline", inputs: ["stabBra","display"], body: async (stabBra,display) => {
+display(await(
+stabBra?.year
+))
+}});
+
+define({id: "18a3807a", mode: "inline", inputs: ["fmtIdx2","stabPol","display"], body: async (fmtIdx2,stabPol,display) => {
+display(await(
+fmtIdx2(stabPol?.value)
+))
+}});
+
+define({id: "8c35f787", mode: "inline", inputs: ["fmtIdx2","stabKor","display"], body: async (fmtIdx2,stabKor,display) => {
+display(await(
+fmtIdx2(stabKor?.value)
+))
+}});
+
+define({id: "ebea45e0", mode: "inline", inputs: ["resize","metricPlot","keep","stability","club","fmtIdx2","display"], body: async (resize,metricPlot,keep,stability,club,fmtIdx2,display) => {
+display(await(
+resize((width) => metricPlot(keep(stability, club), {width, yLabel: "estabilidade política e ausência de violência", yRules: [0], format: fmtIdx2}))
+))
+}});
+
+define({id: "19da8648", mode: "inline", inputs: ["fmtIdx2","lawBra96","display"], body: async (fmtIdx2,lawBra96,display) => {
+display(await(
+fmtIdx2(lawBra96)
+))
+}});
+
+define({id: "2c7c71eb", mode: "inline", inputs: ["fmtIdx2","lawBra","display"], body: async (fmtIdx2,lawBra,display) => {
+display(await(
+fmtIdx2(lawBra?.value)
+))
+}});
+
+define({id: "073928cc", mode: "inline", inputs: ["lawBra","display"], body: async (lawBra,display) => {
+display(await(
+lawBra?.year
+))
+}});
+
+define({id: "6da1eaf4", mode: "inline", inputs: ["fmtIdx2","lawPol","display"], body: async (fmtIdx2,lawPol,display) => {
+display(await(
+fmtIdx2(lawPol?.value)
+))
+}});
+
+define({id: "c3fd736d", mode: "inline", inputs: ["fmtIdx2","lawKor","display"], body: async (fmtIdx2,lawKor,display) => {
+display(await(
+fmtIdx2(lawKor?.value)
+))
+}});
+
+define({id: "b8251973", mode: "inline", inputs: ["resize","metricPlot","keep","law","club","fmtIdx2","display"], body: async (resize,metricPlot,keep,law,club,fmtIdx2,display) => {
+display(await(
+resize((width) => metricPlot(keep(law, club), {width, yLabel: "Estado de direito", yRules: [0], format: fmtIdx2}))
+))
+}});
+
+define({id: "14571d49", mode: "inline", inputs: ["fmtIdx2","at","stability","display"], body: async (fmtIdx2,at,stability,display) => {
+display(await(
+fmtIdx2(at(stability, "BRA", 2019))
+))
+}});
+
+define({id: "49656ae4", mode: "inline", inputs: ["MIN_YEAR","display"], body: async (MIN_YEAR,display) => {
+display(await(
+MIN_YEAR
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">brviz</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./README">Untitled</a></li>
+    <li class="observablehq-link"><a href="./divida">Dívida, previdência e salário mínimo</a></li>
+    <li class="observablehq-link"><a href="./educacao">Educação</a></li>
+    <li class="observablehq-link"><a href="./eleicoes">Eleições: onde o PT tem voto</a></li>
+    <li class="observablehq-link"><a href="./ensino-superior">Ensino superior: irrelevante?</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./seguranca">Segurança pública</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Nesta página</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#como-a-violencia-e-medida-aqui">Como a violência é medida aqui</a></li>
+<li class="observablehq-secondary-link"><a href="#o-brasil-contra-os-pares">O Brasil contra os pares</a></li>
+<li class="observablehq-secondary-link"><a href="#e-dentro-da-america-latina">E dentro da América Latina?</a></li>
+<li class="observablehq-secondary-link"><a href="#quase-trinta-anos-de-alta-seis-de-queda">Quase trinta anos de alta, seis de queda</a></li>
+<li class="observablehq-secondary-link"><a href="#quem-morre">Quem morre</a></li>
+<li class="observablehq-secondary-link"><a href="#crime-organizado-e-dominio-territorial">Crime organizado e domínio territorial</a></li>
+<li class="observablehq-secondary-link"><a href="#instituicoes-a-percepcao-piorou">Instituições: a percepção piorou</a></li>
+<li class="observablehq-secondary-link"><a href="#limites-desta-pagina">Limites desta página</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="seguranca-publica" tabindex="-1"><a class="observablehq-header-anchor" href="#seguranca-publica">Segurança pública</a></h1>
+<p>Esta página acompanha o <a href="./">relatório</a>. Ela compara a violência letal no Brasil com o mesmo grupo de pares — países cuja renda per capita em 1990 ficava entre 65% e 135% da brasileira — e com a América Latina.</p>
+<div class="observablehq observablehq--block"><!--:eada6384:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:1646c725:--></div>
+<h2 id="como-a-violencia-e-medida-aqui" tabindex="-1"><a class="observablehq-header-anchor" href="#como-a-violencia-e-medida-aqui">Como a violência é medida aqui</a></h2>
+<p>A medida é a taxa de homicídios intencionais por 100 mil habitantes, compilada pelo Escritório das Nações Unidas sobre Drogas e Crime (UNODC) e publicada pelo Banco Mundial. É a única série que permite comparar dezenas de países com a mesma definição.</p>
+<p>Ela não bate exatamente com os números que circulam no Brasil. O Fórum Brasileiro de Segurança Pública soma às agressões as mortes por intervenção policial e os latrocínios, e o Atlas da Violência estima homicídios escondidos entre as mortes de causa indeterminada. As duas fontes dão taxas mais altas que a do UNODC. A tendência, porém, é a mesma.</p>
+<h2 id="o-brasil-contra-os-pares" tabindex="-1"><a class="observablehq-header-anchor" href="#o-brasil-contra-os-pares">O Brasil contra os pares</a></h2>
+<p>Em <observablehq-loading></observablehq-loading><!--:2c1c72c3:-->, o Brasil teve <observablehq-loading></observablehq-loading><!--:bd0ed6c3:--> homicídios por 100 mil habitantes. A mediana dos <observablehq-loading></observablehq-loading><!--:807a81a7:--> outros pares com dado recente foi <observablehq-loading></observablehq-loading><!--:b9bfa84e:-->. A média simples, <observablehq-loading></observablehq-loading><!--:88544f31:-->, é puxada para cima por poucos países muito violentos. O Brasil tem <observablehq-loading></observablehq-loading><!--:c52f6000:--> taxa do grupo. Só <observablehq-loading></observablehq-loading><!--:bfecbb8d:--> ficam acima.</p>
+<p><observablehq-loading></observablehq-loading><!--:4f1b55d9:--></p>
+<p>A média esconde dois mundos. <observablehq-loading></observablehq-loading><!--:7a28cf90:--> têm taxas abaixo de 1 por 100 mil. A taxa brasileira é cerca de <observablehq-loading></observablehq-loading><!--:984c8a01:--> vezes a polonesa e <observablehq-loading></observablehq-loading><!--:5b3198c2:--> vezes a coreana. Os países que abriram distância do Brasil em renda também abriram em segurança.</p>
+<p><observablehq-loading></observablehq-loading><!--:82c87785:--></p>
+<h2 id="e-dentro-da-america-latina" tabindex="-1"><a class="observablehq-header-anchor" href="#e-dentro-da-america-latina">E dentro da América Latina?</a></h2>
+<p>A América Latina é a região mais violenta do mundo, e o Brasil está na metade mais violenta dela. A taxa média da região, pelo agregado do Banco Mundial, foi <observablehq-loading></observablehq-loading><!--:009e10c2:--> por 100 mil, quase igual à brasileira. Entre os países de renda média-alta no mundo, a média é <observablehq-loading></observablehq-loading><!--:8f166f27:-->.</p>
+<p>O Brasil tem <observablehq-loading></observablehq-loading><!--:5933e5ce:--> taxa entre <observablehq-loading></observablehq-loading><!--:bbdbd1de:--> países latino-americanos com dado recente. Acima dele estão <observablehq-loading></observablehq-loading><!--:1d2ffc28:-->. Abaixo, entre outros, <observablehq-loading></observablehq-loading><!--:ac9c2b73:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:e66ce0fd:--></p>
+<p>Como o Brasil tem um terço da população da região, o agregado latino-americano do Banco Mundial pesa muito o próprio Brasil. A comparação com os países, um a um, é mais informativa que a comparação com a média.</p>
+<h2 id="quase-trinta-anos-de-alta-seis-de-queda" tabindex="-1"><a class="observablehq-header-anchor" href="#quase-trinta-anos-de-alta-seis-de-queda">Quase trinta anos de alta, seis de queda</a></h2>
+<p>A trajetória brasileira tem duas fases claras. De <observablehq-loading></observablehq-loading><!--:4c644ae3:--> por 100 mil em 1990, a taxa subiu quase sem parar até <observablehq-loading></observablehq-loading><!--:2147b31b:--> em <observablehq-loading></observablehq-loading><!--:13a683d1:-->. Desde então caiu <observablehq-loading></observablehq-loading><!--:9b0cdead:-->, para <observablehq-loading></observablehq-loading><!--:bd0ed6c3-1:--> em <observablehq-loading></observablehq-loading><!--:2c1c72c3-1:--> — de volta ao nível de 1990.</p>
+<p><observablehq-loading></observablehq-loading><!--:f92c9635:--></p>
+<div class="takeaway">
+  <strong>Aqui a tese da inércia não vale, nos dois sentidos.</strong>
+  <span>Entre 1990 e <observablehq-loading></observablehq-loading><!--:13a683d1-1:-->, enquanto a pobreza caía e a renda subia, a violência letal brasileira subiu. Depois de <observablehq-loading></observablehq-loading><!--:13a683d1-2:-->, caiu rápido, num período de renda quase parada. Nenhuma das duas fases acompanhou o resto da economia.</span>
+</div>
+<p>A queda depois de 2017 é real e grande, e não tem uma explicação única aceita. Os estudos brasileiros apontam várias causas ao mesmo tempo: menos jovens na população, porque a fecundidade caiu; mudanças na disputa entre facções criminosas; políticas estaduais de segurança; e mudanças na forma de registrar as mortes. Estes dados não permitem separar o peso de cada uma.</p>
+<h2 id="quem-morre" tabindex="-1"><a class="observablehq-header-anchor" href="#quem-morre">Quem morre</a></h2>
+<p>A violência letal no Brasil é masculina. Em <observablehq-loading></observablehq-loading><!--:48b95e5e:-->, a taxa entre homens foi <observablehq-loading></observablehq-loading><!--:d5d982ee:--> por 100 mil, contra <observablehq-loading></observablehq-loading><!--:aaf72dac:--> entre mulheres — <observablehq-loading></observablehq-loading><!--:89ba56ce:--> vezes mais.</p>
+<p><observablehq-loading></observablehq-loading><!--:b5fd6973:--></p>
+<p>Quase toda a alta e quase toda a queda vieram dos homens. A taxa entre mulheres mudou pouco em três décadas. Mesmo assim, comparada à de outros países, ela é alta: o Brasil tem <observablehq-loading></observablehq-loading><!--:1c9b1ca2:--> taxa de homicídios de mulheres entre <observablehq-loading></observablehq-loading><!--:49947894:--> pares com dado.</p>
+<p><observablehq-loading></observablehq-loading><!--:9e365323:--></p>
+<p>Esta série não mostra idade, cor nem local. Os dados brasileiros, como os do Atlas da Violência, mostram que as vítimas se concentram entre homens jovens, negros e moradores das periferias e de alguns estados do Norte e do Nordeste. Essa é a parte mais importante do problema, e ela não aparece numa comparação entre países.</p>
+<h2 id="crime-organizado-e-dominio-territorial" tabindex="-1"><a class="observablehq-header-anchor" href="#crime-organizado-e-dominio-territorial">Crime organizado e domínio territorial</a></h2>
+<p>A taxa de homicídios mede mortes, não o poder das organizações criminosas. Uma facção que domina um território sem rival pode matar menos do que duas facções em guerra. Para medir o crime organizado em si, a única comparação entre países é o Índice Global de Crime Organizado, da Global Initiative Against Transnational Organized Crime, uma organização com sede em Genebra.</p>
+<p>O índice dá notas de 1 a 10 para 193 países, a partir de avaliações de especialistas apoiadas em dados públicos. Ele mede dois lados. A <strong>criminalidade</strong> é a média da força dos mercados criminosos (drogas, armas, extorsão, crimes ambientais e outros) e dos atores criminosos (facções, milícias, redes e agentes do próprio Estado). A <strong>resiliência</strong> mede a capacidade do país de resistir: polícia, Justiça, combate à lavagem de dinheiro, controle do território. Houve edições em <observablehq-loading></observablehq-loading><!--:78553dfc:-->.</p>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:c71dc8d7:--></div>
+<p>Em <observablehq-loading></observablehq-loading><!--:8df78ca8:-->, o Brasil teve nota <observablehq-loading></observablehq-loading><!--:11ef44cc:--> em criminalidade, <observablehq-loading></observablehq-loading><!--:85f0550b:-->º lugar entre 193 países. <observablehq-loading></observablehq-loading><!--:2b92e063:--> A média mundial é <observablehq-loading></observablehq-loading><!--:1fcdf2e2:-->. Entre os pares, o Brasil tem <observablehq-loading></observablehq-loading><!--:6a856303:--> nota. Acima dele ficam <observablehq-loading></observablehq-loading><!--:40a3b4f6:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:d8ceb2b8:--></p>
+<p>O Brasil vai pior nos mercados criminosos que nos atores. Na nota de mercados, o Brasil é o <observablehq-loading></observablehq-loading><!--:fa24e66c:-->º do mundo; na de atores, o <observablehq-loading></observablehq-loading><!--:9bd57d4b:-->º. O gráfico abaixo mostra os indicadores mais ligados ao domínio territorial. Cada ponto cinza é um par, o ponto azul é o Brasil e o traço tracejado é a média mundial.</p>
+<p><observablehq-loading></observablehq-loading><!--:d792fb30:--></p>
+<p>Em todos eles, no máximo <observablehq-loading></observablehq-loading><!--:99560cc8:--> pares têm nota maior que a brasileira. Em grupos de tipo máfia — organizações com nome, hierarquia e controle de território, como as grandes facções —, o Brasil tem nota <observablehq-loading></observablehq-loading><!--:19803751:-->, contra <observablehq-loading></observablehq-loading><!--:b14b5a0f:--> na média mundial. Em agentes criminosos dentro do Estado, como policiais e políticos ligados ao crime, tem <observablehq-loading></observablehq-loading><!--:e814eef5:-->, <observablehq-loading></observablehq-loading><!--:ced50fe9:--> nota do grupo. No tráfico de cocaína, <observablehq-loading></observablehq-loading><!--:ed667e94:-->, <observablehq-loading></observablehq-loading><!--:0a475836:--> nota do grupo.</p>
+<p><observablehq-loading></observablehq-loading><!--:8c21dd8b:--></p>
+<div class="takeaway">
+  <strong>Menos mortes não quer dizer menos crime organizado.</strong>
+  <span>A taxa de homicídios brasileira caiu depois de 2017. No mesmo período, a nota de criminalidade do índice subiu a cada edição, de <observablehq-loading></observablehq-loading><!--:da447181:--> em 2021 para <observablehq-loading></observablehq-loading><!--:11ef44cc-1:--> em <observablehq-loading></observablehq-loading><!--:8df78ca8-1:-->. A resiliência não saiu do lugar: <observablehq-loading></observablehq-loading><!--:e2724714:-->, nas três edições.</span>
+</div>
+<p>Duas ressalvas. A edição de 2023 passou a incluir cinco mercados novos, como extorsão e crimes financeiros, então parte da alta entre 2021 e 2023 vem da mudança no método. A comparação entre 2023 e <observablehq-loading></observablehq-loading><!--:8df78ca8-2:--> usa a mesma lista: a nota brasileira subiu <observablehq-loading></observablehq-loading><!--:d1e3141a:--> ponto. E as notas são avaliações de especialistas, não contagens. Diferenças de alguns décimos ficam dentro do que o julgamento de cada avaliador pode mudar.</p>
+<p>Na resiliência, a nota brasileira, <observablehq-loading></observablehq-loading><!--:14c1416f:-->, fica um pouco acima da média mundial (<observablehq-loading></observablehq-loading><!--:6528d2a6:-->), mas abaixo da maioria dos pares: é <observablehq-loading></observablehq-loading><!--:672b2b80:--> entre <observablehq-loading></observablehq-loading><!--:2aa8a536:-->. Só <observablehq-loading></observablehq-loading><!--:93c78b3c:--> ficam atrás.</p>
+<p><observablehq-loading></observablehq-loading><!--:b5fad42e:--></p>
+<p>O ponto mais fraco é a parte que enfrenta o crime no dia a dia:</p>
+<p><observablehq-loading></observablehq-loading><!--:4439a15c:--></p>
+<p>Na polícia, o Brasil tem nota <observablehq-loading></observablehq-loading><!--:74cf55ee:-->; só <observablehq-loading></observablehq-loading><!--:e8adc455:--> fica abaixo entre os pares. Em Justiça e prisões, <observablehq-loading></observablehq-loading><!--:d003b743:-->; só <observablehq-loading></observablehq-loading><!--:7b2cffa3:--> ficam abaixo.</p>
+<h3 id="quanta-gente-vive-sob-faccoes-e-milicias" tabindex="-1"><a class="observablehq-header-anchor" href="#quanta-gente-vive-sob-faccoes-e-milicias">Quanta gente vive sob facções e milícias</a></h3>
+<p>O índice não diz quantas pessoas vivem em áreas dominadas. Para isso existem duas fontes brasileiras, sem equivalente em outros países.</p>
+<p>A primeira é uma pesquisa Datafolha para o Fórum Brasileiro de Segurança Pública, de março de 2026, com 2.004 entrevistas. Nela, 41,2% dos brasileiros com 16 anos ou mais dizem que há facções ou milícias no bairro onde moram — cerca de 68,7 milhões de pessoas. Nas capitais são 55,9%; no interior, 34,1%. Entre esses moradores, 61,4% dizem que os grupos influenciam muito ou moderadamente as regras do bairro, e 51,1% sofreram algum tipo de violência em 12 meses, contra 40,1% na média nacional.</p>
+<p>Uma pesquisa anterior, de junho de 2025, dava 19%. Mas ela perguntava sobre presença explícita dos grupos. A diferença vem em boa parte da pergunta, e as duas não formam uma série.</p>
+<p>A segunda é o Mapa Histórico dos Grupos Armados, da Universidade Federal Fluminense e do Instituto Fogo Cruzado. Ele cobre só a região metropolitana do Rio de Janeiro, de 2007 a 2024, a partir de denúncias anônimas conferidas com notícias. Em 2024, 29,7% da população da região vivia sob controle direto de grupos armados, e outros 5,3% sob a influência deles. São quase 4 milhões de pessoas, o maior número da série. As milícias têm a maior área controlada, 49,4% do total, e foram o grupo que mais cresceu: a área delas aumentou 315% desde 2007. O Comando Vermelho tem a maior parte da área sob controle direto.</p>
+<p>Os números do Rio não valem para o país. Mostram, porém, o que a queda de homicídios pode esconder: um território controlado sem disputa é, muitas vezes, um território com menos mortes.</p>
+<h2 id="instituicoes-a-percepcao-piorou" tabindex="-1"><a class="observablehq-header-anchor" href="#instituicoes-a-percepcao-piorou">Instituições: a percepção piorou</a></h2>
+<p>Dois indicadores de governança do Banco Mundial ajudam a pôr a violência em contexto. Ambos são medidas de percepção, construídas a partir de pesquisas e avaliações de especialistas, com margem de erro grande. Zero é a média mundial.</p>
+<p>O de estabilidade política e ausência de violência caiu de <observablehq-loading></observablehq-loading><!--:035d5b55:--> em 2000 para <observablehq-loading></observablehq-loading><!--:9121b824:--> em <observablehq-loading></observablehq-loading><!--:d0360af2:-->. A Polônia está em <observablehq-loading></observablehq-loading><!--:18a3807a:--> e a Coreia em <observablehq-loading></observablehq-loading><!--:8c35f787:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:ebea45e0:--></p>
+<p>O de Estado de direito — confiança na polícia, nos tribunais e no cumprimento de contratos — passou de <observablehq-loading></observablehq-loading><!--:19da8648:--> em 1996 para <observablehq-loading></observablehq-loading><!--:2c7c71eb:--> em <observablehq-loading></observablehq-loading><!--:073928cc:-->. Polônia: <observablehq-loading></observablehq-loading><!--:6da1eaf4:-->. Coreia: <observablehq-loading></observablehq-loading><!--:c3fd736d:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:b8251973:--></p>
+<p>A queda de homicídios depois de 2017 quase não aparece nesses índices. O de estabilidade melhorou um pouco desde o pior ponto (<observablehq-loading></observablehq-loading><!--:14571d49:--> em 2019), e o de Estado de direito continua abaixo do nível de 1996.</p>
+<h2 id="limites-desta-pagina" tabindex="-1"><a class="observablehq-header-anchor" href="#limites-desta-pagina">Limites desta página</a></h2>
+<ul>
+<li>A série do UNODC é a única comparável entre países, mas subestima a violência letal brasileira em relação às fontes nacionais, que incluem mortes por intervenção policial e homicídios escondidos.</li>
+<li>Os países não publicam dados nos mesmos anos. A comparação usa o último dado de cada país desde <observablehq-loading></observablehq-loading><!--:49656ae4:-->; quem não tem dado nesse período fica de fora.</li>
+<li>Estabilidade política e Estado de direito são medidas de percepção. Não medem crime.</li>
+<li>O Índice Global de Crime Organizado é feito de avaliações de especialistas, não de contagens. A edição de 2021 tem menos indicadores que as seguintes.</li>
+<li>As pesquisas sobre presença de facções medem o que os moradores dizem ver, e mudam muito conforme a pergunta. O mapa de grupos armados cobre só a região metropolitana do Rio.</li>
+<li>Nada aqui identifica causas. A coincidência entre a queda de homicídios e a queda da fecundidade, ou qualquer mudança política, não prova uma relação.</li>
+</ul>
+<p>Fontes: UNODC, via World Bank WDI (<code>VC.IHR.PSRC.P5</code>, <code>VC.IHR.PSRC.MA.P5</code>, <code>VC.IHR.PSRC.FE.P5</code>) · World Bank Worldwide Governance Indicators (<code>GOV_WGI_PV.EST</code>, <code>GOV_WGI_RL.EST</code>) · <a href="https://ocindex.net/" target="_blank" rel="noopener noreferrer">Global Organized Crime Index</a>, GI-TOC (<a href="https://ocindex.net/assets/downloads/global_oc_index.xlsx" target="_blank" rel="noopener noreferrer">base de dados</a>, <a href="https://ocindex.net/country/brazil/" target="_blank" rel="noopener noreferrer">perfil do Brasil</a>) · Datafolha/FBSP, <a href="https://forumseguranca.org.br/wp-content/uploads/2026/05/os-gatilhos-da-inseguranca-resumo-executivo-2026.pdf" target="_blank" rel="noopener noreferrer"><em>Os gatilhos da insegurança</em> (resumo executivo, 2026)</a> e <a href="https://g1.globo.com/politica/noticia/2025/10/16/pessoas-vivem-em-area-dominada-por-faccoes-e-milicias-diz-datafolha.ghtml" target="_blank" rel="noopener noreferrer">pesquisa de 2025, via G1</a> · GENI/UFF e Instituto Fogo Cruzado, <a href="https://geni.uff.br/wp-content/uploads/sites/357/2025/12/Relatorio-Mapa-2025-Alt3.pdf" target="_blank" rel="noopener noreferrer">Mapa Histórico dos Grupos Armados (relatório 2025)</a>. O grupo de pares é o mesmo do <a href="./">relatório</a>.</p>
+</main>
+<footer id="observablehq-footer">
+<div>World Bank WDI · Observable Framework</div>
+</footer>
+</div>
+</body>
+</html>

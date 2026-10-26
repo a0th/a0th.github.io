@@ -7,6 +7,7 @@ import urllib.request
 from pathlib import Path
 
 from brviz.catalog import COUNTRIES, NAME_TO_ISO, country_codes, indicators
+from brviz.imf import IMF_METRICS, fetch_imf, fetch_imf_metric
 from brviz.institutions import fetch_days, fetch_efw, fetch_tfp
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,6 +88,10 @@ def fetch(*, start: int, end: int, extra: bool, out: Path) -> dict:
     sources["tfp"] = tfp_meta
     rows.extend(tfp_rows)
 
+    for key, (imf_meta, imf_rows) in fetch_imf(start=start, end=end).items():
+        sources[key] = imf_meta
+        rows.extend(imf_rows)
+
     fieldnames = ["metric", "code", "label", "iso", "country", "year", "value"]
     with out.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
@@ -114,12 +119,19 @@ SPECIAL = {
     "start_days": lambda **_: fetch_days(),
     "efw": lambda start, end: fetch_efw(start=start, end=end),
     "tfp": lambda start, end: fetch_tfp(start=start, end=end),
+    **{
+        key: (lambda start, end, key=key: fetch_imf_metric(key, start=start, end=end))
+        for key in IMF_METRICS
+    },
 }
 
 
 def splice(*, keys: list[str], start: int, end: int, out: Path) -> dict:
     catalog = indicators(extra=True)
     existing = list(csv.DictReader(out.open()))
+    if "imf" in keys:
+        extra = [k for k in IMF_METRICS if k not in keys]
+        keys = [k for k in keys if k != "imf"] + extra
     drop = set(keys)
     rows = [r for r in existing if r["metric"] not in drop]
     sources = {}

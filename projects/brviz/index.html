@@ -13,8 +13,8 @@
 <link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.65f0d609.js">
-<link rel="modulepreload" href="./_import/components/plots.17d3c48f.js">
+<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
+<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
 <link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
@@ -120,10 +120,10 @@ import {define} from "./_observablehq/client.a97643eb.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
 registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
-registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.e3613ad5.csv","lastModified":1787948458883,"size":973314});
+registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
 
-define({id: "820900f6", inputs: ["FileAttachment","html"], outputs: ["load","at","last","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","d","ppp03","ppp10","boomShare","mfgZaf","trdKor","trdZaf","trdChn","trdInd","hungerPol","hungerKor","isosOf","rankOf","levelsAt","growthAt","meanExceptBra","lastYear","braPpp90","braPppNow","korPppNow","rankPpp90","rankPppNow","clubPost","braPost","clubPostMean","rankPost","wavePost","wavePostMean","waveBoomMean","clubLast","rankProd","rankTfp","rankInv","rankGini","rankPov","braProd10","braProdNow","braProdPost","povBoomCountries","povBoomRank","pisaBra03","pisaBra12","pisaOecd03","pisaGap03","pisaGapNow","pisaBraGain","pisaOecdDrop","barCell","ledeTip","ledeRows","indexLede","fromZero","ledeCard","pares","povertyBarMax","povertyGroups","povertyCountries","povertyTableView"], body: async (FileAttachment,html) => {
-const [{load, at, last}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.65f0d609.js"), import("./_import/components/plots.17d3c48f.js")]);
+define({id: "69a62992", inputs: ["FileAttachment","html"], outputs: ["load","at","last","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","d","ppp03","ppp10","boomShare","mfgZaf","trdKor","trdZaf","trdChn","trdInd","hungerPol","hungerKor","isosOf","rankOf","levelsAt","growthAt","meanExceptBra","lastYear","braPpp90","braPppNow","korPppNow","rankPpp90","rankPppNow","clubPost","braPost","clubPostMean","rankPost","wavePost","wavePostMean","waveBoomMean","waveDilmaMean","rankDilma","totBoomPct","totBustPct","tfp10","tfp16","braTfpDilma","meanYears","braPrimaryLula","braPrimaryDilma","braPrimary14","clubLast","rankProd","rankTfp","rankInv","rankGini","rankPov","braProd10","braProdNow","braProdPost","povBoomCountries","povBoomRank","pisaBra03","pisaBra12","pisaOecd03","pisaGap03","pisaGapNow","pisaBraGain","pisaOecdDrop","barCell","ledeTip","ledeRows","indexLede","fromZero","ledeCard","pares","povertyBarMax","povertyGroups","povertyCountries","povertyTableView"], body: async (FileAttachment,html) => {
+const [{load, at, last}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
 const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });
@@ -182,6 +182,31 @@ const rankPost = rankOf(clubPost, "BRA");
 const wavePost = growthAt(d.pppWaveRel, 2010, lastYear);
 const wavePostMean = meanExceptBra(wavePost);
 const waveBoomMean = meanExceptBra(d.waveBoom);
+const waveDilmaMean = meanExceptBra(d.waveDilma);
+const rankDilma = rankOf(d.waveDilma, "BRA");
+const totBoomPct =
+  d.totBra05 != null && d.totBra11 != null
+    ? (100 * (d.totBra11 - d.totBra05)) / d.totBra05
+    : undefined;
+const totBustPct =
+  d.totBra11 != null && d.totBra16 != null
+    ? (100 * (d.totBra16 - d.totBra11)) / d.totBra11
+    : undefined;
+const tfp10 = at(d.tfp90rel, "BRA", 2010);
+const tfp16 = at(d.tfp90rel, "BRA", 2016);
+const braTfpDilma =
+  tfp10 != null && tfp16 != null ? (100 * (tfp16 - tfp10)) / tfp10 : undefined;
+
+function meanYears(rows, iso, y0, y1) {
+  const list = rows.filter(
+    (row) => row.iso === iso && row.year >= y0 && row.year <= y1 && Number.isFinite(row.value),
+  );
+  return list.length ? list.reduce((sum, row) => sum + row.value, 0) / list.length : undefined;
+}
+
+const braPrimaryLula = meanYears(d.primaryWave, "BRA", 2003, 2010);
+const braPrimaryDilma = meanYears(d.primaryWave, "BRA", 2011, 2014);
+const braPrimary14 = at(d.primaryWave, "BRA", 2014);
 
 const clubLast = (rows) => d.club90.map((iso) => ({ iso, value: last(rows, iso)?.value }));
 const rankProd = rankOf(clubLast(d.prod90rel), "BRA");
@@ -316,7 +341,7 @@ function povertyTableView(rows, nameHeader) {
     </table>
   </div>`;
 }
-return {load,at,last,metricPlot,barDelta,spendPisaPlot,invGrowthPlot,wdi,pisa,d,ppp03,ppp10,boomShare,mfgZaf,trdKor,trdZaf,trdChn,trdInd,hungerPol,hungerKor,isosOf,rankOf,levelsAt,growthAt,meanExceptBra,lastYear,braPpp90,braPppNow,korPppNow,rankPpp90,rankPppNow,clubPost,braPost,clubPostMean,rankPost,wavePost,wavePostMean,waveBoomMean,clubLast,rankProd,rankTfp,rankInv,rankGini,rankPov,braProd10,braProdNow,braProdPost,povBoomCountries,povBoomRank,pisaBra03,pisaBra12,pisaOecd03,pisaGap03,pisaGapNow,pisaBraGain,pisaOecdDrop,barCell,ledeTip,ledeRows,indexLede,fromZero,ledeCard,pares,povertyBarMax,povertyGroups,povertyCountries,povertyTableView};
+return {load,at,last,metricPlot,barDelta,spendPisaPlot,invGrowthPlot,wdi,pisa,d,ppp03,ppp10,boomShare,mfgZaf,trdKor,trdZaf,trdChn,trdInd,hungerPol,hungerKor,isosOf,rankOf,levelsAt,growthAt,meanExceptBra,lastYear,braPpp90,braPppNow,korPppNow,rankPpp90,rankPppNow,clubPost,braPost,clubPostMean,rankPost,wavePost,wavePostMean,waveBoomMean,waveDilmaMean,rankDilma,totBoomPct,totBustPct,tfp10,tfp16,braTfpDilma,meanYears,braPrimaryLula,braPrimaryDilma,braPrimary14,clubLast,rankProd,rankTfp,rankInv,rankGini,rankPov,braProd10,braProdNow,braProdPost,povBoomCountries,povBoomRank,pisaBra03,pisaBra12,pisaOecd03,pisaGap03,pisaGapNow,pisaBraGain,pisaOecdDrop,barCell,ledeTip,ledeRows,indexLede,fromZero,ledeCard,pares,povertyBarMax,povertyGroups,povertyCountries,povertyTableView};
 }});
 
 define({id: "c5b73f46", inputs: ["html","ledeCard","last","d","indexLede","display"], body: async (html,ledeCard,last,d,indexLede,display) => {
@@ -551,6 +576,114 @@ rankPost.pos
 define({id: "7c2712a9", mode: "inline", inputs: ["rankPost","display"], body: async (rankPost,display) => {
 display(await(
 rankPost.n
+))
+}});
+
+define({id: "adec3695", mode: "inline", inputs: ["d","totBoomPct","display"], body: async (d,totBoomPct,display) => {
+display(await(
+d.fmtPct(totBoomPct)
+))
+}});
+
+define({id: "e52ffc5d", mode: "inline", inputs: ["resize","metricPlot","fromZero","d","display"], body: async (resize,metricPlot,fromZero,d,display) => {
+display(await(
+resize((width) => metricPlot(fromZero(d.totWaveRel), {width, yLabel: "variação dos termos de troca desde 2005 (%)", yRules: [0], rules: [2011], colorful: true}))
+))
+}});
+
+define({id: "fd64995e-1", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+display(await(
+d.fmtPct(d.waveBraBoom)
+))
+}});
+
+define({id: "834c0958-1", mode: "inline", inputs: ["d","waveBoomMean","display"], body: async (d,waveBoomMean,display) => {
+display(await(
+d.fmtPct(waveBoomMean)
+))
+}});
+
+define({id: "9d91ad45-1", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+display(await(
+d.waveBeatenBoom
+))
+}});
+
+define({id: "7b51ec43", mode: "inline", inputs: ["d","totBustPct","display"], body: async (d,totBustPct,display) => {
+display(await(
+d.fmtPct(-totBustPct)
+))
+}});
+
+define({id: "a7a9b2f8", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+display(await(
+d.fmtPct(-d.waveDilmaBra)
+))
+}});
+
+define({id: "274bc227", mode: "inline", inputs: ["d","waveDilmaMean","display"], body: async (d,waveDilmaMean,display) => {
+display(await(
+d.fmtPct(waveDilmaMean)
+))
+}});
+
+define({id: "e87c92c8", mode: "inline", inputs: ["rankDilma","display"], body: async (rankDilma,display) => {
+display(await(
+rankDilma.pos
+))
+}});
+
+define({id: "e9b0e5fa", mode: "inline", inputs: ["rankDilma","display"], body: async (rankDilma,display) => {
+display(await(
+rankDilma.n
+))
+}});
+
+define({id: "324349fe", mode: "inline", inputs: ["resize","barDelta","d","display"], body: async (resize,barDelta,d,display) => {
+display(await(
+resize((width) => barDelta(d.waveDilma, {width, xLabel: "variação 2010–2016 (%)"}))
+))
+}});
+
+define({id: "9bf2f466", mode: "inline", inputs: ["d","braTfpDilma","display"], body: async (d,braTfpDilma,display) => {
+display(await(
+d.fmtPct(-braTfpDilma)
+))
+}});
+
+define({id: "ce8d457a", mode: "inline", inputs: ["d","braPrimaryLula","display"], body: async (d,braPrimaryLula,display) => {
+display(await(
+d.fmtPct(braPrimaryLula)
+))
+}});
+
+define({id: "50dee718", mode: "inline", inputs: ["d","braPrimaryDilma","display"], body: async (d,braPrimaryDilma,display) => {
+display(await(
+d.fmtPct(braPrimaryDilma)
+))
+}});
+
+define({id: "6b4a76ab", mode: "inline", inputs: ["d","braPrimary14","display"], body: async (d,braPrimary14,display) => {
+display(await(
+d.fmtPct(-braPrimary14)
+))
+}});
+
+define({id: "7708a715", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+display(await(
+d.fmtPct(d.braDebt11)
+))
+}});
+
+define({id: "5f14164c", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+display(await(
+d.fmtPct(d.braDebt16)
+))
+}});
+
+define({id: "0ec3ed2f", mode: "inline", inputs: ["resize","metricPlot","d","display"], body: async (resize,metricPlot,d,display) => {
+display(await(
+resize((width) => metricPlot(d.primaryWave.filter((row) => row.year >= 2000 && row.year <= 2018), {width, yLabel: "resultado primário (% do PIB)", yRules: [0], rules: [2003, 2011], colorful: true}))
 ))
 }});
 
@@ -1067,6 +1200,12 @@ d.fmtIdx(pisaBra12)
 ))
 }});
 
+define({id: "bb598ba1", mode: "inline", inputs: ["d","pisaBra12","display"], body: async (d,pisaBra12,display) => {
+display(await(
+d.fmtIdx(pisaBra12 - d.braPisa)
+))
+}});
+
 define({id: "bd1f60a0", mode: "inline", inputs: ["resize","metricPlot","d","display"], body: async (resize,metricPlot,d,display) => {
 display(await(
 resize((width) => metricPlot(d.pisa90, {width, yLabel: "PISA matemática", markRefs: true, format: d.fmtIdx}))
@@ -1213,6 +1352,11 @@ html`<div class="score-wrap">
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./README">Untitled</a></li>
+    <li class="observablehq-link"><a href="./divida">Dívida, previdência e salário mínimo</a></li>
+    <li class="observablehq-link"><a href="./educacao">Educação</a></li>
+    <li class="observablehq-link"><a href="./eleicoes">Eleições: onde o PT tem voto</a></li>
+    <li class="observablehq-link"><a href="./ensino-superior">Ensino superior: irrelevante?</a></li>
+    <li class="observablehq-link"><a href="./seguranca">Segurança pública</a></li>
   </ol>
 </nav>
 <script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
@@ -1225,6 +1369,7 @@ html`<div class="score-wrap">
 <li class="observablehq-secondary-link"><a href="#a-renda-o-brasil-caiu-de-posicao-no-grupo">A renda: o Brasil caiu de posição no grupo</a></li>
 <li class="observablehq-secondary-link"><a href="#e-dentro-da-america-latina">E dentro da América Latina?</a></li>
 <li class="observablehq-secondary-link"><a href="#sete-anos-explicam-metade-do-avanco">Sete anos explicam metade do avanço</a></li>
+<li class="observablehq-secondary-link"><a href="#o-pt-coincidiu-com-o-boom-nao-o-produziu">O PT coincidiu com o boom. Não o produziu</a></li>
 <li class="observablehq-secondary-link"><a href="#depois-de-2010-o-motor-parou">Depois de 2010, o motor parou</a></li>
 <li class="observablehq-secondary-link"><a href="#por-que-o-motor-nao-pegou">Por que o motor não pegou</a></li>
 <li class="observablehq-secondary-link"><a href="#pobreza-e-fome-a-melhora-real">Pobreza e fome: a melhora real</a></li>
@@ -1237,12 +1382,12 @@ html`<div class="score-wrap">
 </aside>
 <main id="observablehq-main" class="observablehq">
 <h1 id="o-brasil-melhorou-quase-por-inercia" tabindex="-1"><a class="observablehq-header-anchor" href="#o-brasil-melhorou-quase-por-inercia">O Brasil melhorou quase por inércia</a></h1>
-<div class="observablehq observablehq--block"><!--:820900f6:--></div>
+<div class="observablehq observablehq--block"><!--:69a62992:--></div>
 <p>Em três décadas, quase tudo melhorou no Brasil. A renda per capita subiu. A pobreza caiu para menos da metade. A fome chegou ao piso das estatísticas internacionais. A desigualdade recuou.</p>
 <p>Este relatório faz outra pergunta. Não “o Brasil melhorou?”, mas “o Brasil melhorou mais ou menos que os países que estavam ao lado dele em 1990?”.</p>
 <p>Na maioria dos indicadores, menos. O Brasil recebeu as melhoras que apareceram em quase todo o mundo e um empurrão forte das commodities entre 2003 e 2010. Onde o avanço depende de um motor próprio — produtividade, investimento, comércio, aprendizado escolar — o país ficou parado ou recuou.</p>
 <p>É isso que chamamos de inércia: o Brasil andou porque o mundo andou.</p>
-<p>Inércia descreve o resultado. Não é um veredito sobre governos. A comparação entre países mostra quem chegou mais longe; ela não mede o efeito de cada política. Quando um número admite mais de uma leitura, o texto mostra as duas.</p>
+<p>Inércia descreve o resultado. A comparação entre países mostra quem chegou mais longe; ela não mede, sozinha, o efeito de cada política. Uma seção mais abaixo trata dos governos do PT no boom: o que os números rejeitam, e o que a literatura econômica conclui. Quando um número admite mais de uma leitura, o texto mostra as duas.</p>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:c5b73f46:--></div>
 <h2 id="como-a-comparacao-funciona" tabindex="-1"><a class="observablehq-header-anchor" href="#como-a-comparacao-funciona">Como a comparação funciona</a></h2>
 <p>Comparar o Brasil de 1990 com países que já eram ricos não ajuda ninguém. Por isso, os <observablehq-loading></observablehq-loading><!--:76fdcf43:--> deste relatório são os países que, em 1990, tinham renda per capita entre 65% e 135% da brasileira.</p>
@@ -1288,6 +1433,33 @@ html`<div class="score-wrap">
 </div>
 <p><observablehq-loading></observablehq-loading><!--:d5e77e29:--></p>
 <p>O mesmo padrão aparece no grupo inteiro de <observablehq-loading></observablehq-loading><!--:76fdcf43-2:-->: depois de 2010, o Brasil cresceu <observablehq-loading></observablehq-loading><!--:1da17edb-1:--> e a média dos pares cresceu <observablehq-loading></observablehq-loading><!--:b3fa9373:-->. É a <observablehq-loading></observablehq-loading><!--:2a817c5f:-->ª posição entre <observablehq-loading></observablehq-loading><!--:7c2712a9:-->.</p>
+<h2 id="o-pt-coincidiu-com-o-boom-nao-o-produziu" tabindex="-1"><a class="observablehq-header-anchor" href="#o-pt-coincidiu-com-o-boom-nao-o-produziu">O PT coincidiu com o boom. Não o produziu</a></h2>
+<p>Lula toma posse em 2003. Os sete anos de alta da renda coincidem com os dois mandatos dele. Essa coincidência virou atribuição: o crescimento teria sido obra do primeiro governo.</p>
+<p>Os números não sustentam isso. Eles também não sustentam o inverso — que o governo tenha puxado o PIB para baixo. O que aparece é mais estreito: o choque veio de fora, o Brasil cresceu, e cresceu menos do que os pares que pegaram o mesmo vento.</p>
+<h3 id="o-choque-era-o-preco-do-que-o-brasil-vende" tabindex="-1"><a class="observablehq-header-anchor" href="#o-choque-era-o-preco-do-que-o-brasil-vende">O choque era o preço do que o Brasil vende</a></h3>
+<p>Termos de troca medem o preço das exportações dividido pelo preço das importações. Quando minério, soja e petróleo sobem, o índice sobe. O governo não controla esse preço.</p>
+<p>Entre 2005 e 2011 — a série brasileira começa em 2005 — os termos de troca do Brasil subiram <observablehq-loading></observablehq-loading><!--:adec3695:-->. Chile, Peru e Colômbia viram o mesmo movimento, ou um movimento maior.</p>
+<p><observablehq-loading></observablehq-loading><!--:e52ffc5d:--></p>
+<p>Quem exportava commodities ficou mais rico sem precisar de uma política nova. A renda per capita brasileira subiu <observablehq-loading></observablehq-loading><!--:fd64995e-1:--> entre 2003 e 2010. Na média dos outros sete exportadores, subiu <observablehq-loading></observablehq-loading><!--:834c0958-1:-->. Só a <observablehq-loading></observablehq-loading><!--:9d91ad45-1:--> avançou menos.</p>
+<div class="takeaway">
+  <strong>O PIB subiu. A atribuição ao primeiro governo Lula não fecha.</strong>
+  <span>O tripé macroeconômico — metas de inflação, câmbio flutuante, superávit primário — veio de FHC e foi mantido. Sem âncora, o mesmo boom podia ter virado inflação. O que os dados rejeitam é outra tese: que a eleição de 2002 tenha causado o salto da renda.</span>
+</div>
+<p>Carrasco, Duarte e de Mello (2014) chamaram 2003–2012 de “década perdida” exatamente por esse critério: o Brasil avançou, mas menos do que o choque externo permitia — menos investimento, menos poupança, menos competitividade. Jung e Kwon (2025) tentaram separar política de circunstância com controle sintético e concluíram que o desempenho se explica pelo ambiente externo; a política doméstica não aparece como motor. Jesus (2024), com o mesmo método sobre os governos do PT, não encontra evidência forte de efeito negativo sobre a renda per capita.</p>
+<p>Duas ressalvas. Primeira: “não causou o boom” não é “não fez nada”. Pobreza e desigualdade recuaram, e essa é a parte social que este relatório já mostrou. Segunda: o grupo certo para essa frase é o dos exportadores. Contra o mundo rico, o Brasil cresceu mais. Contra a América Latina inteira, o resultado depende de quem entra na média — México e América Central não pegaram o mesmo choque.</p>
+<h3 id="dilma-o-vento-virou-e-a-politica-tambem" tabindex="-1"><a class="observablehq-header-anchor" href="#dilma-o-vento-virou-e-a-politica-tambem">Dilma: o vento virou, e a política também</a></h3>
+<p>Dilma herda o boom no pico. Os termos de troca caem <observablehq-loading></observablehq-loading><!--:7b51ec43:--> entre 2011 e 2016. Esse choque foi comum. A resposta não foi.</p>
+<p>Entre 2010 e 2016, a renda per capita caiu <observablehq-loading></observablehq-loading><!--:a7a9b2f8:--> no Brasil. Na média dos outros sete exportadores, subiu <observablehq-loading></observablehq-loading><!--:274bc227:-->. É a <observablehq-loading></observablehq-loading><!--:e87c92c8:-->ª posição entre <observablehq-loading></observablehq-loading><!--:e9b0e5fa:-->. Só a Argentina também recuou.</p>
+<p><observablehq-loading></observablehq-loading><!--:324349fe:--></p>
+<p>A eficiência estimada caiu junto: a TFP brasileira recuou <observablehq-loading></observablehq-loading><!--:9bf2f466:--> entre 2010 e 2016.</p>
+<p>O superávit primário — receita menos despesa, sem juros — ficou em média <observablehq-loading></observablehq-loading><!--:ce8d457a:--> do PIB em 2003–2010. Em 2011–2014 a média caiu para <observablehq-loading></observablehq-loading><!--:50dee718:-->. Em 2014 o resultado virou déficit (<observablehq-loading></observablehq-loading><!--:6b4a76ab:--> do PIB). A dívida bruta saiu de <observablehq-loading></observablehq-loading><!--:7708a715:--> do PIB em 2011 para <observablehq-loading></observablehq-loading><!--:5f14164c:--> em 2016. A trajetória completa da dívida, os juros e o debate sobre o salário mínimo estão na página <a href="./divida">Dívida, previdência e salário mínimo</a>.</p>
+<p><observablehq-loading></observablehq-loading><!--:0ec3ed2f:--></p>
+<p>A literatura econômica mainstream trata esse conjunto — juro incompatível com a meta, controle de preços, desonerações, crédito dirigido, contabilidade criativa — como Nova Matriz Econômica. Não é só política fiscal. Barbosa Filho e Pessôa (2014, 2015) e Barbosa Filho (2017) leem a NME como choque de oferta: a eficiência caiu, e o produto potencial também. Leal e Nakane (2024) encontram o mesmo padrão com outra técnica: o que explica 2014–16 é um desvio de eficiência, não o gasto do governo como motor do ciclo.</p>
+<p>A recessão teve mais de uma causa. O fim do superciclo, a Lava Jato e o colapso do investimento da Petrobras também pesaram. E há um campo heterodoxo — Serrano e Summa (2015) — que lê o freio de 2011 e o ajuste de 2015 como origem da desaceleração. Os gráficos não resolvem essa disputa. Eles mostram o que não é disputado: depois de 2010 o Brasil parou, e os pares que pegaram o mesmo vento externo não pararam.</p>
+<div class="takeaway">
+  <strong>A NME piorou oferta e âncoras. A contração não tem uma causa só.</strong>
+  <span>A política econômica de Dilma é peça central no diagnóstico mainstream. Dizer que “a política fiscal foi a responsável” aperta demais o que a literatura sustenta.</span>
+</div>
 <h2 id="depois-de-2010-o-motor-parou" tabindex="-1"><a class="observablehq-header-anchor" href="#depois-de-2010-o-motor-parou">Depois de 2010, o motor parou</a></h2>
 <p>A produção por trabalhador mostra quanto a economia produz, em média, para cada pessoa ocupada. É o indicador que mais se aproxima do salário que um país pode pagar sem inflação.</p>
 <p>Desde 1991, ela subiu <observablehq-loading></observablehq-loading><!--:b64439ae:--> no Brasil, <observablehq-loading></observablehq-loading><!--:3533d0a7:--> na Polônia e <observablehq-loading></observablehq-loading><!--:315f84d6:--> na Coreia. O Brasil está em <observablehq-loading></observablehq-loading><!--:2fbf36ee:-->º entre <observablehq-loading></observablehq-loading><!--:03beec0f:-->.</p>
@@ -1355,20 +1527,21 @@ html`<div class="score-wrap">
   <strong>A distância para a OCDE encolheu, mas mais pela queda dela que pela subida do Brasil.</strong>
   <span>Desde 2003, o Brasil ganhou <observablehq-loading></observablehq-loading><!--:60487a2e:--> pontos em matemática e a média da OCDE perdeu <observablehq-loading></observablehq-loading><!--:f9b1273a:-->. A diferença caiu de <observablehq-loading></observablehq-loading><!--:1b96dcce:--> para <observablehq-loading></observablehq-loading><!--:820b5bc9:--> pontos. Mais da metade dessa aproximação veio do outro lado.</span>
 </div>
-<p>O avanço brasileiro também parou cedo. A nota subiu de <observablehq-loading></observablehq-loading><!--:07e0497e:--> em 2003 para <observablehq-loading></observablehq-loading><!--:54e688fa:--> em 2012 e não avançou desde então. É o retrato mais nítido da inércia em todo o relatório: o indicador melhorou, mas o ganho relativo veio do desempenho pior dos outros.</p>
+<p>O avanço brasileiro também parou cedo. A nota subiu de <observablehq-loading></observablehq-loading><!--:07e0497e:--> em 2003 para <observablehq-loading></observablehq-loading><!--:54e688fa:--> em 2012 e, até 2022, devolveu <observablehq-loading></observablehq-loading><!--:bb598ba1:--> pontos. É o retrato mais nítido da inércia em todo o relatório: o indicador melhorou, mas o ganho relativo veio do desempenho pior dos outros.</p>
 <p><observablehq-loading></observablehq-loading><!--:bd1f60a0:--></p>
 <h3 id="o-brasil-gasta-pouco-ou-gasta-mal" tabindex="-1"><a class="observablehq-header-anchor" href="#o-brasil-gasta-pouco-ou-gasta-mal">O Brasil gasta pouco ou gasta mal?</a></h3>
-<p>As duas coisas ao mesmo tempo, e é preciso separar.</p>
+<p>A pergunta mistura duas coisas. Como fatia do PIB, o Brasil não gasta pouco. Por aluno, fica perto da Polônia e abaixo da Coreia.</p>
 <p>Como fatia do PIB, o gasto brasileiro em educação é <observablehq-loading></observablehq-loading><!--:1c7e6135:-->, praticamente igual ao da Coreia (<observablehq-loading></observablehq-loading><!--:16247959:-->). Mas essa fatia não é gasto por aluno: o Brasil tem proporcionalmente mais crianças e jovens em idade escolar, então o mesmo percentual se divide entre mais gente.</p>
-<p>Por aluno do ensino médio, o gasto público brasileiro foi <observablehq-loading></observablehq-loading><!--:277d1a91:--> da renda per capita em <observablehq-loading></observablehq-loading><!--:5a2b9372:--> — abaixo da Polônia, <observablehq-loading></observablehq-loading><!--:74c65262:--> em <observablehq-loading></observablehq-loading><!--:349ef6e8:-->, e bem abaixo da Coreia, <observablehq-loading></observablehq-loading><!--:58c65767:--> em <observablehq-loading></observablehq-loading><!--:565c8b3b:-->. Em dinheiro a distância é ainda maior, porque a renda per capita coreana é cerca de <observablehq-loading></observablehq-loading><!--:df1bb75d:--> vezes a brasileira. Essa série tem falhas e termina antes do PISA de 2022.</p>
-<p>Ou seja: dizer que o Brasil “gasta muito e aprende pouco” é impreciso. O que os dados mostram é mais específico. Com esforço orçamentário parecido com o da Polônia, por aluno e como fatia do PIB, o Brasil fica <observablehq-loading></observablehq-loading><!--:56c934b5:--> pontos atrás dela em matemática.</p>
+<p>Por aluno do ensino médio, o gasto público brasileiro foi <observablehq-loading></observablehq-loading><!--:277d1a91:--> da renda per capita em <observablehq-loading></observablehq-loading><!--:5a2b9372:-->. A Polônia gastou <observablehq-loading></observablehq-loading><!--:74c65262:--> em <observablehq-loading></observablehq-loading><!--:349ef6e8:-->, e a Coreia <observablehq-loading></observablehq-loading><!--:58c65767:--> em <observablehq-loading></observablehq-loading><!--:565c8b3b:-->. Em dinheiro, a distância para a Coreia é maior, porque a renda per capita coreana é cerca de <observablehq-loading></observablehq-loading><!--:df1bb75d:--> vezes a brasileira. Essa série tem falhas e termina antes do PISA de 2022.</p>
+<p>Ou seja: dizer que o Brasil “gasta muito e aprende pouco” acerta o aprendizado e erra o gasto. A fatia do PIB é parecida com a da Coreia e maior que a da Polônia. Por aluno, o Brasil fica perto da Polônia. Mesmo assim, fica <observablehq-loading></observablehq-loading><!--:56c934b5:--> pontos atrás dela em matemática.</p>
 <p>Nos gráficos abaixo, cada ponto é um país. A linha tracejada é a média da OCDE.</p>
 <p><observablehq-loading></observablehq-loading><!--:697f4896:--></p>
 <p><observablehq-loading></observablehq-loading><!--:45bb1fee:--></p>
+<p>Leitura, ciências e a variação de cada par estão na página <a href="./educacao">Educação</a>.</p>
 <h2 id="o-que-isso-quer-dizer" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-isso-quer-dizer">O que isso quer dizer</a></h2>
 <p>Contra o próprio passado, o Brasil melhorou em quase tudo. Contra quem partiu do mesmo lugar, quase sempre ficou para trás.</p>
 <p>O padrão se repete indicador por indicador. Onde a melhora foi geral no mundo — menos fome, menos pobreza —, o Brasil melhorou junto, no ritmo dos outros. Onde a melhora exigia construir algo internamente — produtividade, eficiência, investimento, integração comercial, aprendizado —, o Brasil não construiu.</p>
-<p>Entre esses dois blocos está o boom das commodities. Ele concentrou <observablehq-loading></observablehq-loading><!--:bb1efcee-1:--> do ganho de renda per capita de três décadas em sete anos, e passou. Depois de 2010, a renda quase parou e a produção por trabalhador subiu <observablehq-loading></observablehq-loading><!--:4ccf00c7-1:--> em catorze anos.</p>
+<p>Entre esses dois blocos está o boom das commodities. Ele concentrou <observablehq-loading></observablehq-loading><!--:bb1efcee-1:--> do ganho de renda per capita de três décadas em sete anos, e passou. Coincidiu com os governos do PT. Os dados e a literatura não permitem atribuir o salto ao primeiro governo Lula, nem reduzir a recessão seguinte a um único instrumento fiscal. Depois de 2010, a renda quase parou e a produção por trabalhador subiu <observablehq-loading></observablehq-loading><!--:4ccf00c7-1:--> em catorze anos.</p>
 <p>A desigualdade é a exceção parcial, e vale reconhecê-la: a queda do Gini foi das maiores do grupo. Mas o nível continua entre os mais altos, então o Brasil melhorou rápido em um indicador em que estava muito mal.</p>
 <p>Os países que abriram distância não seguiram uma receita única. A Coreia poupou, investiu e subiu na escala industrial. A Polônia investiu quase como o Brasil, mas se integrou ao comércio e ganhou eficiência. Não há uma fórmula. Há uma diferença clara de resultado.</p>
 <div class="takeaway">
@@ -1376,15 +1549,18 @@ html`<div class="score-wrap">
   <span>O avanço absoluto foi real. O avanço relativo foi raro, e a maior parte dele veio de fora.</span>
 </div>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4c30040a:--></div>
+<p>Páginas complementares: <a href="./educacao">Educação</a> · <a href="./divida">Dívida, previdência e salário mínimo</a> · <a href="./seguranca">Segurança pública</a> · <a href="./eleicoes">Eleições: onde o PT tem voto</a> · <a href="./ensino-superior">Ensino superior: irrelevante?</a>.</p>
 <h2 id="limites-deste-relatorio" tabindex="-1"><a class="observablehq-header-anchor" href="#limites-deste-relatorio">Limites deste relatório</a></h2>
 <ul>
 <li>O grupo de comparação foi montado apenas pela renda de 1990. Ele ignora tamanho, geografia, população e instituições.</li>
 <li>Todas as médias de grupo são simples: um país, um voto.</li>
 <li>As pesquisas de pobreza e desigualdade ocorrem em anos diferentes em cada país. As comparações usam o dado mais recente de cada um, ou médias de janelas de cinco anos.</li>
 <li>TFP é uma estimativa com margem de erro. Qualidade regulatória é uma medida de percepção. Nenhuma das duas deve ser lida ao pé da letra em um ano isolado.</li>
-<li>Nada aqui identifica causas nem avalia governos. O relatório compara resultados entre países.</li>
+<li>Os gráficos não identificam causas. A seção sobre o PT resume o que a literatura econômica conclui; os números mostram coincidência de datas e desempenho relativo, não um experimento.</li>
+<li>Termos de troca do Brasil começam em 2005. Resultado primário e dívida vêm do FMI (WEO / GFS).</li>
 </ul>
-<p>Fontes: World Bank WDI e WGI · Penn World Table 11 via Our World in Data · FAO · OECD PISA 2022. PPP ajusta as diferenças de preços entre países. As séries sociais seguem os anos disponíveis de cada pesquisa.</p>
+<p>Fontes: World Bank WDI e WGI · Penn World Table 11 via Our World in Data · FAO · OECD PISA 2022 · IMF WEO. PPP ajusta as diferenças de preços entre países. As séries sociais seguem os anos disponíveis de cada pesquisa.</p>
+<p>Sobre o PT no boom: Carrasco, Duarte e de Mello, <em>A Década Perdida: 2003–2012</em> (PUC-Rio, 2014) · Barbosa Filho e Pessôa, <em>Desaceleração veio da Nova Matriz e não do Contrato Social</em> (Ensaios IBRE, 2015) · Barbosa Filho, <em>A crise econômica de 2014/2017</em> (<em>Estudos Avançados</em>, 2017) · Leal e Nakane, <em>Brazilian economy in the 2000s: A tale of two recessions</em> (<em>Latin American Journal of Central Banking</em>, 2024) · Jung e Kwon, <em>Policy or Circumstances?</em> (<em>Economies</em>, 2025) · Jesus, <em>Workers’ Party Governments in Brazil and Macroeconomic Performance</em> (<em>Revista de Economia Mackenzie</em>, 2024) · Serrano e Summa, <em>Aggregate Demand and the Slowdown of Brazilian Economic Growth from 2011–2014</em> (CEPR, 2015).</p>
 </main>
 <footer id="observablehq-footer">
 <div>World Bank WDI · Observable Framework</div>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Eleições: onde o PT tem voto | brviz</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.6b7d96d6.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.6b7d96d6.css">
+<link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/c662ea05.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/d162d8c6.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/5cedd0be.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/65d51007.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/c576a91a.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/8b43826d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/3fb06f14.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/20b76948.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/8683b012.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/5c319046.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/33924f3e.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/8d67a1ae.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/8037bd0b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/a9ba0229.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/e0a47f97.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/f9e9e0ab.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/2da8eb3b.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/09002e01.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/5108797c.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/c9f2571b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/f3c78e0d.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/28717d05.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/7c6e2a50.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3d1d57c6.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/643581a8.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/e99232db.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/bd07fd9a.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/d09f7cc9.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/f53f17b2.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/af036d7e.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/7b06abe7.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/5f640032.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
+<script>document.querySelector('meta[name="viewport"]')?.setAttribute("content","width=device-width, initial-scale=1")</script>
+<script type="module">
+const TOC_CLASS = "brviz-toc";
+
+let observer;
+
+function closeSidebar() {
+  const toggle = document.querySelector("#observablehq-sidebar-toggle");
+  if (toggle) {
+    toggle.checked = false;
+    toggle.indeterminate = false;
+  }
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (sidebar?.contains(document.activeElement)) document.activeElement.blur();
+}
+
+function mountTocSidebar() {
+  const toc = document.querySelector("#observablehq-toc nav");
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (!toc || !sidebar) return;
+
+  observer?.disconnect();
+  sidebar.querySelector(`.${TOC_CLASS}`)?.remove();
+
+  const section = document.createElement("section");
+  section.className = TOC_CLASS;
+  const title = document.createElement("div");
+  title.textContent = toc.querySelector("div")?.textContent ?? "Nesta página";
+  const ol = document.createElement("ol");
+  for (const a of toc.querySelectorAll("ol a")) {
+    const li = document.createElement("li");
+    li.className = "observablehq-link";
+    const link = a.cloneNode(true);
+    li.append(link);
+    ol.append(li);
+  }
+  section.append(title, ol);
+  sidebar.append(section);
+
+  ol.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) return;
+    queueMicrotask(closeSidebar);
+  });
+
+  const sync = () => {
+    const href = toc.querySelector(".observablehq-secondary-link-active a")?.getAttribute("href");
+    for (const li of ol.querySelectorAll("li")) {
+      li.classList.toggle(
+        "observablehq-link-active",
+        li.querySelector("a")?.getAttribute("href") === href,
+      );
+    }
+  };
+  observer = new MutationObserver(sync);
+  observer.observe(toc, { subtree: true, attributes: true, attributeFilter: ["class"] });
+  sync();
+}
+
+mountTocSidebar();
+</script>
+<script type="module">
+
+import {define} from "./_observablehq/client.a97643eb.js";
+import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
+
+registerFile("./data/eleicoes.csv", {"name":"./data/eleicoes.csv","mimeType":"text/csv","path":"./_file/data/eleicoes.c621efe5.csv","lastModified":1793048343506,"size":954577});
+
+define({id: "36934a52", inputs: ["FileAttachment","d3","Plot","html"], outputs: ["mun","YEARS","CANDIDATE","REGIONS","REGION_COLORS","VARS","corr","share","deciles","fmtPct","fmtR","fmtBRL","fmtKm","listPt","corrRows","rOf","byRegion","nat2022","incDec","dec","regionShare","incomeByRegion","auxByRegion","distByRegion","distPos","distNeg","auxHigh","auxLow","over100","AUX_BINS","auxBins","swingR","fmtSwing","bigCities","regionColor","scatter","regionBars","html_lede"], body: async (FileAttachment,d3,Plot,html) => {
+const mun = (await FileAttachment("./data/eleicoes.csv").csv({ typed: true })).filter((r) => r.pt2022 != null && r.pop);
+
+const YEARS = [2002, 2006, 2010, 2014, 2018, 2022];
+const CANDIDATE = { 2002: "Lula", 2006: "Lula", 2010: "Dilma", 2014: "Dilma", 2018: "Haddad", 2022: "Lula" };
+const REGIONS = ["Norte", "Nordeste", "Centro-Oeste", "Sudeste", "Sul"];
+const REGION_COLORS = ["#0f766e", "#b45309", "#a16207", "#1e3a8a", "#7c3aed"];
+
+const VARS = [
+  { key: "income_pc", label: "Renda per capita", tr: Math.log },
+  { key: "college_25", label: "Adultos com superior completo" },
+  { key: "aux_share", label: "Famílias no Auxílio Brasil" },
+  { key: "dist_big_km", label: "Distância até cidade grande" },
+];
+
+function corr(rows, xKey, yKey, tr = (v) => v) {
+  const pts = rows.map((r) => [tr(r[xKey]), r[yKey]]).filter(([x, y]) => Number.isFinite(x) && Number.isFinite(y));
+  const mx = d3.mean(pts, (p) => p[0]);
+  const my = d3.mean(pts, (p) => p[1]);
+  let sxy = 0, sxx = 0, syy = 0;
+  for (const [x, y] of pts) {
+    sxy += (x - mx) * (y - my);
+    sxx += (x - mx) ** 2;
+    syy += (y - my) ** 2;
+  }
+  return sxy / Math.sqrt(sxx * syy);
+}
+
+function share(rows, year) {
+  const valid = d3.sum(rows, (r) => r[`valid${year}`] ?? 0);
+  const pt = d3.sum(rows, (r) => ((r[`pt${year}`] ?? 0) * (r[`valid${year}`] ?? 0)) / 100);
+  return (100 * pt) / valid;
+}
+
+function deciles(year, key) {
+  const rows = mun.filter((r) => r[`valid${year}`] && Number.isFinite(r[key])).sort((a, b) => a[key] - b[key]);
+  const total = d3.sum(rows, (r) => r[`valid${year}`]);
+  let cum = 0;
+  const groups = d3.range(10).map(() => []);
+  for (const r of rows) {
+    groups[Math.min(9, Math.floor((10 * (cum + r[`valid${year}`] / 2)) / total))].push(r);
+    cum += r[`valid${year}`];
+  }
+  return groups.map((g, i) => ({ year: String(year), decile: i + 1, value: share(g, year) }));
+}
+
+const fmtPct = (x) => (x == null ? "—" : `${x.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%`);
+const fmtR = (r) => r.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2, signDisplay: "exceptZero" });
+const fmtBRL = (x) => `R$ ${Math.round(x).toLocaleString("pt-BR")}`;
+const fmtKm = (x) => `${Math.round(x).toLocaleString("pt-BR")} km`;
+const listPt = (xs) => (xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} e ${xs.at(-1)}`);
+
+const corrRows = VARS.flatMap((v) => YEARS.map((year) => ({ var: v.label, year, r: corr(mun, v.key, `pt${year}`, v.tr) })));
+const rOf = (key, year) => corrRows.find((d) => d.var === VARS.find((v) => v.key === key).label && d.year === year).r;
+const byRegion = (key, year = 2022) =>
+  REGIONS.map((region) => {
+    const v = VARS.find((x) => x.key === key);
+    return { region, r: corr(mun.filter((m) => m.region === region), key, `pt${year}`, v.tr) };
+  });
+
+const nat2022 = share(mun, 2022);
+const incDec = YEARS.flatMap((y) => deciles(y, "income_pc"));
+const dec = (year, i) => incDec.find((d) => d.year === String(year) && d.decile === i).value;
+const regionShare = REGIONS.map((region) => ({ region, value: share(mun.filter((m) => m.region === region), 2022) }));
+const incomeByRegion = byRegion("income_pc");
+const auxByRegion = byRegion("aux_share");
+const distByRegion = byRegion("dist_big_km");
+const distPos = distByRegion.filter((d) => d.r > 0.15).map((d) => d.region);
+const distNeg = distByRegion.filter((d) => d.r < -0.15).map((d) => d.region);
+const auxHigh = mun.filter((m) => m.aux_share >= 50);
+const auxLow = mun.filter((m) => m.aux_share < 20);
+const over100 = mun.filter((m) => m.aux_share > 100).length;
+const AUX_BINS = [
+  [0, 20, "menos de 20"],
+  [20, 35, "20 a 35"],
+  [35, 50, "35 a 50"],
+  [50, Infinity, "50 ou mais"],
+];
+const auxBins = AUX_BINS.map(([lo, hi, label]) => {
+  const g = mun.filter((m) => m.aux_share >= lo && m.aux_share < hi && m.valid2018);
+  const v2018 = share(g, 2018);
+  const v2022 = share(g, 2022);
+  return { label, n: g.length, v2018, v2022, swing: v2022 - v2018 };
+});
+const swingR = corr(mun.map((m) => ({ ...m, swing: m.pt2022 - m.pt2018 })), "aux_share", "swing");
+const fmtSwing = (x) => `${x.toLocaleString("pt-BR", { maximumFractionDigits: 1, signDisplay: "exceptZero" })} p.p.`;
+const bigCities = mun.filter((m) => m.pop >= 500000).length;
+
+function regionColor() {
+  return { legend: true, domain: REGIONS, range: REGION_COLORS };
+}
+
+function scatter(width, { key, label, log = false, format }) {
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(300, Math.min(460, width * 0.62))),
+    marginLeft: 48,
+    x: { type: log ? "log" : "linear", label, grid: true, tickFormat: format },
+    y: { label: `voto em Lula no 2º turno de 2022 (%)`, domain: [0, 100], grid: true },
+    color: regionColor(),
+    marks: [
+      Plot.ruleY([50], { stroke: "#94a3b8", strokeDasharray: "3,3" }),
+      Plot.dot(mun.filter((m) => Number.isFinite(m[key]) && (!log || m[key] > 0)), {
+        x: key,
+        y: "pt2022",
+        r: 1.6,
+        fill: "region",
+        fillOpacity: 0.55,
+        tip: true,
+        channels: { Município: (m) => `${m.name} (${m.uf})` },
+        title: (m) => `${m.name} (${m.uf})\n${label}: ${format ? format(m[key]) : m[key]}\nLula: ${fmtPct(m.pt2022)}`,
+      }),
+    ],
+  });
+}
+
+function regionBars(width, rows, { label }) {
+  return Plot.plot({
+    width,
+    height: 200,
+    marginLeft: 100,
+    x: { domain: [-1, 1], label, grid: true, tickFormat: fmtR },
+    y: { label: null, domain: REGIONS },
+    color: regionColor(),
+    marks: [
+      Plot.ruleX([0]),
+      Plot.barX(rows, { x: "r", y: "region", fill: "region" }),
+      Plot.text(rows.filter((d) => d.r >= 0), { x: "r", y: "region", text: (d) => fmtR(d.r), textAnchor: "start", dx: 4, fontSize: 11 }),
+      Plot.text(rows.filter((d) => d.r < 0), { x: "r", y: "region", text: (d) => fmtR(d.r), textAnchor: "end", dx: -4, fontSize: 11 }),
+    ],
+  });
+}
+
+function html_lede(kicker, title, value, neg = false) {
+  return html`<div class="lede">
+    <div class="lede-kicker">${kicker}</div>
+    <div class="lede-title">${title}</div>
+    <div class="lede-big ${neg ? "neg" : ""}">${value}</div>
+  </div>`;
+}
+return {mun,YEARS,CANDIDATE,REGIONS,REGION_COLORS,VARS,corr,share,deciles,fmtPct,fmtR,fmtBRL,fmtKm,listPt,corrRows,rOf,byRegion,nat2022,incDec,dec,regionShare,incomeByRegion,auxByRegion,distByRegion,distPos,distNeg,auxHigh,auxLow,over100,AUX_BINS,auxBins,swingR,fmtSwing,bigCities,regionColor,scatter,regionBars,html_lede};
+}});
+
+define({id: "4b579449", inputs: ["html","html_lede","fmtPct","nat2022","fmtR","rOf","display"], body: async (html,html_lede,fmtPct,nat2022,fmtR,rOf,display) => {
+display(await(
+html`<div class="lede-grid">
+  ${html_lede("Lula, 2º turno de 2022", "votos válidos nos municípios", fmtPct(nat2022))}
+  ${html_lede("Renda × voto no PT, 2002", "correlação entre municípios", fmtR(rOf("income_pc", 2002)))}
+  ${html_lede("Renda × voto no PT, 2022", "correlação entre municípios", fmtR(rOf("income_pc", 2022)), true)}
+</div>`
+))
+}});
+
+define({id: "31386044", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("income_pc", 2002))
+))
+}});
+
+define({id: "bde565a8", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("income_pc", 2006))
+))
+}});
+
+define({id: "cf36583e", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("income_pc", 2010))
+))
+}});
+
+define({id: "a3e9b4d9", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("income_pc", 2014))
+))
+}});
+
+define({id: "8c2dbbcd", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("income_pc", 2018))
+))
+}});
+
+define({id: "c95e6550", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("income_pc", 2022))
+))
+}});
+
+define({id: "263305f6", mode: "inline", inputs: ["resize","Plot","YEARS","fmtR","VARS","corrRows","CANDIDATE","display"], body: async (resize,Plot,YEARS,fmtR,VARS,corrRows,CANDIDATE,display) => {
+display(await(
+resize((width) => Plot.plot({
+  width,
+  height: Math.round(Math.max(260, Math.min(380, width * 0.55))),
+  marginLeft: 44,
+  x: { label: null, ticks: YEARS, tickFormat: "d" },
+  y: { label: "correlação com o voto no PT", domain: [-1, 1], grid: true, tickFormat: fmtR },
+  color: { legend: true, domain: VARS.map((v) => v.label), range: ["#1e3a8a", "#0f766e", "#b45309", "#94a3b8"] },
+  marks: [
+    Plot.ruleY([0]),
+    Plot.lineY(corrRows, { x: "year", y: "r", stroke: "var", strokeWidth: 2 }),
+    Plot.dot(corrRows, { x: "year", y: "r", fill: "var", r: 3.5, tip: true, title: (d) => `${d.var}, ${d.year} (${CANDIDATE[d.year]}): ${fmtR(d.r)}` }),
+  ],
+}))
+))
+}});
+
+define({id: "4c0ad7c7", mode: "inline", inputs: ["fmtPct","dec","display"], body: async (fmtPct,dec,display) => {
+display(await(
+fmtPct(dec(2002, 1))
+))
+}});
+
+define({id: "318f462b", mode: "inline", inputs: ["fmtPct","dec","display"], body: async (fmtPct,dec,display) => {
+display(await(
+fmtPct(dec(2002, 10))
+))
+}});
+
+define({id: "d9b0ffde", mode: "inline", inputs: ["fmtPct","dec","display"], body: async (fmtPct,dec,display) => {
+display(await(
+fmtPct(dec(2022, 1))
+))
+}});
+
+define({id: "4c378748", mode: "inline", inputs: ["fmtPct","dec","display"], body: async (fmtPct,dec,display) => {
+display(await(
+fmtPct(dec(2022, 10))
+))
+}});
+
+define({id: "e710c739", mode: "inline", inputs: ["resize","Plot","d3","YEARS","incDec","CANDIDATE","fmtPct","display"], body: async (resize,Plot,d3,YEARS,incDec,CANDIDATE,fmtPct,display) => {
+display(await(
+resize((width) => Plot.plot({
+  width,
+  height: Math.round(Math.max(260, Math.min(380, width * 0.55))),
+  marginLeft: 44,
+  x: { label: "faixas do eleitorado, da renda municipal mais baixa (1) à mais alta (10)", ticks: d3.range(1, 11) },
+  y: { label: "voto no PT no 2º turno (%)", domain: [0, 100], grid: true },
+  color: { legend: true, domain: YEARS.map(String), range: ["#b45309", "#d6b38a", "#cbd5e1", "#94a3b8", "#64748b", "#1e3a8a"] },
+  marks: [
+    Plot.ruleY([50], { stroke: "#94a3b8", strokeDasharray: "3,3" }),
+    Plot.lineY(incDec.filter((d) => !["2002", "2022"].includes(d.year)), { x: "decile", y: "value", stroke: "year", strokeWidth: 1.5 }),
+    Plot.lineY(incDec.filter((d) => ["2002", "2022"].includes(d.year)), { x: "decile", y: "value", stroke: "year", strokeWidth: 3 }),
+    Plot.dot(incDec, { x: "decile", y: "value", fill: "year", r: 3, tip: true, title: (d) => `${d.year} (${CANDIDATE[d.year]}), faixa ${d.decile}: ${fmtPct(d.value)}` }),
+  ],
+}))
+))
+}});
+
+define({id: "11e88af5", mode: "inline", inputs: ["resize","scatter","fmtBRL","display"], body: async (resize,scatter,fmtBRL,display) => {
+display(await(
+resize((width) => scatter(width, { key: "income_pc", label: "renda domiciliar per capita, Censo 2022 (escala logarítmica)", log: true, format: fmtBRL }))
+))
+}});
+
+define({id: "0d821149", mode: "inline", inputs: ["fmtPct","regionShare","display"], body: async (fmtPct,regionShare,display) => {
+display(await(
+fmtPct(regionShare.find((d) => d.region === "Nordeste").value)
+))
+}});
+
+define({id: "51d78fbf", mode: "inline", inputs: ["fmtPct","regionShare","display"], body: async (fmtPct,regionShare,display) => {
+display(await(
+fmtPct(regionShare.find((d) => d.region === "Sul").value)
+))
+}});
+
+define({id: "4d2dc10b", mode: "inline", inputs: ["resize","regionBars","incomeByRegion","display"], body: async (resize,regionBars,incomeByRegion,display) => {
+display(await(
+resize((width) => regionBars(width, incomeByRegion, { label: "correlação entre renda e voto em Lula, 2022, dentro de cada região" }))
+))
+}});
+
+define({id: "551d55f1", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("aux_share", 2022))
+))
+}});
+
+define({id: "8b11b169", mode: "inline", inputs: ["auxHigh","display"], body: async (auxHigh,display) => {
+display(await(
+auxHigh.length.toLocaleString("pt-BR")
+))
+}});
+
+define({id: "efc7e5d9", mode: "inline", inputs: ["fmtPct","share","auxHigh","display"], body: async (fmtPct,share,auxHigh,display) => {
+display(await(
+fmtPct(share(auxHigh, 2022))
+))
+}});
+
+define({id: "76576d36", mode: "inline", inputs: ["auxLow","display"], body: async (auxLow,display) => {
+display(await(
+auxLow.length.toLocaleString("pt-BR")
+))
+}});
+
+define({id: "606ffb76", mode: "inline", inputs: ["fmtPct","share","auxLow","display"], body: async (fmtPct,share,auxLow,display) => {
+display(await(
+fmtPct(share(auxLow, 2022))
+))
+}});
+
+define({id: "d04cef43", mode: "inline", inputs: ["resize","scatter","display"], body: async (resize,scatter,display) => {
+display(await(
+resize((width) => scatter(width, { key: "aux_share", label: "famílias no Auxílio Brasil por 100 domicílios, outubro de 2022", format: (x) => x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }) }))
+))
+}});
+
+define({id: "6c3c3418", mode: "inline", inputs: ["resize","regionBars","auxByRegion","display"], body: async (resize,regionBars,auxByRegion,display) => {
+display(await(
+resize((width) => regionBars(width, auxByRegion, { label: "correlação entre Auxílio Brasil e voto em Lula, 2022, dentro de cada região" }))
+))
+}});
+
+define({id: "7f7e09b1", mode: "inline", inputs: ["fmtPct","share","mun","display"], body: async (fmtPct,share,mun,display) => {
+display(await(
+fmtPct(share(mun, 2018))
+))
+}});
+
+define({id: "83844d5c", mode: "inline", inputs: ["fmtPct","nat2022","display"], body: async (fmtPct,nat2022,display) => {
+display(await(
+fmtPct(nat2022)
+))
+}});
+
+define({id: "1cfbb779", mode: "inline", inputs: ["resize","Plot","d3","auxBins","fmtPct","fmtSwing","display"], body: async (resize,Plot,d3,auxBins,fmtPct,fmtSwing,display) => {
+display(await(
+resize((width) => Plot.plot({
+  width,
+  height: 230,
+  marginLeft: 130,
+  marginRight: 20,
+  x: {
+    domain: [Math.min(0, d3.min(auxBins, (d) => d.swing)) - 1, d3.max(auxBins, (d) => d.swing) + 9],
+    label: "variação do voto no PT, 2018 → 2022 (pontos percentuais)",
+    grid: true,
+    tickFormat: (x) => x.toLocaleString("pt-BR", { signDisplay: "exceptZero" }),
+  },
+  y: { label: "famílias no Auxílio por 100 domicílios", domain: auxBins.map((d) => d.label) },
+  marks: [
+    Plot.ruleX([0]),
+    Plot.barX(auxBins, { x: "swing", y: "label", fill: (d) => (d.swing < 0 ? "#b45309" : "#1e3a8a"), tip: true, title: (d) => `${d.label}: ${d.n.toLocaleString("pt-BR")} municípios\n${fmtPct(d.v2018)} em 2018 → ${fmtPct(d.v2022)} em 2022` }),
+    Plot.text(auxBins, { x: (d) => Math.max(0, d.swing), y: "label", text: (d) => `${fmtSwing(d.swing)}  (${fmtPct(d.v2018)} → ${fmtPct(d.v2022)})`, textAnchor: "start", dx: 4, fontSize: 11 }),
+  ],
+}))
+))
+}});
+
+define({id: "bd2e4590", mode: "inline", inputs: ["fmtR","swingR","display"], body: async (fmtR,swingR,display) => {
+display(await(
+fmtR(swingR)
+))
+}});
+
+define({id: "d0cad574", mode: "inline", inputs: ["fmtPct","auxBins","display"], body: async (fmtPct,auxBins,display) => {
+display(await(
+fmtPct(auxBins.at(-1).v2018)
+))
+}});
+
+define({id: "5086b70f", mode: "inline", inputs: ["fmtPct","auxBins","display"], body: async (fmtPct,auxBins,display) => {
+display(await(
+fmtPct(auxBins[0].v2018)
+))
+}});
+
+define({id: "1371b1c3", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("college_25", 2022))
+))
+}});
+
+define({id: "6d88f7c4", mode: "inline", inputs: ["resize","scatter","fmtPct","display"], body: async (resize,scatter,fmtPct,display) => {
+display(await(
+resize((width) => scatter(width, { key: "college_25", label: "% de adultos de 25 anos ou mais com superior completo, Censo 2022", format: (x) => fmtPct(x) }))
+))
+}});
+
+define({id: "31def31f", mode: "inline", inputs: ["resize","Plot","display"], body: async (resize,Plot,display) => {
+display(await(
+resize((width) => Plot.plot({
+  width,
+  height: 240,
+  marginLeft: 150,
+  x: { domain: [0, 100], label: "Lula, % dos votos válidos (Datafolha, 28 e 29/10/2022)", grid: true },
+  y: { label: null, domain: ["Fundamental", "Médio", "Superior", "Até 2 SM", "2 a 5 SM", "5 a 10 SM", "Mais de 10 SM"] },
+  marks: [
+    Plot.ruleX([50], { stroke: "#94a3b8", strokeDasharray: "3,3" }),
+    Plot.barX(
+      [
+        { g: "Fundamental", v: 61, t: "escolaridade" }, { g: "Médio", v: 49, t: "escolaridade" }, { g: "Superior", v: 49, t: "escolaridade" },
+        { g: "Até 2 SM", v: 61, t: "renda" }, { g: "2 a 5 SM", v: 45, t: "renda" }, { g: "5 a 10 SM", v: 42, t: "renda" }, { g: "Mais de 10 SM", v: 39, t: "renda" },
+      ],
+      { x: "v", y: "g", fill: (d) => (d.t === "renda" ? "#1e3a8a" : "#0f766e") },
+    ),
+    Plot.text(
+      [["Fundamental", 61], ["Médio", 49], ["Superior", 49], ["Até 2 SM", 61], ["2 a 5 SM", 45], ["5 a 10 SM", 42], ["Mais de 10 SM", 39]],
+      { x: (d) => d[1], y: (d) => d[0], text: (d) => `${d[1]}%`, dx: 16, fontSize: 11 },
+    ),
+  ],
+}))
+))
+}});
+
+define({id: "8de704c7", mode: "inline", inputs: ["fmtR","rOf","display"], body: async (fmtR,rOf,display) => {
+display(await(
+fmtR(rOf("dist_big_km", 2022))
+))
+}});
+
+define({id: "f064be35", mode: "inline", inputs: ["resize","regionBars","distByRegion","display"], body: async (resize,regionBars,distByRegion,display) => {
+display(await(
+resize((width) => regionBars(width, distByRegion, { label: "correlação entre distância até cidade grande e voto em Lula, 2022" }))
+))
+}});
+
+define({id: "44f89e5c", mode: "inline", inputs: ["distPos","listPt","display"], body: async (distPos,listPt,display) => {
+display(await(
+distPos.length ? `No ${listPt(distPos)}, quanto mais longe dos grandes centros, mais voto em Lula: o interior votou mais nele que as capitais e seus arredores.` : ""
+))
+}});
+
+define({id: "74ab41f0", mode: "inline", inputs: ["distNeg","listPt","display"], body: async (distNeg,listPt,display) => {
+display(await(
+distNeg.length ? `No ${listPt(distNeg)}, é o contrário: muitos dos municípios mais distantes ficam na fronteira agrícola, onde Bolsonaro venceu.` : ""
+))
+}});
+
+define({id: "aadd4e99", mode: "inline", inputs: ["resize","scatter","bigCities","fmtKm","display"], body: async (resize,scatter,bigCities,fmtKm,display) => {
+display(await(
+resize((width) => scatter(width, { key: "dist_big_km", label: `distância em linha reta até a cidade mais próxima com 500 mil habitantes ou mais (${bigCities} cidades)`, format: fmtKm }))
+))
+}});
+
+define({id: "380bae43", mode: "inline", inputs: ["over100","display"], body: async (over100,display) => {
+display(await(
+over100
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">brviz</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./README">Untitled</a></li>
+    <li class="observablehq-link"><a href="./divida">Dívida, previdência e salário mínimo</a></li>
+    <li class="observablehq-link"><a href="./educacao">Educação</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./eleicoes">Eleições: onde o PT tem voto</a></li>
+    <li class="observablehq-link"><a href="./ensino-superior">Ensino superior: irrelevante?</a></li>
+    <li class="observablehq-link"><a href="./seguranca">Segurança pública</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Nesta página</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#como-ler-esta-pagina">Como ler esta página</a></li>
+<li class="observablehq-secondary-link"><a href="#a-virada-de-2006">A virada de 2006</a></li>
+<li class="observablehq-secondary-link"><a href="#renda">Renda</a></li>
+<li class="observablehq-secondary-link"><a href="#auxilio-brasil">Auxílio Brasil</a></li>
+<li class="observablehq-secondary-link"><a href="#escolaridade">Escolaridade</a></li>
+<li class="observablehq-secondary-link"><a href="#distancia-dos-grandes-centros">Distância dos grandes centros</a></li>
+<li class="observablehq-secondary-link"><a href="#limites-desta-pagina">Limites desta página</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="eleicoes-onde-o-pt-tem-voto" tabindex="-1"><a class="observablehq-header-anchor" href="#eleicoes-onde-o-pt-tem-voto">Eleições: onde o PT tem voto</a></h1>
+<p>Esta página acompanha o <a href="./">relatório</a>. Ela cruza o voto no PT no segundo turno das eleições presidenciais, de 2002 a 2022, com indicadores sociais dos 5.570 municípios: renda, escolaridade, peso do Auxílio Brasil e distância até os grandes centros.</p>
+<div class="observablehq observablehq--block"><!--:36934a52:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4b579449:--></div>
+<h2 id="como-ler-esta-pagina" tabindex="-1"><a class="observablehq-header-anchor" href="#como-ler-esta-pagina">Como ler esta página</a></h2>
+<p>A unidade é o município. Para cada um, a página compara a porcentagem de votos válidos do candidato do PT no segundo turno com indicadores do Censo 2022 e com o número de famílias que receberam o Auxílio Brasil em outubro de 2022, o mês da eleição.</p>
+<p>A medida de associação é a correlação. Ela vai de −1 a +1. Perto de +1, os municípios com mais de uma coisa têm também mais da outra; perto de −1, têm menos; perto de zero, não há relação em linha reta. Nas correlações, cada município conta igual: uma cidade de 2 mil habitantes pesa o mesmo que São Paulo. Os gráficos por faixa de renda, mais abaixo, pesam cada município pelo número de eleitores.</p>
+<div class="takeaway">
+  <strong>Município não é eleitor.</strong>
+  <span>Saber que municípios mais pobres votam mais no PT não diz, sozinho, que os eleitores mais pobres votam mais no PT. Para isso é preciso pesquisa com eleitores, e a página traz uma delas na seção sobre escolaridade.</span>
+</div>
+<h2 id="a-virada-de-2006" tabindex="-1"><a class="observablehq-header-anchor" href="#a-virada-de-2006">A virada de 2006</a></h2>
+<p>Em 2002, o voto em Lula era um pouco mais alto nos municípios de renda maior: a correlação com a renda foi <observablehq-loading></observablehq-loading><!--:31386044:-->. Em 2006, depois do primeiro mandato, ela virou <observablehq-loading></observablehq-loading><!--:bde565a8:-->. Desde então, o PT tem mais votos onde a renda é menor. A correlação foi <observablehq-loading></observablehq-loading><!--:cf36583e:--> em 2010, <observablehq-loading></observablehq-loading><!--:a3e9b4d9:--> em 2014, <observablehq-loading></observablehq-loading><!--:8c2dbbcd:--> em 2018 e <observablehq-loading></observablehq-loading><!--:c95e6550:--> em 2022.</p>
+<p><observablehq-loading></observablehq-loading><!--:263305f6:--></p>
+<p>Todos os indicadores são de 2022. Para as eleições anteriores, o gráfico mostra como votaram os municípios que <em>hoje</em> são mais pobres, mais escolarizados ou mais dependentes do Auxílio Brasil. É uma aproximação: a posição relativa de um município pode ter mudado em vinte anos.</p>
+<p>A mesma virada aparece dividindo o eleitorado em dez faixas iguais, da que vive nos municípios de menor renda à que vive nos de maior renda. Em 2002, Lula teve <observablehq-loading></observablehq-loading><!--:4c0ad7c7:--> na faixa mais pobre e <observablehq-loading></observablehq-loading><!--:318f462b:--> na mais rica. Em 2022, <observablehq-loading></observablehq-loading><!--:d9b0ffde:--> e <observablehq-loading></observablehq-loading><!--:4c378748:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:e710c739:--></p>
+<h2 id="renda" tabindex="-1"><a class="observablehq-header-anchor" href="#renda">Renda</a></h2>
+<p>Cada ponto abaixo é um município. Os de renda mais baixa ficam à esquerda e quase todos deram maioria a Lula. Nos de renda mais alta, ele perdeu na maior parte.</p>
+<p><observablehq-loading></observablehq-loading><!--:11e88af5:--></p>
+<p>A região pesa muito. Lula teve <observablehq-loading></observablehq-loading><!--:0d821149:--> dos votos válidos no Nordeste e <observablehq-loading></observablehq-loading><!--:51d78fbf:--> no Sul. Como o Nordeste é também a região mais pobre, parte da correlação nacional pode ser efeito de região. Mas a relação continua dentro de cada região: em todas, municípios de renda menor votaram mais em Lula.</p>
+<p><observablehq-loading></observablehq-loading><!--:4d2dc10b:--></p>
+<h2 id="auxilio-brasil" tabindex="-1"><a class="observablehq-header-anchor" href="#auxilio-brasil">Auxílio Brasil</a></h2>
+<p>O Auxílio Brasil substituiu o Bolsa Família entre novembro de 2021 e fevereiro de 2023. Em agosto de 2022, dois meses antes da eleição, o governo Bolsonaro elevou o benefício mínimo para R$ 600. Ainda assim, os municípios com mais famílias atendidas votaram mais em Lula, o candidato da oposição. A correlação foi <observablehq-loading></observablehq-loading><!--:551d55f1:-->.</p>
+<p>Nos <observablehq-loading></observablehq-loading><!--:8b11b169:--> municípios com 50 ou mais famílias beneficiárias para cada 100 domicílios, Lula teve <observablehq-loading></observablehq-loading><!--:efc7e5d9:--> dos votos válidos. Nos <observablehq-loading></observablehq-loading><!--:76576d36:--> com menos de 20, teve <observablehq-loading></observablehq-loading><!--:606ffb76:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:d04cef43:--></p>
+<p>Isso não mostra que o benefício mudou votos. Os municípios com mais beneficiários são os mais pobres, e a renda já explica quase a mesma coisa: as duas correlações têm quase o mesmo tamanho. Dentro de cada região a relação é mais fraca, sobretudo no Nordeste, onde quase todos os municípios têm muitos beneficiários e quase todos votaram em Lula.</p>
+<p><observablehq-loading></observablehq-loading><!--:6c3c3418:--></p>
+<h3 id="o-que-mudou-de-2018-para-2022" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-mudou-de-2018-para-2022">O que mudou de 2018 para 2022</a></h3>
+<p>O nível do voto mostra sobretudo pobreza. A mudança entre uma eleição e outra diz mais. De 2018 para 2022, o PT subiu de <observablehq-loading></observablehq-loading><!--:7f7e09b1:--> para <observablehq-loading></observablehq-loading><!--:83844d5c:-->. Mas o ganho não foi igual em todo lugar: foi grande onde há poucos beneficiários do Auxílio Brasil e negativo onde há muitos.</p>
+<p><observablehq-loading></observablehq-loading><!--:1cfbb779:--></p>
+<p>A correlação entre a fatia de beneficiários e a variação do voto foi <observablehq-loading></observablehq-loading><!--:bd2e4590:-->, e ela é negativa em todas as regiões. Esse é o padrão que a literatura sobre o Bolsa Família descreve: programas de transferência tendem a favorecer quem está no governo, seja qual for o partido. Estudos como os de Hunter e Power (2007) e de Cesar Zucco (2013) encontraram esse efeito a favor do PT quando o PT governava.</p>
+<p>Há outra explicação, que estes dados não conseguem separar da primeira. Onde Haddad já tinha <observablehq-loading></observablehq-loading><!--:d0cad574:--> em 2018, sobrava pouco espaço para subir; onde tinha <observablehq-loading></observablehq-loading><!--:5086b70f:-->, sobrava muito. Parte do padrão pode ser só isso.</p>
+<h2 id="escolaridade" tabindex="-1"><a class="observablehq-header-anchor" href="#escolaridade">Escolaridade</a></h2>
+<p>Nos municípios com mais adultos com diploma universitário, Lula teve menos votos: a correlação foi <observablehq-loading></observablehq-loading><!--:1371b1c3:-->. Aqui a diferença entre município e eleitor importa. Na última pesquisa Datafolha antes do segundo turno de 2022, com 8.308 entrevistas, Lula tinha 61% dos votos válidos entre eleitores com ensino fundamental, 49% entre os com ensino médio e 49% entre os com ensino superior.</p>
+<p><observablehq-loading></observablehq-loading><!--:6d88f7c4:--></p>
+<p>Ou seja: entre eleitores, a divisão por escolaridade está entre quem estudou pouco e o resto. Entre quem tem ensino médio e quem tem diploma, a pesquisa deu empate. A correlação municipal forte vem em boa parte de outra coisa: municípios com mais diplomados são também mais ricos e mais urbanos.</p>
+<p>Na mesma pesquisa, a divisão por renda foi mais nítida. Lula tinha 61% dos válidos entre eleitores com renda familiar de até 2 salários mínimos, 45% entre 2 e 5, 42% entre 5 e 10 e 39% acima de 10 salários.</p>
+<p><observablehq-loading></observablehq-loading><!--:31def31f:--></p>
+<h2 id="distancia-dos-grandes-centros" tabindex="-1"><a class="observablehq-header-anchor" href="#distancia-dos-grandes-centros">Distância dos grandes centros</a></h2>
+<p>No país como um todo, a distância até uma cidade com mais de 500 mil habitantes quase não tem relação com o voto: a correlação foi <observablehq-loading></observablehq-loading><!--:8de704c7:-->. Mas isso é a soma de dois padrões opostos.</p>
+<p><observablehq-loading></observablehq-loading><!--:f064be35:--></p>
+<p><observablehq-loading></observablehq-loading><!--:44f89e5c:--> <observablehq-loading></observablehq-loading><!--:74ab41f0:--> Somados, os dois efeitos se cancelam.</p>
+<p><observablehq-loading></observablehq-loading><!--:aadd4e99:--></p>
+<h2 id="limites-desta-pagina" tabindex="-1"><a class="observablehq-header-anchor" href="#limites-desta-pagina">Limites desta página</a></h2>
+<ul>
+<li>Correlação entre municípios não é comportamento de eleitor. Um município pobre que vota no PT pode ter eleitores pobres votando no outro candidato, e vice-versa.</li>
+<li>Os indicadores são de 2022. Para as eleições de 2002 a 2018, a página mostra como votaram os municípios que hoje têm cada perfil, não o perfil que tinham na época.</li>
+<li>O dado do Auxílio Brasil vem do arquivo de saques do Portal da Transparência: famílias que sacaram o benefício de outubro de 2022. Ele soma cerca de 20 milhões de famílias, um pouco menos que o total pago divulgado pelo governo. O Cadastro Único conta famílias de um jeito diferente do Censo, que conta domicílios; por isso <observablehq-loading></observablehq-loading><!--:380bae43:--> municípios têm mais famílias beneficiárias do que domicílios.</li>
+<li>A renda e a escolaridade do Censo 2022 são resultados preliminares da amostra.</li>
+<li>A distância é em linha reta, não por estrada.</li>
+<li>Os votos no exterior ficam de fora, porque não pertencem a nenhum município. Por isso o total pode diferir em décimos do resultado oficial.</li>
+<li>A comparação entre 2018 e 2022 usa a fatia de beneficiários de 2022 nas duas eleições, e não separa o efeito do programa de outros fatores, como o teto natural do voto onde ele já era muito alto.</li>
+<li>Nada aqui identifica causas.</li>
+</ul>
+<p>Fontes: Tribunal Superior Eleitoral, votação por partido e município, 2002–2022 · Portal da Transparência (CGU), saques do Auxílio Brasil, outubro de 2022 · IBGE, Censo 2022, tabelas SIDRA 4709 (população), 4712 (domicílios), 10295 (rendimento domiciliar per capita) e 10061 (nível de instrução) · Coordenadas dos municípios: <a href="https://github.com/kelvins/municipios-brasileiros" target="_blank" rel="noopener noreferrer">kelvins/municipios-brasileiros</a>; correspondência entre códigos do TSE e do IBGE: <a href="https://github.com/betafcc/Municipios-Brasileiros-TSE" target="_blank" rel="noopener noreferrer">betafcc/Municipios-Brasileiros-TSE</a> · Datafolha, <a href="https://static.poder360.com.br/2022/12/datafolha-BR-082972022-1.pdf" target="_blank" rel="noopener noreferrer">pesquisa de 28 e 29 de outubro de 2022</a> (BR-08297/2022) · Hunter, W. e Power, T. J. (2007), "Rewarding Lula: Executive Power, Social Policy, and the Brazilian Elections of 2006", <em>Latin American Politics and Society</em> · Zucco, C. (2013), "When Payouts Pay Off: Conditional Cash Transfers and Voting Behavior in Brazil 2002–10", <em>American Journal of Political Science</em>.</p>
+</main>
+<footer id="observablehq-footer">
+<div>World Bank WDI · Observable Framework</div>
+</footer>
+</div>
+</body>
+</html>

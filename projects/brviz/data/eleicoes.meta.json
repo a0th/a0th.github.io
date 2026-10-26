@@ -1,0 +1,59 @@
+{
+  "source": "TSE (votação por partido e município), Portal da Transparência (Auxílio Brasil), IBGE SIDRA (Censo 2022)",
+  "urls": {
+    "tse": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_{year}.zip",
+    "auxilio": "https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida/auxilio-brasil-saques/202210_AuxilioBrasil.zip",
+    "sidra": {
+      "pop": "https://apisidra.ibge.gov.br/values/t/4709/n6/all/v/93/p/2022",
+      "households": "https://apisidra.ibge.gov.br/values/t/4712/n6/all/v/381/p/2022",
+      "income_pc": "https://apisidra.ibge.gov.br/values/t/10295/n6/all/v/13431/p/2022/c2/6794/c86/95251/c58/95253",
+      "college_25": "https://apisidra.ibge.gov.br/values/t/10061/n6/all/v/1002667/p/2022/c1568/99713/c58/108866/c2/6794/c86/95251",
+      "no_school_25": "https://apisidra.ibge.gov.br/values/t/10061/n6/all/v/1002667/p/2022/c1568/9493/c58/108866/c2/6794/c86/95251"
+    },
+    "tse_ibge": "https://raw.githubusercontent.com/betafcc/Municipios-Brasileiros-TSE/master/municipios_brasileiros_tse.csv",
+    "municipios": "https://raw.githubusercontent.com/kelvins/municipios-brasileiros/main/csv/municipios.csv"
+  },
+  "aux_month": "202210",
+  "big_city_threshold": 500000,
+  "big_cities": 41,
+  "indicators": {
+    "pop": {
+      "n": 5570
+    },
+    "households": {
+      "n": 5570
+    },
+    "income_pc": {
+      "n": 5570
+    },
+    "college_25": {
+      "n": 5570
+    },
+    "no_school_25": {
+      "n": 5570
+    },
+    "aux_share": {
+      "n": 5570
+    },
+    "pt2002": {
+      "n": 5564
+    },
+    "pt2006": {
+      "n": 5565
+    },
+    "pt2010": {
+      "n": 5567
+    },
+    "pt2014": {
+      "n": 5570
+    },
+    "pt2018": {
+      "n": 5570
+    },
+    "pt2022": {
+      "n": 5570
+    }
+  },
+  "n_rows": 5571,
+  "path": "data/eleicoes.csv"
+}

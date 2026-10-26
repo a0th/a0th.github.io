@@ -1,0 +1,55 @@
+{
+  "source": "OpenAlex works API (group_by=publication_year)",
+  "url": "https://api.openalex.org/works?filter={filter}&group_by=publication_year",
+  "years": [
+    2005,
+    2022
+  ],
+  "countries": [
+    "WORLD",
+    "BRA",
+    "ARG",
+    "CHL",
+    "COL",
+    "ECU",
+    "MEX",
+    "PER",
+    "URY",
+    "BGR",
+    "HUN",
+    "POL",
+    "RUS",
+    "TUR",
+    "UKR",
+    "CHN",
+    "IND",
+    "IDN",
+    "MYS",
+    "THA",
+    "ZAF",
+    "KOR",
+    "CZE"
+  ],
+  "indicators": {
+    "oa_all_articles": {
+      "n": 414
+    },
+    "oa_all_top10": {
+      "n": 414
+    },
+    "oa_all_uncited": {
+      "n": 414
+    },
+    "oa_core_articles": {
+      "n": 414
+    },
+    "oa_core_top10": {
+      "n": 414
+    },
+    "oa_core_uncited": {
+      "n": 414
+    }
+  },
+  "n_rows": 2484,
+  "path": "data/openalex.csv"
+}

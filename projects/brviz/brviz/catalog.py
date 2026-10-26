@@ -75,6 +75,21 @@ WAVE2_INDICATORS = {
     "reg_quality": ("GOV_WGI_RQ.EST", "WGI Regulatory Quality"),
     "rule_of_law": ("GOV_WGI_RL.EST", "WGI Rule of Law"),
     "tot": ("TT.PRI.MRCH.XD.WD", "Net barter terms of trade (2015=100)"),
+    "homicides": ("VC.IHR.PSRC.P5", "Intentional homicides (per 100,000)"),
+    "homicides_male": ("VC.IHR.PSRC.MA.P5", "Intentional homicides, male (per 100,000 male)"),
+    "homicides_female": (
+        "VC.IHR.PSRC.FE.P5",
+        "Intentional homicides, female (per 100,000 female)",
+    ),
+    "pol_stability": (
+        "GOV_WGI_PV.EST",
+        "WGI Political Stability and Absence of Violence/Terrorism",
+    ),
+    "pop": ("SP.POP.TOTL", "Population, total"),
+    "patents_res": ("IP.PAT.RESD", "Patent applications, residents"),
+    "rnd": ("GB.XPD.RSDV.GD.ZS", "Research and development expenditure (% GDP)"),
+    "researchers": ("SP.POP.SCIE.RD.P6", "Researchers in R&D (per million people)"),
+    "sci_articles": ("IP.JRN.ARTC.SC", "Scientific and technical journal articles"),
 }
 
 EXTRA_INDICATORS = {

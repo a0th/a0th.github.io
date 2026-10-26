@@ -298,6 +298,8 @@ export function load(wdi, pisa) {
   const rl = series("rule_of_law", wdi);
   const tot = series("tot", wdi);
   const tfp = series("tfp", wdi);
+  const primary = series("gg_primary", wdi);
+  const debt = series("gg_debt", wdi);
   const days = series("start_days", wdi);
   const efw = series("efw", wdi);
   const gini = series("gini", wdi);
@@ -344,6 +346,9 @@ export function load(wdi, pisa) {
   const rl90 = keep(rl, club90);
   const rl90rel = minusBase(rl90, 1996);
   const totWave = keep(tot, WAVE);
+  const totWaveRel = indexAt(totWave, 2005);
+  const primaryWave = keep(primary, WAVE);
+  const waveDilma = deltaPct(pppWave, 2010, 2016);
   const tfp90rel = indexAt(keep(tfp, club90), 1990);
   const tfpLatamRel = indexAt(keep(tfp, latamPppIsos), 1990);
   const clubTfp = lastGroup(tfp90rel, club90);
@@ -433,6 +438,11 @@ export function load(wdi, pisa) {
     rl90,
     rl90rel,
     totWave,
+    totWaveRel,
+    primaryWave,
+    waveDilma,
+    waveDilmaBra: last(waveDilma, "BRA")?.value,
+    waveBeatenDilma: beatenNames(waveDilma, "BRA"),
     tfp90rel,
     days90: keep(days, club90).filter((d) => d.year >= 2013),
     days2019: snapshot(days, 2019, DAYS_2019),
@@ -524,7 +534,12 @@ export function load(wdi, pisa) {
     totBra: last(tot, "BRA"),
     totChl: last(tot, "CHL"),
     totPer: last(tot, "PER"),
+    totBra05: at(tot, "BRA", 2005),
     totBra11: at(tot, "BRA", 2011),
+    totBra16: at(tot, "BRA", 2016),
+    braPrimary03: at(primary, "BRA", 2003),
+    braDebt11: at(debt, "BRA", 2011),
+    braDebt16: at(debt, "BRA", 2016),
     braPisa: last(pisaMath, "BRA")?.value,
     oecdPisa: last(pisaMath, "OECD")?.value,
     korPisa: last(pisaMath, "KOR")?.value,

@@ -1,0 +1,170 @@
+{
+  "source": "Global Initiative Against Transnational Organized Crime, Global Organized Crime Index",
+  "url": "https://ocindex.net/assets/downloads/global_oc_index.xlsx",
+  "years": [
+    2021,
+    2023,
+    2025
+  ],
+  "countries": [
+    "ARG",
+    "BGR",
+    "BOL",
+    "BRA",
+    "CHL",
+    "CHN",
+    "COL",
+    "CRI",
+    "CUB",
+    "CZE",
+    "DOM",
+    "ECU",
+    "GTM",
+    "HND",
+    "HTI",
+    "HUN",
+    "IDN",
+    "IND",
+    "KOR",
+    "MEX",
+    "MYS",
+    "NIC",
+    "PAN",
+    "PER",
+    "POL",
+    "PRY",
+    "RUS",
+    "SLV",
+    "THA",
+    "TUR",
+    "UKR",
+    "URY",
+    "VEN",
+    "WORLD",
+    "ZAF"
+  ],
+  "indicators": {
+    "anti_money_laundering": {
+      "n": 105
+    },
+    "arms_trafficking": {
+      "n": 105
+    },
+    "cannabis_trade": {
+      "n": 105
+    },
+    "cocaine_trade": {
+      "n": 105
+    },
+    "criminal_actors": {
+      "n": 105
+    },
+    "criminal_actors_rank": {
+      "n": 102
+    },
+    "criminal_markets": {
+      "n": 105
+    },
+    "criminal_markets_rank": {
+      "n": 102
+    },
+    "criminal_networks": {
+      "n": 105
+    },
+    "criminality": {
+      "n": 105
+    },
+    "criminality_rank": {
+      "n": 102
+    },
+    "cyber_dependent_crimes": {
+      "n": 70
+    },
+    "economic_regulatory_capacity": {
+      "n": 105
+    },
+    "extortion_and_protection_racketeering": {
+      "n": 70
+    },
+    "fauna_crimes": {
+      "n": 105
+    },
+    "financial_crimes": {
+      "n": 70
+    },
+    "flora_crimes": {
+      "n": 105
+    },
+    "foreign_actors": {
+      "n": 105
+    },
+    "government_transparency_and_accountability": {
+      "n": 105
+    },
+    "heroin_trade": {
+      "n": 105
+    },
+    "human_smuggling": {
+      "n": 105
+    },
+    "human_trafficking": {
+      "n": 105
+    },
+    "illicit_trade_in_excisable_goods": {
+      "n": 70
+    },
+    "international_cooperation": {
+      "n": 105
+    },
+    "judicial_system_and_detention": {
+      "n": 105
+    },
+    "law_enforcement": {
+      "n": 105
+    },
+    "mafia_style_groups": {
+      "n": 105
+    },
+    "national_policies_and_laws": {
+      "n": 105
+    },
+    "non_renewable_resource_crimes": {
+      "n": 105
+    },
+    "non_state_actors": {
+      "n": 105
+    },
+    "political_leadership_and_governance": {
+      "n": 105
+    },
+    "prevention": {
+      "n": 105
+    },
+    "private_sector_actors": {
+      "n": 70
+    },
+    "resilience": {
+      "n": 105
+    },
+    "resilience_rank": {
+      "n": 102
+    },
+    "state_embedded_actors": {
+      "n": 105
+    },
+    "synthetic_drug_trade": {
+      "n": 105
+    },
+    "territorial_integrity": {
+      "n": 105
+    },
+    "trade_in_counterfeit_goods": {
+      "n": 70
+    },
+    "victim_and_witness_support": {
+      "n": 105
+    }
+  },
+  "n_rows": 3978,
+  "path": "data/ocindex.csv"
+}

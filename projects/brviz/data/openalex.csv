@@ -1,0 +1,2485 @@
+metric,iso,country,year,value
+oa_all_articles,WORLD,World,2005,3833719
+oa_all_articles,WORLD,World,2006,4152104
+oa_all_articles,WORLD,World,2007,4417054
+oa_all_articles,WORLD,World,2008,4842417
+oa_all_articles,WORLD,World,2009,5127132
+oa_all_articles,WORLD,World,2010,5414696
+oa_all_articles,WORLD,World,2011,5712333
+oa_all_articles,WORLD,World,2012,5931282
+oa_all_articles,WORLD,World,2013,6224457
+oa_all_articles,WORLD,World,2014,6418322
+oa_all_articles,WORLD,World,2015,6516109
+oa_all_articles,WORLD,World,2016,6538934
+oa_all_articles,WORLD,World,2017,6203159
+oa_all_articles,WORLD,World,2018,6095065
+oa_all_articles,WORLD,World,2019,6347058
+oa_all_articles,WORLD,World,2020,6648917
+oa_all_articles,WORLD,World,2021,6190181
+oa_all_articles,WORLD,World,2022,5737242
+oa_all_top10,WORLD,World,2005,413627
+oa_all_top10,WORLD,World,2006,454838
+oa_all_top10,WORLD,World,2007,485592
+oa_all_top10,WORLD,World,2008,547584
+oa_all_top10,WORLD,World,2009,560523
+oa_all_top10,WORLD,World,2010,594743
+oa_all_top10,WORLD,World,2011,635567
+oa_all_top10,WORLD,World,2012,653754
+oa_all_top10,WORLD,World,2013,712584
+oa_all_top10,WORLD,World,2014,727557
+oa_all_top10,WORLD,World,2015,770401
+oa_all_top10,WORLD,World,2016,810415
+oa_all_top10,WORLD,World,2017,690951
+oa_all_top10,WORLD,World,2018,676768
+oa_all_top10,WORLD,World,2019,705093
+oa_all_top10,WORLD,World,2020,737486
+oa_all_top10,WORLD,World,2021,698347
+oa_all_top10,WORLD,World,2022,648503
+oa_all_uncited,WORLD,World,2005,2226248
+oa_all_uncited,WORLD,World,2006,2418470
+oa_all_uncited,WORLD,World,2007,2610820
+oa_all_uncited,WORLD,World,2008,2877028
+oa_all_uncited,WORLD,World,2009,3040244
+oa_all_uncited,WORLD,World,2010,3234045
+oa_all_uncited,WORLD,World,2011,3401280
+oa_all_uncited,WORLD,World,2012,3482175
+oa_all_uncited,WORLD,World,2013,3616085
+oa_all_uncited,WORLD,World,2014,3711891
+oa_all_uncited,WORLD,World,2015,3757660
+oa_all_uncited,WORLD,World,2016,3695155
+oa_all_uncited,WORLD,World,2017,3265654
+oa_all_uncited,WORLD,World,2018,3040988
+oa_all_uncited,WORLD,World,2019,3119817
+oa_all_uncited,WORLD,World,2020,3056563
+oa_all_uncited,WORLD,World,2021,2575174
+oa_all_uncited,WORLD,World,2022,2253591
+oa_core_articles,WORLD,World,2005,1423079
+oa_core_articles,WORLD,World,2006,1546769
+oa_core_articles,WORLD,World,2007,1588425
+oa_core_articles,WORLD,World,2008,1720494
+oa_core_articles,WORLD,World,2009,1812639
+oa_core_articles,WORLD,World,2010,1881905
+oa_core_articles,WORLD,World,2011,2019581
+oa_core_articles,WORLD,World,2012,2126603
+oa_core_articles,WORLD,World,2013,2267803
+oa_core_articles,WORLD,World,2014,2360735
+oa_core_articles,WORLD,World,2015,2387593
+oa_core_articles,WORLD,World,2016,2499346
+oa_core_articles,WORLD,World,2017,2573779
+oa_core_articles,WORLD,World,2018,2573689
+oa_core_articles,WORLD,World,2019,2670162
+oa_core_articles,WORLD,World,2020,2930567
+oa_core_articles,WORLD,World,2021,3062206
+oa_core_articles,WORLD,World,2022,3072422
+oa_core_top10,WORLD,World,2005,327147
+oa_core_top10,WORLD,World,2006,361751
+oa_core_top10,WORLD,World,2007,382567
+oa_core_top10,WORLD,World,2008,423724
+oa_core_top10,WORLD,World,2009,439509
+oa_core_top10,WORLD,World,2010,464705
+oa_core_top10,WORLD,World,2011,493740
+oa_core_top10,WORLD,World,2012,512850
+oa_core_top10,WORLD,World,2013,561546
+oa_core_top10,WORLD,World,2014,573317
+oa_core_top10,WORLD,World,2015,605315
+oa_core_top10,WORLD,World,2016,648685
+oa_core_top10,WORLD,World,2017,556428
+oa_core_top10,WORLD,World,2018,549394
+oa_core_top10,WORLD,World,2019,572231
+oa_core_top10,WORLD,World,2020,605694
+oa_core_top10,WORLD,World,2021,587062
+oa_core_top10,WORLD,World,2022,559187
+oa_core_uncited,WORLD,World,2005,296967
+oa_core_uncited,WORLD,World,2006,331597
+oa_core_uncited,WORLD,World,2007,338070
+oa_core_uncited,WORLD,World,2008,360872
+oa_core_uncited,WORLD,World,2009,384430
+oa_core_uncited,WORLD,World,2010,386369
+oa_core_uncited,WORLD,World,2011,412007
+oa_core_uncited,WORLD,World,2012,429557
+oa_core_uncited,WORLD,World,2013,457428
+oa_core_uncited,WORLD,World,2014,464755
+oa_core_uncited,WORLD,World,2015,451917
+oa_core_uncited,WORLD,World,2016,497374
+oa_core_uncited,WORLD,World,2017,509213
+oa_core_uncited,WORLD,World,2018,425312
+oa_core_uncited,WORLD,World,2019,409609
+oa_core_uncited,WORLD,World,2020,383441
+oa_core_uncited,WORLD,World,2021,414389
+oa_core_uncited,WORLD,World,2022,424122
+oa_all_articles,BRA,Brazil,2005,38945
+oa_all_articles,BRA,Brazil,2006,45799
+oa_all_articles,BRA,Brazil,2007,54471
+oa_all_articles,BRA,Brazil,2008,63248
+oa_all_articles,BRA,Brazil,2009,70307
+oa_all_articles,BRA,Brazil,2010,77758
+oa_all_articles,BRA,Brazil,2011,88771
+oa_all_articles,BRA,Brazil,2012,106218
+oa_all_articles,BRA,Brazil,2013,117647
+oa_all_articles,BRA,Brazil,2014,128234
+oa_all_articles,BRA,Brazil,2015,139393
+oa_all_articles,BRA,Brazil,2016,158236
+oa_all_articles,BRA,Brazil,2017,170975
+oa_all_articles,BRA,Brazil,2018,182134
+oa_all_articles,BRA,Brazil,2019,190995
+oa_all_articles,BRA,Brazil,2020,221370
+oa_all_articles,BRA,Brazil,2021,212491
+oa_all_articles,BRA,Brazil,2022,184923
+oa_all_top10,BRA,Brazil,2005,5254
+oa_all_top10,BRA,Brazil,2006,6585
+oa_all_top10,BRA,Brazil,2007,7830
+oa_all_top10,BRA,Brazil,2008,9452
+oa_all_top10,BRA,Brazil,2009,10511
+oa_all_top10,BRA,Brazil,2010,11263
+oa_all_top10,BRA,Brazil,2011,12570
+oa_all_top10,BRA,Brazil,2012,13997
+oa_all_top10,BRA,Brazil,2013,15367
+oa_all_top10,BRA,Brazil,2014,16421
+oa_all_top10,BRA,Brazil,2015,19294
+oa_all_top10,BRA,Brazil,2016,21898
+oa_all_top10,BRA,Brazil,2017,19798
+oa_all_top10,BRA,Brazil,2018,20069
+oa_all_top10,BRA,Brazil,2019,20548
+oa_all_top10,BRA,Brazil,2020,21685
+oa_all_top10,BRA,Brazil,2021,18445
+oa_all_top10,BRA,Brazil,2022,14177
+oa_all_uncited,BRA,Brazil,2005,7420
+oa_all_uncited,BRA,Brazil,2006,8940
+oa_all_uncited,BRA,Brazil,2007,12924
+oa_all_uncited,BRA,Brazil,2008,15481
+oa_all_uncited,BRA,Brazil,2009,18716
+oa_all_uncited,BRA,Brazil,2010,21653
+oa_all_uncited,BRA,Brazil,2011,27011
+oa_all_uncited,BRA,Brazil,2012,36095
+oa_all_uncited,BRA,Brazil,2013,43789
+oa_all_uncited,BRA,Brazil,2014,48216
+oa_all_uncited,BRA,Brazil,2015,53930
+oa_all_uncited,BRA,Brazil,2016,65528
+oa_all_uncited,BRA,Brazil,2017,70284
+oa_all_uncited,BRA,Brazil,2018,75177
+oa_all_uncited,BRA,Brazil,2019,78288
+oa_all_uncited,BRA,Brazil,2020,85031
+oa_all_uncited,BRA,Brazil,2021,85239
+oa_all_uncited,BRA,Brazil,2022,77542
+oa_core_articles,BRA,Brazil,2005,22501
+oa_core_articles,BRA,Brazil,2006,26329
+oa_core_articles,BRA,Brazil,2007,28778
+oa_core_articles,BRA,Brazil,2008,31619
+oa_core_articles,BRA,Brazil,2009,34266
+oa_core_articles,BRA,Brazil,2010,36901
+oa_core_articles,BRA,Brazil,2011,40273
+oa_core_articles,BRA,Brazil,2012,44766
+oa_core_articles,BRA,Brazil,2013,46548
+oa_core_articles,BRA,Brazil,2014,52025
+oa_core_articles,BRA,Brazil,2015,54643
+oa_core_articles,BRA,Brazil,2016,57826
+oa_core_articles,BRA,Brazil,2017,62090
+oa_core_articles,BRA,Brazil,2018,65374
+oa_core_articles,BRA,Brazil,2019,67915
+oa_core_articles,BRA,Brazil,2020,78175
+oa_core_articles,BRA,Brazil,2021,77892
+oa_core_articles,BRA,Brazil,2022,69652
+oa_core_top10,BRA,Brazil,2005,4060
+oa_core_top10,BRA,Brazil,2006,5104
+oa_core_top10,BRA,Brazil,2007,5911
+oa_core_top10,BRA,Brazil,2008,6904
+oa_core_top10,BRA,Brazil,2009,7664
+oa_core_top10,BRA,Brazil,2010,8105
+oa_core_top10,BRA,Brazil,2011,8929
+oa_core_top10,BRA,Brazil,2012,9909
+oa_core_top10,BRA,Brazil,2013,10957
+oa_core_top10,BRA,Brazil,2014,11820
+oa_core_top10,BRA,Brazil,2015,13516
+oa_core_top10,BRA,Brazil,2016,15611
+oa_core_top10,BRA,Brazil,2017,13646
+oa_core_top10,BRA,Brazil,2018,13693
+oa_core_top10,BRA,Brazil,2019,13863
+oa_core_top10,BRA,Brazil,2020,14731
+oa_core_top10,BRA,Brazil,2021,13028
+oa_core_top10,BRA,Brazil,2022,10395
+oa_core_uncited,BRA,Brazil,2005,1393
+oa_core_uncited,BRA,Brazil,2006,1804
+oa_core_uncited,BRA,Brazil,2007,2166
+oa_core_uncited,BRA,Brazil,2008,2353
+oa_core_uncited,BRA,Brazil,2009,2668
+oa_core_uncited,BRA,Brazil,2010,2967
+oa_core_uncited,BRA,Brazil,2011,3528
+oa_core_uncited,BRA,Brazil,2012,3838
+oa_core_uncited,BRA,Brazil,2013,3887
+oa_core_uncited,BRA,Brazil,2014,5217
+oa_core_uncited,BRA,Brazil,2015,5421
+oa_core_uncited,BRA,Brazil,2016,4599
+oa_core_uncited,BRA,Brazil,2017,6081
+oa_core_uncited,BRA,Brazil,2018,5732
+oa_core_uncited,BRA,Brazil,2019,6239
+oa_core_uncited,BRA,Brazil,2020,6640
+oa_core_uncited,BRA,Brazil,2021,7913
+oa_core_uncited,BRA,Brazil,2022,8228
+oa_all_articles,ARG,Argentina,2005,8446
+oa_all_articles,ARG,Argentina,2006,9393
+oa_all_articles,ARG,Argentina,2007,9888
+oa_all_articles,ARG,Argentina,2008,11086
+oa_all_articles,ARG,Argentina,2009,12466
+oa_all_articles,ARG,Argentina,2010,13621
+oa_all_articles,ARG,Argentina,2011,15359
+oa_all_articles,ARG,Argentina,2012,16711
+oa_all_articles,ARG,Argentina,2013,18254
+oa_all_articles,ARG,Argentina,2014,19485
+oa_all_articles,ARG,Argentina,2015,20335
+oa_all_articles,ARG,Argentina,2016,21971
+oa_all_articles,ARG,Argentina,2017,23014
+oa_all_articles,ARG,Argentina,2018,24769
+oa_all_articles,ARG,Argentina,2019,25793
+oa_all_articles,ARG,Argentina,2020,29325
+oa_all_articles,ARG,Argentina,2021,27852
+oa_all_articles,ARG,Argentina,2022,24853
+oa_all_top10,ARG,Argentina,2005,1251
+oa_all_top10,ARG,Argentina,2006,1445
+oa_all_top10,ARG,Argentina,2007,1523
+oa_all_top10,ARG,Argentina,2008,1913
+oa_all_top10,ARG,Argentina,2009,2090
+oa_all_top10,ARG,Argentina,2010,2296
+oa_all_top10,ARG,Argentina,2011,2617
+oa_all_top10,ARG,Argentina,2012,2756
+oa_all_top10,ARG,Argentina,2013,3004
+oa_all_top10,ARG,Argentina,2014,3186
+oa_all_top10,ARG,Argentina,2015,3480
+oa_all_top10,ARG,Argentina,2016,3721
+oa_all_top10,ARG,Argentina,2017,3325
+oa_all_top10,ARG,Argentina,2018,3284
+oa_all_top10,ARG,Argentina,2019,3236
+oa_all_top10,ARG,Argentina,2020,3394
+oa_all_top10,ARG,Argentina,2021,3009
+oa_all_top10,ARG,Argentina,2022,2544
+oa_all_uncited,ARG,Argentina,2005,1718
+oa_all_uncited,ARG,Argentina,2006,2051
+oa_all_uncited,ARG,Argentina,2007,2304
+oa_all_uncited,ARG,Argentina,2008,2411
+oa_all_uncited,ARG,Argentina,2009,2942
+oa_all_uncited,ARG,Argentina,2010,3460
+oa_all_uncited,ARG,Argentina,2011,4021
+oa_all_uncited,ARG,Argentina,2012,4767
+oa_all_uncited,ARG,Argentina,2013,5748
+oa_all_uncited,ARG,Argentina,2014,6187
+oa_all_uncited,ARG,Argentina,2015,6539
+oa_all_uncited,ARG,Argentina,2016,7581
+oa_all_uncited,ARG,Argentina,2017,7939
+oa_all_uncited,ARG,Argentina,2018,9046
+oa_all_uncited,ARG,Argentina,2019,9882
+oa_all_uncited,ARG,Argentina,2020,10875
+oa_all_uncited,ARG,Argentina,2021,10540
+oa_all_uncited,ARG,Argentina,2022,9723
+oa_core_articles,ARG,Argentina,2005,5187
+oa_core_articles,ARG,Argentina,2006,5790
+oa_core_articles,ARG,Argentina,2007,6019
+oa_core_articles,ARG,Argentina,2008,6727
+oa_core_articles,ARG,Argentina,2009,7232
+oa_core_articles,ARG,Argentina,2010,7699
+oa_core_articles,ARG,Argentina,2011,8414
+oa_core_articles,ARG,Argentina,2012,8736
+oa_core_articles,ARG,Argentina,2013,8973
+oa_core_articles,ARG,Argentina,2014,9538
+oa_core_articles,ARG,Argentina,2015,9841
+oa_core_articles,ARG,Argentina,2016,10064
+oa_core_articles,ARG,Argentina,2017,10590
+oa_core_articles,ARG,Argentina,2018,11486
+oa_core_articles,ARG,Argentina,2019,11635
+oa_core_articles,ARG,Argentina,2020,12686
+oa_core_articles,ARG,Argentina,2021,12349
+oa_core_articles,ARG,Argentina,2022,11290
+oa_core_top10,ARG,Argentina,2005,1090
+oa_core_top10,ARG,Argentina,2006,1236
+oa_core_top10,ARG,Argentina,2007,1291
+oa_core_top10,ARG,Argentina,2008,1596
+oa_core_top10,ARG,Argentina,2009,1707
+oa_core_top10,ARG,Argentina,2010,1874
+oa_core_top10,ARG,Argentina,2011,2015
+oa_core_top10,ARG,Argentina,2012,2098
+oa_core_top10,ARG,Argentina,2013,2197
+oa_core_top10,ARG,Argentina,2014,2276
+oa_core_top10,ARG,Argentina,2015,2497
+oa_core_top10,ARG,Argentina,2016,2589
+oa_core_top10,ARG,Argentina,2017,2224
+oa_core_top10,ARG,Argentina,2018,2227
+oa_core_top10,ARG,Argentina,2019,2168
+oa_core_top10,ARG,Argentina,2020,2337
+oa_core_top10,ARG,Argentina,2021,2185
+oa_core_top10,ARG,Argentina,2022,1876
+oa_core_uncited,ARG,Argentina,2005,270
+oa_core_uncited,ARG,Argentina,2006,370
+oa_core_uncited,ARG,Argentina,2007,406
+oa_core_uncited,ARG,Argentina,2008,410
+oa_core_uncited,ARG,Argentina,2009,438
+oa_core_uncited,ARG,Argentina,2010,558
+oa_core_uncited,ARG,Argentina,2011,526
+oa_core_uncited,ARG,Argentina,2012,555
+oa_core_uncited,ARG,Argentina,2013,598
+oa_core_uncited,ARG,Argentina,2014,637
+oa_core_uncited,ARG,Argentina,2015,719
+oa_core_uncited,ARG,Argentina,2016,729
+oa_core_uncited,ARG,Argentina,2017,832
+oa_core_uncited,ARG,Argentina,2018,1023
+oa_core_uncited,ARG,Argentina,2019,1096
+oa_core_uncited,ARG,Argentina,2020,930
+oa_core_uncited,ARG,Argentina,2021,1019
+oa_core_uncited,ARG,Argentina,2022,1123
+oa_all_articles,CHL,Chile,2005,5374
+oa_all_articles,CHL,Chile,2006,6066
+oa_all_articles,CHL,Chile,2007,6671
+oa_all_articles,CHL,Chile,2008,7271
+oa_all_articles,CHL,Chile,2009,8173
+oa_all_articles,CHL,Chile,2010,10618
+oa_all_articles,CHL,Chile,2011,11408
+oa_all_articles,CHL,Chile,2012,11172
+oa_all_articles,CHL,Chile,2013,12332
+oa_all_articles,CHL,Chile,2014,13449
+oa_all_articles,CHL,Chile,2015,15801
+oa_all_articles,CHL,Chile,2016,18153
+oa_all_articles,CHL,Chile,2017,17312
+oa_all_articles,CHL,Chile,2018,18778
+oa_all_articles,CHL,Chile,2019,20115
+oa_all_articles,CHL,Chile,2020,22546
+oa_all_articles,CHL,Chile,2021,23241
+oa_all_articles,CHL,Chile,2022,22396
+oa_all_top10,CHL,Chile,2005,962
+oa_all_top10,CHL,Chile,2006,1161
+oa_all_top10,CHL,Chile,2007,1275
+oa_all_top10,CHL,Chile,2008,1517
+oa_all_top10,CHL,Chile,2009,1740
+oa_all_top10,CHL,Chile,2010,2036
+oa_all_top10,CHL,Chile,2011,2343
+oa_all_top10,CHL,Chile,2012,2384
+oa_all_top10,CHL,Chile,2013,2763
+oa_all_top10,CHL,Chile,2014,3205
+oa_all_top10,CHL,Chile,2015,3843
+oa_all_top10,CHL,Chile,2016,4277
+oa_all_top10,CHL,Chile,2017,3825
+oa_all_top10,CHL,Chile,2018,4093
+oa_all_top10,CHL,Chile,2019,4298
+oa_all_top10,CHL,Chile,2020,4570
+oa_all_top10,CHL,Chile,2021,4394
+oa_all_top10,CHL,Chile,2022,3819
+oa_all_uncited,CHL,Chile,2005,1007
+oa_all_uncited,CHL,Chile,2006,1216
+oa_all_uncited,CHL,Chile,2007,1480
+oa_all_uncited,CHL,Chile,2008,1586
+oa_all_uncited,CHL,Chile,2009,1766
+oa_all_uncited,CHL,Chile,2010,3541
+oa_all_uncited,CHL,Chile,2011,3119
+oa_all_uncited,CHL,Chile,2012,2755
+oa_all_uncited,CHL,Chile,2013,3141
+oa_all_uncited,CHL,Chile,2014,3133
+oa_all_uncited,CHL,Chile,2015,4097
+oa_all_uncited,CHL,Chile,2016,5174
+oa_all_uncited,CHL,Chile,2017,4255
+oa_all_uncited,CHL,Chile,2018,4298
+oa_all_uncited,CHL,Chile,2019,4960
+oa_all_uncited,CHL,Chile,2020,4535
+oa_all_uncited,CHL,Chile,2021,5138
+oa_all_uncited,CHL,Chile,2022,5953
+oa_core_articles,CHL,Chile,2005,3025
+oa_core_articles,CHL,Chile,2006,3424
+oa_core_articles,CHL,Chile,2007,3632
+oa_core_articles,CHL,Chile,2008,4034
+oa_core_articles,CHL,Chile,2009,4608
+oa_core_articles,CHL,Chile,2010,4947
+oa_core_articles,CHL,Chile,2011,5646
+oa_core_articles,CHL,Chile,2012,5943
+oa_core_articles,CHL,Chile,2013,6697
+oa_core_articles,CHL,Chile,2014,7462
+oa_core_articles,CHL,Chile,2015,8746
+oa_core_articles,CHL,Chile,2016,9276
+oa_core_articles,CHL,Chile,2017,9737
+oa_core_articles,CHL,Chile,2018,10896
+oa_core_articles,CHL,Chile,2019,11545
+oa_core_articles,CHL,Chile,2020,13391
+oa_core_articles,CHL,Chile,2021,14180
+oa_core_articles,CHL,Chile,2022,13252
+oa_core_top10,CHL,Chile,2005,790
+oa_core_top10,CHL,Chile,2006,951
+oa_core_top10,CHL,Chile,2007,1016
+oa_core_top10,CHL,Chile,2008,1191
+oa_core_top10,CHL,Chile,2009,1358
+oa_core_top10,CHL,Chile,2010,1468
+oa_core_top10,CHL,Chile,2011,1708
+oa_core_top10,CHL,Chile,2012,1801
+oa_core_top10,CHL,Chile,2013,2125
+oa_core_top10,CHL,Chile,2014,2500
+oa_core_top10,CHL,Chile,2015,3056
+oa_core_top10,CHL,Chile,2016,3308
+oa_core_top10,CHL,Chile,2017,2997
+oa_core_top10,CHL,Chile,2018,3192
+oa_core_top10,CHL,Chile,2019,3288
+oa_core_top10,CHL,Chile,2020,3600
+oa_core_top10,CHL,Chile,2021,3543
+oa_core_top10,CHL,Chile,2022,3087
+oa_core_uncited,CHL,Chile,2005,145
+oa_core_uncited,CHL,Chile,2006,238
+oa_core_uncited,CHL,Chile,2007,204
+oa_core_uncited,CHL,Chile,2008,289
+oa_core_uncited,CHL,Chile,2009,336
+oa_core_uncited,CHL,Chile,2010,369
+oa_core_uncited,CHL,Chile,2011,415
+oa_core_uncited,CHL,Chile,2012,373
+oa_core_uncited,CHL,Chile,2013,498
+oa_core_uncited,CHL,Chile,2014,485
+oa_core_uncited,CHL,Chile,2015,707
+oa_core_uncited,CHL,Chile,2016,598
+oa_core_uncited,CHL,Chile,2017,600
+oa_core_uncited,CHL,Chile,2018,738
+oa_core_uncited,CHL,Chile,2019,805
+oa_core_uncited,CHL,Chile,2020,609
+oa_core_uncited,CHL,Chile,2021,906
+oa_core_uncited,CHL,Chile,2022,916
+oa_all_articles,COL,Colombia,2005,5655
+oa_all_articles,COL,Colombia,2006,6976
+oa_all_articles,COL,Colombia,2007,7898
+oa_all_articles,COL,Colombia,2008,9649
+oa_all_articles,COL,Colombia,2009,11964
+oa_all_articles,COL,Colombia,2010,14265
+oa_all_articles,COL,Colombia,2011,16219
+oa_all_articles,COL,Colombia,2012,18122
+oa_all_articles,COL,Colombia,2013,20449
+oa_all_articles,COL,Colombia,2014,20560
+oa_all_articles,COL,Colombia,2015,21693
+oa_all_articles,COL,Colombia,2016,23195
+oa_all_articles,COL,Colombia,2017,26000
+oa_all_articles,COL,Colombia,2018,24407
+oa_all_articles,COL,Colombia,2019,24276
+oa_all_articles,COL,Colombia,2020,27434
+oa_all_articles,COL,Colombia,2021,28559
+oa_all_articles,COL,Colombia,2022,25808
+oa_all_top10,COL,Colombia,2005,424
+oa_all_top10,COL,Colombia,2006,547
+oa_all_top10,COL,Colombia,2007,641
+oa_all_top10,COL,Colombia,2008,817
+oa_all_top10,COL,Colombia,2009,1115
+oa_all_top10,COL,Colombia,2010,1336
+oa_all_top10,COL,Colombia,2011,1548
+oa_all_top10,COL,Colombia,2012,1652
+oa_all_top10,COL,Colombia,2013,1852
+oa_all_top10,COL,Colombia,2014,2158
+oa_all_top10,COL,Colombia,2015,2744
+oa_all_top10,COL,Colombia,2016,3291
+oa_all_top10,COL,Colombia,2017,3419
+oa_all_top10,COL,Colombia,2018,3067
+oa_all_top10,COL,Colombia,2019,3324
+oa_all_top10,COL,Colombia,2020,3501
+oa_all_top10,COL,Colombia,2021,3154
+oa_all_top10,COL,Colombia,2022,2781
+oa_all_uncited,COL,Colombia,2005,2501
+oa_all_uncited,COL,Colombia,2006,3107
+oa_all_uncited,COL,Colombia,2007,3433
+oa_all_uncited,COL,Colombia,2008,4265
+oa_all_uncited,COL,Colombia,2009,5452
+oa_all_uncited,COL,Colombia,2010,6790
+oa_all_uncited,COL,Colombia,2011,7703
+oa_all_uncited,COL,Colombia,2012,8570
+oa_all_uncited,COL,Colombia,2013,9976
+oa_all_uncited,COL,Colombia,2014,9252
+oa_all_uncited,COL,Colombia,2015,9252
+oa_all_uncited,COL,Colombia,2016,9044
+oa_all_uncited,COL,Colombia,2017,10418
+oa_all_uncited,COL,Colombia,2018,9025
+oa_all_uncited,COL,Colombia,2019,8289
+oa_all_uncited,COL,Colombia,2020,8739
+oa_all_uncited,COL,Colombia,2021,9891
+oa_all_uncited,COL,Colombia,2022,9061
+oa_core_articles,COL,Colombia,2005,1402
+oa_core_articles,COL,Colombia,2006,1750
+oa_core_articles,COL,Colombia,2007,1818
+oa_core_articles,COL,Colombia,2008,2214
+oa_core_articles,COL,Colombia,2009,2496
+oa_core_articles,COL,Colombia,2010,2916
+oa_core_articles,COL,Colombia,2011,3171
+oa_core_articles,COL,Colombia,2012,3741
+oa_core_articles,COL,Colombia,2013,4170
+oa_core_articles,COL,Colombia,2014,4429
+oa_core_articles,COL,Colombia,2015,5058
+oa_core_articles,COL,Colombia,2016,5897
+oa_core_articles,COL,Colombia,2017,6616
+oa_core_articles,COL,Colombia,2018,7765
+oa_core_articles,COL,Colombia,2019,8379
+oa_core_articles,COL,Colombia,2020,10105
+oa_core_articles,COL,Colombia,2021,10800
+oa_core_articles,COL,Colombia,2022,10165
+oa_core_top10,COL,Colombia,2005,246
+oa_core_top10,COL,Colombia,2006,338
+oa_core_top10,COL,Colombia,2007,374
+oa_core_top10,COL,Colombia,2008,486
+oa_core_top10,COL,Colombia,2009,597
+oa_core_top10,COL,Colombia,2010,790
+oa_core_top10,COL,Colombia,2011,834
+oa_core_top10,COL,Colombia,2012,991
+oa_core_top10,COL,Colombia,2013,1106
+oa_core_top10,COL,Colombia,2014,1268
+oa_core_top10,COL,Colombia,2015,1591
+oa_core_top10,COL,Colombia,2016,1904
+oa_core_top10,COL,Colombia,2017,1793
+oa_core_top10,COL,Colombia,2018,1938
+oa_core_top10,COL,Colombia,2019,2112
+oa_core_top10,COL,Colombia,2020,2348
+oa_core_top10,COL,Colombia,2021,2247
+oa_core_top10,COL,Colombia,2022,1971
+oa_core_uncited,COL,Colombia,2005,214
+oa_core_uncited,COL,Colombia,2006,340
+oa_core_uncited,COL,Colombia,2007,246
+oa_core_uncited,COL,Colombia,2008,279
+oa_core_uncited,COL,Colombia,2009,319
+oa_core_uncited,COL,Colombia,2010,376
+oa_core_uncited,COL,Colombia,2011,381
+oa_core_uncited,COL,Colombia,2012,439
+oa_core_uncited,COL,Colombia,2013,576
+oa_core_uncited,COL,Colombia,2014,434
+oa_core_uncited,COL,Colombia,2015,517
+oa_core_uncited,COL,Colombia,2016,568
+oa_core_uncited,COL,Colombia,2017,527
+oa_core_uncited,COL,Colombia,2018,764
+oa_core_uncited,COL,Colombia,2019,740
+oa_core_uncited,COL,Colombia,2020,767
+oa_core_uncited,COL,Colombia,2021,904
+oa_core_uncited,COL,Colombia,2022,986
+oa_all_articles,ECU,Ecuador,2005,311
+oa_all_articles,ECU,Ecuador,2006,472
+oa_all_articles,ECU,Ecuador,2007,489
+oa_all_articles,ECU,Ecuador,2008,573
+oa_all_articles,ECU,Ecuador,2009,781
+oa_all_articles,ECU,Ecuador,2010,852
+oa_all_articles,ECU,Ecuador,2011,1039
+oa_all_articles,ECU,Ecuador,2012,1191
+oa_all_articles,ECU,Ecuador,2013,1807
+oa_all_articles,ECU,Ecuador,2014,2227
+oa_all_articles,ECU,Ecuador,2015,3675
+oa_all_articles,ECU,Ecuador,2016,5313
+oa_all_articles,ECU,Ecuador,2017,8801
+oa_all_articles,ECU,Ecuador,2018,9358
+oa_all_articles,ECU,Ecuador,2019,10417
+oa_all_articles,ECU,Ecuador,2020,12873
+oa_all_articles,ECU,Ecuador,2021,14002
+oa_all_articles,ECU,Ecuador,2022,14272
+oa_all_top10,ECU,Ecuador,2005,58
+oa_all_top10,ECU,Ecuador,2006,58
+oa_all_top10,ECU,Ecuador,2007,76
+oa_all_top10,ECU,Ecuador,2008,125
+oa_all_top10,ECU,Ecuador,2009,115
+oa_all_top10,ECU,Ecuador,2010,118
+oa_all_top10,ECU,Ecuador,2011,164
+oa_all_top10,ECU,Ecuador,2012,179
+oa_all_top10,ECU,Ecuador,2013,326
+oa_all_top10,ECU,Ecuador,2014,379
+oa_all_top10,ECU,Ecuador,2015,481
+oa_all_top10,ECU,Ecuador,2016,709
+oa_all_top10,ECU,Ecuador,2017,822
+oa_all_top10,ECU,Ecuador,2018,885
+oa_all_top10,ECU,Ecuador,2019,1025
+oa_all_top10,ECU,Ecuador,2020,1256
+oa_all_top10,ECU,Ecuador,2021,1338
+oa_all_top10,ECU,Ecuador,2022,1252
+oa_all_uncited,ECU,Ecuador,2005,105
+oa_all_uncited,ECU,Ecuador,2006,187
+oa_all_uncited,ECU,Ecuador,2007,190
+oa_all_uncited,ECU,Ecuador,2008,207
+oa_all_uncited,ECU,Ecuador,2009,342
+oa_all_uncited,ECU,Ecuador,2010,348
+oa_all_uncited,ECU,Ecuador,2011,430
+oa_all_uncited,ECU,Ecuador,2012,494
+oa_all_uncited,ECU,Ecuador,2013,708
+oa_all_uncited,ECU,Ecuador,2014,862
+oa_all_uncited,ECU,Ecuador,2015,1538
+oa_all_uncited,ECU,Ecuador,2016,2288
+oa_all_uncited,ECU,Ecuador,2017,4304
+oa_all_uncited,ECU,Ecuador,2018,4142
+oa_all_uncited,ECU,Ecuador,2019,4485
+oa_all_uncited,ECU,Ecuador,2020,5185
+oa_all_uncited,ECU,Ecuador,2021,5595
+oa_all_uncited,ECU,Ecuador,2022,6020
+oa_core_articles,ECU,Ecuador,2005,170
+oa_core_articles,ECU,Ecuador,2006,220
+oa_core_articles,ECU,Ecuador,2007,246
+oa_core_articles,ECU,Ecuador,2008,290
+oa_core_articles,ECU,Ecuador,2009,331
+oa_core_articles,ECU,Ecuador,2010,312
+oa_core_articles,ECU,Ecuador,2011,361
+oa_core_articles,ECU,Ecuador,2012,448
+oa_core_articles,ECU,Ecuador,2013,545
+oa_core_articles,ECU,Ecuador,2014,731
+oa_core_articles,ECU,Ecuador,2015,1093
+oa_core_articles,ECU,Ecuador,2016,1419
+oa_core_articles,ECU,Ecuador,2017,1898
+oa_core_articles,ECU,Ecuador,2018,2069
+oa_core_articles,ECU,Ecuador,2019,2374
+oa_core_articles,ECU,Ecuador,2020,2982
+oa_core_articles,ECU,Ecuador,2021,3142
+oa_core_articles,ECU,Ecuador,2022,3291
+oa_core_top10,ECU,Ecuador,2005,53
+oa_core_top10,ECU,Ecuador,2006,53
+oa_core_top10,ECU,Ecuador,2007,64
+oa_core_top10,ECU,Ecuador,2008,111
+oa_core_top10,ECU,Ecuador,2009,100
+oa_core_top10,ECU,Ecuador,2010,101
+oa_core_top10,ECU,Ecuador,2011,126
+oa_core_top10,ECU,Ecuador,2012,150
+oa_core_top10,ECU,Ecuador,2013,195
+oa_core_top10,ECU,Ecuador,2014,271
+oa_core_top10,ECU,Ecuador,2015,344
+oa_core_top10,ECU,Ecuador,2016,486
+oa_core_top10,ECU,Ecuador,2017,553
+oa_core_top10,ECU,Ecuador,2018,579
+oa_core_top10,ECU,Ecuador,2019,633
+oa_core_top10,ECU,Ecuador,2020,721
+oa_core_top10,ECU,Ecuador,2021,832
+oa_core_top10,ECU,Ecuador,2022,812
+oa_core_uncited,ECU,Ecuador,2005,22
+oa_core_uncited,ECU,Ecuador,2006,36
+oa_core_uncited,ECU,Ecuador,2007,46
+oa_core_uncited,ECU,Ecuador,2008,41
+oa_core_uncited,ECU,Ecuador,2009,32
+oa_core_uncited,ECU,Ecuador,2010,29
+oa_core_uncited,ECU,Ecuador,2011,20
+oa_core_uncited,ECU,Ecuador,2012,49
+oa_core_uncited,ECU,Ecuador,2013,25
+oa_core_uncited,ECU,Ecuador,2014,45
+oa_core_uncited,ECU,Ecuador,2015,69
+oa_core_uncited,ECU,Ecuador,2016,89
+oa_core_uncited,ECU,Ecuador,2017,152
+oa_core_uncited,ECU,Ecuador,2018,141
+oa_core_uncited,ECU,Ecuador,2019,178
+oa_core_uncited,ECU,Ecuador,2020,180
+oa_core_uncited,ECU,Ecuador,2021,182
+oa_core_uncited,ECU,Ecuador,2022,245
+oa_all_articles,MEX,Mexico,2005,14085
+oa_all_articles,MEX,Mexico,2006,14859
+oa_all_articles,MEX,Mexico,2007,16151
+oa_all_articles,MEX,Mexico,2008,17061
+oa_all_articles,MEX,Mexico,2009,19908
+oa_all_articles,MEX,Mexico,2010,19644
+oa_all_articles,MEX,Mexico,2011,22821
+oa_all_articles,MEX,Mexico,2012,24479
+oa_all_articles,MEX,Mexico,2013,27541
+oa_all_articles,MEX,Mexico,2014,29419
+oa_all_articles,MEX,Mexico,2015,33484
+oa_all_articles,MEX,Mexico,2016,35101
+oa_all_articles,MEX,Mexico,2017,37798
+oa_all_articles,MEX,Mexico,2018,41269
+oa_all_articles,MEX,Mexico,2019,41164
+oa_all_articles,MEX,Mexico,2020,44253
+oa_all_articles,MEX,Mexico,2021,45901
+oa_all_articles,MEX,Mexico,2022,45691
+oa_all_top10,MEX,Mexico,2005,1648
+oa_all_top10,MEX,Mexico,2006,1893
+oa_all_top10,MEX,Mexico,2007,2174
+oa_all_top10,MEX,Mexico,2008,2384
+oa_all_top10,MEX,Mexico,2009,2691
+oa_all_top10,MEX,Mexico,2010,2707
+oa_all_top10,MEX,Mexico,2011,3258
+oa_all_top10,MEX,Mexico,2012,3490
+oa_all_top10,MEX,Mexico,2013,3939
+oa_all_top10,MEX,Mexico,2014,4105
+oa_all_top10,MEX,Mexico,2015,4806
+oa_all_top10,MEX,Mexico,2016,5292
+oa_all_top10,MEX,Mexico,2017,4730
+oa_all_top10,MEX,Mexico,2018,4724
+oa_all_top10,MEX,Mexico,2019,5093
+oa_all_top10,MEX,Mexico,2020,5273
+oa_all_top10,MEX,Mexico,2021,5247
+oa_all_top10,MEX,Mexico,2022,4308
+oa_all_uncited,MEX,Mexico,2005,4098
+oa_all_uncited,MEX,Mexico,2006,4370
+oa_all_uncited,MEX,Mexico,2007,4717
+oa_all_uncited,MEX,Mexico,2008,4943
+oa_all_uncited,MEX,Mexico,2009,6097
+oa_all_uncited,MEX,Mexico,2010,5900
+oa_all_uncited,MEX,Mexico,2011,7309
+oa_all_uncited,MEX,Mexico,2012,7762
+oa_all_uncited,MEX,Mexico,2013,9094
+oa_all_uncited,MEX,Mexico,2014,9676
+oa_all_uncited,MEX,Mexico,2015,11422
+oa_all_uncited,MEX,Mexico,2016,11552
+oa_all_uncited,MEX,Mexico,2017,11916
+oa_all_uncited,MEX,Mexico,2018,13979
+oa_all_uncited,MEX,Mexico,2019,12931
+oa_all_uncited,MEX,Mexico,2020,12724
+oa_all_uncited,MEX,Mexico,2021,13277
+oa_all_uncited,MEX,Mexico,2022,14879
+oa_core_articles,MEX,Mexico,2005,7181
+oa_core_articles,MEX,Mexico,2006,7745
+oa_core_articles,MEX,Mexico,2007,8465
+oa_core_articles,MEX,Mexico,2008,8895
+oa_core_articles,MEX,Mexico,2009,9807
+oa_core_articles,MEX,Mexico,2010,9927
+oa_core_articles,MEX,Mexico,2011,10767
+oa_core_articles,MEX,Mexico,2012,12148
+oa_core_articles,MEX,Mexico,2013,13264
+oa_core_articles,MEX,Mexico,2014,14437
+oa_core_articles,MEX,Mexico,2015,15757
+oa_core_articles,MEX,Mexico,2016,17292
+oa_core_articles,MEX,Mexico,2017,18299
+oa_core_articles,MEX,Mexico,2018,19820
+oa_core_articles,MEX,Mexico,2019,20712
+oa_core_articles,MEX,Mexico,2020,23732
+oa_core_articles,MEX,Mexico,2021,24434
+oa_core_articles,MEX,Mexico,2022,23470
+oa_core_top10,MEX,Mexico,2005,1372
+oa_core_top10,MEX,Mexico,2006,1589
+oa_core_top10,MEX,Mexico,2007,1811
+oa_core_top10,MEX,Mexico,2008,1959
+oa_core_top10,MEX,Mexico,2009,2150
+oa_core_top10,MEX,Mexico,2010,2243
+oa_core_top10,MEX,Mexico,2011,2550
+oa_core_top10,MEX,Mexico,2012,2714
+oa_core_top10,MEX,Mexico,2013,2959
+oa_core_top10,MEX,Mexico,2014,3139
+oa_core_top10,MEX,Mexico,2015,3540
+oa_core_top10,MEX,Mexico,2016,4097
+oa_core_top10,MEX,Mexico,2017,3553
+oa_core_top10,MEX,Mexico,2018,3562
+oa_core_top10,MEX,Mexico,2019,3901
+oa_core_top10,MEX,Mexico,2020,4195
+oa_core_top10,MEX,Mexico,2021,4235
+oa_core_top10,MEX,Mexico,2022,3496
+oa_core_uncited,MEX,Mexico,2005,527
+oa_core_uncited,MEX,Mexico,2006,685
+oa_core_uncited,MEX,Mexico,2007,774
+oa_core_uncited,MEX,Mexico,2008,848
+oa_core_uncited,MEX,Mexico,2009,951
+oa_core_uncited,MEX,Mexico,2010,1009
+oa_core_uncited,MEX,Mexico,2011,955
+oa_core_uncited,MEX,Mexico,2012,1189
+oa_core_uncited,MEX,Mexico,2013,1250
+oa_core_uncited,MEX,Mexico,2014,1450
+oa_core_uncited,MEX,Mexico,2015,1481
+oa_core_uncited,MEX,Mexico,2016,1618
+oa_core_uncited,MEX,Mexico,2017,1525
+oa_core_uncited,MEX,Mexico,2018,1809
+oa_core_uncited,MEX,Mexico,2019,1757
+oa_core_uncited,MEX,Mexico,2020,1897
+oa_core_uncited,MEX,Mexico,2021,2005
+oa_core_uncited,MEX,Mexico,2022,2444
+oa_all_articles,PER,Peru,2005,1301
+oa_all_articles,PER,Peru,2006,1757
+oa_all_articles,PER,Peru,2007,1711
+oa_all_articles,PER,Peru,2008,1934
+oa_all_articles,PER,Peru,2009,2071
+oa_all_articles,PER,Peru,2010,2413
+oa_all_articles,PER,Peru,2011,2752
+oa_all_articles,PER,Peru,2012,3406
+oa_all_articles,PER,Peru,2013,4434
+oa_all_articles,PER,Peru,2014,8893
+oa_all_articles,PER,Peru,2015,5821
+oa_all_articles,PER,Peru,2016,6496
+oa_all_articles,PER,Peru,2017,7053
+oa_all_articles,PER,Peru,2018,7768
+oa_all_articles,PER,Peru,2019,9893
+oa_all_articles,PER,Peru,2020,11778
+oa_all_articles,PER,Peru,2021,14736
+oa_all_articles,PER,Peru,2022,14400
+oa_all_top10,PER,Peru,2005,135
+oa_all_top10,PER,Peru,2006,183
+oa_all_top10,PER,Peru,2007,196
+oa_all_top10,PER,Peru,2008,265
+oa_all_top10,PER,Peru,2009,269
+oa_all_top10,PER,Peru,2010,320
+oa_all_top10,PER,Peru,2011,341
+oa_all_top10,PER,Peru,2012,401
+oa_all_top10,PER,Peru,2013,476
+oa_all_top10,PER,Peru,2014,664
+oa_all_top10,PER,Peru,2015,623
+oa_all_top10,PER,Peru,2016,803
+oa_all_top10,PER,Peru,2017,711
+oa_all_top10,PER,Peru,2018,814
+oa_all_top10,PER,Peru,2019,1010
+oa_all_top10,PER,Peru,2020,1342
+oa_all_top10,PER,Peru,2021,1597
+oa_all_top10,PER,Peru,2022,1401
+oa_all_uncited,PER,Peru,2005,553
+oa_all_uncited,PER,Peru,2006,761
+oa_all_uncited,PER,Peru,2007,719
+oa_all_uncited,PER,Peru,2008,730
+oa_all_uncited,PER,Peru,2009,896
+oa_all_uncited,PER,Peru,2010,989
+oa_all_uncited,PER,Peru,2011,1153
+oa_all_uncited,PER,Peru,2012,1436
+oa_all_uncited,PER,Peru,2013,1980
+oa_all_uncited,PER,Peru,2014,4861
+oa_all_uncited,PER,Peru,2015,2833
+oa_all_uncited,PER,Peru,2016,3070
+oa_all_uncited,PER,Peru,2017,3171
+oa_all_uncited,PER,Peru,2018,3371
+oa_all_uncited,PER,Peru,2019,4445
+oa_all_uncited,PER,Peru,2020,4380
+oa_all_uncited,PER,Peru,2021,5568
+oa_all_uncited,PER,Peru,2022,5776
+oa_core_articles,PER,Peru,2005,391
+oa_core_articles,PER,Peru,2006,511
+oa_core_articles,PER,Peru,2007,519
+oa_core_articles,PER,Peru,2008,606
+oa_core_articles,PER,Peru,2009,621
+oa_core_articles,PER,Peru,2010,740
+oa_core_articles,PER,Peru,2011,779
+oa_core_articles,PER,Peru,2012,851
+oa_core_articles,PER,Peru,2013,997
+oa_core_articles,PER,Peru,2014,1086
+oa_core_articles,PER,Peru,2015,1340
+oa_core_articles,PER,Peru,2016,1500
+oa_core_articles,PER,Peru,2017,1774
+oa_core_articles,PER,Peru,2018,2033
+oa_core_articles,PER,Peru,2019,2309
+oa_core_articles,PER,Peru,2020,3179
+oa_core_articles,PER,Peru,2021,3838
+oa_core_articles,PER,Peru,2022,4058
+oa_core_top10,PER,Peru,2005,113
+oa_core_top10,PER,Peru,2006,149
+oa_core_top10,PER,Peru,2007,169
+oa_core_top10,PER,Peru,2008,214
+oa_core_top10,PER,Peru,2009,221
+oa_core_top10,PER,Peru,2010,268
+oa_core_top10,PER,Peru,2011,272
+oa_core_top10,PER,Peru,2012,320
+oa_core_top10,PER,Peru,2013,380
+oa_core_top10,PER,Peru,2014,424
+oa_core_top10,PER,Peru,2015,500
+oa_core_top10,PER,Peru,2016,585
+oa_core_top10,PER,Peru,2017,507
+oa_core_top10,PER,Peru,2018,558
+oa_core_top10,PER,Peru,2019,633
+oa_core_top10,PER,Peru,2020,791
+oa_core_top10,PER,Peru,2021,948
+oa_core_top10,PER,Peru,2022,875
+oa_core_uncited,PER,Peru,2005,18
+oa_core_uncited,PER,Peru,2006,58
+oa_core_uncited,PER,Peru,2007,36
+oa_core_uncited,PER,Peru,2008,29
+oa_core_uncited,PER,Peru,2009,38
+oa_core_uncited,PER,Peru,2010,50
+oa_core_uncited,PER,Peru,2011,62
+oa_core_uncited,PER,Peru,2012,55
+oa_core_uncited,PER,Peru,2013,65
+oa_core_uncited,PER,Peru,2014,91
+oa_core_uncited,PER,Peru,2015,107
+oa_core_uncited,PER,Peru,2016,148
+oa_core_uncited,PER,Peru,2017,172
+oa_core_uncited,PER,Peru,2018,177
+oa_core_uncited,PER,Peru,2019,226
+oa_core_uncited,PER,Peru,2020,251
+oa_core_uncited,PER,Peru,2021,349
+oa_core_uncited,PER,Peru,2022,432
+oa_all_articles,URY,Uruguay,2005,780
+oa_all_articles,URY,Uruguay,2006,748
+oa_all_articles,URY,Uruguay,2007,812
+oa_all_articles,URY,Uruguay,2008,976
+oa_all_articles,URY,Uruguay,2009,998
+oa_all_articles,URY,Uruguay,2010,1280
+oa_all_articles,URY,Uruguay,2011,1415
+oa_all_articles,URY,Uruguay,2012,1484
+oa_all_articles,URY,Uruguay,2013,1616
+oa_all_articles,URY,Uruguay,2014,1792
+oa_all_articles,URY,Uruguay,2015,2156
+oa_all_articles,URY,Uruguay,2016,2335
+oa_all_articles,URY,Uruguay,2017,2263
+oa_all_articles,URY,Uruguay,2018,2368
+oa_all_articles,URY,Uruguay,2019,2568
+oa_all_articles,URY,Uruguay,2020,2973
+oa_all_articles,URY,Uruguay,2021,3138
+oa_all_articles,URY,Uruguay,2022,2829
+oa_all_top10,URY,Uruguay,2005,106
+oa_all_top10,URY,Uruguay,2006,114
+oa_all_top10,URY,Uruguay,2007,143
+oa_all_top10,URY,Uruguay,2008,187
+oa_all_top10,URY,Uruguay,2009,186
+oa_all_top10,URY,Uruguay,2010,213
+oa_all_top10,URY,Uruguay,2011,254
+oa_all_top10,URY,Uruguay,2012,252
+oa_all_top10,URY,Uruguay,2013,299
+oa_all_top10,URY,Uruguay,2014,327
+oa_all_top10,URY,Uruguay,2015,401
+oa_all_top10,URY,Uruguay,2016,444
+oa_all_top10,URY,Uruguay,2017,365
+oa_all_top10,URY,Uruguay,2018,373
+oa_all_top10,URY,Uruguay,2019,396
+oa_all_top10,URY,Uruguay,2020,392
+oa_all_top10,URY,Uruguay,2021,380
+oa_all_top10,URY,Uruguay,2022,338
+oa_all_uncited,URY,Uruguay,2005,262
+oa_all_uncited,URY,Uruguay,2006,186
+oa_all_uncited,URY,Uruguay,2007,201
+oa_all_uncited,URY,Uruguay,2008,218
+oa_all_uncited,URY,Uruguay,2009,241
+oa_all_uncited,URY,Uruguay,2010,410
+oa_all_uncited,URY,Uruguay,2011,389
+oa_all_uncited,URY,Uruguay,2012,427
+oa_all_uncited,URY,Uruguay,2013,448
+oa_all_uncited,URY,Uruguay,2014,525
+oa_all_uncited,URY,Uruguay,2015,727
+oa_all_uncited,URY,Uruguay,2016,807
+oa_all_uncited,URY,Uruguay,2017,659
+oa_all_uncited,URY,Uruguay,2018,651
+oa_all_uncited,URY,Uruguay,2019,753
+oa_all_uncited,URY,Uruguay,2020,945
+oa_all_uncited,URY,Uruguay,2021,908
+oa_all_uncited,URY,Uruguay,2022,881
+oa_core_articles,URY,Uruguay,2005,399
+oa_core_articles,URY,Uruguay,2006,440
+oa_core_articles,URY,Uruguay,2007,474
+oa_core_articles,URY,Uruguay,2008,602
+oa_core_articles,URY,Uruguay,2009,592
+oa_core_articles,URY,Uruguay,2010,695
+oa_core_articles,URY,Uruguay,2011,772
+oa_core_articles,URY,Uruguay,2012,822
+oa_core_articles,URY,Uruguay,2013,908
+oa_core_articles,URY,Uruguay,2014,967
+oa_core_articles,URY,Uruguay,2015,1092
+oa_core_articles,URY,Uruguay,2016,1141
+oa_core_articles,URY,Uruguay,2017,1253
+oa_core_articles,URY,Uruguay,2018,1351
+oa_core_articles,URY,Uruguay,2019,1409
+oa_core_articles,URY,Uruguay,2020,1519
+oa_core_articles,URY,Uruguay,2021,1734
+oa_core_articles,URY,Uruguay,2022,1551
+oa_core_top10,URY,Uruguay,2005,91
+oa_core_top10,URY,Uruguay,2006,103
+oa_core_top10,URY,Uruguay,2007,125
+oa_core_top10,URY,Uruguay,2008,175
+oa_core_top10,URY,Uruguay,2009,158
+oa_core_top10,URY,Uruguay,2010,199
+oa_core_top10,URY,Uruguay,2011,215
+oa_core_top10,URY,Uruguay,2012,221
+oa_core_top10,URY,Uruguay,2013,264
+oa_core_top10,URY,Uruguay,2014,275
+oa_core_top10,URY,Uruguay,2015,346
+oa_core_top10,URY,Uruguay,2016,364
+oa_core_top10,URY,Uruguay,2017,296
+oa_core_top10,URY,Uruguay,2018,310
+oa_core_top10,URY,Uruguay,2019,326
+oa_core_top10,URY,Uruguay,2020,330
+oa_core_top10,URY,Uruguay,2021,323
+oa_core_top10,URY,Uruguay,2022,285
+oa_core_uncited,URY,Uruguay,2005,15
+oa_core_uncited,URY,Uruguay,2006,29
+oa_core_uncited,URY,Uruguay,2007,24
+oa_core_uncited,URY,Uruguay,2008,19
+oa_core_uncited,URY,Uruguay,2009,27
+oa_core_uncited,URY,Uruguay,2010,54
+oa_core_uncited,URY,Uruguay,2011,62
+oa_core_uncited,URY,Uruguay,2012,65
+oa_core_uncited,URY,Uruguay,2013,55
+oa_core_uncited,URY,Uruguay,2014,48
+oa_core_uncited,URY,Uruguay,2015,75
+oa_core_uncited,URY,Uruguay,2016,84
+oa_core_uncited,URY,Uruguay,2017,86
+oa_core_uncited,URY,Uruguay,2018,88
+oa_core_uncited,URY,Uruguay,2019,94
+oa_core_uncited,URY,Uruguay,2020,96
+oa_core_uncited,URY,Uruguay,2021,110
+oa_core_uncited,URY,Uruguay,2022,154
+oa_all_articles,BGR,Bulgaria,2005,2094
+oa_all_articles,BGR,Bulgaria,2006,2286
+oa_all_articles,BGR,Bulgaria,2007,2393
+oa_all_articles,BGR,Bulgaria,2008,2433
+oa_all_articles,BGR,Bulgaria,2009,2715
+oa_all_articles,BGR,Bulgaria,2010,2798
+oa_all_articles,BGR,Bulgaria,2011,2887
+oa_all_articles,BGR,Bulgaria,2012,3157
+oa_all_articles,BGR,Bulgaria,2013,3371
+oa_all_articles,BGR,Bulgaria,2014,3636
+oa_all_articles,BGR,Bulgaria,2015,4064
+oa_all_articles,BGR,Bulgaria,2016,4671
+oa_all_articles,BGR,Bulgaria,2017,5138
+oa_all_articles,BGR,Bulgaria,2018,5812
+oa_all_articles,BGR,Bulgaria,2019,6007
+oa_all_articles,BGR,Bulgaria,2020,6723
+oa_all_articles,BGR,Bulgaria,2021,7125
+oa_all_articles,BGR,Bulgaria,2022,7165
+oa_all_top10,BGR,Bulgaria,2005,290
+oa_all_top10,BGR,Bulgaria,2006,350
+oa_all_top10,BGR,Bulgaria,2007,357
+oa_all_top10,BGR,Bulgaria,2008,382
+oa_all_top10,BGR,Bulgaria,2009,385
+oa_all_top10,BGR,Bulgaria,2010,409
+oa_all_top10,BGR,Bulgaria,2011,483
+oa_all_top10,BGR,Bulgaria,2012,510
+oa_all_top10,BGR,Bulgaria,2013,500
+oa_all_top10,BGR,Bulgaria,2014,574
+oa_all_top10,BGR,Bulgaria,2015,649
+oa_all_top10,BGR,Bulgaria,2016,735
+oa_all_top10,BGR,Bulgaria,2017,704
+oa_all_top10,BGR,Bulgaria,2018,706
+oa_all_top10,BGR,Bulgaria,2019,720
+oa_all_top10,BGR,Bulgaria,2020,773
+oa_all_top10,BGR,Bulgaria,2021,743
+oa_all_top10,BGR,Bulgaria,2022,707
+oa_all_uncited,BGR,Bulgaria,2005,300
+oa_all_uncited,BGR,Bulgaria,2006,355
+oa_all_uncited,BGR,Bulgaria,2007,332
+oa_all_uncited,BGR,Bulgaria,2008,395
+oa_all_uncited,BGR,Bulgaria,2009,462
+oa_all_uncited,BGR,Bulgaria,2010,593
+oa_all_uncited,BGR,Bulgaria,2011,668
+oa_all_uncited,BGR,Bulgaria,2012,747
+oa_all_uncited,BGR,Bulgaria,2013,905
+oa_all_uncited,BGR,Bulgaria,2014,1004
+oa_all_uncited,BGR,Bulgaria,2015,1154
+oa_all_uncited,BGR,Bulgaria,2016,1523
+oa_all_uncited,BGR,Bulgaria,2017,1792
+oa_all_uncited,BGR,Bulgaria,2018,2230
+oa_all_uncited,BGR,Bulgaria,2019,2097
+oa_all_uncited,BGR,Bulgaria,2020,2332
+oa_all_uncited,BGR,Bulgaria,2021,2627
+oa_all_uncited,BGR,Bulgaria,2022,2690
+oa_core_articles,BGR,Bulgaria,2005,1720
+oa_core_articles,BGR,Bulgaria,2006,1857
+oa_core_articles,BGR,Bulgaria,2007,1944
+oa_core_articles,BGR,Bulgaria,2008,1954
+oa_core_articles,BGR,Bulgaria,2009,2137
+oa_core_articles,BGR,Bulgaria,2010,2052
+oa_core_articles,BGR,Bulgaria,2011,2094
+oa_core_articles,BGR,Bulgaria,2012,2254
+oa_core_articles,BGR,Bulgaria,2013,2229
+oa_core_articles,BGR,Bulgaria,2014,2394
+oa_core_articles,BGR,Bulgaria,2015,2388
+oa_core_articles,BGR,Bulgaria,2016,2603
+oa_core_articles,BGR,Bulgaria,2017,2622
+oa_core_articles,BGR,Bulgaria,2018,2753
+oa_core_articles,BGR,Bulgaria,2019,3021
+oa_core_articles,BGR,Bulgaria,2020,3296
+oa_core_articles,BGR,Bulgaria,2021,3451
+oa_core_articles,BGR,Bulgaria,2022,3589
+oa_core_top10,BGR,Bulgaria,2005,264
+oa_core_top10,BGR,Bulgaria,2006,311
+oa_core_top10,BGR,Bulgaria,2007,336
+oa_core_top10,BGR,Bulgaria,2008,360
+oa_core_top10,BGR,Bulgaria,2009,340
+oa_core_top10,BGR,Bulgaria,2010,372
+oa_core_top10,BGR,Bulgaria,2011,428
+oa_core_top10,BGR,Bulgaria,2012,450
+oa_core_top10,BGR,Bulgaria,2013,460
+oa_core_top10,BGR,Bulgaria,2014,518
+oa_core_top10,BGR,Bulgaria,2015,565
+oa_core_top10,BGR,Bulgaria,2016,657
+oa_core_top10,BGR,Bulgaria,2017,578
+oa_core_top10,BGR,Bulgaria,2018,576
+oa_core_top10,BGR,Bulgaria,2019,584
+oa_core_top10,BGR,Bulgaria,2020,683
+oa_core_top10,BGR,Bulgaria,2021,669
+oa_core_top10,BGR,Bulgaria,2022,642
+oa_core_uncited,BGR,Bulgaria,2005,118
+oa_core_uncited,BGR,Bulgaria,2006,147
+oa_core_uncited,BGR,Bulgaria,2007,123
+oa_core_uncited,BGR,Bulgaria,2008,152
+oa_core_uncited,BGR,Bulgaria,2009,195
+oa_core_uncited,BGR,Bulgaria,2010,173
+oa_core_uncited,BGR,Bulgaria,2011,170
+oa_core_uncited,BGR,Bulgaria,2012,187
+oa_core_uncited,BGR,Bulgaria,2013,200
+oa_core_uncited,BGR,Bulgaria,2014,278
+oa_core_uncited,BGR,Bulgaria,2015,225
+oa_core_uncited,BGR,Bulgaria,2016,251
+oa_core_uncited,BGR,Bulgaria,2017,277
+oa_core_uncited,BGR,Bulgaria,2018,295
+oa_core_uncited,BGR,Bulgaria,2019,352
+oa_core_uncited,BGR,Bulgaria,2020,293
+oa_core_uncited,BGR,Bulgaria,2021,345
+oa_core_uncited,BGR,Bulgaria,2022,413
+oa_all_articles,HUN,Hungary,2005,6738
+oa_all_articles,HUN,Hungary,2006,6923
+oa_all_articles,HUN,Hungary,2007,7550
+oa_all_articles,HUN,Hungary,2008,8033
+oa_all_articles,HUN,Hungary,2009,8408
+oa_all_articles,HUN,Hungary,2010,8443
+oa_all_articles,HUN,Hungary,2011,8784
+oa_all_articles,HUN,Hungary,2012,9183
+oa_all_articles,HUN,Hungary,2013,9642
+oa_all_articles,HUN,Hungary,2014,10585
+oa_all_articles,HUN,Hungary,2015,10881
+oa_all_articles,HUN,Hungary,2016,11250
+oa_all_articles,HUN,Hungary,2017,11871
+oa_all_articles,HUN,Hungary,2018,12811
+oa_all_articles,HUN,Hungary,2019,14545
+oa_all_articles,HUN,Hungary,2020,15947
+oa_all_articles,HUN,Hungary,2021,17495
+oa_all_articles,HUN,Hungary,2022,17792
+oa_all_top10,HUN,Hungary,2005,1148
+oa_all_top10,HUN,Hungary,2006,1295
+oa_all_top10,HUN,Hungary,2007,1473
+oa_all_top10,HUN,Hungary,2008,1473
+oa_all_top10,HUN,Hungary,2009,1574
+oa_all_top10,HUN,Hungary,2010,1678
+oa_all_top10,HUN,Hungary,2011,1907
+oa_all_top10,HUN,Hungary,2012,2050
+oa_all_top10,HUN,Hungary,2013,2049
+oa_all_top10,HUN,Hungary,2014,2374
+oa_all_top10,HUN,Hungary,2015,2552
+oa_all_top10,HUN,Hungary,2016,2639
+oa_all_top10,HUN,Hungary,2017,2399
+oa_all_top10,HUN,Hungary,2018,2448
+oa_all_top10,HUN,Hungary,2019,2731
+oa_all_top10,HUN,Hungary,2020,2857
+oa_all_top10,HUN,Hungary,2021,2988
+oa_all_top10,HUN,Hungary,2022,2959
+oa_all_uncited,HUN,Hungary,2005,1140
+oa_all_uncited,HUN,Hungary,2006,1191
+oa_all_uncited,HUN,Hungary,2007,1349
+oa_all_uncited,HUN,Hungary,2008,1460
+oa_all_uncited,HUN,Hungary,2009,1591
+oa_all_uncited,HUN,Hungary,2010,1749
+oa_all_uncited,HUN,Hungary,2011,1770
+oa_all_uncited,HUN,Hungary,2012,1830
+oa_all_uncited,HUN,Hungary,2013,2162
+oa_all_uncited,HUN,Hungary,2014,2191
+oa_all_uncited,HUN,Hungary,2015,2164
+oa_all_uncited,HUN,Hungary,2016,2338
+oa_all_uncited,HUN,Hungary,2017,2433
+oa_all_uncited,HUN,Hungary,2018,2808
+oa_all_uncited,HUN,Hungary,2019,3692
+oa_all_uncited,HUN,Hungary,2020,3510
+oa_all_uncited,HUN,Hungary,2021,4069
+oa_all_uncited,HUN,Hungary,2022,4607
+oa_core_articles,HUN,Hungary,2005,5400
+oa_core_articles,HUN,Hungary,2006,5586
+oa_core_articles,HUN,Hungary,2007,5839
+oa_core_articles,HUN,Hungary,2008,5987
+oa_core_articles,HUN,Hungary,2009,6220
+oa_core_articles,HUN,Hungary,2010,6165
+oa_core_articles,HUN,Hungary,2011,6486
+oa_core_articles,HUN,Hungary,2012,6803
+oa_core_articles,HUN,Hungary,2013,6883
+oa_core_articles,HUN,Hungary,2014,7557
+oa_core_articles,HUN,Hungary,2015,7765
+oa_core_articles,HUN,Hungary,2016,7900
+oa_core_articles,HUN,Hungary,2017,8143
+oa_core_articles,HUN,Hungary,2018,8499
+oa_core_articles,HUN,Hungary,2019,8877
+oa_core_articles,HUN,Hungary,2020,9781
+oa_core_articles,HUN,Hungary,2021,10844
+oa_core_articles,HUN,Hungary,2022,11074
+oa_core_top10,HUN,Hungary,2005,1070
+oa_core_top10,HUN,Hungary,2006,1186
+oa_core_top10,HUN,Hungary,2007,1344
+oa_core_top10,HUN,Hungary,2008,1321
+oa_core_top10,HUN,Hungary,2009,1446
+oa_core_top10,HUN,Hungary,2010,1510
+oa_core_top10,HUN,Hungary,2011,1727
+oa_core_top10,HUN,Hungary,2012,1850
+oa_core_top10,HUN,Hungary,2013,1847
+oa_core_top10,HUN,Hungary,2014,2114
+oa_core_top10,HUN,Hungary,2015,2213
+oa_core_top10,HUN,Hungary,2016,2326
+oa_core_top10,HUN,Hungary,2017,2055
+oa_core_top10,HUN,Hungary,2018,2126
+oa_core_top10,HUN,Hungary,2019,2274
+oa_core_top10,HUN,Hungary,2020,2429
+oa_core_top10,HUN,Hungary,2021,2509
+oa_core_top10,HUN,Hungary,2022,2527
+oa_core_uncited,HUN,Hungary,2005,456
+oa_core_uncited,HUN,Hungary,2006,533
+oa_core_uncited,HUN,Hungary,2007,539
+oa_core_uncited,HUN,Hungary,2008,512
+oa_core_uncited,HUN,Hungary,2009,597
+oa_core_uncited,HUN,Hungary,2010,574
+oa_core_uncited,HUN,Hungary,2011,571
+oa_core_uncited,HUN,Hungary,2012,592
+oa_core_uncited,HUN,Hungary,2013,677
+oa_core_uncited,HUN,Hungary,2014,634
+oa_core_uncited,HUN,Hungary,2015,706
+oa_core_uncited,HUN,Hungary,2016,684
+oa_core_uncited,HUN,Hungary,2017,726
+oa_core_uncited,HUN,Hungary,2018,690
+oa_core_uncited,HUN,Hungary,2019,792
+oa_core_uncited,HUN,Hungary,2020,639
+oa_core_uncited,HUN,Hungary,2021,774
+oa_core_uncited,HUN,Hungary,2022,1020
+oa_all_articles,POL,Poland,2005,26051
+oa_all_articles,POL,Poland,2006,25426
+oa_all_articles,POL,Poland,2007,27661
+oa_all_articles,POL,Poland,2008,30506
+oa_all_articles,POL,Poland,2009,35890
+oa_all_articles,POL,Poland,2010,39147
+oa_all_articles,POL,Poland,2011,45080
+oa_all_articles,POL,Poland,2012,51325
+oa_all_articles,POL,Poland,2013,61690
+oa_all_articles,POL,Poland,2014,67623
+oa_all_articles,POL,Poland,2015,73872
+oa_all_articles,POL,Poland,2016,75146
+oa_all_articles,POL,Poland,2017,76527
+oa_all_articles,POL,Poland,2018,74693
+oa_all_articles,POL,Poland,2019,70271
+oa_all_articles,POL,Poland,2020,74513
+oa_all_articles,POL,Poland,2021,74830
+oa_all_articles,POL,Poland,2022,68638
+oa_all_top10,POL,Poland,2005,2483
+oa_all_top10,POL,Poland,2006,2758
+oa_all_top10,POL,Poland,2007,2983
+oa_all_top10,POL,Poland,2008,3506
+oa_all_top10,POL,Poland,2009,3917
+oa_all_top10,POL,Poland,2010,4503
+oa_all_top10,POL,Poland,2011,5558
+oa_all_top10,POL,Poland,2012,6509
+oa_all_top10,POL,Poland,2013,7953
+oa_all_top10,POL,Poland,2014,9421
+oa_all_top10,POL,Poland,2015,11027
+oa_all_top10,POL,Poland,2016,11831
+oa_all_top10,POL,Poland,2017,9423
+oa_all_top10,POL,Poland,2018,9240
+oa_all_top10,POL,Poland,2019,9883
+oa_all_top10,POL,Poland,2020,11397
+oa_all_top10,POL,Poland,2021,11800
+oa_all_top10,POL,Poland,2022,10411
+oa_all_uncited,POL,Poland,2005,8844
+oa_all_uncited,POL,Poland,2006,7690
+oa_all_uncited,POL,Poland,2007,8839
+oa_all_uncited,POL,Poland,2008,9990
+oa_all_uncited,POL,Poland,2009,13320
+oa_all_uncited,POL,Poland,2010,14624
+oa_all_uncited,POL,Poland,2011,17132
+oa_all_uncited,POL,Poland,2012,18940
+oa_all_uncited,POL,Poland,2013,23074
+oa_all_uncited,POL,Poland,2014,24385
+oa_all_uncited,POL,Poland,2015,27278
+oa_all_uncited,POL,Poland,2016,27378
+oa_all_uncited,POL,Poland,2017,28209
+oa_all_uncited,POL,Poland,2018,26334
+oa_all_uncited,POL,Poland,2019,21896
+oa_all_uncited,POL,Poland,2020,18988
+oa_all_uncited,POL,Poland,2021,18457
+oa_all_uncited,POL,Poland,2022,17482
+oa_core_articles,POL,Poland,2005,13615
+oa_core_articles,POL,Poland,2006,14272
+oa_core_articles,POL,Poland,2007,15084
+oa_core_articles,POL,Poland,2008,15794
+oa_core_articles,POL,Poland,2009,17555
+oa_core_articles,POL,Poland,2010,18287
+oa_core_articles,POL,Poland,2011,20446
+oa_core_articles,POL,Poland,2012,23301
+oa_core_articles,POL,Poland,2013,27591
+oa_core_articles,POL,Poland,2014,30124
+oa_core_articles,POL,Poland,2015,32992
+oa_core_articles,POL,Poland,2016,33034
+oa_core_articles,POL,Poland,2017,33130
+oa_core_articles,POL,Poland,2018,33941
+oa_core_articles,POL,Poland,2019,36114
+oa_core_articles,POL,Poland,2020,43435
+oa_core_articles,POL,Poland,2021,46885
+oa_core_articles,POL,Poland,2022,43590
+oa_core_top10,POL,Poland,2005,2150
+oa_core_top10,POL,Poland,2006,2432
+oa_core_top10,POL,Poland,2007,2585
+oa_core_top10,POL,Poland,2008,2876
+oa_core_top10,POL,Poland,2009,3227
+oa_core_top10,POL,Poland,2010,3541
+oa_core_top10,POL,Poland,2011,4200
+oa_core_top10,POL,Poland,2012,4824
+oa_core_top10,POL,Poland,2013,5803
+oa_core_top10,POL,Poland,2014,6466
+oa_core_top10,POL,Poland,2015,7335
+oa_core_top10,POL,Poland,2016,8355
+oa_core_top10,POL,Poland,2017,6787
+oa_core_top10,POL,Poland,2018,7015
+oa_core_top10,POL,Poland,2019,7719
+oa_core_top10,POL,Poland,2020,9236
+oa_core_top10,POL,Poland,2021,9948
+oa_core_top10,POL,Poland,2022,8822
+oa_core_uncited,POL,Poland,2005,1538
+oa_core_uncited,POL,Poland,2006,1424
+oa_core_uncited,POL,Poland,2007,1526
+oa_core_uncited,POL,Poland,2008,1449
+oa_core_uncited,POL,Poland,2009,2021
+oa_core_uncited,POL,Poland,2010,1853
+oa_core_uncited,POL,Poland,2011,1825
+oa_core_uncited,POL,Poland,2012,2058
+oa_core_uncited,POL,Poland,2013,2887
+oa_core_uncited,POL,Poland,2014,2617
+oa_core_uncited,POL,Poland,2015,3140
+oa_core_uncited,POL,Poland,2016,2724
+oa_core_uncited,POL,Poland,2017,2699
+oa_core_uncited,POL,Poland,2018,2483
+oa_core_uncited,POL,Poland,2019,2523
+oa_core_uncited,POL,Poland,2020,2312
+oa_core_uncited,POL,Poland,2021,2685
+oa_core_uncited,POL,Poland,2022,2848
+oa_all_articles,RUS,Russian Federation,2005,26908
+oa_all_articles,RUS,Russian Federation,2006,30522
+oa_all_articles,RUS,Russian Federation,2007,34436
+oa_all_articles,RUS,Russian Federation,2008,38537
+oa_all_articles,RUS,Russian Federation,2009,41210
+oa_all_articles,RUS,Russian Federation,2010,45052
+oa_all_articles,RUS,Russian Federation,2011,49888
+oa_all_articles,RUS,Russian Federation,2012,54155
+oa_all_articles,RUS,Russian Federation,2013,61390
+oa_all_articles,RUS,Russian Federation,2014,74735
+oa_all_articles,RUS,Russian Federation,2015,94177
+oa_all_articles,RUS,Russian Federation,2016,101641
+oa_all_articles,RUS,Russian Federation,2017,113930
+oa_all_articles,RUS,Russian Federation,2018,126009
+oa_all_articles,RUS,Russian Federation,2019,141395
+oa_all_articles,RUS,Russian Federation,2020,163114
+oa_all_articles,RUS,Russian Federation,2021,173773
+oa_all_articles,RUS,Russian Federation,2022,165016
+oa_all_top10,RUS,Russian Federation,2005,2412
+oa_all_top10,RUS,Russian Federation,2006,2677
+oa_all_top10,RUS,Russian Federation,2007,2778
+oa_all_top10,RUS,Russian Federation,2008,2928
+oa_all_top10,RUS,Russian Federation,2009,2774
+oa_all_top10,RUS,Russian Federation,2010,3054
+oa_all_top10,RUS,Russian Federation,2011,3418
+oa_all_top10,RUS,Russian Federation,2012,3903
+oa_all_top10,RUS,Russian Federation,2013,4900
+oa_all_top10,RUS,Russian Federation,2014,6014
+oa_all_top10,RUS,Russian Federation,2015,7857
+oa_all_top10,RUS,Russian Federation,2016,9238
+oa_all_top10,RUS,Russian Federation,2017,8432
+oa_all_top10,RUS,Russian Federation,2018,9225
+oa_all_top10,RUS,Russian Federation,2019,10520
+oa_all_top10,RUS,Russian Federation,2020,11279
+oa_all_top10,RUS,Russian Federation,2021,10905
+oa_all_top10,RUS,Russian Federation,2022,9169
+oa_all_uncited,RUS,Russian Federation,2005,6148
+oa_all_uncited,RUS,Russian Federation,2006,6852
+oa_all_uncited,RUS,Russian Federation,2007,8563
+oa_all_uncited,RUS,Russian Federation,2008,11201
+oa_all_uncited,RUS,Russian Federation,2009,12878
+oa_all_uncited,RUS,Russian Federation,2010,15670
+oa_all_uncited,RUS,Russian Federation,2011,18243
+oa_all_uncited,RUS,Russian Federation,2012,21499
+oa_all_uncited,RUS,Russian Federation,2013,24614
+oa_all_uncited,RUS,Russian Federation,2014,30994
+oa_all_uncited,RUS,Russian Federation,2015,38730
+oa_all_uncited,RUS,Russian Federation,2016,40109
+oa_all_uncited,RUS,Russian Federation,2017,42937
+oa_all_uncited,RUS,Russian Federation,2018,46189
+oa_all_uncited,RUS,Russian Federation,2019,51154
+oa_all_uncited,RUS,Russian Federation,2020,61959
+oa_all_uncited,RUS,Russian Federation,2021,71106
+oa_all_uncited,RUS,Russian Federation,2022,69214
+oa_core_articles,RUS,Russian Federation,2005,17940
+oa_core_articles,RUS,Russian Federation,2006,18317
+oa_core_articles,RUS,Russian Federation,2007,18802
+oa_core_articles,RUS,Russian Federation,2008,19635
+oa_core_articles,RUS,Russian Federation,2009,19615
+oa_core_articles,RUS,Russian Federation,2010,20012
+oa_core_articles,RUS,Russian Federation,2011,21174
+oa_core_articles,RUS,Russian Federation,2012,21447
+oa_core_articles,RUS,Russian Federation,2013,24153
+oa_core_articles,RUS,Russian Federation,2014,27720
+oa_core_articles,RUS,Russian Federation,2015,32103
+oa_core_articles,RUS,Russian Federation,2016,33140
+oa_core_articles,RUS,Russian Federation,2017,34553
+oa_core_articles,RUS,Russian Federation,2018,37486
+oa_core_articles,RUS,Russian Federation,2019,40489
+oa_core_articles,RUS,Russian Federation,2020,44825
+oa_core_articles,RUS,Russian Federation,2021,47588
+oa_core_articles,RUS,Russian Federation,2022,44446
+oa_core_top10,RUS,Russian Federation,2005,2253
+oa_core_top10,RUS,Russian Federation,2006,2402
+oa_core_top10,RUS,Russian Federation,2007,2468
+oa_core_top10,RUS,Russian Federation,2008,2546
+oa_core_top10,RUS,Russian Federation,2009,2435
+oa_core_top10,RUS,Russian Federation,2010,2641
+oa_core_top10,RUS,Russian Federation,2011,2908
+oa_core_top10,RUS,Russian Federation,2012,3224
+oa_core_top10,RUS,Russian Federation,2013,3971
+oa_core_top10,RUS,Russian Federation,2014,4739
+oa_core_top10,RUS,Russian Federation,2015,5618
+oa_core_top10,RUS,Russian Federation,2016,6233
+oa_core_top10,RUS,Russian Federation,2017,5346
+oa_core_top10,RUS,Russian Federation,2018,5582
+oa_core_top10,RUS,Russian Federation,2019,5969
+oa_core_top10,RUS,Russian Federation,2020,6885
+oa_core_top10,RUS,Russian Federation,2021,7029
+oa_core_top10,RUS,Russian Federation,2022,5694
+oa_core_uncited,RUS,Russian Federation,2005,1694
+oa_core_uncited,RUS,Russian Federation,2006,1645
+oa_core_uncited,RUS,Russian Federation,2007,1671
+oa_core_uncited,RUS,Russian Federation,2008,1954
+oa_core_uncited,RUS,Russian Federation,2009,1876
+oa_core_uncited,RUS,Russian Federation,2010,1954
+oa_core_uncited,RUS,Russian Federation,2011,2093
+oa_core_uncited,RUS,Russian Federation,2012,2009
+oa_core_uncited,RUS,Russian Federation,2013,2452
+oa_core_uncited,RUS,Russian Federation,2014,2711
+oa_core_uncited,RUS,Russian Federation,2015,3216
+oa_core_uncited,RUS,Russian Federation,2016,3034
+oa_core_uncited,RUS,Russian Federation,2017,3204
+oa_core_uncited,RUS,Russian Federation,2018,3705
+oa_core_uncited,RUS,Russian Federation,2019,3968
+oa_core_uncited,RUS,Russian Federation,2020,3751
+oa_core_uncited,RUS,Russian Federation,2021,5087
+oa_core_uncited,RUS,Russian Federation,2022,4808
+oa_all_articles,TUR,Turkiye,2005,18043
+oa_all_articles,TUR,Turkiye,2006,19826
+oa_all_articles,TUR,Turkiye,2007,21363
+oa_all_articles,TUR,Turkiye,2008,21995
+oa_all_articles,TUR,Turkiye,2009,23586
+oa_all_articles,TUR,Turkiye,2010,25784
+oa_all_articles,TUR,Turkiye,2011,28975
+oa_all_articles,TUR,Turkiye,2012,31897
+oa_all_articles,TUR,Turkiye,2013,38455
+oa_all_articles,TUR,Turkiye,2014,45181
+oa_all_articles,TUR,Turkiye,2015,52200
+oa_all_articles,TUR,Turkiye,2016,58485
+oa_all_articles,TUR,Turkiye,2017,60043
+oa_all_articles,TUR,Turkiye,2018,69540
+oa_all_articles,TUR,Turkiye,2019,83064
+oa_all_articles,TUR,Turkiye,2020,97573
+oa_all_articles,TUR,Turkiye,2021,113630
+oa_all_articles,TUR,Turkiye,2022,120920
+oa_all_top10,TUR,Turkiye,2005,2704
+oa_all_top10,TUR,Turkiye,2006,3409
+oa_all_top10,TUR,Turkiye,2007,3739
+oa_all_top10,TUR,Turkiye,2008,4259
+oa_all_top10,TUR,Turkiye,2009,4444
+oa_all_top10,TUR,Turkiye,2010,4980
+oa_all_top10,TUR,Turkiye,2011,5386
+oa_all_top10,TUR,Turkiye,2012,5646
+oa_all_top10,TUR,Turkiye,2013,6415
+oa_all_top10,TUR,Turkiye,2014,6980
+oa_all_top10,TUR,Turkiye,2015,8286
+oa_all_top10,TUR,Turkiye,2016,9661
+oa_all_top10,TUR,Turkiye,2017,8160
+oa_all_top10,TUR,Turkiye,2018,9286
+oa_all_top10,TUR,Turkiye,2019,10733
+oa_all_top10,TUR,Turkiye,2020,12891
+oa_all_top10,TUR,Turkiye,2021,13432
+oa_all_top10,TUR,Turkiye,2022,13157
+oa_all_uncited,TUR,Turkiye,2005,1960
+oa_all_uncited,TUR,Turkiye,2006,2290
+oa_all_uncited,TUR,Turkiye,2007,2456
+oa_all_uncited,TUR,Turkiye,2008,2572
+oa_all_uncited,TUR,Turkiye,2009,2689
+oa_all_uncited,TUR,Turkiye,2010,3230
+oa_all_uncited,TUR,Turkiye,2011,3932
+oa_all_uncited,TUR,Turkiye,2012,4869
+oa_all_uncited,TUR,Turkiye,2013,6707
+oa_all_uncited,TUR,Turkiye,2014,8537
+oa_all_uncited,TUR,Turkiye,2015,10669
+oa_all_uncited,TUR,Turkiye,2016,12457
+oa_all_uncited,TUR,Turkiye,2017,13036
+oa_all_uncited,TUR,Turkiye,2018,15608
+oa_all_uncited,TUR,Turkiye,2019,21252
+oa_all_uncited,TUR,Turkiye,2020,21660
+oa_all_uncited,TUR,Turkiye,2021,29280
+oa_all_uncited,TUR,Turkiye,2022,36621
+oa_core_articles,TUR,Turkiye,2005,14814
+oa_core_articles,TUR,Turkiye,2006,16497
+oa_core_articles,TUR,Turkiye,2007,17525
+oa_core_articles,TUR,Turkiye,2008,18080
+oa_core_articles,TUR,Turkiye,2009,19064
+oa_core_articles,TUR,Turkiye,2010,20048
+oa_core_articles,TUR,Turkiye,2011,22818
+oa_core_articles,TUR,Turkiye,2012,24455
+oa_core_articles,TUR,Turkiye,2013,28603
+oa_core_articles,TUR,Turkiye,2014,30270
+oa_core_articles,TUR,Turkiye,2015,33409
+oa_core_articles,TUR,Turkiye,2016,35076
+oa_core_articles,TUR,Turkiye,2017,32968
+oa_core_articles,TUR,Turkiye,2018,35225
+oa_core_articles,TUR,Turkiye,2019,40002
+oa_core_articles,TUR,Turkiye,2020,45577
+oa_core_articles,TUR,Turkiye,2021,51374
+oa_core_articles,TUR,Turkiye,2022,51178
+oa_core_top10,TUR,Turkiye,2005,2548
+oa_core_top10,TUR,Turkiye,2006,3248
+oa_core_top10,TUR,Turkiye,2007,3549
+oa_core_top10,TUR,Turkiye,2008,4020
+oa_core_top10,TUR,Turkiye,2009,4154
+oa_core_top10,TUR,Turkiye,2010,4578
+oa_core_top10,TUR,Turkiye,2011,4928
+oa_core_top10,TUR,Turkiye,2012,5132
+oa_core_top10,TUR,Turkiye,2013,5728
+oa_core_top10,TUR,Turkiye,2014,6015
+oa_core_top10,TUR,Turkiye,2015,6930
+oa_core_top10,TUR,Turkiye,2016,7864
+oa_core_top10,TUR,Turkiye,2017,6238
+oa_core_top10,TUR,Turkiye,2018,6627
+oa_core_top10,TUR,Turkiye,2019,7635
+oa_core_top10,TUR,Turkiye,2020,9292
+oa_core_top10,TUR,Turkiye,2021,9919
+oa_core_top10,TUR,Turkiye,2022,9508
+oa_core_uncited,TUR,Turkiye,2005,907
+oa_core_uncited,TUR,Turkiye,2006,1124
+oa_core_uncited,TUR,Turkiye,2007,1174
+oa_core_uncited,TUR,Turkiye,2008,1253
+oa_core_uncited,TUR,Turkiye,2009,1188
+oa_core_uncited,TUR,Turkiye,2010,1207
+oa_core_uncited,TUR,Turkiye,2011,1660
+oa_core_uncited,TUR,Turkiye,2012,1984
+oa_core_uncited,TUR,Turkiye,2013,2792
+oa_core_uncited,TUR,Turkiye,2014,2506
+oa_core_uncited,TUR,Turkiye,2015,3077
+oa_core_uncited,TUR,Turkiye,2016,2925
+oa_core_uncited,TUR,Turkiye,2017,2910
+oa_core_uncited,TUR,Turkiye,2018,3078
+oa_core_uncited,TUR,Turkiye,2019,4669
+oa_core_uncited,TUR,Turkiye,2020,2902
+oa_core_uncited,TUR,Turkiye,2021,4204
+oa_core_uncited,TUR,Turkiye,2022,4274
+oa_all_articles,UKR,Ukraine,2005,5860
+oa_all_articles,UKR,Ukraine,2006,6310
+oa_all_articles,UKR,Ukraine,2007,7010
+oa_all_articles,UKR,Ukraine,2008,7807
+oa_all_articles,UKR,Ukraine,2009,8740
+oa_all_articles,UKR,Ukraine,2010,10403
+oa_all_articles,UKR,Ukraine,2011,11671
+oa_all_articles,UKR,Ukraine,2012,15416
+oa_all_articles,UKR,Ukraine,2013,20865
+oa_all_articles,UKR,Ukraine,2014,24337
+oa_all_articles,UKR,Ukraine,2015,28013
+oa_all_articles,UKR,Ukraine,2016,32140
+oa_all_articles,UKR,Ukraine,2017,38678
+oa_all_articles,UKR,Ukraine,2018,49780
+oa_all_articles,UKR,Ukraine,2019,61993
+oa_all_articles,UKR,Ukraine,2020,67861
+oa_all_articles,UKR,Ukraine,2021,70613
+oa_all_articles,UKR,Ukraine,2022,64029
+oa_all_top10,UKR,Ukraine,2005,405
+oa_all_top10,UKR,Ukraine,2006,484
+oa_all_top10,UKR,Ukraine,2007,573
+oa_all_top10,UKR,Ukraine,2008,533
+oa_all_top10,UKR,Ukraine,2009,458
+oa_all_top10,UKR,Ukraine,2010,534
+oa_all_top10,UKR,Ukraine,2011,607
+oa_all_top10,UKR,Ukraine,2012,708
+oa_all_top10,UKR,Ukraine,2013,906
+oa_all_top10,UKR,Ukraine,2014,1203
+oa_all_top10,UKR,Ukraine,2015,1347
+oa_all_top10,UKR,Ukraine,2016,1715
+oa_all_top10,UKR,Ukraine,2017,1764
+oa_all_top10,UKR,Ukraine,2018,2288
+oa_all_top10,UKR,Ukraine,2019,3074
+oa_all_top10,UKR,Ukraine,2020,3722
+oa_all_top10,UKR,Ukraine,2021,3719
+oa_all_top10,UKR,Ukraine,2022,3765
+oa_all_uncited,UKR,Ukraine,2005,1847
+oa_all_uncited,UKR,Ukraine,2006,2144
+oa_all_uncited,UKR,Ukraine,2007,2425
+oa_all_uncited,UKR,Ukraine,2008,3146
+oa_all_uncited,UKR,Ukraine,2009,3838
+oa_all_uncited,UKR,Ukraine,2010,5320
+oa_all_uncited,UKR,Ukraine,2011,6086
+oa_all_uncited,UKR,Ukraine,2012,9217
+oa_all_uncited,UKR,Ukraine,2013,13178
+oa_all_uncited,UKR,Ukraine,2014,14899
+oa_all_uncited,UKR,Ukraine,2015,17344
+oa_all_uncited,UKR,Ukraine,2016,19319
+oa_all_uncited,UKR,Ukraine,2017,22729
+oa_all_uncited,UKR,Ukraine,2018,28547
+oa_all_uncited,UKR,Ukraine,2019,34132
+oa_all_uncited,UKR,Ukraine,2020,35140
+oa_all_uncited,UKR,Ukraine,2021,37045
+oa_all_uncited,UKR,Ukraine,2022,33232
+oa_core_articles,UKR,Ukraine,2005,3280
+oa_core_articles,UKR,Ukraine,2006,3387
+oa_core_articles,UKR,Ukraine,2007,3514
+oa_core_articles,UKR,Ukraine,2008,3491
+oa_core_articles,UKR,Ukraine,2009,3468
+oa_core_articles,UKR,Ukraine,2010,3571
+oa_core_articles,UKR,Ukraine,2011,3804
+oa_core_articles,UKR,Ukraine,2012,3899
+oa_core_articles,UKR,Ukraine,2013,4625
+oa_core_articles,UKR,Ukraine,2014,4971
+oa_core_articles,UKR,Ukraine,2015,4769
+oa_core_articles,UKR,Ukraine,2016,4843
+oa_core_articles,UKR,Ukraine,2017,4970
+oa_core_articles,UKR,Ukraine,2018,5538
+oa_core_articles,UKR,Ukraine,2019,5736
+oa_core_articles,UKR,Ukraine,2020,6593
+oa_core_articles,UKR,Ukraine,2021,7051
+oa_core_articles,UKR,Ukraine,2022,7404
+oa_core_top10,UKR,Ukraine,2005,309
+oa_core_top10,UKR,Ukraine,2006,378
+oa_core_top10,UKR,Ukraine,2007,447
+oa_core_top10,UKR,Ukraine,2008,426
+oa_core_top10,UKR,Ukraine,2009,373
+oa_core_top10,UKR,Ukraine,2010,451
+oa_core_top10,UKR,Ukraine,2011,497
+oa_core_top10,UKR,Ukraine,2012,583
+oa_core_top10,UKR,Ukraine,2013,688
+oa_core_top10,UKR,Ukraine,2014,810
+oa_core_top10,UKR,Ukraine,2015,822
+oa_core_top10,UKR,Ukraine,2016,892
+oa_core_top10,UKR,Ukraine,2017,722
+oa_core_top10,UKR,Ukraine,2018,825
+oa_core_top10,UKR,Ukraine,2019,878
+oa_core_top10,UKR,Ukraine,2020,1042
+oa_core_top10,UKR,Ukraine,2021,1024
+oa_core_top10,UKR,Ukraine,2022,1095
+oa_core_uncited,UKR,Ukraine,2005,357
+oa_core_uncited,UKR,Ukraine,2006,385
+oa_core_uncited,UKR,Ukraine,2007,330
+oa_core_uncited,UKR,Ukraine,2008,343
+oa_core_uncited,UKR,Ukraine,2009,355
+oa_core_uncited,UKR,Ukraine,2010,397
+oa_core_uncited,UKR,Ukraine,2011,388
+oa_core_uncited,UKR,Ukraine,2012,399
+oa_core_uncited,UKR,Ukraine,2013,568
+oa_core_uncited,UKR,Ukraine,2014,611
+oa_core_uncited,UKR,Ukraine,2015,491
+oa_core_uncited,UKR,Ukraine,2016,501
+oa_core_uncited,UKR,Ukraine,2017,516
+oa_core_uncited,UKR,Ukraine,2018,608
+oa_core_uncited,UKR,Ukraine,2019,666
+oa_core_uncited,UKR,Ukraine,2020,656
+oa_core_uncited,UKR,Ukraine,2021,870
+oa_core_uncited,UKR,Ukraine,2022,1056
+oa_all_articles,CHN,China,2005,220906
+oa_all_articles,CHN,China,2006,295568
+oa_all_articles,CHN,China,2007,373634
+oa_all_articles,CHN,China,2008,407259
+oa_all_articles,CHN,China,2009,443073
+oa_all_articles,CHN,China,2010,482853
+oa_all_articles,CHN,China,2011,539806
+oa_all_articles,CHN,China,2012,508510
+oa_all_articles,CHN,China,2013,537882
+oa_all_articles,CHN,China,2014,527368
+oa_all_articles,CHN,China,2015,445789
+oa_all_articles,CHN,China,2016,368576
+oa_all_articles,CHN,China,2017,405028
+oa_all_articles,CHN,China,2018,466482
+oa_all_articles,CHN,China,2019,538866
+oa_all_articles,CHN,China,2020,600145
+oa_all_articles,CHN,China,2021,663543
+oa_all_articles,CHN,China,2022,802990
+oa_all_top10,CHN,China,2005,12470
+oa_all_top10,CHN,China,2006,17469
+oa_all_top10,CHN,China,2007,21947
+oa_all_top10,CHN,China,2008,27812
+oa_all_top10,CHN,China,2009,32074
+oa_all_top10,CHN,China,2010,37406
+oa_all_top10,CHN,China,2011,44677
+oa_all_top10,CHN,China,2012,52005
+oa_all_top10,CHN,China,2013,65366
+oa_all_top10,CHN,China,2014,75675
+oa_all_top10,CHN,China,2015,86482
+oa_all_top10,CHN,China,2016,101791
+oa_all_top10,CHN,China,2017,97053
+oa_all_top10,CHN,China,2018,108152
+oa_all_top10,CHN,China,2019,128151
+oa_all_top10,CHN,China,2020,143255
+oa_all_top10,CHN,China,2021,148339
+oa_all_top10,CHN,China,2022,168909
+oa_all_uncited,CHN,China,2005,138074
+oa_all_uncited,CHN,China,2006,185600
+oa_all_uncited,CHN,China,2007,237360
+oa_all_uncited,CHN,China,2008,252864
+oa_all_uncited,CHN,China,2009,269729
+oa_all_uncited,CHN,China,2010,283607
+oa_all_uncited,CHN,China,2011,304219
+oa_all_uncited,CHN,China,2012,256124
+oa_all_uncited,CHN,China,2013,247568
+oa_all_uncited,CHN,China,2014,209844
+oa_all_uncited,CHN,China,2015,128969
+oa_all_uncited,CHN,China,2016,44395
+oa_all_uncited,CHN,China,2017,38494
+oa_all_uncited,CHN,China,2018,39719
+oa_all_uncited,CHN,China,2019,41072
+oa_all_uncited,CHN,China,2020,33060
+oa_all_uncited,CHN,China,2021,37176
+oa_all_uncited,CHN,China,2022,49376
+oa_core_articles,CHN,China,2005,73286
+oa_core_articles,CHN,China,2006,101702
+oa_core_articles,CHN,China,2007,121381
+oa_core_articles,CHN,China,2008,137634
+oa_core_articles,CHN,China,2009,154938
+oa_core_articles,CHN,China,2010,182956
+oa_core_articles,CHN,China,2011,236581
+oa_core_articles,CHN,China,2012,255570
+oa_core_articles,CHN,China,2013,300994
+oa_core_articles,CHN,China,2014,329535
+oa_core_articles,CHN,China,2015,309385
+oa_core_articles,CHN,China,2016,323966
+oa_core_articles,CHN,China,2017,364489
+oa_core_articles,CHN,China,2018,424588
+oa_core_articles,CHN,China,2019,494207
+oa_core_articles,CHN,China,2020,563008
+oa_core_articles,CHN,China,2021,629010
+oa_core_articles,CHN,China,2022,768127
+oa_core_top10,CHN,China,2005,11993
+oa_core_top10,CHN,China,2006,16618
+oa_core_top10,CHN,China,2007,20390
+oa_core_top10,CHN,China,2008,25822
+oa_core_top10,CHN,China,2009,30053
+oa_core_top10,CHN,China,2010,35506
+oa_core_top10,CHN,China,2011,42942
+oa_core_top10,CHN,China,2012,50488
+oa_core_top10,CHN,China,2013,63680
+oa_core_top10,CHN,China,2014,73923
+oa_core_top10,CHN,China,2015,84453
+oa_core_top10,CHN,China,2016,100374
+oa_core_top10,CHN,China,2017,95918
+oa_core_top10,CHN,China,2018,106953
+oa_core_top10,CHN,China,2019,126658
+oa_core_top10,CHN,China,2020,141507
+oa_core_top10,CHN,China,2021,146813
+oa_core_top10,CHN,China,2022,167594
+oa_core_uncited,CHN,China,2005,13892
+oa_core_uncited,CHN,China,2006,21893
+oa_core_uncited,CHN,China,2007,27460
+oa_core_uncited,CHN,China,2008,28969
+oa_core_uncited,CHN,China,2009,31040
+oa_core_uncited,CHN,China,2010,36054
+oa_core_uncited,CHN,China,2011,52758
+oa_core_uncited,CHN,China,2012,50424
+oa_core_uncited,CHN,China,2013,55699
+oa_core_uncited,CHN,China,2014,52383
+oa_core_uncited,CHN,China,2015,25701
+oa_core_uncited,CHN,China,2016,16844
+oa_core_uncited,CHN,China,2017,15909
+oa_core_uncited,CHN,China,2018,16972
+oa_core_uncited,CHN,China,2019,17392
+oa_core_uncited,CHN,China,2020,18195
+oa_core_uncited,CHN,China,2021,23175
+oa_core_uncited,CHN,China,2022,32490
+oa_all_articles,IND,India,2005,31052
+oa_all_articles,IND,India,2006,36133
+oa_all_articles,IND,India,2007,40004
+oa_all_articles,IND,India,2008,44036
+oa_all_articles,IND,India,2009,49310
+oa_all_articles,IND,India,2010,58398
+oa_all_articles,IND,India,2011,71546
+oa_all_articles,IND,India,2012,86231
+oa_all_articles,IND,India,2013,101907
+oa_all_articles,IND,India,2014,116923
+oa_all_articles,IND,India,2015,123230
+oa_all_articles,IND,India,2016,140646
+oa_all_articles,IND,India,2017,155366
+oa_all_articles,IND,India,2018,163959
+oa_all_articles,IND,India,2019,168088
+oa_all_articles,IND,India,2020,210897
+oa_all_articles,IND,India,2021,232283
+oa_all_articles,IND,India,2022,247574
+oa_all_top10,IND,India,2005,4567
+oa_all_top10,IND,India,2006,5841
+oa_all_top10,IND,India,2007,6645
+oa_all_top10,IND,India,2008,7738
+oa_all_top10,IND,India,2009,8803
+oa_all_top10,IND,India,2010,10547
+oa_all_top10,IND,India,2011,12289
+oa_all_top10,IND,India,2012,13824
+oa_all_top10,IND,India,2013,15857
+oa_all_top10,IND,India,2014,17629
+oa_all_top10,IND,India,2015,18880
+oa_all_top10,IND,India,2016,21571
+oa_all_top10,IND,India,2017,18770
+oa_all_top10,IND,India,2018,19388
+oa_all_top10,IND,India,2019,21560
+oa_all_top10,IND,India,2020,27533
+oa_all_top10,IND,India,2021,29731
+oa_all_top10,IND,India,2022,29847
+oa_all_uncited,IND,India,2005,3459
+oa_all_uncited,IND,India,2006,3965
+oa_all_uncited,IND,India,2007,4527
+oa_all_uncited,IND,India,2008,4848
+oa_all_uncited,IND,India,2009,5289
+oa_all_uncited,IND,India,2010,6342
+oa_all_uncited,IND,India,2011,9025
+oa_all_uncited,IND,India,2012,12026
+oa_all_uncited,IND,India,2013,16557
+oa_all_uncited,IND,India,2014,19937
+oa_all_uncited,IND,India,2015,22458
+oa_all_uncited,IND,India,2016,28522
+oa_all_uncited,IND,India,2017,31611
+oa_all_uncited,IND,India,2018,33786
+oa_all_uncited,IND,India,2019,34129
+oa_all_uncited,IND,India,2020,44389
+oa_all_uncited,IND,India,2021,51726
+oa_all_uncited,IND,India,2022,58385
+oa_core_articles,IND,India,2005,25271
+oa_core_articles,IND,India,2006,30328
+oa_core_articles,IND,India,2007,33510
+oa_core_articles,IND,India,2008,37249
+oa_core_articles,IND,India,2009,41731
+oa_core_articles,IND,India,2010,49813
+oa_core_articles,IND,India,2011,60465
+oa_core_articles,IND,India,2012,70619
+oa_core_articles,IND,India,2013,80191
+oa_core_articles,IND,India,2014,91952
+oa_core_articles,IND,India,2015,94552
+oa_core_articles,IND,India,2016,102190
+oa_core_articles,IND,India,2017,107817
+oa_core_articles,IND,India,2018,115022
+oa_core_articles,IND,India,2019,118117
+oa_core_articles,IND,India,2020,146850
+oa_core_articles,IND,India,2021,165654
+oa_core_articles,IND,India,2022,173161
+oa_core_top10,IND,India,2005,4343
+oa_core_top10,IND,India,2006,5596
+oa_core_top10,IND,India,2007,6314
+oa_core_top10,IND,India,2008,7326
+oa_core_top10,IND,India,2009,8348
+oa_core_top10,IND,India,2010,9977
+oa_core_top10,IND,India,2011,11616
+oa_core_top10,IND,India,2012,12965
+oa_core_top10,IND,India,2013,14888
+oa_core_top10,IND,India,2014,16598
+oa_core_top10,IND,India,2015,17845
+oa_core_top10,IND,India,2016,20500
+oa_core_top10,IND,India,2017,17730
+oa_core_top10,IND,India,2018,18438
+oa_core_top10,IND,India,2019,20593
+oa_core_top10,IND,India,2020,26252
+oa_core_top10,IND,India,2021,28442
+oa_core_top10,IND,India,2022,28449
+oa_core_uncited,IND,India,2005,1591
+oa_core_uncited,IND,India,2006,1992
+oa_core_uncited,IND,India,2007,2288
+oa_core_uncited,IND,India,2008,2255
+oa_core_uncited,IND,India,2009,2507
+oa_core_uncited,IND,India,2010,3080
+oa_core_uncited,IND,India,2011,4303
+oa_core_uncited,IND,India,2012,5186
+oa_core_uncited,IND,India,2013,6748
+oa_core_uncited,IND,India,2014,8850
+oa_core_uncited,IND,India,2015,8510
+oa_core_uncited,IND,India,2016,9504
+oa_core_uncited,IND,India,2017,10411
+oa_core_uncited,IND,India,2018,10369
+oa_core_uncited,IND,India,2019,9400
+oa_core_uncited,IND,India,2020,12063
+oa_core_uncited,IND,India,2021,15310
+oa_core_uncited,IND,India,2022,16594
+oa_all_articles,IDN,Indonesia,2005,2742
+oa_all_articles,IDN,Indonesia,2006,3473
+oa_all_articles,IDN,Indonesia,2007,4454
+oa_all_articles,IDN,Indonesia,2008,5164
+oa_all_articles,IDN,Indonesia,2009,7381
+oa_all_articles,IDN,Indonesia,2010,9485
+oa_all_articles,IDN,Indonesia,2011,12322
+oa_all_articles,IDN,Indonesia,2012,20963
+oa_all_articles,IDN,Indonesia,2013,30494
+oa_all_articles,IDN,Indonesia,2014,36725
+oa_all_articles,IDN,Indonesia,2015,53622
+oa_all_articles,IDN,Indonesia,2016,75606
+oa_all_articles,IDN,Indonesia,2017,111389
+oa_all_articles,IDN,Indonesia,2018,148096
+oa_all_articles,IDN,Indonesia,2019,197964
+oa_all_articles,IDN,Indonesia,2020,247860
+oa_all_articles,IDN,Indonesia,2021,305572
+oa_all_articles,IDN,Indonesia,2022,371348
+oa_all_top10,IDN,Indonesia,2005,187
+oa_all_top10,IDN,Indonesia,2006,258
+oa_all_top10,IDN,Indonesia,2007,258
+oa_all_top10,IDN,Indonesia,2008,356
+oa_all_top10,IDN,Indonesia,2009,430
+oa_all_top10,IDN,Indonesia,2010,572
+oa_all_top10,IDN,Indonesia,2011,810
+oa_all_top10,IDN,Indonesia,2012,1179
+oa_all_top10,IDN,Indonesia,2013,1658
+oa_all_top10,IDN,Indonesia,2014,2250
+oa_all_top10,IDN,Indonesia,2015,4592
+oa_all_top10,IDN,Indonesia,2016,8042
+oa_all_top10,IDN,Indonesia,2017,11988
+oa_all_top10,IDN,Indonesia,2018,16775
+oa_all_top10,IDN,Indonesia,2019,24734
+oa_all_top10,IDN,Indonesia,2020,32302
+oa_all_top10,IDN,Indonesia,2021,33159
+oa_all_top10,IDN,Indonesia,2022,28088
+oa_all_uncited,IDN,Indonesia,2005,1070
+oa_all_uncited,IDN,Indonesia,2006,1359
+oa_all_uncited,IDN,Indonesia,2007,1686
+oa_all_uncited,IDN,Indonesia,2008,1930
+oa_all_uncited,IDN,Indonesia,2009,3094
+oa_all_uncited,IDN,Indonesia,2010,3428
+oa_all_uncited,IDN,Indonesia,2011,4382
+oa_all_uncited,IDN,Indonesia,2012,7341
+oa_all_uncited,IDN,Indonesia,2013,11112
+oa_all_uncited,IDN,Indonesia,2014,12991
+oa_all_uncited,IDN,Indonesia,2015,19497
+oa_all_uncited,IDN,Indonesia,2016,26798
+oa_all_uncited,IDN,Indonesia,2017,38523
+oa_all_uncited,IDN,Indonesia,2018,51872
+oa_all_uncited,IDN,Indonesia,2019,68888
+oa_all_uncited,IDN,Indonesia,2020,86556
+oa_all_uncited,IDN,Indonesia,2021,120753
+oa_all_uncited,IDN,Indonesia,2022,178064
+oa_core_articles,IDN,Indonesia,2005,678
+oa_core_articles,IDN,Indonesia,2006,794
+oa_core_articles,IDN,Indonesia,2007,786
+oa_core_articles,IDN,Indonesia,2008,925
+oa_core_articles,IDN,Indonesia,2009,1177
+oa_core_articles,IDN,Indonesia,2010,1288
+oa_core_articles,IDN,Indonesia,2011,1722
+oa_core_articles,IDN,Indonesia,2012,2198
+oa_core_articles,IDN,Indonesia,2013,3193
+oa_core_articles,IDN,Indonesia,2014,3630
+oa_core_articles,IDN,Indonesia,2015,5055
+oa_core_articles,IDN,Indonesia,2016,5170
+oa_core_articles,IDN,Indonesia,2017,7517
+oa_core_articles,IDN,Indonesia,2018,8864
+oa_core_articles,IDN,Indonesia,2019,10708
+oa_core_articles,IDN,Indonesia,2020,13500
+oa_core_articles,IDN,Indonesia,2021,15514
+oa_core_articles,IDN,Indonesia,2022,17679
+oa_core_top10,IDN,Indonesia,2005,164
+oa_core_top10,IDN,Indonesia,2006,213
+oa_core_top10,IDN,Indonesia,2007,210
+oa_core_top10,IDN,Indonesia,2008,276
+oa_core_top10,IDN,Indonesia,2009,307
+oa_core_top10,IDN,Indonesia,2010,375
+oa_core_top10,IDN,Indonesia,2011,508
+oa_core_top10,IDN,Indonesia,2012,623
+oa_core_top10,IDN,Indonesia,2013,800
+oa_core_top10,IDN,Indonesia,2014,853
+oa_core_top10,IDN,Indonesia,2015,1136
+oa_core_top10,IDN,Indonesia,2016,1303
+oa_core_top10,IDN,Indonesia,2017,1470
+oa_core_top10,IDN,Indonesia,2018,1800
+oa_core_top10,IDN,Indonesia,2019,2324
+oa_core_top10,IDN,Indonesia,2020,3096
+oa_core_top10,IDN,Indonesia,2021,3398
+oa_core_top10,IDN,Indonesia,2022,3671
+oa_core_uncited,IDN,Indonesia,2005,46
+oa_core_uncited,IDN,Indonesia,2006,51
+oa_core_uncited,IDN,Indonesia,2007,58
+oa_core_uncited,IDN,Indonesia,2008,80
+oa_core_uncited,IDN,Indonesia,2009,125
+oa_core_uncited,IDN,Indonesia,2010,81
+oa_core_uncited,IDN,Indonesia,2011,115
+oa_core_uncited,IDN,Indonesia,2012,148
+oa_core_uncited,IDN,Indonesia,2013,341
+oa_core_uncited,IDN,Indonesia,2014,326
+oa_core_uncited,IDN,Indonesia,2015,510
+oa_core_uncited,IDN,Indonesia,2016,580
+oa_core_uncited,IDN,Indonesia,2017,1160
+oa_core_uncited,IDN,Indonesia,2018,1173
+oa_core_uncited,IDN,Indonesia,2019,1015
+oa_core_uncited,IDN,Indonesia,2020,1124
+oa_core_uncited,IDN,Indonesia,2021,1435
+oa_core_uncited,IDN,Indonesia,2022,1777
+oa_all_articles,MYS,Malaysia,2005,2870
+oa_all_articles,MYS,Malaysia,2006,3650
+oa_all_articles,MYS,Malaysia,2007,4048
+oa_all_articles,MYS,Malaysia,2008,5585
+oa_all_articles,MYS,Malaysia,2009,7917
+oa_all_articles,MYS,Malaysia,2010,10277
+oa_all_articles,MYS,Malaysia,2011,13963
+oa_all_articles,MYS,Malaysia,2012,17152
+oa_all_articles,MYS,Malaysia,2013,20676
+oa_all_articles,MYS,Malaysia,2014,24082
+oa_all_articles,MYS,Malaysia,2015,25693
+oa_all_articles,MYS,Malaysia,2016,25225
+oa_all_articles,MYS,Malaysia,2017,28658
+oa_all_articles,MYS,Malaysia,2018,32353
+oa_all_articles,MYS,Malaysia,2019,32892
+oa_all_articles,MYS,Malaysia,2020,39699
+oa_all_articles,MYS,Malaysia,2021,45898
+oa_all_articles,MYS,Malaysia,2022,47590
+oa_all_top10,MYS,Malaysia,2005,431
+oa_all_top10,MYS,Malaysia,2006,626
+oa_all_top10,MYS,Malaysia,2007,831
+oa_all_top10,MYS,Malaysia,2008,1192
+oa_all_top10,MYS,Malaysia,2009,1946
+oa_all_top10,MYS,Malaysia,2010,2662
+oa_all_top10,MYS,Malaysia,2011,3565
+oa_all_top10,MYS,Malaysia,2012,4089
+oa_all_top10,MYS,Malaysia,2013,5119
+oa_all_top10,MYS,Malaysia,2014,5769
+oa_all_top10,MYS,Malaysia,2015,5958
+oa_all_top10,MYS,Malaysia,2016,6486
+oa_all_top10,MYS,Malaysia,2017,5766
+oa_all_top10,MYS,Malaysia,2018,6296
+oa_all_top10,MYS,Malaysia,2019,7078
+oa_all_top10,MYS,Malaysia,2020,8327
+oa_all_top10,MYS,Malaysia,2021,9141
+oa_all_top10,MYS,Malaysia,2022,8998
+oa_all_uncited,MYS,Malaysia,2005,414
+oa_all_uncited,MYS,Malaysia,2006,551
+oa_all_uncited,MYS,Malaysia,2007,510
+oa_all_uncited,MYS,Malaysia,2008,777
+oa_all_uncited,MYS,Malaysia,2009,955
+oa_all_uncited,MYS,Malaysia,2010,1129
+oa_all_uncited,MYS,Malaysia,2011,1526
+oa_all_uncited,MYS,Malaysia,2012,2014
+oa_all_uncited,MYS,Malaysia,2013,2367
+oa_all_uncited,MYS,Malaysia,2014,3090
+oa_all_uncited,MYS,Malaysia,2015,3582
+oa_all_uncited,MYS,Malaysia,2016,3443
+oa_all_uncited,MYS,Malaysia,2017,4735
+oa_all_uncited,MYS,Malaysia,2018,5914
+oa_all_uncited,MYS,Malaysia,2019,5457
+oa_all_uncited,MYS,Malaysia,2020,6875
+oa_all_uncited,MYS,Malaysia,2021,8638
+oa_all_uncited,MYS,Malaysia,2022,10388
+oa_core_articles,MYS,Malaysia,2005,2032
+oa_core_articles,MYS,Malaysia,2006,2559
+oa_core_articles,MYS,Malaysia,2007,2921
+oa_core_articles,MYS,Malaysia,2008,3807
+oa_core_articles,MYS,Malaysia,2009,5858
+oa_core_articles,MYS,Malaysia,2010,7739
+oa_core_articles,MYS,Malaysia,2011,10832
+oa_core_articles,MYS,Malaysia,2012,12821
+oa_core_articles,MYS,Malaysia,2013,15920
+oa_core_articles,MYS,Malaysia,2014,18161
+oa_core_articles,MYS,Malaysia,2015,18413
+oa_core_articles,MYS,Malaysia,2016,17435
+oa_core_articles,MYS,Malaysia,2017,18232
+oa_core_articles,MYS,Malaysia,2018,19069
+oa_core_articles,MYS,Malaysia,2019,19606
+oa_core_articles,MYS,Malaysia,2020,22884
+oa_core_articles,MYS,Malaysia,2021,26442
+oa_core_articles,MYS,Malaysia,2022,26947
+oa_core_top10,MYS,Malaysia,2005,404
+oa_core_top10,MYS,Malaysia,2006,566
+oa_core_top10,MYS,Malaysia,2007,743
+oa_core_top10,MYS,Malaysia,2008,1019
+oa_core_top10,MYS,Malaysia,2009,1679
+oa_core_top10,MYS,Malaysia,2010,2291
+oa_core_top10,MYS,Malaysia,2011,3049
+oa_core_top10,MYS,Malaysia,2012,3473
+oa_core_top10,MYS,Malaysia,2013,4452
+oa_core_top10,MYS,Malaysia,2014,4967
+oa_core_top10,MYS,Malaysia,2015,5098
+oa_core_top10,MYS,Malaysia,2016,5491
+oa_core_top10,MYS,Malaysia,2017,4546
+oa_core_top10,MYS,Malaysia,2018,4884
+oa_core_top10,MYS,Malaysia,2019,5508
+oa_core_top10,MYS,Malaysia,2020,6588
+oa_core_top10,MYS,Malaysia,2021,7370
+oa_core_top10,MYS,Malaysia,2022,7424
+oa_core_uncited,MYS,Malaysia,2005,169
+oa_core_uncited,MYS,Malaysia,2006,227
+oa_core_uncited,MYS,Malaysia,2007,251
+oa_core_uncited,MYS,Malaysia,2008,330
+oa_core_uncited,MYS,Malaysia,2009,405
+oa_core_uncited,MYS,Malaysia,2010,536
+oa_core_uncited,MYS,Malaysia,2011,809
+oa_core_uncited,MYS,Malaysia,2012,939
+oa_core_uncited,MYS,Malaysia,2013,1141
+oa_core_uncited,MYS,Malaysia,2014,1431
+oa_core_uncited,MYS,Malaysia,2015,1525
+oa_core_uncited,MYS,Malaysia,2016,1131
+oa_core_uncited,MYS,Malaysia,2017,1499
+oa_core_uncited,MYS,Malaysia,2018,1605
+oa_core_uncited,MYS,Malaysia,2019,1296
+oa_core_uncited,MYS,Malaysia,2020,1183
+oa_core_uncited,MYS,Malaysia,2021,1552
+oa_core_uncited,MYS,Malaysia,2022,1716
+oa_all_articles,THA,Thailand,2005,4600
+oa_all_articles,THA,Thailand,2006,5354
+oa_all_articles,THA,Thailand,2007,5881
+oa_all_articles,THA,Thailand,2008,6815
+oa_all_articles,THA,Thailand,2009,7632
+oa_all_articles,THA,Thailand,2010,8912
+oa_all_articles,THA,Thailand,2011,9886
+oa_all_articles,THA,Thailand,2012,12385
+oa_all_articles,THA,Thailand,2013,14835
+oa_all_articles,THA,Thailand,2014,16499
+oa_all_articles,THA,Thailand,2015,17503
+oa_all_articles,THA,Thailand,2016,19148
+oa_all_articles,THA,Thailand,2017,21258
+oa_all_articles,THA,Thailand,2018,29336
+oa_all_articles,THA,Thailand,2019,30756
+oa_all_articles,THA,Thailand,2020,36901
+oa_all_articles,THA,Thailand,2021,39907
+oa_all_articles,THA,Thailand,2022,44419
+oa_all_top10,THA,Thailand,2005,792
+oa_all_top10,THA,Thailand,2006,1001
+oa_all_top10,THA,Thailand,2007,1168
+oa_all_top10,THA,Thailand,2008,1359
+oa_all_top10,THA,Thailand,2009,1542
+oa_all_top10,THA,Thailand,2010,1736
+oa_all_top10,THA,Thailand,2011,1855
+oa_all_top10,THA,Thailand,2012,2079
+oa_all_top10,THA,Thailand,2013,2501
+oa_all_top10,THA,Thailand,2014,2622
+oa_all_top10,THA,Thailand,2015,2763
+oa_all_top10,THA,Thailand,2016,3356
+oa_all_top10,THA,Thailand,2017,2880
+oa_all_top10,THA,Thailand,2018,3150
+oa_all_top10,THA,Thailand,2019,3325
+oa_all_top10,THA,Thailand,2020,3561
+oa_all_top10,THA,Thailand,2021,4117
+oa_all_top10,THA,Thailand,2022,4353
+oa_all_uncited,THA,Thailand,2005,585
+oa_all_uncited,THA,Thailand,2006,709
+oa_all_uncited,THA,Thailand,2007,893
+oa_all_uncited,THA,Thailand,2008,1121
+oa_all_uncited,THA,Thailand,2009,1270
+oa_all_uncited,THA,Thailand,2010,1748
+oa_all_uncited,THA,Thailand,2011,2114
+oa_all_uncited,THA,Thailand,2012,3486
+oa_all_uncited,THA,Thailand,2013,5409
+oa_all_uncited,THA,Thailand,2014,6586
+oa_all_uncited,THA,Thailand,2015,7163
+oa_all_uncited,THA,Thailand,2016,7845
+oa_all_uncited,THA,Thailand,2017,8953
+oa_all_uncited,THA,Thailand,2018,16241
+oa_all_uncited,THA,Thailand,2019,16544
+oa_all_uncited,THA,Thailand,2020,19963
+oa_all_uncited,THA,Thailand,2021,20242
+oa_all_uncited,THA,Thailand,2022,23290
+oa_core_articles,THA,Thailand,2005,3091
+oa_core_articles,THA,Thailand,2006,3973
+oa_core_articles,THA,Thailand,2007,4337
+oa_core_articles,THA,Thailand,2008,5169
+oa_core_articles,THA,Thailand,2009,5631
+oa_core_articles,THA,Thailand,2010,6419
+oa_core_articles,THA,Thailand,2011,6862
+oa_core_articles,THA,Thailand,2012,7976
+oa_core_articles,THA,Thailand,2013,8736
+oa_core_articles,THA,Thailand,2014,9727
+oa_core_articles,THA,Thailand,2015,9848
+oa_core_articles,THA,Thailand,2016,10501
+oa_core_articles,THA,Thailand,2017,11439
+oa_core_articles,THA,Thailand,2018,12274
+oa_core_articles,THA,Thailand,2019,13278
+oa_core_articles,THA,Thailand,2020,15614
+oa_core_articles,THA,Thailand,2021,18187
+oa_core_articles,THA,Thailand,2022,20058
+oa_core_top10,THA,Thailand,2005,742
+oa_core_top10,THA,Thailand,2006,965
+oa_core_top10,THA,Thailand,2007,1110
+oa_core_top10,THA,Thailand,2008,1281
+oa_core_top10,THA,Thailand,2009,1462
+oa_core_top10,THA,Thailand,2010,1625
+oa_core_top10,THA,Thailand,2011,1696
+oa_core_top10,THA,Thailand,2012,1845
+oa_core_top10,THA,Thailand,2013,2121
+oa_core_top10,THA,Thailand,2014,2135
+oa_core_top10,THA,Thailand,2015,2391
+oa_core_top10,THA,Thailand,2016,2846
+oa_core_top10,THA,Thailand,2017,2475
+oa_core_top10,THA,Thailand,2018,2549
+oa_core_top10,THA,Thailand,2019,2898
+oa_core_top10,THA,Thailand,2020,3315
+oa_core_top10,THA,Thailand,2021,3847
+oa_core_top10,THA,Thailand,2022,4071
+oa_core_uncited,THA,Thailand,2005,178
+oa_core_uncited,THA,Thailand,2006,276
+oa_core_uncited,THA,Thailand,2007,329
+oa_core_uncited,THA,Thailand,2008,420
+oa_core_uncited,THA,Thailand,2009,364
+oa_core_uncited,THA,Thailand,2010,444
+oa_core_uncited,THA,Thailand,2011,475
+oa_core_uncited,THA,Thailand,2012,677
+oa_core_uncited,THA,Thailand,2013,752
+oa_core_uncited,THA,Thailand,2014,989
+oa_core_uncited,THA,Thailand,2015,858
+oa_core_uncited,THA,Thailand,2016,784
+oa_core_uncited,THA,Thailand,2017,929
+oa_core_uncited,THA,Thailand,2018,981
+oa_core_uncited,THA,Thailand,2019,1004
+oa_core_uncited,THA,Thailand,2020,904
+oa_core_uncited,THA,Thailand,2021,1006
+oa_core_uncited,THA,Thailand,2022,1403
+oa_all_articles,ZAF,South Africa,2005,7406
+oa_all_articles,ZAF,South Africa,2006,8690
+oa_all_articles,ZAF,South Africa,2007,9087
+oa_all_articles,ZAF,South Africa,2008,10297
+oa_all_articles,ZAF,South Africa,2009,11414
+oa_all_articles,ZAF,South Africa,2010,13023
+oa_all_articles,ZAF,South Africa,2011,16485
+oa_all_articles,ZAF,South Africa,2012,18825
+oa_all_articles,ZAF,South Africa,2013,20960
+oa_all_articles,ZAF,South Africa,2014,23429
+oa_all_articles,ZAF,South Africa,2015,23226
+oa_all_articles,ZAF,South Africa,2016,24706
+oa_all_articles,ZAF,South Africa,2017,24833
+oa_all_articles,ZAF,South Africa,2018,25179
+oa_all_articles,ZAF,South Africa,2019,26469
+oa_all_articles,ZAF,South Africa,2020,30656
+oa_all_articles,ZAF,South Africa,2021,32437
+oa_all_articles,ZAF,South Africa,2022,32749
+oa_all_top10,ZAF,South Africa,2005,1972
+oa_all_top10,ZAF,South Africa,2006,2382
+oa_all_top10,ZAF,South Africa,2007,2578
+oa_all_top10,ZAF,South Africa,2008,3192
+oa_all_top10,ZAF,South Africa,2009,3484
+oa_all_top10,ZAF,South Africa,2010,4204
+oa_all_top10,ZAF,South Africa,2011,5069
+oa_all_top10,ZAF,South Africa,2012,5398
+oa_all_top10,ZAF,South Africa,2013,6444
+oa_all_top10,ZAF,South Africa,2014,7273
+oa_all_top10,ZAF,South Africa,2015,7510
+oa_all_top10,ZAF,South Africa,2016,8292
+oa_all_top10,ZAF,South Africa,2017,7413
+oa_all_top10,ZAF,South Africa,2018,7209
+oa_all_top10,ZAF,South Africa,2019,7531
+oa_all_top10,ZAF,South Africa,2020,7827
+oa_all_top10,ZAF,South Africa,2021,7814
+oa_all_top10,ZAF,South Africa,2022,7726
+oa_all_uncited,ZAF,South Africa,2005,1001
+oa_all_uncited,ZAF,South Africa,2006,1163
+oa_all_uncited,ZAF,South Africa,2007,1263
+oa_all_uncited,ZAF,South Africa,2008,1399
+oa_all_uncited,ZAF,South Africa,2009,1555
+oa_all_uncited,ZAF,South Africa,2010,1817
+oa_all_uncited,ZAF,South Africa,2011,2797
+oa_all_uncited,ZAF,South Africa,2012,3678
+oa_all_uncited,ZAF,South Africa,2013,3792
+oa_all_uncited,ZAF,South Africa,2014,3730
+oa_all_uncited,ZAF,South Africa,2015,3569
+oa_all_uncited,ZAF,South Africa,2016,3388
+oa_all_uncited,ZAF,South Africa,2017,2973
+oa_all_uncited,ZAF,South Africa,2018,2811
+oa_all_uncited,ZAF,South Africa,2019,2519
+oa_all_uncited,ZAF,South Africa,2020,2833
+oa_all_uncited,ZAF,South Africa,2021,3680
+oa_all_uncited,ZAF,South Africa,2022,3959
+oa_core_articles,ZAF,South Africa,2005,4960
+oa_core_articles,ZAF,South Africa,2006,5847
+oa_core_articles,ZAF,South Africa,2007,6416
+oa_core_articles,ZAF,South Africa,2008,7032
+oa_core_articles,ZAF,South Africa,2009,7824
+oa_core_articles,ZAF,South Africa,2010,8503
+oa_core_articles,ZAF,South Africa,2011,9988
+oa_core_articles,ZAF,South Africa,2012,11403
+oa_core_articles,ZAF,South Africa,2013,12481
+oa_core_articles,ZAF,South Africa,2014,13669
+oa_core_articles,ZAF,South Africa,2015,14791
+oa_core_articles,ZAF,South Africa,2016,16069
+oa_core_articles,ZAF,South Africa,2017,17215
+oa_core_articles,ZAF,South Africa,2018,18278
+oa_core_articles,ZAF,South Africa,2019,19858
+oa_core_articles,ZAF,South Africa,2020,23158
+oa_core_articles,ZAF,South Africa,2021,24153
+oa_core_articles,ZAF,South Africa,2022,24324
+oa_core_top10,ZAF,South Africa,2005,1511
+oa_core_top10,ZAF,South Africa,2006,1775
+oa_core_top10,ZAF,South Africa,2007,1992
+oa_core_top10,ZAF,South Africa,2008,2469
+oa_core_top10,ZAF,South Africa,2009,2654
+oa_core_top10,ZAF,South Africa,2010,3064
+oa_core_top10,ZAF,South Africa,2011,3475
+oa_core_top10,ZAF,South Africa,2012,3806
+oa_core_top10,ZAF,South Africa,2013,4453
+oa_core_top10,ZAF,South Africa,2014,4857
+oa_core_top10,ZAF,South Africa,2015,5502
+oa_core_top10,ZAF,South Africa,2016,6140
+oa_core_top10,ZAF,South Africa,2017,5586
+oa_core_top10,ZAF,South Africa,2018,5730
+oa_core_top10,ZAF,South Africa,2019,6149
+oa_core_top10,ZAF,South Africa,2020,6461
+oa_core_top10,ZAF,South Africa,2021,6506
+oa_core_top10,ZAF,South Africa,2022,6473
+oa_core_uncited,ZAF,South Africa,2005,341
+oa_core_uncited,ZAF,South Africa,2006,343
+oa_core_uncited,ZAF,South Africa,2007,543
+oa_core_uncited,ZAF,South Africa,2008,467
+oa_core_uncited,ZAF,South Africa,2009,496
+oa_core_uncited,ZAF,South Africa,2010,491
+oa_core_uncited,ZAF,South Africa,2011,636
+oa_core_uncited,ZAF,South Africa,2012,825
+oa_core_uncited,ZAF,South Africa,2013,783
+oa_core_uncited,ZAF,South Africa,2014,842
+oa_core_uncited,ZAF,South Africa,2015,909
+oa_core_uncited,ZAF,South Africa,2016,925
+oa_core_uncited,ZAF,South Africa,2017,889
+oa_core_uncited,ZAF,South Africa,2018,916
+oa_core_uncited,ZAF,South Africa,2019,948
+oa_core_uncited,ZAF,South Africa,2020,926
+oa_core_uncited,ZAF,South Africa,2021,1215
+oa_core_uncited,ZAF,South Africa,2022,1337
+oa_all_articles,KOR,"Korea, Rep.",2005,30276
+oa_all_articles,KOR,"Korea, Rep.",2006,35070
+oa_all_articles,KOR,"Korea, Rep.",2007,39085
+oa_all_articles,KOR,"Korea, Rep.",2008,44673
+oa_all_articles,KOR,"Korea, Rep.",2009,51301
+oa_all_articles,KOR,"Korea, Rep.",2010,60071
+oa_all_articles,KOR,"Korea, Rep.",2011,67654
+oa_all_articles,KOR,"Korea, Rep.",2012,75657
+oa_all_articles,KOR,"Korea, Rep.",2013,82885
+oa_all_articles,KOR,"Korea, Rep.",2014,87914
+oa_all_articles,KOR,"Korea, Rep.",2015,88616
+oa_all_articles,KOR,"Korea, Rep.",2016,88302
+oa_all_articles,KOR,"Korea, Rep.",2017,81777
+oa_all_articles,KOR,"Korea, Rep.",2018,81029
+oa_all_articles,KOR,"Korea, Rep.",2019,85031
+oa_all_articles,KOR,"Korea, Rep.",2020,91945
+oa_all_articles,KOR,"Korea, Rep.",2021,96523
+oa_all_articles,KOR,"Korea, Rep.",2022,94264
+oa_all_top10,KOR,"Korea, Rep.",2005,5661
+oa_all_top10,KOR,"Korea, Rep.",2006,6518
+oa_all_top10,KOR,"Korea, Rep.",2007,7450
+oa_all_top10,KOR,"Korea, Rep.",2008,8939
+oa_all_top10,KOR,"Korea, Rep.",2009,10098
+oa_all_top10,KOR,"Korea, Rep.",2010,11624
+oa_all_top10,KOR,"Korea, Rep.",2011,13283
+oa_all_top10,KOR,"Korea, Rep.",2012,14484
+oa_all_top10,KOR,"Korea, Rep.",2013,16604
+oa_all_top10,KOR,"Korea, Rep.",2014,17004
+oa_all_top10,KOR,"Korea, Rep.",2015,17604
+oa_all_top10,KOR,"Korea, Rep.",2016,18545
+oa_all_top10,KOR,"Korea, Rep.",2017,15372
+oa_all_top10,KOR,"Korea, Rep.",2018,15598
+oa_all_top10,KOR,"Korea, Rep.",2019,16742
+oa_all_top10,KOR,"Korea, Rep.",2020,18175
+oa_all_top10,KOR,"Korea, Rep.",2021,17299
+oa_all_top10,KOR,"Korea, Rep.",2022,16607
+oa_all_uncited,KOR,"Korea, Rep.",2005,4127
+oa_all_uncited,KOR,"Korea, Rep.",2006,5466
+oa_all_uncited,KOR,"Korea, Rep.",2007,5608
+oa_all_uncited,KOR,"Korea, Rep.",2008,6551
+oa_all_uncited,KOR,"Korea, Rep.",2009,7074
+oa_all_uncited,KOR,"Korea, Rep.",2010,8559
+oa_all_uncited,KOR,"Korea, Rep.",2011,9146
+oa_all_uncited,KOR,"Korea, Rep.",2012,10376
+oa_all_uncited,KOR,"Korea, Rep.",2013,11519
+oa_all_uncited,KOR,"Korea, Rep.",2014,13011
+oa_all_uncited,KOR,"Korea, Rep.",2015,13057
+oa_all_uncited,KOR,"Korea, Rep.",2016,12995
+oa_all_uncited,KOR,"Korea, Rep.",2017,9678
+oa_all_uncited,KOR,"Korea, Rep.",2018,8193
+oa_all_uncited,KOR,"Korea, Rep.",2019,8837
+oa_all_uncited,KOR,"Korea, Rep.",2020,7577
+oa_all_uncited,KOR,"Korea, Rep.",2021,8382
+oa_all_uncited,KOR,"Korea, Rep.",2022,9536
+oa_core_articles,KOR,"Korea, Rep.",2005,25892
+oa_core_articles,KOR,"Korea, Rep.",2006,30228
+oa_core_articles,KOR,"Korea, Rep.",2007,33426
+oa_core_articles,KOR,"Korea, Rep.",2008,37121
+oa_core_articles,KOR,"Korea, Rep.",2009,42109
+oa_core_articles,KOR,"Korea, Rep.",2010,47961
+oa_core_articles,KOR,"Korea, Rep.",2011,52269
+oa_core_articles,KOR,"Korea, Rep.",2012,56710
+oa_core_articles,KOR,"Korea, Rep.",2013,61040
+oa_core_articles,KOR,"Korea, Rep.",2014,65079
+oa_core_articles,KOR,"Korea, Rep.",2015,67114
+oa_core_articles,KOR,"Korea, Rep.",2016,68961
+oa_core_articles,KOR,"Korea, Rep.",2017,69939
+oa_core_articles,KOR,"Korea, Rep.",2018,71132
+oa_core_articles,KOR,"Korea, Rep.",2019,75444
+oa_core_articles,KOR,"Korea, Rep.",2020,81409
+oa_core_articles,KOR,"Korea, Rep.",2021,85509
+oa_core_articles,KOR,"Korea, Rep.",2022,83433
+oa_core_top10,KOR,"Korea, Rep.",2005,5510
+oa_core_top10,KOR,"Korea, Rep.",2006,6352
+oa_core_top10,KOR,"Korea, Rep.",2007,7214
+oa_core_top10,KOR,"Korea, Rep.",2008,8675
+oa_core_top10,KOR,"Korea, Rep.",2009,9772
+oa_core_top10,KOR,"Korea, Rep.",2010,11104
+oa_core_top10,KOR,"Korea, Rep.",2011,12451
+oa_core_top10,KOR,"Korea, Rep.",2012,13253
+oa_core_top10,KOR,"Korea, Rep.",2013,15083
+oa_core_top10,KOR,"Korea, Rep.",2014,15548
+oa_core_top10,KOR,"Korea, Rep.",2015,16415
+oa_core_top10,KOR,"Korea, Rep.",2016,17845
+oa_core_top10,KOR,"Korea, Rep.",2017,14955
+oa_core_top10,KOR,"Korea, Rep.",2018,15213
+oa_core_top10,KOR,"Korea, Rep.",2019,16347
+oa_core_top10,KOR,"Korea, Rep.",2020,17833
+oa_core_top10,KOR,"Korea, Rep.",2021,16976
+oa_core_top10,KOR,"Korea, Rep.",2022,16342
+oa_core_uncited,KOR,"Korea, Rep.",2005,2149
+oa_core_uncited,KOR,"Korea, Rep.",2006,3224
+oa_core_uncited,KOR,"Korea, Rep.",2007,3308
+oa_core_uncited,KOR,"Korea, Rep.",2008,3402
+oa_core_uncited,KOR,"Korea, Rep.",2009,3509
+oa_core_uncited,KOR,"Korea, Rep.",2010,4092
+oa_core_uncited,KOR,"Korea, Rep.",2011,3863
+oa_core_uncited,KOR,"Korea, Rep.",2012,4524
+oa_core_uncited,KOR,"Korea, Rep.",2013,4730
+oa_core_uncited,KOR,"Korea, Rep.",2014,5094
+oa_core_uncited,KOR,"Korea, Rep.",2015,5123
+oa_core_uncited,KOR,"Korea, Rep.",2016,5462
+oa_core_uncited,KOR,"Korea, Rep.",2017,5383
+oa_core_uncited,KOR,"Korea, Rep.",2018,4748
+oa_core_uncited,KOR,"Korea, Rep.",2019,5632
+oa_core_uncited,KOR,"Korea, Rep.",2020,3917
+oa_core_uncited,KOR,"Korea, Rep.",2021,4281
+oa_core_uncited,KOR,"Korea, Rep.",2022,5007
+oa_all_articles,CZE,Czechia,2005,7282
+oa_all_articles,CZE,Czechia,2006,8550
+oa_all_articles,CZE,Czechia,2007,9041
+oa_all_articles,CZE,Czechia,2008,10063
+oa_all_articles,CZE,Czechia,2009,11176
+oa_all_articles,CZE,Czechia,2010,11911
+oa_all_articles,CZE,Czechia,2011,12782
+oa_all_articles,CZE,Czechia,2012,14227
+oa_all_articles,CZE,Czechia,2013,16342
+oa_all_articles,CZE,Czechia,2014,18812
+oa_all_articles,CZE,Czechia,2015,19426
+oa_all_articles,CZE,Czechia,2016,20419
+oa_all_articles,CZE,Czechia,2017,20058
+oa_all_articles,CZE,Czechia,2018,20256
+oa_all_articles,CZE,Czechia,2019,21275
+oa_all_articles,CZE,Czechia,2020,23402
+oa_all_articles,CZE,Czechia,2021,24649
+oa_all_articles,CZE,Czechia,2022,23915
+oa_all_top10,CZE,Czechia,2005,1243
+oa_all_top10,CZE,Czechia,2006,1585
+oa_all_top10,CZE,Czechia,2007,1773
+oa_all_top10,CZE,Czechia,2008,2095
+oa_all_top10,CZE,Czechia,2009,2246
+oa_all_top10,CZE,Czechia,2010,2516
+oa_all_top10,CZE,Czechia,2011,2864
+oa_all_top10,CZE,Czechia,2012,3119
+oa_all_top10,CZE,Czechia,2013,3715
+oa_all_top10,CZE,Czechia,2014,4047
+oa_all_top10,CZE,Czechia,2015,4594
+oa_all_top10,CZE,Czechia,2016,4955
+oa_all_top10,CZE,Czechia,2017,4062
+oa_all_top10,CZE,Czechia,2018,4188
+oa_all_top10,CZE,Czechia,2019,4292
+oa_all_top10,CZE,Czechia,2020,4753
+oa_all_top10,CZE,Czechia,2021,4744
+oa_all_top10,CZE,Czechia,2022,4340
+oa_all_uncited,CZE,Czechia,2005,1073
+oa_all_uncited,CZE,Czechia,2006,1250
+oa_all_uncited,CZE,Czechia,2007,1247
+oa_all_uncited,CZE,Czechia,2008,1447
+oa_all_uncited,CZE,Czechia,2009,1613
+oa_all_uncited,CZE,Czechia,2010,1806
+oa_all_uncited,CZE,Czechia,2011,2112
+oa_all_uncited,CZE,Czechia,2012,2680
+oa_all_uncited,CZE,Czechia,2013,3194
+oa_all_uncited,CZE,Czechia,2014,3571
+oa_all_uncited,CZE,Czechia,2015,3497
+oa_all_uncited,CZE,Czechia,2016,3726
+oa_all_uncited,CZE,Czechia,2017,3486
+oa_all_uncited,CZE,Czechia,2018,3195
+oa_all_uncited,CZE,Czechia,2019,3269
+oa_all_uncited,CZE,Czechia,2020,3213
+oa_all_uncited,CZE,Czechia,2021,3688
+oa_all_uncited,CZE,Czechia,2022,4330
+oa_core_articles,CZE,Czechia,2005,6055
+oa_core_articles,CZE,Czechia,2006,7089
+oa_core_articles,CZE,Czechia,2007,7477
+oa_core_articles,CZE,Czechia,2008,8089
+oa_core_articles,CZE,Czechia,2009,8941
+oa_core_articles,CZE,Czechia,2010,9465
+oa_core_articles,CZE,Czechia,2011,9972
+oa_core_articles,CZE,Czechia,2012,10723
+oa_core_articles,CZE,Czechia,2013,11985
+oa_core_articles,CZE,Czechia,2014,13935
+oa_core_articles,CZE,Czechia,2015,14973
+oa_core_articles,CZE,Czechia,2016,15565
+oa_core_articles,CZE,Czechia,2017,15476
+oa_core_articles,CZE,Czechia,2018,15906
+oa_core_articles,CZE,Czechia,2019,16915
+oa_core_articles,CZE,Czechia,2020,18802
+oa_core_articles,CZE,Czechia,2021,20042
+oa_core_articles,CZE,Czechia,2022,19092
+oa_core_top10,CZE,Czechia,2005,1189
+oa_core_top10,CZE,Czechia,2006,1510
+oa_core_top10,CZE,Czechia,2007,1669
+oa_core_top10,CZE,Czechia,2008,1933
+oa_core_top10,CZE,Czechia,2009,2082
+oa_core_top10,CZE,Czechia,2010,2306
+oa_core_top10,CZE,Czechia,2011,2627
+oa_core_top10,CZE,Czechia,2012,2840
+oa_core_top10,CZE,Czechia,2013,3279
+oa_core_top10,CZE,Czechia,2014,3589
+oa_core_top10,CZE,Czechia,2015,4082
+oa_core_top10,CZE,Czechia,2016,4457
+oa_core_top10,CZE,Czechia,2017,3662
+oa_core_top10,CZE,Czechia,2018,3830
+oa_core_top10,CZE,Czechia,2019,3932
+oa_core_top10,CZE,Czechia,2020,4380
+oa_core_top10,CZE,Czechia,2021,4441
+oa_core_top10,CZE,Czechia,2022,4064
+oa_core_uncited,CZE,Czechia,2005,481
+oa_core_uncited,CZE,Czechia,2006,565
+oa_core_uncited,CZE,Czechia,2007,565
+oa_core_uncited,CZE,Czechia,2008,593
+oa_core_uncited,CZE,Czechia,2009,643
+oa_core_uncited,CZE,Czechia,2010,658
+oa_core_uncited,CZE,Czechia,2011,672
+oa_core_uncited,CZE,Czechia,2012,807
+oa_core_uncited,CZE,Czechia,2013,1034
+oa_core_uncited,CZE,Czechia,2014,1260
+oa_core_uncited,CZE,Czechia,2015,1310
+oa_core_uncited,CZE,Czechia,2016,1220
+oa_core_uncited,CZE,Czechia,2017,1211
+oa_core_uncited,CZE,Czechia,2018,1076
+oa_core_uncited,CZE,Czechia,2019,1181
+oa_core_uncited,CZE,Czechia,2020,980
+oa_core_uncited,CZE,Czechia,2021,1270
+oa_core_uncited,CZE,Czechia,2022,1437

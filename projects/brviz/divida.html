@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.4">
+<title>Dívida, previdência e salário mínimo | brviz</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/style.6b7d96d6.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/style.6b7d96d6.css">
+<link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
+<link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
+<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
+<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/c662ea05.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/d162d8c6.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/5cedd0be.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/65d51007.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/c576a91a.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/8b43826d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/3fb06f14.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/20b76948.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/8683b012.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/5c319046.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/33924f3e.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.2/8d67a1ae.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/8037bd0b.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/a9ba0229.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/e0a47f97.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/f9e9e0ab.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/2da8eb3b.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/09002e01.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/5108797c.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/c9f2571b.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/f3c78e0d.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/28717d05.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/7c6e2a50.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3d1d57c6.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/643581a8.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/e99232db.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/bd07fd9a.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/d09f7cc9.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/604cb63b.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/f53f17b2.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/af036d7e.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.1.0/7b06abe7.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/5f640032.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.3/b42f30a7.js">
+<script>document.querySelector('meta[name="viewport"]')?.setAttribute("content","width=device-width, initial-scale=1")</script>
+<script type="module">
+const TOC_CLASS = "brviz-toc";
+
+let observer;
+
+function closeSidebar() {
+  const toggle = document.querySelector("#observablehq-sidebar-toggle");
+  if (toggle) {
+    toggle.checked = false;
+    toggle.indeterminate = false;
+  }
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (sidebar?.contains(document.activeElement)) document.activeElement.blur();
+}
+
+function mountTocSidebar() {
+  const toc = document.querySelector("#observablehq-toc nav");
+  const sidebar = document.querySelector("#observablehq-sidebar");
+  if (!toc || !sidebar) return;
+
+  observer?.disconnect();
+  sidebar.querySelector(`.${TOC_CLASS}`)?.remove();
+
+  const section = document.createElement("section");
+  section.className = TOC_CLASS;
+  const title = document.createElement("div");
+  title.textContent = toc.querySelector("div")?.textContent ?? "Nesta página";
+  const ol = document.createElement("ol");
+  for (const a of toc.querySelectorAll("ol a")) {
+    const li = document.createElement("li");
+    li.className = "observablehq-link";
+    const link = a.cloneNode(true);
+    li.append(link);
+    ol.append(li);
+  }
+  section.append(title, ol);
+  sidebar.append(section);
+
+  ol.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) return;
+    queueMicrotask(closeSidebar);
+  });
+
+  const sync = () => {
+    const href = toc.querySelector(".observablehq-secondary-link-active a")?.getAttribute("href");
+    for (const li of ol.querySelectorAll("li")) {
+      li.classList.toggle(
+        "observablehq-link-active",
+        li.querySelector("a")?.getAttribute("href") === href,
+      );
+    }
+  };
+  observer = new MutationObserver(sync);
+  observer.observe(toc, { subtree: true, attributes: true, attributeFilter: ["class"] });
+  sync();
+}
+
+mountTocSidebar();
+</script>
+<script type="module">
+
+import {define} from "./_observablehq/client.a97643eb.js";
+import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
+
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
+registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
+
+define({id: "db24c6e0", inputs: ["FileAttachment","d3","html","getComputedStyle","Plot"], outputs: ["load","series","at","last","keep","NAMES","metricPlot","barDelta","wdi","pisa","d","debt","primary","balance","rev","exp","club","debtClub","interestOf","year","braDebt","braPrimary","braInterest","braRev","braExp","firstYear","braYears","fiscalRows","nominalRows","mean","braInterestMean","braPrimaryMean","latestPoint","peerBars","debtBars","interestBars","revBars","rankOf","rankDebt","rankInterest","rankRev","nth","peerMean","debt13","debt20","fmtPp","fmtSigned","lede","fiscalPlot"], body: async (FileAttachment,d3,html,getComputedStyle,Plot) => {
+const [{load, series, at, last, keep, NAMES}, {metricPlot, barDelta}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
+
+const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
+const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });
+const d = load(wdi, pisa);
+
+const debt = series("gg_debt", wdi);
+const primary = series("gg_primary", wdi);
+const balance = series("gg_balance", wdi);
+const rev = series("gg_rev", wdi);
+const exp = series("gg_exp", wdi);
+
+const club = d.club90.filter((iso) => !["UMC", "LCN"].includes(iso));
+const debtClub = keep(debt, club);
+
+const interestOf = (iso, year) => {
+  const p = at(primary, iso, year);
+  const b = at(balance, iso, year);
+  return p == null || b == null ? undefined : p - b;
+};
+
+const year = last(debt, "BRA")?.year;
+const braDebt = at(debt, "BRA", year);
+const braPrimary = at(primary, "BRA", year);
+const braInterest = interestOf("BRA", year);
+const braRev = at(rev, "BRA", year);
+const braExp = at(exp, "BRA", year);
+
+const firstYear = d3.min(primary.filter((r) => r.iso === "BRA"), (r) => r.year);
+const braYears = d3.range(firstYear, year + 1);
+const fiscalRows = braYears.flatMap((y) => {
+  const p = at(primary, "BRA", y);
+  const i = interestOf("BRA", y);
+  if (p == null || i == null) return [];
+  return [
+    { year: y, kind: "Déficit primário", value: -p },
+    { year: y, kind: "Juros", value: i },
+  ];
+});
+const nominalRows = braYears
+  .map((y) => ({ year: y, value: -at(balance, "BRA", y) }))
+  .filter((r) => Number.isFinite(r.value));
+
+const mean = (xs) => {
+  const v = xs.filter(Number.isFinite);
+  return v.length ? d3.mean(v) : undefined;
+};
+const braInterestMean = mean(braYears.map((y) => interestOf("BRA", y)));
+const braPrimaryMean = (y0, y1) => mean(d3.range(y0, y1 + 1).map((y) => at(primary, "BRA", y)));
+
+const latestPoint = (rows, iso) => {
+  const row = last(rows, iso);
+  return row && row.year >= year - 1 ? row : undefined;
+};
+
+function peerBars(valueOf) {
+  return club
+    .map((iso) => {
+      const value = valueOf(iso);
+      if (!Number.isFinite(value)) return;
+      return { iso, name: NAMES[iso] ?? iso, value, tone: iso === "BRA" ? "bra" : "peer" };
+    })
+    .filter((row) => row);
+}
+
+const debtBars = peerBars((iso) => latestPoint(debt, iso)?.value);
+const interestBars = peerBars((iso) => interestOf(iso, year));
+const revBars = peerBars((iso) => latestPoint(rev, iso)?.value);
+
+function rankOf(rows, iso) {
+  const sorted = [...rows].sort((a, b) => b.value - a.value);
+  return { pos: sorted.findIndex((row) => row.iso === iso) + 1, n: sorted.length };
+}
+
+const rankDebt = rankOf(debtBars, "BRA");
+const rankInterest = rankOf(interestBars, "BRA");
+const rankRev = rankOf(revBars, "BRA");
+const nth = ({ pos }, noun) => (pos === 1 ? `a maior ${noun}` : `a ${pos}ª maior ${noun}`);
+const peerMean = (rows) => mean(rows.filter((r) => r.iso !== "BRA").map((r) => r.value));
+
+const debt13 = at(debt, "BRA", 2013);
+const debt20 = at(debt, "BRA", 2020);
+const fmtPp = (x) => (x == null ? "—" : `${x.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%`);
+const fmtSigned = (x) =>
+  x == null ? "—" : `${x.toLocaleString("pt-BR", { maximumFractionDigits: 1, signDisplay: "exceptZero" })}%`;
+
+function lede(kicker, title, value, neg = false) {
+  return html`<div class="lede">
+    <div class="lede-kicker">${kicker}</div>
+    <div class="lede-title">${title}</div>
+    <div class="lede-big ${neg ? "neg" : ""}">${value}</div>
+  </div>`;
+}
+
+function fiscalPlot(width) {
+  const bra = getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(260, Math.min(380, width * 0.7))),
+    marginLeft: 48,
+    x: { label: null, tickFormat: "d", interval: 1 },
+    y: { label: "% do PIB", grid: true },
+    color: { legend: true, domain: ["Déficit primário", "Juros", "Déficit nominal"], range: [bra, "#b45309", "currentColor"] },
+    marks: [
+      Plot.barY(fiscalRows, { x: "year", y: "value", fill: "kind", fillOpacity: 0.8, tip: { format: { y: (v) => fmtPp(v) } } }),
+      Plot.ruleY([0]),
+      Plot.lineY(nominalRows, { x: "year", y: "value", stroke: "currentColor", strokeWidth: 1.5 }),
+      Plot.dot(nominalRows, { x: "year", y: "value", fill: "currentColor", r: 2.5 }),
+    ],
+  });
+}
+return {load,series,at,last,keep,NAMES,metricPlot,barDelta,wdi,pisa,d,debt,primary,balance,rev,exp,club,debtClub,interestOf,year,braDebt,braPrimary,braInterest,braRev,braExp,firstYear,braYears,fiscalRows,nominalRows,mean,braInterestMean,braPrimaryMean,latestPoint,peerBars,debtBars,interestBars,revBars,rankOf,rankDebt,rankInterest,rankRev,nth,peerMean,debt13,debt20,fmtPp,fmtSigned,lede,fiscalPlot};
+}});
+
+define({id: "c0a55e34", inputs: ["html","lede","year","fmtPp","braDebt","braInterest","fmtSigned","braPrimary","display"], body: async (html,lede,year,fmtPp,braDebt,braInterest,fmtSigned,braPrimary,display) => {
+display(await(
+html`<div class="lede-grid">
+  ${lede("Dívida bruta do governo geral", `% do PIB · ${year}`, fmtPp(braDebt), true)}
+  ${lede("Juros", `% do PIB · ${year}`, fmtPp(braInterest), true)}
+  ${lede("Resultado primário", `% do PIB · ${year}`, fmtSigned(braPrimary), braPrimary < 0)}
+</div>`
+))
+}});
+
+define({id: "4cb4ea25", mode: "inline", inputs: ["year","display"], body: async (year,display) => {
+display(await(
+year
+))
+}});
+
+define({id: "211278a6", mode: "inline", inputs: ["fmtPp","braDebt","display"], body: async (fmtPp,braDebt,display) => {
+display(await(
+fmtPp(braDebt)
+))
+}});
+
+define({id: "b89ff7ee", mode: "inline", inputs: ["nth","rankDebt","display"], body: async (nth,rankDebt,display) => {
+display(await(
+nth(rankDebt, "")
+))
+}});
+
+define({id: "ad46d0da", mode: "inline", inputs: ["rankDebt","display"], body: async (rankDebt,display) => {
+display(await(
+rankDebt.n
+))
+}});
+
+define({id: "8ee82192", mode: "inline", inputs: ["fmtPp","peerMean","debtBars","display"], body: async (fmtPp,peerMean,debtBars,display) => {
+display(await(
+fmtPp(peerMean(debtBars))
+))
+}});
+
+define({id: "d8c2a8b4", mode: "inline", inputs: ["fmtPp","at","debt","display"], body: async (fmtPp,at,debt,display) => {
+display(await(
+fmtPp(at(debt, "BRA", 2002))
+))
+}});
+
+define({id: "7454e53a", mode: "inline", inputs: ["fmtPp","debt13","display"], body: async (fmtPp,debt13,display) => {
+display(await(
+fmtPp(debt13)
+))
+}});
+
+define({id: "268df4ab", mode: "inline", inputs: ["d","debt20","debt13","display"], body: async (d,debt20,debt13,display) => {
+display(await(
+d.fmtGini(debt20 - debt13)
+))
+}});
+
+define({id: "5e8ca3ba", mode: "inline", inputs: ["fmtPp","debt20","display"], body: async (fmtPp,debt20,display) => {
+display(await(
+fmtPp(debt20)
+))
+}});
+
+define({id: "11c987b8", mode: "inline", inputs: ["resize","metricPlot","debtClub","display"], body: async (resize,metricPlot,debtClub,display) => {
+display(await(
+resize((width) => metricPlot(debtClub, {width, yLabel: "dívida bruta do governo geral (% do PIB)", rules: [2013]}))
+))
+}});
+
+define({id: "1e075b13", mode: "inline", inputs: ["resize","barDelta","debtBars","year","fmtPp","display"], body: async (resize,barDelta,debtBars,year,fmtPp,display) => {
+display(await(
+resize((width) => barDelta(debtBars, {width, xLabel: `dívida bruta (% do PIB, ${year} ou ano anterior)`, format: fmtPp}))
+))
+}});
+
+define({id: "1e3532e9", mode: "inline", inputs: ["firstYear","display"], body: async (firstYear,display) => {
+display(await(
+firstYear
+))
+}});
+
+define({id: "4cb4ea25-1", mode: "inline", inputs: ["year","display"], body: async (year,display) => {
+display(await(
+year
+))
+}});
+
+define({id: "ce6fc24a", mode: "inline", inputs: ["fmtPp","braInterestMean","display"], body: async (fmtPp,braInterestMean,display) => {
+display(await(
+fmtPp(braInterestMean)
+))
+}});
+
+define({id: "f9074a2b", mode: "inline", inputs: ["fmtPp","braPrimaryMean","display"], body: async (fmtPp,braPrimaryMean,display) => {
+display(await(
+fmtPp(braPrimaryMean(2001, 2013))
+))
+}});
+
+define({id: "7af1c9d4", mode: "inline", inputs: ["fmtPp","braPrimaryMean","display"], body: async (fmtPp,braPrimaryMean,display) => {
+display(await(
+fmtPp(-braPrimaryMean(2014, 2019))
+))
+}});
+
+define({id: "8aff23e8", mode: "inline", inputs: ["resize","fiscalPlot","display"], body: async (resize,fiscalPlot,display) => {
+display(await(
+resize((width) => fiscalPlot(width))
+))
+}});
+
+define({id: "4cb4ea25-2", mode: "inline", inputs: ["year","display"], body: async (year,display) => {
+display(await(
+year
+))
+}});
+
+define({id: "0dd4635c", mode: "inline", inputs: ["fmtPp","braInterest","display"], body: async (fmtPp,braInterest,display) => {
+display(await(
+fmtPp(braInterest)
+))
+}});
+
+define({id: "ca167da4", mode: "inline", inputs: ["nth","rankInterest","display"], body: async (nth,rankInterest,display) => {
+display(await(
+nth(rankInterest, "conta")
+))
+}});
+
+define({id: "87bfdbac", mode: "inline", inputs: ["rankInterest","display"], body: async (rankInterest,display) => {
+display(await(
+rankInterest.n
+))
+}});
+
+define({id: "45d6b89d", mode: "inline", inputs: ["fmtPp","peerMean","interestBars","display"], body: async (fmtPp,peerMean,interestBars,display) => {
+display(await(
+fmtPp(peerMean(interestBars))
+))
+}});
+
+define({id: "044c45e0", mode: "inline", inputs: ["resize","barDelta","interestBars","year","fmtPp","display"], body: async (resize,barDelta,interestBars,year,fmtPp,display) => {
+display(await(
+resize((width) => barDelta(interestBars, {width, xLabel: `juros (% do PIB, ${year})`, format: fmtPp}))
+))
+}});
+
+define({id: "3db117a8", mode: "inline", inputs: ["fmtSigned","braPrimary","display"], body: async (fmtSigned,braPrimary,display) => {
+display(await(
+fmtSigned(braPrimary)
+))
+}});
+
+define({id: "0dd4635c-1", mode: "inline", inputs: ["fmtPp","braInterest","display"], body: async (fmtPp,braInterest,display) => {
+display(await(
+fmtPp(braInterest)
+))
+}});
+
+define({id: "4cb4ea25-3", mode: "inline", inputs: ["year","display"], body: async (year,display) => {
+display(await(
+year
+))
+}});
+
+define({id: "ee4ef221", mode: "inline", inputs: ["fmtPp","at","balance","year","display"], body: async (fmtPp,at,balance,year,display) => {
+display(await(
+fmtPp(-at(balance, "BRA", year))
+))
+}});
+
+define({id: "4cb4ea25-4", mode: "inline", inputs: ["year","display"], body: async (year,display) => {
+display(await(
+year
+))
+}});
+
+define({id: "8830e3f9", mode: "inline", inputs: ["fmtPp","braRev","display"], body: async (fmtPp,braRev,display) => {
+display(await(
+fmtPp(braRev)
+))
+}});
+
+define({id: "9bac9594", mode: "inline", inputs: ["nth","rankRev","display"], body: async (nth,rankRev,display) => {
+display(await(
+nth(rankRev, "")
+))
+}});
+
+define({id: "435540f3", mode: "inline", inputs: ["rankRev","display"], body: async (rankRev,display) => {
+display(await(
+rankRev.n
+))
+}});
+
+define({id: "2b32e881", mode: "inline", inputs: ["fmtPp","peerMean","revBars","display"], body: async (fmtPp,peerMean,revBars,display) => {
+display(await(
+fmtPp(peerMean(revBars))
+))
+}});
+
+define({id: "6003d663", mode: "inline", inputs: ["fmtPp","braExp","display"], body: async (fmtPp,braExp,display) => {
+display(await(
+fmtPp(braExp)
+))
+}});
+
+define({id: "0c22452c", mode: "inline", inputs: ["resize","barDelta","revBars","year","fmtPp","display"], body: async (resize,barDelta,revBars,year,fmtPp,display) => {
+display(await(
+resize((width) => barDelta(revBars, {width, xLabel: `receita do governo geral (% do PIB, ${year} ou ano anterior)`, format: fmtPp}))
+))
+}});
+
+define({id: "0dd4635c-2", mode: "inline", inputs: ["fmtPp","braInterest","display"], body: async (fmtPp,braInterest,display) => {
+display(await(
+fmtPp(braInterest)
+))
+}});
+
+define({id: "4cb4ea25-5", mode: "inline", inputs: ["year","display"], body: async (year,display) => {
+display(await(
+year
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">brviz</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./README">Untitled</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./divida">Dívida, previdência e salário mínimo</a></li>
+    <li class="observablehq-link"><a href="./educacao">Educação</a></li>
+    <li class="observablehq-link"><a href="./eleicoes">Eleições: onde o PT tem voto</a></li>
+    <li class="observablehq-link"><a href="./ensino-superior">Ensino superior: irrelevante?</a></li>
+    <li class="observablehq-link"><a href="./seguranca">Segurança pública</a></li>
+  </ol>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Nesta página</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#a-divida-alta-para-o-grupo">A dívida: alta para o grupo</a></li>
+<li class="observablehq-secondary-link"><a href="#por-que-a-divida-sobe-juros-e-deficit-primario">Por que a dívida sobe: juros e déficit primário</a></li>
+<li class="observablehq-secondary-link"><a href="#receita-alta-despesa-mais-alta">Receita alta, despesa mais alta</a></li>
+<li class="observablehq-secondary-link"><a href="#onde-entra-o-salario-minimo">Onde entra o salário mínimo</a></li>
+<li class="observablehq-secondary-link"><a href="#o-que-o-fmi-recomenda">O que o FMI recomenda</a></li>
+<li class="observablehq-secondary-link"><a href="#o-que-o-banco-mundial-recomenda">O que o Banco Mundial recomenda</a></li>
+<li class="observablehq-secondary-link"><a href="#o-que-a-desvinculacao-nao-diz">O que a desvinculação não diz</a></li>
+<li class="observablehq-secondary-link"><a href="#limites-desta-pagina">Limites desta página</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="divida-previdencia-e-salario-minimo" tabindex="-1"><a class="observablehq-header-anchor" href="#divida-previdencia-e-salario-minimo">Dívida, previdência e salário mínimo</a></h1>
+<p>Esta página acompanha o <a href="./">relatório</a>. Ela junta duas coisas: a trajetória da dívida pública brasileira, com o mesmo grupo de pares, e o debate sobre desvincular do salário mínimo o BPC e o piso das aposentadorias, com o que o FMI e o Banco Mundial recomendam e por quê.</p>
+<div class="observablehq observablehq--block"><!--:db24c6e0:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:c0a55e34:--></div>
+<h2 id="a-divida-alta-para-o-grupo" tabindex="-1"><a class="observablehq-header-anchor" href="#a-divida-alta-para-o-grupo">A dívida: alta para o grupo</a></h2>
+<p>Em <observablehq-loading></observablehq-loading><!--:4cb4ea25:-->, a dívida bruta do governo geral brasileiro era <observablehq-loading></observablehq-loading><!--:211278a6:--> do PIB, pelo critério do FMI. É <observablehq-loading></observablehq-loading><!--:b89ff7ee:-->entre <observablehq-loading></observablehq-loading><!--:ad46d0da:--> pares com dado. A média simples dos demais é <observablehq-loading></observablehq-loading><!--:8ee82192:-->.</p>
+<p>A trajetória tem duas fases. Até 2013 a dívida caiu devagar, de <observablehq-loading></observablehq-loading><!--:d8c2a8b4:--> em 2002 para <observablehq-loading></observablehq-loading><!--:7454e53a:--> em 2013, o ponto mais baixo da série. Entre 2013 e 2020 subiu <observablehq-loading></observablehq-loading><!--:268df4ab:--> pontos do PIB, para <observablehq-loading></observablehq-loading><!--:5e8ca3ba:-->. Desde então oscila acima de 80%.</p>
+<p><observablehq-loading></observablehq-loading><!--:11c987b8:--></p>
+<p><observablehq-loading></observablehq-loading><!--:1e075b13:--></p>
+<div class="takeaway">
+  <strong>Este número é maior que o do noticiário brasileiro.</strong>
+  <span>O FMI conta na dívida bruta os títulos do Tesouro na carteira do Banco Central. O Banco Central do Brasil, na medida oficial (DBGG), não conta a maior parte deles. A comparação entre países só funciona com uma definição única, e a usada aqui é a do FMI.</span>
+</div>
+<h2 id="por-que-a-divida-sobe-juros-e-deficit-primario" tabindex="-1"><a class="observablehq-header-anchor" href="#por-que-a-divida-sobe-juros-e-deficit-primario">Por que a dívida sobe: juros e déficit primário</a></h2>
+<p>A dívida cresce quando o governo gasta mais do que arrecada. Essa diferença tem duas partes. O resultado primário é receita menos despesa, sem contar juros. Os juros são o custo da dívida que já existe.</p>
+<p>No Brasil, os juros dominam. De <observablehq-loading></observablehq-loading><!--:1e3532e9:--> a <observablehq-loading></observablehq-loading><!--:4cb4ea25-1:-->, eles custaram em média <observablehq-loading></observablehq-loading><!--:ce6fc24a:--> do PIB por ano. O resultado primário foi superavitário em média <observablehq-loading></observablehq-loading><!--:f9074a2b:--> entre 2001 e 2013, deficitário em média <observablehq-loading></observablehq-loading><!--:7af1c9d4:--> entre 2014 e 2019, e oscilou perto de zero depois da pandemia.</p>
+<p><observablehq-loading></observablehq-loading><!--:8aff23e8:--></p>
+<p>As barras empilham o déficit primário (azul; abaixo de zero é superávit) e os juros (laranja). A linha é o déficit nominal, a soma dos dois.</p>
+<p>Em <observablehq-loading></observablehq-loading><!--:4cb4ea25-2:-->, o Brasil gastou <observablehq-loading></observablehq-loading><!--:0dd4635c:--> do PIB com juros, <observablehq-loading></observablehq-loading><!--:ca167da4:--> entre <observablehq-loading></observablehq-loading><!--:87bfdbac:--> pares. A média dos demais foi <observablehq-loading></observablehq-loading><!--:45d6b89d:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:044c45e0:--></p>
+<div class="takeaway">
+  <strong>Um superávit primário pequeno não basta com juros desse tamanho.</strong>
+  <span>Com o primário em <observablehq-loading></observablehq-loading><!--:3db117a8:--> e juros de <observablehq-loading></observablehq-loading><!--:0dd4635c-1:--> do PIB em <observablehq-loading></observablehq-loading><!--:4cb4ea25-3:-->, o déficit nominal foi <observablehq-loading></observablehq-loading><!--:ee4ef221:-->. O Banco Mundial calcula que estabilizar a dívida perto do nível atual exige superávit primário de 2% a 3% do PIB, um ajuste de cerca de 3% do PIB em relação a 2024.</span>
+</div>
+<p>Os juros altos não são só herança da dívida grande. A taxa real de juros brasileira está entre as mais altas do mundo, e ela depende da política monetária, da inflação e da confiança na trajetória fiscal. Essa é a crítica mais comum às recomendações abaixo: elas tratam do gasto primário e falam pouco do custo dos juros. As duas coisas se ligam. O FMI argumenta que um esforço fiscal crível ajuda a reduzir a inflação esperada e, com ela, os juros.</p>
+<h2 id="receita-alta-despesa-mais-alta" tabindex="-1"><a class="observablehq-header-anchor" href="#receita-alta-despesa-mais-alta">Receita alta, despesa mais alta</a></h2>
+<p>O Brasil arrecada muito para o seu nível de renda. Em <observablehq-loading></observablehq-loading><!--:4cb4ea25-4:-->, a receita do governo geral foi <observablehq-loading></observablehq-loading><!--:8830e3f9:--> do PIB, <observablehq-loading></observablehq-loading><!--:9bac9594:-->entre <observablehq-loading></observablehq-loading><!--:435540f3:--> pares (média dos demais: <observablehq-loading></observablehq-loading><!--:2b32e881:-->). A despesa foi <observablehq-loading></observablehq-loading><!--:6003d663:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:0c22452c:--></p>
+<p>É por isso que os dois organismos põem a maior parte do ajuste do lado da despesa. O Banco Mundial escreve que, dada a carga tributária alta e as alíquotas altas sobre consumo e trabalho, a maior parte do ajuste deverá vir do gasto. As reformas tributárias, no texto dele, servem para tornar o sistema mais eficiente e justo, não para arrecadar mais.</p>
+<h2 id="onde-entra-o-salario-minimo" tabindex="-1"><a class="observablehq-header-anchor" href="#onde-entra-o-salario-minimo">Onde entra o salário mínimo</a></h2>
+<p>A Constituição amarra dois benefícios ao salário mínimo. O artigo 201 diz que nenhum benefício que substitua o salário do segurado pode ser menor que o mínimo. O artigo 203 garante um salário mínimo por mês ao idoso e à pessoa com deficiência que não consigam se manter, o Benefício de Prestação Continuada (BPC).</p>
+<p>Na prática, quando o salário mínimo sobe, sobem junto o piso do INSS, o BPC, o abono salarial e o seguro-desemprego. Os números do Banco Mundial, para 2024:</p>
+<ul>
+<li>Cerca de 40% dos pagamentos de aposentadorias urbanas estão no piso.</li>
+<li>Todas as aposentadorias rurais (1,6% do PIB) e todo o BPC (0,9% do PIB) seguem o mínimo.</li>
+<li>Abono salarial (0,2% do PIB) e seguro-desemprego (0,4% do PIB) também.</li>
+<li>Cada R$ 1 a mais no salário mínimo eleva o gasto federal com esses programas em R$ 421 milhões. Um aumento de R$ 50, 3,2% do valor de 2025, abre 0,2% do PIB de despesa.</li>
+</ul>
+<p>Desde 2025, o ganho real do salário mínimo está limitado a 2,5% ao ano, o mesmo teto da regra de gastos. Isso freia o crescimento desses benefícios em anos de PIB forte, mas não os desvincula. Um aumento de 2,5% ainda custa cerca de 0,15% do PIB por ano, antes do efeito do envelhecimento sobre o número de beneficiários.</p>
+<h2 id="o-que-o-fmi-recomenda" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-o-fmi-recomenda">O que o FMI recomenda</a></h2>
+<p>No Artigo IV de 2025, o FMI chama o teto de 2,5% de “um passo na direção certa”, e propõe ir além. A lista de opções para dar flexibilidade ao orçamento inclui:</p>
+<ul>
+<li>desvincular o crescimento das aposentadorias e dos benefícios assistenciais do crescimento do salário mínimo, revisando o dispositivo constitucional;</li>
+<li>conter ainda mais o ganho real do salário mínimo;</li>
+<li>pôr um teto no crescimento do gasto previdenciário;</li>
+<li>rever os pisos constitucionais de saúde e educação, alinhando o crescimento deles ao da regra de gastos.</li>
+</ul>
+<p>O FMI estima que essas medidas de gasto, juntas, melhorariam o resultado primário em 1% a 2% do PIB no médio prazo.</p>
+<p><strong>A justificativa é a rigidez.</strong> Cerca de 90% da despesa primária federal é obrigatória. O gasto previdenciário cresce mais rápido que a receita porque o benefício por pessoa segue o salário mínimo, que tende a crescer perto do PIB nominal, e porque há cada vez mais beneficiários. Como a regra fiscal limita o gasto total a 70% do crescimento real da receita, o que cresce por indexação espreme o resto. O orçamento de 2026 projeta a despesa discricionária caindo em direção a zero.</p>
+<p>Na previdência, o FMI reconhece que a reforma de 2019 estabilizou o déficit até cerca de 2030 e sugere passos adicionais: taxa de reposição menor, contribuição mais alta, fim da isenção parcial de Imposto de Renda para aposentados acima de 65 anos, idade efetiva de aposentadoria mais alta e coordenação dos benefícios não contributivos com os outros programas, para evitar pagamento duplicado. A ressalva explícita é proteger a assistência focalizada.</p>
+<p>A recomendação não é nova. O Artigo IV de 2014 já pedia rever a indexação de benefícios ao mínimo. O de 2018 pedia desvincular a aposentadoria mínima do salário mínimo como parte de uma reforma previdenciária ampla.</p>
+<h2 id="o-que-o-banco-mundial-recomenda" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-o-banco-mundial-recomenda">O que o Banco Mundial recomenda</a></h2>
+<p>O relatório <em>Dois por Um</em> (junho de 2025) é mais específico. Ele propõe desvincular do salário mínimo o piso previdenciário e as aposentadorias assistenciais, e calcular a aposentadoria contributiva em proporção aos anos de contribuição. Para o BPC, propõe um valor abaixo do das aposentadorias contributivas, e a fusão do BPC com a aposentadoria rural, para simplificar e garantir uma proteção mínima universal na velhice.</p>
+<p>As estimativas do próprio relatório:</p>
+<ul>
+<li>Desvincular só os benefícios mínimos (urbanos, rurais e BPC) economizaria cerca de R$ 19 bilhões (0,1% do PIB) no primeiro ano, chegando a 0,6% do PIB no quinto.</li>
+<li>O pacote completo, com o BPC abaixo do benefício contributivo, poderia cortar até 30% do gasto atual com benefícios mínimos — 0,9% do PIB — quando estiver totalmente em vigor.</li>
+</ul>
+<p><strong>A justificativa fiscal é a mesma do FMI</strong>, com três argumentos explícitos: a indexação automática é procíclica, porque o gasto sobe junto com o PIB nos anos bons; é incompatível com uma regra em que o gasto precisa crescer menos que a receita; e cria rigidez, porque o governo não consegue mudar prioridades. O relatório acrescenta que o salário mínimo deveria ser política de mercado de trabalho e virou parâmetro de orçamento.</p>
+<p><strong>O argumento que só o Banco Mundial faz é o de incentivo e equidade:</strong></p>
+<ul>
+<li>Cerca de dois terços dos aposentados se aposentam no piso.</li>
+<li>Só 9% dos aposentados urbanos no piso contribuíram mais de 25 anos.</li>
+<li>No piso, quem contribuiu pouco tem retorno real de 12% sobre as contribuições. Quem contribuiu mais de 25 anos tem retorno de 0%.</li>
+<li>O BPC, que não exige contribuição, paga o mesmo que a aposentadoria mínima. Contribuir a mais quase não muda o benefício, e muita gente para de contribuir ao chegar aos 15 anos exigidos.</li>
+<li>O piso põe o aposentado entre o 5º e o 6º décimo da distribuição de renda, não entre os mais pobres.</li>
+<li>RGPS e BPC pagam 32 milhões de benefícios, para 20,7 milhões de brasileiros com 65 anos ou mais, e 11% dos beneficiários recebem mais de um benefício do governo.</li>
+</ul>
+<p>Em 2022, um artigo do Banco Mundial fez a pergunta de forma direta: o idoso que nunca contribuiu deve receber o dobro do que recebe uma família jovem vulnerável no Bolsa Família?</p>
+<h2 id="o-que-a-desvinculacao-nao-diz" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-a-desvinculacao-nao-diz">O que a desvinculação não diz</a></h2>
+<ul>
+<li><strong>Desvincular não é cortar em termos reais.</strong> A proposta do FMI é parar de repassar ao benefício o ganho real do salário mínimo. A do Banco Mundial vai além no BPC, que ficaria abaixo da aposentadoria contributiva. O efeito sobre a pobreza na velhice depende do índice que substitui o mínimo e de quem a regra atinge.</li>
+<li><strong>Quem já recebe é a questão política.</strong> O Banco Mundial reconhece, para as aposentadorias militares, que mudanças em benefícios já concedidos só se viabilizam para coortes futuras. Essa ressalva não aparece escrita do mesmo jeito para o BPC.</li>
+<li><strong>A economia é pequena perto dos juros.</strong> Desvincular só os mínimos economiza 0,6% do PIB depois de cinco anos. Os juros custaram <observablehq-loading></observablehq-loading><!--:0dd4635c-2:--> do PIB em <observablehq-loading></observablehq-loading><!--:4cb4ea25-5:-->. Os dois organismos tratam a desvinculação como uma peça de um ajuste maior, não como solução isolada.</li>
+<li><strong>Há críticas.</strong> Quem se opõe aponta que o BPC e o piso tiraram milhões de idosos da pobreza, que o Chile viu protestos grandes contra pensões baixas em 2019, e que as recomendações falam pouco da conta de juros. O próprio relatório do Banco Mundial propõe, no mesmo pacote, tributar mais a renda alta e rever aposentadorias militares, que não dependem do salário mínimo.</li>
+</ul>
+<h2 id="limites-desta-pagina" tabindex="-1"><a class="observablehq-header-anchor" href="#limites-desta-pagina">Limites desta página</a></h2>
+<ul>
+<li>A dívida, a receita, a despesa e os resultados vêm do FMI (WEO e Fiscal Monitor), governo geral. A dívida bruta do FMI é maior que a DBGG oficial do Banco Central do Brasil.</li>
+<li>Os juros são calculados como resultado primário menos resultado nominal. É o custo líquido de juros, não o pagamento bruto.</li>
+<li>Os números sobre benefícios ligados ao salário mínimo e as economias estimadas são do Banco Mundial e do FMI, não dos dados deste site.</li>
+<li>Nada aqui mede o efeito de uma desvinculação sobre a pobreza.</li>
+</ul>
+<p>Fontes: IMF World Economic Outlook e Fiscal Monitor (<code>GGXWDG_NGDP</code>, <code>GGXONLB_G01_GDP_PT</code>, <code>GGXCNL_NGDP</code>, <code>GGR_G01_GDP_PT</code>, <code>G_X_G01_GDP_PT</code>) · FMI, <a href="https://www.imf.org/-/media/files/publications/cr/2025/english/1braea2025001-source-pdf.pdf" target="_blank" rel="noopener noreferrer">Brazil: 2025 Article IV Consultation</a> (Country Report 25/194), e Artigos IV de <a href="https://www.imf.org/external/pubs/ft/scr/2015/cr15121.pdf" target="_blank" rel="noopener noreferrer">2014</a> e <a href="https://www.elibrary.imf.org/view/journals/002/2018/253/article-A001-en.xml" target="_blank" rel="noopener noreferrer">2018</a> · Banco Mundial, <a href="https://documents.worldbank.org/pt/publication/documents-reports/documentdetail/099060925140039633" target="_blank" rel="noopener noreferrer"><em>Dois por Um: Políticas para Atingir Sustentabilidade Fiscal e Ambiental</em></a> (2025) · Banco Mundial, <em>A agenda da reforma previdenciária brasileira ainda não foi concluída</em> (2022) · Constituição Federal, arts. 201, § 2º, e 203, V.</p>
+</main>
+<footer id="observablehq-footer">
+<div>World Bank WDI · Observable Framework</div>
+</footer>
+</div>
+</body>
+</html>

@@ -138,8 +138,113 @@
       "code": "SE.XPD.SECO.PC.ZS",
       "lastupdated": "2026-07-13",
       "n": 391
+    },
+    "gg_rev": {
+      "code": "GGR_G01_GDP_PT",
+      "lastupdated": null,
+      "n": 1018,
+      "source": "IMF Fiscal Monitor"
+    },
+    "gg_exp": {
+      "code": "G_X_G01_GDP_PT",
+      "lastupdated": null,
+      "n": 1015,
+      "source": "IMF Fiscal Monitor"
+    },
+    "gg_debt": {
+      "code": "GGXWDG_NGDP",
+      "lastupdated": null,
+      "n": 961,
+      "source": "IMF WEO"
+    },
+    "gg_balance": {
+      "code": "GGXCNL_NGDP",
+      "lastupdated": null,
+      "n": 1015,
+      "source": "IMF WEO"
+    },
+    "gg_primary": {
+      "code": "GGXONLB_G01_GDP_PT",
+      "lastupdated": null,
+      "n": 1010,
+      "source": "IMF Fiscal Monitor"
+    },
+    "fpp_rev": {
+      "code": "rev",
+      "lastupdated": null,
+      "n": 1099,
+      "source": "IMF Public Finances in Modern History"
+    },
+    "fpp_exp": {
+      "code": "exp",
+      "lastupdated": null,
+      "n": 1099,
+      "source": "IMF Public Finances in Modern History"
+    },
+    "fpp_interest": {
+      "code": "ie",
+      "lastupdated": null,
+      "n": 1109,
+      "source": "IMF Public Finances in Modern History"
+    },
+    "pub_inv": {
+      "code": "P51G_S13_Q_POGDP_PT",
+      "lastupdated": null,
+      "n": 990,
+      "source": "IMF Investment and Capital Stock Dataset"
+    },
+    "priv_inv": {
+      "code": "P51G_PS_Q_POGDP_PT",
+      "lastupdated": null,
+      "n": 990,
+      "source": "IMF Investment and Capital Stock Dataset"
+    },
+    "homicides": {
+      "code": "VC.IHR.PSRC.P5",
+      "lastupdated": "2026-10-08",
+      "n": 958
+    },
+    "homicides_male": {
+      "code": "VC.IHR.PSRC.MA.P5",
+      "lastupdated": "2026-10-08",
+      "n": 719
+    },
+    "homicides_female": {
+      "code": "VC.IHR.PSRC.FE.P5",
+      "lastupdated": "2026-10-08",
+      "n": 719
+    },
+    "pol_stability": {
+      "code": "GOV_WGI_PV.EST",
+      "lastupdated": "2026-09-25",
+      "n": 884
+    },
+    "pop": {
+      "code": "SP.POP.TOTL",
+      "lastupdated": "2026-10-08",
+      "n": 1260
+    },
+    "patents_res": {
+      "code": "IP.PAT.RESD",
+      "lastupdated": "2026-10-08",
+      "n": 1066
+    },
+    "rnd": {
+      "code": "GB.XPD.RSDV.GD.ZS",
+      "lastupdated": "2026-10-08",
+      "n": 753
+    },
+    "researchers": {
+      "code": "SP.POP.SCIE.RD.P6",
+      "lastupdated": "2026-10-08",
+      "n": 621
+    },
+    "sci_articles": {
+      "code": "IP.JRN.ARTC.SC",
+      "lastupdated": "2026-10-08",
+      "n": 1008
     }
   },
-  "n_rows": 13209,
+  "n_rows": 31503,
   "path": "data/wdi.csv"
 }

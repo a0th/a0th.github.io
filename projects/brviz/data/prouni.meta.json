@@ -1,0 +1,28 @@
+{
+  "source": "MEC, ProUni bolsas concedidas (pda-prouni), via GitHub mirror unless data/raw/prouni has local copies",
+  "url": "https://raw.githubusercontent.com/quirinowelton/prouni-data-analytics-investigando-o-acesso-ao-ensino-superior/main/pda-prouni-",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020
+  ],
+  "indicators": {
+    "bolsas": {
+      "n": 6
+    },
+    "bolsas_curso": {
+      "n": 96
+    },
+    "bolsas_ead": {
+      "n": 6
+    },
+    "bolsas_integral": {
+      "n": 6
+    }
+  },
+  "n_rows": 114,
+  "path": "data/prouni.csv"
+}

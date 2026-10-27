@@ -13,8 +13,8 @@
 <link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
-<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
+<link rel="modulepreload" href="./_import/components/data.e41da30b.js">
+<link rel="modulepreload" href="./_import/components/plots.aac2c00c.js">
 <link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
@@ -119,11 +119,11 @@ mountTocSidebar();
 import {define} from "./_observablehq/client.a97643eb.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.5665f84d.csv","lastModified":1793096827158,"size":88504});
 registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
 
 define({id: "69a62992", inputs: ["FileAttachment","html"], outputs: ["load","at","last","metricPlot","barDelta","spendPisaPlot","invGrowthPlot","wdi","pisa","d","ppp03","ppp10","boomShare","mfgZaf","trdKor","trdZaf","trdChn","trdInd","hungerPol","hungerKor","isosOf","rankOf","levelsAt","growthAt","meanExceptBra","lastYear","braPpp90","braPppNow","korPppNow","rankPpp90","rankPppNow","clubPost","braPost","clubPostMean","rankPost","wavePost","wavePostMean","waveBoomMean","waveDilmaMean","rankDilma","totBoomPct","totBustPct","tfp10","tfp16","braTfpDilma","meanYears","braPrimaryLula","braPrimaryDilma","braPrimary14","clubLast","rankProd","rankTfp","rankInv","rankGini","rankPov","braProd10","braProdNow","braProdPost","povBoomCountries","povBoomRank","pisaBra03","pisaBra12","pisaOecd03","pisaGap03","pisaGapNow","pisaBraGain","pisaOecdDrop","barCell","ledeTip","ledeRows","indexLede","fromZero","ledeCard","pares","povertyBarMax","povertyGroups","povertyCountries","povertyTableView"], body: async (FileAttachment,html) => {
-const [{load, at, last}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
+const [{load, at, last}, {metricPlot, barDelta, spendPisaPlot, invGrowthPlot}] = await Promise.all([import("./_import/components/data.e41da30b.js"), import("./_import/components/plots.aac2c00c.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
 const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });

@@ -13,10 +13,10 @@
 <link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
-<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
-<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
+<link rel="modulepreload" href="./_import/components/data.e41da30b.js">
+<link rel="modulepreload" href="./_import/components/plots.aac2c00c.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
+<link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/097745a2.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/b8e751b6.js">
@@ -119,112 +119,204 @@ mountTocSidebar();
 import {define} from "./_observablehq/client.a97643eb.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
+registerFile("./data/edu_intl.csv", {"name":"./data/edu_intl.csv","mimeType":"text/csv","path":"./_file/data/edu_intl.104c02e9.csv","lastModified":1793096827480,"size":601643});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.5665f84d.csv","lastModified":1793096827158,"size":88504});
 registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
 
-define({id: "b6c9e8e8", inputs: ["FileAttachment","html"], outputs: ["load","series","at","last","keep","NAMES","metricPlot","barDelta","spendPisaPlot","wdi","pisa","d","math","read","sci","pupil","ppp","peers","math90","read90","sci90","pupil90","yearsOf","commonStart","rankOf","change","levelRows","deltaRows","moved","mathStart","readStart","sciStart","mathEnd","readEnd","sciEnd","braMath","oecdMath","polMath","korMath","braRead","braSci","oecdRead","oecdSci","mathGap0","mathGap1","mathClosed","mathFromBra","mathFromOecd","mathSince12","readSince12","sciSince12","rankMath","rankRead","rankSci","korOverBra","lede"], body: async (FileAttachment,html) => {
-const [{load, series, at, last, keep, NAMES}, {metricPlot, barDelta, spendPisaPlot}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
+define({id: "6e6a20d5", inputs: ["FileAttachment","getComputedStyle","d3","Plot","html"], outputs: ["load","series","at","last","keep","NAMES","metricPlot","barDelta","wdi","pisa","intl","d","math","read","sci","gdp","cum","nm","fmt0","fmtSigned","usd","listPt","braColor","countries","Y","mathAt","START_GAP","firstYear","START","gdpAt","INCOME_BAND","INCOME","LATAM_ALL","LATAM","groupBars","rankOf","above","below","clubIsos","braFirst","clubTop","startChange","startChangeRank","startLevel","braChange","braPeak","fitRows","fit","expected","resid","braResid","residRank","perDoubling","incomeLevel","incomeRank","latamLevel","latamRank","subjectRanks","readR","sciR","rk","cumAt","braCum","braCum0","braCumGrowth","braMath09","cumRows","similar","cheaperBetter","cumOecdMedian","TRAJ","trajRows","groupOf","scatterLog","trajPlot","lede"], body: async (FileAttachment,getComputedStyle,d3,Plot,html) => {
+const [{load, series, at, last, keep, NAMES}, {metricPlot, barDelta}] = await Promise.all([import("./_import/components/data.e41da30b.js"), import("./_import/components/plots.aac2c00c.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
 const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });
+const intl = await FileAttachment("./data/edu_intl.csv").csv({ typed: true });
 const d = load(wdi, pisa);
 
 const math = series("pisa_math", pisa);
 const read = series("pisa_read", pisa);
 const sci = series("pisa_sci", pisa);
-const pupil = series("edu_pupil_sec", wdi);
-const ppp = series("gdp_pc_ppp", wdi);
+const gdp = series("gdp_pc_ppp", intl);
+const cum = series("cum_6_15_ppp", intl);
 
-const peers = [...d.club90, "OECD"];
-const math90 = keep(math, peers);
-const read90 = keep(read, peers);
-const sci90 = keep(sci, peers);
-const pupil90 = keep(pupil, d.club90);
+const nm = (iso) => NAMES[iso] ?? iso;
+const fmt0 = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }));
+const fmtSigned = (x) => (x == null ? "—" : x.toLocaleString("pt-BR", { maximumFractionDigits: 0, signDisplay: "exceptZero" }));
+const usd = (x) => (x == null ? "—" : `US$ ${(x / 1000).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} mil`);
+const listPt = (names) => (names.length <= 1 ? names.join("") : `${names.slice(0, -1).join(", ")} e ${names.at(-1)}`);
+const braColor = () => getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";
+const countries = [...new Set(math.map((r) => r.iso))].filter((iso) => iso !== "OECD");
 
-function yearsOf(rows, iso) {
-  return rows
-    .filter((row) => row.iso === iso)
-    .map((row) => row.year)
-    .sort((a, b) => a - b);
-}
+const Y = last(math, "BRA").year;
+const mathAt = (iso, year = Y) => at(math, iso, year);
 
-function commonStart(rows, iso = "OECD") {
-  const mine = new Set(yearsOf(rows, "BRA"));
-  return yearsOf(rows, iso).find((year) => mine.has(year));
-}
+// Grupo 1: mesma nota na primeira prova (até 2009), com folga de 35 pontos.
+const START_GAP = 35;
+const firstYear = (iso) => d3.min(math.filter((r) => r.iso === iso && r.year <= 2009), (r) => r.year);
+const START = countries.filter((iso) => {
+  if (iso === "BRA") return false;
+  const y0 = firstYear(iso);
+  const bra = y0 == null ? undefined : mathAt("BRA", y0);
+  return bra != null && Math.abs(mathAt(iso, y0) - bra) <= START_GAP;
+});
 
-function rankOf(values, iso) {
-  const sorted = values
-    .filter((row) => Number.isFinite(row.value))
-    .sort((a, b) => b.value - a.value);
-  return { pos: sorted.findIndex((row) => row.iso === iso) + 1, n: sorted.length };
-}
+// Grupo 2: renda per capita PPC no ano da última prova entre 65% e 135% da brasileira.
+const gdpAt = (iso, year = Y) => at(gdp, iso, year);
+const INCOME_BAND = [0.65, 1.35];
+const INCOME = countries.filter((iso) => {
+  const g = gdpAt(iso);
+  const ratio = g / gdpAt("BRA");
+  return iso !== "BRA" && g != null && ratio >= INCOME_BAND[0] && ratio <= INCOME_BAND[1] && mathAt(iso) != null;
+});
 
-function change(rows, iso, y0, y1) {
-  const a = at(rows, iso, y0);
-  const b = at(rows, iso, y1);
-  return a == null || b == null ? undefined : b - a;
-}
+// Grupo 3: América Latina e Caribe.
+const LATAM_ALL = ["ARG", "CHL", "COL", "CRI", "DOM", "GTM", "JAM", "MEX", "PAN", "PER", "PRY", "SLV", "TTO", "URY"];
+const LATAM = LATAM_ALL.filter((iso) => mathAt(iso) != null);
 
-function levelRows(rows, isos) {
-  return isos
-    .map((iso) => ({ iso, value: last(rows, iso)?.value }))
-    .filter((row) => Number.isFinite(row.value));
-}
-
-function deltaRows(rows, y0, y1) {
-  return peers
+function groupBars(isos, valueOf, { oecd = true, label } = {}) {
+  const rows = ["BRA", ...isos]
     .map((iso) => {
-      const value = change(rows, iso, y0, y1);
+      const value = valueOf(iso);
       if (value == null) return;
-      return {
-        iso,
-        name: NAMES[iso] ?? iso,
-        value,
-        tone: iso === "BRA" ? "bra" : iso === "OECD" ? "group" : "peer",
-      };
+      return { iso, name: label ? label(iso) : nm(iso), value, tone: iso === "BRA" ? "bra" : "peer" };
     })
-    .filter((row) => row);
+    .filter((r) => r);
+  const ref = oecd ? valueOf("OECD") : undefined;
+  if (ref != null) rows.push({ iso: "OECD", name: "Média OCDE", value: ref, tone: "group" });
+  return rows;
+}
+function rankOf(rows) {
+  const sorted = rows.filter((r) => r.tone !== "group").sort((a, b) => b.value - a.value);
+  return { pos: sorted.findIndex((r) => r.iso === "BRA") + 1, n: sorted.length };
+}
+const above = (rows) => rows.filter((r) => r.tone === "peer" && r.value > rows.find((x) => x.iso === "BRA").value);
+const below = (rows) => rows.filter((r) => r.tone === "peer" && r.value < rows.find((x) => x.iso === "BRA").value);
+
+// O grupo do relatório, para mostrar por que ele não serve aqui.
+const clubIsos = d.club90.filter((iso) => !["UMC", "LCN"].includes(iso));
+const braFirst = firstYear("BRA");
+const clubTop = d3.greatest(clubIsos.filter((iso) => mathAt(iso, braFirst) != null), (iso) => mathAt(iso, braFirst));
+
+// Mesmo ponto de partida
+const startChange = groupBars(
+  START,
+  (iso) => {
+    const y0 = firstYear(iso);
+    const a = mathAt(iso, y0);
+    const b = mathAt(iso);
+    return a == null || b == null ? undefined : b - a;
+  },
+  { oecd: false, label: (iso) => `${nm(iso)} (desde ${firstYear(iso)})` },
+);
+const startChangeRank = rankOf(startChange);
+const startLevel = groupBars(START, (iso) => mathAt(iso), { oecd: false });
+const braChange = startChange.find((r) => r.iso === "BRA").value;
+const braPeak = d3.greatest(math.filter((r) => r.iso === "BRA"), (r) => r.value);
+
+// Renda
+const fitRows = countries
+  .map((iso) => ({ iso, name: nm(iso), x: gdpAt(iso), y: mathAt(iso) }))
+  .filter((r) => r.x != null && r.y != null);
+const fit = (() => {
+  const xs = fitRows.map((r) => Math.log(r.x));
+  const ys = fitRows.map((r) => r.y);
+  const mx = d3.mean(xs);
+  const my = d3.mean(ys);
+  const b = d3.sum(xs, (x, i) => (x - mx) * (ys[i] - my)) / d3.sum(xs, (x) => (x - mx) ** 2);
+  return { a: my - b * mx, b };
+})();
+const expected = (x) => fit.a + fit.b * Math.log(x);
+const resid = new Map(fitRows.map((r) => [r.iso, r.y - expected(r.x)]));
+const braResid = resid.get("BRA");
+const residRank = [...resid.values()].sort((a, b) => b - a).indexOf(braResid) + 1;
+const perDoubling = fit.b * Math.log(2);
+const incomeLevel = groupBars(INCOME, (iso) => mathAt(iso));
+const incomeRank = rankOf(incomeLevel);
+
+// América Latina
+const latamLevel = groupBars(LATAM, (iso) => mathAt(iso));
+const latamRank = rankOf(latamLevel);
+
+// Leitura e ciências
+function subjectRanks(rows) {
+  const v = (iso) => at(rows, iso, Y);
+  return {
+    start: rankOf(groupBars(START, v, { oecd: false })),
+    income: rankOf(groupBars(INCOME, v, { oecd: false })),
+    latam: rankOf(groupBars(LATAM, v, { oecd: false })),
+    bra: v("BRA"),
+    oecd: v("OECD"),
+  };
+}
+const readR = subjectRanks(read);
+const sciR = subjectRanks(sci);
+const rk = ({ pos, n }) => `${pos}º de ${n}`;
+
+// Gasto acumulado
+const cumAt = (iso, year = Y) => at(cum, iso, year);
+const braCum = cumAt("BRA");
+const braCum0 = cumAt("BRA", 2009);
+const braCumGrowth = 100 * (braCum / braCum0 - 1);
+const braMath09 = mathAt("BRA", 2009);
+const cumRows = countries
+  .map((iso) => ({ iso, name: nm(iso), x: cumAt(iso), y: mathAt(iso) }))
+  .filter((r) => r.x != null && r.y != null);
+const similar = cumRows.filter((r) => r.x / braCum >= 0.75 && r.x / braCum <= 1.25 && r.iso !== "BRA").sort((a, b) => b.y - a.y);
+const cheaperBetter = cumRows.filter((r) => r.x < braCum && r.y > mathAt("BRA")).sort((a, b) => a.x - b.x);
+const cumOecdMedian = d3.median(cumRows.filter((r) => ["AUT", "BEL", "CAN", "CHL", "CZE", "DNK", "EST", "FIN", "FRA", "DEU", "GRC", "HUN", "ISL", "IRL", "ISR", "ITA", "JPN", "KOR", "LVA", "LTU", "LUX", "MEX", "NLD", "NZL", "NOR", "POL", "PRT", "SVK", "SVN", "ESP", "SWE", "CHE", "TUR", "GBR", "USA", "AUS", "COL", "CRI"].includes(r.iso)), (r) => r.x);
+const TRAJ = ["BRA", "PER", "MEX", "CHL", "URY", "ARG", "TUR", "POL"].filter((iso) => cum.some((r) => r.iso === iso));
+const trajRows = TRAJ.flatMap((iso) =>
+  cum
+    .filter((r) => r.iso === iso && mathAt(iso, r.year) != null)
+    .map((r) => ({ iso, name: nm(iso), year: r.year, x: r.value, y: mathAt(iso, r.year) })),
+);
+
+const groupOf = new Map([...LATAM, ...INCOME, ...START].map((iso) => [iso, true]));
+
+function scatterLog(rows, { width, xLabel, labels, line, tipX }) {
+  const BRA = braColor();
+  const bra = rows.filter((r) => r.iso === "BRA");
+  const peers = rows.filter((r) => r.iso !== "BRA" && groupOf.has(r.iso));
+  const rest = rows.filter((r) => r.iso !== "BRA" && !groupOf.has(r.iso));
+  const named = rows.filter((r) => labels.includes(r.iso) && r.iso !== "BRA");
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(300, Math.min(440, width * 0.62))),
+    marginLeft: 44,
+    marginRight: 24,
+    x: { type: "log", label: xLabel, grid: true, tickFormat: (v) => `${fmt0(v / 1000)} mil` },
+    y: { label: "PISA matemática", grid: true },
+    marks: [
+      line ? Plot.line(line, { x: "x", y: "y", stroke: "currentColor", strokeOpacity: 0.45, strokeDasharray: "6,4" }) : null,
+      Plot.dot(rest, { x: "x", y: "y", r: 4, fill: "#cbd5e1" }),
+      Plot.dot(peers, { x: "x", y: "y", r: 5, fill: "#6ba8d4", fillOpacity: 0.85 }),
+      Plot.dot(bra, { x: "x", y: "y", r: 8, fill: BRA }),
+      Plot.text(named, { x: "x", y: "y", text: "name", dy: -10, fontSize: 10, fill: "currentColor" }),
+      Plot.text(bra, { x: "x", y: "y", text: "name", dy: 16, fontWeight: 700, fill: BRA }),
+      Plot.tip(rows, Plot.pointer({ x: "x", y: "y", title: (r) => `${r.name}\n${tipX(r.x)}\nPISA ${Y}: ${fmt0(r.y)}` })),
+    ],
+  });
 }
 
-function moved(x) {
-  if (x == null) return "não tem a série nos dois anos";
-  const n = d.fmtIdx(Math.abs(x));
-  const unit = n === "1" ? "ponto" : "pontos";
-  if (Math.abs(x) < 0.5) return "ficou no mesmo ponto";
-  return x > 0 ? `ganhou ${n} ${unit}` : `perdeu ${n} ${unit}`;
+function trajPlot(width) {
+  const BRA = braColor();
+  const others = TRAJ.filter((iso) => iso !== "BRA").map(nm);
+  const lastPts = TRAJ.map((iso) => d3.greatest(trajRows.filter((r) => r.iso === iso), (r) => r.year)).filter((r) => r);
+  return Plot.plot({
+    width,
+    height: Math.round(Math.max(320, Math.min(460, width * 0.65))),
+    marginLeft: 44,
+    marginRight: 70,
+    x: { type: "log", label: "gasto público acumulado por aluno, 6 a 15 anos (US$ PPC constantes)", grid: true, tickFormat: (v) => `${fmt0(v / 1000)} mil` },
+    y: { label: "PISA matemática", grid: true },
+    color: { domain: ["Brasil", ...others], range: [BRA, ...d3.schemeTableau10] },
+    marks: [
+      Plot.line(trajRows.filter((r) => r.iso !== "BRA"), { x: "x", y: "y", z: "iso", stroke: "name", strokeWidth: 1.5, strokeOpacity: 0.8, marker: "dot" }),
+      Plot.line(trajRows.filter((r) => r.iso === "BRA"), { x: "x", y: "y", stroke: "name", strokeWidth: 3, marker: "dot" }),
+      Plot.text(lastPts, { x: "x", y: "y", text: "name", dx: 8, textAnchor: "start", fill: "name", fontWeight: 600 }),
+      Plot.text(trajRows.filter((r) => r.iso === "BRA"), { x: "x", y: "y", text: (r) => String(r.year), dy: 14, fontSize: 10, fill: BRA }),
+      Plot.tip(trajRows, Plot.pointer({ x: "x", y: "y", title: (r) => `${r.name}, PISA ${r.year}\ngasto acumulado: ${usd(r.x)}\nmatemática: ${fmt0(r.y)}` })),
+    ],
+  });
 }
-
-const mathStart = commonStart(math);
-const readStart = commonStart(read);
-const sciStart = commonStart(sci);
-const mathEnd = last(math, "BRA")?.year;
-const readEnd = last(read, "BRA")?.year;
-const sciEnd = last(sci, "BRA")?.year;
-
-const braMath = last(math, "BRA")?.value;
-const oecdMath = last(math, "OECD")?.value;
-const polMath = last(math, "POL")?.value;
-const korMath = last(math, "KOR")?.value;
-const braRead = last(read, "BRA")?.value;
-const braSci = last(sci, "BRA")?.value;
-const oecdRead = last(read, "OECD")?.value;
-const oecdSci = last(sci, "OECD")?.value;
-
-const mathGap0 = at(math, "OECD", mathStart) - at(math, "BRA", mathStart);
-const mathGap1 = oecdMath - braMath;
-const mathClosed = mathGap0 - mathGap1;
-const mathFromBra = change(math, "BRA", mathStart, mathEnd);
-const mathFromOecd = -change(math, "OECD", mathStart, mathEnd);
-const mathSince12 = change(math, "BRA", 2012, mathEnd);
-const readSince12 = change(read, "BRA", 2012, readEnd);
-const sciSince12 = change(sci, "BRA", 2012, sciEnd);
-
-const rankMath = rankOf(levelRows(math, d.club90), "BRA");
-const rankRead = rankOf(levelRows(read, d.club90), "BRA");
-const rankSci = rankOf(levelRows(sci, d.club90), "BRA");
-
-const korOverBra = last(ppp, "KOR")?.value / last(ppp, "BRA")?.value;
 
 function lede(kicker, title, value, neg = false) {
   return html`<div class="lede">
@@ -233,286 +325,299 @@ function lede(kicker, title, value, neg = false) {
     <div class="lede-big ${neg ? "neg" : ""}">${value}</div>
   </div>`;
 }
-return {load,series,at,last,keep,NAMES,metricPlot,barDelta,spendPisaPlot,wdi,pisa,d,math,read,sci,pupil,ppp,peers,math90,read90,sci90,pupil90,yearsOf,commonStart,rankOf,change,levelRows,deltaRows,moved,mathStart,readStart,sciStart,mathEnd,readEnd,sciEnd,braMath,oecdMath,polMath,korMath,braRead,braSci,oecdRead,oecdSci,mathGap0,mathGap1,mathClosed,mathFromBra,mathFromOecd,mathSince12,readSince12,sciSince12,rankMath,rankRead,rankSci,korOverBra,lede};
+return {load,series,at,last,keep,NAMES,metricPlot,barDelta,wdi,pisa,intl,d,math,read,sci,gdp,cum,nm,fmt0,fmtSigned,usd,listPt,braColor,countries,Y,mathAt,START_GAP,firstYear,START,gdpAt,INCOME_BAND,INCOME,LATAM_ALL,LATAM,groupBars,rankOf,above,below,clubIsos,braFirst,clubTop,startChange,startChangeRank,startLevel,braChange,braPeak,fitRows,fit,expected,resid,braResid,residRank,perDoubling,incomeLevel,incomeRank,latamLevel,latamRank,subjectRanks,readR,sciR,rk,cumAt,braCum,braCum0,braCumGrowth,braMath09,cumRows,similar,cheaperBetter,cumOecdMedian,TRAJ,trajRows,groupOf,scatterLog,trajPlot,lede};
 }});
 
-define({id: "47a67db5", inputs: ["html","lede","mathEnd","d","braMath","mathGap1","display"], body: async (html,lede,mathEnd,d,braMath,mathGap1,display) => {
+define({id: "ce58b8a7", inputs: ["html","lede","Y","fmt0","mathAt","fmtSigned","braResid","usd","braCum","braCumGrowth","braMath09","display"], body: async (html,lede,Y,fmt0,mathAt,fmtSigned,braResid,usd,braCum,braCumGrowth,braMath09,display) => {
 display(await(
 html`<div class="lede-grid">
-  ${lede("PISA matemática", String(mathEnd), d.fmtIdx(braMath))}
-  ${lede("Atrás da média da OCDE", "pontos em matemática", d.fmtIdx(mathGap1), true)}
-  ${lede("Gasto público", `% do PIB · ${d.eduBra?.year}`, d.fmtPct(d.eduBra?.value))}
+  ${lede("PISA matemática", String(Y), fmt0(mathAt("BRA")))}
+  ${lede("Contra o esperado para a renda", "pontos em matemática", fmtSigned(braResid), true)}
+  ${lede("Gasto acumulado por aluno", `6 a 15 anos · geração do PISA ${Y}`, usd(braCum))}
+  ${lede("Gasto e nota desde 2009", "gasto acumulado · matemática", `+${fmt0(braCumGrowth)}% · ${fmtSigned(mathAt("BRA") - braMath09)}`, true)}
 </div>`
 ))
 }});
 
-define({id: "8012cffc", mode: "inline", inputs: ["mathStart","display"], body: async (mathStart,display) => {
+define({id: "1a38da9f", mode: "inline", inputs: ["braFirst","display"], body: async (braFirst,display) => {
 display(await(
-mathStart
+braFirst
 ))
 }});
 
-define({id: "05595cfe", mode: "inline", inputs: ["readStart","display"], body: async (readStart,display) => {
+define({id: "57e416bd", mode: "inline", inputs: ["fmt0","mathAt","braFirst","display"], body: async (fmt0,mathAt,braFirst,display) => {
 display(await(
-readStart
+fmt0(mathAt("BRA", braFirst))
 ))
 }});
 
-define({id: "e9fd222b", mode: "inline", inputs: ["sciStart","display"], body: async (sciStart,display) => {
+define({id: "0fb8cb5e", mode: "inline", inputs: ["nm","clubTop","display"], body: async (nm,clubTop,display) => {
 display(await(
-sciStart
+nm(clubTop)
 ))
 }});
 
-define({id: "94285912", mode: "inline", inputs: ["mathEnd","display"], body: async (mathEnd,display) => {
+define({id: "c5c1e4c4", mode: "inline", inputs: ["fmt0","mathAt","clubTop","braFirst","display"], body: async (fmt0,mathAt,clubTop,braFirst,display) => {
 display(await(
-mathEnd
+fmt0(mathAt(clubTop, braFirst))
 ))
 }});
 
-define({id: "94285912-1", mode: "inline", inputs: ["mathEnd","display"], body: async (mathEnd,display) => {
+define({id: "cab1bc9c", mode: "inline", inputs: ["START_GAP","display"], body: async (START_GAP,display) => {
 display(await(
-mathEnd
+START_GAP
 ))
 }});
 
-define({id: "9fc715cd", mode: "inline", inputs: ["d","braMath","display"], body: async (d,braMath,display) => {
+define({id: "166b2f8b", mode: "inline", inputs: ["listPt","START","nm","display"], body: async (listPt,START,nm,display) => {
 display(await(
-d.fmtIdx(braMath)
+listPt(START.map(nm))
 ))
 }});
 
-define({id: "67ae3b88", mode: "inline", inputs: ["d","oecdMath","display"], body: async (d,oecdMath,display) => {
+define({id: "18f5384d", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.fmtIdx(oecdMath)
+Y
 ))
 }});
 
-define({id: "6ab1f7b3", mode: "inline", inputs: ["d","polMath","display"], body: async (d,polMath,display) => {
+define({id: "a54773f4", mode: "inline", inputs: ["listPt","INCOME","nm","display"], body: async (listPt,INCOME,nm,display) => {
 display(await(
-d.fmtIdx(polMath)
+listPt(INCOME.map(nm))
 ))
 }});
 
-define({id: "6119ce23", mode: "inline", inputs: ["d","korMath","display"], body: async (d,korMath,display) => {
+define({id: "335bcf4c", mode: "inline", inputs: ["listPt","LATAM","nm","display"], body: async (listPt,LATAM,nm,display) => {
 display(await(
-d.fmtIdx(korMath)
+listPt(LATAM.map(nm))
 ))
 }});
 
-define({id: "c19ae7e3", mode: "inline", inputs: ["rankMath","display"], body: async (rankMath,display) => {
+define({id: "3164e692", mode: "inline", inputs: ["braChange","display"], body: async (braChange,display) => {
 display(await(
-rankMath.pos
+braChange >= 0 ? "ganhou" : "perdeu"
 ))
 }});
 
-define({id: "e7ebbf0a", mode: "inline", inputs: ["rankMath","display"], body: async (rankMath,display) => {
+define({id: "cc922748", mode: "inline", inputs: ["fmt0","braChange","display"], body: async (fmt0,braChange,display) => {
 display(await(
-rankMath.n
+fmt0(Math.abs(braChange))
 ))
 }});
 
-define({id: "e9167a62", mode: "inline", inputs: ["d","mathClosed","display"], body: async (d,mathClosed,display) => {
+define({id: "c0a27661", mode: "inline", inputs: ["rk","startChangeRank","display"], body: async (rk,startChangeRank,display) => {
 display(await(
-d.fmtIdx(mathClosed)
+rk(startChangeRank)
 ))
 }});
 
-define({id: "8012cffc-1", mode: "inline", inputs: ["mathStart","display"], body: async (mathStart,display) => {
+define({id: "ac71a12a", mode: "inline", inputs: ["above","startChange","listPt","nm","display"], body: async (above,startChange,listPt,nm,display) => {
 display(await(
-mathStart
+above(startChange).length ? `Avançaram mais: ${listPt(above(startChange).map((r) => nm(r.iso)))}.` : ""
 ))
 }});
 
-define({id: "2a472837", mode: "inline", inputs: ["moved","mathFromBra","display"], body: async (moved,mathFromBra,display) => {
+define({id: "b2142eab", mode: "inline", inputs: ["resize","barDelta","startChange","Y","fmtSigned","display"], body: async (resize,barDelta,startChange,Y,fmtSigned,display) => {
 display(await(
-moved(mathFromBra)
+resize((width) => barDelta(startChange, {width, xLabel: `variação em matemática, da primeira prova até ${Y} (pontos)`, format: fmtSigned, marginLeft: 190}))
 ))
 }});
 
-define({id: "eae0d4b3", mode: "inline", inputs: ["moved","mathFromOecd","display"], body: async (moved,mathFromOecd,display) => {
+define({id: "3632499c", mode: "inline", inputs: ["fmt0","braPeak","display"], body: async (fmt0,braPeak,display) => {
 display(await(
-moved(-mathFromOecd)
+fmt0(braPeak.value)
 ))
 }});
 
-define({id: "aa3ba8b6", mode: "inline", inputs: ["d","mathGap0","display"], body: async (d,mathGap0,display) => {
+define({id: "13a683d1", mode: "inline", inputs: ["braPeak","display"], body: async (braPeak,display) => {
 display(await(
-d.fmtIdx(mathGap0)
+braPeak.year
 ))
 }});
 
-define({id: "e2406564", mode: "inline", inputs: ["d","mathGap1","display"], body: async (d,mathGap1,display) => {
+define({id: "18f5384d-1", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.fmtIdx(mathGap1)
+Y
 ))
 }});
 
-define({id: "bf44d812", mode: "inline", inputs: ["d","mathFromBra","display"], body: async (d,mathFromBra,display) => {
+define({id: "66f1d784", mode: "inline", inputs: ["rk","rankOf","startLevel","display"], body: async (rk,rankOf,startLevel,display) => {
 display(await(
-d.fmtIdx(mathFromBra)
+rk(rankOf(startLevel))
 ))
 }});
 
-define({id: "5ee9aaad", mode: "inline", inputs: ["d","mathFromOecd","display"], body: async (d,mathFromOecd,display) => {
+define({id: "0254da9a", mode: "inline", inputs: ["resize","metricPlot","keep","math","START","fmt0","display"], body: async (resize,metricPlot,keep,math,START,fmt0,display) => {
 display(await(
-d.fmtIdx(mathFromOecd)
+resize((width) => metricPlot(keep(math, ["BRA", ...START, "OECD"]), {width, yLabel: "PISA matemática", markRefs: true, rules: [2012], format: fmt0}))
 ))
 }});
 
-define({id: "94285912-2", mode: "inline", inputs: ["mathEnd","display"], body: async (mathEnd,display) => {
+define({id: "16d9d90e", mode: "inline", inputs: ["fitRows","display"], body: async (fitRows,display) => {
 display(await(
-mathEnd
+fitRows.length
 ))
 }});
 
-define({id: "e0e15193", mode: "inline", inputs: ["moved","mathSince12","display"], body: async (moved,mathSince12,display) => {
+define({id: "18f5384d-2", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-moved(mathSince12)
+Y
 ))
 }});
 
-define({id: "005ee74e", mode: "inline", inputs: ["resize","metricPlot","math90","d","display"], body: async (resize,metricPlot,math90,d,display) => {
+define({id: "cde3fff6", mode: "inline", inputs: ["fmt0","perDoubling","display"], body: async (fmt0,perDoubling,display) => {
 display(await(
-resize((width) => metricPlot(math90, {width, yLabel: "PISA matemática", markRefs: true, rules: [2012], format: d.fmtIdx}))
+fmt0(perDoubling)
 ))
 }});
 
-define({id: "8012cffc-2", mode: "inline", inputs: ["mathStart","display"], body: async (mathStart,display) => {
+define({id: "0ca1d8e7", mode: "inline", inputs: ["fmt0","braResid","display"], body: async (fmt0,braResid,display) => {
 display(await(
-mathStart
+fmt0(Math.abs(braResid))
 ))
 }});
 
-define({id: "94285912-3", mode: "inline", inputs: ["mathEnd","display"], body: async (mathEnd,display) => {
+define({id: "fc7ade28", mode: "inline", inputs: ["braResid","display"], body: async (braResid,display) => {
 display(await(
-mathEnd
+braResid < 0 ? "abaixo" : "acima"
 ))
 }});
 
-define({id: "ce76234b", mode: "inline", inputs: ["resize","barDelta","deltaRows","math","mathStart","mathEnd","display"], body: async (resize,barDelta,deltaRows,math,mathStart,mathEnd,display) => {
+define({id: "70479570", mode: "inline", inputs: ["residRank","display"], body: async (residRank,display) => {
 display(await(
-resize((width) => barDelta(deltaRows(math, mathStart, mathEnd), {width, xLabel: `variação ${mathStart}–${mathEnd} (pontos)`, format: (value) => value.toLocaleString("pt-BR", { maximumFractionDigits: 0, signDisplay: "exceptZero" })}))
+residRank
 ))
 }});
 
-define({id: "d999ed80", mode: "inline", inputs: ["d","braRead","display"], body: async (d,braRead,display) => {
+define({id: "16d9d90e-1", mode: "inline", inputs: ["fitRows","display"], body: async (fitRows,display) => {
 display(await(
-d.fmtIdx(braRead)
+fitRows.length
 ))
 }});
 
-define({id: "ba70d85a", mode: "inline", inputs: ["readEnd","display"], body: async (readEnd,display) => {
+define({id: "72d79b49", mode: "inline", inputs: ["fmt0","resid","display"], body: async (fmt0,resid,display) => {
 display(await(
-readEnd
+fmt0(resid.get("VNM"))
 ))
 }});
 
-define({id: "270fa6a0", mode: "inline", inputs: ["d","oecdRead","display"], body: async (d,oecdRead,display) => {
+define({id: "b47d92c1", mode: "inline", inputs: ["resize","scatterLog","fitRows","Y","d3","expected","usd","display"], body: async (resize,scatterLog,fitRows,Y,d3,expected,usd,display) => {
 display(await(
-d.fmtIdx(oecdRead)
+resize((width) => scatterLog(fitRows, {width, xLabel: `renda per capita ${Y} (US$ PPC, escala log)`, labels: ["VNM", "PER", "MEX", "CHL", "ARG", "TUR", "POL", "KOR", "UKR", "MDA", "DOM", "SGP", "QAT", "PAN"], line: d3.ticks(d3.min(fitRows, (r) => r.x), d3.max(fitRows, (r) => r.x), 60).map((x) => ({ x, y: expected(x) })), tipX: (x) => `renda: ${usd(x)}`}))
 ))
 }});
 
-define({id: "f068fc19", mode: "inline", inputs: ["rankRead","display"], body: async (rankRead,display) => {
+define({id: "1513c81c", mode: "inline", inputs: ["rk","incomeRank","display"], body: async (rk,incomeRank,display) => {
 display(await(
-rankRead.pos
+rk(incomeRank)
 ))
 }});
 
-define({id: "233a3acb", mode: "inline", inputs: ["rankRead","display"], body: async (rankRead,display) => {
+define({id: "1a94b951", mode: "inline", inputs: ["listPt","below","incomeLevel","display"], body: async (listPt,below,incomeLevel,display) => {
 display(await(
-rankRead.n
+listPt(below(incomeLevel).map((r) => r.name))
 ))
 }});
 
-define({id: "05595cfe-1", mode: "inline", inputs: ["readStart","display"], body: async (readStart,display) => {
+define({id: "b5ef1f76", mode: "inline", inputs: ["resize","barDelta","incomeLevel","Y","fmt0","display"], body: async (resize,barDelta,incomeLevel,Y,fmt0,display) => {
 display(await(
-readStart
+resize((width) => barDelta(incomeLevel, {width, xLabel: `PISA matemática ${Y}, países com renda entre 65% e 135% da brasileira`, format: fmt0}))
 ))
 }});
 
-define({id: "360ce12a", mode: "inline", inputs: ["moved","change","read","readStart","readEnd","display"], body: async (moved,change,read,readStart,readEnd,display) => {
+define({id: "d46a25d9", mode: "inline", inputs: ["rk","latamRank","display"], body: async (rk,latamRank,display) => {
 display(await(
-moved(change(read, "BRA", readStart, readEnd))
+rk(latamRank)
 ))
 }});
 
-define({id: "ef5d18fe", mode: "inline", inputs: ["moved","change","read","readStart","readEnd","display"], body: async (moved,change,read,readStart,readEnd,display) => {
+define({id: "d6462a79", mode: "inline", inputs: ["listPt","above","latamLevel","display"], body: async (listPt,above,latamLevel,display) => {
 display(await(
-moved(change(read, "OECD", readStart, readEnd))
+listPt(above(latamLevel).map((r) => r.name))
 ))
 }});
 
-define({id: "bf9ef0c6", mode: "inline", inputs: ["moved","readSince12","display"], body: async (moved,readSince12,display) => {
+define({id: "3e7e4173", mode: "inline", inputs: ["listPt","below","latamLevel","display"], body: async (listPt,below,latamLevel,display) => {
 display(await(
-moved(readSince12)
+listPt(below(latamLevel).map((r) => r.name))
 ))
 }});
 
-define({id: "558e051b", mode: "inline", inputs: ["resize","metricPlot","read90","d","display"], body: async (resize,metricPlot,read90,d,display) => {
+define({id: "643c63d5", mode: "inline", inputs: ["resize","barDelta","latamLevel","Y","fmt0","display"], body: async (resize,barDelta,latamLevel,Y,fmt0,display) => {
 display(await(
-resize((width) => metricPlot(read90, {width, yLabel: "PISA leitura", markRefs: true, rules: [2012], format: d.fmtIdx}))
+resize((width) => barDelta(latamLevel, {width, xLabel: `PISA matemática ${Y}`, format: fmt0}))
 ))
 }});
 
-define({id: "76475839", mode: "inline", inputs: ["d","braSci","display"], body: async (d,braSci,display) => {
+define({id: "ca84b8c0", mode: "inline", inputs: ["fmt0","readR","display"], body: async (fmt0,readR,display) => {
 display(await(
-d.fmtIdx(braSci)
+fmt0(readR.bra)
 ))
 }});
 
-define({id: "7709ea0e", mode: "inline", inputs: ["sciEnd","display"], body: async (sciEnd,display) => {
+define({id: "18f5384d-3", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-sciEnd
+Y
 ))
 }});
 
-define({id: "b770d057", mode: "inline", inputs: ["d","oecdSci","display"], body: async (d,oecdSci,display) => {
+define({id: "f3101041", mode: "inline", inputs: ["fmt0","readR","display"], body: async (fmt0,readR,display) => {
 display(await(
-d.fmtIdx(oecdSci)
+fmt0(readR.oecd)
 ))
 }});
 
-define({id: "da35473c", mode: "inline", inputs: ["rankSci","display"], body: async (rankSci,display) => {
+define({id: "c0eb909a", mode: "inline", inputs: ["rk","readR","display"], body: async (rk,readR,display) => {
 display(await(
-rankSci.pos
+rk(readR.start)
 ))
 }});
 
-define({id: "aff262bd", mode: "inline", inputs: ["rankSci","display"], body: async (rankSci,display) => {
+define({id: "1d0ae2f2", mode: "inline", inputs: ["rk","readR","display"], body: async (rk,readR,display) => {
 display(await(
-rankSci.n
+rk(readR.income)
 ))
 }});
 
-define({id: "e9fd222b-1", mode: "inline", inputs: ["sciStart","display"], body: async (sciStart,display) => {
+define({id: "85cc8b2d", mode: "inline", inputs: ["rk","readR","display"], body: async (rk,readR,display) => {
 display(await(
-sciStart
+rk(readR.latam)
 ))
 }});
 
-define({id: "063ba49f", mode: "inline", inputs: ["moved","change","sci","sciStart","sciEnd","display"], body: async (moved,change,sci,sciStart,sciEnd,display) => {
+define({id: "e7b41cdb", mode: "inline", inputs: ["fmt0","sciR","display"], body: async (fmt0,sciR,display) => {
 display(await(
-moved(change(sci, "BRA", sciStart, sciEnd))
+fmt0(sciR.bra)
 ))
 }});
 
-define({id: "c9da02b8", mode: "inline", inputs: ["moved","change","sci","sciStart","sciEnd","display"], body: async (moved,change,sci,sciStart,sciEnd,display) => {
+define({id: "139c0a4a", mode: "inline", inputs: ["fmt0","sciR","display"], body: async (fmt0,sciR,display) => {
 display(await(
-moved(change(sci, "OECD", sciStart, sciEnd))
+fmt0(sciR.oecd)
 ))
 }});
 
-define({id: "8da490b8", mode: "inline", inputs: ["moved","sciSince12","display"], body: async (moved,sciSince12,display) => {
+define({id: "3a014a41", mode: "inline", inputs: ["rk","sciR","display"], body: async (rk,sciR,display) => {
 display(await(
-moved(sciSince12)
+rk(sciR.start)
 ))
 }});
 
-define({id: "b1ae0afe", mode: "inline", inputs: ["resize","metricPlot","sci90","d","display"], body: async (resize,metricPlot,sci90,d,display) => {
+define({id: "92860f97", mode: "inline", inputs: ["rk","sciR","display"], body: async (rk,sciR,display) => {
 display(await(
-resize((width) => metricPlot(sci90, {width, yLabel: "PISA ciências", markRefs: true, rules: [2012], format: d.fmtIdx}))
+rk(sciR.income)
+))
+}});
+
+define({id: "28b01c1c", mode: "inline", inputs: ["rk","sciR","display"], body: async (rk,sciR,display) => {
+display(await(
+rk(sciR.latam)
+))
+}});
+
+define({id: "d62bbe52", mode: "inline", inputs: ["resize","metricPlot","keep","read","LATAM","fmt0","display"], body: async (resize,metricPlot,keep,read,LATAM,fmt0,display) => {
+display(await(
+resize((width) => metricPlot(keep(read, ["BRA", ...LATAM, "OECD"]), {width, yLabel: "PISA leitura, América Latina", markRefs: true, format: fmt0}))
 ))
 }});
 
@@ -528,111 +633,105 @@ d.eduBra?.year
 ))
 }});
 
-define({id: "ec044546", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "18f5384d-4", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.fmtPct(d.eduPol?.value)
+Y
 ))
 }});
 
-define({id: "8a3c685c", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "10a1d086", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.eduPol?.year
+Y - 9
 ))
 }});
 
-define({id: "16247959", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "18f5384d-5", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.fmtPct(d.eduKor?.value)
+Y
 ))
 }});
 
-define({id: "7ee8e63c", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "18f5384d-6", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.eduKor?.year
+Y
 ))
 }});
 
-define({id: "5200ed9a", mode: "inline", inputs: ["resize","metricPlot","d","display"], body: async (resize,metricPlot,d,display) => {
+define({id: "4cef4e5f", mode: "inline", inputs: ["usd","braCum","display"], body: async (usd,braCum,display) => {
 display(await(
-resize((width) => metricPlot(d.edu90, {width, yLabel: "gasto público em educação (% do PIB)"}))
+usd(braCum)
 ))
 }});
 
-define({id: "277d1a91", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "44011dac", mode: "inline", inputs: ["usd","cumOecdMedian","display"], body: async (usd,cumOecdMedian,display) => {
 display(await(
-d.fmtPct(d.pupilBra?.value)
+usd(cumOecdMedian)
 ))
 }});
 
-define({id: "5a2b9372", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "32beee07", mode: "inline", inputs: ["fmt0","braCumGrowth","display"], body: async (fmt0,braCumGrowth,display) => {
 display(await(
-d.pupilBra?.year
+fmt0(braCumGrowth)
 ))
 }});
 
-define({id: "74c65262", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "e97caf1d", mode: "inline", inputs: ["usd","braCum0","display"], body: async (usd,braCum0,display) => {
 display(await(
-d.fmtPct(d.pupilPol?.value)
+usd(braCum0)
 ))
 }});
 
-define({id: "349ef6e8", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "18f5384d-7", mode: "inline", inputs: ["Y","display"], body: async (Y,display) => {
 display(await(
-d.pupilPol?.year
+Y
 ))
 }});
 
-define({id: "58c65767", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "4cef4e5f-1", mode: "inline", inputs: ["usd","braCum","display"], body: async (usd,braCum,display) => {
 display(await(
-d.fmtPct(d.pupilKor?.value)
+usd(braCum)
 ))
 }});
 
-define({id: "565c8b3b", mode: "inline", inputs: ["d","display"], body: async (d,display) => {
+define({id: "8adb6d6a", mode: "inline", inputs: ["fmt0","braMath09","display"], body: async (fmt0,braMath09,display) => {
 display(await(
-d.pupilKor?.year
+fmt0(braMath09)
 ))
 }});
 
-define({id: "e1ab304f", mode: "inline", inputs: ["korOverBra","display"], body: async (korOverBra,display) => {
+define({id: "046588a8", mode: "inline", inputs: ["fmt0","mathAt","display"], body: async (fmt0,mathAt,display) => {
 display(await(
-korOverBra.toLocaleString("pt-BR", { maximumFractionDigits: 1 })
+fmt0(mathAt("BRA"))
 ))
 }});
 
-define({id: "94285912-4", mode: "inline", inputs: ["mathEnd","display"], body: async (mathEnd,display) => {
+define({id: "1b66a1ee", mode: "inline", inputs: ["resize","trajPlot","display"], body: async (resize,trajPlot,display) => {
 display(await(
-mathEnd
+resize((width) => trajPlot(width))
 ))
 }});
 
-define({id: "07447525", mode: "inline", inputs: ["resize","metricPlot","pupil90","display"], body: async (resize,metricPlot,pupil90,display) => {
+define({id: "9b9aafb7", mode: "inline", inputs: ["listPt","similar","fmt0","display"], body: async (listPt,similar,fmt0,display) => {
 display(await(
-resize((width) => metricPlot(pupil90, {width, yLabel: "gasto por aluno do ensino médio (% da renda per capita)"}))
+listPt(similar.map((r) => `${r.name} (${fmt0(r.y)})`))
 ))
 }});
 
-define({id: "c35dfc69", mode: "inline", inputs: ["d","polMath","braMath","display"], body: async (d,polMath,braMath,display) => {
+define({id: "a7f723f3", mode: "inline", inputs: ["cheaperBetter","listPt","display"], body: async (cheaperBetter,listPt,display) => {
 display(await(
-d.fmtIdx(polMath - braMath)
+cheaperBetter.length ? `Gastam menos e tiram mais: ${listPt(cheaperBetter.map((r) => r.name))}.` : ""
 ))
 }});
 
-define({id: "ca4b534a", mode: "inline", inputs: ["resize","spendPisaPlot","d","oecdMath","display"], body: async (resize,spendPisaPlot,d,oecdMath,display) => {
+define({id: "43af4257", mode: "inline", inputs: ["resize","scatterLog","cumRows","Y","usd","display"], body: async (resize,scatterLog,cumRows,Y,usd,display) => {
 display(await(
-resize((width) => spendPisaPlot(d.spendPisa, {width, oecd: oecdMath}))
+resize((width) => scatterLog(cumRows, {width, xLabel: `gasto público acumulado por aluno, 6 a 15 anos, geração do PISA ${Y} (US$ PPC, escala log)`, labels: ["PER", "MEX", "CHL", "URY", "ARG", "TUR", "POL", "KOR", "MDA", "DOM", "UKR", "EST", "PRT", "GTM", "JOR"], tipX: (x) => `gasto acumulado: ${usd(x)}`}))
 ))
 }});
 
-define({id: "e3ee0600", mode: "inline", inputs: ["resize","spendPisaPlot","d","oecdMath","display"], body: async (resize,spendPisaPlot,d,oecdMath,display) => {
+define({id: "269f0de8", mode: "inline", inputs: ["listPt","cheaperBetter","display"], body: async (listPt,cheaperBetter,display) => {
 display(await(
-resize((width) => spendPisaPlot(d.spendPisaPupil, {width, oecd: oecdMath, xLabel: "% da renda per capita, por aluno", unit: "% renda per capita por aluno"}))
-))
-}});
-
-define({id: "94285912-5", mode: "inline", inputs: ["mathEnd","display"], body: async (mathEnd,display) => {
-display(await(
-mathEnd
+listPt(cheaperBetter.slice(0, 3).map((r) => r.name))
 ))
 }});
 
@@ -661,8 +760,10 @@ mathEnd
 <nav>
 <div>Nesta página</div>
 <ol>
-<li class="observablehq-secondary-link"><a href="#o-que-o-pisa-mede">O que o PISA mede</a></li>
-<li class="observablehq-secondary-link"><a href="#matematica-subiu-ate-2012-e-depois-caiu">Matemática: subiu até 2012 e depois caiu</a></li>
+<li class="observablehq-secondary-link"><a href="#com-quem-comparar">Com quem comparar</a></li>
+<li class="observablehq-secondary-link"><a href="#quem-saiu-do-mesmo-lugar">Quem saiu do mesmo lugar</a></li>
+<li class="observablehq-secondary-link"><a href="#o-esperado-para-a-renda">O esperado para a renda</a></li>
+<li class="observablehq-secondary-link"><a href="#america-latina">América Latina</a></li>
 <li class="observablehq-secondary-link"><a href="#leitura-e-ciencias">Leitura e ciências</a></li>
 <li class="observablehq-secondary-link"><a href="#o-brasil-gasta-pouco-ou-gasta-mal">O Brasil gasta pouco ou gasta mal?</a></li>
 <li class="observablehq-secondary-link"><a href="#o-que-isso-nao-diz">O que isso não diz</a></li>
@@ -671,46 +772,62 @@ mathEnd
 </aside>
 <main id="observablehq-main" class="observablehq">
 <h1 id="educacao" tabindex="-1"><a class="observablehq-header-anchor" href="#educacao">Educação</a></h1>
-<p>Esta página abre a seção de educação do <a href="./">relatório</a>. O grupo de comparação é o mesmo: países cuja renda per capita em 1990 ficava entre 65% e 135% da brasileira. Os números saem das séries já baixadas — PISA, gasto público em educação e gasto por aluno do ensino médio.</p>
-<div class="observablehq observablehq--block"><!--:b6c9e8e8:--></div>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:47a67db5:--></div>
-<h2 id="o-que-o-pisa-mede" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-o-pisa-mede">O que o PISA mede</a></h2>
-<p>O PISA testa alunos de 15 anos em matemática, leitura e ciências. É a comparação internacional mais usada para o que a escola consegue ensinar. Não mede a universidade, nem a qualidade de cada rede, nem o quanto um adulto aprendeu ao longo da vida.</p>
-<p>O Brasil não fez todas as edições desde o início. A primeira prova em comum com a média da OCDE é <observablehq-loading></observablehq-loading><!--:8012cffc:--> em matemática, <observablehq-loading></observablehq-loading><!--:05595cfe:--> em leitura e <observablehq-loading></observablehq-loading><!--:e9fd222b:--> em ciências. A última edição nestes dados é <observablehq-loading></observablehq-loading><!--:94285912:-->.</p>
-<h2 id="matematica-subiu-ate-2012-e-depois-caiu" tabindex="-1"><a class="observablehq-header-anchor" href="#matematica-subiu-ate-2012-e-depois-caiu">Matemática: subiu até 2012 e depois caiu</a></h2>
-<p>Em <observablehq-loading></observablehq-loading><!--:94285912-1:-->, o Brasil marcou <observablehq-loading></observablehq-loading><!--:9fc715cd:--> pontos. A média da OCDE foi <observablehq-loading></observablehq-loading><!--:67ae3b88:-->, a Polônia marcou <observablehq-loading></observablehq-loading><!--:6ab1f7b3:--> e a Coreia, <observablehq-loading></observablehq-loading><!--:6119ce23:-->. Entre os pares que fizeram a prova, o Brasil ficou em <observablehq-loading></observablehq-loading><!--:c19ae7e3:-->º de <observablehq-loading></observablehq-loading><!--:e7ebbf0a:-->.</p>
-<div class="takeaway">
-  <strong>A distância para a OCDE encolheu <observablehq-loading></observablehq-loading><!--:e9167a62:--> pontos, dos dois lados.</strong>
-  <span>Desde <observablehq-loading></observablehq-loading><!--:8012cffc-1:-->, o Brasil <observablehq-loading></observablehq-loading><!--:2a472837:--> e a média da OCDE <observablehq-loading></observablehq-loading><!--:eae0d4b3:-->. A diferença caiu de <observablehq-loading></observablehq-loading><!--:aa3ba8b6:--> para <observablehq-loading></observablehq-loading><!--:e2406564:-->. <observablehq-loading></observablehq-loading><!--:bf44d812:--> pontos dessa aproximação vieram da subida brasileira e <observablehq-loading></observablehq-loading><!--:5ee9aaad:--> da queda da OCDE.</span>
-</div>
-<p>Parte desse ganho foi devolvida. De 2012 a <observablehq-loading></observablehq-loading><!--:94285912-2:-->, o Brasil <observablehq-loading></observablehq-loading><!--:e0e15193:--> em matemática.</p>
-<p><observablehq-loading></observablehq-loading><!--:005ee74e:--></p>
-<p>O gráfico abaixo é a variação de cada país entre <observablehq-loading></observablehq-loading><!--:8012cffc-2:--> e <observablehq-loading></observablehq-loading><!--:94285912-3:-->, em pontos. A média da OCDE entra como referência. Quem não fez a prova nos dois anos fica de fora.</p>
-<p><observablehq-loading></observablehq-loading><!--:ce76234b:--></p>
+<p>Esta página abre a seção de educação do <a href="./">relatório</a>. O relatório compara o Brasil com países de renda parecida em 1990. Para educação, esse grupo engana: ele junta o Brasil a países que já aprendiam muito mais na primeira prova internacional. Aqui a comparação é com três grupos escolhidos pelo que importa para a escola.</p>
+<div class="observablehq observablehq--block"><!--:6e6a20d5:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:ce58b8a7:--></div>
+<h2 id="com-quem-comparar" tabindex="-1"><a class="observablehq-header-anchor" href="#com-quem-comparar">Com quem comparar</a></h2>
+<p>O PISA testa alunos de 15 anos em matemática, leitura e ciências a cada três anos. É a melhor comparação internacional do que a escola ensina, mas não mede a universidade nem o que um adulto aprende depois.</p>
+<p>O grupo de pares do relatório foi escolhido pela renda em 1990. Para crescimento, é o grupo certo. Para educação, não: na primeira prova de matemática do Brasil, em <observablehq-loading></observablehq-loading><!--:1a38da9f:-->, o Brasil fez <observablehq-loading></observablehq-loading><!--:57e416bd:--> pontos e <observablehq-loading></observablehq-loading><!--:0fb8cb5e:--> fez <observablehq-loading></observablehq-loading><!--:c5c1e4c4:-->. Comparar com esses países mede uma distância que já existia, e não diz se o Brasil anda bem ou mal.</p>
+<p>Esta página usa três grupos, cada um respondendo a uma pergunta:</p>
+<ul>
+<li><strong>Mesmo ponto de partida</strong> — quem saiu de onde o Brasil estava avançou mais? São os países cuja nota de matemática na primeira prova (até 2009) ficou a até <observablehq-loading></observablehq-loading><!--:cab1bc9c:--> pontos da brasileira no mesmo ano: <observablehq-loading></observablehq-loading><!--:166b2f8b:-->.</li>
+<li><strong>Mesma renda hoje</strong> — o Brasil aprende o que seria esperado para a renda que tem? São os países com renda per capita entre 65% e 135% da brasileira em <observablehq-loading></observablehq-loading><!--:18f5384d:-->, em dólar PPC: <observablehq-loading></observablehq-loading><!--:a54773f4:-->.</li>
+<li><strong>América Latina</strong> — os vizinhos, com instituições e histórias parecidas: <observablehq-loading></observablehq-loading><!--:335bcf4c:-->.</li>
+</ul>
+<h2 id="quem-saiu-do-mesmo-lugar" tabindex="-1"><a class="observablehq-header-anchor" href="#quem-saiu-do-mesmo-lugar">Quem saiu do mesmo lugar</a></h2>
+<p>Desde a primeira prova, o Brasil <observablehq-loading></observablehq-loading><!--:3164e692:--> <observablehq-loading></observablehq-loading><!--:cc922748:--> pontos em matemática. É o <observablehq-loading></observablehq-loading><!--:c0a27661:--> no grupo que partiu do mesmo nível. <observablehq-loading></observablehq-loading><!--:ac71a12a:--></p>
+<p><observablehq-loading></observablehq-loading><!--:b2142eab:--></p>
+<p>O avanço brasileiro se concentrou no começo. A nota subiu até <observablehq-loading></observablehq-loading><!--:3632499c:--> em <observablehq-loading></observablehq-loading><!--:13a683d1:--> e depois oscilou para baixo. Em <observablehq-loading></observablehq-loading><!--:18f5384d-1:-->, o Brasil fica em <observablehq-loading></observablehq-loading><!--:66f1d784:--> no grupo em nota absoluta.</p>
+<p><observablehq-loading></observablehq-loading><!--:0254da9a:--></p>
+<h2 id="o-esperado-para-a-renda" tabindex="-1"><a class="observablehq-header-anchor" href="#o-esperado-para-a-renda">O esperado para a renda</a></h2>
+<p>Países mais ricos tendem a ter notas maiores. Entre os <observablehq-loading></observablehq-loading><!--:16d9d90e:--> países com PISA e renda em <observablehq-loading></observablehq-loading><!--:18f5384d-2:-->, cada vez que a renda per capita dobra, a nota de matemática sobe em média <observablehq-loading></observablehq-loading><!--:cde3fff6:--> pontos. A linha tracejada abaixo mostra essa relação.</p>
+<p>O Brasil fica <observablehq-loading></observablehq-loading><!--:0ca1d8e7:--> pontos <observablehq-loading></observablehq-loading><!--:fc7ade28:--> do esperado para a sua renda: <observablehq-loading></observablehq-loading><!--:70479570:-->º de <observablehq-loading></observablehq-loading><!--:16d9d90e-1:-->. O caso oposto é o Vietnã, <observablehq-loading></observablehq-loading><!--:72d79b49:--> pontos acima do esperado, com renda menor que a brasileira.</p>
+<p><observablehq-loading></observablehq-loading><!--:b47d92c1:--></p>
+<p>Os pontos azuis são os países de algum dos três grupos; os cinza, os demais participantes do PISA.</p>
+<p>Entre os países de renda parecida, o Brasil é o <observablehq-loading></observablehq-loading><!--:1513c81c:-->. <observablehq-loading></observablehq-loading><!--:1a94b951:--> ficam abaixo.</p>
+<p><observablehq-loading></observablehq-loading><!--:b5ef1f76:--></p>
+<h2 id="america-latina" tabindex="-1"><a class="observablehq-header-anchor" href="#america-latina">América Latina</a></h2>
+<p>Na região, o Brasil é o <observablehq-loading></observablehq-loading><!--:d46a25d9:--> em matemática. <observablehq-loading></observablehq-loading><!--:d6462a79:--> ficam acima; <observablehq-loading></observablehq-loading><!--:3e7e4173:-->, abaixo. Toda a região está longe da média da OCDE.</p>
+<p><observablehq-loading></observablehq-loading><!--:643c63d5:--></p>
 <h2 id="leitura-e-ciencias" tabindex="-1"><a class="observablehq-header-anchor" href="#leitura-e-ciencias">Leitura e ciências</a></h2>
-<p>Leitura e ciências não repetem a queda da matemática. Em leitura o Brasil ainda subiu um pouco depois de 2012. Em ciências ficou quase no mesmo lugar, e em último entre os pares com dado.</p>
-<p>Em leitura, o Brasil tem <observablehq-loading></observablehq-loading><!--:d999ed80:--> pontos em <observablehq-loading></observablehq-loading><!--:ba70d85a:-->, contra <observablehq-loading></observablehq-loading><!--:270fa6a0:--> na média da OCDE. É o <observablehq-loading></observablehq-loading><!--:f068fc19:-->º de <observablehq-loading></observablehq-loading><!--:233a3acb:--> pares com dado. Desde <observablehq-loading></observablehq-loading><!--:05595cfe-1:-->, o Brasil <observablehq-loading></observablehq-loading><!--:360ce12a:--> e a OCDE <observablehq-loading></observablehq-loading><!--:ef5d18fe:-->. De 2012 para cá, o Brasil <observablehq-loading></observablehq-loading><!--:bf9ef0c6:-->.</p>
-<p><observablehq-loading></observablehq-loading><!--:558e051b:--></p>
-<p>Em ciências, o Brasil tem <observablehq-loading></observablehq-loading><!--:76475839:--> pontos em <observablehq-loading></observablehq-loading><!--:7709ea0e:-->, contra <observablehq-loading></observablehq-loading><!--:b770d057:--> na média da OCDE. É o <observablehq-loading></observablehq-loading><!--:da35473c:-->º de <observablehq-loading></observablehq-loading><!--:aff262bd:--> pares com dado. Desde <observablehq-loading></observablehq-loading><!--:e9fd222b-1:-->, o Brasil <observablehq-loading></observablehq-loading><!--:063ba49f:--> e a OCDE <observablehq-loading></observablehq-loading><!--:c9da02b8:-->. De 2012 para cá, o Brasil <observablehq-loading></observablehq-loading><!--:8da490b8:-->.</p>
-<p><observablehq-loading></observablehq-loading><!--:b1ae0afe:--></p>
+<p>Em leitura o Brasil vai melhor que em matemática; em ciências, pior. Em leitura, o Brasil fez <observablehq-loading></observablehq-loading><!--:ca84b8c0:--> pontos em <observablehq-loading></observablehq-loading><!--:18f5384d-3:-->, contra <observablehq-loading></observablehq-loading><!--:f3101041:--> na OCDE: <observablehq-loading></observablehq-loading><!--:c0eb909a:--> no grupo de mesmo ponto de partida, <observablehq-loading></observablehq-loading><!--:1d0ae2f2:--> entre os de renda parecida e <observablehq-loading></observablehq-loading><!--:85cc8b2d:--> na América Latina. Em ciências, <observablehq-loading></observablehq-loading><!--:e7b41cdb:--> pontos, contra <observablehq-loading></observablehq-loading><!--:139c0a4a:-->: <observablehq-loading></observablehq-loading><!--:3a014a41:-->, <observablehq-loading></observablehq-loading><!--:92860f97:--> e <observablehq-loading></observablehq-loading><!--:28b01c1c:-->.</p>
+<p><observablehq-loading></observablehq-loading><!--:d62bbe52:--></p>
 <h2 id="o-brasil-gasta-pouco-ou-gasta-mal" tabindex="-1"><a class="observablehq-header-anchor" href="#o-brasil-gasta-pouco-ou-gasta-mal">O Brasil gasta pouco ou gasta mal?</a></h2>
-<p>A pergunta mistura duas coisas. Como fatia do PIB, o Brasil não gasta pouco. Por aluno, fica perto da Polônia e abaixo da Coreia. A nota fica longe das duas.</p>
-<p>Como fatia do PIB, o gasto público brasileiro em educação é <observablehq-loading></observablehq-loading><!--:1c7e6135:--> em <observablehq-loading></observablehq-loading><!--:c54bde45:-->. A Polônia está em <observablehq-loading></observablehq-loading><!--:ec044546:--> (<observablehq-loading></observablehq-loading><!--:8a3c685c:-->) e a Coreia em <observablehq-loading></observablehq-loading><!--:16247959:--> (<observablehq-loading></observablehq-loading><!--:7ee8e63c:-->). Essa fatia não é gasto por aluno. O Brasil tem proporcionalmente mais crianças e jovens em idade escolar, então o mesmo percentual se divide entre mais gente.</p>
-<p><observablehq-loading></observablehq-loading><!--:5200ed9a:--></p>
-<p>Por aluno do ensino médio, o gasto público brasileiro foi <observablehq-loading></observablehq-loading><!--:277d1a91:--> da renda per capita em <observablehq-loading></observablehq-loading><!--:5a2b9372:-->. A Polônia gastou <observablehq-loading></observablehq-loading><!--:74c65262:--> em <observablehq-loading></observablehq-loading><!--:349ef6e8:-->, e a Coreia <observablehq-loading></observablehq-loading><!--:58c65767:--> em <observablehq-loading></observablehq-loading><!--:565c8b3b:-->. Em dinheiro, a distância para a Coreia é maior, porque a renda per capita coreana é cerca de <observablehq-loading></observablehq-loading><!--:e1ab304f:--> vezes a brasileira. Essa série tem falhas e termina antes do PISA de <observablehq-loading></observablehq-loading><!--:94285912-4:-->.</p>
-<p><observablehq-loading></observablehq-loading><!--:07447525:--></p>
-<p>Dizer que o Brasil “gasta muito e aprende pouco” acerta o aprendizado e erra o gasto. A fatia do PIB é parecida com a da Coreia e maior que a da Polônia. Por aluno, o Brasil fica perto da Polônia. Mesmo assim, fica <observablehq-loading></observablehq-loading><!--:c35dfc69:--> pontos atrás dela em matemática.</p>
-<p>Nos gráficos abaixo, cada ponto é um país. A linha tracejada é a média da OCDE em matemática. O ano do gasto e o ano do PISA não são os mesmos: cada país entra com o dado mais recente de cada série.</p>
-<p><observablehq-loading></observablehq-loading><!--:ca4b534a:--></p>
-<p><observablehq-loading></observablehq-loading><!--:e3ee0600:--></p>
+<p>Como fatia do PIB, o gasto público brasileiro em educação é alto: <observablehq-loading></observablehq-loading><!--:1c7e6135:--> em <observablehq-loading></observablehq-loading><!--:c54bde45:-->. Mas fatia do PIB não diz quanto dinheiro chega a cada aluno. Um país mais pobre, ou com mais crianças, pode gastar uma fatia grande e ainda pôr pouco dinheiro por aluno.</p>
+<p>A medida usada aqui é o <strong>gasto público acumulado por aluno dos 6 aos 15 anos</strong>, em dólar PPC constante — o dinheiro que o governo gastou com um aluno até a idade em que ele faz o PISA. A conta segue cada geração: para o aluno que fez a prova em <observablehq-loading></observablehq-loading><!--:18f5384d-4:-->, soma o gasto por aluno de cada ano entre <observablehq-loading></observablehq-loading><!--:10a1d086:--> e <observablehq-loading></observablehq-loading><!--:18f5384d-5:-->, no nível de ensino que ele cursava em cada idade.</p>
+<p>Para a geração do PISA <observablehq-loading></observablehq-loading><!--:18f5384d-6:-->, o Brasil gastou <observablehq-loading></observablehq-loading><!--:4cef4e5f:--> por aluno. A mediana dos países da OCDE com dado é <observablehq-loading></observablehq-loading><!--:44011dac:-->. Em valor absoluto, o Brasil gasta bem menos que os países ricos.</p>
+<div class="takeaway">
+  <strong>O gasto por aluno subiu <observablehq-loading></observablehq-loading><!--:32beee07:-->% e a nota não acompanhou.</strong>
+  <span>A geração do PISA 2009 recebeu <observablehq-loading></observablehq-loading><!--:e97caf1d:-->; a de <observablehq-loading></observablehq-loading><!--:18f5384d-7:-->, <observablehq-loading></observablehq-loading><!--:4cef4e5f-1:-->. No mesmo período, a nota de matemática foi de <observablehq-loading></observablehq-loading><!--:8adb6d6a:--> para <observablehq-loading></observablehq-loading><!--:046588a8:-->.</span>
+</div>
+<p>O gráfico abaixo mostra o caminho de alguns países de uma prova para outra: cada ponto é uma edição do PISA. O Brasil anda para a direita (mais gasto) sem subir (mais nota). O Peru, com cerca de metade do gasto brasileiro, saiu de baixo do Brasil e passou à frente.</p>
+<p><observablehq-loading></observablehq-loading><!--:1b66a1ee:--></p>
+<p>Com dinheiro parecido com o brasileiro (entre 75% e 125% do gasto acumulado do Brasil), a nota varia muito: <observablehq-loading></observablehq-loading><!--:9b9aafb7:-->. <observablehq-loading></observablehq-loading><!--:a7f723f3:--></p>
+<p><observablehq-loading></observablehq-loading><!--:43af4257:--></p>
+<div class="takeaway">
+  <strong>Pouco e mal.</strong>
+  <span>Em dinheiro por aluno, o Brasil gasta muito menos que os países ricos, então "gasta muito" está errado. Mas países com gasto parecido ou menor, como <observablehq-loading></observablehq-loading><!--:269f0de8:-->, tiram notas maiores. E o aumento do gasto na última década não virou aprendizado.</span>
+</div>
 <h2 id="o-que-isso-nao-diz" tabindex="-1"><a class="observablehq-header-anchor" href="#o-que-isso-nao-diz">O que isso não diz</a></h2>
 <ul>
-<li>O PISA é uma prova de alunos de 15 anos. Um país pode melhorar a universidade, a educação infantil ou a formação de adultos sem isso aparecer aqui.</li>
-<li>Nem todo par fez todas as edições. Os rankings contam só quem tem dado na última prova disponível.</li>
-<li>Gasto por aluno do ensino médio falta em vários anos e acaba antes de <observablehq-loading></observablehq-loading><!--:94285912-5:-->. Comparar esse número com o PISA recente mistura datas.</li>
-<li>Os gráficos não identificam a causa. Em matemática o Brasil subiu até 2012 e depois devolveu parte do ganho. Um gasto por aluno perto do da Polônia convive com uma nota muito menor.</li>
+<li><strong>Cobertura do PISA.</strong> O PISA só testa jovens de 15 anos matriculados a partir do 7º ano. No Brasil, uma parte grande dos jovens dessa idade fica fora, por atraso ou abandono. Isso tende a <em>melhorar</em> a média brasileira em relação a países que testam quase todos os jovens.</li>
+<li><strong>Só gasto público.</strong> O gasto acumulado não inclui mensalidades nem aulas particulares. Isso subestima o dinheiro total em países como Coreia e Chile, onde as famílias gastam muito.</li>
+<li><strong>Denominador.</strong> A UNESCO divide o gasto público por todos os alunos, inclusive os de escola privada, que no ensino básico brasileiro são cerca de um em cada cinco.</li>
+<li><strong>Preços.</strong> O dólar PPC corrige o custo de vida médio, não o salário dos professores, que costuma pesar mais nos países pobres.</li>
+<li><strong>Lacunas.</strong> Os anos sem dado de gasto são preenchidos por interpolação. Cada geração precisa de pelo menos 5 dos 10 anos com dado observado. Vários países de renda média não têm a série e ficam fora dos gráficos de gasto.</li>
+<li><strong>Causa.</strong> Os gráficos mostram associações, não o efeito do gasto. A estrutura de cada sistema (carreira docente, currículo, gestão) não aparece aqui.</li>
 </ul>
-<p>Fontes: OECD PISA, tabelas I.B1.5.4–6, via Our World in Data · World Bank WDI (<code>SE.XPD.TOTL.GD.ZS</code>, <code>SE.XPD.SECO.PC.ZS</code>). O grupo de pares é o mesmo do <a href="./">relatório</a>.</p>
+<p>Fontes: OCDE PISA, tabelas I.B1.5.4–6, via <a href="https://ourworldindata.org/grapher/average-performance-of-15-year-olds-in-mathematics-reading-and-science" target="_blank" rel="noopener noreferrer">Our World in Data</a> · UNESCO UIS, financiamento público inicial por aluno em PPC constante (<code>XUNIT.PPPCONST.{02,1,2,3}.FSGOV.FFNTR</code>) · Banco Mundial WDI (<code>NY.GDP.PCAP.PP.KD</code>, <code>SE.PRM.AGES</code>, <code>SE.SEC.AGES</code>, <code>SE.SEC.DURS.LO</code>, <code>SE.XPD.TOTL.GD.ZS</code>).</p>
 </main>
 <footer id="observablehq-footer">
 <div>World Bank WDI · Observable Framework</div>

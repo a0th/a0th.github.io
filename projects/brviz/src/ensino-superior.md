@@ -7,7 +7,7 @@ toc:
 
 Esta página acompanha o [relatório](./) e a página de [Educação](./educacao). Ela testa seis afirmações comuns sobre as universidades brasileiras, uma a uma, contra os dados. A comparação é com o mesmo grupo de pares — países cuja renda per capita em 1990 ficava entre 65% e 135% da brasileira.
 
-O resumo: quatro afirmações se sustentam, total ou parcialmente; uma é falsa na forma em que costuma ser feita; e uma não pode ser verificada com os dados disponíveis.
+O resumo: quatro afirmações se sustentam, total ou parcialmente; uma é falsa na forma em que costuma ser feita; e uma não pode ser verificada com os dados disponíveis. No fim, uma seção olha para o ProUni: quanto custa, para onde vão as bolsas e quantos bolsistas se formam.
 
 ```js
 import { load, series, last, NAMES } from "./components/data.js";
@@ -17,6 +17,7 @@ const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
 const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });
 const uis = await FileAttachment("./data/uis.csv").csv({ typed: true });
 const oa = await FileAttachment("./data/openalex.csv").csv({ typed: true });
+const prouni = await FileAttachment("./data/prouni.csv").csv({ typed: true });
 const d = load(wdi, pisa);
 
 const club = d.club90.filter((iso) => !["UMC", "LCN"].includes(iso));
@@ -201,6 +202,77 @@ const EVASAO = [
   { iso: "x4", name: "Rede privada", value: 19.9, tone: "group" },
 ];
 
+// --- ProUni (MEC, bolsas concedidas 2015–2020)
+const puTotal = new Map(prouni.filter((r) => r.metric === "bolsas").map((r) => [r.year, r.value]));
+const puEad = new Map(prouni.filter((r) => r.metric === "bolsas_ead").map((r) => [r.year, r.value]));
+const puYears = [...puTotal.keys()].sort();
+const puY0 = puYears[0];
+const puY1 = puYears.at(-1);
+const eadShare = (y) => (100 * puEad.get(y)) / puTotal.get(y);
+const puAll = d3.sum(puTotal.values());
+const puCourses = d3
+  .rollups(prouni.filter((r) => r.metric === "bolsas_curso" && r.key !== "OUTROS"), (v) => d3.sum(v, (r) => r.value), (r) => r.key)
+  .map(([key, n]) => ({ key, share: (100 * n) / puAll }))
+  .sort((a, b) => b.share - a.share);
+const puTop4 = d3.sum(puCourses.slice(0, 4), (r) => r.share);
+// Diferença salarial bruta entre formados e evadidos do ProUni, em salários mínimos por mês
+// (Almeida e Lourenço, Cadernos de Finanças Públicas, 2022, Tabela 5). null = curso fora da tabela.
+const PU_GAIN = {
+  "ADMINISTRAÇÃO": 0.76, "DIREITO": 0.53, "PEDAGOGIA": 0, "CIÊNCIAS CONTÁBEIS": 0.99, "ENFERMAGEM": 1.19,
+  "EDUCAÇÃO FÍSICA": null, "ENGENHARIA CIVIL": 1.25, "PSICOLOGIA": 0.39, "GESTÃO DE RECURSOS HUMANOS": null,
+  "FISIOTERAPIA": 0.21, "COMUNICAÇÃO SOCIAL": 0.77, "ENGENHARIA DE PRODUÇÃO": 1.07, "ARQUITETURA E URBANISMO": 0.73,
+  "SERVIÇO SOCIAL": null, "FARMÁCIA": 1.34,
+};
+const titleCase = (s) => s.toLowerCase().replace(/(^|\s)(\p{L})/gu, (m, sp, c) => sp + c.toUpperCase()).replace(/\b(De|E|Da|Do)\b/g, (w) => w.toLowerCase());
+const gainLabel = (key) => {
+  const g = PU_GAIN[key];
+  if (g === undefined || g === null) return "sem estimativa";
+  if (g === 0) return "ganho não significativo";
+  return `+${g.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} SM/mês`;
+};
+const PU_COST = 6000;
+const PU_COST_PPP = Math.round(PU_COST / 2.265 / 100) * 100;
+
+function puCoursePlot(width) {
+  const tier = (g) => (g == null ? "none" : g < 0.5 ? "weak" : "ok");
+  const rows = puCourses.map((r) => ({ ...r, name: titleCase(r.key), gain: gainLabel(r.key), tier: tier(PU_GAIN[r.key]) }));
+  return Plot.plot({
+    width,
+    height: 30 * rows.length + 50,
+    marginLeft: Math.min(200, Math.max(130, width * 0.3)),
+    marginRight: 150,
+    x: { label: `% das bolsas concedidas, ${puY0}–${puY1}`, grid: true },
+    y: { label: null, domain: rows.map((r) => r.name) },
+    marks: [
+      Plot.barX(rows.filter((r) => r.tier === "ok"), { y: "name", x: "share", fill: "#6ba8d4" }),
+      Plot.barX(rows.filter((r) => r.tier === "weak"), { y: "name", x: "share", fill: "#b45309" }),
+      Plot.barX(rows.filter((r) => r.tier === "none"), { y: "name", x: "share", fill: "#aaa" }),
+      Plot.text(rows, { y: "name", x: "share", text: (r) => `${r.share.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% · ${r.gain}`, dx: 6, textAnchor: "start", fill: "currentColor", fontSize: 11 }),
+      Plot.ruleX([0]),
+    ],
+  });
+}
+
+function puEadPlot(width) {
+  const rows = puYears.flatMap((y) => [
+    { year: y, kind: "Presencial", value: (puTotal.get(y) - puEad.get(y)) / 1000 },
+    { year: y, kind: "A distância", value: puEad.get(y) / 1000 },
+  ]);
+  return Plot.plot({
+    width,
+    height: 280,
+    marginLeft: 56,
+    marginTop: 40,
+    x: { label: null, tickFormat: "d", type: "band" },
+    y: { label: "bolsas concedidas (mil)", grid: true, domain: [0, 280] },
+    color: { legend: true, domain: ["Presencial", "A distância"], range: ["#6ba8d4", "#b45309"] },
+    marks: [
+      Plot.barY(rows, { x: "year", y: "value", fill: "kind", order: ["Presencial", "A distância"], tip: true }),
+      Plot.text(puYears, { x: (y) => y, y: (y) => puTotal.get(y) / 1000, text: (y) => `${eadShare(y).toLocaleString("pt-BR", { maximumFractionDigits: 0 })}% EaD`, dy: -8, fontSize: 11 }),
+    ],
+  });
+}
+
 function lede(kicker, title, value, neg = false) {
   return html`<div class="lede">
     <div class="lede-kicker">${kicker}</div>
@@ -369,6 +441,43 @@ O desperdício mais visível está nas vagas públicas. Segundo o Censo de 2024,
   <span>"Sem retorno" não vale para o diploma em geral, que paga muito bem. Vale para parte dos cursos e das vagas: há oferta pública que não encontra aluno. Mas os dados públicos não permitem dizer quanto do gasto vai para esses cursos.</span>
 </div>
 
+## E o ProUni?
+
+O ProUni dá bolsas em faculdades privadas a alunos de baixa renda que vieram da escola pública e fizeram o Enem. As faculdades não recebem dinheiro: em troca das bolsas, deixam de pagar alguns impostos federais. Desde 2005, segundo o [MEC](https://www.gov.br/mec/pt-br/prouni/resultados), foram 8,1 milhões de bolsas oferecidas, 3,8 milhões ocupadas e 1,6 milhão de formados.
+
+### Custo por bolsista
+
+Um estudo publicado na revista do Tesouro Nacional ([Almeida e Lourenço, 2022](https://publicacoes.tesouro.gov.br/index.php/cadernos/article/view/157)) somou os impostos que o governo deixou de cobrar entre 2005 e 2017: R$ 13,6 bilhões em valores de 2020. Dividido pelas bolsas ocupadas, dá cerca de R$ ${fmt0(PU_COST)} por bolsista por ano, ou perto de ${usd(PU_COST_PPP)} em dólares PPC. É ${fmt0(100 * PU_COST_PPP / 13569)}% do que o governo gasta com cada aluno de universidade pública pela conta da OCDE (${usd(13569)}).
+
+A comparação favorece o ProUni mais do que deveria. O custo do aluno público inclui pesquisa e hospitais, e a faculdade privada absorve parte do custo da bolsa. Mesmo assim, a diferença é grande o bastante para ficar de pé.
+
+O mesmo estudo seguiu os ex-bolsistas no mercado de trabalho formal. Quem se formou pelo ProUni ganha cerca de 30% a mais do que quem entrou pelo programa e largou o curso. Somando esse ganho de salário, os autores concluem que o programa já devolveu mais do que custou: R$ 38 bilhões a mais, num cenário conservador.
+
+### Onde estão as bolsas
+
+O dinheiro é público, mas quem escolhe os cursos é a faculdade. Entre ${puY0} e ${puY1}, quatro cursos ficaram com ${fmt0(puTop4)}% das bolsas: Administração, Direito, Pedagogia e Ciências Contábeis. O estudo comparou também, curso a curso, o salário de quem se formou com o de quem largou. Em Pedagogia, o terceiro curso com mais bolsas, a diferença não é significativa. Em Fisioterapia e Psicologia, é pequena. Em Enfermagem, Farmácia e engenharia, passa de um salário mínimo por mês.
+
+${resize((width) => puCoursePlot(width))}
+
+<p class="small muted">Barras laranja: cursos em que a diferença salarial entre formados e evadidos do ProUni é não significativa ou menor que meio salário mínimo. Barras cinza ("sem estimativa"): o curso não aparece na tabela do estudo.</p>
+
+O peso do ensino a distância cresceu rápido. Em ${puY0}, ${fmt0(eadShare(puY0))}% das bolsas eram para cursos a distância; em ${puY1}, ${fmt0(eadShare(puY1))}%. Segundo o mesmo estudo, quem se forma a distância pelo ProUni ganha 7,6% menos do que quem se forma no presencial.
+
+${resize((width) => puEadPlot(width))}
+
+Faltam candidatos para as bolsas. Desde o início, menos da metade das bolsas oferecidas foi ocupada. Em 2024, segundo o Semesp ([O Globo](https://oglobo.globo.com/brasil/especial/20-anos-do-prouni-explosao-de-vagas-ociosas-e-na-modalidade-de-ensino-a-distancia-sao-desafio-ao-programa.ghtml)), só 26% das mais de 650 mil bolsas oferecidas encontraram aluno.
+
+### Evasão
+
+O bolsista do ProUni abandona menos o curso. Entre os alunos que entraram em 2014, 58% dos bolsistas tinham se formado dez anos depois, contra 36% dos alunos sem nenhum benefício, segundo o INEP. O estudo publicado pelo Tesouro chega a um resultado parecido e mostra que a bolsa integral aumenta a chance de formatura em relação à parcial.
+
+A comparação não isola o efeito da bolsa. O bolsista precisou de nota mínima no Enem e escolheu o curso sabendo que não pagaria, então é um aluno diferente da média. Parte da diferença viria de qualquer jeito.
+
+<div class="takeaway">
+  <strong>Barato por aluno, mal direcionado.</strong>
+  <span>O ProUni custa uma fração do aluno público, seus bolsistas se formam mais e, no conjunto, o programa se paga. Mas o governo não escolhe onde a bolsa vai: quase um terço delas fica em quatro cursos, um deles sem ganho salarial mensurável, e cada vez mais no ensino a distância, onde o retorno é menor. Os autores do estudo sugerem vincular a isenção a cursos com efeito no mercado de trabalho.</span>
+</div>
+
 ## Limites
 
 - **Citações.** O OpenAlex é mais amplo que as bases comerciais (Web of Science, Scopus) e inclui mais revistas nacionais. Por isso, as parcelas de "todas as revistas" e "referência" aparecem separadas. Um artigo com autores de dois países conta para os dois. Os anos mais recentes ainda acumulam citações.
@@ -376,6 +485,7 @@ O desperdício mais visível está nas vagas públicas. Segundo o Censo de 2024,
 - **Gasto.** A UNESCO divide o gasto público por todos os alunos, públicos e privados. Como no Brasil 80% estão na rede privada, o gasto por aluno da UNESCO subestima o custo de um aluno público. Por isso, o custo por aluno vem da OCDE, que divide só pelos alunos das instituições públicas.
 - **INAF.** A amostra de pessoas com diploma superior tem 583 entrevistados. As diferenças de poucos pontos não são significativas.
 - **Evasão.** O INEP conta como desistente quem troca de curso, mesmo que se forme em outro.
+- **ProUni.** O custo por bolsista divide a renúncia fiscal de 2005 a 2017 pelas bolsas ocupadas; não inclui o que a faculdade gasta por conta própria. A distribuição por curso usa as bolsas concedidas de ${puY0} a ${puY1}, com os nomes de curso normalizados (sem campus nem modalidade). Os ganhos salariais por curso são diferenças simples entre formados e evadidos do programa, não efeitos causais.
 - **Grupo de pares.** Equador e Colômbia não têm parte das séries; os rankings usam só os países com dado desde ${MIN_YEAR}.
 
 ## Fontes
@@ -386,3 +496,4 @@ O desperdício mais visível está nas vagas públicas. Segundo o Censo de 2024,
 - **Gasto por aluno, conclusão, evasão no primeiro ano, prêmio salarial**: OCDE, [Education at a Glance 2024](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html) e [2025](https://www.oecd.org/en/publications/education-at-a-glance-2025_1c0d9c79-en.html).
 - **Alfabetismo funcional**: [INAF 2024](https://alfabetismofuncional.org.br/wp-content/uploads/2026/04/relatorio-inaf-digital.pdf), Ação Educativa e Instituto Paulo Montenegro.
 - **Evasão, trajetória e vagas**: INEP, [Censo da Educação Superior 2024](https://download.inep.gov.br/educacao_superior/censo_superior/documentos/2024/apresentacao_censo_da_educacao_superior_2024.pdf).
+- **ProUni**: bolsas concedidas, dados abertos do MEC (lidos de uma [cópia no GitHub](https://github.com/quirinowelton/prouni-data-analytics-investigando-o-acesso-ao-ensino-superior), porque o portal do MEC bloqueia downloads automáticos); totais do programa, [MEC](https://www.gov.br/mec/pt-br/prouni/resultados); custo, retorno e salários por curso, Almeida e Lourenço, [Cadernos de Finanças Públicas, 2022](https://doi.org/10.55532/1806-8944.2022.157); ocupação em 2024, Semesp via [O Globo](https://oglobo.globo.com/brasil/especial/20-anos-do-prouni-explosao-de-vagas-ociosas-e-na-modalidade-de-ensino-a-distancia-sao-desafio-ao-programa.ghtml); dólar PPC, Banco Mundial (PA.NUS.PPP).

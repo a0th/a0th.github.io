@@ -13,8 +13,8 @@
 <link rel="modulepreload" href="./_observablehq/client.a97643eb.js">
 <link rel="modulepreload" href="./_observablehq/runtime.607a8173.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.81cd90e3.js">
-<link rel="modulepreload" href="./_import/components/data.0f96dd0b.js">
-<link rel="modulepreload" href="./_import/components/plots.eb453234.js">
+<link rel="modulepreload" href="./_import/components/data.e41da30b.js">
+<link rel="modulepreload" href="./_import/components/plots.aac2c00c.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/080cf928.js">
 <link rel="modulepreload" href="./_npm/htl@1.0.0/11521f02.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/93ce672e.js">
@@ -119,11 +119,11 @@ mountTocSidebar();
 import {define} from "./_observablehq/client.a97643eb.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.1a76da5d.csv","lastModified":1787865054925,"size":23242});
+registerFile("./data/pisa.csv", {"name":"./data/pisa.csv","mimeType":"text/csv","path":"./_file/data/pisa.5665f84d.csv","lastModified":1793096827158,"size":88504});
 registerFile("./data/wdi.csv", {"name":"./data/wdi.csv","mimeType":"text/csv","path":"./_file/data/wdi.9806cc61.csv","lastModified":1793050873047,"size":2705843});
 
 define({id: "db24c6e0", inputs: ["FileAttachment","d3","html","getComputedStyle","Plot"], outputs: ["load","series","at","last","keep","NAMES","metricPlot","barDelta","wdi","pisa","d","debt","primary","balance","rev","exp","club","debtClub","interestOf","year","braDebt","braPrimary","braInterest","braRev","braExp","firstYear","braYears","fiscalRows","nominalRows","mean","braInterestMean","braPrimaryMean","latestPoint","peerBars","debtBars","interestBars","revBars","rankOf","rankDebt","rankInterest","rankRev","nth","peerMean","debt13","debt20","fmtPp","fmtSigned","lede","fiscalPlot"], body: async (FileAttachment,d3,html,getComputedStyle,Plot) => {
-const [{load, series, at, last, keep, NAMES}, {metricPlot, barDelta}] = await Promise.all([import("./_import/components/data.0f96dd0b.js"), import("./_import/components/plots.eb453234.js")]);
+const [{load, series, at, last, keep, NAMES}, {metricPlot, barDelta}] = await Promise.all([import("./_import/components/data.e41da30b.js"), import("./_import/components/plots.aac2c00c.js")]);
 
 const wdi = await FileAttachment("./data/wdi.csv").csv({ typed: true });
 const pisa = await FileAttachment("./data/pisa.csv").csv({ typed: true });

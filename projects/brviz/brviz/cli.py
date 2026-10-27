@@ -4,10 +4,12 @@ import argparse
 from pathlib import Path
 
 from brviz.commodities import fetch as fetch_commodities
+from brviz.edu_intl import fetch as fetch_edu_intl
 from brviz.eleicoes import fetch as fetch_eleicoes
 from brviz.ocindex import fetch as fetch_ocindex
 from brviz.openalex import fetch as fetch_openalex
 from brviz.pisa import fetch as fetch_pisa
+from brviz.prouni import fetch as fetch_prouni
 from brviz.uis import fetch as fetch_uis
 from brviz.wdi import fetch, splice
 
@@ -19,6 +21,8 @@ OCINDEX_OUT = ROOT / "data" / "ocindex.csv"
 ELEICOES_OUT = ROOT / "data" / "eleicoes.csv"
 UIS_OUT = ROOT / "data" / "uis.csv"
 OPENALEX_OUT = ROOT / "data" / "openalex.csv"
+EDU_INTL_OUT = ROOT / "data" / "edu_intl.csv"
+PROUNI_OUT = ROOT / "data" / "prouni.csv"
 
 STANDALONE = {
     "pisa": (fetch_pisa, PISA_OUT),
@@ -27,6 +31,8 @@ STANDALONE = {
     "eleicoes": (fetch_eleicoes, ELEICOES_OUT),
     "uis": (fetch_uis, UIS_OUT),
     "openalex": (fetch_openalex, OPENALEX_OUT),
+    "edu_intl": (fetch_edu_intl, EDU_INTL_OUT),
+    "prouni": (fetch_prouni, PROUNI_OUT),
 }
 
 
@@ -49,7 +55,7 @@ def main(argv: list[str] | None = None) -> int:
     p_fetch.add_argument(
         "--only",
         nargs="+",
-        help="Refresh these series only (WDI/IMF keys splice wdi.csv; pisa, commodities, ocindex, eleicoes, uis and openalex rewrite their own files)",
+        help="Refresh these series only (WDI/IMF keys splice wdi.csv; pisa, commodities, ocindex, eleicoes, uis, openalex, edu_intl and prouni rewrite their own files)",
     )
 
     args = parser.parse_args(argv)
@@ -77,6 +83,8 @@ def main(argv: list[str] | None = None) -> int:
         _print_meta(fetch_eleicoes(out=ELEICOES_OUT))
         _print_meta(fetch_uis(out=UIS_OUT))
         _print_meta(fetch_openalex(out=OPENALEX_OUT))
+        _print_meta(fetch_edu_intl(out=EDU_INTL_OUT))
+        _print_meta(fetch_prouni(out=PROUNI_OUT))
     return 0
 
 

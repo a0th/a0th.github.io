@@ -1,0 +1,1330 @@
+metric,code,label,iso,country,year,value
+pisa_read,I.B1.5.5,PISA reading mean,ALB,Albania,2000,348.84952
+pisa_math,I.B1.5.4,PISA mathematics mean,ALB,Albania,2009,377.46106
+pisa_read,I.B1.5.5,PISA reading mean,ALB,Albania,2009,384.8166
+pisa_sci,I.B1.5.6,PISA science mean,ALB,Albania,2009,390.69574
+pisa_math,I.B1.5.4,PISA mathematics mean,ALB,Albania,2012,394.32935
+pisa_read,I.B1.5.5,PISA reading mean,ALB,Albania,2012,393.96426
+pisa_sci,I.B1.5.6,PISA science mean,ALB,Albania,2012,397.3732
+pisa_math,I.B1.5.4,PISA mathematics mean,ALB,Albania,2015,413.157
+pisa_read,I.B1.5.5,PISA reading mean,ALB,Albania,2015,405.25876
+pisa_sci,I.B1.5.6,PISA science mean,ALB,Albania,2015,427.22498
+pisa_math,I.B1.5.4,PISA mathematics mean,ALB,Albania,2018,437.222
+pisa_read,I.B1.5.5,PISA reading mean,ALB,Albania,2018,405.42935
+pisa_sci,I.B1.5.6,PISA science mean,ALB,Albania,2018,416.72626
+pisa_math,I.B1.5.4,PISA mathematics mean,ALB,Albania,2022,368.2217
+pisa_read,I.B1.5.5,PISA reading mean,ALB,Albania,2022,358.43475
+pisa_sci,I.B1.5.6,PISA science mean,ALB,Albania,2022,375.96774
+pisa_math,I.B1.5.4,PISA mathematics mean,DZA,Algeria,2015,359.60623
+pisa_read,I.B1.5.5,PISA reading mean,DZA,Algeria,2015,349.85925
+pisa_sci,I.B1.5.6,PISA science mean,DZA,Algeria,2015,375.74512
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2000,418.2507
+pisa_math,I.B1.5.4,PISA mathematics mean,ARG,Argentina,2006,381.2539
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2006,373.7238
+pisa_sci,I.B1.5.6,PISA science mean,ARG,Argentina,2006,391.2439
+pisa_math,I.B1.5.4,PISA mathematics mean,ARG,Argentina,2009,388.0681
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2009,398.2609
+pisa_sci,I.B1.5.6,PISA science mean,ARG,Argentina,2009,400.83853
+pisa_math,I.B1.5.4,PISA mathematics mean,ARG,Argentina,2012,388.4317
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2012,395.97913
+pisa_sci,I.B1.5.6,PISA science mean,ARG,Argentina,2012,405.63202
+pisa_math,I.B1.5.4,PISA mathematics mean,ARG,Argentina,2015,409.03333
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2015,425.30313
+pisa_sci,I.B1.5.6,PISA science mean,ARG,Argentina,2015,432.22626
+pisa_math,I.B1.5.4,PISA mathematics mean,ARG,Argentina,2018,379.45383
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2018,401.5031
+pisa_sci,I.B1.5.6,PISA science mean,ARG,Argentina,2018,404.07144
+pisa_math,I.B1.5.4,PISA mathematics mean,ARG,Argentina,2022,377.52902
+pisa_read,I.B1.5.5,PISA reading mean,ARG,Argentina,2022,400.74405
+pisa_sci,I.B1.5.6,PISA science mean,ARG,Argentina,2022,406.19135
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2000,528.2785
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2003,524.266
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2003,525.427
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2006,519.9078
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2006,512.8933
+pisa_sci,I.B1.5.6,PISA science mean,AUS,Australia,2006,526.8796
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2009,514.34045
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2009,514.90063
+pisa_sci,I.B1.5.6,PISA science mean,AUS,Australia,2009,527.2705
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2012,504.15076
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2012,511.804
+pisa_sci,I.B1.5.6,PISA science mean,AUS,Australia,2012,521.49475
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2015,493.89624
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2015,502.90057
+pisa_sci,I.B1.5.6,PISA science mean,AUS,Australia,2015,509.99387
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2018,491.36002
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2018,502.6317
+pisa_sci,I.B1.5.6,PISA science mean,AUS,Australia,2018,502.96457
+pisa_math,I.B1.5.4,PISA mathematics mean,AUS,Australia,2022,487.08426
+pisa_read,I.B1.5.5,PISA reading mean,AUS,Australia,2022,498.05093
+pisa_sci,I.B1.5.6,PISA science mean,AUS,Australia,2022,507.00085
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2000,492.056
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2003,505.611
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2003,490.69324
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2006,505.4836
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2006,490.19397
+pisa_sci,I.B1.5.6,PISA science mean,AUT,Austria,2006,510.83716
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2009,495.90866
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2009,470.28363
+pisa_sci,I.B1.5.6,PISA science mean,AUT,Austria,2009,494.32767
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2012,505.54074
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2012,489.60934
+pisa_sci,I.B1.5.6,PISA science mean,AUT,Austria,2012,505.78125
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2015,496.74228
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2015,484.8656
+pisa_sci,I.B1.5.6,PISA science mean,AUT,Austria,2015,495.03748
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2018,498.94232
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2018,484.39258
+pisa_sci,I.B1.5.6,PISA science mean,AUT,Austria,2018,489.78043
+pisa_math,I.B1.5.4,PISA mathematics mean,AUT,Austria,2022,487.2675
+pisa_read,I.B1.5.5,PISA reading mean,AUT,Austria,2022,480.40585
+pisa_sci,I.B1.5.6,PISA science mean,AUT,Austria,2022,491.27097
+pisa_math,I.B1.5.4,PISA mathematics mean,BLR,Belarus,2018,471.86514
+pisa_read,I.B1.5.5,PISA reading mean,BLR,Belarus,2018,473.78845
+pisa_sci,I.B1.5.6,PISA science mean,BLR,Belarus,2018,471.26367
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2000,507.1259
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2003,529.28644
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2003,506.98734
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2006,520.349
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2006,500.9006
+pisa_sci,I.B1.5.6,PISA science mean,BEL,Belgium,2006,510.3635
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2009,515.2723
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2009,505.9458
+pisa_sci,I.B1.5.6,PISA science mean,BEL,Belgium,2009,506.57553
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2012,514.52924
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2012,508.6179
+pisa_sci,I.B1.5.6,PISA science mean,BEL,Belgium,2012,504.86765
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2015,506.98438
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2015,498.5242
+pisa_sci,I.B1.5.6,PISA science mean,BEL,Belgium,2015,501.99973
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2018,508.0703
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2018,492.86444
+pisa_sci,I.B1.5.6,PISA science mean,BEL,Belgium,2018,498.77313
+pisa_math,I.B1.5.4,PISA mathematics mean,BEL,Belgium,2022,489.48682
+pisa_read,I.B1.5.5,PISA reading mean,BEL,Belgium,2022,478.85266
+pisa_sci,I.B1.5.6,PISA science mean,BEL,Belgium,2022,490.57834
+pisa_math,I.B1.5.4,PISA mathematics mean,BIH,Bosnia and Herzegovina,2018,406.3844
+pisa_read,I.B1.5.5,PISA reading mean,BIH,Bosnia and Herzegovina,2018,402.9778
+pisa_sci,I.B1.5.6,PISA science mean,BIH,Bosnia and Herzegovina,2018,398.49765
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2000,396.02908
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2003,356.01578
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2003,402.7963
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2006,369.51505
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2006,392.8851
+pisa_sci,I.B1.5.6,PISA science mean,BRA,Brazil,2006,390.33157
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2009,385.81412
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2009,411.7549
+pisa_sci,I.B1.5.6,PISA science mean,BRA,Brazil,2009,405.404
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2012,388.50897
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2012,406.53317
+pisa_sci,I.B1.5.6,PISA science mean,BRA,Brazil,2012,401.6197
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2015,377.06952
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2015,407.3486
+pisa_sci,I.B1.5.6,PISA science mean,BRA,Brazil,2015,400.6821
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2018,383.56912
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2018,412.87332
+pisa_sci,I.B1.5.6,PISA science mean,BRA,Brazil,2018,403.62094
+pisa_math,I.B1.5.4,PISA mathematics mean,BRA,Brazil,2022,378.69138
+pisa_read,I.B1.5.5,PISA reading mean,BRA,Brazil,2022,410.357
+pisa_sci,I.B1.5.6,PISA science mean,BRA,Brazil,2022,403.00122
+pisa_math,I.B1.5.4,PISA mathematics mean,BRN,Brunei,2018,430.11298
+pisa_read,I.B1.5.5,PISA reading mean,BRN,Brunei,2018,408.06995
+pisa_sci,I.B1.5.6,PISA science mean,BRN,Brunei,2018,430.98438
+pisa_math,I.B1.5.4,PISA mathematics mean,BRN,Brunei,2022,442.0931
+pisa_read,I.B1.5.5,PISA reading mean,BRN,Brunei,2022,429.2319
+pisa_sci,I.B1.5.6,PISA science mean,BRN,Brunei,2022,445.8551
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2000,430.40344
+pisa_math,I.B1.5.4,PISA mathematics mean,BGR,Bulgaria,2006,413.44916
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2006,401.93497
+pisa_sci,I.B1.5.6,PISA science mean,BGR,Bulgaria,2006,434.07977
+pisa_math,I.B1.5.4,PISA mathematics mean,BGR,Bulgaria,2009,428.06613
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2009,429.0811
+pisa_sci,I.B1.5.6,PISA science mean,BGR,Bulgaria,2009,439.29416
+pisa_math,I.B1.5.4,PISA mathematics mean,BGR,Bulgaria,2012,438.73825
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2012,436.12573
+pisa_sci,I.B1.5.6,PISA science mean,BGR,Bulgaria,2012,446.46872
+pisa_math,I.B1.5.4,PISA mathematics mean,BGR,Bulgaria,2015,441.1899
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2015,431.71753
+pisa_sci,I.B1.5.6,PISA science mean,BGR,Bulgaria,2015,445.77197
+pisa_math,I.B1.5.4,PISA mathematics mean,BGR,Bulgaria,2018,436.04056
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2018,419.844
+pisa_sci,I.B1.5.6,PISA science mean,BGR,Bulgaria,2018,424.07358
+pisa_math,I.B1.5.4,PISA mathematics mean,BGR,Bulgaria,2022,417.3039
+pisa_read,I.B1.5.5,PISA reading mean,BGR,Bulgaria,2022,404.30374
+pisa_sci,I.B1.5.6,PISA science mean,BGR,Bulgaria,2022,420.99323
+pisa_math,I.B1.5.4,PISA mathematics mean,KHM,Cambodia,2022,336.39603
+pisa_read,I.B1.5.5,PISA reading mean,KHM,Cambodia,2022,328.84277
+pisa_sci,I.B1.5.6,PISA science mean,KHM,Cambodia,2022,347.10416
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2000,534.31274
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2003,532.48676
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2003,527.91364
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2006,527.0072
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2006,527.0113
+pisa_sci,I.B1.5.6,PISA science mean,CAN,Canada,2006,534.4698
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2009,526.8052
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2009,524.2418
+pisa_sci,I.B1.5.6,PISA science mean,CAN,Canada,2009,528.70496
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2012,518.0704
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2012,523.124
+pisa_sci,I.B1.5.6,PISA science mean,CAN,Canada,2012,525.4413
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2015,515.6474
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2015,526.6678
+pisa_sci,I.B1.5.6,PISA science mean,CAN,Canada,2015,527.7047
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2018,512.01697
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2018,520.0855
+pisa_sci,I.B1.5.6,PISA science mean,CAN,Canada,2018,517.9977
+pisa_math,I.B1.5.4,PISA mathematics mean,CAN,Canada,2022,496.9479
+pisa_read,I.B1.5.5,PISA reading mean,CAN,Canada,2022,507.1329
+pisa_sci,I.B1.5.6,PISA science mean,CAN,Canada,2022,515.01666
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2000,409.5568
+pisa_math,I.B1.5.4,PISA mathematics mean,CHL,Chile,2006,411.35034
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2006,442.09134
+pisa_sci,I.B1.5.6,PISA science mean,CHL,Chile,2006,438.17746
+pisa_math,I.B1.5.4,PISA mathematics mean,CHL,Chile,2009,421.0605
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2009,449.3696
+pisa_sci,I.B1.5.6,PISA science mean,CHL,Chile,2009,447.46735
+pisa_math,I.B1.5.4,PISA mathematics mean,CHL,Chile,2012,422.63235
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2012,441.39816
+pisa_sci,I.B1.5.6,PISA science mean,CHL,Chile,2012,444.93393
+pisa_math,I.B1.5.4,PISA mathematics mean,CHL,Chile,2015,422.67136
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2015,458.57086
+pisa_sci,I.B1.5.6,PISA science mean,CHL,Chile,2015,446.95605
+pisa_math,I.B1.5.4,PISA mathematics mean,CHL,Chile,2018,417.40656
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2018,452.27255
+pisa_sci,I.B1.5.6,PISA science mean,CHL,Chile,2018,443.58255
+pisa_math,I.B1.5.4,PISA mathematics mean,CHL,Chile,2022,411.69656
+pisa_read,I.B1.5.5,PISA reading mean,CHL,Chile,2022,447.97894
+pisa_sci,I.B1.5.6,PISA science mean,CHL,Chile,2022,443.5434
+pisa_math,I.B1.5.4,PISA mathematics mean,COL,Colombia,2006,369.97852
+pisa_read,I.B1.5.5,PISA reading mean,COL,Colombia,2006,385.30804
+pisa_sci,I.B1.5.6,PISA science mean,COL,Colombia,2006,388.03827
+pisa_math,I.B1.5.4,PISA mathematics mean,COL,Colombia,2009,380.8482
+pisa_read,I.B1.5.5,PISA reading mean,COL,Colombia,2009,413.1815
+pisa_sci,I.B1.5.6,PISA science mean,COL,Colombia,2009,401.75012
+pisa_math,I.B1.5.4,PISA mathematics mean,COL,Colombia,2012,376.4886
+pisa_read,I.B1.5.5,PISA reading mean,COL,Colombia,2012,403.40253
+pisa_sci,I.B1.5.6,PISA science mean,COL,Colombia,2012,398.67862
+pisa_math,I.B1.5.4,PISA mathematics mean,COL,Colombia,2015,389.64383
+pisa_read,I.B1.5.5,PISA reading mean,COL,Colombia,2015,424.90518
+pisa_sci,I.B1.5.6,PISA science mean,COL,Colombia,2015,415.72876
+pisa_math,I.B1.5.4,PISA mathematics mean,COL,Colombia,2018,390.93228
+pisa_read,I.B1.5.5,PISA reading mean,COL,Colombia,2018,412.29507
+pisa_sci,I.B1.5.6,PISA science mean,COL,Colombia,2018,413.323
+pisa_math,I.B1.5.4,PISA mathematics mean,COL,Colombia,2022,382.69684
+pisa_read,I.B1.5.5,PISA reading mean,COL,Colombia,2022,408.66504
+pisa_sci,I.B1.5.6,PISA science mean,COL,Colombia,2022,411.12067
+pisa_math,I.B1.5.4,PISA mathematics mean,CRI,Costa Rica,2012,406.99988
+pisa_read,I.B1.5.5,PISA reading mean,CRI,Costa Rica,2012,440.54782
+pisa_sci,I.B1.5.6,PISA science mean,CRI,Costa Rica,2012,429.35098
+pisa_math,I.B1.5.4,PISA mathematics mean,CRI,Costa Rica,2015,400.2534
+pisa_read,I.B1.5.5,PISA reading mean,CRI,Costa Rica,2015,427.48755
+pisa_sci,I.B1.5.6,PISA science mean,CRI,Costa Rica,2015,419.60803
+pisa_math,I.B1.5.4,PISA mathematics mean,CRI,Costa Rica,2018,402.33057
+pisa_read,I.B1.5.5,PISA reading mean,CRI,Costa Rica,2018,426.49823
+pisa_sci,I.B1.5.6,PISA science mean,CRI,Costa Rica,2018,415.62247
+pisa_math,I.B1.5.4,PISA mathematics mean,CRI,Costa Rica,2022,384.57605
+pisa_read,I.B1.5.5,PISA reading mean,CRI,Costa Rica,2022,415.2331
+pisa_sci,I.B1.5.6,PISA science mean,CRI,Costa Rica,2022,410.98663
+pisa_math,I.B1.5.4,PISA mathematics mean,HRV,Croatia,2006,467.2467
+pisa_read,I.B1.5.5,PISA reading mean,HRV,Croatia,2006,477.36423
+pisa_sci,I.B1.5.6,PISA science mean,HRV,Croatia,2006,493.2044
+pisa_math,I.B1.5.4,PISA mathematics mean,HRV,Croatia,2009,459.9389
+pisa_read,I.B1.5.5,PISA reading mean,HRV,Croatia,2009,475.7489
+pisa_sci,I.B1.5.6,PISA science mean,HRV,Croatia,2009,486.36343
+pisa_math,I.B1.5.4,PISA mathematics mean,HRV,Croatia,2012,471.13147
+pisa_read,I.B1.5.5,PISA reading mean,HRV,Croatia,2012,484.56503
+pisa_sci,I.B1.5.6,PISA science mean,HRV,Croatia,2012,491.3566
+pisa_math,I.B1.5.4,PISA mathematics mean,HRV,Croatia,2015,464.0401
+pisa_read,I.B1.5.5,PISA reading mean,HRV,Croatia,2015,486.8632
+pisa_sci,I.B1.5.6,PISA science mean,HRV,Croatia,2015,475.39117
+pisa_math,I.B1.5.4,PISA mathematics mean,HRV,Croatia,2018,464.20428
+pisa_read,I.B1.5.5,PISA reading mean,HRV,Croatia,2018,478.98917
+pisa_sci,I.B1.5.6,PISA science mean,HRV,Croatia,2018,472.3626
+pisa_math,I.B1.5.4,PISA mathematics mean,HRV,Croatia,2022,463.1052
+pisa_read,I.B1.5.5,PISA reading mean,HRV,Croatia,2022,475.49893
+pisa_sci,I.B1.5.6,PISA science mean,HRV,Croatia,2022,482.66745
+pisa_math,I.B1.5.4,PISA mathematics mean,CYP,Cyprus,2012,439.69638
+pisa_read,I.B1.5.5,PISA reading mean,CYP,Cyprus,2012,448.95297
+pisa_sci,I.B1.5.6,PISA science mean,CYP,Cyprus,2012,437.67645
+pisa_math,I.B1.5.4,PISA mathematics mean,CYP,Cyprus,2015,437.1285
+pisa_read,I.B1.5.5,PISA reading mean,CYP,Cyprus,2015,442.83142
+pisa_sci,I.B1.5.6,PISA science mean,CYP,Cyprus,2015,432.57675
+pisa_math,I.B1.5.4,PISA mathematics mean,CYP,Cyprus,2018,450.68298
+pisa_read,I.B1.5.5,PISA reading mean,CYP,Cyprus,2018,424.35825
+pisa_sci,I.B1.5.6,PISA science mean,CYP,Cyprus,2018,439.00824
+pisa_math,I.B1.5.4,PISA mathematics mean,CYP,Cyprus,2022,418.30667
+pisa_read,I.B1.5.5,PISA reading mean,CYP,Cyprus,2022,381.0757
+pisa_sci,I.B1.5.6,PISA science mean,CYP,Cyprus,2022,410.90253
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2000,491.57703
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2003,516.455
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2003,488.5423
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2006,509.85934
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2006,482.71515
+pisa_sci,I.B1.5.6,PISA science mean,CZE,Czechia,2006,512.8607
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2009,492.8141
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2009,478.1867
+pisa_sci,I.B1.5.6,PISA science mean,CZE,Czechia,2009,500.49707
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2012,498.9579
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2012,492.88974
+pisa_sci,I.B1.5.6,PISA science mean,CZE,Czechia,2012,508.29907
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2015,492.32544
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2015,487.25015
+pisa_sci,I.B1.5.6,PISA science mean,CZE,Czechia,2015,492.83005
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2018,499.46765
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2018,490.2188
+pisa_sci,I.B1.5.6,PISA science mean,CZE,Czechia,2018,496.79132
+pisa_math,I.B1.5.4,PISA mathematics mean,CZE,Czechia,2022,486.9992
+pisa_read,I.B1.5.5,PISA reading mean,CZE,Czechia,2022,488.60367
+pisa_sci,I.B1.5.6,PISA science mean,CZE,Czechia,2022,497.74203
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2000,496.87097
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2003,514.28766
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2003,492.3234
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2006,513.02594
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2006,494.48297
+pisa_sci,I.B1.5.6,PISA science mean,DNK,Denmark,2006,495.89432
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2009,503.27814
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2009,494.91617
+pisa_sci,I.B1.5.6,PISA science mean,DNK,Denmark,2009,499.33698
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2012,500.02676
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2012,496.1309
+pisa_sci,I.B1.5.6,PISA science mean,DNK,Denmark,2012,498.4742
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2015,511.08765
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2015,499.81458
+pisa_sci,I.B1.5.6,PISA science mean,DNK,Denmark,2015,501.9369
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2018,509.39838
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2018,501.12994
+pisa_sci,I.B1.5.6,PISA science mean,DNK,Denmark,2018,492.63702
+pisa_math,I.B1.5.4,PISA mathematics mean,DNK,Denmark,2022,489.27386
+pisa_read,I.B1.5.5,PISA reading mean,DNK,Denmark,2022,488.801
+pisa_sci,I.B1.5.6,PISA science mean,DNK,Denmark,2022,493.8157
+pisa_math,I.B1.5.4,PISA mathematics mean,DOM,Dominican Republic,2015,327.70203
+pisa_read,I.B1.5.5,PISA reading mean,DOM,Dominican Republic,2015,357.7377
+pisa_sci,I.B1.5.6,PISA science mean,DOM,Dominican Republic,2015,331.63882
+pisa_math,I.B1.5.4,PISA mathematics mean,DOM,Dominican Republic,2018,325.10056
+pisa_read,I.B1.5.5,PISA reading mean,DOM,Dominican Republic,2018,341.6256
+pisa_sci,I.B1.5.6,PISA science mean,DOM,Dominican Republic,2018,335.62994
+pisa_math,I.B1.5.4,PISA mathematics mean,DOM,Dominican Republic,2022,339.10724
+pisa_read,I.B1.5.5,PISA reading mean,DOM,Dominican Republic,2022,351.3123
+pisa_sci,I.B1.5.6,PISA science mean,DOM,Dominican Republic,2022,360.42606
+pisa_math,I.B1.5.4,PISA mathematics mean,SLV,El Salvador,2022,343.46912
+pisa_read,I.B1.5.5,PISA reading mean,SLV,El Salvador,2022,364.90366
+pisa_sci,I.B1.5.6,PISA science mean,SLV,El Salvador,2022,373.14133
+pisa_math,I.B1.5.4,PISA mathematics mean,EST,Estonia,2006,514.57544
+pisa_read,I.B1.5.5,PISA reading mean,EST,Estonia,2006,500.74976
+pisa_sci,I.B1.5.6,PISA science mean,EST,Estonia,2006,531.3918
+pisa_math,I.B1.5.4,PISA mathematics mean,EST,Estonia,2009,512.1042
+pisa_read,I.B1.5.5,PISA reading mean,EST,Estonia,2009,500.96185
+pisa_sci,I.B1.5.6,PISA science mean,EST,Estonia,2009,527.8317
+pisa_math,I.B1.5.4,PISA mathematics mean,EST,Estonia,2012,520.54553
+pisa_read,I.B1.5.5,PISA reading mean,EST,Estonia,2012,516.2942
+pisa_sci,I.B1.5.6,PISA science mean,EST,Estonia,2012,541.4048
+pisa_math,I.B1.5.4,PISA mathematics mean,EST,Estonia,2015,519.5291
+pisa_read,I.B1.5.5,PISA reading mean,EST,Estonia,2015,519.1429
+pisa_sci,I.B1.5.6,PISA science mean,EST,Estonia,2015,534.1937
+pisa_math,I.B1.5.4,PISA mathematics mean,EST,Estonia,2018,523.41455
+pisa_read,I.B1.5.5,PISA reading mean,EST,Estonia,2018,523.017
+pisa_sci,I.B1.5.6,PISA science mean,EST,Estonia,2018,530.10803
+pisa_math,I.B1.5.4,PISA mathematics mean,EST,Estonia,2022,509.94696
+pisa_read,I.B1.5.5,PISA reading mean,EST,Estonia,2022,511.03033
+pisa_sci,I.B1.5.6,PISA science mean,EST,Estonia,2022,525.81177
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2000,546.4691
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2003,544.2892
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2003,543.4625
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2006,548.3584
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2006,546.8683
+pisa_sci,I.B1.5.6,PISA science mean,FIN,Finland,2006,563.3228
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2009,540.50433
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2009,535.878
+pisa_sci,I.B1.5.6,PISA science mean,FIN,Finland,2009,554.0795
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2012,518.7503
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2012,524.02167
+pisa_sci,I.B1.5.6,PISA science mean,FIN,Finland,2012,545.44196
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2015,511.07684
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2015,526.42474
+pisa_sci,I.B1.5.6,PISA science mean,FIN,Finland,2015,530.66113
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2018,507.30136
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2018,520.07874
+pisa_sci,I.B1.5.6,PISA science mean,FIN,Finland,2018,521.8846
+pisa_math,I.B1.5.4,PISA mathematics mean,FIN,Finland,2022,484.13922
+pisa_read,I.B1.5.5,PISA reading mean,FIN,Finland,2022,490.21768
+pisa_sci,I.B1.5.6,PISA science mean,FIN,Finland,2022,510.95886
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2000,504.7424
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2003,510.79947
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2003,496.18878
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2006,495.53833
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2006,487.70624
+pisa_sci,I.B1.5.6,PISA science mean,FRA,France,2006,495.21985
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2009,496.78232
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2009,495.61655
+pisa_sci,I.B1.5.6,PISA science mean,FRA,France,2009,498.2269
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2012,494.98468
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2012,505.48148
+pisa_sci,I.B1.5.6,PISA science mean,FRA,France,2012,498.9709
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2015,492.9204
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2015,499.30615
+pisa_sci,I.B1.5.6,PISA science mean,FRA,France,2015,494.9776
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2018,495.4076
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2018,492.60648
+pisa_sci,I.B1.5.6,PISA science mean,FRA,France,2018,492.97708
+pisa_math,I.B1.5.4,PISA mathematics mean,FRA,France,2022,473.94443
+pisa_read,I.B1.5.5,PISA reading mean,FRA,France,2022,473.85217
+pisa_sci,I.B1.5.6,PISA science mean,FRA,France,2022,487.22528
+pisa_math,I.B1.5.4,PISA mathematics mean,GEO,Georgia,2015,403.83322
+pisa_read,I.B1.5.5,PISA reading mean,GEO,Georgia,2015,401.28815
+pisa_sci,I.B1.5.6,PISA science mean,GEO,Georgia,2015,411.13153
+pisa_math,I.B1.5.4,PISA mathematics mean,GEO,Georgia,2018,397.58636
+pisa_read,I.B1.5.5,PISA reading mean,GEO,Georgia,2018,379.75253
+pisa_sci,I.B1.5.6,PISA science mean,GEO,Georgia,2018,382.6636
+pisa_math,I.B1.5.4,PISA mathematics mean,GEO,Georgia,2022,390.02423
+pisa_read,I.B1.5.5,PISA reading mean,GEO,Georgia,2022,373.85834
+pisa_sci,I.B1.5.6,PISA science mean,GEO,Georgia,2022,384.06744
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2000,483.9908
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2003,502.98553
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2003,491.358
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2006,503.79086
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2006,494.94443
+pisa_sci,I.B1.5.6,PISA science mean,DEU,Germany,2006,515.6491
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2009,512.77765
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2009,497.30505
+pisa_sci,I.B1.5.6,PISA science mean,DEU,Germany,2009,520.40533
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2012,513.5251
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2012,507.67654
+pisa_sci,I.B1.5.6,PISA science mean,DEU,Germany,2012,524.1208
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2015,505.97128
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2015,509.10413
+pisa_sci,I.B1.5.6,PISA science mean,DEU,Germany,2015,509.14066
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2018,500.0438
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2018,498.27927
+pisa_sci,I.B1.5.6,PISA science mean,DEU,Germany,2018,502.9889
+pisa_math,I.B1.5.4,PISA mathematics mean,DEU,Germany,2022,474.82645
+pisa_read,I.B1.5.5,PISA reading mean,DEU,Germany,2022,479.79404
+pisa_sci,I.B1.5.6,PISA science mean,DEU,Germany,2022,492.42673
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2000,473.79886
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2003,444.91187
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2003,472.26688
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2006,459.202
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2006,459.71118
+pisa_sci,I.B1.5.6,PISA science mean,GRC,Greece,2006,473.37796
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2009,466.09637
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2009,482.77625
+pisa_sci,I.B1.5.6,PISA science mean,GRC,Greece,2009,470.11575
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2012,452.97342
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2012,477.19717
+pisa_sci,I.B1.5.6,PISA science mean,GRC,Greece,2012,466.72202
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2015,453.62985
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2015,467.03955
+pisa_sci,I.B1.5.6,PISA science mean,GRC,Greece,2015,454.82883
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2018,451.37033
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2018,457.4144
+pisa_sci,I.B1.5.6,PISA science mean,GRC,Greece,2018,451.63275
+pisa_math,I.B1.5.4,PISA mathematics mean,GRC,Greece,2022,430.14633
+pisa_read,I.B1.5.5,PISA reading mean,GRC,Greece,2022,438.4406
+pisa_sci,I.B1.5.6,PISA science mean,GRC,Greece,2022,440.78607
+pisa_math,I.B1.5.4,PISA mathematics mean,GTM,Guatemala,2022,344.1995
+pisa_read,I.B1.5.5,PISA reading mean,GTM,Guatemala,2022,374.12186
+pisa_sci,I.B1.5.6,PISA science mean,GTM,Guatemala,2022,372.96277
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2000,525.45593
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2003,550.38324
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2003,509.53516
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2006,547.4607
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2006,536.06555
+pisa_sci,I.B1.5.6,PISA science mean,HKG,Hong Kong,2006,542.21136
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2009,554.5275
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2009,533.15125
+pisa_sci,I.B1.5.6,PISA science mean,HKG,Hong Kong,2009,549.0287
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2012,561.2411
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2012,544.6001
+pisa_sci,I.B1.5.6,PISA science mean,HKG,Hong Kong,2012,554.93744
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2015,547.931
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2015,526.67535
+pisa_sci,I.B1.5.6,PISA science mean,HKG,Hong Kong,2015,523.27747
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2018,551.1543
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2018,524.28314
+pisa_sci,I.B1.5.6,PISA science mean,HKG,Hong Kong,2018,516.68616
+pisa_math,I.B1.5.4,PISA mathematics mean,HKG,Hong Kong,2022,540.3518
+pisa_read,I.B1.5.5,PISA reading mean,HKG,Hong Kong,2022,499.70135
+pisa_sci,I.B1.5.6,PISA science mean,HKG,Hong Kong,2022,520.4187
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2000,479.96677
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2003,490.0124
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2003,481.8697
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2006,490.93738
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2006,482.3745
+pisa_sci,I.B1.5.6,PISA science mean,HUN,Hungary,2006,503.93173
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2009,490.17
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2009,494.17874
+pisa_sci,I.B1.5.6,PISA science mean,HUN,Hungary,2009,502.64276
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2012,477.04446
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2012,488.46133
+pisa_sci,I.B1.5.6,PISA science mean,HUN,Hungary,2012,494.30234
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2015,476.83087
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2015,469.52325
+pisa_sci,I.B1.5.6,PISA science mean,HUN,Hungary,2015,476.7475
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2018,481.08264
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2018,475.98666
+pisa_sci,I.B1.5.6,PISA science mean,HUN,Hungary,2018,480.91168
+pisa_math,I.B1.5.4,PISA mathematics mean,HUN,Hungary,2022,472.77612
+pisa_read,I.B1.5.5,PISA reading mean,HUN,Hungary,2022,472.97473
+pisa_sci,I.B1.5.6,PISA science mean,HUN,Hungary,2022,485.89017
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2000,506.93045
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2003,515.10864
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2003,491.74695
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2006,505.54483
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2006,484.44528
+pisa_sci,I.B1.5.6,PISA science mean,ISL,Iceland,2006,490.79376
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2009,506.66916
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2009,500.28333
+pisa_sci,I.B1.5.6,PISA science mean,ISL,Iceland,2009,495.5985
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2012,492.7957
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2012,482.52243
+pisa_sci,I.B1.5.6,PISA science mean,ISL,Iceland,2012,478.1546
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2015,488.03317
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2015,481.52554
+pisa_sci,I.B1.5.6,PISA science mean,ISL,Iceland,2015,473.23007
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2018,495.18738
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2018,473.9743
+pisa_sci,I.B1.5.6,PISA science mean,ISL,Iceland,2018,475.0241
+pisa_math,I.B1.5.4,PISA mathematics mean,ISL,Iceland,2022,458.914
+pisa_read,I.B1.5.5,PISA reading mean,ISL,Iceland,2022,435.923
+pisa_sci,I.B1.5.6,PISA science mean,ISL,Iceland,2022,446.9671
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2000,370.61465
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2003,360.15884
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2003,381.59036
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2006,391.0068
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2006,392.93283
+pisa_sci,I.B1.5.6,PISA science mean,IDN,Indonesia,2006,393.48102
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2009,371.30093
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2009,401.7052
+pisa_sci,I.B1.5.6,PISA science mean,IDN,Indonesia,2009,382.56946
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2012,375.11444
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2012,396.1201
+pisa_sci,I.B1.5.6,PISA science mean,IDN,Indonesia,2012,381.9115
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2015,386.1096
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2015,397.2595
+pisa_sci,I.B1.5.6,PISA science mean,IDN,Indonesia,2015,403.09973
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2018,378.66812
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2018,370.9654
+pisa_sci,I.B1.5.6,PISA science mean,IDN,Indonesia,2018,396.07007
+pisa_math,I.B1.5.4,PISA mathematics mean,IDN,Indonesia,2022,365.52527
+pisa_read,I.B1.5.5,PISA reading mean,IDN,Indonesia,2022,358.56985
+pisa_sci,I.B1.5.6,PISA science mean,IDN,Indonesia,2022,382.8634
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2000,526.66864
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2003,502.8373
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2003,515.4801
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2006,501.47177
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2006,517.31323
+pisa_sci,I.B1.5.6,PISA science mean,IRL,Ireland,2006,508.32892
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2009,487.13638
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2009,495.6391
+pisa_sci,I.B1.5.6,PISA science mean,IRL,Ireland,2009,507.98416
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2012,501.49747
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2012,523.1732
+pisa_sci,I.B1.5.6,PISA science mean,IRL,Ireland,2012,522.00397
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2015,503.722
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2015,520.8148
+pisa_sci,I.B1.5.6,PISA science mean,IRL,Ireland,2015,502.5751
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2018,499.6329
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2018,518.0784
+pisa_sci,I.B1.5.6,PISA science mean,IRL,Ireland,2018,496.11356
+pisa_math,I.B1.5.4,PISA mathematics mean,IRL,Ireland,2022,491.6483
+pisa_read,I.B1.5.5,PISA reading mean,IRL,Ireland,2022,516.00995
+pisa_sci,I.B1.5.6,PISA science mean,IRL,Ireland,2022,503.84555
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2000,452.1724
+pisa_math,I.B1.5.4,PISA mathematics mean,ISR,Israel,2006,441.85873
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2006,438.67227
+pisa_sci,I.B1.5.6,PISA science mean,ISR,Israel,2006,453.90372
+pisa_math,I.B1.5.4,PISA mathematics mean,ISR,Israel,2009,446.86377
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2009,473.98996
+pisa_sci,I.B1.5.6,PISA science mean,ISR,Israel,2009,454.85095
+pisa_math,I.B1.5.4,PISA mathematics mean,ISR,Israel,2012,466.48145
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2012,485.80322
+pisa_sci,I.B1.5.6,PISA science mean,ISR,Israel,2012,470.07266
+pisa_math,I.B1.5.4,PISA mathematics mean,ISR,Israel,2015,469.66946
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2015,478.96063
+pisa_sci,I.B1.5.6,PISA science mean,ISR,Israel,2015,466.55283
+pisa_math,I.B1.5.4,PISA mathematics mean,ISR,Israel,2018,463.03455
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2018,470.4152
+pisa_sci,I.B1.5.6,PISA science mean,ISR,Israel,2018,462.19662
+pisa_math,I.B1.5.4,PISA mathematics mean,ISR,Israel,2022,457.89667
+pisa_read,I.B1.5.5,PISA reading mean,ISR,Israel,2022,473.8327
+pisa_sci,I.B1.5.6,PISA science mean,ISR,Israel,2022,464.75183
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2000,487.46964
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2003,465.6642
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2003,475.6616
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2006,461.68872
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2006,468.5231
+pisa_sci,I.B1.5.6,PISA science mean,ITA,Italy,2006,475.39722
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2009,482.90848
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2009,486.0511
+pisa_sci,I.B1.5.6,PISA science mean,ITA,Italy,2009,488.83136
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2012,485.32117
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2012,489.7544
+pisa_sci,I.B1.5.6,PISA science mean,ITA,Italy,2012,493.54147
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2015,489.72873
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2015,484.758
+pisa_sci,I.B1.5.6,PISA science mean,ITA,Italy,2015,480.54675
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2018,486.58984
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2018,476.28467
+pisa_sci,I.B1.5.6,PISA science mean,ITA,Italy,2018,468.01172
+pisa_math,I.B1.5.4,PISA mathematics mean,ITA,Italy,2022,471.25946
+pisa_read,I.B1.5.5,PISA reading mean,ITA,Italy,2022,481.59827
+pisa_sci,I.B1.5.6,PISA science mean,ITA,Italy,2022,477.46338
+pisa_math,I.B1.5.4,PISA mathematics mean,JAM,Jamaica,2022,377.41693
+pisa_read,I.B1.5.5,PISA reading mean,JAM,Jamaica,2022,409.63278
+pisa_sci,I.B1.5.6,PISA science mean,JAM,Jamaica,2022,402.93396
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2000,522.2349
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2003,534.1365
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2003,498.1052
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2006,523.10254
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2006,497.95706
+pisa_sci,I.B1.5.6,PISA science mean,JPN,Japan,2006,531.3885
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2009,528.9931
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2009,519.8577
+pisa_sci,I.B1.5.6,PISA science mean,JPN,Japan,2009,539.43097
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2012,536.4069
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2012,538.0515
+pisa_sci,I.B1.5.6,PISA science mean,JPN,Japan,2012,546.7356
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2015,532.4399
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2015,515.9585
+pisa_sci,I.B1.5.6,PISA science mean,JPN,Japan,2015,538.3948
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2018,526.97327
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2018,503.85605
+pisa_sci,I.B1.5.6,PISA science mean,JPN,Japan,2018,529.13544
+pisa_math,I.B1.5.4,PISA mathematics mean,JPN,Japan,2022,535.5793
+pisa_read,I.B1.5.5,PISA reading mean,JPN,Japan,2022,515.8546
+pisa_sci,I.B1.5.6,PISA science mean,JPN,Japan,2022,546.63446
+pisa_math,I.B1.5.4,PISA mathematics mean,JOR,Jordan,2006,384.03604
+pisa_read,I.B1.5.5,PISA reading mean,JOR,Jordan,2006,400.58124
+pisa_sci,I.B1.5.6,PISA science mean,JOR,Jordan,2006,421.97183
+pisa_math,I.B1.5.4,PISA mathematics mean,JOR,Jordan,2009,386.66382
+pisa_read,I.B1.5.5,PISA reading mean,JOR,Jordan,2009,405.0093
+pisa_sci,I.B1.5.6,PISA science mean,JOR,Jordan,2009,415.3878
+pisa_math,I.B1.5.4,PISA mathematics mean,JOR,Jordan,2012,385.59555
+pisa_read,I.B1.5.5,PISA reading mean,JOR,Jordan,2012,399.03476
+pisa_sci,I.B1.5.6,PISA science mean,JOR,Jordan,2012,409.36722
+pisa_math,I.B1.5.4,PISA mathematics mean,JOR,Jordan,2015,380.259
+pisa_read,I.B1.5.5,PISA reading mean,JOR,Jordan,2015,408.1022
+pisa_sci,I.B1.5.6,PISA science mean,JOR,Jordan,2015,408.66913
+pisa_math,I.B1.5.4,PISA mathematics mean,JOR,Jordan,2018,399.7619
+pisa_read,I.B1.5.5,PISA reading mean,JOR,Jordan,2018,419.06366
+pisa_sci,I.B1.5.6,PISA science mean,JOR,Jordan,2018,429.25208
+pisa_math,I.B1.5.4,PISA mathematics mean,JOR,Jordan,2022,361.22803
+pisa_read,I.B1.5.5,PISA reading mean,JOR,Jordan,2022,342.16583
+pisa_sci,I.B1.5.6,PISA science mean,JOR,Jordan,2022,374.5271
+pisa_math,I.B1.5.4,PISA mathematics mean,KAZ,Kazakhstan,2009,404.8847
+pisa_read,I.B1.5.5,PISA reading mean,KAZ,Kazakhstan,2009,390.41006
+pisa_sci,I.B1.5.6,PISA science mean,KAZ,Kazakhstan,2009,400.37613
+pisa_math,I.B1.5.4,PISA mathematics mean,KAZ,Kazakhstan,2012,431.7984
+pisa_read,I.B1.5.5,PISA reading mean,KAZ,Kazakhstan,2012,392.73624
+pisa_sci,I.B1.5.6,PISA science mean,KAZ,Kazakhstan,2012,424.70752
+pisa_math,I.B1.5.4,PISA mathematics mean,KAZ,Kazakhstan,2015,459.816
+pisa_read,I.B1.5.5,PISA reading mean,KAZ,Kazakhstan,2015,427.14102
+pisa_sci,I.B1.5.6,PISA science mean,KAZ,Kazakhstan,2015,456.48358
+pisa_math,I.B1.5.4,PISA mathematics mean,KAZ,Kazakhstan,2018,423.14612
+pisa_read,I.B1.5.5,PISA reading mean,KAZ,Kazakhstan,2018,386.90927
+pisa_sci,I.B1.5.6,PISA science mean,KAZ,Kazakhstan,2018,397.10483
+pisa_math,I.B1.5.4,PISA mathematics mean,KAZ,Kazakhstan,2022,425.43912
+pisa_read,I.B1.5.5,PISA reading mean,KAZ,Kazakhstan,2022,386.28476
+pisa_sci,I.B1.5.6,PISA science mean,KAZ,Kazakhstan,2022,423.16605
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2000,458.07108
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2003,483.37494
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2003,490.56253
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2006,486.16608
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2006,479.49182
+pisa_sci,I.B1.5.6,PISA science mean,LVA,Latvia,2006,489.5438
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2009,481.95383
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2009,483.96014
+pisa_sci,I.B1.5.6,PISA science mean,LVA,Latvia,2009,493.87894
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2012,490.571
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2012,488.69443
+pisa_sci,I.B1.5.6,PISA science mean,LVA,Latvia,2012,502.1862
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2015,482.30508
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2015,487.7581
+pisa_sci,I.B1.5.6,PISA science mean,LVA,Latvia,2015,490.225
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2018,496.12634
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2018,478.69867
+pisa_sci,I.B1.5.6,PISA science mean,LVA,Latvia,2018,487.25058
+pisa_math,I.B1.5.4,PISA mathematics mean,LVA,Latvia,2022,483.15945
+pisa_read,I.B1.5.5,PISA reading mean,LVA,Latvia,2022,474.56866
+pisa_sci,I.B1.5.6,PISA science mean,LVA,Latvia,2022,493.84277
+pisa_math,I.B1.5.4,PISA mathematics mean,LBN,Lebanon,2015,396.24966
+pisa_read,I.B1.5.5,PISA reading mean,LBN,Lebanon,2015,346.54898
+pisa_sci,I.B1.5.6,PISA science mean,LBN,Lebanon,2015,386.48538
+pisa_math,I.B1.5.4,PISA mathematics mean,LBN,Lebanon,2018,393.45004
+pisa_read,I.B1.5.5,PISA reading mean,LBN,Lebanon,2018,353.35532
+pisa_sci,I.B1.5.6,PISA science mean,LBN,Lebanon,2018,383.71698
+pisa_math,I.B1.5.4,PISA mathematics mean,LTU,Lithuania,2006,486.42133
+pisa_read,I.B1.5.5,PISA reading mean,LTU,Lithuania,2006,470.07077
+pisa_sci,I.B1.5.6,PISA science mean,LTU,Lithuania,2006,487.9567
+pisa_math,I.B1.5.4,PISA mathematics mean,LTU,Lithuania,2009,476.6023
+pisa_read,I.B1.5.5,PISA reading mean,LTU,Lithuania,2009,468.44275
+pisa_sci,I.B1.5.6,PISA science mean,LTU,Lithuania,2009,491.4098
+pisa_math,I.B1.5.4,PISA mathematics mean,LTU,Lithuania,2012,478.82327
+pisa_read,I.B1.5.5,PISA reading mean,LTU,Lithuania,2012,477.3066
+pisa_sci,I.B1.5.6,PISA science mean,LTU,Lithuania,2012,495.70007
+pisa_math,I.B1.5.4,PISA mathematics mean,LTU,Lithuania,2015,478.3834
+pisa_read,I.B1.5.5,PISA reading mean,LTU,Lithuania,2015,472.40656
+pisa_sci,I.B1.5.6,PISA science mean,LTU,Lithuania,2015,475.40894
+pisa_math,I.B1.5.4,PISA mathematics mean,LTU,Lithuania,2018,481.1912
+pisa_read,I.B1.5.5,PISA reading mean,LTU,Lithuania,2018,475.87347
+pisa_sci,I.B1.5.6,PISA science mean,LTU,Lithuania,2018,482.06702
+pisa_math,I.B1.5.4,PISA mathematics mean,LTU,Lithuania,2022,475.14676
+pisa_read,I.B1.5.5,PISA reading mean,LTU,Lithuania,2022,471.83423
+pisa_sci,I.B1.5.6,PISA science mean,LTU,Lithuania,2022,484.4634
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2000,441.24582
+pisa_math,I.B1.5.4,PISA mathematics mean,LUX,Luxembourg,2003,493.20856
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2003,479.42258
+pisa_math,I.B1.5.4,PISA mathematics mean,LUX,Luxembourg,2006,490.00183
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2006,479.36655
+pisa_sci,I.B1.5.6,PISA science mean,LUX,Luxembourg,2006,486.32437
+pisa_math,I.B1.5.4,PISA mathematics mean,LUX,Luxembourg,2009,489.06726
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2009,472.1734
+pisa_sci,I.B1.5.6,PISA science mean,LUX,Luxembourg,2009,483.9284
+pisa_math,I.B1.5.4,PISA mathematics mean,LUX,Luxembourg,2012,489.8451
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2012,487.80704
+pisa_sci,I.B1.5.6,PISA science mean,LUX,Luxembourg,2012,491.21518
+pisa_math,I.B1.5.4,PISA mathematics mean,LUX,Luxembourg,2015,485.77063
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2015,481.4391
+pisa_sci,I.B1.5.6,PISA science mean,LUX,Luxembourg,2015,482.8064
+pisa_math,I.B1.5.4,PISA mathematics mean,LUX,Luxembourg,2018,483.42148
+pisa_read,I.B1.5.5,PISA reading mean,LUX,Luxembourg,2018,469.98538
+pisa_sci,I.B1.5.6,PISA science mean,LUX,Luxembourg,2018,476.7694
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2003,527.27026
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2003,497.64008
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2006,525.0025
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2006,492.2878
+pisa_sci,I.B1.5.6,PISA science mean,MAC,Macao,2006,510.83972
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2009,525.283
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2009,486.63535
+pisa_sci,I.B1.5.6,PISA science mean,MAC,Macao,2009,511.0696
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2012,538.1345
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2012,508.94925
+pisa_sci,I.B1.5.6,PISA science mean,MAC,Macao,2012,520.57086
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2015,543.8078
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2015,508.69052
+pisa_sci,I.B1.5.6,PISA science mean,MAC,Macao,2015,528.5496
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2018,557.6702
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2018,525.11615
+pisa_sci,I.B1.5.6,PISA science mean,MAC,Macao,2018,543.58575
+pisa_math,I.B1.5.4,PISA mathematics mean,MAC,Macao,2022,551.92316
+pisa_read,I.B1.5.5,PISA reading mean,MAC,Macao,2022,510.40512
+pisa_sci,I.B1.5.6,PISA science mean,MAC,Macao,2022,543.09625
+pisa_math,I.B1.5.4,PISA mathematics mean,MYS,Malaysia,2012,420.51297
+pisa_read,I.B1.5.5,PISA reading mean,MYS,Malaysia,2012,398.19604
+pisa_sci,I.B1.5.6,PISA science mean,MYS,Malaysia,2012,419.50266
+pisa_math,I.B1.5.4,PISA mathematics mean,MYS,Malaysia,2015,446.10977
+pisa_read,I.B1.5.5,PISA reading mean,MYS,Malaysia,2015,430.5782
+pisa_sci,I.B1.5.6,PISA science mean,MYS,Malaysia,2015,442.9475
+pisa_math,I.B1.5.4,PISA mathematics mean,MYS,Malaysia,2018,440.20755
+pisa_read,I.B1.5.5,PISA reading mean,MYS,Malaysia,2018,414.97952
+pisa_sci,I.B1.5.6,PISA science mean,MYS,Malaysia,2018,437.61807
+pisa_math,I.B1.5.4,PISA mathematics mean,MYS,Malaysia,2022,408.68744
+pisa_read,I.B1.5.5,PISA reading mean,MYS,Malaysia,2022,388.0878
+pisa_sci,I.B1.5.6,PISA science mean,MYS,Malaysia,2022,416.30612
+pisa_math,I.B1.5.4,PISA mathematics mean,MLT,Malta,2015,478.6448
+pisa_read,I.B1.5.5,PISA reading mean,MLT,Malta,2015,446.66614
+pisa_sci,I.B1.5.6,PISA science mean,MLT,Malta,2015,464.78195
+pisa_math,I.B1.5.4,PISA mathematics mean,MLT,Malta,2018,471.72443
+pisa_read,I.B1.5.5,PISA reading mean,MLT,Malta,2018,448.23477
+pisa_sci,I.B1.5.6,PISA science mean,MLT,Malta,2018,456.59033
+pisa_math,I.B1.5.4,PISA mathematics mean,MLT,Malta,2022,466.0161
+pisa_read,I.B1.5.5,PISA reading mean,MLT,Malta,2022,445.29883
+pisa_sci,I.B1.5.6,PISA science mean,MLT,Malta,2022,465.58875
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2000,421.96063
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2003,385.21835
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2003,399.72192
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2006,405.65463
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2006,410.49646
+pisa_sci,I.B1.5.6,PISA science mean,MEX,Mexico,2006,409.65195
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2009,418.5091
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2009,425.2653
+pisa_sci,I.B1.5.6,PISA science mean,MEX,Mexico,2009,415.90866
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2012,413.28146
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2012,423.55377
+pisa_sci,I.B1.5.6,PISA science mean,MEX,Mexico,2012,414.92014
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2015,408.02347
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2015,423.2765
+pisa_sci,I.B1.5.6,PISA science mean,MEX,Mexico,2015,415.70987
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2018,408.80148
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2018,420.4689
+pisa_sci,I.B1.5.6,PISA science mean,MEX,Mexico,2018,419.2047
+pisa_math,I.B1.5.4,PISA mathematics mean,MEX,Mexico,2022,395.0299
+pisa_read,I.B1.5.5,PISA reading mean,MEX,Mexico,2022,415.35895
+pisa_sci,I.B1.5.6,PISA science mean,MEX,Mexico,2022,409.8866
+pisa_math,I.B1.5.4,PISA mathematics mean,MDA,Moldova,2015,419.6635
+pisa_read,I.B1.5.5,PISA reading mean,MDA,Moldova,2015,416.22925
+pisa_sci,I.B1.5.6,PISA science mean,MDA,Moldova,2015,427.9978
+pisa_math,I.B1.5.4,PISA mathematics mean,MDA,Moldova,2018,420.604
+pisa_read,I.B1.5.5,PISA reading mean,MDA,Moldova,2018,423.99295
+pisa_sci,I.B1.5.6,PISA science mean,MDA,Moldova,2018,428.48526
+pisa_math,I.B1.5.4,PISA mathematics mean,MDA,Moldova,2022,414.19806
+pisa_read,I.B1.5.5,PISA reading mean,MDA,Moldova,2022,410.9354
+pisa_sci,I.B1.5.6,PISA science mean,MDA,Moldova,2022,416.85898
+pisa_math,I.B1.5.4,PISA mathematics mean,MNG,Mongolia,2022,424.59314
+pisa_read,I.B1.5.5,PISA reading mean,MNG,Mongolia,2022,378.41986
+pisa_sci,I.B1.5.6,PISA science mean,MNG,Mongolia,2022,412.38254
+pisa_math,I.B1.5.4,PISA mathematics mean,MNE,Montenegro,2006,399.30768
+pisa_read,I.B1.5.5,PISA reading mean,MNE,Montenegro,2006,391.97543
+pisa_sci,I.B1.5.6,PISA science mean,MNE,Montenegro,2006,411.78842
+pisa_math,I.B1.5.4,PISA mathematics mean,MNE,Montenegro,2009,402.51535
+pisa_read,I.B1.5.5,PISA reading mean,MNE,Montenegro,2009,407.54776
+pisa_sci,I.B1.5.6,PISA science mean,MNE,Montenegro,2009,401.27747
+pisa_math,I.B1.5.4,PISA mathematics mean,MNE,Montenegro,2012,409.62662
+pisa_read,I.B1.5.5,PISA reading mean,MNE,Montenegro,2012,422.11136
+pisa_sci,I.B1.5.6,PISA science mean,MNE,Montenegro,2012,410.0976
+pisa_math,I.B1.5.4,PISA mathematics mean,MNE,Montenegro,2015,417.9341
+pisa_read,I.B1.5.5,PISA reading mean,MNE,Montenegro,2015,426.8845
+pisa_sci,I.B1.5.6,PISA science mean,MNE,Montenegro,2015,411.31366
+pisa_math,I.B1.5.4,PISA mathematics mean,MNE,Montenegro,2018,429.61154
+pisa_read,I.B1.5.5,PISA reading mean,MNE,Montenegro,2018,421.0576
+pisa_sci,I.B1.5.6,PISA science mean,MNE,Montenegro,2018,415.17224
+pisa_math,I.B1.5.4,PISA mathematics mean,MNE,Montenegro,2022,405.60117
+pisa_read,I.B1.5.5,PISA reading mean,MNE,Montenegro,2022,405.02045
+pisa_sci,I.B1.5.6,PISA science mean,MNE,Montenegro,2022,403.13025
+pisa_math,I.B1.5.4,PISA mathematics mean,MAR,Morocco,2018,367.72736
+pisa_read,I.B1.5.5,PISA reading mean,MAR,Morocco,2018,359.38788
+pisa_sci,I.B1.5.6,PISA science mean,MAR,Morocco,2018,376.5969
+pisa_math,I.B1.5.4,PISA mathematics mean,MAR,Morocco,2022,364.76624
+pisa_read,I.B1.5.5,PISA reading mean,MAR,Morocco,2022,339.36493
+pisa_sci,I.B1.5.6,PISA science mean,MAR,Morocco,2022,365.39807
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2003,537.8233
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2003,513.11896
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2006,530.65405
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2006,506.74698
+pisa_sci,I.B1.5.6,PISA science mean,NLD,Netherlands,2006,524.8615
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2009,525.8357
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2009,508.40372
+pisa_sci,I.B1.5.6,PISA science mean,NLD,Netherlands,2009,522.21814
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2012,522.97174
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2012,511.22998
+pisa_sci,I.B1.5.6,PISA science mean,NLD,Netherlands,2012,522.05585
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2015,512.2528
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2015,502.95905
+pisa_sci,I.B1.5.6,PISA science mean,NLD,Netherlands,2015,508.5748
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2018,519.23096
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2018,484.78372
+pisa_sci,I.B1.5.6,PISA science mean,NLD,Netherlands,2018,503.38382
+pisa_math,I.B1.5.4,PISA mathematics mean,NLD,Netherlands,2022,492.67563
+pisa_read,I.B1.5.5,PISA reading mean,NLD,Netherlands,2022,459.24292
+pisa_sci,I.B1.5.6,PISA science mean,NLD,Netherlands,2022,488.31683
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2000,528.79974
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2003,523.4866
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2003,521.5515
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2006,521.98883
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2006,521.03265
+pisa_sci,I.B1.5.6,PISA science mean,NZL,New Zealand,2006,530.38434
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2009,519.30084
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2009,520.88
+pisa_sci,I.B1.5.6,PISA science mean,NZL,New Zealand,2009,532.0069
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2012,499.7499
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2012,512.18677
+pisa_sci,I.B1.5.6,PISA science mean,NZL,New Zealand,2012,515.6363
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2015,495.22327
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2015,509.27072
+pisa_sci,I.B1.5.6,PISA science mean,NZL,New Zealand,2015,513.3035
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2018,494.4897
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2018,505.7273
+pisa_sci,I.B1.5.6,PISA science mean,NZL,New Zealand,2018,508.49072
+pisa_math,I.B1.5.4,PISA mathematics mean,NZL,New Zealand,2022,479.0742
+pisa_read,I.B1.5.5,PISA reading mean,NZL,New Zealand,2022,500.853
+pisa_sci,I.B1.5.6,PISA science mean,NZL,New Zealand,2022,504.1293
+pisa_read,I.B1.5.5,PISA reading mean,MKD,North Macedonia,2000,372.50912
+pisa_math,I.B1.5.4,PISA mathematics mean,MKD,North Macedonia,2015,371.31143
+pisa_read,I.B1.5.5,PISA reading mean,MKD,North Macedonia,2015,351.74155
+pisa_sci,I.B1.5.6,PISA science mean,MKD,North Macedonia,2015,383.68237
+pisa_math,I.B1.5.4,PISA mathematics mean,MKD,North Macedonia,2018,394.44684
+pisa_read,I.B1.5.5,PISA reading mean,MKD,North Macedonia,2018,392.66776
+pisa_sci,I.B1.5.6,PISA science mean,MKD,North Macedonia,2018,413.04468
+pisa_math,I.B1.5.4,PISA mathematics mean,MKD,North Macedonia,2022,388.5755
+pisa_read,I.B1.5.5,PISA reading mean,MKD,North Macedonia,2022,358.52213
+pisa_sci,I.B1.5.6,PISA science mean,MKD,North Macedonia,2022,379.8751
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2000,505.28098
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2003,495.1854
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2003,499.74023
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2006,489.84634
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2006,484.29257
+pisa_sci,I.B1.5.6,PISA science mean,NOR,Norway,2006,486.52795
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2009,497.9557
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2009,503.23
+pisa_sci,I.B1.5.6,PISA science mean,NOR,Norway,2009,499.8757
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2012,489.37308
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2012,503.93668
+pisa_sci,I.B1.5.6,PISA science mean,NOR,Norway,2012,494.52393
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2015,501.72983
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2015,513.19116
+pisa_sci,I.B1.5.6,PISA science mean,NOR,Norway,2015,498.4811
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2018,500.96378
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2018,499.45096
+pisa_sci,I.B1.5.6,PISA science mean,NOR,Norway,2018,490.41315
+pisa_math,I.B1.5.4,PISA mathematics mean,NOR,Norway,2022,468.44995
+pisa_read,I.B1.5.5,PISA reading mean,NOR,Norway,2022,476.52386
+pisa_sci,I.B1.5.6,PISA science mean,NOR,Norway,2022,478.22647
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2000,493.491
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2003,499.46353
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2003,494.08597
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2006,490.40762
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2006,485.3536
+pisa_sci,I.B1.5.6,PISA science mean,OECD,OECD average,2006,494.80493
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2009,491.71857
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2009,490.34378
+pisa_sci,I.B1.5.6,PISA science mean,OECD,OECD average,2009,497.72256
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2012,488.16415
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2012,491.8212
+pisa_sci,I.B1.5.6,PISA science mean,OECD,OECD average,2012,496.44052
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2015,484.8794
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2015,488.5266
+pisa_sci,I.B1.5.6,PISA science mean,OECD,OECD average,2015,488.75806
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2018,486.99832
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2018,485.4874
+pisa_sci,I.B1.5.6,PISA science mean,OECD,OECD average,2018,486.74026
+pisa_math,I.B1.5.4,PISA mathematics mean,OECD,OECD average,2022,472.35812
+pisa_read,I.B1.5.5,PISA reading mean,OECD,OECD average,2022,475.58887
+pisa_sci,I.B1.5.6,PISA science mean,OECD,OECD average,2022,484.6466
+pisa_math,I.B1.5.4,PISA mathematics mean,PSE,Palestine,2022,365.74667
+pisa_read,I.B1.5.5,PISA reading mean,PSE,Palestine,2022,349.15704
+pisa_sci,I.B1.5.6,PISA science mean,PSE,Palestine,2022,368.8151
+pisa_math,I.B1.5.4,PISA mathematics mean,PAN,Panama,2018,352.84625
+pisa_read,I.B1.5.5,PISA reading mean,PAN,Panama,2018,376.9713
+pisa_sci,I.B1.5.6,PISA science mean,PAN,Panama,2018,364.62378
+pisa_math,I.B1.5.4,PISA mathematics mean,PAN,Panama,2022,356.57352
+pisa_read,I.B1.5.5,PISA reading mean,PAN,Panama,2022,391.95337
+pisa_sci,I.B1.5.6,PISA science mean,PAN,Panama,2022,387.76764
+pisa_math,I.B1.5.4,PISA mathematics mean,PRY,Paraguay,2022,337.53976
+pisa_read,I.B1.5.5,PISA reading mean,PRY,Paraguay,2022,373.15564
+pisa_sci,I.B1.5.6,PISA science mean,PRY,Paraguay,2022,368.32782
+pisa_read,I.B1.5.5,PISA reading mean,PER,Peru,2000,327.08484
+pisa_math,I.B1.5.4,PISA mathematics mean,PER,Peru,2009,365.10727
+pisa_read,I.B1.5.5,PISA reading mean,PER,Peru,2009,369.69577
+pisa_sci,I.B1.5.6,PISA science mean,PER,Peru,2009,369.35178
+pisa_math,I.B1.5.4,PISA mathematics mean,PER,Peru,2012,368.10254
+pisa_read,I.B1.5.5,PISA reading mean,PER,Peru,2012,384.1512
+pisa_sci,I.B1.5.6,PISA science mean,PER,Peru,2012,373.11343
+pisa_math,I.B1.5.4,PISA mathematics mean,PER,Peru,2015,386.56058
+pisa_read,I.B1.5.5,PISA reading mean,PER,Peru,2015,397.54144
+pisa_sci,I.B1.5.6,PISA science mean,PER,Peru,2015,396.68365
+pisa_math,I.B1.5.4,PISA mathematics mean,PER,Peru,2018,399.83768
+pisa_read,I.B1.5.5,PISA reading mean,PER,Peru,2018,400.5137
+pisa_sci,I.B1.5.6,PISA science mean,PER,Peru,2018,404.2156
+pisa_math,I.B1.5.4,PISA mathematics mean,PER,Peru,2022,391.23578
+pisa_read,I.B1.5.5,PISA reading mean,PER,Peru,2022,408.24786
+pisa_sci,I.B1.5.6,PISA science mean,PER,Peru,2022,407.77777
+pisa_math,I.B1.5.4,PISA mathematics mean,PHL,Philippines,2018,352.56708
+pisa_read,I.B1.5.5,PISA reading mean,PHL,Philippines,2018,339.6916
+pisa_sci,I.B1.5.6,PISA science mean,PHL,Philippines,2018,356.93332
+pisa_math,I.B1.5.4,PISA mathematics mean,PHL,Philippines,2022,354.71973
+pisa_read,I.B1.5.5,PISA reading mean,PHL,Philippines,2022,346.5474
+pisa_sci,I.B1.5.6,PISA science mean,PHL,Philippines,2022,356.1673
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2000,479.12167
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2003,490.23877
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2003,496.60526
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2006,495.4285
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2006,507.63953
+pisa_sci,I.B1.5.6,PISA science mean,POL,Poland,2006,497.8065
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2009,494.80292
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2009,500.4785
+pisa_sci,I.B1.5.6,PISA science mean,POL,Poland,2009,508.0683
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2012,517.5011
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2012,518.1869
+pisa_sci,I.B1.5.6,PISA science mean,POL,Poland,2012,525.81647
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2015,504.46924
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2015,505.69708
+pisa_sci,I.B1.5.6,PISA science mean,POL,Poland,2015,501.43533
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2018,515.6479
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2018,511.85568
+pisa_sci,I.B1.5.6,PISA science mean,POL,Poland,2018,511.03555
+pisa_math,I.B1.5.4,PISA mathematics mean,POL,Poland,2022,488.96005
+pisa_read,I.B1.5.5,PISA reading mean,POL,Poland,2022,488.71362
+pisa_sci,I.B1.5.6,PISA science mean,POL,Poland,2022,499.16437
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2000,470.15463
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2003,466.0167
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2003,477.56863
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2006,466.16098
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2006,472.3043
+pisa_sci,I.B1.5.6,PISA science mean,PRT,Portugal,2006,474.30588
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2009,486.8883
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2009,489.33493
+pisa_sci,I.B1.5.6,PISA science mean,PRT,Portugal,2009,492.94998
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2012,487.06317
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2012,487.7577
+pisa_sci,I.B1.5.6,PISA science mean,PRT,Portugal,2012,489.27472
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2015,491.62695
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2015,498.1289
+pisa_sci,I.B1.5.6,PISA science mean,PRT,Portugal,2015,501.10007
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2018,492.4874
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2018,491.80078
+pisa_sci,I.B1.5.6,PISA science mean,PRT,Portugal,2018,491.67734
+pisa_math,I.B1.5.4,PISA mathematics mean,PRT,Portugal,2022,471.91052
+pisa_read,I.B1.5.5,PISA reading mean,PRT,Portugal,2022,476.58862
+pisa_sci,I.B1.5.6,PISA science mean,PRT,Portugal,2022,484.37347
+pisa_math,I.B1.5.4,PISA mathematics mean,QAT,Qatar,2006,317.95566
+pisa_read,I.B1.5.5,PISA reading mean,QAT,Qatar,2006,312.21347
+pisa_sci,I.B1.5.6,PISA science mean,QAT,Qatar,2006,349.31314
+pisa_math,I.B1.5.4,PISA mathematics mean,QAT,Qatar,2009,368.1125
+pisa_read,I.B1.5.5,PISA reading mean,QAT,Qatar,2009,371.71603
+pisa_sci,I.B1.5.6,PISA science mean,QAT,Qatar,2009,379.44696
+pisa_math,I.B1.5.4,PISA mathematics mean,QAT,Qatar,2012,376.4484
+pisa_read,I.B1.5.5,PISA reading mean,QAT,Qatar,2012,387.50412
+pisa_sci,I.B1.5.6,PISA science mean,QAT,Qatar,2012,383.64255
+pisa_math,I.B1.5.4,PISA mathematics mean,QAT,Qatar,2015,402.40063
+pisa_read,I.B1.5.5,PISA reading mean,QAT,Qatar,2015,401.88733
+pisa_sci,I.B1.5.6,PISA science mean,QAT,Qatar,2015,417.61115
+pisa_math,I.B1.5.4,PISA mathematics mean,QAT,Qatar,2018,414.22873
+pisa_read,I.B1.5.5,PISA reading mean,QAT,Qatar,2018,407.0918
+pisa_sci,I.B1.5.6,PISA science mean,QAT,Qatar,2018,419.12717
+pisa_math,I.B1.5.4,PISA mathematics mean,QAT,Qatar,2022,414.10623
+pisa_read,I.B1.5.5,PISA reading mean,QAT,Qatar,2022,419.30426
+pisa_sci,I.B1.5.6,PISA science mean,QAT,Qatar,2022,432.40253
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2000,427.93152
+pisa_math,I.B1.5.4,PISA mathematics mean,ROU,Romania,2006,414.79596
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2006,395.93173
+pisa_sci,I.B1.5.6,PISA science mean,ROU,Romania,2006,418.38638
+pisa_math,I.B1.5.4,PISA mathematics mean,ROU,Romania,2009,427.07916
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2009,424.45834
+pisa_sci,I.B1.5.6,PISA science mean,ROU,Romania,2009,428.1789
+pisa_math,I.B1.5.4,PISA mathematics mean,ROU,Romania,2012,444.55423
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2012,437.5995
+pisa_sci,I.B1.5.6,PISA science mean,ROU,Romania,2012,438.76807
+pisa_math,I.B1.5.4,PISA mathematics mean,ROU,Romania,2015,443.9543
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2015,433.6166
+pisa_sci,I.B1.5.6,PISA science mean,ROU,Romania,2015,434.88486
+pisa_math,I.B1.5.4,PISA mathematics mean,ROU,Romania,2018,429.91684
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2018,427.70316
+pisa_sci,I.B1.5.6,PISA science mean,ROU,Romania,2018,425.76123
+pisa_math,I.B1.5.4,PISA mathematics mean,ROU,Romania,2022,427.76
+pisa_read,I.B1.5.5,PISA reading mean,ROU,Romania,2022,428.496
+pisa_sci,I.B1.5.6,PISA science mean,ROU,Romania,2022,427.5111
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2000,461.76202
+pisa_math,I.B1.5.4,PISA mathematics mean,RUS,Russia,2003,468.40665
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2003,442.19684
+pisa_math,I.B1.5.4,PISA mathematics mean,RUS,Russia,2006,475.67908
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2006,439.85574
+pisa_sci,I.B1.5.6,PISA science mean,RUS,Russia,2006,479.47043
+pisa_math,I.B1.5.4,PISA mathematics mean,RUS,Russia,2009,467.8122
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2009,459.39594
+pisa_sci,I.B1.5.6,PISA science mean,RUS,Russia,2009,478.29752
+pisa_math,I.B1.5.4,PISA mathematics mean,RUS,Russia,2012,482.1694
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2012,475.14938
+pisa_sci,I.B1.5.6,PISA science mean,RUS,Russia,2012,486.2955
+pisa_math,I.B1.5.4,PISA mathematics mean,RUS,Russia,2015,494.06003
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2015,494.62784
+pisa_sci,I.B1.5.6,PISA science mean,RUS,Russia,2015,486.63104
+pisa_math,I.B1.5.4,PISA mathematics mean,RUS,Russia,2018,487.78653
+pisa_read,I.B1.5.5,PISA reading mean,RUS,Russia,2018,478.50192
+pisa_sci,I.B1.5.6,PISA science mean,RUS,Russia,2018,477.71768
+pisa_math,I.B1.5.4,PISA mathematics mean,SAU,Saudi Arabia,2018,373.2388
+pisa_read,I.B1.5.5,PISA reading mean,SAU,Saudi Arabia,2018,399.15167
+pisa_sci,I.B1.5.6,PISA science mean,SAU,Saudi Arabia,2018,386.24615
+pisa_math,I.B1.5.4,PISA mathematics mean,SAU,Saudi Arabia,2022,388.78162
+pisa_read,I.B1.5.5,PISA reading mean,SAU,Saudi Arabia,2022,382.55106
+pisa_sci,I.B1.5.6,PISA science mean,SAU,Saudi Arabia,2022,390.3876
+pisa_math,I.B1.5.4,PISA mathematics mean,SRB,Serbia,2018,448.28305
+pisa_read,I.B1.5.5,PISA reading mean,SRB,Serbia,2018,439.46634
+pisa_sci,I.B1.5.6,PISA science mean,SRB,Serbia,2018,439.8739
+pisa_math,I.B1.5.4,PISA mathematics mean,SRB,Serbia,2022,439.87668
+pisa_read,I.B1.5.5,PISA reading mean,SRB,Serbia,2022,440.35498
+pisa_sci,I.B1.5.6,PISA science mean,SRB,Serbia,2022,447.46066
+pisa_math,I.B1.5.4,PISA mathematics mean,SGP,Singapore,2009,562.01874
+pisa_read,I.B1.5.5,PISA reading mean,SGP,Singapore,2009,525.89655
+pisa_sci,I.B1.5.6,PISA science mean,SGP,Singapore,2009,541.6955
+pisa_math,I.B1.5.4,PISA mathematics mean,SGP,Singapore,2012,573.4683
+pisa_read,I.B1.5.5,PISA reading mean,SGP,Singapore,2012,542.2158
+pisa_sci,I.B1.5.6,PISA science mean,SGP,Singapore,2012,551.49316
+pisa_math,I.B1.5.4,PISA mathematics mean,SGP,Singapore,2015,564.1897
+pisa_read,I.B1.5.5,PISA reading mean,SGP,Singapore,2015,535.10016
+pisa_sci,I.B1.5.6,PISA science mean,SGP,Singapore,2015,555.5747
+pisa_math,I.B1.5.4,PISA mathematics mean,SGP,Singapore,2018,569.00775
+pisa_read,I.B1.5.5,PISA reading mean,SGP,Singapore,2018,549.4647
+pisa_sci,I.B1.5.6,PISA science mean,SGP,Singapore,2018,550.9369
+pisa_math,I.B1.5.4,PISA mathematics mean,SGP,Singapore,2022,574.6638
+pisa_read,I.B1.5.5,PISA reading mean,SGP,Singapore,2022,542.55334
+pisa_sci,I.B1.5.6,PISA science mean,SGP,Singapore,2022,561.4333
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2003,498.18344
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2003,469.15903
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2006,492.10623
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2006,466.34976
+pisa_sci,I.B1.5.6,PISA science mean,SVK,Slovakia,2006,488.4334
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2009,496.6834
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2009,477.44336
+pisa_sci,I.B1.5.6,PISA science mean,SVK,Slovakia,2009,490.26593
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2012,481.64474
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2012,462.76703
+pisa_sci,I.B1.5.6,PISA science mean,SVK,Slovakia,2012,471.19318
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2015,475.2301
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2015,452.51434
+pisa_sci,I.B1.5.6,PISA science mean,SVK,Slovakia,2015,460.77484
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2018,486.16486
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2018,457.98398
+pisa_sci,I.B1.5.6,PISA science mean,SVK,Slovakia,2018,464.04758
+pisa_math,I.B1.5.4,PISA mathematics mean,SVK,Slovakia,2022,463.99463
+pisa_read,I.B1.5.5,PISA reading mean,SVK,Slovakia,2022,446.8606
+pisa_sci,I.B1.5.6,PISA science mean,SVK,Slovakia,2022,462.26947
+pisa_math,I.B1.5.4,PISA mathematics mean,SVN,Slovenia,2006,504.45596
+pisa_read,I.B1.5.5,PISA reading mean,SVN,Slovenia,2006,494.40903
+pisa_sci,I.B1.5.6,PISA science mean,SVN,Slovenia,2006,518.8156
+pisa_math,I.B1.5.4,PISA mathematics mean,SVN,Slovenia,2009,501.47238
+pisa_read,I.B1.5.5,PISA reading mean,SVN,Slovenia,2009,483.08203
+pisa_sci,I.B1.5.6,PISA science mean,SVN,Slovenia,2009,511.75946
+pisa_math,I.B1.5.4,PISA mathematics mean,SVN,Slovenia,2012,501.1274
+pisa_read,I.B1.5.5,PISA reading mean,SVN,Slovenia,2012,481.31628
+pisa_sci,I.B1.5.6,PISA science mean,SVN,Slovenia,2012,514.1426
+pisa_math,I.B1.5.4,PISA mathematics mean,SVN,Slovenia,2015,509.91965
+pisa_read,I.B1.5.5,PISA reading mean,SVN,Slovenia,2015,505.21588
+pisa_sci,I.B1.5.6,PISA science mean,SVN,Slovenia,2015,512.8636
+pisa_math,I.B1.5.4,PISA mathematics mean,SVN,Slovenia,2018,508.89755
+pisa_read,I.B1.5.5,PISA reading mean,SVN,Slovenia,2018,495.3456
+pisa_sci,I.B1.5.6,PISA science mean,SVN,Slovenia,2018,507.00653
+pisa_math,I.B1.5.4,PISA mathematics mean,SVN,Slovenia,2022,484.52902
+pisa_read,I.B1.5.5,PISA reading mean,SVN,Slovenia,2022,468.536
+pisa_sci,I.B1.5.6,PISA science mean,SVN,Slovenia,2022,499.96487
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2000,524.7543
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2003,542.22736
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2003,534.09125
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2006,547.4585
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2006,556.0219
+pisa_sci,I.B1.5.6,PISA science mean,KOR,South Korea,2006,522.14813
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2009,546.2285
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2009,539.26746
+pisa_sci,I.B1.5.6,PISA science mean,KOR,South Korea,2009,537.9862
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2012,553.76666
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2012,535.79047
+pisa_sci,I.B1.5.6,PISA science mean,KOR,South Korea,2012,537.7876
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2015,524.1062
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2015,517.4367
+pisa_sci,I.B1.5.6,PISA science mean,KOR,South Korea,2015,515.80994
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2018,525.933
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2018,514.0523
+pisa_sci,I.B1.5.6,PISA science mean,KOR,South Korea,2018,519.00726
+pisa_math,I.B1.5.4,PISA mathematics mean,KOR,South Korea,2022,527.3025
+pisa_read,I.B1.5.5,PISA reading mean,KOR,South Korea,2022,515.4154
+pisa_sci,I.B1.5.6,PISA science mean,KOR,South Korea,2022,527.82245
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2000,492.55298
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2003,485.10806
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2003,480.538
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2006,479.95752
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2006,460.8301
+pisa_sci,I.B1.5.6,PISA science mean,ESP,Spain,2006,488.42453
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2009,483.49313
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2009,481.04233
+pisa_sci,I.B1.5.6,PISA science mean,ESP,Spain,2009,488.25464
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2012,484.3193
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2012,487.93918
+pisa_sci,I.B1.5.6,PISA science mean,ESP,Spain,2012,496.44583
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2015,485.84323
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2015,495.57645
+pisa_sci,I.B1.5.6,PISA science mean,ESP,Spain,2015,492.78613
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2018,481.3926
+pisa_sci,I.B1.5.6,PISA science mean,ESP,Spain,2018,483.25204
+pisa_math,I.B1.5.4,PISA mathematics mean,ESP,Spain,2022,473.1402
+pisa_read,I.B1.5.5,PISA reading mean,ESP,Spain,2022,474.3071
+pisa_sci,I.B1.5.6,PISA science mean,ESP,Spain,2022,484.53366
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2000,516.3312
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2003,509.04645
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2003,514.2674
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2006,502.35638
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2006,507.31287
+pisa_sci,I.B1.5.6,PISA science mean,SWE,Sweden,2006,503.334
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2009,494.2382
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2009,497.44943
+pisa_sci,I.B1.5.6,PISA science mean,SWE,Sweden,2009,495.1059
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2012,478.26065
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2012,483.335
+pisa_sci,I.B1.5.6,PISA science mean,SWE,Sweden,2012,484.79898
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2015,493.91812
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2015,500.1556
+pisa_sci,I.B1.5.6,PISA science mean,SWE,Sweden,2015,493.42236
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2018,502.3877
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2018,505.78522
+pisa_sci,I.B1.5.6,PISA science mean,SWE,Sweden,2018,499.4447
+pisa_math,I.B1.5.4,PISA mathematics mean,SWE,Sweden,2022,481.76605
+pisa_read,I.B1.5.5,PISA reading mean,SWE,Sweden,2022,486.97516
+pisa_sci,I.B1.5.6,PISA science mean,SWE,Sweden,2022,493.54932
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2000,494.3716
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2003,526.55316
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2003,499.1214
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2006,529.6561
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2006,499.27777
+pisa_sci,I.B1.5.6,PISA science mean,CHE,Switzerland,2006,511.5239
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2009,533.96063
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2009,500.5002
+pisa_sci,I.B1.5.6,PISA science mean,CHE,Switzerland,2009,516.5675
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2012,530.931
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2012,509.04025
+pisa_sci,I.B1.5.6,PISA science mean,CHE,Switzerland,2012,515.29755
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2015,521.25055
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2015,492.19824
+pisa_sci,I.B1.5.6,PISA science mean,CHE,Switzerland,2015,505.50583
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2018,515.3147
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2018,483.9294
+pisa_sci,I.B1.5.6,PISA science mean,CHE,Switzerland,2018,495.27628
+pisa_math,I.B1.5.4,PISA mathematics mean,CHE,Switzerland,2022,507.9906
+pisa_read,I.B1.5.5,PISA reading mean,CHE,Switzerland,2022,483.33173
+pisa_sci,I.B1.5.6,PISA science mean,CHE,Switzerland,2022,502.52325
+pisa_math,I.B1.5.4,PISA mathematics mean,TWN,Taiwan,2006,549.35724
+pisa_read,I.B1.5.5,PISA reading mean,TWN,Taiwan,2006,496.2354
+pisa_sci,I.B1.5.6,PISA science mean,TWN,Taiwan,2006,532.4736
+pisa_math,I.B1.5.4,PISA mathematics mean,TWN,Taiwan,2009,543.18243
+pisa_read,I.B1.5.5,PISA reading mean,TWN,Taiwan,2009,495.24048
+pisa_sci,I.B1.5.6,PISA science mean,TWN,Taiwan,2009,520.4198
+pisa_math,I.B1.5.4,PISA mathematics mean,TWN,Taiwan,2012,559.82477
+pisa_read,I.B1.5.5,PISA reading mean,TWN,Taiwan,2012,523.1189
+pisa_sci,I.B1.5.6,PISA science mean,TWN,Taiwan,2012,523.3149
+pisa_math,I.B1.5.4,PISA mathematics mean,TWN,Taiwan,2015,542.3215
+pisa_read,I.B1.5.5,PISA reading mean,TWN,Taiwan,2015,497.0991
+pisa_sci,I.B1.5.6,PISA science mean,TWN,Taiwan,2015,532.3475
+pisa_math,I.B1.5.4,PISA mathematics mean,TWN,Taiwan,2018,531.14355
+pisa_read,I.B1.5.5,PISA reading mean,TWN,Taiwan,2018,502.60114
+pisa_sci,I.B1.5.6,PISA science mean,TWN,Taiwan,2018,515.74805
+pisa_math,I.B1.5.4,PISA mathematics mean,TWN,Taiwan,2022,547.0942
+pisa_read,I.B1.5.5,PISA reading mean,TWN,Taiwan,2022,515.1673
+pisa_sci,I.B1.5.6,PISA science mean,TWN,Taiwan,2022,537.3804
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2000,430.68387
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2003,416.97797
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2003,419.91483
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2006,417.0726
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2006,416.75177
+pisa_sci,I.B1.5.6,PISA science mean,THA,Thailand,2006,421.01147
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2009,418.58392
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2009,421.37442
+pisa_sci,I.B1.5.6,PISA science mean,THA,Thailand,2009,425.2963
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2012,426.7375
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2012,441.21994
+pisa_sci,I.B1.5.6,PISA science mean,THA,Thailand,2012,443.99994
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2015,415.4638
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2015,409.13013
+pisa_sci,I.B1.5.6,PISA science mean,THA,Thailand,2015,421.3373
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2018,418.5555
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2018,392.88864
+pisa_sci,I.B1.5.6,PISA science mean,THA,Thailand,2018,425.81345
+pisa_math,I.B1.5.4,PISA mathematics mean,THA,Thailand,2022,393.94534
+pisa_read,I.B1.5.5,PISA reading mean,THA,Thailand,2022,378.663
+pisa_sci,I.B1.5.6,PISA science mean,THA,Thailand,2022,409.2643
+pisa_math,I.B1.5.4,PISA mathematics mean,TTO,Trinidad and Tobago,2009,414.04495
+pisa_read,I.B1.5.5,PISA reading mean,TTO,Trinidad and Tobago,2009,416.45233
+pisa_sci,I.B1.5.6,PISA science mean,TTO,Trinidad and Tobago,2009,410.19562
+pisa_math,I.B1.5.4,PISA mathematics mean,TTO,Trinidad and Tobago,2015,417.2434
+pisa_read,I.B1.5.5,PISA reading mean,TTO,Trinidad and Tobago,2015,427.27325
+pisa_sci,I.B1.5.6,PISA science mean,TTO,Trinidad and Tobago,2015,424.59045
+pisa_math,I.B1.5.4,PISA mathematics mean,TUN,Tunisia,2003,358.73322
+pisa_read,I.B1.5.5,PISA reading mean,TUN,Tunisia,2003,374.6224
+pisa_math,I.B1.5.4,PISA mathematics mean,TUN,Tunisia,2006,365.47937
+pisa_read,I.B1.5.5,PISA reading mean,TUN,Tunisia,2006,380.33682
+pisa_sci,I.B1.5.6,PISA science mean,TUN,Tunisia,2006,385.5067
+pisa_math,I.B1.5.4,PISA mathematics mean,TUN,Tunisia,2009,371.4835
+pisa_read,I.B1.5.5,PISA reading mean,TUN,Tunisia,2009,403.63266
+pisa_sci,I.B1.5.6,PISA science mean,TUN,Tunisia,2009,400.6615
+pisa_math,I.B1.5.4,PISA mathematics mean,TUN,Tunisia,2012,387.82462
+pisa_read,I.B1.5.5,PISA reading mean,TUN,Tunisia,2012,404.07846
+pisa_sci,I.B1.5.6,PISA science mean,TUN,Tunisia,2012,398.04645
+pisa_math,I.B1.5.4,PISA mathematics mean,TUN,Tunisia,2015,366.818
+pisa_read,I.B1.5.5,PISA reading mean,TUN,Tunisia,2015,361.0555
+pisa_sci,I.B1.5.6,PISA science mean,TUN,Tunisia,2015,386.40338
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2003,423.4194
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2003,440.97098
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2006,423.9412
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2006,447.14114
+pisa_sci,I.B1.5.6,PISA science mean,TUR,Turkey,2006,423.83273
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2009,445.45135
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2009,464.19437
+pisa_sci,I.B1.5.6,PISA science mean,TUR,Turkey,2009,453.90973
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2012,447.9844
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2012,475.49146
+pisa_sci,I.B1.5.6,PISA science mean,TUR,Turkey,2012,463.4129
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2015,420.45398
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2015,428.33508
+pisa_sci,I.B1.5.6,PISA science mean,TUR,Turkey,2015,425.4895
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2018,453.50778
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2018,465.63165
+pisa_sci,I.B1.5.6,PISA science mean,TUR,Turkey,2018,468.29962
+pisa_math,I.B1.5.4,PISA mathematics mean,TUR,Turkey,2022,453.15176
+pisa_read,I.B1.5.5,PISA reading mean,TUR,Turkey,2022,456.08405
+pisa_sci,I.B1.5.6,PISA science mean,TUR,Turkey,2022,475.9378
+pisa_math,I.B1.5.4,PISA mathematics mean,UKR,Ukraine,2018,453.1175
+pisa_read,I.B1.5.5,PISA reading mean,UKR,Ukraine,2018,465.95013
+pisa_sci,I.B1.5.6,PISA science mean,UKR,Ukraine,2018,468.98773
+pisa_math,I.B1.5.4,PISA mathematics mean,UKR,Ukraine,2022,440.8453
+pisa_read,I.B1.5.5,PISA reading mean,UKR,Ukraine,2022,427.52695
+pisa_sci,I.B1.5.6,PISA science mean,UKR,Ukraine,2022,450.18723
+pisa_math,I.B1.5.4,PISA mathematics mean,ARE,United Arab Emirates,2012,434.00717
+pisa_read,I.B1.5.5,PISA reading mean,ARE,United Arab Emirates,2012,441.70374
+pisa_sci,I.B1.5.6,PISA science mean,ARE,United Arab Emirates,2012,448.3703
+pisa_math,I.B1.5.4,PISA mathematics mean,ARE,United Arab Emirates,2015,427.48273
+pisa_read,I.B1.5.5,PISA reading mean,ARE,United Arab Emirates,2015,433.5423
+pisa_sci,I.B1.5.6,PISA science mean,ARE,United Arab Emirates,2015,436.73114
+pisa_math,I.B1.5.4,PISA mathematics mean,ARE,United Arab Emirates,2018,434.94727
+pisa_read,I.B1.5.5,PISA reading mean,ARE,United Arab Emirates,2018,431.78177
+pisa_sci,I.B1.5.6,PISA science mean,ARE,United Arab Emirates,2018,433.6368
+pisa_math,I.B1.5.4,PISA mathematics mean,ARE,United Arab Emirates,2022,431.11047
+pisa_read,I.B1.5.5,PISA reading mean,ARE,United Arab Emirates,2022,417.34976
+pisa_sci,I.B1.5.6,PISA science mean,ARE,United Arab Emirates,2022,431.97946
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2000,523.4433
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2003,508.2581
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2003,507.01276
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2006,495.44415
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2006,495.0835
+pisa_sci,I.B1.5.6,PISA science mean,GBR,United Kingdom,2006,514.77356
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2009,492.4141
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2009,494.182
+pisa_sci,I.B1.5.6,PISA science mean,GBR,United Kingdom,2009,513.71027
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2012,493.93423
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2012,499.32312
+pisa_sci,I.B1.5.6,PISA science mean,GBR,United Kingdom,2012,514.12933
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2015,492.47852
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2015,497.97192
+pisa_sci,I.B1.5.6,PISA science mean,GBR,United Kingdom,2015,509.2215
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2018,501.7699
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2018,503.9281
+pisa_sci,I.B1.5.6,PISA science mean,GBR,United Kingdom,2018,504.66748
+pisa_math,I.B1.5.4,PISA mathematics mean,GBR,United Kingdom,2022,488.9751
+pisa_read,I.B1.5.5,PISA reading mean,GBR,United Kingdom,2022,494.40463
+pisa_sci,I.B1.5.6,PISA science mean,GBR,United Kingdom,2022,499.67023
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2000,504.41968
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2003,482.88278
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2003,495.18585
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2006,474.35217
+pisa_sci,I.B1.5.6,PISA science mean,USA,United States,2006,488.90683
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2009,487.3965
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2009,499.8268
+pisa_sci,I.B1.5.6,PISA science mean,USA,United States,2009,502.00226
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2012,481.3668
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2012,497.58173
+pisa_sci,I.B1.5.6,PISA science mean,USA,United States,2012,497.40982
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2015,469.62848
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2015,496.9351
+pisa_sci,I.B1.5.6,PISA science mean,USA,United States,2015,496.24243
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2018,478.24472
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2018,505.35278
+pisa_sci,I.B1.5.6,PISA science mean,USA,United States,2018,502.38004
+pisa_math,I.B1.5.4,PISA mathematics mean,USA,United States,2022,464.88803
+pisa_read,I.B1.5.5,PISA reading mean,USA,United States,2022,503.93756
+pisa_sci,I.B1.5.6,PISA science mean,USA,United States,2022,499.41406
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2003,422.1999
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2003,434.14975
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2006,426.79904
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2006,412.51672
+pisa_sci,I.B1.5.6,PISA science mean,URY,Uruguay,2006,428.13388
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2009,426.7238
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2009,425.81335
+pisa_sci,I.B1.5.6,PISA science mean,URY,Uruguay,2009,427.21426
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2012,409.29156
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2012,411.3489
+pisa_sci,I.B1.5.6,PISA science mean,URY,Uruguay,2012,415.84293
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2015,417.99188
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2015,436.57214
+pisa_sci,I.B1.5.6,PISA science mean,URY,Uruguay,2015,435.36295
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2018,417.66162
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2018,427.1176
+pisa_sci,I.B1.5.6,PISA science mean,URY,Uruguay,2018,425.81268
+pisa_math,I.B1.5.4,PISA mathematics mean,URY,Uruguay,2022,408.71207
+pisa_read,I.B1.5.5,PISA reading mean,URY,Uruguay,2022,430.3597
+pisa_sci,I.B1.5.6,PISA science mean,URY,Uruguay,2022,435.38477
+pisa_math,I.B1.5.4,PISA mathematics mean,UZB,Uzbekistan,2022,363.93536
+pisa_read,I.B1.5.5,PISA reading mean,UZB,Uzbekistan,2022,335.5049
+pisa_sci,I.B1.5.6,PISA science mean,UZB,Uzbekistan,2022,354.86356
+pisa_math,I.B1.5.4,PISA mathematics mean,VNM,Vietnam,2012,511.3382
+pisa_read,I.B1.5.5,PISA reading mean,VNM,Vietnam,2012,508.219
+pisa_sci,I.B1.5.6,PISA science mean,VNM,Vietnam,2012,528.4233
+pisa_math,I.B1.5.4,PISA mathematics mean,VNM,Vietnam,2015,494.5183
+pisa_read,I.B1.5.5,PISA reading mean,VNM,Vietnam,2015,486.77377
+pisa_sci,I.B1.5.6,PISA science mean,VNM,Vietnam,2015,524.64453
+pisa_math,I.B1.5.4,PISA mathematics mean,VNM,Vietnam,2022,469.40244
+pisa_read,I.B1.5.5,PISA reading mean,VNM,Vietnam,2022,461.88797
+pisa_sci,I.B1.5.6,PISA science mean,VNM,Vietnam,2022,472.38095

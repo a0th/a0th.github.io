@@ -1,0 +1,140 @@
+{
+  "source": "UNESCO UIS (initial government funding per student, constant PPP$) and World Bank WDI",
+  "urls": [
+    "https://api.uis.unesco.org/api/public/data/indicators",
+    "https://api.worldbank.org/v2/country/"
+  ],
+  "countries": [
+    "ALB",
+    "ARE",
+    "ARG",
+    "AUS",
+    "AUT",
+    "BEL",
+    "BGR",
+    "BIH",
+    "BLR",
+    "BRA",
+    "BRN",
+    "CAN",
+    "CHE",
+    "CHL",
+    "COL",
+    "CRI",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DNK",
+    "DOM",
+    "DZA",
+    "ESP",
+    "EST",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GEO",
+    "GRC",
+    "GTM",
+    "HKG",
+    "HRV",
+    "HUN",
+    "IDN",
+    "IRL",
+    "ISL",
+    "ISR",
+    "ITA",
+    "JAM",
+    "JOR",
+    "JPN",
+    "KAZ",
+    "KHM",
+    "KOR",
+    "LBN",
+    "LTU",
+    "LUX",
+    "LVA",
+    "MAC",
+    "MAR",
+    "MDA",
+    "MEX",
+    "MKD",
+    "MLT",
+    "MNE",
+    "MNG",
+    "MYS",
+    "NLD",
+    "NOR",
+    "NZL",
+    "PAN",
+    "PER",
+    "PHL",
+    "POL",
+    "PRT",
+    "PRY",
+    "PSE",
+    "QAT",
+    "ROU",
+    "RUS",
+    "SAU",
+    "SGP",
+    "SLV",
+    "SRB",
+    "SVK",
+    "SVN",
+    "SWE",
+    "THA",
+    "TTO",
+    "TUN",
+    "TUR",
+    "TWN",
+    "UKR",
+    "URY",
+    "USA",
+    "UZB",
+    "VNM"
+  ],
+  "pisa_rounds": [
+    2009,
+    2012,
+    2015,
+    2018,
+    2022
+  ],
+  "indicators": {
+    "age_lowsec": {
+      "n": 2665
+    },
+    "age_primary": {
+      "n": 2665
+    },
+    "cum_6_15_observed": {
+      "n": 224
+    },
+    "cum_6_15_ppp": {
+      "n": 224
+    },
+    "dur_lowsec": {
+      "n": 2235
+    },
+    "gdp_pc_ppp": {
+      "n": 2662
+    },
+    "pupil_ppp_02": {
+      "n": 1130
+    },
+    "pupil_ppp_1": {
+      "n": 1174
+    },
+    "pupil_ppp_2": {
+      "n": 996
+    },
+    "pupil_ppp_2t3": {
+      "n": 1139
+    },
+    "pupil_ppp_3": {
+      "n": 1016
+    }
+  },
+  "n_rows": 16130,
+  "path": "data/edu_intl.csv"
+}

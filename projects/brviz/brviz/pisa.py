@@ -13,8 +13,6 @@ import json
 import urllib.request
 from pathlib import Path
 
-from brviz.catalog import COUNTRIES
-
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "data" / "pisa.csv"
 UA = "brviz/0.1 (https://github.com/nilo)"
@@ -30,8 +28,11 @@ SUBJECTS = {
     "Science": ("pisa_sci", "I.B1.5.6", "PISA science mean"),
 }
 
-KEEP_ISO = set(COUNTRIES) | {"OECD"}
 ENTITY_ISO = {"OECD average": "OECD"}
+
+
+def _keep(iso: str) -> bool:
+    return iso == "OECD" or (len(iso) == 3 and iso.isalpha())
 
 
 def _get(url: str) -> str:
@@ -60,7 +61,7 @@ def fetch(*, out: Path = DEFAULT_OUT) -> dict:
     counts = {key: 0 for key, _, _ in SUBJECTS.values()}
     for row in raw:
         iso = _iso(row)
-        if iso not in KEEP_ISO:
+        if not _keep(iso):
             continue
         try:
             year = int(row["Year"])

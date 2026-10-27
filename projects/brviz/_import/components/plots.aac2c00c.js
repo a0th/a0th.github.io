@@ -1,6 +1,6 @@
 import * as d3 from "../../_npm/d3@7.9.0/080cf928.js";
 import * as Plot from "../../_npm/@observablehq/plot@0.6.17/93ce672e.js";
-import { fmtIdx } from "./data.0f96dd0b.js";
+import { fmtIdx } from "./data.e41da30b.js";
 
 function braColor() {
   return getComputedStyle(document.documentElement).getPropertyValue("--bra").trim() || "#1e3a8a";

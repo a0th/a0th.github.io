@@ -398,6 +398,201 @@
   line-height: 1.45;
 }
 
+.evidence {
+  --evidence: var(--bra);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 0.4rem;
+  color: var(--evidence);
+  font: 700 11px var(--sans-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+}
+
+.evidence::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--evidence);
+}
+
+.evidence.provavel {
+  --evidence: #2a8a7b;
+}
+
+.evidence.fragil {
+  --evidence: #64748b;
+}
+
+.evidence.mito {
+  --evidence: var(--reference);
+}
+
+.study {
+  max-width: 640px;
+  margin: 0;
+  padding: 1.1rem 0 1.2rem;
+}
+
+.study + .study {
+  border-top: 1px solid color-mix(in srgb, var(--theme-foreground) 10%, transparent);
+}
+
+.study > p {
+  margin: 0;
+}
+
+.study > p + p {
+  margin-top: 0.75rem;
+}
+
+.study > p:first-child .evidence {
+  display: flex;
+  margin-bottom: 0.3rem;
+}
+
+.study > p:first-child > strong:first-of-type {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--theme-foreground);
+  font-size: 1.12rem;
+  line-height: 1.3;
+}
+
+.study > p:has(.study-ref) {
+  margin-top: 0.6rem;
+  line-height: 1.45;
+}
+
+.study-ref {
+  color: var(--theme-foreground-muted);
+  font: 12px/1.45 var(--sans-serif);
+}
+
+.study-ref a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 2px;
+}
+
+.study-ref a:hover {
+  color: var(--theme-foreground-focus);
+}
+
+.finding {
+  max-width: 640px;
+  margin: 1.6rem 0 2rem;
+  padding: 1rem 1.2rem 1.1rem;
+  border-radius: 4px;
+  background: var(--bra);
+  color: #fff;
+}
+
+.finding::before {
+  content: "Conclusão principal";
+  display: block;
+  margin-bottom: 0.35rem;
+  font: 700 11px var(--sans-serif);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.finding > p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+.finding strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.caveat {
+  max-width: 640px;
+  margin: 1.1rem 0 1.3rem;
+  padding: 0.6rem 0 0.2rem;
+  border-top: 1px dashed color-mix(in srgb, var(--reference) 55%, transparent);
+  color: var(--theme-foreground-muted);
+  font-size: 0.9rem;
+}
+
+.caveat > p {
+  margin: 0;
+}
+
+.caveat > p + p {
+  margin-top: 0.6rem;
+}
+
+.caveat strong:first-child {
+  color: var(--reference);
+  font-weight: 600;
+}
+
+a[href^="#ref-"] {
+  color: color-mix(in srgb, var(--theme-foreground-focus) 75%, transparent);
+  font: 0.78em/1 var(--sans-serif);
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  vertical-align: 0.15em;
+  white-space: nowrap;
+}
+
+a[href^="#ref-"]:hover,
+a[href^="#ref-"]:focus-visible {
+  color: var(--theme-foreground-focus);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.refs {
+  max-width: 640px;
+  padding-left: 1.8rem;
+  font: 13px/1.5 var(--sans-serif);
+  color: var(--theme-foreground-muted);
+}
+
+.refs li {
+  margin: 0.35rem 0;
+  scroll-margin-top: 1.5rem;
+  border-radius: 2px;
+}
+
+.refs li::marker {
+  font-variant-numeric: tabular-nums;
+}
+
+.refs li:target {
+  color: var(--theme-foreground);
+  background: color-mix(in srgb, var(--reference) 12%, transparent);
+  box-shadow: 0 0 0 0.3rem color-mix(in srgb, var(--reference) 12%, transparent);
+}
+
+.refs li:target::marker {
+  color: var(--reference);
+  font-weight: 700;
+}
+
+.refs a {
+  color: var(--theme-foreground);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+  text-underline-offset: 2px;
+}
+
+.refs a:hover {
+  color: var(--theme-foreground-focus);
+  text-decoration-color: currentColor;
+}
+
 .score-wrap {
   max-width: 100%;
   overflow-x: auto;

@@ -205,12 +205,12 @@ linhas.filter((d) => d.nota !== null && d.nota !== 0).length
 ))
 }});
 
-define({id: "b10ddabf", inputs: ["MAX_SALDO","placar","Plot","fmt"], outputs: ["diagrama"], body: (MAX_SALDO,placar,Plot,fmt) => {
+define({id: "e8e3bbc8", inputs: ["MAX_SALDO","placar","Plot","fmt"], outputs: ["diagrama"], body: (MAX_SALDO,placar,Plot,fmt) => {
 function diagrama(width) {
   const quadrantes = [
     {x: 12, y: 14.7, t: "Libertário"},
-    {x: -12, y: 14.7, t: "Esquerda"},
-    {x: 12, y: -14.7, t: "Direita"},
+    {x: -10, y: 14.7, t: "Esquerda liberal"},
+    {x: 9, y: -14.7, t: "Direita conservadora"},
     {x: -12, y: -14.7, t: "Estatista"}
   ];
   const S = Math.min(width, 560);
@@ -464,7 +464,7 @@ html`<ol class="refs">${refs.map((r, i) => html`<li id=${`ref-${i + 1}`}>
 <main id="observablehq-main" class="observablehq">
 <h1 id="diagrama-de-nolan-politicos-brasileiros" tabindex="-1"><a class="observablehq-header-anchor" href="#diagrama-de-nolan-politicos-brasileiros">Diagrama de Nolan: políticos brasileiros</a></h1>
 <div class="observablehq observablehq--block"><!--:269189c6:--></div>
-<p>O Diagrama de Nolan troca a linha única entre esquerda e direita por dois eixos: quanta liberdade a pessoa quer na <strong>economia</strong> (empresas, preços, impostos) e quanta quer na <strong>vida pessoal</strong> (armas, drogas, costumes, expressão). Quem quer muita nas duas fica no canto libertário; quem quer pouca nas duas, no canto estatista.</p>
+<p>O Diagrama de Nolan troca a linha única entre esquerda e direita por dois eixos: quanta liberdade a pessoa quer na <strong>economia</strong> (empresas, preços, impostos) e quanta quer na <strong>vida pessoal</strong> (armas, drogas, costumes, expressão). Quem quer muita nas duas fica no canto libertário, e quem quer pouca nas duas fica no canto estatista. Quem quer liberdade só nos costumes fica na esquerda liberal, e quem quer liberdade só na economia fica na direita conservadora. Os nomes descrevem a combinação, não o campo político: um político de esquerda que também quer mais Estado nos costumes cai no canto estatista, e continua sendo de esquerda.</p>
 <p>A versão popular do diagrama vem de um questionário curto criado por um grupo libertário americano. Esta página usa um questionário próprio, com temas do debate brasileiro, e responde por cada político com base no que ele votou, fez no governo ou disse em público. Cada resposta tem fonte, e qualquer pessoa pode conferir.</p>
 <p>Esta é uma <strong>versão parcial</strong>, com <observablehq-loading></observablehq-loading><!--:ba687c3e:--> políticos. A lista ainda está sendo completada.</p>
 <h2 id="o-questionario" tabindex="-1"><a class="observablehq-header-anchor" href="#o-questionario">O questionário</a></h2>
@@ -474,7 +474,7 @@ html`<ol class="refs">${refs.map((r, i) => html`<li id=${`ref-${i + 1}`}>
 <p><strong>Como a nota é calculada.</strong> Cada resposta soma ou tira pontos de liberdade. A favor de mais liberdade vale +1 ou +2, a favor de mais Estado vale −1 ou −2, e "em parte" ou sem registro vale 0. Nos itens escritos a favor de mais Estado, concordar tira pontos. A nota de cada eixo é a soma das oito respostas e vai de −16 a +16, com o 0 no meio. Assim, uma nota perto de 0 só aparece quando as respostas se anulam ou quando há poucas com registro, e o número de respostas com registro aparece ao lado de cada nota.</p>
 <p><strong>Quando a resposta vale 2.</strong> A resposta vale ±2 em dois casos. O primeiro é quando a pessoa liderou a medida: assinou o decreto ou a lei, executou a política como governante ou é autora do projeto. O segundo é quando ela defende a versão geral ou máxima da afirmação, como reverter todas as privatizações, proibir qualquer moderação nas redes ou criminalizar a posse de drogas em qualquer quantidade. Votar a favor do projeto de outra pessoa, assinar uma PEC com dezenas de autores, defender uma versão limitada (porte de arma só no campo, crédito de emergência após uma enchente) ou declarar apoio genérico vale ±1. Pela regra, <observablehq-loading></observablehq-loading><!--:9616e85a:--> das <observablehq-loading></observablehq-loading><!--:3639ac8f:--> respostas que concordam ou discordam valem 2.</p>
 <h2 id="o-diagrama" tabindex="-1"><a class="observablehq-header-anchor" href="#o-diagrama">O diagrama</a></h2>
-<div class="observablehq observablehq--block"><!--:b10ddabf:--></div>
+<div class="observablehq observablehq--block"><!--:e8e3bbc8:--></div>
 <div class="card"><observablehq-loading></observablehq-loading><!--:b79e9563:--></div>
 <p>Pontos vazados têm registro em menos de 6 das 8 afirmações de algum eixo, e a nota deles é menos confiável.</p>
 <p>No eixo econômico, os políticos se espalham dos dois lados: Lula e Jones Manoel ficam em <observablehq-loading></observablehq-loading><!--:32e7f38d:--> e <observablehq-loading></observablehq-loading><!--:4d3e4872:-->, Zema em <observablehq-loading></observablehq-loading><!--:fc9fd1e2:-->, e Kim Kataguiri e Bolsonaro em <observablehq-loading></observablehq-loading><!--:6b7b66a4:--> e <observablehq-loading></observablehq-loading><!--:6e3e5cc7:-->. No eixo pessoal, todos ficam perto do meio: o mais alto é Kim, com <observablehq-loading></observablehq-loading><!--:e1a2710f:-->, e o mais baixo é Nikolas Ferreira, com <observablehq-loading></observablehq-loading><!--:d5adf66f:-->. Lula (<observablehq-loading></observablehq-loading><!--:62dbcd79:-->) fica mais embaixo que Bolsonaro (<observablehq-loading></observablehq-loading><!--:64ee0ca1:-->) e Tarcísio (<observablehq-loading></observablehq-loading><!--:be0bddc0:-->). O mapa abaixo mostra por quê.</p>

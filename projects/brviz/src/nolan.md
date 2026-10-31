@@ -59,7 +59,7 @@ for (const f of nolan.figuras) {
 }
 ```
 
-O Diagrama de Nolan troca a linha única entre esquerda e direita por dois eixos: quanta liberdade a pessoa quer na **economia** (empresas, preços, impostos) e quanta quer na **vida pessoal** (armas, drogas, costumes, expressão). Quem quer muita nas duas fica no canto libertário; quem quer pouca nas duas, no canto estatista.
+O Diagrama de Nolan troca a linha única entre esquerda e direita por dois eixos: quanta liberdade a pessoa quer na **economia** (empresas, preços, impostos) e quanta quer na **vida pessoal** (armas, drogas, costumes, expressão). Quem quer muita nas duas fica no canto libertário, e quem quer pouca nas duas fica no canto estatista. Quem quer liberdade só nos costumes fica na esquerda liberal, e quem quer liberdade só na economia fica na direita conservadora. Os nomes descrevem a combinação, não o campo político: um político de esquerda que também quer mais Estado nos costumes cai no canto estatista, e continua sendo de esquerda.
 
 A versão popular do diagrama vem de um questionário curto criado por um grupo libertário americano. Esta página usa um questionário próprio, com temas do debate brasileiro, e responde por cada político com base no que ele votou, fez no governo ou disse em público. Cada resposta tem fonte, e qualquer pessoa pode conferir.
 
@@ -92,8 +92,8 @@ html`<table class="nolan-itens">
 function diagrama(width) {
   const quadrantes = [
     {x: 12, y: 14.7, t: "Libertário"},
-    {x: -12, y: 14.7, t: "Esquerda"},
-    {x: 12, y: -14.7, t: "Direita"},
+    {x: -10, y: 14.7, t: "Esquerda liberal"},
+    {x: 9, y: -14.7, t: "Direita conservadora"},
     {x: -12, y: -14.7, t: "Estatista"}
   ];
   const S = Math.min(width, 560);

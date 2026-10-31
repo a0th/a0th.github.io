@@ -66,7 +66,7 @@
   .region { stroke: var(--paper); stroke-width: 2; transition: opacity .25s; }
   .grid line { stroke: var(--hair); }
   .region-label {
-    font: italic 400 48px Fraunces, Georgia, serif;
+    font: italic 400 40px Fraunces, Georgia, serif;
     fill: var(--ink);
     opacity: .3;
     text-anchor: middle;
@@ -174,11 +174,13 @@ const RESPOSTA = {concordo: "concorda", em_parte: "em parte", discordo: "discord
 const MIN_ITENS = 6;
 const REGIOES = [
   {nome: "Libertário", cor: "var(--lib)", pts: [[50, 50], [100, 50], [100, 100], [50, 100]], rotulo: [84, 84]},
-  {nome: "Esquerda", cor: "var(--esq)", pts: [[0, 50], [50, 50], [50, 100], [0, 100]], rotulo: [16, 84]},
-  {nome: "Direita", cor: "var(--dir)", pts: [[50, 0], [100, 0], [100, 50], [50, 50]], rotulo: [84, 16]},
+  {nome: "Esquerda liberal", cor: "var(--esq)", pts: [[0, 50], [50, 50], [50, 100], [0, 100]], rotulo: [15, 85]},
+  {nome: "Direita conservadora", cor: "var(--dir)", pts: [[50, 0], [100, 0], [100, 50], [50, 50]], rotulo: [85, 15]},
   {nome: "Estatista", cor: "var(--est)", pts: [[0, 0], [50, 0], [50, 50], [0, 50]], rotulo: [16, 16]},
   {nome: "Centro", cor: "var(--cen)", pts: [[30, 30], [70, 30], [70, 70], [30, 70]], rotulo: [37, 37]}
 ];
+
+const linhasRotulo = (d) => d.nome.split(" ");
 
 const C = 500, R = 470;
 const proj = (e, p) => [C + ((e - p) / 100) * R, C + R - ((e + p) / 100) * R];
@@ -244,8 +246,11 @@ function desenharFundo() {
   svg.append("g").selectAll("text").data(regioes).join("text")
     .attr("class", "region-label")
     .attr("x", (d) => proj(...d.rotulo)[0])
-    .attr("y", (d) => proj(...d.rotulo)[1] + 16)
-    .text((d) => d.nome);
+    .attr("y", (d) => proj(...d.rotulo)[1] + 16 - (linhasRotulo(d).length - 1) * 20)
+    .selectAll("tspan").data(linhasRotulo).join("tspan")
+    .attr("x", function () { return this.parentNode.getAttribute("x"); })
+    .attr("dy", (_, i) => (i ? 40 : 0))
+    .text((s) => s);
 
   const eixo = (de, ate, rotulo) => {
     const [x1, y1] = proj(...de), [x2, y2] = proj(...ate);
@@ -279,7 +284,8 @@ function desenharPontos(figuras) {
     ...figuras.map((f) => ({x: f.x, y: f.y, w: 26, h: 26})),
     ...REGIOES.map((d) => {
       const [x, y] = proj(...d.rotulo);
-      return {x, y: y + 2, w: d.nome.length * 23, h: 42};
+      const linhas = linhasRotulo(d);
+      return {x, y: y + 2, w: d3.max(linhas, (s) => s.length) * 19, h: 36 + (linhas.length - 1) * 40};
     })
   ];
   const colide = (r) => ocupados.some((o) => Math.abs(r.x - o.x) * 2 < r.w + o.w && Math.abs(r.y - o.y) * 2 < r.h + o.h);
@@ -354,8 +360,8 @@ function destacar(f, _mostrar, fixar) {
 
 function regiao(e, p) {
   if (e >= 30 && e <= 70 && p >= 30 && p <= 70) return "Centro";
-  if (e >= 50) return p >= 50 ? "Libertário" : "Direita";
-  return p >= 50 ? "Esquerda" : "Estatista";
+  if (e >= 50) return p >= 50 ? "Libertário" : "Direita conservadora";
+  return p >= 50 ? "Esquerda liberal" : "Estatista";
 }
 
 function painelInicial(n) {
@@ -372,7 +378,8 @@ function painelInicial(n) {
       <h2>Dois eixos em vez de um</h2>
       <p>Em vez de uma linha entre esquerda e direita, cada político ganha duas notas: liberdade econômica e liberdade pessoal.</p>
       <p>Cada resposta soma ou tira pontos: +1 a favor de mais liberdade, −1 a favor de mais Estado, e ±2 quando a pessoa liderou a medida ou defende a versão mais radical. "Em parte" e falta de registro valem 0. Cada eixo vai de −16 a +16, e o 0 fica no centro.</p>
-      <p>No topo fica quem quer menos Estado nas duas; embaixo, quem quer mais Estado nas duas. À esquerda, liberdade pessoal com mais Estado na economia; à direita, o contrário.</p>
+      <p>No topo fica quem quer menos Estado nas duas; embaixo, quem quer mais Estado nas duas. No canto da esquerda liberal fica quem quer liberdade pessoal com mais Estado na economia; no da direita conservadora, o contrário.</p>
+      <p>Os nomes dos cantos descrevem a combinação, não o campo político. Quem fica no canto estatista pode ser de esquerda ou de direita: o que o põe ali é querer mais Estado na economia e também nos costumes.</p>
       <p>Clique num ponto para ver as notas e como o político respondeu a cada afirmação abaixo.</p>
       <div class="legend">
         <span class="vazado">ponto vazado: menos de ${MIN_ITENS} das 8 afirmações de algum eixo com registro</span>

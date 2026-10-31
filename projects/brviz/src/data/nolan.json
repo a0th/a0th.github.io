@@ -114,6 +114,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/noticia/2023/01/02/lula-manda-revogar-processos-de-privatizacao-de-oito-estatais-iniciados-por-bolsonaro.ghtml",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Decreto 11.478/2023 exclui os Correios do PND. O Banco do Brasil não estava nos programas."
         },
         {
@@ -127,6 +128,7 @@
           "fonte_veiculo": "BBC News Brasil",
           "url": "https://www.bbc.com/portuguese/articles/c1rleweverwo",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Mudança de posição: as diretrizes de 2022 falavam em \"revogação da reforma trabalhista\" e depois só em revogar \"marcos regressivos\" (UOL, 20/6/2022)."
         },
         {
@@ -140,6 +142,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/economia/noticia/2023/01/18/lula-critica-independencia-do-banco-central-bobagem.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "O governo não enviou proposta para revogar a autonomia."
         },
         {
@@ -153,6 +156,7 @@
           "fonte_veiculo": "Presidência da República",
           "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12953.htm",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Atos em direções opostas. Fim da taxa: G1, 10/9/2026."
         },
         {
@@ -166,6 +170,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/mercado/2023/05/petrobras-abandona-paridade-internacional-nos-precos-dos-combustiveis-diz-agencia.shtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A decisão formal foi da diretoria da Petrobras."
         },
         {
@@ -179,6 +184,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/economia/noticia/2024/01/22/governo-lanca-nova-politica-industrial-com-promessa-de-mais-r-196-bilhoes-em-financiamentos-ao-setor.ghtml",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "A citação é do Mdic. Em 2023-11-07 Lula disse 'Nós não vamos subsidiar' (Correio Braziliense), mas TR+2% fica muito abaixo da Selic e da TLP. Mercadante defendeu crédito subsidiado a setores estratégicos (Valor, 2024-05-23)."
         },
         {
@@ -192,6 +198,7 @@
           "fonte_veiculo": "Presidência da República",
           "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14663.htm",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "A Lei 15.077/2024 limitou o ganho real a 2,5% ao ano entre 2025 e 2030."
         },
         {
@@ -205,6 +212,7 @@
           "fonte_veiculo": "BBC News Brasil",
           "url": "https://www.bbc.com/portuguese/articles/c774endgvjjo",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "No Brasil, sancionou tributação mínima sobre altas rendas (Lei 15.270/2025), que é imposto sobre renda, não sobre fortuna."
         },
         {
@@ -218,6 +226,7 @@
           "fonte_veiculo": "Presidência da República",
           "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11366.htm",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Substituído pelo Decreto 11.615/2023; o STF validou os dois em 2025."
         },
         {
@@ -231,6 +240,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/politica/noticia/2024/06/26/apos-stf-julgar-porte-de-maconha-lula-diz-que-e-equivoco-tratar-uso-das-drogas-pelo-codigo-penal.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Não defendeu legalizar a maconha."
         },
         {
@@ -244,6 +254,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/eleicoes-2022/noticia/2022/10/lula-reafirma-ser-contra-aborto-mas-diz-que-decisao-e-da-mulher.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Mudança em 2022: em 5/4 defendeu tratar como saúde pública; em 7/4 recuou. Nunca defendeu o limite de 12 semanas."
         },
         {
@@ -257,6 +268,7 @@
           "fonte_veiculo": "Planalto (gov.br)",
           "url": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/discursos-e-pronunciamentos/2026/07/pronunciamento-do-presidente-lula-durante-participacao-na-78a-reuniao-anual-da-sbpc-rj",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Transcrição oficial. Também noticiado pela Gazeta do Povo e pelo site do PT. O MEC foi passivo no Senado em 2026 (Valor), então não há ato de governo; a declaração é a melhor evidência disponível."
         },
         {
@@ -270,6 +282,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/noticia/2025/08/15/projeto-do-governo-para-redes-sociais-preve-remocao-de-conteudo-ilegal-sem-ordem-judicial-e-suspensao-de-big-techs.ghtml",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Em setembro de 2025 o governo desistiu de enviar o projeto; decretos de 2026 focam em crimes, não em desinformação em geral."
         },
         {
@@ -283,6 +296,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "A carta aos evangélicos (2022) fala em respeitar \"os valores das famílias\", sem proibição em lei."
         },
         {
@@ -296,6 +310,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/fsp/cotidian/ff1809200823.htm",
           "confianca": "media",
+          "intensidade": "",
           "notas": "É a fala direta mais recente encontrada, de 2008."
         },
         {
@@ -309,6 +324,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/economia/lula-jogos-azar-congresso-aprovacao/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição condicional: pessoalmente contra, mas disposto a sancionar."
         }
       ]
@@ -329,6 +345,7 @@
           "fonte_veiculo": "Presidência da República",
           "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/decreto/D10674.htm",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição diferente para cada empresa. Banco do Brasil: Valor, 17/9/2020. Petrobras: O Globo, 25/10/2021."
         },
         {
@@ -342,6 +359,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/internet/votacao/mostraVotacao.asp?codCasa=1&ideVotacao=7492&indTipoSessao=E&indTipoSessaoLegislativa=O&numLegislatura=55&numSessao=94&numSessaoLegislativa=3&tipo=uf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -355,6 +373,7 @@
           "fonte_veiculo": "Presidência da República",
           "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp179.htm",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Veto parcial só em dois incisos sobre impedimentos de dirigentes."
         },
         {
@@ -368,6 +387,7 @@
           "fonte_veiculo": "Agência Brasil",
           "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2022-08/camex-torna-definitivo-corte-de-10-de-tarifa-comum-do-mercosul",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Decisão do comitê da Camex, no Ministério da Economia, não decreto presidencial."
         },
         {
@@ -381,6 +401,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/pr/oeste-sudoeste/noticia/2021/04/07/bolsonaro-chama-de-inadmissivel-reajuste-de-39percent-no-preco-do-gas-afirma-que-nao-ira-interferir-mas-diz-podemos-mudar-essa-politica-de-precos.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala e ação divergem. Preferiu limitar o ICMS sobre combustíveis (LC 194/2022); a paridade internacional não foi revogada."
         },
         {
@@ -394,6 +415,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -407,6 +429,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/economia/governo-confirma-salario-minimo-de-1212-em-2022-sem-ganho-real-1-25337200",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Na campanha de 2022 prometeu reajuste acima da inflação para 2023, sem regra em lei."
         },
         {
@@ -420,6 +443,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/mercado/2021/08/bolsonaro-critica-taxacao-de-grandes-fortunas-e-diz-que-agora-e-crime-ser-rico-no-brasil.shtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -433,6 +457,7 @@
           "fonte_veiculo": "Presidência da República",
           "url": "https://www.presidencia.gov.br/ccivil_03/_ato2019-2022/2019/decreto/d9785.htm",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Substituído pelos Decretos 9.844 a 9.847; o STF derrubou parte das regras."
         },
         {
@@ -446,6 +471,7 @@
           "fonte_veiculo": "Gazeta do Povo",
           "url": "https://www.gazetadopovo.com.br/vozes/entrelinhas/bolsonaro-sobre-maconha-flechada-no-peito-das-familias/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -459,6 +485,7 @@
           "fonte_veiculo": "Correio Braziliense",
           "url": "https://www.correiobraziliense.com.br/politica/2020/12/4897728-bolsonaro-lamenta-decisao-argentina-de-legalizacao-do-aborto-no-que-depender-de-mim-e-do-meu-governo-jamais-sera-aprovado-em-nosso-solo.html",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2000, segundo a BBC Brasil, tinha dito que o aborto \"tem de ser uma decisão do casal\"."
         },
         {
@@ -472,6 +499,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?fichaAmigavel=nao&idProposicao=2198615",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -485,6 +513,7 @@
           "fonte_veiculo": "Agência Câmara",
           "url": "https://www.camara.leg.br/noticias/805965-presidente-do-congresso-devolve-ao-governo-a-mp-que-limita-remocao-de-conteudos-em-redes-sociais/",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Também se opôs ao PL das Fake News: \"não podemos admitir a censura aqui\" (Veja, 2/7/2020)."
         },
         {
@@ -498,6 +527,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/cotidiano/2019/09/bolsonaro-pede-a-mec-projeto-de-lei-para-proibir-ideologia-de-genero.shtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Não há registro de que o projeto tenha sido enviado."
         },
         {
@@ -511,6 +541,7 @@
           "fonte_veiculo": "UOL (Agência Estado)",
           "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2019/08/10/bolsonaro-familia-e-homem-e-mulher-porque-esta-na-constituicao-e-na-biblia.htm",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A fala trata de \"família\", não de \"casamento\" em lei."
         },
         {
@@ -524,6 +555,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/noticia/2022/02/24/bolsonaro-diz-que-vetara-projeto-que-legaliza-jogos-de-azar.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Segundo a Bloomberg Línea, teria sinalizado apoio em 2019; não verificado em fonte primária."
         }
       ]
@@ -544,6 +576,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2270894-103/votos",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Não há fonte específica dele sobre a Petrobras. Votou \"Não\" na MP da Eletrobras (2021). Em 2025 disse à BBC que \"aquilo que é público, que funciona bem, não precisa ser privatizado\"."
         },
         {
@@ -557,6 +590,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-424/votos",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2016 já defendia pôr os acordos coletivos acima da CLT (Gazeta do Povo). Em 2026 defendeu extinguir a Justiça do Trabalho (SBT News)."
         },
         {
@@ -570,6 +604,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2265124-70/votos",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -583,6 +618,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/poder-congresso/kataguiri-propoe-fim-do-imposto-sobre-compras-internacionais-ate-us-50/",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Trata só de pequenas remessas. Em coluna de 2018: \"A História mostra que o protecionismo não funciona.\""
         },
         {
@@ -596,6 +632,7 @@
           "fonte_veiculo": "BBC News Brasil",
           "url": "https://www.bbc.com/portuguese/brasil-56164144",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -609,6 +646,7 @@
           "fonte_veiculo": "IREE (coluna do autor)",
           "url": "https://iree.org.br/a-lenda-do-desenvolvimento-da-industria-nacional/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fonte é texto do próprio Kim, não reportagem."
         },
         {
@@ -622,6 +660,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/economia/noticia/2026/09/16/vamos-usar-economia-com-desvinculacao-do-minimo-e-dos-pisos-para-fazer-superavit-fiscal-diz-kim-kataguiri.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Vale a posição mais recente. Antes, em 2024, foi coautor de PEC que corrigiria o mínimo só pela inflação entre 2026 e 2031 (G1, 26/11/2024)."
         },
         {
@@ -635,6 +674,7 @@
           "fonte_veiculo": "BBC News Brasil",
           "url": "https://www.bbc.com/portuguese/articles/cwyk7nl35qwo",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Trata de taxar altas rendas em geral, não do imposto sobre grandes fortunas."
         },
         {
@@ -648,6 +688,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2209381-100/votos",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "PDL 16/2023 para sustar o Decreto 11.366/2023."
         },
         {
@@ -661,6 +702,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2428236-50/votos",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Em 2017: \"Eu acho que tem que legalizar maconha no país inteiro\" (Estadão). Defende que só o Congresso mude a lei (BBC, 2023). O voto foi sobre admissibilidade, não mérito."
         },
         {
@@ -674,6 +716,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/o-que-pensam-os-pre-candidatos-a-prefeitura-de-sao-paulo-sp-sobre-projeto-lei-aborto-equipara-homicidio-22-semanas-camara-deputados-nprp/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2017: \"O MBL é contra o aborto\"."
         },
         {
@@ -687,6 +730,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -700,6 +744,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2310837-8/votos",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -713,6 +758,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "PL 198/2023 (linguagem neutra)."
         },
         {
@@ -726,6 +772,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/brasil/inconsciente-coletivo/o-perfume-de-kim/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Declaração sobre a posição do MBL; a pessoal se deduz por não haver divergência declarada."
         },
         {
@@ -739,6 +786,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/15460-165/votos",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Também votou \"Sim\" na urgência, em 2021."
         }
       ]
@@ -759,6 +807,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/poder-congresso/nikolas-ferreira-diz-que-stf-causa-desestabilizacao-do-pais/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Citação transcrita do vídeo da entrevista, gravada em 4/2/2025. Também cobrou explicações sobre gastos dos Correios em 2025 (REQ 144/2025)."
         },
         {
@@ -772,6 +821,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-424/votos",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Registros em direções opostas. PEC 40/2025 (jornada flexível, coautor entre 171) e PL 3673/2026 (desconto sindical, autor único), ambos na Câmara."
         },
         {
@@ -785,6 +835,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -798,6 +849,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2604363",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Barra um aumento de tarifa; não propõe redução geral."
         },
         {
@@ -811,6 +863,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -824,6 +877,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "É coautor de PECs que exigem aval do Congresso para crédito de bancos públicos a obras no exterior."
         },
         {
@@ -837,6 +891,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2359135-39/votos",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2024 votou \"Não\" ao projeto que limitou o ganho real do mínimo."
         },
         {
@@ -850,6 +905,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/poder-congresso/nikolas-ferreira-critica-discurso-pobre-x-ricos-de-lula/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Votou \"Sim\" no IR mínimo sobre altas rendas (PL 1087/2025, aprovado por 493 a 0)."
         },
         {
@@ -863,6 +919,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2348386",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Também propôs derrubar os decretos de Lula que restringiram armas."
         },
         {
@@ -876,6 +933,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2377463",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "A PEC não trata só do porte para uso."
         },
         {
@@ -889,6 +947,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2448752/autores",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -902,6 +961,7 @@
           "fonte_veiculo": "Gazeta do Povo",
           "url": "https://www.gazetadopovo.com.br/vida-e-cidadania/pl-do-homeschooling-esta-parado-na-mao-de-senadora-do-pt-diz-nikolas-ferreira/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -915,6 +975,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2310837-8/votos",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Também é autor de projeto que cria o crime de censura."
         },
         {
@@ -928,6 +989,7 @@
           "fonte_veiculo": "Câmara Municipal de Belo Horizonte",
           "url": "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2023/08/ap%C3%B3s-derrubar-veto-legislativo-promulga-lei-que-pro%C3%ADbe-ensino-da",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "A lei trata de linguagem neutra, não do debate de gênero em geral; o STF a derrubou em 2024."
         },
         {
@@ -941,6 +1003,7 @@
           "fonte_veiculo": "Agência Câmara",
           "url": "https://www.camara.leg.br/noticias/1002158-deputados-divergem-sobre-proposta-que-proibe-uniao-de-pessoas-do-mesmo-sexo-assista",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Não era membro votante da comissão."
         },
         {
@@ -954,6 +1017,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/noticia/2023/12/22/bets-veja-como-votaram-os-deputados-nova-aprovacao-do-pl-das-apostas-esportivas-que-libera-cassinos-online.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Voto confirmado nos Dados Abertos (votação 2374400-121)."
         }
       ]
@@ -974,6 +1038,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/congresso/deputados-comentam-a-aprovacao-da-privatizacao-da-sabesp/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Trata de um caso só. Em outubro de 2023 também apoiou a greve contra a privatização de Metrô, CPTM e Sabesp."
         },
         {
@@ -987,6 +1052,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-424/votos",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Também defende reverter a reforma trabalhista de 2017, que \"fragilizou direitos\" (site do PSOL na Câmara, 2025)."
         },
         {
@@ -1000,6 +1066,7 @@
           "fonte_veiculo": "Congresso Nacional",
           "url": "https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/plp-19-2023",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -1013,6 +1080,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2419279",
           "confianca": "media",
+          "intensidade": "",
           "notas": "O art. 31, II revogava o art. 2º, II do DL 1.804/1980, base da isenção até US$ 50. A taxa foi votada de forma simbólica. Motivo dela: consumo popular, não livre comércio. Em 2026-05-13 ela disse que a taxa não ajudou a indústria (O Antagonista)."
         },
         {
@@ -1026,6 +1094,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1039,6 +1108,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1052,6 +1122,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/prop_listas_de_oradores?idProposicao=2473375",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Não há voto registrado dela no mérito."
         },
         {
@@ -1065,6 +1136,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2438459-77/votos",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Alíquotas de 0,5% a 1,5% sobre patrimônio acima de R$ 10 milhões."
         },
         {
@@ -1078,6 +1150,7 @@
           "fonte_veiculo": "SBT News",
           "url": "https://sbtnews.sbt.com.br/noticia/politica/lider-do-psol-apresenta-emenda-para-incluir-armas-e-municoes-no-imposto-do-pecado",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Evidência indireta: trata de tributar, não de regras de posse e porte."
         },
         {
@@ -1091,6 +1164,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/noticia/2024/06/27/maconha-o-que-dizem-parlamentares-contra-e-a-favor-da-descriminalizacao-do-porte-para-uso-pessoal.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1104,6 +1178,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/poder-justica/erika-hilton-pede-a-barroso-que-vote-por-aborto-antes-de-aposentadoria/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2024 se opôs ao projeto que equipara aborto tardio a homicídio."
         },
         {
@@ -1117,6 +1192,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1130,6 +1206,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2310837-8/votos",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A versão de 2023 trata de conteúdo ilegal e não define \"fake news\"."
         },
         {
@@ -1143,6 +1220,7 @@
           "fonte_veiculo": "Revista Fórum",
           "url": "https://revistaforum.com.br/noticias/secretario-de-educacao-do-estado-de-sp-desconhece-realidade-dos-alunos-lgbt-diz-erika-hilton/",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1156,6 +1234,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/noticia/2023/10/10/henrique-vieira-x-marco-feliciano-como-votou-cada-deputado-em-projeto-para-proibir-casamento-entre-pessoas-do-mesmo-sexo.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2024, como relatora, aprovou parecer a favor da união homoafetiva."
         },
         {
@@ -1169,6 +1248,7 @@
           "fonte_veiculo": "Câmara dos Deputados – Dados Abertos",
           "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2374400-121/votos",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Mudança de posição sobre apostas on-line, não sobre cassinos físicos."
         }
       ]
@@ -1189,6 +1269,7 @@
           "fonte_veiculo": "Jornal do Commercio (Estadão Conteúdo)",
           "url": "https://jc.ne10.uol.com.br/canal/politica/eleicoes-2018/noticia/2018/10/24/haddad-diz-a-tv-aparecida-que-e-contra-venda-de-patrimonio-nacional-359567.php",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Como ministro, em 2025, afastou a privatização dos Correios."
         },
         {
@@ -1202,6 +1283,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2018/noticia/2018/10/19/saiba-mais-sobre-as-propostas-de-bolsonaro-e-haddad-para-o-emprego.ghtml",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "Não há declaração dele sobre o tema como ministro."
         },
         {
@@ -1215,6 +1297,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/poder-economia/haddad-diz-defender-autonomia-e-vida-longa-ao-banco-central/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Mudança de posição: em 2021 defendeu que o presidente pudesse demitir o chefe do BC."
         },
         {
@@ -1228,6 +1311,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/economia/noticia/2026/02/25/haddad-defende-aumento-do-imposto-de-importacao-sobre-12-mil-produtos-para-proteger-a-producao-nacional.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1241,6 +1325,7 @@
           "fonte_veiculo": "Jornal de Brasília (entrevista à GloboNews)",
           "url": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/haddad-diz-nao-crer-que-governo-pedira-a-petrobras-para-segurar-o-precos/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Em 2026 conteve o diesel com corte de tributos e subvenção, não pela Petrobras."
         },
         {
@@ -1254,6 +1339,7 @@
           "fonte_veiculo": "Correio Braziliense",
           "url": "https://www.correiobraziliense.com.br/economia/2023/12/6774263-haddad-diz-que-esta-abrindo-a-caixa-preta-do-gasto-tributario.html",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1267,6 +1353,7 @@
           "fonte_veiculo": "Ministério do Planejamento",
           "url": "https://www.gov.br/planejamento/pt-br/assuntos/noticias/2024/novembro/governo-federal-apresenta-medidas-para-fortalecer-arcabouco-fiscal-e-garantir-crescimento-sustentavel",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "A mudança também limitou o ganho real."
         },
         {
@@ -1280,6 +1367,7 @@
           "fonte_veiculo": "gov.br/g20",
           "url": "https://www.gov.br/g20/pt-br/documentos/discursos/discurso-ministro-fernando-haddad-reuniao-ministerial-do-g20-sao-paulo-29-de-fevereiro-de-2024",
           "confianca": "media",
+          "intensidade": "forte",
           "notas": "No Brasil, propôs imposto mínimo sobre altas rendas, não sobre fortuna."
         },
         {
@@ -1293,6 +1381,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2018/noticia/2018/10/17/saiba-mais-sobre-as-propostas-de-bolsonaro-e-haddad-relativas-a-armas-de-fogo.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1306,6 +1395,7 @@
           "fonte_veiculo": "UOL",
           "url": "https://www.uol/eleicoes/especiais/propostas-dos-candidatos-sobre-drogas-legalizacao-descriminalizacao-maconha.htm",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1319,6 +1409,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/poder/2018/10/haddad-afasta-fake-news-e-diz-que-temas-como-aborto-ficarao-com-congresso.shtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1332,6 +1423,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/internet/sitaqweb/textoHTML.asp?Data=15%2F10%2F2009&dtHoraQuarto=10%3A00&dtHorarioQuarto=10%3A00&etapa=11&nuInsercao=0&nuOrador=0&nuQuarto=0&nuSessao=1806%2F09&sgFaseSessao=&txApelido=EDUCA%C3%87%C3%83O",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Quem falou foi um representante do MEC, em nome do ministro."
         },
         {
@@ -1345,6 +1437,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1358,6 +1451,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://infograficos.estadao.com.br/politica/eleicoes/2018/educacao/fernando-haddad/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A pergunta era sobre o Escola sem Partido em geral."
         },
         {
@@ -1371,6 +1465,7 @@
           "fonte_veiculo": "El País Brasil",
           "url": "https://brasil.elpais.com/brasil/2018/07/25/politica/1532519572_471164.html",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Ele fala de união estável, não de 'casamento'. Em 2018-10-17 (Folha) disse que o Executivo deve deixar o casamento gay ao Congresso. Não achei frase explícita como 'sou a favor do casamento gay'."
         },
         {
@@ -1384,6 +1479,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/poder-governo/haddad-defende-legalizacao-de-cassinos-e-bingos-no-brasil/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         }
       ]
@@ -1404,6 +1500,7 @@
           "fonte_veiculo": "O Povo",
           "url": "https://mais.opovo.com.br/reportagens-especiais/paginas-azuis/2026/03/07/jones-manoel-pt-virou-analgesico-alivia-mas-nao-resolve.html",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -1417,6 +1514,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -1430,6 +1528,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -1443,6 +1542,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Defende conteúdo nacional nas compras públicas."
         },
         {
@@ -1456,6 +1556,7 @@
           "fonte_veiculo": "Disparada (artigo do autor)",
           "url": "https://disparada.com.br/fim-ppi-petrobras/",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1469,6 +1570,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "media",
+          "intensidade": "",
           "notas": "O programa não diz se o crédito seria subsidiado."
         },
         {
@@ -1482,6 +1584,7 @@
           "fonte_veiculo": "O Povo",
           "url": "https://mais.opovo.com.br/reportagens-especiais/paginas-azuis/2026/03/07/jones-manoel-pt-virou-analgesico-alivia-mas-nao-resolve.html",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Não menciona regra legal de aumento anual."
         },
         {
@@ -1495,6 +1598,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1508,6 +1612,7 @@
           "fonte_veiculo": "Site oficial da campanha (jonesmanoel2026.com.br)",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "baixa",
+          "intensidade": "",
           "notas": "Nenhuma fonte trata diretamente da facilidade de compra ou porte por cidadãos. O post no Instagram condena o recorde de armas em circulação sob Bolsonaro. Data do programa: Aratu Online, 2026-09-18."
         },
         {
@@ -1521,6 +1626,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -1534,6 +1640,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Não cita limite de 12 semanas."
         },
         {
@@ -1547,6 +1654,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1560,6 +1668,7 @@
           "fonte_veiculo": "Brasil de Fato",
           "url": "https://www.brasildefato.com.br/2025/08/08/resolver-o-problema-das-big-techs-e-coloca-las-para-fora-do-brasil-diz-jones-manoel-na-flipei-apos-ter-as-redes-sociais-derrubadas/",
           "confianca": "media",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1573,6 +1682,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": ""
         },
         {
@@ -1586,6 +1696,7 @@
           "fonte_veiculo": "Site de campanha",
           "url": "https://www.jonesmanoel2026.com.br/assets/files/Programa%20Jones%20Manoel.pdf",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": ""
         },
         {
@@ -1599,6 +1710,7 @@
           "fonte_veiculo": "Portal de Prefeitura",
           "url": "https://portaldeprefeitura.com.br/bastidores-da-politica/jones-manoel-critica-tabata-amaral-e-cobra-coerencia/625399/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala de apostas on-line, não de cassinos."
         }
       ]
@@ -1619,6 +1731,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/sp/sao-paulo/noticia/2024/07/23/em-cerimonia-na-b3-governo-de-sp-conclui-processo-de-privatizacao-da-sabesp.ghtml",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Promessa da campanha de 2022. O estado manteve 18,3% das ações. Em 2025 disse seguir 'com privatizações e concessões' (Valor, 2025-08-18)."
         },
         {
@@ -1632,6 +1745,7 @@
           "fonte_veiculo": "CNN Brasil",
           "url": "https://www.cnnbrasil.com.br/politica/para-cuidar-do-trabalhador-tem-que-cuidar-do-empresario-diz-tarcisio/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Na Band (2026) defendeu 'as convenções coletivas, o acordo patrão-empregado' e elogiou a reforma trabalhista. Diz ser favorável a reduzir a jornada desde que haja desoneração do empregador."
         },
         {
@@ -1645,6 +1759,7 @@
           "fonte_veiculo": "CNN Brasil",
           "url": "https://www.cnnbrasil.com.br/politica/tarcisio-destaca-competencia-tecnica-e-elogia-campos-neto-meu-et-preferido/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Avaliação positiva da autonomia, não proposta normativa. Em 2023 chamou de 'bobagem' os ataques de Lula a Campos Neto (Poder360, 2023-05-02)."
         },
         {
@@ -1658,6 +1773,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/politica/noticia/2025/08/18/tarcsio-defende-dar-algumas-vitrias-a-trump-para-avanar-em-negociao-sobre-tarifao.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala feita no contexto do tarifaço dos EUA sobre o Brasil, não de uma proposta de cortar tarifas brasileiras. Em 2025-04 disse que as tarifas de Trump podiam acelerar o acordo Mercosul-UE."
         },
         {
@@ -1671,6 +1787,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/economia/noticia/2021/03/09/ministro-de-infraestrutura-fala-em-adotar-medidas-para-blindar-caminhoneiros-da-alta-do-diesel.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala como ministro do governo Bolsonaro, que interveio na Petrobras em 2019 e 2021. Em fev/2021 citou também restrições legais (acionistas minoritários). Não achei declaração recente como governador."
         },
         {
@@ -1684,6 +1801,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/brasil/noticia/2025/07/23/governo-de-sp-cria-linha-de-crdito-subsidiado-de-r-200-milhes-para-mitigar-tarifao.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Medida emergencial e setorial (exportadores para os EUA), não uma defesa geral de crédito público subsidiado. A Desenvolve SP é agência de fomento estatal, não banco comercial. Ampliação: CBN, 2025-07-31."
         },
         {
@@ -1697,6 +1815,7 @@
           "fonte_veiculo": "Assembleia Legislativa de SP (Alesp)",
           "url": "https://www.al.sp.gov.br/noticia/?id=512606",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Mudança de posição: promessa de 2023-05-25 (Alesp, noticia id=452507). Não propôs regra permanente de valorização em lei. O item é sobre o piso estadual, não o nacional."
         },
         {
@@ -1710,6 +1829,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2025-03-28 disse que 'tributar o capital' 'destrói a poupança e o investimento' (CNN Brasil), sem citar a reforma do IR nem o IGF. A acusação de Haddad de que ele é contra é crítica de adversário."
         },
         {
@@ -1723,6 +1843,7 @@
           "fonte_veiculo": "UOL / Agência Estado",
           "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2023/07/24/tarcisio-contraria-pacote-de-lula-e-defende-acesso-a-armas-para-civis-tem-poder-de-dissuasao.htm",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 2022-10-25 (Estadão/Eldorado) defendeu a 'liberdade' de ter posse e, em determinados casos, porte de arma, atendendo requisitos legais."
         },
         {
@@ -1736,6 +1857,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/tarcisio-de-freitas-vigiar-bandido-e-mais-eficaz-do-que-policial/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Fala anterior à decisão do STF de 2024, sobre a qual não achei reação dele. Em 2023 sancionou lei de cannabis medicinal no SUS-SP, mas disse que isso 'não tem nada a ver com a questão de drogas' (Veja)."
         },
         {
@@ -1749,6 +1871,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/sabatinas-estadaofaap-tarcisio-de-freitas-e-o-quinto-entrevistado/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Disse que não mudaria a lei atual (estupro, risco à vida e anencefalia): 'O que está previsto na legislação é o que nós vamos cumprir'. Também se disse contra o aborto ao Estadão em 2022-06-08."
         },
         {
@@ -1762,6 +1885,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "O STF entende que só lei federal pode criar o ensino domiciliar, o que limita atos estaduais. Não achei projeto sobre o tema passando pela sanção dele."
         },
         {
@@ -1775,6 +1899,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/politica/noticia/2023/05/02/pl-das-fake-news-e-ruim-e-cerceia-a-liberdade-de-expressao-diz-tarcisio.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Foi contra o texto do PL 2630 'da forma como está', mas disse que 'a gente tem que procurar um meio-termo' e pediu uma discussão sobre o que é fake news. Não achei posição mais recente."
         },
         {
@@ -1788,6 +1913,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "O PL 245/2019 da Alesp (proíbe 'ideologia de gênero') segue sem votação em plenário. O discurso contra 'ideologia de gênero nas escolas' no ato de 2026-09-07 foi de Flávio Bolsonaro, não dele."
         },
         {
@@ -1801,6 +1927,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2022-08-16 disse ser 'defensor dos direitos civis dos homossexuais' (G1), sem tratar de casamento. A crítica à decisão do STF de 2011 citada pela Folha (2023) é de um secretário, não dele."
         },
         {
@@ -1814,6 +1941,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/sp/sao-paulo/noticia/2026/09/26/tarcisio-chama-proibicao-das-bets-de-oportunismo-eleitoral-e-diz-que-governo-so-agiu-faltando-nove-dias-para-a-eleicao.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "As falas tratam sobretudo de bets e cassino online. Não achei posição sobre o PL que legaliza cassinos físicos. Criticou como eleitoreira a forma da proibição das bets anunciada por Lula."
         }
       ]
@@ -1834,6 +1962,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/empresas/noticia/2023/08/14/objetivo-e-copel-sem-amarras-de-estatal-e-uma-das-maiores-empresas-de-energia-do-pais-diz-ratinho-junior.ghtml",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Também sancionou a Lei 22.188/2024, que autoriza vender a Celepar; o leilão foi suspenso por liminar do STF em fev/2026. Segundo o Valor, ele evitou o tema da Copel na campanha de 2022."
         },
         {
@@ -1847,6 +1976,7 @@
           "fonte_veiculo": "Band",
           "url": "https://www.band.com.br/politica/governadores-criticam-fim-da-escala-6x1-e-alertam-para-desastre-economico",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Fala dada no programa Canal Livre (Band), quando era pré-candidato à Presidência."
         },
         {
@@ -1860,6 +1990,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "A autonomia do BC foi aprovada em 2021, quando ele já era governador e não tinha mandato no Congresso."
         },
         {
@@ -1873,6 +2004,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Ele criticou o tarifaço dos EUA em 2025 (Gazeta do Povo, 12/08/2025), mas isso não é posição sobre as tarifas brasileiras. Não foi achada fala dele sobre o acordo Mercosul–UE."
         },
         {
@@ -1886,6 +2018,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Sobre combustíveis, falou de ICMS e câmbio. Em 2021 atribuiu a alta da gasolina ao dólar e à falta de refinarias, sem tratar do uso da Petrobras para segurar preços."
         },
         {
@@ -1899,6 +2032,7 @@
           "fonte_veiculo": "Câmara dos Deputados",
           "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=931751",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Parecer de relator (não é voto nominal). O texto foi aprovado com alterações em 19/10/2011 (camara.leg.br/evento-legislativo/27367). Ele acolheu emenda de outros deputados e negociou a mudança com o governo."
         },
         {
@@ -1912,6 +2046,7 @@
           "fonte_veiculo": "Governo do Estado do Paraná (Secretaria do Trabalho)",
           "url": "https://www.trabalho.pr.gov.br/sites/default/arquivos_restritos/files/documento/2024-03/lei_21350.pdf",
           "confianca": "media",
+          "intensidade": "",
           "notas": "É o piso estadual, não o mínimo nacional; o ganho real depende do reajuste federal. Em 2011, como deputado, votou Não às emendas do PSDB (R$ 600) e do DEM (R$ 560); o texto-base com a política de valorização foi aprovado em votação simbólica."
         },
         {
@@ -1925,6 +2060,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2025 orientou a bancada do PR a votar contra a MP 1303 (tributação de aplicações e bets), dizendo que o brasileiro paga muitos tributos. Isso não trata do imposto sobre grandes fortunas."
         },
         {
@@ -1938,6 +2074,7 @@
           "fonte_veiculo": "Gazeta do Povo",
           "url": "https://www.gazetadopovo.com.br/eleicoes/2022/pr/em-entrevista-ratinho-junior-psd-promete-concurso-anual-para-a-policia/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Mudou de posição: em 2005 coordenou o \"Sim\" no referendo. Em jan/2019 (Folha, via Gazeta do Povo) disse que a posse em casa é \"decisão do cidadão\", mas que tinha medo do porte."
         },
         {
@@ -1951,6 +2088,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "As críticas à decisão do STF de 2024 achadas na busca são do pai dele, o apresentador Ratinho. O governo dele financiou pesquisa com cannabis medicinal, o que é outro tema."
         },
         {
@@ -1964,6 +2102,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/noticia/2026/02/04/de-seguranca-publica-a-aborto-as-afinidades-e-divergencias-de-caiado-eduardo-leite-e-ratinho-junior.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Frase completa no ND+: \"Sou contra [o aborto], a minha formação é cristã. Sou contra a mudança [na lei]...\". Não achei o original do UOL. Em 2019 sancionou a Lei 19.867, do Dia Estadual de Conscientização Contra o Aborto."
         },
         {
@@ -1977,6 +2116,7 @@
           "fonte_veiculo": "Agência Estadual de Notícias (Governo do Paraná)",
           "url": "https://www.parana.pr.gov.br/aen/Noticia/Governador-sanciona-lei-que-implementa-opcao-pela-educacao-domiciliar-no-Parana",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Lei 20.739/2021. O TJ-PR a declarou inconstitucional em 21/03/2022, por ser tema de competência da União."
         },
         {
@@ -1990,6 +2130,7 @@
           "fonte_veiculo": "Gazeta do Povo",
           "url": "https://www.gazetadopovo.com.br/parana/ratinho-junior-critica-polarizacao-e-tensao-institucional/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala dada no programa Inteligência Ltda. Ele não citou o PL 2630 nem a obrigação de as plataformas removerem desinformação; a posição é deduzida da defesa de que ofensas sejam resolvidas na Justiça."
         },
         {
@@ -2003,6 +2144,7 @@
           "fonte_veiculo": "Gazeta do Povo",
           "url": "https://www.gazetadopovo.com.br/eleicoes/2022/pr/em-entrevista-ratinho-junior-psd-promete-concurso-anual-para-a-policia/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Ele não defendeu explicitamente uma proibição em lei. Não achei sanção nem veto dele a lei estadual sobre o tema; o PL 719/2021 só passou na Comissão de Educação da Alep em 2025."
         },
         {
@@ -2016,6 +2158,7 @@
           "fonte_veiculo": "Gazeta do Povo",
           "url": "https://www.gazetadopovo.com.br/esportes/nao-posso-abrir-mao-do-meu-pai-diz-ratinho-junior-243i27gl2icvmlnei89ql95xq/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "É uma posição condicional: contra o casamento religioso e a favor da união civil (\"a união civil já existe\"). A fala é de 2012, quando era candidato a prefeito de Curitiba; não achei posição mais recente."
         },
         {
@@ -2029,6 +2172,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Sancionou a Lei 20.945/2021, que recriou a loteria estadual (Lottopar), depois ampliada para bets e videoloterias. Loterias são legais e distintas de cassinos, então isso não responde ao item."
         }
       ]
@@ -2049,6 +2193,7 @@
           "fonte_veiculo": "Assembleia Legislativa de Minas Gerais (ALMG)",
           "url": "https://www.almg.gov.br/comunicacao/noticias/arquivos/Nova-lei-que-autoriza-privatizacao-da-Copasa-entra-em-vigor/",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Lei 25.664/2025 (PL 4.380/25, do governador). A PEC 24/23 original também tirava o referendo para Cemig e Gasmig; a ALMG restringiu à Copasa. Plano 2026 (TSE): \"Privatizar todas as empresas estatais\"."
         },
         {
@@ -2062,6 +2207,7 @@
           "fonte_veiculo": "CNN Brasil",
           "url": "https://www.cnnbrasil.com.br/politica/zema-e-contra-pec-que-preve-fim-da-escala-6x1-tem-gente-procurando-holofote/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Plano 2026 (TSE) propõe regime alternativo à CLT com \"prevalência do negociado sobre o legislado\", com jornada, dias trabalhados e férias definidos entre as partes. Em maio de 2026 voltou a criticar o fim da 6x1 (Estado de Minas)."
         },
         {
@@ -2075,6 +2221,7 @@
           "fonte_veiculo": "CNN Brasil",
           "url": "https://www.cnnbrasil.com.br/eleicoes/zema-chama-governo-de-pro-bilionario-e-detalha-plano-para-cortar-juros/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Declaração em evento de banco privado em São Paulo; CBN/Globo também registrou a defesa da independência do BC no mesmo evento."
         },
         {
@@ -2088,6 +2235,7 @@
           "fonte_veiculo": "Tribunal Superior Eleitoral (TSE)",
           "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-novo/@@display-file/file/proposta-novo.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A redução é gradual e atrelada à queda do Custo Brasil. O plano também prevê novos acordos comerciais e entrada na OCDE. Não achei declaração ou ato próprio sobre tarifas."
         },
         {
@@ -2101,6 +2249,7 @@
           "fonte_veiculo": "Tribunal Superior Eleitoral (TSE)",
           "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-novo/@@display-file/file/proposta-novo.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em sabatina do SBT (2026-08-19) defendeu privatizar e \"fatiar\" a Petrobras para que a concorrência baixe preços. O plano também propõe desverticalizar a estatal."
         },
         {
@@ -2114,6 +2263,7 @@
           "fonte_veiculo": "Tribunal Superior Eleitoral (TSE)",
           "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-novo/@@display-file/file/proposta-novo.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A redução proposta é gradual. Segundo o Valor (2026-09-23), a campanha queria privatizar o Banco do Brasil no 1º semestre de governo."
         },
         {
@@ -2127,6 +2277,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/08/24/zema-diz-que-vai-manter-correo-do-salrio-mnimo-mas-no-garante-ganho-real.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição condicional: rejeita garantir ganho real anual automático, mas aceita mantê-lo se houver bom desempenho econômico. Dita na sabatina do Jornal Nacional; G1 e BBC Brasil registram a mesma fala."
         },
         {
@@ -2140,6 +2291,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Indícios indiretos e mistos: em 2023 criticou aumentar impostos de \"quem investe\" (O Globo); em 2025 chamou de \"blá-blá-blá\" a campanha do governo para taxar super-ricos; em 2018 apoiou taxar dividendos (Exame). Nada sobre o IGF."
         },
         {
@@ -2153,6 +2305,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/08/11/plano-de-governo-romeu-zema-eleicoes-2026-propostas.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "O plano trata só de produtores rurais. Em 2018 (G1, 2018-09-13) Zema se disse favorável ao porte por liberdade individual, mas acrescentou: \"Não estou falando que todo mundo tem que sair armado não\"."
         },
         {
@@ -2166,6 +2319,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/09/09/zema-busca-aproximacao-com-segmento-evangelico-e-entrega-carta-de-principios-a-cristaos.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A carta, assinada com o vice Eduardo Girão, diz que mudanças na política de drogas \"devem ser decididas pelo Congresso Nacional, e não impostas pelo Poder Judiciário\" (G1), em referência à decisão do STF de 2024."
         },
         {
@@ -2179,6 +2333,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/09/09/zema-busca-aproximacao-com-segmento-evangelico-e-entrega-carta-de-principios-a-cristaos.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "O Globo e G1 descrevem a carta como contrária a ampliar os casos legais. O Tempo falou em \"proibição do aborto em todas as situações\", formulação mais forte que não consegui confirmar no texto."
         },
         {
@@ -2192,6 +2347,7 @@
           "fonte_veiculo": "Tribunal Superior Eleitoral (TSE)",
           "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-novo/@@display-file/file/proposta-novo.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A carta aos cristãos de 2026-09-09 também defende o ensino domiciliar (G1)."
         },
         {
@@ -2205,6 +2361,7 @@
           "fonte_veiculo": "Tribunal Superior Eleitoral (TSE)",
           "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/proposta-novo/@@display-file/file/proposta-novo.pdf",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Seção \"Proibir a censura nas redes sociais\". Não achei declaração própria sobre o PL 2630."
         },
         {
@@ -2218,6 +2375,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2021 vetou lei sobre discriminação de gênero em empresas (não escolas). Em 2023 o PL pediu que vetasse menção a \"gênero\" nas propostas pedagógicas da reforma administrativa; o texto consta do Decreto 48.709/2023. A carta de 2026 não cita gênero."
         },
         {
@@ -2231,6 +2389,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "O plano 2026 não trata do tema. A carta aos cristãos define a família como \"base da sociedade\" (O Globo), sem falar em casamento ou união homoafetiva."
         },
         {
@@ -2244,6 +2403,7 @@
           "fonte_veiculo": "O Tempo",
           "url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/9/em-aceno-a-evangelicos-zema-divulga-carta-de-principios-ao-segmento-cristao",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Trata só de bets. Posição contrária anterior: no seu governo a Loteria Mineira passou a ter apostas online por concessão; ele disse que seguiu a lei federal (CBN, 2026-08-25)."
         }
       ]
@@ -2264,6 +2424,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/08/07/g1-e-globonews-entrevistam-ronaldo-caiado-candidato-a-presidencia-pelo-psd.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição condicional: privatização seletiva. O Globo (2026-09-21) registra que o programa prevê concessões, mas não uma agenda de privatização generalizada. Em abr/2026 falou em 'fatiamento técnico' da Petrobras."
         },
         {
@@ -2277,6 +2438,7 @@
           "fonte_veiculo": "Senado Federal",
           "url": "https://www25.senado.leg.br/web/atividade/materias/-/materia/129049/votacoes",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Texto-base aprovado por 50 a 26. Voto também confirmado na API de dados abertos do Senado (senador código 456)."
         },
         {
@@ -2290,6 +2452,7 @@
           "fonte_veiculo": "Agência Brasil (PDF do programa registrado)",
           "url": "https://agenciabrasil.ebc.com.br/sites/default/files/atoms/files/plano_de_governo_ronaldo_caiado_presidente.pdf",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Compromisso programático de respeitar a autonomia já em vigor (LC 179/2021). Não foi achado voto dele sobre o tema; a lei foi aprovada quando ele já era governador."
         },
         {
@@ -2303,6 +2466,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "O programa diz que a abertura comercial será construída em coordenação com a política industrial; isso é vago demais para ser tratado como posição sobre tarifas."
         },
         {
@@ -2316,6 +2480,7 @@
           "fonte_veiculo": "Agência Brasil (PDF do programa registrado)",
           "url": "https://agenciabrasil.ebc.com.br/sites/default/files/atoms/files/plano_de_governo_ronaldo_caiado_presidente.pdf",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Evidência apenas programática; não foi localizado voto ou ato sobre a política de preços da Petrobras."
         },
         {
@@ -2329,6 +2494,7 @@
           "fonte_veiculo": "Congresso Nacional",
           "url": "https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/129030/votacoes",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Indireto: o voto reduz o subsídio, não proíbe crédito dirigido. Em 2026 defendeu manter o BB como crédito para regiões carentes, e o programa quer bancos públicos em projetos 'com adicionalidade'."
         },
         {
@@ -2342,6 +2508,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/09/19/salario-minimo-e-aposentadoria-propostas-candidatos-presidente.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A manutenção da regra é paráfrase do G1; a citação não fala literalmente em 'aumento real'. O coordenador Roberto Brant (Folha, 2026-09-01) confirmou aumentos reais, mas sugeriu suspender a indexação de benefícios."
         },
         {
@@ -2355,6 +2522,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Poder360 (2026-03-30) registra a fala ambígua. As críticas dele à tributação dos super-ricos em 2025 miravam o imposto mínimo do IR do PL 1087/2025, não um imposto próprio sobre fortunas."
         },
         {
@@ -2368,6 +2536,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2019 não assinou a carta de governadores contra o decreto de armas; em 2023 vetou a 'bolsa-arma' em Goiás e disse (veículo regional) que o goiano não precisa de arma. Na Câmara (2003), o Estatuto foi votado sem voto nominal."
         },
         {
@@ -2381,6 +2550,7 @@
           "fonte_veiculo": "Conectado ao Poder",
           "url": "https://conectadoaopoder.com.br/contrario-ao-stf-caiado-defende-criminalizacao-de-posse-de-drogas-e-parabeniza-pacheco-por-projeto-no-senado/",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Veículo regional goiano; não foi achado registro em grande veículo. Em jun/2024 (CNN Brasil) criticou a 'desordem institucional' após a decisão do STF, mas sem tratar do mérito."
         },
         {
@@ -2394,6 +2564,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/poder/2026/07/zema-ataca-esquerda-e-caiado-cobra-congresso-apos-senado-dificultar-aborto-legal.shtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A posição contra o aborto é paráfrase da Folha sobre a nota; o trecho citado entre aspas pela Folha trata de nova regulamentação pelo Congresso. O programa de 2026 não menciona aborto."
         },
         {
@@ -2407,6 +2578,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Um resumo automático de busca atribuiu a ele a proposta de homeschooling, mas a matéria do SBT News mostra que a proposta é de Zema. Caiado já não estava no Congresso quando o PL 3179/12 foi votado em 2022."
         },
         {
@@ -2420,6 +2592,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "O Estadão Verifica (2026) aponta que o plano não menciona desinformação. Era governador quando o Senado votou o PL 2630 (2020); nenhuma declaração dele sobre o projeto foi achada."
         },
         {
@@ -2433,6 +2606,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "O PL 994/2019 da Alego foi aprovado em 24/08/2022 e enviado à sanção (G1, UOL); o MP e a Defensoria pediram veto. A busca na legislação estadual não achou a lei, mas também não achou o veto."
         },
         {
@@ -2446,6 +2620,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2013, o jornal A Redação procurou os deputados goianos sobre o casamento gay e não conseguiu ouvi-lo."
         },
         {
@@ -2459,6 +2634,7 @@
           "fonte_veiculo": "UOL Notícias (Agência Estado)",
           "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2018/03/07/ccj-do-senado-rejeita-parecer-a-favor-da-regulamentacao-dos-jogos-de-azar.htm",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A CCJ rejeitou o parecer por 13 a 2, mas o voto individual dele não foi verificado. O programa de 2026 propõe endurecer as regras das apostas on-line e proibir sua publicidade."
         }
       ]
@@ -2479,6 +2655,7 @@
           "fonte_veiculo": "Correio do Povo",
           "url": "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/governo-do-rs-assina-venda-da-corsan-ap%C3%B3s-impasse-no-tce-1.1059464",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Exceção: manteve o Banrisul público ('O banco não será privatizado', Valor, 2022-12-08). Em 2018 prometera não vender a Corsan; mudou em 2021 citando o Marco do Saneamento. Também vendeu CEEE e Sulgás."
         },
         {
@@ -2492,6 +2669,7 @@
           "fonte_veiculo": "Band",
           "url": "https://www.band.com.br/politica/governadores-criticam-fim-da-escala-6x1-e-alertam-para-desastre-economico",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Indireto: não fala explicitamente em negociação entre empresa e empregado. Em 2023-09-02 defendeu manter a reforma trabalhista e criticou a volta do imposto sindical (InfoMoney)."
         },
         {
@@ -2505,6 +2683,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Encontro com Galípolo em 2025 (rs.gov.br) não tratou de autonomia. Críticas de Lula ao BC não acompanhadas de fala de Leite."
         },
         {
@@ -2518,6 +2697,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Sobre o tarifaço dos EUA (2025) pediu solução diplomática e apoio às exportadoras gaúchas, o que não trata das tarifas brasileiras."
         },
         {
@@ -2531,6 +2711,7 @@
           "fonte_veiculo": "Correio do Povo",
           "url": "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/discutir-petrobras-%C3%A9-estar-parado-no-s%C3%A9culo-20-diz-eduardo-leite-1.803987",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Citação reproduzida com os erros de digitação do original. Em 2021 dizia que privatizar a Petrobras não era prioridade (Folha, 2021-11-17; Poder360, 2021-10-01)."
         },
         {
@@ -2544,6 +2725,7 @@
           "fonte_veiculo": "Secretaria da Reconstrução Gaúcha (Governo do RS)",
           "url": "https://www.reconstrucao.rs.gov.br/governo-lanca-programa-de-apoio-financeiro-a-pequenas-empresas-e-microempreendedores-atingidos-pelas-enchentes",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Medidas emergenciais, não política industrial permanente. Similar: Programa Reconstruir (2023) e crédito subsidiado a exportadoras afetadas pelo tarifaço (2025). Pediu linhas do BNDES para setores estratégicos."
         },
         {
@@ -2557,6 +2739,7 @@
           "fonte_veiculo": "Portal do Estado do Rio Grande do Sul",
           "url": "https://estado.rs.gov.br/governo-do-estado-envia-para-assembleia-projeto-que-reajusta-piso-regional",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Em 2021 justificou que reajustes 'não se distanciem da realidade do mercado de trabalho' (GZH, 2021-07-15). Piso ficou congelado de 2019 a 2021. Não há fala sobre a regra nacional do salário mínimo."
         },
         {
@@ -2570,6 +2753,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2020 propôs no RS elevar o imposto sobre heranças (ITCMD), segundo GZH; isso não é um imposto anual sobre fortunas."
         },
         {
@@ -2583,6 +2767,7 @@
           "fonte_veiculo": "ND+ (Grupo ND)",
           "url": "https://ndmais.com.br/video/eduardo-leite-nao-podemos-ficar-nessa-eleicao-entre-o-indesejavel-e-o-inaceitavel/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Admite acesso excepcional na atividade rural, 'com controle, com registro'. Veículo regional (SC); não achei declaração mais recente."
         },
         {
@@ -2596,6 +2781,7 @@
           "fonte_veiculo": "Veja",
           "url": "https://veja.abril.com.br/paginas-amarelas/sofri-preconceito-diz-eduardo-leite-sobre-se-assumir-gay-publicamente/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Posição condicional, sem dizer se o porte deve deixar de ser crime. Não localizei reação à decisão do STF (2024-06). Em 2021: 'Não sou a favor de consumo de nenhuma droga' (ND+)."
         },
         {
@@ -2609,6 +2795,7 @@
           "fonte_veiculo": "Veja",
           "url": "https://veja.abril.com.br/paginas-amarelas/sofri-preconceito-diz-eduardo-leite-sobre-se-assumir-gay-publicamente/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Não menciona o prazo de 12 semanas. Na mesma entrevista: 'Por isso, defendo um plebiscito.' Em 2021 pediu debate e cuidado para 'evitar uma banalização da vida' (ND+)."
         },
         {
@@ -2622,6 +2809,7 @@
           "fonte_veiculo": "Portal do Estado do Rio Grande do Sul",
           "url": "https://www.estado.rs.gov.br/governador-veta-projeto-de-lei-do-homeschooling",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Citação da nota da Casa Civil, não do governador. O texto do veto chama o projeto de 'meritório' (Gazeta do Povo). A Assembleia manteve o veto em 2021-08-24. Não localizei lei de 2023."
         },
         {
@@ -2635,6 +2823,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Nas enchentes de 2024 o governo criou força-tarefa contra fake news e canal com a Meta, com foco em punir os autores (rs.gov.br, 2024-05-08). A remoção judicial foi pedida pelo MP."
         },
         {
@@ -2648,6 +2837,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Aos Fatos (2023) desmentiu posts de que ele quisesse 'ideologia de gênero' nas escolas. Nomeou em 2023 secretário autor de projetos contra 'gênero' em planos de educação; isso não é posição dele."
         },
         {
@@ -2661,6 +2851,7 @@
           "fonte_veiculo": "Jornal do Comércio",
           "url": "https://www.jornaldocomercio.com/politica/2023/10/1126612-eduardo-leite-chama-de-absurda-aprovacao-do-fim-do-casamento-homoafetivo-em-comissao-da-camara.html",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Trata do PL 580/07, que definiria o casamento como união de homem e mulher. Leite formalizou união estável com o médico Thalis Bolzan (Veja, 2024-02-02)."
         },
         {
@@ -2674,6 +2865,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2026 enviou projeto para retomar a loteria estadual, que já é legal, e tirou as bets após dizer 'eu não gosto das bets' (GZH, 2026-03-18). Isso não trata de cassinos."
         }
       ]
@@ -2694,6 +2886,7 @@
           "fonte_veiculo": "Valor Econômico",
           "url": "https://valor.globo.com/politica/noticia/2022/08/18/ciro-diz-ser-radicalmente-contra-privatizacao-da-petrobras-e-eletrobras.ghtml",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Posição condicional: aceita privatizar alguns setores, não Petrobras/Eletrobras. Em mai/2022 prometeu retomar a Eletrobras \"com as devidas indenizações\" e recomprar ações da Petrobras até 60% do capital votante (CNN Brasil)."
         },
         {
@@ -2707,6 +2900,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/eleicoes/nao-sou-contra-reforma-trabalhista-sou-contra-esta-reforma-diz-ciro/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Oscilou: mai/2018 \"essa porcaria será revogada\" (Estadão); jul/2018 disse que \"revogar\" foi \"cacoete de professor\"; ago/2018 voltou a falar em revogar (G1). Plano 2022: novo Código do Trabalho seguindo convenções da OIT."
         },
         {
@@ -2720,6 +2914,7 @@
           "fonte_veiculo": "CNN Brasil",
           "url": "https://www.cnnbrasil.com.br/politica/ciro-diz-que-se-eleito-direcao-do-banco-central-sera-convidada-a-se-demitir/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição condicional. O plano TSE 2022 diz que o BC \"deverá continuar atuando com autonomia operacional\" buscando menor inflação e pleno emprego. Em set/2022 (Record) disse que demitiria Campos Neto se ele não saísse."
         },
         {
@@ -2733,6 +2928,7 @@
           "fonte_veiculo": "Reuters (via Terra)",
           "url": "https://www.terra.com.br/economia/ciro-promete-descartelizar-bancos-e-proteger-setores-de-concorrencia-externa,b5abb6c646f81200b4f50b555ec9ccdei415wu28.html",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Ato contrário: em set/1994 baixou a alíquota máxima do Imposto de Importação de 35% para 20% para conter preços (Folha, 12/09/1994). Hoje defende proteção seletiva, sem posição clara sobre tarifas em geral."
         },
         {
@@ -2746,6 +2942,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2022/noticia/2022/08/08/plano-de-governo-ciro-gomes-pdt.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em mai/2022 disse que trocaria a paridade de importação (PPI) por preço de \"custo mais rentabilidade\" e recompraria ações para o Estado controlar 60% do capital da Petrobras (CNN Brasil)."
         },
         {
@@ -2759,6 +2956,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/eleicoes/em-diretrizes-ciro-propoe-mandato-duplo-no-banco-central-e-mais-acao-do-bndes/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A citação é do texto das diretrizes, reproduzido pelo Estadão. O plano TSE 2022 diz que \"o BNDES exercerá novamente um papel importante no financiamento ao desenvolvimento\" e prevê financiamentos específicos a quatro complexos industriais."
         },
         {
@@ -2772,6 +2970,7 @@
           "fonte_veiculo": "Folha de S.Paulo",
           "url": "https://www1.folha.uol.com.br/mercado/2022/09/previdencia-pode-mudar-de-novo-valorizacao-do-minimo-voltara-o-que-dizem-os-candidatos.shtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição condicional: aumento real dependeria de reformas, sem regra anual em lei. O plano TSE 2022 não trata do salário mínimo."
         },
         {
@@ -2785,6 +2984,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2022/noticia/2022/08/08/plano-de-governo-ciro-gomes-pdt.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "O plano estima alcançar cerca de 60 mil contribuintes e arrecadar cerca de R$ 60 bi. Proposta repetida em ago/2022 na Associação Comercial de SP (Valor)."
         },
         {
@@ -2798,6 +2998,7 @@
           "fonte_veiculo": "Correio do Povo (com R7)",
           "url": "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/ciro-promete-revogar-flexibiliza%C3%A7%C3%B5es-a-armas-e-diz-que-vai-trocar-comando-do-banco-central-1.897222",
           "confianca": "alta",
+          "intensidade": "forte",
           "notas": "Ressalva: admite arma em casas isoladas na zona rural, \"onde não tem o 190\" (Canal Rural, 2022). Sabatina na Record TV."
         },
         {
@@ -2811,6 +3012,7 @@
           "fonte_veiculo": "The Intercept Brasil",
           "url": "https://www.intercept.com.br/2018/08/30/ciro-gomes-entrevista/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Antes contrário: em 2008 disse à Folha sobre descriminalizar drogas \"Já fui, não sou mais\", mas que usuário \"Cadeia, jamais\". O plano 2022 pede redesenhar a política de drogas com redução de danos."
         },
         {
@@ -2824,6 +3026,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/eleicoes/leia-a-transcricao-do-debate-presidencial-do-sbt/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Vale a posição mais recente. Antes: \"O aborto deve ser uma decisão da mulher\" (Folha, 17/02/2008) e aborto como questão de saúde pública (El País, 2017). Nunca citou prazo de 12 semanas."
         },
         {
@@ -2837,6 +3040,7 @@
           "fonte_veiculo": "O Antagonista (citando UOL)",
           "url": "https://oantagonista.com.br/brasil/ciro-ataca-ensino-domiciliar-e-ironiza-moro/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala em evento do PDT sobre os 100 dias de Bolsonaro; a crítica é à política, não só ao adversário. Original do UOL não localizado. Em 2022 não respondeu à enquete da CNN sobre homeschooling."
         },
         {
@@ -2850,6 +3054,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2020, em live partidária, defendeu responsabilizar quem financia e impulsiona fake news, mas só há registro em sites partidários (PDT-RJ, Vermelho), que não servem como fonte final."
         },
         {
@@ -2863,6 +3068,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/brasil/cotada-para-o-mec-fez-plano-de-governo-para-campanha-de-ciro/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Citação do plano de 2018 reproduzida pelo Estadão em 2020. Sobre o Escola sem Partido, disse ao Estadão (ago/2018): \"Devemos fazer uma grande formação dos professores e respeitar a pluralidade\"."
         },
         {
@@ -2876,6 +3082,7 @@
           "fonte_veiculo": "El País Brasil",
           "url": "https://brasil.elpais.com/brasil/2017/08/10/politica/1502319337_980280.html",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Indireto: não falou da definição legal de casamento. Em 2002 (O Globo, via Folha): a favor dos efeitos civis da união estável, mas \"Casamento não é o que eles estão postulando\"."
         },
         {
@@ -2889,6 +3096,7 @@
           "fonte_veiculo": "Diário do Nordeste",
           "url": "https://diariodonordeste.verdesmares.com.br/pontopoder/ciro-defende-proibicao-de-bets-e-diz-que-medida-ja-constava-em-seu-programa-de-governo-no-ceara-1.3794440",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Fala só das bets, não de cassinos. O jornal diz que o plano entregue ao TSE não menciona a proibição. Em 2022 não se manifestou sobre o PL que legaliza jogos (CNN, CartaCapital)."
         }
       ]
@@ -2909,6 +3117,7 @@
           "fonte_veiculo": "Poder360 (íntegra do documento)",
           "url": "https://static.poder360.com.br/2018/08/MS18_Diretrizes-do-Programa.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Posição condicional: 'A privatização não será tratada com posições dogmáticas'; 168 estatais seriam avaliadas por custo, eficiência e interesse estratégico. Valor Econômico (16/08/2018) noticiou o mesmo conteúdo."
         },
         {
@@ -2922,6 +3131,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2018/noticia/2018/08/01/marina-silva-diz-defender-reforma-trabalhista-mas-se-eleita-mudara-pontos-da-lei.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Em 28/08/2018 (Poder360) também criticou o trabalho intermitente. As diretrizes de 2018 não mencionam a reforma trabalhista (Folha, 17/08/2018)."
         },
         {
@@ -2935,6 +3145,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/eleicoes/em-programa-marina-defende-que-casamento-entre-pessoas-do-mesmo-sexo-seja-protegido-por-lei/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Mudança de posição: em abr/2014 rejeitou lei de autonomia (Folha); o programa de ago/2014 previa BC independente por lei com mandato fixo (Exame, 29/08/2014); em 2018 voltou à autonomia só operacional."
         },
         {
@@ -2948,6 +3159,7 @@
           "fonte_veiculo": "Poder360 (íntegra do documento)",
           "url": "https://static.poder360.com.br/2018/08/MS18_Diretrizes-do-Programa.pdf",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "A abertura seria 'programada e organizada', com prazo para adaptação da economia local e junto com acordos comerciais."
         },
         {
@@ -2961,6 +3173,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/economia/presidenciaveis-sao-contra-politica-de-precos-da-petrobras-22789072",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Em mai/2018 (Estadão) defendeu medidas contra a alta dos combustíveis, mas disse não poder 'voltar em hipótese alguma à forma de controlar preço de forma artificial'. Defendia manter o controle estatal da Petrobras."
         },
         {
@@ -2974,6 +3187,7 @@
           "fonte_veiculo": "Ministério do Meio Ambiente e Mudança do Clima (gov.br)",
           "url": "https://www.gov.br/mma/pt-br/assuntos/noticias/mma-repassa-r-10-4-bi-ao-fundo-clima",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Em 2018 (O Globo, 03/06) defendeu 'o fim da “bolsa-empresário”, com altos subsídios do BNDES para os “campeões nacionais”'. Oposição a subsídios genéricos, mas apoio a crédito barato para projetos climáticos."
         },
         {
@@ -2987,6 +3201,7 @@
           "fonte_veiculo": "O Globo",
           "url": "https://oglobo.globo.com/politica/marina-critica-bancos-defende-creditos-para-empreendedores-comunitarios-23012576",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Posição condicionada à crise fiscal. Seu economista, Eduardo Giannetti, falou em 'pausa' na valorização real (Valor, ago/2018). Não há voto nominal localizado dela sobre a lei de valorização."
         },
         {
@@ -3000,6 +3215,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/economia/marina-defende-taxar-fortunas-para-fazer-transicao-climatica/",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Também apoiou a proposta de taxação global dos super-ricos no G20 (CNN Brasil, 2024). Não foi localizada posição clara dela sobre o tema nos programas de 2014 e 2018."
         },
         {
@@ -3013,6 +3229,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2018/noticia/2018/08/28/marina-silva-diz-que-nao-se-resolve-problema-da-violencia-distribuindo-armas-a-populacao.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "Também se disse contra liberar porte de arma no campo (Valor, 29/08/2018). Era ministra (licenciada do Senado) quando o Estatuto do Desarmamento foi votado em 2003, então não votou nele."
         },
         {
@@ -3026,6 +3243,7 @@
           "fonte_veiculo": "BBC News Brasil",
           "url": "https://www.bbc.com/portuguese/brasil-44516251",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A fala trata de 'drogas' em geral, não especificamente do porte para uso pessoal. Em 2014 a campanha disse que ela era contra a descriminalização da maconha e propunha plebiscito. Não localizada reação ao julgamento do STF de 2024."
         },
         {
@@ -3039,6 +3257,7 @@
           "fonte_veiculo": "G1",
           "url": "https://g1.globo.com/politica/eleicoes/2018/noticia/2018/08/01/marina-silva-diz-defender-reforma-trabalhista-mas-se-eleita-mudara-pontos-da-lei.ghtml",
           "confianca": "alta",
+          "intensidade": "",
           "notas": "O trecho entre colchetes é do G1. Ela repetiu a posição pessoal contrária e o plebiscito em 23/08/2018 (G1) e na sabatina da TV Record (27/08/2018). Aceita os casos já previstos em lei."
         },
         {
@@ -3052,6 +3271,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Os programas de 2018 não tratam do tema. O PL do homeschooling passou na Câmara em 2022, antes de ela assumir como deputada."
         },
         {
@@ -3065,6 +3285,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2022 (InfoAmazonia) defendeu 'algum meio de regulação' das plataformas, sem falar em remoção obrigatória. Estava licenciada como ministra quando o PL 2630 tramitou em 2023 e não votou."
         },
         {
@@ -3078,6 +3299,7 @@
           "fonte_veiculo": "Poder360",
           "url": "https://www.poder360.com.br/eleicoes/marina-defende-debate-sobre-genero-nas-escolas-sem-proselitismo-disse/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "A fala não usa a palavra 'gênero'; o contexto (pergunta do Poder360) é o debate de gênero. O programa de 2018 prevê combate à discriminação por orientação sexual na escola (UOL)."
         },
         {
@@ -3091,6 +3313,7 @@
           "fonte_veiculo": "Estadão",
           "url": "https://www.estadao.com.br/politica/eleicoes/em-programa-marina-defende-que-casamento-entre-pessoas-do-mesmo-sexo-seja-protegido-por-lei/",
           "confianca": "media",
+          "intensidade": "",
           "notas": "Vale a posição mais recente. Em 2014 o programa trocou \"casamento igualitário\" por \"união civil\" em menos de 24h (G1), e em 02/09/2014 ela disse que \"o casamento é utilizado para pessoas de sexo diferente\" (O Globo)."
         },
         {
@@ -3104,6 +3327,7 @@
           "fonte_veiculo": "",
           "url": "",
           "confianca": "",
+          "intensidade": "",
           "notas": "Em 2026 assinou, como deputada, o PL 'Brasil contra as bets' (Estadão), que restringe as apostas online, mas não trata da proibição de cassinos."
         }
       ]

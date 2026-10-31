@@ -21,6 +21,8 @@
     --cen: #8a8378;
     --mais-lib: #2f5d8a;
     --mais-est: #b4532a;
+    --mais-lib-1: #93adc8;
+    --mais-est-1: #dca282;
     --parte: #cdbf9f;
   }
   * { box-sizing: border-box; }
@@ -77,7 +79,7 @@
   .point { cursor: pointer; }
   .point circle { fill: var(--ink); stroke: var(--paper); stroke-width: 3; transition: r .2s; }
   .label {
-    font: 500 21px Inter, sans-serif;
+    font: 500 18px Inter, sans-serif;
     fill: var(--ink);
     paint-order: stroke;
     stroke: var(--paper);
@@ -124,8 +126,9 @@
   .scores { display: grid; gap: 12px; margin: 22px 0 26px; }
   .score-row { display: grid; grid-template-columns: 92px 1fr 30px; align-items: center; gap: 10px; font-size: 13px; }
   .bar { position: relative; height: 6px; border-radius: 99px; background: var(--hair); }
-  .bar span { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; background: var(--ink); }
-  .score-row b { text-align: right; font-weight: 600; }
+  .bar span { position: absolute; top: 0; bottom: 0; border-radius: 99px; background: var(--ink); }
+  .bar::after { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--muted); }
+  .score-row b { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
   .score-row small { grid-column: 2 / -1; margin-top: -6px; color: var(--muted); font-size: 11px; }
   .items h3 { margin: 18px 0 8px; font: 600 11px Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
   .item { display: grid; grid-template-columns: 12px 1fr; gap: 10px; padding: 7px 0; border-top: 1px solid var(--hair); font-size: 13px; line-height: 1.4; }
@@ -162,7 +165,10 @@
 <script>
 const DATA_URL = "../brviz/src/data/nolan.json";
 const METODO_URL = "../brviz/nolan";
-const PONTOS = {concordo: 100, em_parte: 50, discordo: 0};
+const PONTOS = {concordo: 1, em_parte: 0, discordo: -1};
+const MAX_SALDO = 16;
+const posicao = (saldo) => 50 + (saldo / MAX_SALDO) * 50;
+const comSinal = (v) => (v > 0 ? `+${v}` : v < 0 ? `−${-v}` : "0");
 const RESPOSTA = {concordo: "concorda", em_parte: "em parte", discordo: "discorda", sem_registro: "sem registro"};
 
 const MIN_ITENS = 6;
@@ -171,7 +177,7 @@ const REGIOES = [
   {nome: "Esquerda", cor: "var(--esq)", pts: [[0, 50], [50, 50], [50, 100], [0, 100]], rotulo: [16, 84]},
   {nome: "Direita", cor: "var(--dir)", pts: [[50, 0], [100, 0], [100, 50], [50, 50]], rotulo: [84, 16]},
   {nome: "Estatista", cor: "var(--est)", pts: [[0, 0], [50, 0], [50, 50], [0, 50]], rotulo: [16, 16]},
-  {nome: "Centro", cor: "var(--cen)", pts: [[30, 30], [70, 30], [70, 70], [30, 70]], rotulo: [50, 50]}
+  {nome: "Centro", cor: "var(--cen)", pts: [[30, 30], [70, 30], [70, 70], [30, 70]], rotulo: [37, 37]}
 ];
 
 const C = 500, R = 470;
@@ -188,13 +194,15 @@ d3.json(DATA_URL).then((data) => {
     const rs = f.respostas.map((r) => {
       const it = itens.get(r.item);
       const v = PONTOS[r.resposta];
-      return {...r, eixo: it.eixo, texto: it.texto, nota: v === undefined ? null : it.sentido === "liberdade" ? v : 100 - v};
+      const nota = v === undefined ? null : v * (r.intensidade === "forte" ? 2 : 1) * (it.sentido === "liberdade" ? 1 : -1);
+      return {...r, eixo: it.eixo, texto: it.texto, nota};
     });
     const comNota = (eixo) => rs.filter((r) => r.eixo === eixo && r.nota !== null);
-    const e = d3.mean(comNota("economico"), (r) => r.nota), p = d3.mean(comNota("pessoal"), (r) => r.nota);
+    const se = d3.sum(comNota("economico"), (r) => r.nota), sp = d3.sum(comNota("pessoal"), (r) => r.nota);
     const nE = comNota("economico").length, nP = comNota("pessoal").length;
+    const e = posicao(se), p = posicao(sp);
     const [x, y] = proj(e, p);
-    return {...f, rs, e, p, nE, nP, parcial: Math.min(nE, nP) < MIN_ITENS, x, y};
+    return {...f, rs, se, sp, e, p, nE, nP, parcial: Math.min(nE, nP) < MIN_ITENS, x, y};
   });
 
   desenharFundo();
@@ -254,19 +262,19 @@ function desenharFundo() {
       const tx = x1 + ((x2 - x1) * t) / 100, ty = y1 + ((y2 - y1) * t) / 100;
       a.append("text").attr("class", "tick")
         .attr("x", tx + nx * 26).attr("y", ty + ny * 26)
-        .attr("text-anchor", "middle").attr("dominant-baseline", "middle").text(t);
+        .attr("text-anchor", "middle").attr("dominant-baseline", "middle").text(t === 50 ? "0" : `+${MAX_SALDO}`);
     });
   };
   eixo([0, 0], [100, 0], "Liberdade econômica →");
   eixo([0, 0], [0, 100], "← Liberdade pessoal");
   const [bx, by] = proj(0, 0);
-  svg.append("text").attr("class", "axis tick").attr("x", bx).attr("y", by + 30).attr("text-anchor", "middle").text("0");
+  svg.append("text").attr("class", "axis tick").attr("x", bx).attr("y", by + 30).attr("text-anchor", "middle").text(`−${MAX_SALDO}`);
 }
 
 function desenharPontos(figuras) {
-  const DY = 28;
-  const largura = (s) => s.length * 11.8 + 12;
-  const H = 28;
+  const DY = 24;
+  const largura = (s) => s.length * 10 + 10;
+  const H = 23;
   const ocupados = [
     ...figuras.map((f) => ({x: f.x, y: f.y, w: 26, h: 26})),
     ...REGIOES.map((d) => {
@@ -277,18 +285,18 @@ function desenharPontos(figuras) {
   const colide = (r) => ocupados.some((o) => Math.abs(r.x - o.x) * 2 < r.w + o.w && Math.abs(r.y - o.y) * 2 < r.h + o.h);
   const dentro = (r) => [-1, 1].every((sx) => [-1, 1].every((sy) =>
     Math.abs(r.x + sx * r.w / 2 - C) + Math.abs(r.y + sy * r.h / 2 - C) <= R));
-  const direcoes = [[0, -1], [0, 1], [1, -0.6], [-1, -0.6], [1, 0.6], [-1, 0.6], [1, 0], [-1, 0]];
+  const direcoes = [[0, -1], [0, 1], [1, 0], [-1, 0], [1, -0.6], [-1, -0.6], [1, 0.6], [-1, 0.6]];
 
-  const folga = (f) => R - Math.abs(f.x - C) - Math.abs(f.y - C);
-  const nos = [...figuras].sort((a, b) => folga(a) - folga(b) || a.y - b.y).map((f) => {
+  const vizinhos = (f) => figuras.filter((o) => o !== f && Math.hypot(o.x - f.x, o.y - f.y) < 90).length;
+  const nos = [...figuras].sort((a, b) => vizinhos(b) - vizinhos(a) || a.y - b.y).map((f) => {
     const w = largura(f.curto);
     let escolhido = null;
     for (const exigeDentro of [true, false]) {
-      for (let dist = 0; dist < 12 && !escolhido; dist++) {
+      for (let dist = 0; dist < 24 && !escolhido; dist++) {
         for (const [ux, uy] of direcoes) {
           const r = {
-            x: f.x + ux * ((w / 2 + 16) * Math.abs(ux) + dist * 18),
-            y: f.y + uy * (DY + dist * 18 * Math.abs(uy)),
+            x: f.x + ux * ((w / 2 + 16) * Math.abs(ux) + dist * 9),
+            y: f.y + uy * (DY + dist * 9 * Math.abs(uy)),
             w, h: H
           };
           if (!colide(r) && (!exigeDentro || dentro(r))) { escolhido = r; break; }
@@ -320,7 +328,7 @@ function desenharPontos(figuras) {
 
   camada.selectAll(".label").data(nos).join("text")
     .attr("class", "label")
-    .attr("x", (d) => d.x).attr("y", (d) => d.y + 7)
+    .attr("x", (d) => d.x).attr("y", (d) => d.y + 6)
     .attr("text-anchor", "middle")
     .text((d) => d.f.curto)
     .on("mouseenter", (_, d) => destacar(d.f, true))
@@ -362,7 +370,8 @@ function painelInicial(n) {
     <div class="intro">
       <div class="kicker">Diagrama de Nolan</div>
       <h2>Dois eixos em vez de um</h2>
-      <p>Em vez de uma linha entre esquerda e direita, cada político ganha duas notas de 0 a 100: liberdade econômica e liberdade pessoal.</p>
+      <p>Em vez de uma linha entre esquerda e direita, cada político ganha duas notas: liberdade econômica e liberdade pessoal.</p>
+      <p>Cada resposta soma ou tira pontos: +1 a favor de mais liberdade, −1 a favor de mais Estado, e ±2 quando a pessoa liderou a medida ou defende a versão mais radical. "Em parte" e falta de registro valem 0. Cada eixo vai de −16 a +16, e o 0 fica no centro.</p>
       <p>No topo fica quem quer menos Estado nas duas; embaixo, quem quer mais Estado nas duas. À esquerda, liberdade pessoal com mais Estado na economia; à direita, o contrário.</p>
       <p>Clique num ponto para ver as notas e como o político respondeu a cada afirmação abaixo.</p>
       <div class="legend">
@@ -374,25 +383,32 @@ function painelInicial(n) {
 }
 
 function painelFigura(f) {
-  const cor = (r) => (r.nota === null ? "transparent" : r.nota === 100 ? "var(--mais-lib)" : r.nota === 0 ? "var(--mais-est)" : "var(--parte)");
+  const COR = {2: "var(--mais-lib)", 1: "var(--mais-lib-1)", 0: "var(--parte)", "-1": "var(--mais-est-1)", "-2": "var(--mais-est)"};
+  const cor = (r) => (r.nota === null ? "transparent" : COR[r.nota]);
   const bloco = (eixo, titulo) => `
     <h3>${titulo}</h3>
     ${f.rs.filter((r) => r.eixo === eixo).map((r) => `
       <div class="item">
         <i style="background:${cor(r)};${r.nota === null ? "border:1px dashed var(--muted)" : ""}"></i>
-        <div>${r.texto}<small>${RESPOSTA[r.resposta]}${r.data ? ` · ${r.data.slice(0, 4)}` : ""}${r.confianca === "baixa" ? " · evidência fraca" : ""}</small></div>
+        <div>${r.texto}<small>${RESPOSTA[r.resposta]}${r.nota !== null ? ` (${comSinal(r.nota)})` : ""}${r.data ? ` · ${r.data.slice(0, 4)}` : ""}${r.confianca === "baixa" ? " · evidência fraca" : ""}</small></div>
       </div>`).join("")}`;
-  const barra = (nome, v, n) => `
-    <div class="score-row"><span>${nome}</span><div class="bar"><span style="width:${v}%"></span></div><b>${Math.round(v)}</b><small>${n} de 8 afirmações com registro</small></div>`;
+  const barra = (nome, saldo, n) => {
+    const v = posicao(saldo);
+    return `
+    <div class="score-row"><span>${nome}</span><div class="bar"><span style="left:${Math.min(v, 50)}%;width:${Math.max(Math.abs(v - 50), 1)}%"></span></div><b>${comSinal(saldo)}</b><small>${n} de 8 afirmações com registro, escala de −${MAX_SALDO} a +${MAX_SALDO}</small></div>`;
+  };
   panel.html(`
     <div class="kicker">${regiao(f.e, f.p)}</div>
     <h2>${f.nome}</h2>
     <div class="role">${f.papel}</div>
-    <div class="scores">${barra("Econômica", f.e, f.nE)}${barra("Pessoal", f.p, f.nP)}</div>
+    <div class="scores">${barra("Econômica", f.se, f.nE)}${barra("Pessoal", f.sp, f.nP)}</div>
     <div class="legend" style="margin:-8px 0 6px">
-      <span style="--c: var(--mais-lib)">resposta a favor de mais liberdade</span>
+      <span style="--c: var(--mais-lib)">+2</span>
+      <span style="--c: var(--mais-lib-1)">+1</span>
       <span style="--c: var(--parte)">em parte</span>
-      <span style="--c: var(--mais-est)">a favor de mais Estado</span>
+      <span style="--c: var(--mais-est-1)">−1</span>
+      <span style="--c: var(--mais-est)">−2</span>
+      <span>positivo = mais liberdade, negativo = mais Estado</span>
     </div>
     <div class="items">${bloco("economico", "Economia")}${bloco("pessoal", "Vida pessoal")}</div>
     <p class="foot"><a href="${METODO_URL}">Fontes de cada resposta →</a></p>`);

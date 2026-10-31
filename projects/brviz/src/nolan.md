@@ -8,30 +8,31 @@ toc:
 ```js
 const nolan = await FileAttachment("./data/nolan.json").json();
 
-const PONTOS = {concordo: 100, em_parte: 50, discordo: 0};
+const PONTOS = {concordo: 1, em_parte: 0, discordo: -1};
+const MAX_SALDO = 16;
 const RESPOSTA = {concordo: "Concorda", em_parte: "Em parte", discordo: "Discorda", sem_registro: "Sem registro"};
 const TIPO = {voto: "Voto", ato: "Ato ou projeto", declaracao: "Declaração", programa: "Programa de campanha"};
 const EIXO = {economico: "Econômico", pessoal: "Pessoal"};
 
 const itens = new Map(nolan.itens.map((d) => [d.id, d]));
 
-function nota(item, resposta) {
-  const v = PONTOS[resposta];
+function nota(item, r) {
+  const v = PONTOS[r.resposta];
   if (v === undefined) return null;
-  return item.sentido === "liberdade" ? v : 100 - v;
+  return v * (r.intensidade === "forte" ? 2 : 1) * (item.sentido === "liberdade" ? 1 : -1);
 }
 
 const linhas = nolan.figuras.flatMap((f) =>
   f.respostas.map((r) => {
     const item = itens.get(r.item);
-    return {...r, figura: f.curto, eixo: item.eixo, texto: item.texto, nota: nota(item, r.resposta)};
+    return {...r, figura: f.curto, eixo: item.eixo, texto: item.texto, nota: nota(item, r)};
   })
 );
 
 const placar = nolan.figuras.map((f) => {
   const eixo = (e) => {
     const v = linhas.filter((l) => l.figura === f.curto && l.eixo === e && l.nota !== null);
-    return {nota: d3.mean(v, (d) => d.nota), n: v.length};
+    return {nota: d3.sum(v, (d) => d.nota), n: v.length};
   };
   const ec = eixo("economico");
   const pe = eixo("pessoal");
@@ -39,7 +40,7 @@ const placar = nolan.figuras.map((f) => {
 });
 
 const P = new Map(placar.map((d) => [d.curto, d]));
-const fmt = (x) => Math.round(x).toString();
+const fmt = (x) => (x > 0 ? `+${x}` : x < 0 ? `−${-x}` : "0");
 
 const refs = [];
 const refDe = new Map();
@@ -81,23 +82,25 @@ html`<table class="nolan-itens">
 
 **Como cada resposta é decidida.** Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado), em seguida a declaração pública explícita e, por último, o programa de campanha registrado. Quando a pessoa mudou de posição, vale a mais recente, e a anterior fica registrada na ficha. "Em parte" só é usado quando a posição registrada é condicional ou quando há registros em direções opostas sem uma posição recente clara. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.
 
-**Como a nota é calculada.** Cada resposta vale 100, 50 ou 0 pontos de liberdade; nos itens escritos a favor de mais Estado, a conta é invertida. A nota de cada eixo é a média das respostas com registro, de 0 a 100.
+**Como a nota é calculada.** Cada resposta soma ou tira pontos de liberdade. A favor de mais liberdade vale +1 ou +2, a favor de mais Estado vale −1 ou −2, e "em parte" ou sem registro vale 0. Nos itens escritos a favor de mais Estado, concordar tira pontos. A nota de cada eixo é a soma das oito respostas e vai de −16 a +16, com o 0 no meio. Assim, uma nota perto de 0 só aparece quando as respostas se anulam ou quando há poucas com registro, e o número de respostas com registro aparece ao lado de cada nota.
+
+**Quando a resposta vale 2.** A resposta vale ±2 em dois casos. O primeiro é quando a pessoa liderou a medida: assinou o decreto ou a lei, executou a política como governante ou é autora do projeto. O segundo é quando ela defende a versão geral ou máxima da afirmação, como reverter todas as privatizações, proibir qualquer moderação nas redes ou criminalizar a posse de drogas em qualquer quantidade. Votar a favor do projeto de outra pessoa, assinar uma PEC com dezenas de autores, defender uma versão limitada (porte de arma só no campo, crédito de emergência após uma enchente) ou declarar apoio genérico vale ±1. Pela regra, ${linhas.filter((d) => Math.abs(d.nota) === 2).length} das ${linhas.filter((d) => d.nota !== null && d.nota !== 0).length} respostas que concordam ou discordam valem 2.
 
 ## O diagrama
 
 ```js
 function diagrama(width) {
   const quadrantes = [
-    {x: 88, y: 94, t: "Libertário"},
-    {x: 12, y: 94, t: "Esquerda"},
-    {x: 88, y: 4, t: "Direita"},
-    {x: 12, y: 4, t: "Estatista"}
+    {x: 12, y: 14.7, t: "Libertário"},
+    {x: -12, y: 14.7, t: "Esquerda"},
+    {x: 12, y: -14.7, t: "Direita"},
+    {x: -12, y: -14.7, t: "Estatista"}
   ];
   const S = Math.min(width, 560);
   const M = {top: 20, right: 20, bottom: 44, left: 48};
   const iw = S - M.left - M.right, ih = S - M.top - M.bottom;
-  const px = (x) => M.left + (x / 100) * iw;
-  const py = (y) => M.top + (1 - y / 100) * ih;
+  const px = (x) => M.left + ((x + MAX_SALDO) / (2 * MAX_SALDO)) * iw;
+  const py = (y) => M.top + (1 - (y + MAX_SALDO) / (2 * MAX_SALDO)) * ih;
   const caixas = [
     ...placar.map((d) => ({x0: px(d.economico) - 8, x1: px(d.economico) + 8, y0: py(d.pessoal) - 8, y1: py(d.pessoal) + 8})),
     ...quadrantes.map((q) => ({x0: px(q.x) - q.t.length * 4, x1: px(q.x) + q.t.length * 4, y0: py(q.y) - 8, y1: py(q.y) + 8}))
@@ -114,7 +117,12 @@ function diagrama(width) {
     const dentro = (b) => b.x0 >= M.left && b.x1 <= S - M.right && b.y0 >= M.top && b.y1 <= S - M.bottom;
     const p = posicoes.find((p) => !colide(caixa(p)) && dentro(caixa(p))) ?? posicoes.find((p) => !colide(caixa(p))) ?? posicoes[0];
     caixas.push(caixa(p));
-    return {curto: d.curto, anchor: p[0], x: ((cx + p[1] - M.left) / iw) * 100, y: (1 - (cy + p[2] - M.top) / ih) * 100};
+    return {
+      curto: d.curto,
+      anchor: p[0],
+      x: ((cx + p[1] - M.left) / iw) * 2 * MAX_SALDO - MAX_SALDO,
+      y: (1 - (cy + p[2] - M.top) / ih) * 2 * MAX_SALDO - MAX_SALDO
+    };
   });
   return Plot.plot({
     width: S,
@@ -123,12 +131,12 @@ function diagrama(width) {
     marginRight: M.right,
     marginLeft: M.left,
     marginBottom: M.bottom,
-    x: {domain: [0, 100], label: "Liberdade econômica →", ticks: [0, 25, 50, 75, 100]},
-    y: {domain: [0, 100], label: "↑ Liberdade pessoal", ticks: [0, 25, 50, 75, 100]},
+    x: {domain: [-MAX_SALDO, MAX_SALDO], label: "Liberdade econômica →", ticks: [-16, -8, 0, 8, 16], tickFormat: fmt},
+    y: {domain: [-MAX_SALDO, MAX_SALDO], label: "↑ Liberdade pessoal", ticks: [-16, -8, 0, 8, 16], tickFormat: fmt},
     marks: [
       Plot.frame({stroke: "currentColor", strokeOpacity: 0.2}),
-      Plot.ruleX([50], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
-      Plot.ruleY([50], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
+      Plot.ruleX([0], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
+      Plot.ruleY([0], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
       Plot.text(quadrantes, {x: "x", y: "y", text: "t", fill: "currentColor", fillOpacity: 0.4, fontSize: 12, fontWeight: 600}),
       Plot.dot(placar, {x: "economico", y: "pessoal", r: 7, fill: (d) => (Math.min(d.n_economico, d.n_pessoal) < 6 ? "white" : "var(--bra)"), stroke: "var(--bra)", strokeWidth: 2}),
       ...["start", "end"].map((textAnchor) =>
@@ -155,7 +163,7 @@ function diagrama(width) {
 
 Pontos vazados têm registro em menos de 6 das 8 afirmações de algum eixo, e a nota deles é menos confiável.
 
-No eixo econômico, os políticos se espalham de ponta a ponta: Jones Manoel fica em ${fmt(P.get("Jones Manoel").economico)}, Lula em ${fmt(P.get("Lula").economico)}, Zema em ${fmt(P.get("Zema").economico)} e Kim Kataguiri em ${fmt(P.get("Kim Kataguiri").economico)}. No eixo pessoal, quase todos ficam perto do meio, e Lula (${fmt(P.get("Lula").pessoal)}) fica quase na mesma altura que Bolsonaro (${fmt(P.get("Bolsonaro").pessoal)}) e Tarcísio (${fmt(P.get("Tarcísio").pessoal)}). O mapa abaixo mostra por quê.
+No eixo econômico, os políticos se espalham dos dois lados: Lula e Jones Manoel ficam em ${fmt(P.get("Lula").economico)} e ${fmt(P.get("Jones Manoel").economico)}, Zema em ${fmt(P.get("Zema").economico)}, e Kim Kataguiri e Bolsonaro em ${fmt(P.get("Kim Kataguiri").economico)} e ${fmt(P.get("Bolsonaro").economico)}. No eixo pessoal, todos ficam perto do meio: o mais alto é Kim, com ${fmt(P.get("Kim Kataguiri").pessoal)}, e o mais baixo é Nikolas Ferreira, com ${fmt(P.get("Nikolas Ferreira").pessoal)}. Lula (${fmt(P.get("Lula").pessoal)}) fica mais embaixo que Bolsonaro (${fmt(P.get("Bolsonaro").pessoal)}) e Tarcísio (${fmt(P.get("Tarcísio").pessoal)}). O mapa abaixo mostra por quê.
 
 ## Item por item
 
@@ -171,16 +179,16 @@ function mapa(width) {
     marginTop: 34,
     x: {domain: ordem, axis: "top", label: null, tickSize: 0},
     y: {domain: nolan.figuras.map((f) => f.curto), label: null, tickSize: 0},
-    color: {type: "linear", domain: [0, 50, 100], range: ["#b45309", "#f1f1ef", "#1e3a8a"], interpolate: "rgb"},
+    color: {type: "linear", domain: [-2, 0, 2], range: ["#b45309", "#f1f1ef", "#1e3a8a"], interpolate: "rgb"},
     marks: [
       Plot.cell(comRegistro, {x: "item", y: "figura", fill: "nota", inset: 1.5, rx: 3}),
       Plot.cell(semRegistro, {x: "item", y: "figura", fill: "none", stroke: "currentColor", strokeOpacity: 0.2, strokeDasharray: "3,3", inset: 3, rx: 3}),
-      Plot.text(comRegistro, {x: "item", y: "figura", text: (d) => d.nota, fill: (d) => (d.nota === 50 ? "#333" : "white"), fontSize: 11, fontWeight: 600}),
+      Plot.text(comRegistro, {x: "item", y: "figura", text: (d) => fmt(d.nota), fill: (d) => (Math.abs(d.nota) === 2 ? "white" : "#333"), fontSize: 11, fontWeight: 600}),
       Plot.text(semRegistro, {x: "item", y: "figura", text: () => "—", fillOpacity: 0.5}),
       Plot.tip(linhas, Plot.pointer({
         x: "item",
         y: "figura",
-        title: (d) => `${d.figura} · ${d.item}\n${d.texto}\n${RESPOSTA[d.resposta]}${d.nota === null ? "" : ` → ${d.nota} pontos de liberdade`}`
+        title: (d) => `${d.figura} · ${d.item}\n${d.texto}\n${RESPOSTA[d.resposta]}${d.nota === null ? "" : ` → ${fmt(d.nota)}`}`
       }))
     ]
   });
@@ -189,13 +197,13 @@ function mapa(width) {
 
 <div class="card" style="overflow-x:auto">${resize((width) => mapa(width))}</div>
 
-Azul é mais liberdade, laranja é mais Estado, e o tracejado indica que não há registro. As oito primeiras colunas são o eixo econômico; as oito últimas, o pessoal.
+Azul é mais liberdade e laranja é mais Estado. A cor forte indica resposta que vale 2, e o tracejado indica que não há registro. As oito primeiras colunas são o eixo econômico; as oito últimas, o pessoal.
 
-No eixo econômico, a maioria fica quase toda de uma cor; Ciro Gomes, Haddad e Marina Silva misturam, com muitas respostas "em parte". No pessoal, o padrão é outro. Bolsonaro, Nikolas Ferreira, Tarcísio, Zema e Ratinho Jr. marcam liberdade em armas, educação em casa e redes sociais, e Estado em drogas, aborto e cassinos. Lula, Erika Hilton, Jones Manoel e Ciro Gomes fazem quase o inverso. As médias ficam no meio, mas descrevem posições opostas.
+No eixo econômico, a maioria fica quase toda de uma cor; Ciro Gomes, Haddad e Marina Silva misturam, com muitas respostas "em parte". No pessoal, o padrão é outro. Bolsonaro, Nikolas Ferreira, Tarcísio, Zema e Ratinho Jr. marcam liberdade em armas, educação em casa e redes sociais, e Estado em drogas, aborto e cassinos. Lula, Erika Hilton, Jones Manoel e Ciro Gomes fazem quase o inverso. Nos dois grupos, as respostas se anulam e o saldo fica perto de 0, mas as posições são opostas.
 
 <div class="finding piloto">
 
-**A média do eixo pessoal esconde duas direções.** O eixo econômico separa bem os políticos. O pessoal junta temas que não andam juntos no Brasil: quem defende armas e liberdade nas redes é contra descriminalizar a maconha e o aborto, e vice-versa. Kim Kataguiri é o único que fica alto nos dois eixos, perto do canto libertário. Marina Silva é o caso oposto: fica do lado do Estado nas duas direções, contra armas e também contra liberar drogas e aborto.
+**O saldo do eixo pessoal esconde duas direções.** O eixo econômico separa bem os políticos. O pessoal junta temas que não andam juntos no Brasil: quem defende armas e liberdade nas redes é contra descriminalizar a maconha e o aborto, e vice-versa. Kim Kataguiri é o único que fica alto nos dois eixos, perto do canto libertário. Marina Silva é o caso oposto: fica do lado do Estado nas duas direções, contra armas e também contra liberar drogas e aborto.
 
 </div>
 
@@ -222,7 +230,7 @@ function ficha(f) {
         const n = refDe.get(`${f.curto}|${r.item}`);
         return html`<tr>
           <td class="nolan-id" title=${r.texto}>${r.item}<div class="nolan-item-texto">${r.texto}</div></td>
-          <td><span class=${`nolan-resp ${r.resposta}`}>${RESPOSTA[r.resposta]}</span>${r.nota === null ? "" : html`<div class="nolan-pontos">${r.nota} pts</div>`}${r.confianca === "baixa" ? html`<div class="nolan-pontos">evidência fraca</div>` : ""}</td>
+          <td><span class=${`nolan-resp ${r.resposta}`}>${RESPOSTA[r.resposta]}</span>${r.nota === null ? "" : html`<div class="nolan-pontos">${fmt(r.nota)}${r.intensidade === "forte" ? " (forte)" : ""}</div>`}${r.confianca === "baixa" ? html`<div class="nolan-pontos">evidência fraca</div>` : ""}</td>
           <td>
             ${r.tipo ? html`<span class="nolan-tipo">${TIPO[r.tipo]}${r.data ? `, ${r.data}` : ""}</span> ` : ""}${r.resumo}
             ${r.citacao ? html`<div class="nolan-citacao">“${r.citacao}”</div>` : ""}
@@ -243,10 +251,11 @@ html`${nolan.figuras.map(ficha)}`
 ## Ressalvas
 
 - **Quem responde somos nós.** Nenhum dos políticos respondeu ao questionário. A escolha da evidência e o uso de "em parte" são julgamentos, e é por isso que cada resposta mostra a fonte.
-- **As evidências têm pesos diferentes.** Um voto nominal é mais forte que uma frase em entrevista, mas os dois valem o mesmo na nota. O tipo de evidência aparece em cada linha para quem quiser descontar.
+- **A intensidade é um julgamento.** Decidir se uma resposta vale 1 ou 2 segue a regra acima, mas há casos de fronteira. Cada ficha mostra quais respostas valem 2.
+- **Intensidade não é força da evidência.** O peso 2 mede o quanto a posição é radical, não o quanto a fonte é boa. Um voto nominal e uma frase em entrevista podem valer o mesmo. O tipo de evidência aparece em cada linha para quem quiser descontar.
 - **As posições mudam com o tempo.** Algumas respostas usam falas de 2008; outras, de 2026. Quando houve mudança documentada, ela está registrada na ficha, e vale a posição mais recente.
 - **Os itens foram escolhidos por nós.** Outros oito temas poderiam produzir outro diagrama. A lista de afirmações está aberta a crítica.
-- **"Sem registro" reduz a base.** A nota de cada eixo usa só as respostas com registro, e o número de itens usados aparece ao lado de cada nota.
+- **"Sem registro" puxa para o meio.** Resposta sem registro vale 0, então quem tem poucas respostas fica perto do centro. O número de respostas com registro aparece ao lado de cada nota, e os pontos vazados marcam os casos com menos de 6 em algum eixo.
 
 ## Referências
 

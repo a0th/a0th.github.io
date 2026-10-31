@@ -174,16 +174,16 @@ const RESPOSTA = {concordo: "concorda", em_parte: "em parte", discordo: "discord
 const MIN_ITENS = 6;
 const REGIOES = [
   {nome: "Libertário", cor: "var(--lib)", pts: [[50, 50], [100, 50], [100, 100], [50, 100]], rotulo: [84, 84]},
-  {nome: "Esquerda liberal", cor: "var(--esq)", pts: [[0, 50], [50, 50], [50, 100], [0, 100]], rotulo: [15, 85]},
-  {nome: "Direita conservadora", cor: "var(--dir)", pts: [[50, 0], [100, 0], [100, 50], [50, 50]], rotulo: [85, 15]},
+  {nome: "Esquerda liberal", cor: "var(--esq)", pts: [[0, 50], [50, 50], [50, 100], [0, 100]], rotulo: [16, 84]},
+  {nome: "Direita conservadora", cor: "var(--dir)", pts: [[50, 0], [100, 0], [100, 50], [50, 50]], rotulo: [84, 16]},
   {nome: "Estatista", cor: "var(--est)", pts: [[0, 0], [50, 0], [50, 50], [0, 50]], rotulo: [16, 16]},
-  {nome: "Centro", cor: "var(--cen)", pts: [[30, 30], [70, 30], [70, 70], [30, 70]], rotulo: [37, 37]}
+  {nome: "Centro", cor: "var(--cen)", pts: [[30, 30], [70, 30], [70, 70], [30, 70]], rotulo: [50, 64]}
 ];
 
 const linhasRotulo = (d) => d.nome.split(" ");
 
-const C = 500, R = 470;
-const proj = (e, p) => [C + ((e - p) / 100) * R, C + R - ((e + p) / 100) * R];
+const C = 500, R = 430;
+const proj = (e, p) => [C + ((e - 50) / 50) * R, C - ((p - 50) / 50) * R];
 let ITENS = [];
 
 const svg = d3.select("#chart");
@@ -271,9 +271,9 @@ function desenharFundo() {
     });
   };
   eixo([0, 0], [100, 0], "Liberdade econômica →");
-  eixo([0, 0], [0, 100], "← Liberdade pessoal");
+  eixo([0, 0], [0, 100], "Liberdade pessoal →");
   const [bx, by] = proj(0, 0);
-  svg.append("text").attr("class", "axis tick").attr("x", bx).attr("y", by + 30).attr("text-anchor", "middle").text(`−${MAX_SALDO}`);
+  svg.append("text").attr("class", "axis tick").attr("x", bx - 18).attr("y", by + 26).attr("text-anchor", "middle").text(`−${MAX_SALDO}`);
 }
 
 function desenharPontos(figuras) {
@@ -289,8 +289,7 @@ function desenharPontos(figuras) {
     })
   ];
   const colide = (r) => ocupados.some((o) => Math.abs(r.x - o.x) * 2 < r.w + o.w && Math.abs(r.y - o.y) * 2 < r.h + o.h);
-  const dentro = (r) => [-1, 1].every((sx) => [-1, 1].every((sy) =>
-    Math.abs(r.x + sx * r.w / 2 - C) + Math.abs(r.y + sy * r.h / 2 - C) <= R));
+  const dentro = (r) => Math.abs(r.x - C) + r.w / 2 <= R && Math.abs(r.y - C) + r.h / 2 <= R;
   const direcoes = [[0, -1], [0, 1], [1, 0], [-1, 0], [1, -0.6], [-1, -0.6], [1, 0.6], [-1, 0.6]];
 
   const vizinhos = (f) => figuras.filter((o) => o !== f && Math.hypot(o.x - f.x, o.y - f.y) < 90).length;
@@ -378,7 +377,7 @@ function painelInicial(n) {
       <h2>Dois eixos em vez de um</h2>
       <p>Em vez de uma linha entre esquerda e direita, cada político ganha duas notas: liberdade econômica e liberdade pessoal.</p>
       <p>Cada resposta soma ou tira pontos: +1 a favor de mais liberdade, −1 a favor de mais Estado, e ±2 quando a pessoa liderou a medida ou defende a versão mais radical. "Em parte" e falta de registro valem 0. Cada eixo vai de −16 a +16, e o 0 fica no centro.</p>
-      <p>No topo fica quem quer menos Estado nas duas; embaixo, quem quer mais Estado nas duas. No canto da esquerda liberal fica quem quer liberdade pessoal com mais Estado na economia; no da direita conservadora, o contrário.</p>
+      <p>Da esquerda para a direita, cresce a liberdade na economia; de baixo para cima, a liberdade nos costumes. Em cima à esquerda fica quem quer liberdade pessoal com mais Estado na economia; embaixo à direita, o contrário.</p>
       <p>Os nomes dos cantos descrevem a combinação, não o campo político. Quem fica no canto estatista pode ser de esquerda ou de direita: o que o põe ali é querer mais Estado na economia e também nos costumes.</p>
       <p>Clique num ponto para ver as notas e como o político respondeu a cada afirmação abaixo.</p>
       <div class="legend">

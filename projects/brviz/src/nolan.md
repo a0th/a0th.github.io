@@ -79,7 +79,7 @@ html`<table class="nolan-itens">
 </table>`
 ```
 
-**Como cada resposta é decidida.** Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado), em seguida a declaração pública explícita e, por último, o programa de campanha registrado. "Em parte" só é usado quando há registro de posição condicional ou de mudança de posição. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.
+**Como cada resposta é decidida.** Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado), em seguida a declaração pública explícita e, por último, o programa de campanha registrado. Quando a pessoa mudou de posição, vale a mais recente, e a anterior fica registrada na ficha. "Em parte" só é usado quando a posição registrada é condicional ou quando há registros em direções opostas sem uma posição recente clara. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.
 
 **Como a nota é calculada.** Cada resposta vale 100, 50 ou 0 pontos de liberdade; nos itens escritos a favor de mais Estado, a conta é invertida. A nota de cada eixo é a média das respostas com registro, de 0 a 100.
 

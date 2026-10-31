@@ -117,7 +117,7 @@ mountTocSidebar();
 import {define} from "./_observablehq/client.a97643eb.js";
 import {registerFile} from "./_observablehq/stdlib.81cd90e3.js";
 
-registerFile("./data/nolan.json", {"name":"./data/nolan.json","mimeType":"application/json","path":"./_file/data/nolan.ae0d92ee.json","lastModified":1793476935989,"size":188696});
+registerFile("./data/nolan.json", {"name":"./data/nolan.json","mimeType":"application/json","path":"./_file/data/nolan.015b0a89.json","lastModified":1793477172533,"size":188768});
 
 define({id: "7161db34", inputs: ["FileAttachment","d3"], outputs: ["nolan","PONTOS","RESPOSTA","TIPO","EIXO","itens","nota","linhas","placar","P","fmt","refs","refDe","refPorUrl"], body: async (FileAttachment,d3) => {
 const nolan = await FileAttachment("./data/nolan.json").json();
@@ -434,7 +434,7 @@ html`<ol class="refs">${refs.map((r, i) => html`<li id=${`ref-${i + 1}`}>
 <h2 id="o-questionario" tabindex="-1"><a class="observablehq-header-anchor" href="#o-questionario">O questionário</a></h2>
 <p>São oito afirmações por eixo. Metade foi escrita a favor de mais liberdade e metade a favor de mais Estado, para que concordar com tudo não empurre ninguém para o mesmo lado.</p>
 <div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4020237d:--></div>
-<p><strong>Como cada resposta é decidida.</strong> Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado), em seguida a declaração pública explícita e, por último, o programa de campanha registrado. "Em parte" só é usado quando há registro de posição condicional ou de mudança de posição. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.</p>
+<p><strong>Como cada resposta é decidida.</strong> Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado), em seguida a declaração pública explícita e, por último, o programa de campanha registrado. Quando a pessoa mudou de posição, vale a mais recente, e a anterior fica registrada na ficha. "Em parte" só é usado quando a posição registrada é condicional ou quando há registros em direções opostas sem uma posição recente clara. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.</p>
 <p><strong>Como a nota é calculada.</strong> Cada resposta vale 100, 50 ou 0 pontos de liberdade; nos itens escritos a favor de mais Estado, a conta é invertida. A nota de cada eixo é a média das respostas com registro, de 0 a 100.</p>
 <h2 id="o-diagrama" tabindex="-1"><a class="observablehq-header-anchor" href="#o-diagrama">O diagrama</a></h2>
 <div class="observablehq observablehq--block"><!--:a49f4277:--></div>

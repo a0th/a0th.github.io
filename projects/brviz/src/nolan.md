@@ -43,11 +43,17 @@ const fmt = (x) => Math.round(x).toString();
 
 const refs = [];
 const refDe = new Map();
+const refPorUrl = new Map();
 for (const f of nolan.figuras) {
   for (const r of f.respostas) {
     if (!r.url) continue;
-    refs.push({...r, figura: f.curto});
-    refDe.set(`${f.curto}|${r.item}`, refs.length);
+    if (!refPorUrl.has(r.url)) {
+      refs.push({...r, usos: []});
+      refPorUrl.set(r.url, refs.length);
+    }
+    const n = refPorUrl.get(r.url);
+    refs[n - 1].usos.push(`${f.curto}, ${r.item}`);
+    refDe.set(`${f.curto}|${r.item}`, n);
   }
 }
 ```
@@ -73,7 +79,7 @@ html`<table class="nolan-itens">
 </table>`
 ```
 
-**Como cada resposta é decidida.** Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado) e, por último, a declaração pública explícita. "Em parte" só é usado quando há registro de posição condicional ou de mudança de posição. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.
+**Como cada resposta é decidida.** Vale primeiro o voto nominal no Congresso, depois o ato de governo (decreto, sanção, projeto enviado), em seguida a declaração pública explícita e, por último, o programa de campanha registrado. "Em parte" só é usado quando há registro de posição condicional ou de mudança de posição. Sem registro público claro, a resposta fica em branco: não deduzimos a opinião de alguém pelo partido.
 
 **Como a nota é calculada.** Cada resposta vale 100, 50 ou 0 pontos de liberdade; nos itens escritos a favor de mais Estado, a conta é invertida. A nota de cada eixo é a média das respostas com registro, de 0 a 100.
 
@@ -87,11 +93,36 @@ function diagrama(width) {
     {x: 88, y: 4, t: "Direita"},
     {x: 12, y: 4, t: "Estatista"}
   ];
+  const S = Math.min(width, 560);
+  const M = {top: 20, right: 20, bottom: 44, left: 48};
+  const iw = S - M.left - M.right, ih = S - M.top - M.bottom;
+  const px = (x) => M.left + (x / 100) * iw;
+  const py = (y) => M.top + (1 - y / 100) * ih;
+  const caixas = [
+    ...placar.map((d) => ({x0: px(d.economico) - 8, x1: px(d.economico) + 8, y0: py(d.pessoal) - 8, y1: py(d.pessoal) + 8})),
+    ...quadrantes.map((q) => ({x0: px(q.x) - q.t.length * 4, x1: px(q.x) + q.t.length * 4, y0: py(q.y) - 8, y1: py(q.y) + 8}))
+  ];
+  const colide = (b) => caixas.some((o) => b.x0 < o.x1 && b.x1 > o.x0 && b.y0 < o.y1 && b.y1 > o.y0);
+  const posicoes = [["start", 10, -13], ["end", -10, -13], ["start", 10, 15], ["end", -10, 15], ["start", 12, 0], ["end", -12, 0]];
+  const rotulos = [...placar].sort((a, b) => b.pessoal - a.pessoal).map((d) => {
+    const w = d.curto.length * 7 + 4;
+    const cx = px(d.economico), cy = py(d.pessoal);
+    const caixa = ([anchor, dx, dy]) => {
+      const x = cx + dx;
+      return {x0: anchor === "start" ? x : x - w, x1: anchor === "start" ? x + w : x, y0: cy + dy - 7, y1: cy + dy + 7};
+    };
+    const dentro = (b) => b.x0 >= M.left && b.x1 <= S - M.right && b.y0 >= M.top && b.y1 <= S - M.bottom;
+    const p = posicoes.find((p) => !colide(caixa(p)) && dentro(caixa(p))) ?? posicoes.find((p) => !colide(caixa(p))) ?? posicoes[0];
+    caixas.push(caixa(p));
+    return {curto: d.curto, anchor: p[0], x: ((cx + p[1] - M.left) / iw) * 100, y: (1 - (cy + p[2] - M.top) / ih) * 100};
+  });
   return Plot.plot({
-    width: Math.min(width, 560),
-    height: Math.min(width, 560),
-    marginLeft: 48,
-    marginBottom: 44,
+    width: S,
+    height: S,
+    marginTop: M.top,
+    marginRight: M.right,
+    marginLeft: M.left,
+    marginBottom: M.bottom,
     x: {domain: [0, 100], label: "Liberdade econômica →", ticks: [0, 25, 50, 75, 100]},
     y: {domain: [0, 100], label: "↑ Liberdade pessoal", ticks: [0, 25, 50, 75, 100]},
     marks: [
@@ -99,18 +130,13 @@ function diagrama(width) {
       Plot.ruleX([50], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
       Plot.ruleY([50], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
       Plot.text(quadrantes, {x: "x", y: "y", text: "t", fill: "currentColor", fillOpacity: 0.4, fontSize: 12, fontWeight: 600}),
-      Plot.dot(placar, {x: "economico", y: "pessoal", r: 7, fill: "var(--bra)", stroke: "white", strokeWidth: 1.5}),
-      ...[
-        [(d) => d.economico < 50, "start", 10],
-        [(d) => d.economico >= 50, "end", -10]
-      ].map(([filtro, textAnchor, dx]) =>
-        Plot.text(placar.filter(filtro), {
-          x: "economico",
-          y: "pessoal",
-          text: (d) => `${d.curto} (${fmt(d.economico)}, ${fmt(d.pessoal)})`,
+      Plot.dot(placar, {x: "economico", y: "pessoal", r: 7, fill: (d) => (Math.min(d.n_economico, d.n_pessoal) < 6 ? "white" : "var(--bra)"), stroke: "var(--bra)", strokeWidth: 2}),
+      ...["start", "end"].map((textAnchor) =>
+        Plot.text(rotulos.filter((d) => d.anchor === textAnchor), {
+          x: "x",
+          y: "y",
+          text: "curto",
           textAnchor,
-          dx,
-          dy: -14,
           fontSize: 12,
           fontWeight: 600
         })
@@ -127,7 +153,9 @@ function diagrama(width) {
 
 <div class="card">${resize((width) => diagrama(width))}</div>
 
-No eixo econômico, os políticos se espalham de ponta a ponta: Erika Hilton e Jones Manoel ficam em ${fmt(P.get("Erika Hilton").economico)}, Kim Kataguiri em ${fmt(P.get("Kim Kataguiri").economico)}. No eixo pessoal, todos ficam entre ${fmt(d3.min(placar, (d) => d.pessoal))} e ${fmt(d3.max(placar, (d) => d.pessoal))}, e Lula (${fmt(P.get("Lula").pessoal)}) fica quase na mesma altura que Bolsonaro (${fmt(P.get("Bolsonaro").pessoal)}). O mapa abaixo mostra por quê.
+Pontos vazados têm registro em menos de 6 das 8 afirmações de algum eixo, e a nota deles é menos confiável.
+
+No eixo econômico, os políticos se espalham de ponta a ponta: Jones Manoel fica em ${fmt(P.get("Jones Manoel").economico)}, Lula em ${fmt(P.get("Lula").economico)}, Zema em ${fmt(P.get("Zema").economico)} e Kim Kataguiri em ${fmt(P.get("Kim Kataguiri").economico)}. No eixo pessoal, quase todos ficam perto do meio, e Lula (${fmt(P.get("Lula").pessoal)}) fica quase na mesma altura que Bolsonaro (${fmt(P.get("Bolsonaro").pessoal)}) e Tarcísio (${fmt(P.get("Tarcísio").pessoal)}). O mapa abaixo mostra por quê.
 
 ## Item por item
 
@@ -163,11 +191,11 @@ function mapa(width) {
 
 Azul é mais liberdade, laranja é mais Estado, e o tracejado indica que não há registro. As oito primeiras colunas são o eixo econômico; as oito últimas, o pessoal.
 
-No eixo econômico, cada político fica quase todo de uma cor. No pessoal, não. Bolsonaro e Nikolas Ferreira marcam liberdade máxima em armas, educação em casa e redes sociais, e mínima em drogas, aborto, gênero nas escolas e casamento. Lula, Erika Hilton e Jones Manoel fazem quase o inverso. As médias ficam no meio, mas descrevem posições opostas.
+No eixo econômico, a maioria fica quase toda de uma cor; Ciro Gomes, Haddad e Marina Silva misturam, com muitas respostas "em parte". No pessoal, o padrão é outro. Bolsonaro, Nikolas Ferreira, Tarcísio, Zema e Ratinho Jr. marcam liberdade em armas, educação em casa e redes sociais, e Estado em drogas, aborto e cassinos. Lula, Erika Hilton, Jones Manoel e Ciro Gomes fazem quase o inverso. As médias ficam no meio, mas descrevem posições opostas.
 
 <div class="finding piloto">
 
-**A média do eixo pessoal esconde duas direções.** Nesta amostra, o eixo econômico separa bem os políticos. O pessoal junta temas que não andam juntos no Brasil: quem defende armas e liberdade nas redes é contra descriminalizar a maconha e o aborto, e vice-versa. Kim Kataguiri é o único que fica alto nos dois eixos, perto do canto libertário.
+**A média do eixo pessoal esconde duas direções.** O eixo econômico separa bem os políticos. O pessoal junta temas que não andam juntos no Brasil: quem defende armas e liberdade nas redes é contra descriminalizar a maconha e o aborto, e vice-versa. Kim Kataguiri é o único que fica alto nos dois eixos, perto do canto libertário. Marina Silva é o caso oposto: fica do lado do Estado nas duas direções, contra armas e também contra liberar drogas e aborto.
 
 </div>
 
@@ -194,7 +222,7 @@ function ficha(f) {
         const n = refDe.get(`${f.curto}|${r.item}`);
         return html`<tr>
           <td class="nolan-id" title=${r.texto}>${r.item}<div class="nolan-item-texto">${r.texto}</div></td>
-          <td><span class=${`nolan-resp ${r.resposta}`}>${RESPOSTA[r.resposta]}</span>${r.nota === null ? "" : html`<div class="nolan-pontos">${r.nota} pts</div>`}</td>
+          <td><span class=${`nolan-resp ${r.resposta}`}>${RESPOSTA[r.resposta]}</span>${r.nota === null ? "" : html`<div class="nolan-pontos">${r.nota} pts</div>`}${r.confianca === "baixa" ? html`<div class="nolan-pontos">evidência fraca</div>` : ""}</td>
           <td>
             ${r.tipo ? html`<span class="nolan-tipo">${TIPO[r.tipo]}${r.data ? `, ${r.data}` : ""}</span> ` : ""}${r.resumo}
             ${r.citacao ? html`<div class="nolan-citacao">“${r.citacao}”</div>` : ""}
@@ -224,6 +252,6 @@ html`${nolan.figuras.map(ficha)}`
 
 ```js
 html`<ol class="refs">${refs.map((r, i) => html`<li id=${`ref-${i + 1}`}>
-  ${r.figura}, ${r.item}. ${r.fonte_veiculo}${r.data ? ` (${r.data.slice(0, 4)})` : ""}. <a href=${r.url} target="_blank" rel="noopener">${r.fonte_titulo}</a>.
+  ${r.fonte_veiculo}${r.data ? ` (${r.data.slice(0, 4)})` : ""}. <a href=${r.url} target="_blank" rel="noopener">${r.fonte_titulo}</a>. Usada em: ${r.usos.join("; ")}.
 </li>`)}</ol>`
 ```

@@ -137,6 +137,26 @@
   .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 14px; font-size: 12px; color: var(--muted); }
   .legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 50%; background: var(--c); vertical-align: -1px; }
   .legend span.vazado::before { background: transparent; border: 2px solid var(--ink); width: 6px; height: 6px; }
+  .dica {
+    position: fixed;
+    z-index: 10;
+    width: 230px;
+    padding: 12px 14px;
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(29, 27, 25, .14);
+    font-size: 13px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .12s;
+  }
+  .dica.on { opacity: 1; }
+  .dica strong { display: block; margin: 2px 0 8px; font: 400 19px/1.15 Fraunces, Georgia, serif; }
+  .dica-linha { display: grid; grid-template-columns: 1fr auto; column-gap: 8px; margin-top: 4px; }
+  .dica-linha b { font-variant-numeric: tabular-nums; }
+  .dica-linha small { grid-column: 1 / -1; color: var(--muted); font-size: 11px; }
+  .dica em { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; font-style: normal; }
   .intro p { color: var(--muted); }
   .foot { margin-top: 28px; font-size: 12px; color: var(--muted); }
   .foot a { color: var(--ink); }
@@ -327,7 +347,8 @@ function desenharPontos(figuras) {
   camada.selectAll(".point").data(figuras).join("g")
     .attr("class", (d) => (d.parcial ? "point parcial" : "point"))
     .attr("transform", (d) => `translate(${d.x},${d.y})`)
-    .on("mouseenter", (_, d) => destacar(d, true))
+    .on("mouseenter", (ev, d) => { destacar(d, true); mostrarDica(ev, d); })
+    .on("mousemove", moverDica)
     .on("click", (ev, d) => { ev.stopPropagation(); destacar(d, true, true); })
     .append("circle").attr("r", 10);
 
@@ -336,11 +357,30 @@ function desenharPontos(figuras) {
     .attr("x", (d) => d.x).attr("y", (d) => d.y + 6)
     .attr("text-anchor", "middle")
     .text((d) => d.f.curto)
-    .on("mouseenter", (_, d) => destacar(d.f, true))
+    .on("mouseenter", (ev, d) => { destacar(d.f, true); mostrarDica(ev, d.f); })
+    .on("mousemove", moverDica)
     .on("click", (ev, d) => { ev.stopPropagation(); destacar(d.f, true, true); });
 
-  camada.selectAll(".point, .label").on("mouseleave", () => destacar(null));
+  camada.selectAll(".point, .label").on("mouseleave", () => { destacar(null); dica.classed("on", false); });
   svg.on("click", () => destacar(null, false, true));
+}
+
+const dica = d3.select("body").append("div").attr("class", "dica");
+function mostrarDica(ev, f) {
+  const linha = (nome, saldo, n) => `<div class="dica-linha"><span>${nome}</span><b>${comSinal(saldo)}</b><small>${n} de 8 com registro</small></div>`;
+  dica.html(`
+    <div class="kicker">${regiao(f.e, f.p)}</div>
+    <strong>${f.nome}</strong>
+    ${linha("Econômica", f.se, f.nE)}${linha("Pessoal", f.sp, f.nP)}
+    ${f.parcial ? `<em>Poucas respostas com registro: nota menos confiável</em>` : ""}
+    <em>Clique para ver as respostas</em>`).classed("on", true);
+  moverDica(ev);
+}
+function moverDica(ev) {
+  const {width: w, height: h} = dica.node().getBoundingClientRect();
+  const x = ev.clientX + 16 + w > innerWidth ? ev.clientX - 16 - w : ev.clientX + 16;
+  const y = Math.min(ev.clientY + 16, innerHeight - h - 8);
+  dica.style("left", `${x}px`).style("top", `${y}px`);
 }
 
 let fixado = null;

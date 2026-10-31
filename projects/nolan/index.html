@@ -156,6 +156,9 @@
   .dica-linha { display: grid; grid-template-columns: 1fr auto; column-gap: 8px; margin-top: 4px; }
   .dica-linha b { font-variant-numeric: tabular-nums; }
   .dica-linha small { grid-column: 1 / -1; color: var(--muted); font-size: 11px; }
+  .dica-pontos { grid-column: 1 / -1; display: flex; gap: 5px; margin: 4px 0 2px; }
+  .dica-pontos i { width: 12px; height: 12px; border-radius: 50%; box-sizing: border-box; }
+  .dica-legenda { margin-top: 8px; gap: 4px 10px; font-size: 11px; }
   .dica em { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; font-style: normal; }
   .intro p { color: var(--muted); }
   .foot { margin-top: 28px; font-size: 12px; color: var(--muted); }
@@ -188,6 +191,8 @@ const METODO_URL = "../brviz/nolan";
 const PONTOS = {concordo: 1, em_parte: 0, discordo: -1};
 const MAX_SALDO = 16;
 const posicao = (saldo) => 50 + (saldo / MAX_SALDO) * 50;
+const COR = {2: "var(--mais-lib)", 1: "var(--mais-lib-1)", 0: "var(--parte)", "-1": "var(--mais-est-1)", "-2": "var(--mais-est)"};
+const cor = (r) => (r.nota === null ? "transparent" : COR[r.nota]);
 const comSinal = (v) => (v > 0 ? `+${v}` : v < 0 ? `−${-v}` : "0");
 const RESPOSTA = {concordo: "concorda", em_parte: "em parte", discordo: "discorda", sem_registro: "sem registro"};
 
@@ -367,11 +372,14 @@ function desenharPontos(figuras) {
 
 const dica = d3.select("body").append("div").attr("class", "dica");
 function mostrarDica(ev, f) {
-  const linha = (nome, saldo, n) => `<div class="dica-linha"><span>${nome}</span><b>${comSinal(saldo)}</b><small>${n} de 8 com registro</small></div>`;
+  const bolinhas = (eixo) => f.rs.filter((r) => r.eixo === eixo).map((r) =>
+    `<i title="${r.item}" style="background:${cor(r)};${r.nota === null ? "border:1px dashed var(--muted)" : ""}"></i>`).join("");
+  const linha = (nome, eixo, saldo, n) => `<div class="dica-linha"><span>${nome}</span><b>${comSinal(saldo)}</b><div class="dica-pontos">${bolinhas(eixo)}</div><small>${n} de 8 com registro</small></div>`;
   dica.html(`
     <div class="kicker">${regiao(f.e, f.p)}</div>
     <strong>${f.nome}</strong>
-    ${linha("Econômica", f.se, f.nE)}${linha("Pessoal", f.sp, f.nP)}
+    ${linha("Econômica", "economico", f.se, f.nE)}${linha("Pessoal", "pessoal", f.sp, f.nP)}
+    <div class="legend dica-legenda"><span style="--c: var(--mais-lib)">+2</span><span style="--c: var(--mais-lib-1)">+1</span><span style="--c: var(--parte)">0</span><span style="--c: var(--mais-est-1)">−1</span><span style="--c: var(--mais-est)">−2</span></div>
     ${f.parcial ? `<em>Poucas respostas com registro: nota menos confiável</em>` : ""}
     <em>Clique para ver as respostas</em>`).classed("on", true);
   moverDica(ev);
@@ -429,8 +437,6 @@ function painelInicial(n) {
 }
 
 function painelFigura(f) {
-  const COR = {2: "var(--mais-lib)", 1: "var(--mais-lib-1)", 0: "var(--parte)", "-1": "var(--mais-est-1)", "-2": "var(--mais-est)"};
-  const cor = (r) => (r.nota === null ? "transparent" : COR[r.nota]);
   const bloco = (eixo, titulo) => `
     <h3>${titulo}</h3>
     ${f.rs.filter((r) => r.eixo === eixo).map((r) => `

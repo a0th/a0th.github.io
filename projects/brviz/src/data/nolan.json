@@ -4,96 +4,112 @@
       "id": "E1",
       "eixo": "economico",
       "sentido": "liberdade",
+      "rotulo": "Privatizar estatais",
       "texto": "O Estado deve vender as empresas que controla."
     },
     {
       "id": "E2",
       "eixo": "economico",
       "sentido": "liberdade",
+      "rotulo": "Flexibilizar a lei trabalhista",
       "texto": "A lei trabalhista deve deixar mais espaço para empresa e empregados negociarem jornada, férias e forma de contratação."
     },
     {
       "id": "E3",
       "eixo": "economico",
       "sentido": "liberdade",
+      "rotulo": "Banco Central independente",
       "texto": "O Banco Central deve ser independente do governo."
     },
     {
       "id": "E4",
       "eixo": "economico",
       "sentido": "liberdade",
+      "rotulo": "Reduzir tarifas de importação",
       "texto": "O Brasil deve reduzir tarifas de importação."
     },
     {
       "id": "E5",
       "eixo": "economico",
       "sentido": "estado",
+      "rotulo": "Estatais controlando preços",
       "texto": "O governo deve usar empresas estatais para controlar preços."
     },
     {
       "id": "E6",
       "eixo": "economico",
       "sentido": "estado",
+      "rotulo": "Crédito subsidiado de bancos públicos",
       "texto": "Bancos públicos devem emprestar com juros subsidiados a empresas ou setores escolhidos pelo governo."
     },
     {
       "id": "E7",
       "eixo": "economico",
       "sentido": "estado",
+      "rotulo": "Mínimo com aumento real por lei",
       "texto": "O salário mínimo deve ter aumento real por lei todo ano."
     },
     {
       "id": "E8",
       "eixo": "economico",
       "sentido": "estado",
+      "rotulo": "Imposto sobre grandes fortunas",
       "texto": "Grandes fortunas devem pagar um imposto próprio."
     },
     {
       "id": "P1",
       "eixo": "pessoal",
       "sentido": "liberdade",
+      "rotulo": "Facilitar porte de armas",
       "texto": "Deve ser mais fácil para um cidadão comum comprar e portar arma."
     },
     {
       "id": "P2",
       "eixo": "pessoal",
       "sentido": "liberdade",
+      "rotulo": "Descriminalizar maconha",
       "texto": "Portar maconha para consumo próprio não deve ser crime."
     },
     {
       "id": "P3",
       "eixo": "pessoal",
       "sentido": "liberdade",
+      "rotulo": "Aborto até 12 semanas",
       "texto": "O aborto deve ser permitido até 12 semanas."
     },
     {
       "id": "P4",
       "eixo": "pessoal",
       "sentido": "liberdade",
+      "rotulo": "Ensino domiciliar",
       "texto": "Pais devem poder educar os filhos em casa."
     },
     {
       "id": "P5",
       "eixo": "pessoal",
       "sentido": "estado",
+      "rotulo": "Obrigar redes a remover desinformação",
       "texto": "As redes sociais devem ser obrigadas a remover desinformação."
     },
     {
       "id": "P6",
       "eixo": "pessoal",
       "sentido": "estado",
+      "rotulo": "Proibir debate de gênero nas escolas",
       "texto": "A lei deve proibir o debate sobre gênero nas escolas."
     },
     {
       "id": "P7",
       "eixo": "pessoal",
       "sentido": "estado",
+      "rotulo": "Casamento só entre homem e mulher",
       "texto": "O casamento deve ser definido em lei como a união entre homem e mulher."
     },
     {
       "id": "P8",
       "eixo": "pessoal",
       "sentido": "estado",
+      "rotulo": "Manter cassinos proibidos",
       "texto": "Cassinos e jogos de azar devem continuar proibidos."
     }
   ],

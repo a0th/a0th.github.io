@@ -12,7 +12,7 @@ const PONTOS = {concordo: 1, em_parte: 0, discordo: -1};
 const MAX_SALDO = 16;
 const RESPOSTA = {concordo: "Concorda", em_parte: "Em parte", discordo: "Discorda", sem_registro: "Sem registro"};
 const TIPO = {voto: "Voto", ato: "Ato ou projeto", declaracao: "Declaração", programa: "Programa de campanha"};
-const EIXO = {economico: "Econômico", pessoal: "Pessoal"};
+const EIXO = {economico: "Econômico", pessoal: "Individual"};
 
 const itens = new Map(nolan.itens.map((d) => [d.id, d]));
 
@@ -60,6 +60,8 @@ for (const f of nolan.figuras) {
 ```
 
 O Diagrama de Nolan troca a linha única entre esquerda e direita por dois eixos: quanta liberdade a pessoa quer na **economia** (empresas, preços, impostos) e quanta quer na **vida pessoal** (armas, drogas, costumes, expressão). Quem quer muita nas duas fica no canto libertário, e quem quer pouca nas duas fica no canto estatista. Quem quer liberdade só nos costumes fica na esquerda liberal, e quem quer liberdade só na economia fica na direita conservadora. Os nomes descrevem a combinação, não o campo político: um político de esquerda que também quer mais Estado nos costumes cai no canto estatista, e continua sendo de esquerda.
+
+Os eixos vão da **intervenção estatal à liberdade econômica** e da **restrição estatal à liberdade individual**. O eixo individual mede o quanto a pessoa aceita que o Estado limite escolhas individuais, seja por razões morais (drogas, aborto, casamento), de segurança (armas) ou de ordem pública (redes sociais).
 
 A versão popular do diagrama vem de um questionário curto criado por um grupo libertário americano. Esta página usa um questionário próprio, com temas do debate brasileiro, e responde por cada político com base no que ele votou, fez no governo ou disse em público. Cada resposta tem fonte, e qualquer pessoa pode conferir.
 
@@ -131,8 +133,8 @@ function diagrama(width) {
     marginRight: M.right,
     marginLeft: M.left,
     marginBottom: M.bottom,
-    x: {domain: [-MAX_SALDO, MAX_SALDO], label: "Liberdade econômica →", ticks: [-16, -8, 0, 8, 16], tickFormat: fmt},
-    y: {domain: [-MAX_SALDO, MAX_SALDO], label: "↑ Liberdade pessoal", ticks: [-16, -8, 0, 8, 16], tickFormat: fmt},
+    x: {domain: [-MAX_SALDO, MAX_SALDO], label: "← Intervenção estatal · Liberdade econômica →", ticks: [-16, -8, 0, 8, 16], tickFormat: fmt},
+    y: {domain: [-MAX_SALDO, MAX_SALDO], label: "↑ Liberdade individual · ↓ Restrição estatal", ticks: [-16, -8, 0, 8, 16], tickFormat: fmt},
     marks: [
       Plot.frame({stroke: "currentColor", strokeOpacity: 0.2}),
       Plot.ruleX([0], {strokeOpacity: 0.25, strokeDasharray: "4,4"}),
@@ -152,7 +154,7 @@ function diagrama(width) {
       Plot.tip(placar, Plot.pointer({
         x: "economico",
         y: "pessoal",
-        title: (d) => `${d.curto}\nEconômico: ${fmt(d.economico)} (${d.n_economico} de 8 itens com registro)\nPessoal: ${fmt(d.pessoal)} (${d.n_pessoal} de 8 itens com registro)`
+        title: (d) => `${d.curto}\nEconômico: ${fmt(d.economico)} (${d.n_economico} de 8 itens com registro)\nIndividual: ${fmt(d.pessoal)} (${d.n_pessoal} de 8 itens com registro)`
       }))
     ]
   });
@@ -163,7 +165,7 @@ function diagrama(width) {
 
 Pontos vazados têm registro em menos de 6 das 8 afirmações de algum eixo, e a nota deles é menos confiável.
 
-No eixo econômico, os políticos se espalham dos dois lados: Lula e Jones Manoel ficam em ${fmt(P.get("Lula").economico)} e ${fmt(P.get("Jones Manoel").economico)}, Zema em ${fmt(P.get("Zema").economico)}, e Kim Kataguiri e Bolsonaro em ${fmt(P.get("Kim Kataguiri").economico)} e ${fmt(P.get("Bolsonaro").economico)}. No eixo pessoal, todos ficam perto do meio: o mais alto é Kim, com ${fmt(P.get("Kim Kataguiri").pessoal)}, e o mais baixo é Nikolas Ferreira, com ${fmt(P.get("Nikolas Ferreira").pessoal)}. Lula (${fmt(P.get("Lula").pessoal)}) fica mais embaixo que Bolsonaro (${fmt(P.get("Bolsonaro").pessoal)}) e Tarcísio (${fmt(P.get("Tarcísio").pessoal)}). O mapa abaixo mostra por quê.
+No eixo econômico, os políticos se espalham dos dois lados: Lula e Jones Manoel ficam em ${fmt(P.get("Lula").economico)} e ${fmt(P.get("Jones Manoel").economico)}, Zema em ${fmt(P.get("Zema").economico)}, e Kim Kataguiri e Bolsonaro em ${fmt(P.get("Kim Kataguiri").economico)} e ${fmt(P.get("Bolsonaro").economico)}. No eixo individual, todos ficam perto do meio: o mais alto é Kim, com ${fmt(P.get("Kim Kataguiri").pessoal)}, e o mais baixo é Nikolas Ferreira, com ${fmt(P.get("Nikolas Ferreira").pessoal)}. Lula (${fmt(P.get("Lula").pessoal)}) fica mais embaixo que Bolsonaro (${fmt(P.get("Bolsonaro").pessoal)}) e Tarcísio (${fmt(P.get("Tarcísio").pessoal)}). O mapa abaixo mostra por quê.
 
 ## Item por item
 
@@ -197,13 +199,13 @@ function mapa(width) {
 
 <div class="card" style="overflow-x:auto">${resize((width) => mapa(width))}</div>
 
-Azul é mais liberdade e laranja é mais Estado. A cor forte indica resposta que vale 2, e o tracejado indica que não há registro. As oito primeiras colunas são o eixo econômico; as oito últimas, o pessoal.
+Azul é mais liberdade e laranja é mais Estado. A cor forte indica resposta que vale 2, e o tracejado indica que não há registro. As oito primeiras colunas são o eixo econômico; as oito últimas, o individual.
 
-No eixo econômico, a maioria fica quase toda de uma cor; Ciro Gomes, Haddad e Marina Silva misturam, com muitas respostas "em parte". No pessoal, o padrão é outro. Bolsonaro, Nikolas Ferreira, Tarcísio, Zema e Ratinho Jr. marcam liberdade em armas, educação em casa e redes sociais, e Estado em drogas, aborto e cassinos. Lula, Erika Hilton, Jones Manoel e Ciro Gomes fazem quase o inverso. Nos dois grupos, as respostas se anulam e o saldo fica perto de 0, mas as posições são opostas.
+No eixo econômico, a maioria fica quase toda de uma cor; Ciro Gomes, Haddad e Marina Silva misturam, com muitas respostas "em parte". No individual, o padrão é outro. Bolsonaro, Nikolas Ferreira, Tarcísio, Zema e Ratinho Jr. marcam liberdade em armas, educação em casa e redes sociais, e Estado em drogas, aborto e cassinos. Lula, Erika Hilton, Jones Manoel e Ciro Gomes fazem quase o inverso. Nos dois grupos, as respostas se anulam e o saldo fica perto de 0, mas as posições são opostas.
 
 <div class="finding piloto">
 
-**O saldo do eixo pessoal esconde duas direções.** O eixo econômico separa bem os políticos. O pessoal junta temas que não andam juntos no Brasil: quem defende armas e liberdade nas redes é contra descriminalizar a maconha e o aborto, e vice-versa. Kim Kataguiri é o único que fica alto nos dois eixos, perto do canto libertário. Marina Silva é o caso oposto: fica do lado do Estado nas duas direções, contra armas e também contra liberar drogas e aborto.
+**O saldo do eixo individual esconde duas direções.** O eixo econômico separa bem os políticos. O individual junta temas que não andam juntos no Brasil: quem defende armas e liberdade nas redes é contra descriminalizar a maconha e o aborto, e vice-versa. Kim Kataguiri é o único que fica alto nos dois eixos, perto do canto libertário. Marina Silva é o caso oposto: fica do lado do Estado nas duas direções, contra armas e também contra liberar drogas e aborto.
 
 </div>
 
@@ -223,7 +225,7 @@ function ficha(f) {
   const p = P.get(f.curto);
   return html`<section class="nolan-ficha">
     <h3>${f.nome}</h3>
-    <p class="nolan-papel">${f.papel} · econômico ${fmt(p.economico)} (${p.n_economico} de 8) · pessoal ${fmt(p.pessoal)} (${p.n_pessoal} de 8)</p>
+    <p class="nolan-papel">${f.papel} · econômico ${fmt(p.economico)} (${p.n_economico} de 8) · individual ${fmt(p.pessoal)} (${p.n_pessoal} de 8)</p>
     <table>
       <thead><tr><th>Item</th><th>Resposta</th><th>Evidência</th></tr></thead>
       <tbody>${rs.map((r) => {

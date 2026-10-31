@@ -140,7 +140,7 @@
   .dica {
     position: fixed;
     z-index: 10;
-    width: 230px;
+    width: 330px;
     padding: 12px 14px;
     border: 1px solid var(--hair);
     border-radius: 8px;
@@ -156,9 +156,18 @@
   .dica-linha { display: grid; grid-template-columns: 1fr auto; column-gap: 8px; margin-top: 4px; }
   .dica-linha b { font-variant-numeric: tabular-nums; }
   .dica-linha small { grid-column: 1 / -1; color: var(--muted); font-size: 11px; }
-  .dica-pontos { grid-column: 1 / -1; display: flex; gap: 5px; margin: 4px 0 2px; }
-  .dica-pontos i { width: 12px; height: 12px; border-radius: 50%; box-sizing: border-box; }
-  .dica-legenda { margin-top: 8px; gap: 4px 10px; font-size: 11px; }
+  .dica-linha + .dica-escala { margin-top: 6px; }
+  .dica-escala { display: grid; grid-template-columns: 64px 64px; width: 128px; margin-left: calc(100% - 116px); color: var(--muted); font-size: 10px; }
+  .dica-escala span:first-child { text-align: right; padding-right: 4px; }
+  .dica-escala span:last-child { padding-left: 4px; }
+  .dica-item { display: grid; grid-template-columns: 1fr 46px 104px; align-items: center; gap: 8px; font-size: 11.5px; line-height: 1.25; padding: 2px 0; }
+  .dica .dica-item em { margin: 0; font-size: 10.5px; color: var(--muted); font-style: normal; }
+  .dica-barra { position: relative; height: 8px; }
+  .dica-barra::before { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); opacity: .5; }
+  .dica-barra i { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+  .dica-barra i.parte { left: calc(50% - 3px); width: 6px; border-radius: 50%; background: var(--parte); }
+  .dica-sem { color: var(--muted); font-size: 10px; text-align: center; }
+  .dica .dica-linha:not(:first-of-type) { margin-top: 10px; }
   .dica em { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; font-style: normal; }
   .intro p { color: var(--muted); }
   .foot { margin-top: 28px; font-size: 12px; color: var(--muted); }
@@ -196,6 +205,7 @@ const cor = (r) => (r.nota === null ? "transparent" : COR[r.nota]);
 const comSinal = (v) => (v > 0 ? `+${v}` : v < 0 ? `−${-v}` : "0");
 const RESPOSTA = {concordo: "concorda", em_parte: "em parte", discordo: "discorda", sem_registro: "sem registro"};
 
+const POSICAO = {concordo: "a favor", em_parte: "em parte", discordo: "contra", sem_registro: ""};
 const MIN_ITENS = 6;
 const REGIOES = [
   {nome: "Libertário", cor: "var(--lib)", pts: [[50, 50], [100, 50], [100, 100], [50, 100]], rotulo: [84, 84]},
@@ -222,7 +232,7 @@ d3.json(DATA_URL).then((data) => {
       const it = itens.get(r.item);
       const v = PONTOS[r.resposta];
       const nota = v === undefined ? null : v * (r.intensidade === "forte" ? 2 : 1) * (it.sentido === "liberdade" ? 1 : -1);
-      return {...r, eixo: it.eixo, texto: it.texto, nota};
+      return {...r, eixo: it.eixo, texto: it.texto, rotulo: it.rotulo, nota};
     });
     const comNota = (eixo) => rs.filter((r) => r.eixo === eixo && r.nota !== null);
     const se = d3.sum(comNota("economico"), (r) => r.nota), sp = d3.sum(comNota("pessoal"), (r) => r.nota);
@@ -295,8 +305,8 @@ function desenharFundo() {
         .attr("text-anchor", "middle").attr("dominant-baseline", "middle").text(t === 50 ? "0" : `+${MAX_SALDO}`);
     });
   };
-  eixo([0, 0], [100, 0], "Liberdade econômica →");
-  eixo([0, 0], [0, 100], "Liberdade pessoal →");
+  eixo([0, 0], [100, 0], "← Intervenção estatal · Liberdade econômica →");
+  eixo([0, 0], [0, 100], "← Restrição estatal · Liberdade individual →");
   const [bx, by] = proj(0, 0);
   svg.append("text").attr("class", "axis tick").attr("x", bx - 18).attr("y", by + 26).attr("text-anchor", "middle").text(`−${MAX_SALDO}`);
 }
@@ -372,14 +382,22 @@ function desenharPontos(figuras) {
 
 const dica = d3.select("body").append("div").attr("class", "dica");
 function mostrarDica(ev, f) {
-  const bolinhas = (eixo) => f.rs.filter((r) => r.eixo === eixo).map((r) =>
-    `<i title="${r.item}" style="background:${cor(r)};${r.nota === null ? "border:1px dashed var(--muted)" : ""}"></i>`).join("");
-  const linha = (nome, eixo, saldo, n) => `<div class="dica-linha"><span>${nome}</span><b>${comSinal(saldo)}</b><div class="dica-pontos">${bolinhas(eixo)}</div><small>${n} de 8 com registro</small></div>`;
+  const barrinha = (r) => {
+    if (r.nota === null) return `<span class="dica-sem">sem registro</span>`;
+    if (r.nota === 0) return `<span class="dica-barra"><i class="parte"></i></span>`;
+    const w = Math.abs(r.nota) * 25;
+    return `<span class="dica-barra"><i style="${r.nota > 0 ? "left:50%" : `left:${50 - w}%`};width:${w}%;background:${cor(r)}"></i></span>`;
+  };
+  const itens = (eixo) => f.rs.filter((r) => r.eixo === eixo).map((r) =>
+    `<div class="dica-item"><span>${r.rotulo}</span><em>${POSICAO[r.resposta]}</em>${barrinha(r)}</div>`).join("");
+  const linha = (nome, eixo, saldo, n) => `
+    <div class="dica-linha"><span>${nome}</span><b>${comSinal(saldo)}</b><small>${n} de 8 com registro</small></div>
+    <div class="dica-escala"><span>Estado ←</span><span>→ Liberdade</span></div>
+    ${itens(eixo)}`;
   dica.html(`
     <div class="kicker">${regiao(f.e, f.p)}</div>
     <strong>${f.nome}</strong>
-    ${linha("Econômica", "economico", f.se, f.nE)}${linha("Pessoal", "pessoal", f.sp, f.nP)}
-    <div class="legend dica-legenda"><span style="--c: var(--mais-lib)">+2</span><span style="--c: var(--mais-lib-1)">+1</span><span style="--c: var(--parte)">0</span><span style="--c: var(--mais-est-1)">−1</span><span style="--c: var(--mais-est)">−2</span></div>
+    ${linha("Econômica", "economico", f.se, f.nE)}${linha("Individual", "pessoal", f.sp, f.nP)}
     ${f.parcial ? `<em>Poucas respostas com registro: nota menos confiável</em>` : ""}
     <em>Clique para ver as respostas</em>`).classed("on", true);
   moverDica(ev);
@@ -423,9 +441,9 @@ function painelInicial(n) {
     <div class="intro">
       <div class="kicker">Diagrama de Nolan</div>
       <h2>Dois eixos em vez de um</h2>
-      <p>Em vez de uma linha entre esquerda e direita, cada político ganha duas notas: liberdade econômica e liberdade pessoal.</p>
+      <p>Em vez de uma linha entre esquerda e direita, cada político ganha duas notas: liberdade econômica, contra intervenção estatal, e liberdade individual, contra restrição estatal.</p>
       <p>Cada resposta soma ou tira pontos: +1 a favor de mais liberdade, −1 a favor de mais Estado, e ±2 quando a pessoa liderou a medida ou defende a versão mais radical. "Em parte" e falta de registro valem 0. Cada eixo vai de −16 a +16, e o 0 fica no centro.</p>
-      <p>Da esquerda para a direita, cresce a liberdade na economia; de baixo para cima, a liberdade nos costumes. Em cima à esquerda fica quem quer liberdade pessoal com mais Estado na economia; embaixo à direita, o contrário.</p>
+      <p>Da esquerda para a direita, cresce a liberdade na economia; de baixo para cima, a liberdade nos costumes. Em cima à esquerda fica quem quer liberdade individual com mais Estado na economia; embaixo à direita, o contrário.</p>
       <p>Os nomes dos cantos descrevem a combinação, não o campo político. Quem fica no canto estatista pode ser de esquerda ou de direita: o que o põe ali é querer mais Estado na economia e também nos costumes.</p>
       <p>Clique num ponto para ver as notas e como o político respondeu a cada afirmação abaixo.</p>
       <div class="legend">
@@ -453,7 +471,7 @@ function painelFigura(f) {
     <div class="kicker">${regiao(f.e, f.p)}</div>
     <h2>${f.nome}</h2>
     <div class="role">${f.papel}</div>
-    <div class="scores">${barra("Econômica", f.se, f.nE)}${barra("Pessoal", f.sp, f.nP)}</div>
+    <div class="scores">${barra("Econômica", f.se, f.nE)}${barra("Individual", f.sp, f.nP)}</div>
     <div class="legend" style="margin:-8px 0 6px">
       <span style="--c: var(--mais-lib)">+2</span>
       <span style="--c: var(--mais-lib-1)">+1</span>

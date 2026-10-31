@@ -595,7 +595,7 @@ html`<div class="score-wrap">
 </div>`
 ```
 
-Páginas complementares: [Educação](./educacao) · [Dívida, previdência e salário mínimo](./divida) · [Segurança pública](./seguranca) · [Eleições: onde o PT tem voto](./eleicoes) · [Ensino superior: irrelevante?](./ensino-superior) · [Por que ninguém muda de ideia](./por-que-ninguem-muda-de-ideia).
+Páginas complementares: [Educação](./educacao) · [Dívida, previdência e salário mínimo](./divida) · [Segurança pública](./seguranca) · [Eleições: onde o PT tem voto](./eleicoes) · [Ensino superior: irrelevante?](./ensino-superior) · [Por que ninguém muda de ideia](./por-que-ninguem-muda-de-ideia) · [Diagrama de Nolan: políticos brasileiros](./nolan).
 
 ## Limites deste relatório
 

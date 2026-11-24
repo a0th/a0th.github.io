@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste de daltonismo</title>
+<style>
+  :root { --bg:#14161a; --card:#1d2026; --fg:#e8e8ea; --muted:#9aa0a8; --accent:#5b8def; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  p { color: var(--muted); line-height: 1.5; }
+  .card { background: var(--card); border-radius: 14px; padding: 20px; margin-top: 16px; }
+  .plate-wrap { display:flex; justify-content:center; margin: 8px 0 16px; }
+  canvas { width: min(440px, 88vw); height: min(440px, 88vw); border-radius: 50%; background:#f3efe6; }
+  .row { display:flex; gap:8px; flex-wrap: wrap; justify-content:center; }
+  input[type=number] { width: 120px; font-size: 1.4rem; padding: 8px 10px; border-radius: 10px; border: 1px solid #3a3f48; background:#0f1114; color:var(--fg); text-align:center; }
+  button { font-size: 1rem; padding: 10px 16px; border-radius: 10px; border: 0; cursor: pointer; background:#2c313a; color:var(--fg); }
+  button.primary { background: var(--accent); color: white; }
+  button:hover { filter: brightness(1.1); }
+  .progress { text-align:center; color: var(--muted); font-size: .9rem; }
+  .bar { height: 6px; background:#2c313a; border-radius: 3px; overflow:hidden; margin: 6px 0 10px; }
+  .bar > div { height:100%; background: var(--accent); width:0; transition: width .2s; }
+  table { width:100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { padding: 6px 8px; border-bottom: 1px solid #2c313a; text-align:left; }
+  .ok { color:#5fd38d; } .bad { color:#f07070; }
+  .verdict { font-size: 1.1rem; color: var(--fg); }
+  .sim { display:flex; gap:8px; align-items:center; justify-content:center; font-size:.85rem; color:var(--muted); margin-top: 8px; }
+  select { background:#0f1114; color:var(--fg); border:1px solid #3a3f48; border-radius:8px; padding:4px 6px; }
+  .hidden { display:none; }
+  small { color: var(--muted); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <!-- Viénot 1999 dichromat simulation in linear RGB; feColorMatrix runs in linearRGB by default -->
+    <filter id="protanopia"><feColorMatrix type="matrix" values="0.11238 0.88762 0 0 0  0.11238 0.88762 0 0 0  0.00401 -0.00401 1 0 0  0 0 0 1 0"/></filter>
+    <filter id="deuteranopia"><feColorMatrix type="matrix" values="0.29275 0.70725 0 0 0  0.29275 0.70725 0 0 0  -0.02234 0.02234 1 0 0  0 0 0 1 0"/></filter>
+    <filter id="tritanopia"><feColorMatrix type="matrix" values="1 0.1273 -0.1273 0 0  0 0.8739 0.1261 0 0  0 0.8739 0.1261 0 0  0 0 0 1 0"/></filter>
+  </defs>
+</svg>
+
+<main>
+  <h1>Teste de daltonismo</h1>
+  <p>Lâminas no estilo Ishihara. Digite o número que você vê em cada círculo. Use a tela no brilho máximo, sem modo noturno nem filtro de luz azul, a uns 50 cm de distância. Responda em poucos segundos, sem forçar a vista.</p>
+
+  <section id="intro" class="card">
+    <p>São 12 lâminas: 1 de controle (todo mundo vê), 8 para vermelho-verde (protan e deutan, em intensidade decrescente) e 3 para azul-amarelo (tritan).</p>
+    <div class="row"><button class="primary" id="start">Começar</button></div>
+  </section>
+
+  <section id="test" class="card hidden">
+    <div class="progress" id="progress"></div>
+    <div class="bar"><div id="barFill"></div></div>
+    <div class="plate-wrap"><canvas id="plate" width="500" height="500"></canvas></div>
+    <form class="row" id="answerForm" autocomplete="off">
+      <input type="number" id="answer" min="0" max="99" inputmode="numeric" placeholder="nº">
+      <button class="primary" type="submit">Responder</button>
+      <button type="button" id="none">Não vejo número</button>
+    </form>
+    <div class="sim">
+      <label for="simSel">Simular visão (para conferir as lâminas):</label>
+      <select id="simSel">
+        <option value="">normal</option>
+        <option value="protanopia">protanopia</option>
+        <option value="deuteranopia">deuteranopia</option>
+        <option value="tritanopia">tritanopia</option>
+      </select>
+    </div>
+  </section>
+
+  <section id="result" class="card hidden">
+    <p class="verdict" id="verdict"></p>
+    <table>
+      <thead><tr><th>#</th><th>Tipo</th><th>Número</th><th>Sua resposta</th><th></th></tr></thead>
+      <tbody id="resultRows"></tbody>
+    </table>
+    <p><small>Isto é uma triagem, não um diagnóstico. Cor de tela, brilho e calibração mudam o resultado. Para confirmar, procure um oftalmologista (teste de Ishihara impresso, anomaloscópio ou Farnsworth D-15).</small></p>
+    <div class="row"><button class="primary" id="restart">Refazer com novas lâminas</button></div>
+  </section>
+</main>
+
+<script>
+const SIM = {
+  protanopia:   [[0.11238, 0.88762, 0], [0.11238, 0.88762, 0], [0.00401, -0.00401, 1]],
+  deuteranopia: [[0.29275, 0.70725, 0], [0.29275, 0.70725, 0], [-0.02234, 0.02234, 1]],
+  tritanopia:   [[1, 0.1273, -0.1273], [0, 0.8739, 0.1261], [0, 0.8739, 0.1261]],
+};
+
+const cross = (a, b) => [a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0]];
+const norm = v => { const n = Math.hypot(...v); return v.map(x => x / n); };
+
+// Direction in linear RGB that the dichromat cannot see: colors differing only along it collapse to the same simulated color.
+// Each matrix has two identical rows, so the null space is the cross product of the two distinct rows.
+const AXIS = {
+  protan: norm(cross(SIM.protanopia[0], SIM.protanopia[2])),
+  deutan: norm(cross(SIM.deuteranopia[0], SIM.deuteranopia[2])),
+  tritan: norm(cross(SIM.tritanopia[0], SIM.tritanopia[1])),
+};
+// Red should be the figure side for red-green plates.
+if (AXIS.protan[0] < 0) AXIS.protan = AXIS.protan.map(x => -x);
+if (AXIS.deutan[0] < 0) AXIS.deutan = AXIS.deutan.map(x => -x);
+if (AXIS.tritan[2] < 0) AXIS.tritan = AXIS.tritan.map(x => -x);
+
+const toSrgb = c => {
+  c = Math.min(1, Math.max(0, c));
+  return Math.round(255 * (c <= 0.0031308 ? 12.92 * c : 1.055 * Math.pow(c, 1 / 2.4) - 0.055));
+};
+const rgb = v => `rgb(${toSrgb(v[0])},${toSrgb(v[1])},${toSrgb(v[2])})`;
+const rand = (a, b) => a + Math.random() * (b - a);
+
+function makePlates() {
+  const num = () => Math.floor(rand(1, 99.999));
+  const rgBase = [0.30, 0.24, 0.06];
+  const plates = [{ type: 'controle', number: num(), figure: [0.62, 0.14, 0.03], background: [0.12, 0.20, 0.32] }];
+  const shifted = [];
+  for (const [type, axis] of [['protan', AXIS.protan], ['deutan', AXIS.deutan]]) {
+    for (const a of [0.20, 0.15, 0.11, 0.08]) {
+      shifted.push({ type, strength: a, number: num(),
+        figure: rgBase.map((c, i) => c + a * axis[i]),
+        background: rgBase.map((c, i) => c - a * axis[i]) });
+    }
+  }
+  const trBase = [0.30, 0.30, 0.30];
+  for (const a of [0.22, 0.16, 0.11]) {
+    shifted.push({ type: 'tritan', strength: a, number: num(),
+      figure: trBase.map((c, i) => c + a * AXIS.tritan[i]),
+      background: trBase.map((c, i) => c - a * AXIS.tritan[i]) });
+  }
+  for (let i = shifted.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shifted[i], shifted[j]] = [shifted[j], shifted[i]];
+  }
+  return plates.concat(shifted);
+}
+
+function packDots(size) {
+  const c = size / 2, R = size / 2 - 6, cell = 24, cols = Math.ceil(size / cell);
+  const grid = new Map(), dots = [];
+  for (const base of [11, 9, 7, 5.5, 4.5, 3.5]) {
+    for (let t = 0; t < 7000; t++) {
+      const r = base + rand(-0.8, 0.8);
+      const x = rand(c - R, c + R), y = rand(c - R, c + R);
+      if (Math.hypot(x - c, y - c) + r > R) continue;
+      const gx = Math.floor(x / cell), gy = Math.floor(y / cell);
+      let ok = true;
+      for (let dx = -1; dx <= 1 && ok; dx++) for (let dy = -1; dy <= 1 && ok; dy++) {
+        for (const d of grid.get((gx + dx) + gy * cols + dy * cols) || []) {
+          if (Math.hypot(d.x - x, d.y - y) < d.r + r + 1.2) { ok = false; break; }
+        }
+      }
+      if (!ok) continue;
+      const d = { x, y, r };
+      dots.push(d);
+      const k = gx + gy * cols;
+      if (!grid.has(k)) grid.set(k, []);
+      grid.get(k).push(d);
+    }
+  }
+  return dots;
+}
+
+function drawPlate(canvas, plate) {
+  const size = 500;
+  const mask = document.createElement('canvas');
+  mask.width = mask.height = size;
+  const m = mask.getContext('2d');
+  m.fillStyle = '#000';
+  m.textAlign = 'center';
+  m.textBaseline = 'middle';
+  m.font = `900 ${plate.number >= 10 ? 250 : 300}px "Arial Black", Arial, sans-serif`;
+  m.fillText(String(plate.number), size / 2, size / 2 + 12);
+  const alpha = m.getImageData(0, 0, size, size).data;
+  const inside = (x, y) => {
+    x = Math.round(x); y = Math.round(y);
+    return x >= 0 && y >= 0 && x < size && y < size && alpha[(y * size + x) * 4 + 3] > 128;
+  };
+
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = canvas.height = size * dpr;
+  const g = canvas.getContext('2d');
+  g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  g.fillStyle = '#f3efe6';
+  g.fillRect(0, 0, size, size);
+
+  for (const d of packDots(size)) {
+    const h = d.r * 0.5;
+    const hits = [[0, 0], [h, 0], [-h, 0], [0, h], [0, -h]].filter(([ox, oy]) => inside(d.x + ox, d.y + oy)).length;
+    const base = hits >= 3 ? plate.figure : plate.background;
+    // Brightness noise hides the figure from anyone relying on lightness instead of hue.
+    const k = rand(0.78, 1.12);
+    const color = base.map(c => c * k + rand(-0.012, 0.012));
+    g.beginPath();
+    g.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+    g.fillStyle = rgb(color);
+    g.fill();
+  }
+}
+
+const $ = id => document.getElementById(id);
+let plates = [], idx = 0, answers = [];
+
+function show(section) {
+  for (const s of ['intro', 'test', 'result']) $(s).classList.toggle('hidden', s !== section);
+}
+
+function start() {
+  plates = makePlates();
+  idx = 0;
+  answers = [];
+  show('test');
+  next();
+}
+
+function next() {
+  if (idx >= plates.length) return finish();
+  $('progress').textContent = `Lâmina ${idx + 1} de ${plates.length}`;
+  $('barFill').style.width = `${(idx / plates.length) * 100}%`;
+  drawPlate($('plate'), plates[idx]);
+  $('answer').value = '';
+  $('answer').focus();
+}
+
+function record(value) {
+  answers.push(value);
+  idx++;
+  next();
+}
+
+function finish() {
+  $('simSel').value = '';
+  $('plate').style.filter = '';
+  const rows = plates.map((p, i) => ({ ...p, answer: answers[i], ok: answers[i] === p.number }));
+  const errors = type => rows.filter(r => r.type === type && !r.ok).length;
+  const control = errors('controle'), protan = errors('protan'), deutan = errors('deutan'), tritan = errors('tritan');
+  const rg = protan + deutan;
+
+  const lines = [];
+  if (control) {
+    lines.push('Você errou a lâmina de controle, que todo mundo deveria ver. O resultado não é confiável: confira o brilho e os filtros da tela e refaça.');
+  } else {
+    if (rg >= 3) {
+      let kind = 'tipo indefinido (protan ou deutan)';
+      if (protan >= deutan + 2) kind = 'com tendência protan (menor sensibilidade ao vermelho)';
+      else if (deutan >= protan + 2) kind = 'com tendência deutan (menor sensibilidade ao verde)';
+      lines.push(`Indícios de deficiência vermelho-verde, ${kind}. Erros: ${rg} de 8.`);
+    } else if (rg > 0) {
+      lines.push(`Você errou ${rg} de 8 lâminas vermelho-verde. Pode ser uma deficiência leve ou só a calibração da tela.`);
+    }
+    if (tritan >= 2) lines.push(`Indícios de deficiência azul-amarelo (tritan). Erros: ${tritan} de 3. É rara; vale confirmar com um oftalmologista.`);
+    else if (tritan === 1) lines.push('Você errou 1 de 3 lâminas azul-amarelo. Provavelmente é a tela.');
+    if (!lines.length) lines.push('Nenhum indício de daltonismo: você acertou todas as lâminas.');
+  }
+  $('verdict').innerHTML = lines.join('<br><br>');
+
+  $('resultRows').innerHTML = rows.map((r, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td>${r.type}${r.strength ? ` <small>(${r.strength >= 0.15 ? 'forte' : r.strength >= 0.11 ? 'média' : 'fraca'})</small>` : ''}</td>
+      <td>${r.number}</td>
+      <td>${r.answer ?? '—'}</td>
+      <td class="${r.ok ? 'ok' : 'bad'}">${r.ok ? '✓' : '✗'}</td>
+    </tr>`).join('');
+  show('result');
+}
+
+$('start').onclick = start;
+$('restart').onclick = start;
+$('none').onclick = () => record(null);
+$('answerForm').onsubmit = e => {
+  e.preventDefault();
+  const v = $('answer').value.trim();
+  if (v === '') return;
+  record(parseInt(v, 10));
+};
+$('simSel').onchange = e => { $('plate').style.filter = e.target.value ? `url(#${e.target.value})` : ''; };
+</script>
+</body>
+</html>
